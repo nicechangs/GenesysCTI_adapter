@@ -1,0 +1,330 @@
+<scenariodef id="scenario_func.msfx" iparam="" ioparam="" >
+	<var name="globaltest123" expr="'1'" />
+	<var name="p_statdd[1..3]" expr="'0'" />
+	<consumermonit black="0" level="'3'" cond="1" />
+	<usercdr name="_CDR_DNIS_" type="a" value="'55555'" cond="1" />
+	<assign name="pl123" expr="8403261234123" cond="1" />
+	<assign name="pl1234" expr="'pl1234'" cond="1" />
+	<assign name="fill1" expr="fill_r( '', 4, ' ' )" cond="1" />
+	<assign name="fill2" expr="fill_r( '', 4, 'a' )" cond="1" />
+	<assign name="q1" expr="p_statcd[1]" cond="1" />
+	<assign name="q2" expr="p_statcd[2]" cond="1" />
+	<assign name="q3" expr="p_statcd[3]" cond="1" />
+	<assign name="w1" expr="p_statdd[1]" cond="1" />
+	<assign name="w2" expr="p_statdd[2]" cond="1" />
+	<assign name="w3" expr="p_statdd[3]" cond="1" />
+	<assign name="globaltest123" expr="'3'" cond="1" />
+	<assign name="plpl1123" expr="globaltest123" cond="1" />
+	<assign name="a_re" expr="'          '" cond="1" />
+	<assign name="b_re" expr="replace_str(a_re,' ', '%20')" cond="1" />
+	<assign name="session.call.chanstatus" expr="'0'" cond="1" />
+	<tracking ttype="0" itype="2" id="'trk_03'" value1="'36PlayTracking'" value2="session.command.reason" flag="0" encrypt="0" cond="1" />
+	<play expr="'m.36'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+	<tracking ttype="0" itype="6" id="'trk_01'" value1="'가나다라마바사아'" value2="" flag="0" encrypt="0" cond="1" />
+	<goto next="{4242B456-CADA-46DA-9C70-9AA7C64C32FB}" />
+	<label id="{4242B456-CADA-46DA-9C70-9AA7C64C32FB}" />
+	<!-- GetDigit_Start(sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1) -->
+	<if cond="1 == 0" >
+		<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+	</if>
+	<assign name="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_cnt" expr="0" cond="1" />
+	<label id="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_START" />
+	<play expr="'m.360'" cleardigit="0" type="MentID" country="410" abandon="1" wait="0" cond="1" />
+	<getdigit name="sfuncDigit" length="1" dtmfmask="1|2|3|4|5|6|7|8|9" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="1" />
+	<assign name="sfuncDigit_DtmfValue" expr="session.command.result" cond="1" />
+	<tracking ttype="0" itype="1" id="'trk_02'" value1="'샾숍똠'" value2="''" flag="1" encrypt="0" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="1" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="sfuncDigit.digits == '1'" >
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+		<elseif cond="sfuncDigit.digits == '2'" />
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+		<elseif cond="sfuncDigit.digits == '3'" />
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+		<elseif cond="sfuncDigit.digits == '4'" />
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+		<elseif cond="sfuncDigit.digits == '5'" />
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+		<elseif cond="sfuncDigit.digits == '6'" />
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+		<elseif cond="sfuncDigit.digits == '7'" />
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+		<elseif cond="sfuncDigit.digits == '8'" />
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+		<elseif cond="sfuncDigit.digits == '9'" />
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+		<else />
+			<if cond="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="1" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="sfuncDigit_DtmfValue == _SLEE_FAILED_" />
+		<if cond="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="1" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="1" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_cnt" expr="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_cnt+1" cond="1" />
+	<if cond="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="1" wait="0" cond="1" />
+	<else />
+		<if cond="sfuncDigit.digits == '' && session.command.term_digit == ''" >
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_START" />
+		<else />
+			<goto next="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_START" />
+		</if>
+	</if>
+	<label id="sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1_END" />
+	<!-- GetDigit_End(sfuncDigit_90DE03B7_AF74_445D_81D8_2634A632F2A1) -->
+	<goto next="{DE5FF417-9479-4D12-A81C-43D91D2ED08D}" />
+	<!-- select : sfuncDigit.digits -->
+	<label id="{DE5FF417-9479-4D12-A81C-43D91D2ED08D}" />
+	<if cond = "sfuncDigit.digits == '1'" >
+		<tracking ttype="0" itype="2" id="'trk_03'" value1="'\x21aaaaaaaaaaaaaaaaa\x22'" value2="" flag="0" encrypt="0" cond="1" />
+		<play expr="'m.3610'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<usermenustat category="cate_1" val1="1" val2="" val3="" val4="" val5="" val6="" val7="" val8="" val9="" cond="1" />
+		<usermenustat category="cate_1" val1="1" val2="" val3="1" val4="" val5="" val6="" val7="" val8="" val9="" cond="1" />
+		<usercdr name="_CDR_SKEY_" type="u" value="1234" cond="1" />
+		<usercdr name="_CDR_SKEY_" type="s" value="aaa" cond="1" />
+		<usercdr name="test_cdr" type="a" value="123" cond="1" />
+		<usercdr name="test_cdr2" type="a" value="321" cond="1" />
+		<usercdr name="_CDR_MENULIST_" type="s" value="aaa" cond="1" />
+		<usercdr name="_CDR_UNIQUEID_" type="a" value="'780912-3456789'" cond="1" />
+		<usercdr name="_CDR_ADDFIELD1_" type="a" value="'add1'" cond="1" />
+		<usercdr name="_CDR_ADDFIELD2_" type="a" value="'add2'" cond="1" />
+		<usercdr name="_CDR_ADDFIELD3_" type="a" value="'add3'" cond="1" />
+		<usercdr name="_CDR_BRANCHCODE_" type="a" value="'CODE123'" cond="1" />
+		<tracking ttype="0" itype="6" id="'trk_06'" value1="'트래킹가나다라마바사아킹가나다라마킹가나다라마킹가나다라마킹가나다라마킹가나다라마킹가가나나다라마킹가나다라마킹가나다라마킹가나다라마킹가나다라마킹가나다라마킹가나다라마킹가나다라마킹가나다라마킹가나다라마킹가나다라마킹가나다라마킹가나일이삼사오육칠팔12십가나다라'" value2="" flag="0" encrypt="0" cond="1" />
+		<goto next="{33D9D54E-1042-496B-89D5-E26C86C09F67}" />
+		<label id="{33D9D54E-1042-496B-89D5-E26C86C09F67}" />
+		<userenv name="uEnvTest" userconfig="'userenv.cfg'" service="'SERVICE'" env="'ENV1'" default="1" write="0" cond="1" />
+		<assign name="svc_test_loopcount" expr="0" cond="1" />
+		<assign name="aaa[1..10]" expr="'1'" cond="1" />
+		<assign name="aaa[11]" expr="'567'" cond="1" />
+		<assign name="session.call.agentresult" expr="_SLEE_FAILED_" cond="1" />
+		<goto next="{7213028B-3BFB-4629-9BC7-5679B5AB2E03}" />
+		<label id="{7213028B-3BFB-4629-9BC7-5679B5AB2E03}" />
+		<assign name="svc_test_loopcount" expr="svc_test_loopcount+1" cond="1" />
+		<assign name="svc_test_loopcount" expr="svc_test_loopcount+1" cond="1" />
+		<goto next="{7213028B-3BFB-4629-9BC7-5679B5AB2E03}" />
+	<elseif cond = "sfuncDigit.digits == '2'" />
+		<play expr="'m.3620'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<cdred enable="0" cond="1" />
+		<userenv name="uEnvTest1" userconfig="'holiday.cfg'" service="2013" env="'1231'" default="1" write="0" cond="1" />
+		<userenv name="uEnvTest2" userconfig="'Holiday.cfg'" service="'0_xxxx'" env="'0101'" default="1" write="0" cond="1" />
+		<assign name="valueA" expr="1000" cond="1" />
+		<assign name="valueB" expr="0" cond="1" />
+	<elseif cond = "sfuncDigit.digits == '3'" />
+		<play expr="'m.3630'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<goto next="{BC606D88-3176-44F8-8749-50A462E763CD}" />
+		<label id="{BC606D88-3176-44F8-8749-50A462E763CD}" />
+		<assign name="svc_test_loopcount" expr="0" cond="1" />
+		<play expr="'m.36301'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<goto next="{BC606D88-3176-44F8-8749-50A462E763CD}" />
+	<elseif cond = "sfuncDigit.digits == '4'" />
+		<play expr="'m.3640'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start(dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3) -->
+		<if cond="1 == 0" >
+			<goto next="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_END" />
+		</if>
+		<assign name="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_cnt" expr="0" cond="1" />
+		<label id="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_START" />
+		<play expr="'m.36401'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="dymenuDigit" length="1" dtmfmask="#|*" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="1" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="dymenuDigit_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="dymenuDigit.digits == '#'" >
+				<goto next="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_END" />
+			<elseif cond="dymenuDigit.digits == '*'" />
+				<goto next="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_END" />
+			<else />
+				<if cond="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="dymenuDigit_DtmfValue == _SLEE_FAILED_" />
+			<if cond="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_cnt" expr="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_cnt+1" cond="1" />
+		<if cond="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="dymenuDigit.digits == '' && session.command.term_digit == ''" >
+				<goto next="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_START" />
+			<else />
+				<goto next="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_START" />
+			</if>
+		</if>
+		<label id="dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3_END" />
+		<!-- GetDigit_End(dymenuDigit_AD2791BB_4684_4E86_8954_622550A034E3) -->
+		<!-- dymenuDigit.digits == '#' -->
+		<if cond="dymenuDigit.digits == '#'" >
+			<menuopt dtmfmask="1/11,2/12,3/13,4/14,5/15,6/16,7/17,8/18,9/19,*/361,#/361" choicement="'m.36402'" topkey="" upkey="" topmenu="" upmenu="" timeout="" retrycount="" dtmflength="1" intertimeout="'5'" timeoutment="" inputerrment="" retryerrment="" cleardigit="1" cleardigiterrment="1" cond="1" />
+			<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+			<assign name="session.menu.speakerid" expr="0" cond="1" />
+			<goto next="{99B24409-F835-4026-A12C-2F75A9E67453}" />
+			<label id="{99B24409-F835-4026-A12C-2F75A9E67453}" />
+			<menureturn value="1" />
+		<else /><!-- dymenuDigit.digits == '#' -->
+			<menuopt dtmfmask="1/2,2/21,3/3,4/31,5/32,6/33,7/34,8/35,9/36,*/361,#/361" choicement="'m.36403'" topkey="" upkey="" topmenu="" upmenu="" timeout="" retrycount="" dtmflength="1" intertimeout="'5'" timeoutment="" inputerrment="" retryerrment="" cleardigit="1" cleardigiterrment="1" cond="1" />
+			<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+			<assign name="session.menu.speakerid" expr="0" cond="1" />
+			<goto next="{99B24409-F835-4026-A12C-2F75A9E67453}" />
+		</if><!-- dymenuDigit.digits == '#' -->
+	<elseif cond = "sfuncDigit.digits == '5'" />
+		<!-- SpeakerVerify_Start(aaa_25EF27C3_6BC4_442E_A760_5DF4092A481A) -->
+		<assign name="aaa_25EF27C3_6BC4_442E_A760_5DF4092A481A_file" expr="cur_datetime_format('%YYYY%MM%DD%hh%mm%ss') & rand(4) & '.wav'" cond="1" />
+		<record file="aaa_25EF27C3_6BC4_442E_A760_5DF4092A481A_file" path="'vocal/'" background="0" beep="1" novoice="5" maxsilence="5" maxtime="5" termination="'*'" cond="1" />
+		<vocalpass name="aaa" key="'custom1'" type="'verify'" file="aaa_25EF27C3_6BC4_442E_A760_5DF4092A481A_file" path="'vocal/'" cond="1" />
+		<!-- SpeakerVerify_End(aaa_25EF27C3_6BC4_442E_A760_5DF4092A481A) -->
+	<elseif cond = "sfuncDigit.digits == '6'" />
+		<goto next="{F5680FF7-539E-4C4F-9FC4-0EF3914E467A}" />
+		<label id="{F5680FF7-539E-4C4F-9FC4-0EF3914E467A}" />
+		<openvr timeout="1" />
+		<!-- session.command.result == _SLEE_SUCCESS_ -->
+		<if cond="session.command.result == _SLEE_SUCCESS_" >
+			<!-- VoiceRecognize_Start(asr0_33CB85FE_C548_4E08_ACC7_B4B8428DA223) -->
+			<if cond="1 == 0" >
+				<goto next="asr0_33CB85FE_C548_4E08_ACC7_B4B8428DA223_END" />
+			</if>
+			<if cond="session.vr.recognizestart != 1" >
+				<voicerecognizestart name="asr0" grammar="'file:HANA_NLU_MainMenu_DM.gram'" bargein="1" confirm="0" retry="0" timer="0" novoicetimeout="5000" maxtimeout="10000" cdroption="1" getencrypt="0" />
+				<assign name="session.vr.recognizestart" expr="1" cond="1" />
+			</if>
+			<assign name="session.vr.statesequence" expr="session.vr.statesequence + 1" cond="1" />
+			<voicerecognizeresult name="asr0" maxtimeout="10000" cdroption="1" getencrypt="0" />
+			<assign name="session.vr.recognizestart" expr="0" cond="1" />
+			<label id="asr0_33CB85FE_C548_4E08_ACC7_B4B8428DA223_END" />
+			<!-- VoiceRecognize_End(asr0_33CB85FE_C548_4E08_ACC7_B4B8428DA223) -->
+			<assign name="g_asrResult" expr="asr0.vrresult" cond="asr0.vrtype=='dtmf'" />
+			<assign name="g_asrResult" expr="substr(asr0.vrresult, '6', '4')" cond="substr(asr0.vrresult, '1', '1') == 'm'" />
+			<assign name="g_asrResult" expr="substr(asr0.vrresult, '12', '3')" cond="substr(asr0.vrresult, '1', '1') =='u'" />
+			<assign name="g_asrType" expr="asr0.vrtype" cond="1" />
+			<assign name="g_asrRate" expr="asr0.vrrate" cond="1" />
+			<assign name="vr_result" expr="session.command.result" cond="1" />
+			<assign name="vr_reason" expr="session.command.reason" cond="1" />
+			<assign name="g_VR_ERR" expr="''" cond="1" />
+			<assign name="g_VR_ERR1" expr="''" cond="1" />
+			<assign name="gs_INFO.연속거래여부1" expr="'0'" cond="1" />
+			<assign name="g_VR_ERR_TTS" expr="''" cond="1" />
+			<log rid="vr_svclog" expr="'CALLID['&session.call.callid&']'&'RATE['&g_asrRate&']'" cond="1" />
+			<disconnect />
+		<else /><!-- session.command.result == _SLEE_SUCCESS_ -->
+			<sleep time="1" type="0" cond="1" />
+			<goto next="{F5680FF7-539E-4C4F-9FC4-0EF3914E467A}" />
+		</if><!-- session.command.result == _SLEE_SUCCESS_ -->
+	<elseif cond = "sfuncDigit.digits == '7'" />
+		<play expr="'m.21'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<goto next="{9B7A281B-2A64-46EC-B436-DA2E79CC8B60}" />
+		<label id="{9B7A281B-2A64-46EC-B436-DA2E79CC8B60}" />
+		<!-- GetDigit_Start(transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77) -->
+		<if cond="1 == 0" >
+			<goto next="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_END" />
+		</if>
+		<assign name="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_cnt" expr="0" cond="1" />
+		<label id="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_START" />
+		<play expr="'vp.211'" cleardigit="1" type="MentID" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="transfer" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="transfer_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_END" />
+		<elseif cond="transfer_DtmfValue == _SLEE_FAILED_" />
+			<if cond="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_cnt" expr="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_cnt+1" cond="1" />
+		<if cond="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="transfer.digits == '' && session.command.term_digit == ''" >
+				<goto next="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_START" />
+			<else />
+				<goto next="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_START" />
+			</if>
+		</if>
+		<label id="transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77_END" />
+		<!-- GetDigit_End(transfer_CFBEF56C_D57E_4688_B47D_8642912B8C77) -->
+		<!-- len(transfer.digits) >= 4  -->
+		<if cond="len(transfer.digits) >= 4 " >
+			<transfer name="transfer" to="transfer.digits" timeout="20" agtflag="1" agttype="1" switchcenter="0" />
+			<play expr="'vp.212'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+			<sleep time="1" type="0" cond="" />
+			<disconnect />
+		<else /><!-- len(transfer.digits) >= 4  -->
+			<play expr="'errinput'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+			<goto next="{9B7A281B-2A64-46EC-B436-DA2E79CC8B60}" />
+		</if><!-- len(transfer.digits) >= 4  -->
+	<elseif cond = "sfuncDigit.digits == '8'" />
+		<goto next="{EE209FC8-0FAE-4E4C-A4C4-B3DF4CC3A07A}" />
+		<label id="{EE209FC8-0FAE-4E4C-A4C4-B3DF4CC3A07A}" />
+		<log rid="USER_LOG_10MIN" expr="'abc['&abc&'|'" cond="1" />
+		<log rid="USER_LOG_10MIN" expr="'SVCID['&#1234 &'|'&#1234.digits&'|'" cond="1" />
+		<goto next="{4242B456-CADA-46DA-9C70-9AA7C64C32FB}" />
+	<elseif cond = "sfuncDigit.digits == '9'" />
+		<usercdr name="_CDR_UCID_" type="s" value="a1" cond="1" />
+		<usercdr name="_cdr_ucid_" type="s" value="a1" cond="1" />
+		<usercdr name="_CDR_NEXTHOP_" type="s" value="a2" cond="1" />
+		<usercdr name="_CDR_VERSION_" type="s" value="a3" cond="1" />
+		<usercdr name="_CDR_CUST_ID_" type="s" value="a4" cond="1" />
+		<usercdr name="_CDR_NODE_" type="s" value="a5" cond="1" />
+		<usercdr name="_CDR_CALLIDSEQ_" type="s" value="a7" cond="1" />
+		<usercdr name="_CDR_SKEY_" type="s" value="aaa" cond="1" />
+		<usercdr name="_CDR_CENTER_ID_" type="s" value="a6" cond="1" />
+		<usercdr name="_CDR_TENANT_ID_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_SLEEID_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_APPID_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_CHANNEL_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_STATUS_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_LR_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_SERVICEID_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_SERVICE_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_SERVICE_TYPE_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_SCENARIOFILE_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_SCENARIOVER_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_TRUNKID_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_REALLINE_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_ANI_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_DNIS_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_DIRECTION_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_DAEMONID_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_PBXCALLID_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_CALLREF_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_RP_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_TRANSFERDN_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_STARTDATE_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_STARTTIME_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_ENDDATE_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_ENDTIME_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_USETIME_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_STARTDATETIME_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_ENDDATETIME_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_CHANGEDSERVICEID_" type="s" value="a8" cond="1" />
+		<usercdr name="_CDR_CHANGINGSERVICEDATA_" type="s" value="a8" cond="1" />
+		<assign name="aaa" expr="'123'" cond="1" />
+		<assign name="Aaa" expr="'444'" cond="1" />
+		<assign name="AAA" expr="'555'" cond="1" />
+		<log rid="USER_LOG_DAY" expr="'Test aaa[' & aaa & ']  Aaa[' & Aaa & '] AAA[' & AAA" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : sfuncDigit.digits -->
+</scenariodef>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InstallationPackage FormatVersion="8.0">
+  <Product License="NotRequired" AppClass="SDK">
+    <Release Version="8.1.000.11" BuildDate="2013-12-09" BuildNumber="1" Type="General"/>
+    <Name>
+      <Long>IVR SDK</Long>
+      <Nickname>IVRAPI</Nickname>
+    </Name>
+    <Language LocaleId="ENU">
+      <Name>English (United States)</Name>
+    </Language>
+    <Description>
+      IVR SDK allows you to develop an interface (IVR driver)
+      with IVR Server to complete the Genesys IVR Interface
+      solution. This API provides integration of vendor-specific
+      IVR hardware and software with Genesys Framework ERS
+      solutions.
+    </Description>
+    <ReleaseNotes Place="Web" WebDBId="." FileName="release_notes.html"/>
+  </Product>
+  <Platforms OSGroupName="linux">
+    <Computer Type="Intel 32 bit">
+      <OS Name="Red Hat Enterprise Linux AS" Version="4" CfgOSType="16"/>
+      <OS Name="Red Hat Enterprise Linux AS" Version="5" CfgOSType="16"/>
+    </Computer>
+    <Computer Type="Intel EM64T">
+      <OS Name="Red Hat Enterprise Linux AS" Version="5" CfgOSType="16"/>
+    </Computer>
+  </Platforms>
+  <InstallationPgm>
+    <Release Version="0.0.000.00"/>
+    <Language LocaleId="ENU">
+      <Name>English (United States)</Name>
+    </Language>
+  </InstallationPgm>
+</InstallationPackage>

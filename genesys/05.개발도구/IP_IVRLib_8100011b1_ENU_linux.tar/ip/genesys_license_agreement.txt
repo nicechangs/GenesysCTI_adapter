@@ -1,0 +1,713 @@
+DEVELOPER SOFTWARE LICENSE AGREEMENT
+
+CAREFULLY READ THE TERMS AND CONDITIONS OF THIS AGREEMENT BEFORE INSTALLING OR
+USING THE "DEVELOPER MATERIALS" (AS BELOW DEFINED). BY INSTALLING AND USING THE
+DEVELOPER MATERIALS, YOU CONSENT TO BE BOUND BY, AND BECOME A PARTY TO, THIS
+AGREEMENT. IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS AGREEMENT, DO NOT
+INSTALL OR USE THE DEVELOPER MATERIALS. IF YOU ELECT NOT TO INSTALL, AND HAVE
+NOT VIOLATED ANY OF THE TERMS OF THIS AGREEMENT, ANY PAYMENTS FOR THE DEVELOPER
+MATERIALS WILL BE RETURNED TO YOU, UPON RETURN TO GENESYS OF THE MEDIA CONTAINING
+THE DEVELOPER MATERIALS.
+
+1. General.
+
+This Developer Software License Agreement (the "Agreement") is entered into
+effective on the date accepted ("Effective Date") by and between GENESYS
+TELECOMMUNICATIONS LABORATORIES, INC. ("GENESYS") and the party accepting the
+terms and conditions of this Agreement ("User"). Genesys and User may also be
+known individually as a "party" and collectively as the "parties." NOW THEREFORE,
+in consideration of the mutual promises herein, and other good and valuable
+consideration, the receipt and sufficiency of which is hereby acknowledged,
+the parties agree as follows:
+
+A. Agreement. This Agreement shall govern User's use of Genesys Developer
+Materials, as defined herein. For the avoidance of doubt, except as otherwise
+stated in Paragraph 1. B (i) of this Agreement, this Agreement constitutes the
+entire agreement between the parties concerning the subject of Genesys Developer
+Materials and supersedes all prior or contemporaneous representations, discussions,
+proposals, negotiations, conditions, agreements and communications, whether oral
+or written, between the parties relating to the subject matter of Genesys Developer
+Materials and all past courses of dealing or industry custom. Except as otherwise
+expressly stated herein, no Agreement or modification of any provision of this
+Agreement shall be effective unless in writing and signed by each party.
+
+B. Precedence. (i) Notwithstanding anything to the contrary herein contained, in
+the event User has executed a development agreement with Genesys, received by
+User during or after October, 2007 ("2007 Development Agreement"), the terms of
+the 2007 Development Agreement shall govern for the purposes of the subject matter
+of this Agreement. To that end, the 2007 Development Agreement is hereby ratified
+by each party and shall remain in full force and effect in accordance with its
+terms and conditions. (ii) In the event User has not executed a 2007 Development
+Agreement, and in the event of any inconsistency or conflict between the terms and
+conditions of this Agreement and any other agreement regarding the purposes of the
+subject matter of this Agreement, the terms and conditions of this Agreement shall
+govern for the purposes of the subject matter of this Agreement.
+
+2. Definitions.
+
+(a) "User Products" means the commercially available software products that are
+owned or licensed by User, which products access, communicate or interoperate with
+Genesys Products through Developed Works.
+
+(b) "Derivative Work" means a new or modified work that is based on or derived from
+all or any part of Genesys Products, including without limitation, a revision,
+modification, translation, localization, adaptation, abridgment, port, condensation
+or expansion, in any form, of the Genesys Products, or any work that would infringe
+any copyright or any other Intellectual Property Right in the Genesys Products or
+that uses trade secrets or other Proprietary Information embodied in or used by the
+Genesys Products.
+
+(c) "Designated CPU" means the designated hardware upon which the Developer Materials
+is installed.
+
+(d) "Designated Site" means that single facility of User at which the Developer
+Materials is installed and which shall be identified in the Order.
+
+(e) "Developed Works" means the software code (including without limitation the
+application or integration) developed by User by using the Developer Materials,
+which software code enables User Products to access, communicate or interoperate
+with Genesys Products solely through Genesys proprietary interface elements,
+application program interfaces ("API") and/or software development kits ("SDK").
+
+(f) "Developer Materials" means Genesys developer tools, in object code (and clear
+text formats if applicable) only (which may include modifiable script files which
+shall not be modified by User), and Documentation, ordered by User pursuant to an
+Order. Developer Materials includes the Genesys developer tool components that are
+included within Genesys GVP Developer Edition (but do not include any other portion
+or the whole of Genesys GVP Developer Edition). Developer Materials excludes:
+  i.  any Genesys SDK that is not obtained pursuant to an Order;
+  ii. any Genesys API that has not been productized for external use by Genesys;
+  iii.  any Genesys API that is not a developer tool as hereinabove described; and, 
+  iv. any features or functionality not explicitly set forth in the Documentation.
+
+(g) "Developer Training" means the Genesys technical development courses for the
+applicable Developer Materials plus any course prerequisites. 
+
+(h) "Genesys Products" means all copies of Genesys commercially available software
+programs as listed in the Genesys then-current applicable price list, in object
+code format, ordered in accordance with a valid Order, including any Documentation
+provided by Genesys to the User. Genesys reserves the right, at its reasonable
+discretion, to add items to or remove items from, and otherwise modify Genesys
+Products on the then-current Genesys price list.
+
+(i) "Order(s)" means the document by which User orders Genesys Products and
+Services. The Order shall include:
+  i.  the effective date of the Order;
+  ii.  the incorporation of this Agreement by reference;
+  iii.  the Developer Materials being ordered; 
+  iv.  the quantity and price; 
+  v.  the User;
+  vi.  the Designated Site;
+  vii.  the Designated CPU; 
+  viii.  the billing address; and
+  ix.  the destination of the shipment.
+All Orders are irrevocable and non-refundable except as provided herein.
+
+(j) "Run-Time License" means the applicable Genesys run-time licenses and fees,
+and includes run-time licenses and fees for integrations ("Connectors") and
+other fees (including applicable maintenance fees) described in the schedule
+of applicable Genesys run-time licenses set forth in Section 3. (c)
+("Run-Time Licenses") of this Agreement.
+
+(k) "Subcontractor" means a third party entity or individual independent contractor
+whom User contracts to perform on its behalf the authorized development activities
+set forth in this Agreement to create, debug, test, and/or deploy Developed Works
+as works made for hire; provided that: 
+  i.  such third party shall not be a competitor of Genesys, as Genesys deems in
+  its reasonable discretion; 
+  ii.  User shall notify Genesys in writing of the identity the third party
+  (including without limitation contact information of such third party) to Genesys
+  prior to the start of any work by such third party under this Agreement;
+  iii.  User shall bind such Subcontractor, in writing prior to the engagement of
+  such Subcontractor, by the terms of this Agreement, including, without limitation,
+  restrictions regarding disclosure and use of Proprietary Information that are no
+  less restrictive than those set forth herein;
+  iv.  User shall properly coordinate and supervise work to be performed by such
+  Subcontractor hereunder;
+  v.  User shall remain responsible and liable for such Subcontractor's compliance
+  with the provisions of this Agreement;
+  vi.  User shall ensure that such Subcontractor has assigned all rights, title and
+  interest such Subcontractor may have or acquire in the Developed Works to User, and
+  shall obtain from such Subcontractor all necessary waivers of rights by (including
+  without limitation moral rights) in and to the Developed Works, in favor of User
+  and its authorized assigns and successors; and
+  vii.  User shall ensure that such Subcontractor delivers to User:
+    (A) the Developer Materials;
+    (B) the Developed Works; and,
+    (C) all information, documentation and materials (including without limitation,
+    source code) relating to the Developed Works, (the requirements of this Section
+    2. collectively, "Additional Subcontractor Requirements"), including without
+    limitation, the Additional Subcontractor Requirements. For the avoidance of doubt,
+    the Subcontractor shall only have those limited rights to perform the development
+    activities on behalf of the User as set forth hereunder, and, once delivered to
+    User, the Subcontractor shall not retain Developer Materials, Developed Works or
+    any information, documentation and materials relating the Developed Works, or use
+    any of the foregoing for any other purposes.
+
+3.  License Grants and Audit.
+
+(a) Genesys grants to User a limited license to use the Developer Materials solely
+in accordance with the Documentation to create one or more User specific objects
+and/or software files that access, communicate, or interoperate with Genesys software.
+Unless expressly set forth herein, User may not use the Developer Materials for any
+other purpose. Anything created by the User hereunder shall be deemed Developed Works
+as defined above.
+
+(b) Development Rights. Subject to the provisions of this Agreement (including
+without limitation, all of the conditions set forth in Section 4. ("Restrictions"),
+Genesys grants to User a non-exclusive, non-transferable, terminable license, without
+any right to sublicense (except as expressly permitted herein), to permit its
+employees or a Subcontractor to use the Developer Materials described in a valid Order
+issued by User, solely in accordance with the Documentation and the schedule of
+authorized integration development activities set forth at the Genesys Developer
+Program web page located at the following URL:
+[http://www.genesyslab.com/storage/legal/sdk/],
+to create, debug, and/or test the Developed Works. For the avoidance of doubt,
+Genesys reserves the right to amend the information set forth at the aforementioned
+Genesys Developer Program web page in its sole discretion.
+
+(c) Run-Time Licenses. User shall comply with policies set forth at the Genesys
+Developer Program web page located at the following URL:
+[http://www.genesyslab.com/storage/legal/sdk/].
+For the avoidance of doubt, Genesys reserves the right to amend Run-Time License
+related information published at the Genesys Developer Program web page, in its sole
+discretion and accordance with Genesys' applicable standard price list as of the date
+of the Order. Unless otherwise expressly agreed to in writing, the provisions of the
+Run-Time License information set forth herein (and on the applicable Genesys Developer
+Program web page) shall supersede any conflicting information in the Documentation.
+
+(d) Internal Use. Subject to the provisions of this Agreement, User shall be
+entitled to use the Developed Works solely for its own internal business operations;
+provided, however, that User licenses all applicable Genesys Run-Time Licenses and
+fees prior to deployment of the Developed Works.
+
+(e) Audit. During the Term of this Agreement and for two (2) years thereafter, User
+shall keep complete and accurate records relating to the Developer Materials and
+User's compliance with the provisions of this Agreement.  Upon at least thirty (30)
+days prior Notice, User shall permit Genesys or Genesys' representatives, at Genesys
+expense (except as provided herein), to examine and copy as reasonably necessary its
+physical and electronic records during User's regular business hours for the purpose
+of and to the extent necessary to verify User's compliance with the provisions of
+this Agreement. If any such examination conducted by Genesys or its representatives
+determines any material non-compliance with the provisions of this Agreement
+(including without limitation, shortfall in fees to Genesys), then, in addition to
+any legal remedies or equitable relief that may be available to Genesys, User shall
+be responsible for any expenses incurred by Genesys for any such examination. Without
+prejudice to the foregoing, if shortfall in payment to Genesys is so disclosed, User
+shall pay Genesys all amounts due within thirty (30) days of Genesys notification to
+User of such shortfall.
+
+4.  Restrictions.
+
+(a) User shall not directly or indirectly, without the prior written consent of
+Genesys:
+  i.  copy all or any portion of the Developer Materials, except for one (1) copy
+  of the Developer Materials for normal backup and archival;
+  ii.  decompile, disassemble or otherwise reverse engineer the Developer Materials
+  or any portion thereof, or determine or attempt to determine any source code,
+  algorithms, methods, interfaces, data structures or techniques embodied in or
+  used by the Developer Materials or any portion thereof (except to the extent,
+  if at all, expressly permitted by applicable law, notwithstanding a contractual
+  obligation to the contrary);
+  iii.  create any Derivative Works;
+  iv.  distribute, disclose, market, sell, rent, lease, time-share, assign,
+  sublicense, pledge, encumber or otherwise transfer or make available the Developer
+  Materials or Developed Works, or rights granted under this Agreement, as applicable,
+  in whole or in part, to any third party;
+  v.  remove or alter any copyright, trademark, trade name, confidentiality or other
+  proprietary notices, legends, symbols or labels appearing on or in copies of the
+  Developer Materials;
+  vi.  perform, or release the results of, benchmark tests or other comparisons of
+  the Developer Materials with other programs; 
+  vii.  transfer the Developer Materials, other than the SDKs, to any CPU other than
+  the Designated CPU or to any site other than the Designated Site
+  viii.  permit the Developer Materials to be used in connection with a service
+  bureau or otherwise used for processing the data of any third party;
+  ix.  incorporate the Developer Materials or any portion thereof into any other
+  program or product; and
+  x.  use the Developer Materials other than in accordance with the provisions of
+  this Agreement. User shall not create Developed Works, and shall not permit the
+  Developed Works to be used or distributed in a manner that subjects or may subject
+  Genesys Proprietary Information, in whole or in part, to all or part of license
+  provisions which seek to require any Genesys Proprietary Information to be licensed
+  to or otherwise shared with any third party under provisions that require such
+  Genesys Proprietary Information to (A) be disclosed or distributed in source code
+  form; (B) be licensed for the purpose of making Derivative Works; or (C) be
+  redistributable at no charge.
+
+(b) Without limiting Section 4. (a) above, User's development activities during the
+Term of this Agreement shall be subject to all of the following additional conditions:
+  i.  User shall use the Developer Materials to create Developed Works, which,
+  running in conjunction with Genesys Products and applicable Run-Time licenses
+  (collectively, "Integrated Solution"), shall conform to design and implementation
+  guidelines and restrictions set forth in the Documentation and the Genesys Products
+  documentation. Notwithstanding the generality of the foregoing, the Integrated
+  Solution shall:
+    (A) Use only Genesys supported SDKs and Genesys Products to access Genesys data;
+    (B) Not modify data/database schema in Genesys database tables directly using SQL;
+    (C) Not introduce database triggers or stored procedures that operate on Genesys
+    database tables;
+    (D) Not compromise data or application security, access or visibility restrictions
+    enforced by either Genesys Products or Developed Works;
+    (E) Not impede the accurate or effective operation of Genesys Products;
+    (F) Not compromise data integrity of Genesys Products (e.g., if both Genesys
+    Products and Developed Works can modify the same data, then modifications by
+    Developed Works must not circumvent data integrity rules of Genesys Products); and
+    (G) Not cause duplicate copies of data to exist in both Integrated Solution and
+    Genesys databases.
+    (H) Not directly or through any third party, distribute, productize, or utilize in
+    anyway, other than for Internal Use, the Developer Materials, the Developed Works,
+    and/or any User created integration or connection, to enable Genesys Products to
+    access, communicate or interoperate with products of competitors of Genesys in
+    the contact center industry, which products have substantially similar or the same
+    functionality as Genesys Products as documented in the applicable documentation,
+    and vice versa.
+  ii.  User shall not use the Developer Materials to create a User Product which has
+  substantially similar or the same functionality as Genesys Products as documented
+  in the applicable documentation;
+  iii.  User shall be solely responsible for updating the Developed Works as required
+  to access, communicate or interoperate with the latest release of the Developer
+  Materials and/or Genesys Products; and
+  iv.  User shall provide to Genesys a description of Developed Work, enabling
+  Genesys to reasonably confirm that the proposed Developed Work conforms to the
+  terms of this Agreement.
+
+5.  Proprietary Rights.
+
+(a) Notwithstanding anything to the contrary in this Agreement, Genesys retains all
+rights, title and interest, including without limitation, all patent rights,
+copyrights, trademarks and trade secrets, in and to the Genesys Proprietary
+Information, including without limitation, any copy or portion thereof. As between
+User and Genesys, User shall retain all rights, title and interest in and to User
+Products and Developed Works. User shall have only those rights in or to Genesys
+Proprietary Information expressly granted to User pursuant to this Agreement.
+
+(b) User acknowledges and agrees that Genesys and other licensees of Developer
+Materials may use, develop and/or sell the same or similar technology as User's
+Developed Works or User Products; provided that such technology is developed
+without the use of or reference to User's Developed Works or User Products.
+
+(c) User agrees to take any action reasonably requested by Genesys to evidence,
+maintain, enforce or defend the foregoing rights, and agrees not to take any action
+to jeopardize, limit or interfere in any manner with Genesys' ownership of, and
+rights with respect to, the Developer Materials, Genesys Products or any Derivative
+Work.
+
+(d) User hereby assigns (and shall cause its personnel, its contractor(s),
+Subcontractors, or agent(s) as the case may be to assign), to Genesys all rights
+(including without limitation, moral rights), title and interest in and to:
+  i.  any modifications or improvements to the Developer Materials or Derivative
+  Works that are made by or for User or its employees, agents or contractors
+  (notwithstanding any prohibitions to the contrary within this Agreement);
+  ii.  any invention or creation made by or for User or its employees, agents or
+  contractors that is based upon or uses all or any portion of the Developer
+  Materials or Genesys Proprietary Information (as defined below); and
+  iii.  any report, feedback or other information concerning the Developer
+  Materials provided by User to Genesys hereunder
+
+(e) User shall have only those rights in or to the Developer Materials and any
+Derivative Work expressly granted to User pursuant to this Agreement. Genesys shall
+reimburse User for all reasonably incurred direct costs of such transfer.
+
+6.  Delivery and Acceptance.
+
+Genesys shall deliver the Developer Materials and Documentation to User after
+execution of this Agreement. In the case of physical shipment, delivery shall be
+deemed to occur at the Genesys shipping point. In the case of electronic delivery,
+delivery shall occur when Developer Materials have been uploaded onto the FTP site
+and User is provided all necessary passwords for download from such site. Acceptance
+shall be deemed to occur upon delivery of the Developer Materials.
+
+7.  Payment.
+
+User shall pay the Developer Materials license fees ("Developer Materials License
+Fees") within thirty (30) days after date of invoice, which invoice shall be issued
+on the delivery date of the Developer Materials.  The Developer Materials License
+Fees set forth in this Agreement shall be subject to change in accordance with
+Genesys' applicable standard price list as of the date of the Order. User shall pay
+the Annual Maintenance Fee ("AMF") for Developer Materials Maintenance and Support
+on or before the delivery date of Developer Materials and on or before the Renewal
+Date, as applicable. Genesys may increase the AMF effective on each Renewal Date,
+by notifying User at least forty-five (45) days prior to such Renewal Date.
+
+8.  Maintenance and Support.
+
+(a) "Maintenance and Support" means the maintenance and support service purchased by
+User that provides
+  i.  Maintenance, Minor and Major Releases, if any, and appropriate Documentation
+  to the Developer Materials; 
+  ii.  telephone or email assistance with respect to the Developer Materials between
+  8:00 AM and 8:00 PM Eastern Standard Time, Monday through Friday and
+  iii.  User access to Genesys support personnel via a message pager twenty-four (24)
+  hours per day, seven (7) days per week, for "Critical" issues.  Telephone
+  assistance shall comprise: 
+    (A) clarification of functions and features of the Licensed Software, 
+    (B) clarification of Documentation pertaining to the Licensed Software and 
+    (C) error verification, analysis and resolution.  Genesys shall only provide
+    Maintenance and Support for the Current Version of the Developer Materials. All
+    other Genesys standard Maintenance and Support terms are herewith incorporated by
+    reference.
+
+(b) Genesys shall not provide Maintenance and Support relating to problems arising
+out of: 
+  i.  changes to the operating system or environment which adversely affects the
+  Developer Materials; 
+  ii.  any alterations of or additions to the Developer Materials performed by
+  parties other than Genesys or at the direction of Genesys;
+  iii.  use of the Developer Materials in a manner for which it was not designed;
+  iv.  accident, negligence or misuse of the Licensed Software;
+  v.  operation outside of the environment or equipment for which the Developer
+  Materials was designed and licensed;
+  vi.  interconnection of the Developer Materials with other software not supported
+  by Genesys;
+  vii.  modification of the database structure designed to be used by the Developer
+  Materials or
+  viii.  introduction or extraction of data into, or from any Developer Materials
+  database, by any means other than the use of Genesys application programming
+  interfaces (or documented application program interfaces published in Developer
+  Materials.
+
+(c) Provided:
+  i.  User's "Designated Contacts" (2 User-appointed User employees to initiate and
+  manage Maintenance and Support inquiries with Genesys) shall have completed the
+  applicable Genesys Developer Training, at User's Cost; and,
+  ii.  payment of the AMF Genesys shall provide to User Maintenance and Support for
+  Developer Materials, in accordance with this Agreement.
+
+(d) The AMF shall be as set forth on Genesys' applicable standard price list as of
+the date of the Order. For purposes of clarification, User acknowledges and agrees
+that Maintenance and Support is for Developer Materials only; Genesys shall not
+provide Maintenance and Support for the development of Developed Works, or the
+Developed Works themselves. General development support can be sought through the
+Genesys DevZone portal located at the following URL: [http://www.genesyslab.com/developer],
+or pursuant to an "SOW" (as below defined) and Services Order. Genesys shall be
+entitled to charge reasonable additional fees for all support services provided
+beyond the scope of Genesys' support obligations set forth in this
+Section 8. ("Maintenance and Support").
+
+(e) Maintenance and Support shall be provided to User for a period of twelve (12)
+months commencing on the Effective Date ("Initial Maintenance Term") and for
+consecutive twelve (12) month terms commencing on each anniversary of the Effective
+Date ("Renewal Date") (each such term being a "Renewal Maintenance Term"), as
+agreed upon by the parties (collectively, "Maintenance Period"). Maintenance and
+Support provisions of this Agreement shall expire at the end of the Maintenance
+Period unless renewed by the parties by issuance and acceptance of an Order. Genesys
+shall notify User of an impending expiration at least forty-five (45) days prior to
+the last date of the Initial Maintenance Term or a Renewal Maintenance Term
+("Expiration Date") and User shall, at least thirty (30) days prior to the
+then-current Expiration Date, either notify Genesys of its intent not to renew or
+issue a Maintenance and Support renewal Order.
+
+(f) If Maintenance and Support is terminated or expires, the parties may agree in
+writing to subsequently renew Maintenance and Support. In such case, as a prerequisite
+to renewal, User shall pay all Maintenance and Support fees that would have been due
+had Maintenance and Support not terminated or expired.
+
+9.  Professional Services.
+
+(a) Genesys shall provide the professional services described in a Statement of Work
+("SOW") executed by the parties (collectively, the "Services").
+
+(b) Genesys shall control the manner by which the Services are performed and may
+subcontract or assign any or all of its obligations and rights under this Agreement.
+Any such subcontract or assignment of the Services is subject to User's consent,
+which consent shall not be unreasonably withheld or delayed.
+
+(c) All Derivative Works, source and object code, specification, designs, processes,
+techniques, concepts, improvements, discoveries and inventions made or developed in
+connection with the Services (collectively, "Creations") shall be the sole and
+exclusive property of Genesys.
+
+(d) User is hereby granted a license to use the Creations solely in connection with,
+and under the same provisions as, its use of the Licensed Software.  Support of
+Creations is provided on a time and materials basis under the provisions of this
+Section 9. ("Professional Services"); Creations are not supported under Section 8.
+("Maintenance and Support") or under any other Maintenance and Support services
+provided for Genesys Products.
+
+(e) User shall make available in a timely manner at no charge to Genesys all
+technical data, computer facilities, programs, files, documentation, test data,
+sample output, office space, services, equipment or other resources reasonably
+required by Genesys to perform the Services. User assumes the risk of any problems
+resulting from the content, accuracy, completeness and consistency of any data,
+materials and information supplied by User.
+
+(f) Unless otherwise stated in an applicable Statement of Work, User shall pay
+Genesys on a time and materials basis for the Services in accordance with the fees
+set forth in the Statement of Work. Genesys shall invoice User on a monthly basis as
+Services are performed. User shall reimburse all reasonable travel and other
+expenses incurred by Genesys in performance of the Services.
+
+(g) Genesys cannot guarantee staffing levels unless User gives a minimum two (2)
+weeks prior Notice of a project start date. In the event that User provides a
+project start date, and such start date is delayed by more than five (5) days,
+Genesys cannot guaranty staffing without an additional two (2) weeks prior Notice
+of the new project start date. In the event of unscheduled delays during the course
+of a project not attributable to Genesys, Genesys cannot guarantee staffing or that
+a specific person shall continue to be assigned to such project.
+
+10.  Warranty.
+
+(a) User shall be solely responsible for all use, installation, function,
+performance, operation, maintenance and support of the Developed Works.
+GENESYS AND ITS SUPPLIERS MAKE NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY
+WITH RESPECT TO ANY DEVELOPED WORKS, AND GENESYS EXPRESSLY DISCLAIMS ANY IMPLIED
+WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+(b) REGARDLESS OF THE FORM OR CAUSE OF ACTION, WHETHER IN CONTRACT OR IN TORT, OR
+THE NUMBER OF CLAIMS, AND WHETHER IN RESPECT OF A BREACH OR DEFAULT IN TH NATURE
+OF A BREACH OF CONDITION, OR FUNDAMENTAL TERM OR A FUNDAMENTAL BREACH:
+  i.  NEITHER GENESYS, NOR ANY OF GENESYS'S SUPPLIERS OR LICENSORS SHALL HAVE ANY
+  LIABILITY TO USER AND/OR ANY OF USER'S DELAGATES, OR THIRD PARTIES CLAIMING
+  THROUGH USER, FOR ANY ECONOMIC, CONSEQUENTIAL, INDIRECT, INCIDENTAL, OR SPECIAL
+  DAMAGES (INCLUDINGN BUT NOT LIMITED TO, ANY LOST PROFITS) ARISING OUT OF THIS
+  AGREEMENT, AND 
+  ii.  GENESYS'S ENTIRE LIABILITY FOR ANY AND ALL CLAIMS ARISING OUT OF OR IN
+  CONNECTION WITH THIS AGREENENT SHALL NOT EXCEED THE PARTICULAR: LICENCE FEES,
+  MAINTENANCE AND SUPPORT FEES, AND/OR SERVICE FEES UNDER AN APPLICABLE ORDER PLACED
+  TO GENESYS IN RESPECT OF WHICH SUCH CLAIM HAS ARISEN.
+
+(c) No action arising out of this agreement may be brought by User more than one
+(1) year after the cause of action or claim to which it relates first becomes known
+(or ought to have become known) to User.
+
+11.  Indemnification.
+
+User shall defend or, at its sole discretion, settle, any claim, action or proceeding
+brought against Genesys based upon a substantive allegation relating to User's
+unauthorized possession, use, copying or distribution of the Developer Materials
+or any part thereof; the development, performance or use of the Developed Works;
+or any representation made by User that Genesys has endorsed, warranted or supports
+the Developed Works, and to indemnify Genesys against, and hold Genesys harmless from,
+any and all costs and damages finally awarded against Genesys that are directly
+attributable to such claim, action or proceeding.
+
+12.  Proprietary Information.
+
+(a) "Proprietary Information" means all information and material disclosed by the
+disclosing party ("Discloser") to the receiving party ("Recipient") (whether in
+writing, or in oral, graphic, electronic or any other form) that is marked as (or
+provided under circumstances reasonably indicating it is) confidential or proprietary,
+or if disclosed orally or in other intangible form or in any form that is not so
+marked, that is identified as confidential at the time of such disclosure.
+Proprietary Information, includes without limitation, the Genesys Products (including,
+without limitation, Developer Materials, Derivative Works, Run-Time License related
+information (including through a Genesys online portal), the provisions of this
+Agreement and Genesys training, including the Developer Training, and as to all
+training the training materials), User Products, Developer Materials, the provisions
+of this Agreement, and any trade secrets, know-how, inventions (whether or not
+patentable), techniques, processes, programs, ideas, algorithms, formulas, schematics,
+testing procedures, software design and architecture, computer code, internal
+documentation, design and function specifications, product requirements, problem
+reports, performance information, software documents, and other technical, business,
+product, marketing and financial information, plans and data. Each party acknowledges
+and agrees that the other party's Products embodies substantial creative efforts and
+constitutes and contains valuable trade secrets and confidential information of that
+party.
+
+(b) Recipient shall hold all Proprietary Information in strict confidence and shall
+not disclose any Proprietary Information to any third party, other than to its
+employees or agents who need to know such information to perform Recipient's
+obligations or exercise Recipient's rights hereunder and who are bound by restrictions
+regarding disclosure and use of such information comparable to and no less restrictive
+than those set forth herein. Recipient shall not use any Proprietary Information for
+the benefit of itself or any third party or for any purpose other than the performance
+of Recipient's obligations or exercise of Recipient's rights hereunder. Recipient shall
+take the same degree of care that it uses to protect its own confidential and
+proprietary information and materials of similar nature and importance (but in no event
+less than reasonable care) to protect the confidentiality and avoid the unauthorized
+use, disclosure, publication or dissemination of the Proprietary Information. Recipient
+shall not make any copies of the Proprietary Information except as necessary to perform
+its obligations or exercise its rights hereunder, unless otherwise approved in writing
+in advance by Discloser.
+
+(c) The foregoing restrictions on disclosure and use shall not apply with respect to
+any Proprietary Information which the Recipient reasonably demonstrates: 
+  i.  was or becomes publicly known through no act or omission of Recipient; 
+  ii.  was known by Recipient before receipt from Discloser or 
+  iii.  becomes known to Recipient without confidential or proprietary restriction
+  from a source other than Discloser that does not owe a duty of confidentiality to
+  Discloser with respect to such Proprietary Information. In addition to the foregoing,
+  Recipient may disclose Proprietary Information to the extent (A) approved by
+  Discloser or (B) Recipient is legally compelled to disclose such Proprietary
+  Information; provided that Recipient shall (1) promptly notify Discloser of the
+  notice compelling disclosure, (2) reasonably cooperate with Discloser in protecting
+  against any such disclosure and/or obtaining a protective order narrowing the scope
+  of such disclosure and/or use of the Proprietary Information, (3) reproduce any
+  confidentiality or proprietary markings appearing on the Proprietary Information in
+  the copies of such Proprietary Information, (4) only furnish the portion of the
+  Proprietary Information that it is required to disclose and (5) use reasonable
+  efforts to obtain reliable assurances that the disclosed Proprietary Information
+  shall be treated confidentially. Notwithstanding any such compelled disclosure by
+  the Recipient, such compelled disclosure shall not otherwise affect the Recipient's
+  obligations hereunder with respect to Proprietary Information so disclosed.
+
+(d) Recipient acknowledges and agrees that due to the unique nature of Discloser's
+Proprietary Information, there may be no adequate remedy at law to compensate
+Discloser for the breach of any provision regarding License (including grant,
+requirements and restrictions), Proprietary Information or Intellectual Property;
+that any such breach may result in irreparable harm to Discloser that would be
+difficult to measure and that upon any such breach or threat thereof, Discloser
+shall be entitled to seek injunctive and other appropriate equitable relief
+(without the necessity of proving actual damages), in addition to whatever remedies
+it may have at law.
+
+13.  Term and Termination.
+
+(a) This Agreement shall commence upon the Effective Date and continue in full force
+and effect for one (1) year unless earlier terminated as provided herein
+("Initial Term"). Thereafter, this Agreement shall automatically be renewed for
+successive one (1) year terms commencing on each anniversary of the Effective Date
+(each such term being a "Renewal Term;" the Initial Term and Renewal Term shall
+together be referred to as the "Term"), unless earlier terminated as provided herein.
+
+(b) Either party may terminate this Agreement by Notice (and in the case of Genesys,
+may revoke the license grant) if the other party fails to pay any amount due under
+this Agreement within thirty (30) days after Notice of such non-payment or commits a
+material non-monetary breach of this Agreement and such breach, if capable of being
+cured, is not cured within thirty (30) days of a Notice of termination.
+
+(c) This Agreement may be terminated immediately upon Notice by either party if
+the other party:
+  i.  violates Sections 3. (b) ("Development Rights") and 3. (d) ("Internal Use"),
+  4. ("Restrictions"), 5. ("Proprietary Rights") or 12. ("Proprietary Information");
+  ii.  terminates or suspends its business;
+  iii.  becomes insolvent, admits in writing its inability to pay its debts as they
+  mature, makes an assignment for the benefit of creditors or becomes subject to
+  direct control of a trustee, receiver or similar authority; or,
+  iv.  becomes subject to any bankruptcy or insolvency proceedings or orders. In
+  addition to any other appropriate equitable relief (which shall be available
+  without the necessity of proving actual damages) or remedies it may have at law,
+  if Genesys has terminated this Agreement pursuant to this Section 13. (c), it
+  shall be entitled to revoke the license granted.
+
+(d) Either party may terminate this Agreement for any reason at any time after the
+Initial Term upon providing thirty (30) days Notice to the other party.
+
+(e) Upon any termination or expiration of this Agreement, all licenses granted
+hereunder shall terminate and User shall promptly (not to exceed ten (10) days)
+deliver to Genesys or destroy all copies of the Developer Materials and all
+Genesys Proprietary Information, including without limitation, all extracts of
+the foregoing and all documents, notes and other materials relating to User's
+testing and evaluation of the Developer Materials, and shall furnish to Genesys
+within the same time period an affidavit signed by an officer of User certifying
+that such delivery or destruction has been fully effected. Payments made by User to
+Genesys hereunder, including AMF, are non-refundable.
+
+(f) Termination of this Agreement by either party shall not act as a waiver of any
+breach of this Agreement and shall not act as a release of either party from any
+liability for breach of such party's obligations under this Agreement. Neither
+party shall be liable to the other for damages of any kind solely as a result of
+terminating this Agreement in accordance with its terms, and termination of this
+Agreement by a party shall be without prejudice to any other right or remedy of
+such party under this Agreement or applicable law.
+
+14.  General Terms.
+
+(a) This Agreement may not be assigned, in whole or part, whether voluntarily, by
+operation of law or otherwise, by User. Subject to the preceding sentence, the
+rights and liabilities of the parties hereto shall bind and inure to the benefit
+of their respective assignees and successors, and is binding on the parties and
+their successors and assigns. Any attempted assignment shall be null and void.
+For the avoidance of doubt, any change in the ownership or effective management
+or control of the User will be deemed to be an assignment for the purposes hereunder.
+
+(b) Nothing contained in this Master Agreement shall be deemed or construed as
+creating a joint venture, partnership, agency, employment or fiduciary relationship
+between the parties. Neither party has any authority of any kind to bind the other
+party in any respect whatsoever, and the relationship of the parties is, and at all
+times shall continue to be, that of independent contractors.
+
+(c) This Agreement shall be governed by and construed in accordance with the laws
+of the State of California, without reference to its conflicts of law provisions,
+and where applicable, with the federal law of the United States.  Any dispute
+arising out of or relating to this Agreement shall be subject to the exclusive
+jurisdiction of the California state courts in and for San Mateo County, California
+(or, if there is federal jurisdiction, the United States District Court for the
+Northern District of California), and the parties irrevocably agree to submit to
+the personal and exclusive jurisdiction of these courts and that venue therein is
+proper and convenient. Any judgment or order by any court having proper jurisdiction
+against a party may be enforced in any court having jurisdiction over such party or
+its assets. The United Nations Convention on Contracts for the International Sale of
+Goods shall not apply in any respect to this Master Agreement or the parties.
+
+(d) The parties acknowledge and agree that any products, licensed materials and
+information provided under this Agreement, and any use or transfer thereof, are
+subject to United States and Canadian export control laws and regulations, and each
+party shall comply with all United States and Canadian export control laws and
+regulations. In addition to the foregoing, each party shall perform all actions
+reasonably required by the other party in order to enable such other party to comply
+with United States and Canadian export control laws and regulations.  Notwithstanding
+the foregoing and for the avoidance of doubt, each party shall be solely responsible
+for obtaining on its own behalf any appropriate licenses or other applicable
+documentation required under United States or Canadian export control laws and
+regulations.
+
+(e) User and its employees and agents shall, and each shall cause its contractors,
+consultants and subcontractors (all "User Personnel") to comply at their own expense
+with all applicable local, national, regional and international laws, ordinances,
+regulations and codes, standards, directives and international conventions and
+agreements, to the extent that any of the foregoing have the force of law by being
+directly enforceable by a governmental authority, a court or other proper tribunal,
+(collectively "Laws"), including, but not limited to, the US Foreign Corrupt
+Practices Act ("FCPA") or similar anti-corruption and/or anti-bribery laws in other
+countries, the UN Universal Declaration of Human Rights, child labor laws, data
+protection and privacy laws, criminal reporting laws or any other similar laws.
+
+(f) User acknowledges and agrees that User has been made fully acquainted with the
+Genesys Code of Conduct (which may be updated from time to
+time and available at: http://www.genesyslab.com/docs/?id=21547) and agrees to apply the
+principles set forth therein with respect to performance of this Agreement and all
+Purchase Orders and in particular with reference to non-discrimination of employees,
+combating bribery of domestic and foreign public officials, protection of
+international human rights and environmental responsibility, all as provided in the
+Compliance With Laws clause above. User recognizes that violation of this principle
+and any law will be a material breach of this Agreement.
+
+(g) If User (or successor or permitted assignee) is an agency or instrumentality of
+the United States Government, the Developer Materials are "commercial computer
+software" and "commercial computer software documentation," and, pursuant to FAR
+12.212 or DFARS 227.7202 and their successors, as applicable, use, reproduction and
+disclosure of the Genesys Products is governed by the provisions of this Agreement.
+
+(h) Except for payment obligations, neither party shall be liable for the failure to
+perform its obligations under this Agreement due to events beyond such party's
+reasonable control including, but not limited to, strikes, riots, civil disorder,
+wars (declared or undeclared), terrorism, fire, perils of sea or air, flood, drought,
+explosion, sabotage, accident, embargo, acts of God, acts of Federal, State or local
+government, or (subject to Section 12. ("Proprietary Information") acts in compliance
+with any applicable law, regulation or order (whether valid or invalid) of any court
+or governmental body. Time of performance of either party's obligations hereunder
+shall be extended by the time period reasonably necessary to overcome the effects of
+such occurrences, provided, however, that if such circumstances continue beyond
+thirty (30) days, the party awaiting performance may cancel this Agreement or the
+Order affected.
+
+(i) Any notice, request, demand or other communication required or permitted
+hereunder shall be in writing, shall reference this Agreement and shall be deemed
+to be properly given:
+  i.  when delivered personally;
+  ii.  when sent by facsimile, with written confirmation of receipt;
+  iii.  seven (7) days after having been sent by registered or certified mail,
+  return receipt requested, postage prepaid or
+  iv.  two (2) business days after deposit with a private industry express courier,
+  with written confirmation of receipt ("Notices").
+  (j) All Notices shall be sent to the respective address (with a copy to the
+  Legal Department) set forth (or to such other address as may be designated by a
+  party by giving Notice to the other party pursuant to.
+  (k) The waiver by either party of a breach of or a default under any provision
+  of this Agreement shall be in writing and shall not be construed as a waiver of
+  any subsequent breach or default under this Agreement, nor shall any delay or
+  omission on the part of either party to exercise or avail itself of any right
+  or remedy that it has or may have hereunder operate as a waiver of any right or
+  remedy.
+
+(l) If the application of any provision of this Agreement to any particular facts
+or circumstances shall be held to be invalid or unenforceable by a court
+of competent jurisdiction, then:
+  i.  the validity and enforceability of such provision as applied to any other
+  particular facts or circumstances and the validity of other provisions of this
+  Agreement shall not in any way be affected or impaired thereby; and
+  ii.  such provision shall be enforced to the maximum extent possible so as to
+  effect the intent of the parties and reformed without further action by the
+  parties to the extent necessary to make such provision valid and enforceable.

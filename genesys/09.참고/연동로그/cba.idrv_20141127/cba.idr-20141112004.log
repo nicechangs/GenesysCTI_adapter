@@ -1,0 +1,38 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.idr pid(31471) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+10:00:18.282505[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+10:00:18.282514[44m|INF|[0mIVRDriver Initialize success.
+10:00:18.282518[44m|INF|[0mOwnerName     : CBA.ISVR
+10:00:18.282523[44m|INF|[0mOwnerId       : 1001
+10:00:18.282527[44m|INF|[0mSvcAppName    : IVR5
+10:00:18.282532[44m|INF|[0mSvcDriverName : IVR1
+10:00:18.282536[44m|INF|[0mRemoteIp      : 127.0.0.1
+10:00:18.282540[44m|INF|[0mRemotePort    : 35001
+10:00:18.282552[44m|INF|[0mLogPath       : ../log/cba.idrv/
+10:00:18.282561[44m|INF|[0mLogLinkPath   : ../log/
+10:00:18.282568[44m|INF|[0mLogLevel      : 3
+10:00:18.282572[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+10:00:18.282580[44m|INF|[0m
+
+10:00:18.282766[44m|INF|[0mConnection success. remote_ip:127.0.0.1, remote_port:35001
+10:00:18.283323[44m|INF|[0mReqId:100000001|Command:LoginReq|Version:4.0|ClientName:IVR1|ReportStatus:true|ServerMonitor:set
+10:00:18.283354[33m|LV2|[0mReqId:100000001|Command:LoginReq|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginReq Version="4.0" ClientName="IVR1" ReportStatus="true" ServerMonitor="set"/></GctiMsg>
+
+10:00:18.283410[34m|LV1|[0mSEND   |127.0.0.1:35001|208|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginReq Version="4.0" ClientName="IVR1" ReportStatus="true" ServerMonitor="set"/></GctiMsg>
+
+10:00:18.284421[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginResp IServerVersion="8.5" Result="Success" ConfigOptions="" Status="OK"/></GctiMsg>
+
+10:00:18.284677[44m|INF|[0mReqId:100000001|Command:LoginResp|IServerVersion:8.5|Result:Success|ConfigOptions:|Status:OK
+10:00:18.284704[33m|LV2|[0mReqId:100000001|Command:LoginResp|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginResp IServerVersion="8.5" Result="Success" ConfigOptions="" Status="OK"/></GctiMsg>
+

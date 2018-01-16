@@ -1,0 +1,124 @@
+<scenariodef id="ABROT.MSF" iparam="" ioparam="" >
+	<play expr="'m.16'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (abort) -->
+	<if cond="1 == 0" >
+		<goto next="abort_END" />
+	</if>
+	<assign name="abort_cnt" expr="0" cond="1" />
+	<label id="abort_START" />
+	<play expr="'m160'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="abort" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="abort_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="abort.digits == '1'" >
+			<goto next="abort_END" />
+		<elseif cond="abort.digits == '2'" />
+			<goto next="abort_END" />
+		<elseif cond="abort.digits == '3'" />
+			<goto next="abort_END" />
+		<elseif cond="abort.digits == '4'" />
+			<goto next="abort_END" />
+		<else />
+			<if cond="abort_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="abort_DtmfValue == _SLEE_FAILED_" />
+		<if cond="abort_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="abort_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="abort_cnt" expr="abort_cnt+1" cond="1" />
+	<if cond="abort_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="abort.digits == '' && session.command.term_digit == ''" >
+			<goto next="abort_START" />
+		<else />
+			<goto next="abort_START" />
+		</if>
+	</if>
+	<label id="abort_END" />
+	<!-- GetDigit_End (abort) -->
+	<!-- select : abort.digits -->
+	<if cond = "abort.digits == '1'" >
+		<play expr="'m.161'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.16'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<abort lineno="-1" Media="1" checkresult="1" />
+		<goto next="{085F4AAB-F8CA-49EB-BB0E-647DC957186B}" />
+		<label id="{085F4AAB-F8CA-49EB-BB0E-647DC957186B}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "abort.digits == '2'" />
+		<play expr="'m.162'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.16'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{085F4AAB-F8CA-49EB-BB0E-647DC957186B}" />
+	<elseif cond = "abort.digits == '3'" />
+		<play expr="'m.163'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (abortchan) -->
+		<if cond="1 == 0" >
+			<goto next="abortchan_END" />
+		</if>
+		<assign name="abortchan_cnt" expr="0" cond="1" />
+		<label id="abortchan_START" />
+		<play expr="'m.1630'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="abortchan" length="5" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+		<assign name="abortchan_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="abortchan_END" />
+		<elseif cond="abortchan_DtmfValue == _SLEE_FAILED_" />
+			<if cond="abortchan_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="abortchan_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="abortchan_END" />
+			<else />
+				<if cond="abortchan_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="abortchan_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="abortchan_cnt" expr="abortchan_cnt+1" cond="1" />
+		<if cond="abortchan_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="abortchan.digits == '' && session.command.term_digit == ''" >
+				<goto next="abortchan_START" />
+			<else />
+				<goto next="abortchan_START" />
+			</if>
+		</if>
+		<label id="abortchan_END" />
+		<!-- GetDigit_End (abortchan) -->
+		<play expr="'vp.1621'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="abortchan.digits" cleardigit="1" type="Number" wait="1" async="0" cond="1" />
+		<play expr="'vp.1622'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<abort lineno="abortchan.digits" Media="1" checkresult="1" />
+		<goto next="{085F4AAB-F8CA-49EB-BB0E-647DC957186B}" />
+	<elseif cond = "abort.digits == '4'" />
+		<play expr="'m.164'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<abort lineno="-1" Media="1" checkresult="1" />
+		<play expr="'vp.163'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{085F4AAB-F8CA-49EB-BB0E-647DC957186B}" />
+	<else />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	</if>	
+	<!-- select : abort.digits -->
+</scenariodef>

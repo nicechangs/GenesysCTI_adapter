@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<!DOCTYPE sxml SYSTEM "scxml.dtd">
+<sxml version="1.1" name="IR_블록시험시나리오" ip="100.100.105.41" date="20100208113449" studioversion="3.1.0.0" description="IR v3 블록시험 시나리오" >
+#include "Global.sxml"
+
+
+<scenarioblock>
+
+#include "Main.sxml"
+#include "End.sxml"
+#include "ABORT.msxml"
+#include "CTI.msxml"
+#include "DIGIT.msxml"
+#include "DISCONNECT.msxml"
+#include "DISSWITCH.msxml"
+#include "EXCEPTION.sxml"
+#include "GETCHANNEL.msxml"
+#include "PACKET.msxml"
+#include "PLAY.msxml"
+#include "PUSHTONE.msxml"
+#include "RECORD.msxml"
+#include "SCENARIO_FUNC.msxml"
+#include "SCENARIO_FUNC_DYMENU.msxml"
+#include "SVC_CFGCHG.msxml"
+#include "SVCCHG.msxml"
+#include "SWITCH.msxml"
+#include "TRANSFER.msxml"
+#include "TTS.msxml"
+#include "USERFUNCTION.msxml"
+
+</scenarioblock>
+</sxml>

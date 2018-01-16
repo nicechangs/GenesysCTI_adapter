@@ -1,0 +1,218 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(24102) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+14:07:22.966507[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+14:07:22.966516[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+14:07:22.966522[44m|INF|[0m[PROCESS]
+14:07:22.966527[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+14:07:22.966532[44m|INF|[0mPROCESS_ID           : 1001
+14:07:22.966537[44m|INF|[0m
+
+14:07:22.966541[44m|INF|[0m[SYSTEM]
+14:07:22.966546[44m|INF|[0mSYSTEM_TYPE          : TE
+14:07:22.966551[44m|INF|[0mSYSTEM_ID            : 1000001
+14:07:22.966555[44m|INF|[0m
+
+14:07:22.966560[44m|INF|[0m[CBA_INFO]
+14:07:22.966565[44m|INF|[0mCB_LISTEN_IP         : 
+14:07:22.966570[44m|INF|[0mCB_LISTEN_PORT       : 10002
+14:07:22.966575[44m|INF|[0mLOG_LEVEL            : 3
+14:07:22.966580[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+14:07:22.966585[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+14:07:22.966590[44m|INF|[0mLOG_LINK_PATH        : ../log/
+14:07:22.966594[44m|INF|[0m
+
+14:07:22.966599[44m|INF|[0m[IVR_DRIVER]
+14:07:22.966604[44m|INF|[0mREMOTE_IP            : 127.0.0.1
+14:07:22.966609[44m|INF|[0mREMOTE_PORT          : 35001
+14:07:22.966614[44m|INF|[0mSVC_DRIVER_NAME      : IVR1
+14:07:22.966619[44m|INF|[0mSVC_APP_NAME         : IVR5
+14:07:22.966624[44m|INF|[0mTE_SYSTEM_ID         : 1
+14:07:22.966628[44m|INF|[0mSTART_CHANNEL        : 0
+14:07:22.966633[44m|INF|[0mSTART_PORT           : 1000
+14:07:22.966638[44m|INF|[0mDNIS_COUNT           : 120
+14:07:22.966643[44m|INF|[0mLOG_LEVEL            : 3
+14:07:22.966648[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+14:07:22.966653[44m|INF|[0mLOG_LINK_PATH        : ../log/
+14:07:22.966657[44m|INF|[0m
+
+14:07:22.966662[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+14:07:22.966830[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:00010000, Port:1000, TESystemID:1, ChannelNo:0
+14:07:22.966836[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+14:07:22.966854[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:00010001, Port:1001, TESystemID:1, ChannelNo:1
+14:07:22.966874[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:00010002, Port:1002, TESystemID:1, ChannelNo:2
+14:07:22.966882[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:00010003, Port:1003, TESystemID:1, ChannelNo:3
+14:07:22.966890[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:00010004, Port:1004, TESystemID:1, ChannelNo:4
+14:07:22.966897[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:00010005, Port:1005, TESystemID:1, ChannelNo:5
+14:07:22.966904[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:7, PortKey:00010006, Port:1006, TESystemID:1, ChannelNo:6
+14:07:22.966911[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:8, PortKey:00010007, Port:1007, TESystemID:1, ChannelNo:7
+14:07:22.966918[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:9, PortKey:00010008, Port:1008, TESystemID:1, ChannelNo:8
+14:07:22.966925[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:10, PortKey:00010009, Port:1009, TESystemID:1, ChannelNo:9
+14:07:22.966933[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:11, PortKey:00010010, Port:1010, TESystemID:1, ChannelNo:10
+14:07:22.966940[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:12, PortKey:00010011, Port:1011, TESystemID:1, ChannelNo:11
+14:07:22.966947[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:13, PortKey:00010012, Port:1012, TESystemID:1, ChannelNo:12
+14:07:22.966955[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:14, PortKey:00010013, Port:1013, TESystemID:1, ChannelNo:13
+14:07:22.966962[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:15, PortKey:00010014, Port:1014, TESystemID:1, ChannelNo:14
+14:07:22.966969[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:16, PortKey:00010015, Port:1015, TESystemID:1, ChannelNo:15
+14:07:22.966976[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:17, PortKey:00010016, Port:1016, TESystemID:1, ChannelNo:16
+14:07:22.966989[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:18, PortKey:00010017, Port:1017, TESystemID:1, ChannelNo:17
+14:07:22.966997[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:19, PortKey:00010018, Port:1018, TESystemID:1, ChannelNo:18
+14:07:22.967004[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:20, PortKey:00010019, Port:1019, TESystemID:1, ChannelNo:19
+14:07:22.967011[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:21, PortKey:00010020, Port:1020, TESystemID:1, ChannelNo:20
+14:07:22.967018[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:22, PortKey:00010021, Port:1021, TESystemID:1, ChannelNo:21
+14:07:22.967026[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:23, PortKey:00010022, Port:1022, TESystemID:1, ChannelNo:22
+14:07:22.967033[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:24, PortKey:00010023, Port:1023, TESystemID:1, ChannelNo:23
+14:07:22.967041[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:25, PortKey:00010024, Port:1024, TESystemID:1, ChannelNo:24
+14:07:22.967048[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:26, PortKey:00010025, Port:1025, TESystemID:1, ChannelNo:25
+14:07:22.967055[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:27, PortKey:00010026, Port:1026, TESystemID:1, ChannelNo:26
+14:07:22.967062[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:28, PortKey:00010027, Port:1027, TESystemID:1, ChannelNo:27
+14:07:22.967070[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:29, PortKey:00010028, Port:1028, TESystemID:1, ChannelNo:28
+14:07:22.967077[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:30, PortKey:00010029, Port:1029, TESystemID:1, ChannelNo:29
+14:07:22.967084[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:31, PortKey:00010030, Port:1030, TESystemID:1, ChannelNo:30
+14:07:22.967092[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:32, PortKey:00010031, Port:1031, TESystemID:1, ChannelNo:31
+14:07:22.967099[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:33, PortKey:00010032, Port:1032, TESystemID:1, ChannelNo:32
+14:07:22.967106[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:34, PortKey:00010033, Port:1033, TESystemID:1, ChannelNo:33
+14:07:22.967114[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:35, PortKey:00010034, Port:1034, TESystemID:1, ChannelNo:34
+14:07:22.967121[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:36, PortKey:00010035, Port:1035, TESystemID:1, ChannelNo:35
+14:07:22.967129[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:37, PortKey:00010036, Port:1036, TESystemID:1, ChannelNo:36
+14:07:22.967136[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:38, PortKey:00010037, Port:1037, TESystemID:1, ChannelNo:37
+14:07:22.967143[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:39, PortKey:00010038, Port:1038, TESystemID:1, ChannelNo:38
+14:07:22.967151[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:40, PortKey:00010039, Port:1039, TESystemID:1, ChannelNo:39
+14:07:22.967158[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:41, PortKey:00010040, Port:1040, TESystemID:1, ChannelNo:40
+14:07:22.967165[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:42, PortKey:00010041, Port:1041, TESystemID:1, ChannelNo:41
+14:07:22.967173[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:43, PortKey:00010042, Port:1042, TESystemID:1, ChannelNo:42
+14:07:22.967180[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:44, PortKey:00010043, Port:1043, TESystemID:1, ChannelNo:43
+14:07:22.967187[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:45, PortKey:00010044, Port:1044, TESystemID:1, ChannelNo:44
+14:07:22.967194[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:46, PortKey:00010045, Port:1045, TESystemID:1, ChannelNo:45
+14:07:22.967202[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:47, PortKey:00010046, Port:1046, TESystemID:1, ChannelNo:46
+14:07:22.967209[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:48, PortKey:00010047, Port:1047, TESystemID:1, ChannelNo:47
+14:07:22.967216[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:49, PortKey:00010048, Port:1048, TESystemID:1, ChannelNo:48
+14:07:22.967224[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:50, PortKey:00010049, Port:1049, TESystemID:1, ChannelNo:49
+14:07:22.967235[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:51, PortKey:00010050, Port:1050, TESystemID:1, ChannelNo:50
+14:07:22.967243[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:52, PortKey:00010051, Port:1051, TESystemID:1, ChannelNo:51
+14:07:22.967251[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:53, PortKey:00010052, Port:1052, TESystemID:1, ChannelNo:52
+14:07:22.967258[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:54, PortKey:00010053, Port:1053, TESystemID:1, ChannelNo:53
+14:07:22.967265[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:55, PortKey:00010054, Port:1054, TESystemID:1, ChannelNo:54
+14:07:22.967273[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:56, PortKey:00010055, Port:1055, TESystemID:1, ChannelNo:55
+14:07:22.967280[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:57, PortKey:00010056, Port:1056, TESystemID:1, ChannelNo:56
+14:07:22.967288[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:58, PortKey:00010057, Port:1057, TESystemID:1, ChannelNo:57
+14:07:22.967295[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:59, PortKey:00010058, Port:1058, TESystemID:1, ChannelNo:58
+14:07:22.967302[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:60, PortKey:00010059, Port:1059, TESystemID:1, ChannelNo:59
+14:07:22.967310[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:61, PortKey:00010060, Port:1060, TESystemID:1, ChannelNo:60
+14:07:22.967317[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:62, PortKey:00010061, Port:1061, TESystemID:1, ChannelNo:61
+14:07:22.967325[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:63, PortKey:00010062, Port:1062, TESystemID:1, ChannelNo:62
+14:07:22.967332[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:64, PortKey:00010063, Port:1063, TESystemID:1, ChannelNo:63
+14:07:22.967358[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:65, PortKey:00010064, Port:1064, TESystemID:1, ChannelNo:64
+14:07:22.967373[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:66, PortKey:00010065, Port:1065, TESystemID:1, ChannelNo:65
+14:07:22.967382[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:67, PortKey:00010066, Port:1066, TESystemID:1, ChannelNo:66
+14:07:22.967390[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:68, PortKey:00010067, Port:1067, TESystemID:1, ChannelNo:67
+14:07:22.967402[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:69, PortKey:00010068, Port:1068, TESystemID:1, ChannelNo:68
+14:07:22.967410[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:70, PortKey:00010069, Port:1069, TESystemID:1, ChannelNo:69
+14:07:22.967418[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:71, PortKey:00010070, Port:1070, TESystemID:1, ChannelNo:70
+14:07:22.967425[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:72, PortKey:00010071, Port:1071, TESystemID:1, ChannelNo:71
+14:07:22.967433[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:73, PortKey:00010072, Port:1072, TESystemID:1, ChannelNo:72
+14:07:22.967440[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:74, PortKey:00010073, Port:1073, TESystemID:1, ChannelNo:73
+14:07:22.967448[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:75, PortKey:00010074, Port:1074, TESystemID:1, ChannelNo:74
+14:07:22.967456[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:76, PortKey:00010075, Port:1075, TESystemID:1, ChannelNo:75
+14:07:22.967465[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:77, PortKey:00010076, Port:1076, TESystemID:1, ChannelNo:76
+14:07:22.967479[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:78, PortKey:00010077, Port:1077, TESystemID:1, ChannelNo:77
+14:07:22.967489[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:79, PortKey:00010078, Port:1078, TESystemID:1, ChannelNo:78
+14:07:22.967496[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:80, PortKey:00010079, Port:1079, TESystemID:1, ChannelNo:79
+14:07:22.967504[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:81, PortKey:00010080, Port:1080, TESystemID:1, ChannelNo:80
+14:07:22.967511[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:82, PortKey:00010081, Port:1081, TESystemID:1, ChannelNo:81
+14:07:22.967518[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:83, PortKey:00010082, Port:1082, TESystemID:1, ChannelNo:82
+14:07:22.967530[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:84, PortKey:00010083, Port:1083, TESystemID:1, ChannelNo:83
+14:07:22.967538[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:85, PortKey:00010084, Port:1084, TESystemID:1, ChannelNo:84
+14:07:22.967546[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:86, PortKey:00010085, Port:1085, TESystemID:1, ChannelNo:85
+14:07:22.967553[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:87, PortKey:00010086, Port:1086, TESystemID:1, ChannelNo:86
+14:07:22.967560[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:88, PortKey:00010087, Port:1087, TESystemID:1, ChannelNo:87
+14:07:22.967568[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:89, PortKey:00010088, Port:1088, TESystemID:1, ChannelNo:88
+14:07:22.967576[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:90, PortKey:00010089, Port:1089, TESystemID:1, ChannelNo:89
+14:07:22.967583[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:91, PortKey:00010090, Port:1090, TESystemID:1, ChannelNo:90
+14:07:22.967590[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:92, PortKey:00010091, Port:1091, TESystemID:1, ChannelNo:91
+14:07:22.967598[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:93, PortKey:00010092, Port:1092, TESystemID:1, ChannelNo:92
+14:07:22.967605[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:94, PortKey:00010093, Port:1093, TESystemID:1, ChannelNo:93
+14:07:22.967613[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:95, PortKey:00010094, Port:1094, TESystemID:1, ChannelNo:94
+14:07:22.967620[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:96, PortKey:00010095, Port:1095, TESystemID:1, ChannelNo:95
+14:07:22.967628[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:97, PortKey:00010096, Port:1096, TESystemID:1, ChannelNo:96
+14:07:22.967638[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:98, PortKey:00010097, Port:1097, TESystemID:1, ChannelNo:97
+14:07:22.967646[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:99, PortKey:00010098, Port:1098, TESystemID:1, ChannelNo:98
+14:07:22.967654[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:100, PortKey:00010099, Port:1099, TESystemID:1, ChannelNo:99
+14:07:22.967666[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:101, PortKey:00010100, Port:1100, TESystemID:1, ChannelNo:100
+14:07:22.967674[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:102, PortKey:00010101, Port:1101, TESystemID:1, ChannelNo:101
+14:07:22.967681[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:103, PortKey:00010102, Port:1102, TESystemID:1, ChannelNo:102
+14:07:22.967689[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:104, PortKey:00010103, Port:1103, TESystemID:1, ChannelNo:103
+14:07:22.967698[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:105, PortKey:00010104, Port:1104, TESystemID:1, ChannelNo:104
+14:07:22.967706[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:106, PortKey:00010105, Port:1105, TESystemID:1, ChannelNo:105
+14:07:22.967714[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:107, PortKey:00010106, Port:1106, TESystemID:1, ChannelNo:106
+14:07:22.967723[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:108, PortKey:00010107, Port:1107, TESystemID:1, ChannelNo:107
+14:07:22.967731[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:109, PortKey:00010108, Port:1108, TESystemID:1, ChannelNo:108
+14:07:22.967739[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:110, PortKey:00010109, Port:1109, TESystemID:1, ChannelNo:109
+14:07:22.967749[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:111, PortKey:00010110, Port:1110, TESystemID:1, ChannelNo:110
+14:07:22.967757[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:112, PortKey:00010111, Port:1111, TESystemID:1, ChannelNo:111
+14:07:22.967765[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:113, PortKey:00010112, Port:1112, TESystemID:1, ChannelNo:112
+14:07:22.967774[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:114, PortKey:00010113, Port:1113, TESystemID:1, ChannelNo:113
+14:07:22.967782[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:115, PortKey:00010114, Port:1114, TESystemID:1, ChannelNo:114
+14:07:22.967790[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:116, PortKey:00010115, Port:1115, TESystemID:1, ChannelNo:115
+14:07:22.967803[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:117, PortKey:00010116, Port:1116, TESystemID:1, ChannelNo:116
+14:07:22.967816[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:118, PortKey:00010117, Port:1117, TESystemID:1, ChannelNo:117
+14:07:22.967831[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:119, PortKey:00010118, Port:1118, TESystemID:1, ChannelNo:118
+14:07:22.967846[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:120, PortKey:00010119, Port:1119, TESystemID:1, ChannelNo:119
+14:07:22.968205[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 ilInitiate success !!
+14:07:22.968765[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:100000001, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+14:07:22.969871[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginResp|DriverName:IVR1, Command:LoginResp, CallId:100000001, IServerVersion:8.5, Result:Success, ConfigOptions:, Status:OK
+14:07:23.967011[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:100.100.105.105, port:43643 
+14:07:23.967064[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION7, ip:100.100.105.105, port:43643
+14:07:23.968302[33m|LV2|[0mCB_SESSION7|RECEIVE|000154|0015400010312003120010000000071                                         GENESYS         10000               xcbRegister                                 
+14:07:23.968437[33m|LV2|[0mCB_SESSION7|SEND   |000154|0015400312001000103120000000071                                         GENESYS         10001               xcbRegister                                 
+14:07:23.968462[44m|INF|[0mCB_SESSION7|HandleRegister success.
+14:07:36.514395[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:43643|000247|002470001031200312001002500006128E8EFEC-CE01-4406-9CE7-B347AC1224C80000
+14:07:36.514531[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:07:36.514997[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:07:36.515241[44m|INF|[0mIVR_DRIVER|HandleRequest_icNewCall|Requester:CB_SESSION7, CallId:28E8EFEC-CE01-4406-9CE7-B347AC1224C80000, TENo:1, ChanNo:0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:
+14:07:36.515296[44m|INF|[0mIVR_DRIVER|AddCtiReqInfo|CTI Request map item count:1
+14:07:36.515718[44m|INF|[0mIVR_DRIVER|CALLBACK_NewCall|DriverName:IVR1, Command:NewCall, CallId:28E8EFEC-CE01-4406-9CE7-B347AC1224C80000, CalledNum(PortNum):1000, CallControlMode:Network, Version:4.0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>28E8EFEC-CE01-4406-9CE7-B347AC1224C80000</CallId><NewCall CallControlMode="Network" Version="4.0"><CalledNum>1000</CalledNum><DNIS>*6500</DNIS><ANI>4022</ANI></NewCall></GctiMsg>
+
+14:07:36.516259[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:28E8EFEC-CE01-4406-9CE7-B347AC1224C80000, Event:Ringing, CallStatus:10004, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>28E8EFEC-CE01-4406-9CE7-B347AC1224C80000</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+14:07:36.616631[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:28E8EFEC-CE01-4406-9CE7-B347AC1224C80000, Event:Established, CallStatus:10008, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>28E8EFEC-CE01-4406-9CE7-B347AC1224C80000</CallId><CallStatus Event="Established"/></GctiMsg>
+
+14:07:37.016475[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:43643|000072|002030031200100010312002500006128E8EFEC-CE01-4406-9CE7-B347AC1224C80000
+14:07:43.535213[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:43643|000198|001980001031200312001002600006128E8EFEC-CE01-4406-9CE7-B347AC1224C80000
+14:07:43.535305[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:07:43.535327[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:07:43.535483[44m|INF|[0mIVR_DRIVER|HandleRequest_icCallInfo|Requester:CB_SESSION7, CallId:28E8EFEC-CE01-4406-9CE7-B347AC1224C80000, TENo:1, ChanNo:0
+14:07:43.535997[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoReq|DriverName:IVR1, Command:CallInfoReq, CallId:28E8EFEC-CE01-4406-9CE7-B347AC1224C80000, Xml:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>28E8EFEC-CE01-4406-9CE7-B347AC1224C80000</CallId><CallInfoReq></CallInfoReq></GctiMsg>
+
+14:07:43.537179[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoResp|DriverName:IVR1, Command:CallInfoResp, CallId:28E8EFEC-CE01-4406-9CE7-B347AC1224C80000, ANI:1111111111, DNIS:2222222222, CalledNum:3333333333, ConnId:4444444444, FirstHomeLocation:5555555555, LastEvent:6666666666, OtherDN:7777777777, OtherQueue:8888888888, OtherTrunk:9999999999, PortDN:aaaaaaaaaa, PortQueue:bbbbbbbbbb, PortTrunk:cccccccccc, ThirdPartyDN:dddddddddd, TSCallId:eeeeeeeeee, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>28E8EFEC-CE01-4406-9CE7-B347AC1224C80000</CallId><CallInfoResp ANI="1111111111" DNIS="2222222222" CalledNum="3333333333" ConnId="4444444444" FirstHomeLocation="5555555555" LastEvent="6666666666" OtherDN="7777777777" OtherQueue="8888888888" OtherTrunk="9999999999" PortDN="aaaaaaaaaa" PortQueue="bbbbbbbbbb" PortTrunk="cccccccccc" ThirdPartyDN="dddddddddd" TSCallId="eeeeeeeeee"/></GctiMsg>
+
+14:07:44.037862[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:43643|000072|005030031200100010312002600006128E8EFEC-CE01-4406-9CE7-B347AC1224C80000
+14:07:50.596653[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:43643|000210|002100001031200312001002700006128E8EFEC-CE01-4406-9CE7-B347AC1224C80000
+14:07:50.596743[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:07:50.596962[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:07:50.597091[44m|INF|[0mIVR_DRIVER|HandleRequest_icGetUData|Requester:CB_SESSION7, CallId:28E8EFEC-CE01-4406-9CE7-B347AC1224C80000, TENo:1, ChanNo:0, Keys:UEI
+14:07:50.597397[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataGet|DriverName:IVR1, Command:UDataGet, CallId:28E8EFEC-CE01-4406-9CE7-B347AC1224C80000, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>28E8EFEC-CE01-4406-9CE7-B347AC1224C80000</CallId><UDataGet Keys="UEI"><RequestId>100000002</RequestId></UDataGet></GctiMsg>
+
+14:07:50.598294[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataResp|DriverName:IVR1, Command:UDataResp, CallId:28E8EFEC-CE01-4406-9CE7-B347AC1224C80000, Result:Success, UDataEx:|eee=555|fff=6666|ggg=77777|hhh=88888888|, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>28E8EFEC-CE01-4406-9CE7-B347AC1224C80000</CallId><UDataResp><RequestId>UEI</RequestId><Result>Success</Result><UDataEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></UDataEx></UDataResp></GctiMsg>
+
+14:07:51.098732[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:43643|000072|002580031200100010312002700006128E8EFEC-CE01-4406-9CE7-B347AC1224C80000
+14:08:08.170217[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       58H
+14:08:08.170311[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001       58H
+14:08:18.171405[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       59H
+14:08:18.171504[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001       59H

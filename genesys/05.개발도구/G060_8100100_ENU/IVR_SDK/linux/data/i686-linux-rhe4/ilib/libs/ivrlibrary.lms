@@ -1,0 +1,144 @@
+70ad65e7|LMS|1.0|ivrlibrary.lms|1.0.001|*
+; ##############################################################
+; Copyright (c)1999-2002 Genesys Telecommunications Labs, Inc, 
+; All Rights Reserved 
+; 
+; This file is a the log message definitions for the ILibrary
+; ##############################################################
+
+; ##############################################################
+; -------- ALARM --------- 20000 - 30000
+; ##############################################################
+
+20000|ALARM|XML_ATTRIBUTE_DATA_UNAVAILABLE|%s attribute data missing in %s response message from IVR Server
+; Attributes:	[attribute type]
+;					the type of attribute in the XML message	
+;					[response message type]
+;					the type of response message received from the IVR Server
+; Description:	The XML message received from the IVR Server is not valid because it is missing an expected attribute.
+; Actions:		Check the IVR Library and IVR Server debug logs to see if the IVR Server sent the message received by the IVR Library. 
+;					If the IVR Server sent the message, contact Genesys Technical Support. 
+;					If it did not, then an unknown source is sending XML messages to the IVR Library
+
+20010|ALARM|XML_ATTRIBUTE_DATA_VALUE_UNKNOWN|%s attribute data value = %s in %s response message from IVR Server is unknown
+; Attributes:	[attribute type] the type of attribute in the XML message.
+;					[attribute data value] the data for that attribute
+;					[response message type] the type of response message received from the IVR Server
+; Description:	The XML message received from the IVR Server is not valid because it is missing data for the specified attribute.
+; Actions:		Check the IVR Library and IVR Server debug logs to see if the IVR Server sent the message received by the IVR Library. 
+;					If the IVR Server sent the message, contact Genesys Technical Support.
+;					If it did not, then an unknown source is sending XML messages to the IVR Library
+
+20020|ALARM|IVR_LIBRARY_VERSION_UNKNOWN|IVR Library version is unknown
+; Attributes:	None
+; Description:	The IVR Library version is unknown. This can only be caused by a severe program error.
+; Actions:		Contact Genesys Technical Support.
+
+20030|ALARM|IVR_SERVER_VERSION_UNKNOWN|IVR Server version is unknown
+; Attributes:	None
+; Description:	The IVR Server version was not found in the XML message and is unknown. 
+; Actions:		Check the IVR Library and IVR Server debug logs to see if the IVR Server sent the message received by the IVR Library. 
+;					If the IVR Server sent the message, contact Genesys Technical Support. 
+;					If it did not, then an unknown source is sending XML messages to the IVR Library. 
+
+20040|ALARM|IVR_NAME_UNKNOWN|IVR name is unknown
+; Attributes:	None
+; Description:	The IVR Library did not record an IVR name which must be given to the IVR Library by the IVR driver.
+; Actions:		Pass the name of the IVR resource to the IVR Driver.
+
+20050|ALARM|IVR_SERVER_HOST_NAME_UNKNOWN|IVR Server Host name is unknown
+; Attributes:	None
+; Description:	The IVR Library did not record an IVR Server host which must be given to the IVR Library by the IVR driver.
+; Actions:		Pass the name of the IVR Server host to the IVR Driver.
+
+20060|ALARM|IVR_SERVER_PORT_UNKNOWN|IVR Server Port is unknown
+; Attributes:	None
+; Description:	The IVR Library did not record an IVR Server port which must be given to the IVR Library by the IVR driver.
+; Actions:		Pass the IVR Server port number to the IVR Driver.
+
+20070|ALARM|GLI_HEADER_INVALID|Gli Header %s is not valid
+; Attributes:	[header content] the header which is not valid
+; Description:	The Gli header on the XML message is not valid. 
+; Actions:		Check the IVR Library and IVR Server debug logs to see if the IVR Server sent the message received by the IVR Library. 
+;					If the IVR Server sent the message, contact Genesys Technical Support. 
+;					If it did not, then an unknown source is sending XML messages to the IVR Library. 
+
+20080|ALARM|IVR_NAME_INVALID|IVR name %s is not known by the IVR Server
+; Attributes:	[IVR Name] The IVR Name passed to IVR Server
+; Description:	The IVR Server does not recognize the IVR name that was passed to it.
+; Actions:		Check the IVR resource definitions in Configuration Manager:
+;					If an IVR resource has not been defined with this name, define one.
+;					If an IVR resource with this name has been defined but is disabled, enable it.
+
+20090|ALARM|IVR_DRIVER_VERSION_INVALID|IVR Driver version received was null
+; Attributes:	None
+; Description:	The IVR Library found a null version for the IVR Driver. This version must be given to the IVR Library by the IVR Driver
+; Actions:		Contact Genesys Technical Support.
+
+20100|ALARM|THREAD_CREATION_FAILED|%s thread creation failed
+; Attributes:	[thread name] The name of the thread that failed to start.
+; Description:	The named thread failed to start.
+; Actions:		Restart the IVR Driver.
+;					If the thread creation fails again, verify that you are not exceeding your system resources for threads.
+
+20110|ALARM|IVR_LIBRARY_NOT_INITIALIZED|IVR Library was not initialized with a call to \"ilInitialize()\" before issuing any other API calls
+; Attributes:	None
+; Description:	The IVR Library was not properly initialized.
+; Actions:		Change your application to issue the ilInitialize API before any other API calls.
+
+20120|ALARM|XML_MESSAGE_INVALID|XML message did not have a %s 
+; Attributes:	[XML message attribute] The attribute that was missing from the XML message.
+; Description:	A required attribute was missing from the XML message.
+; Actions:		Check the IVR Library and IVR Server debug logs to see if the IVR Server sent the message received by the IVR Library. 
+;					If the IVR Server sent the message, contact Genesys Technical Support. 
+;					If it did not, then an unknown source is sending XML messages to the IVR Library. 
+
+20130|ALARM|STORAGE_INSUFFICIENT|Could not allocate a buffer for %s
+; Attributes:	[buffer] the name of the buffer
+; Description:	Could not allocate a buffer
+; Actions:		Check the resources on your host to insure there is sufficient memory for this program.
+;					Retry the program.
+
+20140|ALARM|NO_LIST_IVR_SERVERS|No configured IVR Servers
+; Attributes:	None
+; Description:	The IVR Driver could not connect to an IVR Server because no IVR Servers are defined for this IVR Driver.
+; Actions:		On the Connections tab of the IVR Driver Properties in Configuration Manager, add a connection to an IVR Server that is defined in Configuration Manager.
+
+20150|ALARM|LOGIN_RESP_RESULT_INVALID|The login response result was not valid, %s
+; Attributes:	[result] The result value
+; Description:	The login response result was not valid
+; Actions:		Check the IVR Library and IVR Server debug logs to see if the IVR Server sent the message received by the IVR Library. 
+;					If the IVR Server sent the message, contact Genesys Technical Support. 
+;					If it did not, then an unknown source is sending XML messages to the IVR Library.
+
+; ##############################################################
+; -------- STANDARD --------- 30001 - 40000
+; ##############################################################
+
+30010|STANDARD|XML_MESSAGE_EXCEEDS_MAX_LENGTH|The length %d of this XML message, is greater than the maximum 65534 bytes allowed. The message is -> %s
+; Attributes:	[length] The length of the attempted XML message
+;					[message] The text of the attempted XML message
+; Description:	Could not send this XML message because it is greater than the allowed XML message size.
+; Actions:		Modify your application to break this message into smaller segments.
+
+; ##############################################################
+; -------- TRACE    --------- 40001 - 50000
+; ##############################################################
+
+40010|TRACE|IVR_DRIVER_CONNECTED_TO_SOCKET|IVR Driver connected to socket %s
+; Attributes:	[socket] The socket connected to
+; Description:	The IVR Driver has connected through a socket to the IVR Server
+
+40020|TRACE|IVR_DRIVER_CLOSED_CONNECTION_TO_IVR_SERVER|IVR Driver closed socket %s, will attempt to reconnect in %s ms
+; Attributes:	[socket] The name of the closed socket.
+;					[time] The time interval in milliseconds at which the IVR Driver will attempt to reconnect to the IVR Server.
+; Description:	The IVR Driver has closed the socket connection to the IVR Server and will attempt to reconnect to it in the specified number of milliseconds.
+;					The reconnection interval is specified in Configuration Manager using the time_recon_is option in the IVR Driver application for all drivers except those that run on Unixware and those created using the IVR C SDK. For these exceptions, the time_recon_is option is configured on the IVR object.
+
+40030|TRACE|IVR_DRIVER_LOGGED_INTO_IVR_SERVER|IVR Driver logged into IVR Server through socket %s
+; Attributes:	[socket] The socket through which the login took place
+; Description:	The IVR Driver has successfully logged into the IVR Server through the identified socket
+
+; ##############################################################
+; END
+; ##############################################################

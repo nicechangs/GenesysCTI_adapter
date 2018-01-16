@@ -1,0 +1,130 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(21214) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+13:32:42.925771[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+13:32:42.925802[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+13:32:42.926491[44m|INF|[0m[PROCESS]
+13:32:42.926516[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+13:32:42.926529[44m|INF|[0mPROCESS_ID           : 1001
+13:32:42.926540[44m|INF|[0m
+
+13:32:42.926551[44m|INF|[0m[SYSTEM]
+13:32:42.926562[44m|INF|[0mSYSTEM_TYPE          : TE
+13:32:42.926574[44m|INF|[0mSYSTEM_ID            : 1000001
+13:32:42.926584[44m|INF|[0m
+
+13:32:42.926595[44m|INF|[0m[CBA_INFO]
+13:32:42.926609[44m|INF|[0mCB_LISTEN_IP         : 
+13:32:42.926630[44m|INF|[0mCB_LISTEN_PORT       : 10002
+13:32:42.926657[44m|INF|[0mLOG_LEVEL            : 3
+13:32:42.926679[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+13:32:42.926699[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+13:32:42.926726[44m|INF|[0mLOG_LINK_PATH        : ../log/
+13:32:42.926739[44m|INF|[0m
+
+13:32:42.926758[44m|INF|[0m[IVR_DRIVER]
+13:32:42.926776[44m|INF|[0mREMOTE_IP            : 10.1.13.100
+13:32:42.926789[44m|INF|[0mREMOTE_PORT          : 2020
+13:32:42.926800[44m|INF|[0mSVC_DRIVER_NAME      : IAdapter1
+13:32:42.926811[44m|INF|[0mSVC_APP_NAME         : IAdapter1
+13:32:42.926823[44m|INF|[0mTE_SYSTEM_ID         : 1
+13:32:42.926835[44m|INF|[0mSTART_CHANNEL        : 0
+13:32:42.926846[44m|INF|[0mSTART_PORT           : 1
+13:32:42.926858[44m|INF|[0mDNIS_COUNT           : 6
+13:32:42.926869[44m|INF|[0mLOG_LEVEL            : 3
+13:32:42.926881[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+13:32:42.926902[44m|INF|[0mLOG_LINK_PATH        : ../log/
+13:32:42.926921[44m|INF|[0m
+
+13:32:42.926932[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+13:32:42.927228[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:00010000, Port:1, TESystemID:1, ChannelNo:0
+13:32:42.927236[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+13:32:42.927266[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:00010001, Port:2, TESystemID:1, ChannelNo:1
+13:32:42.927314[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:00010002, Port:3, TESystemID:1, ChannelNo:2
+13:32:42.927337[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:00010003, Port:4, TESystemID:1, ChannelNo:3
+13:32:42.927365[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:00010004, Port:5, TESystemID:1, ChannelNo:4
+13:32:42.927408[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:00010005, Port:6, TESystemID:1, ChannelNo:5
+13:32:42.928005[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 ilInitiate success !!
+13:32:42.929938[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251332420009291001, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:32:43.927461[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION6, ip:127.0.0.1, port:48679 
+13:32:43.927501[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION6, ip:127.0.0.1, port:48679
+13:32:43.928771[32m|LV3|[0mCB_SESSION6|RECEIVE|000154|0015400010312003120010000000071                                         GENESYS         10000               xcbRegister                                 
+13:32:43.928848[33m|LV2|[0mCB_SESSION6|SEND   |000154|0015400312001000103120000000071                                         GENESYS         10001               xcbRegister                                 
+13:32:43.928861[44m|INF|[0mCB_SESSION6|HandleRegister success.
+13:32:43.929225[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:32:46.930375[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:32:47.932740[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251332470009321002, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:32:49.931598[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:32:52.932836[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:32:52.935492[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251332520009351003, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:32:55.934101[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:32:56.417478[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      798H
+13:32:56.417558[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      798H
+13:32:57.938333[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251332570009381004, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:32:58.935278[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:01.936491[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:02.941082[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333020009401005, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:04.937622[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:06.418485[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      799H
+13:33:06.418574[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      799H
+13:33:07.938911[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:07.943683[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333070009431006, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:10.940090[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:12.946424[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333120009461007, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:13.941243[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:16.419907[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      800H
+13:33:16.419979[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      800H
+13:33:16.942490[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:17.949144[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333170009481008, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:19.943727[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:22.944980[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:22.952253[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333220009511009, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:25.946219[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:26.420766[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      801H
+13:33:26.420859[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      801H
+13:33:27.955036[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333270009541010, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:28.947482[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:31.948691[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:32.957644[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333320009571011, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:34.949915[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:36.421998[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      802H
+13:33:36.422076[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      802H
+13:33:37.951114[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:37.960332[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333370009601012, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:40.952339[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:42.963077[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333420009621013, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:43.953478[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:46.423094[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      803H
+13:33:46.423176[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      803H
+13:33:46.955857[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:47.965596[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333470009651014, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:49.957100[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:52.958366[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:52.968349[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333520009671015, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:55.959531[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:33:56.424120[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      804H
+13:33:56.424205[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      804H
+13:33:57.970834[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251333570009701016, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:33:58.960721[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:34:01.961951[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:34:02.973406[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251334020009731017, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:34:04.963143[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:34:06.425320[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      805H
+13:34:06.425403[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      805H
+13:34:07.964336[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:34:07.975951[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251334070009751018, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:34:10.965525[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:34:12.978610[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251334120009781019, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:34:13.966858[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:34:16.426515[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      806H
+13:34:16.426621[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      806H
+13:34:16.968093[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:34:17.981248[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251334170009801020, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:34:19.969352[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:34:22.970590[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:34:22.984393[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251334220009841021, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:34:25.971784[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:2020
+13:34:26.427757[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      807H
+13:34:26.427812[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      807H

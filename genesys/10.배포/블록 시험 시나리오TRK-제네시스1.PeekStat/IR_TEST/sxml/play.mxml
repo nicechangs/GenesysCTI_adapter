@@ -1,0 +1,146 @@
+<scenariodef id="play.msfx" iparam="" ioparam="" >
+	<play expr="'m.12'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start(play_D84A6A83_554E_43D3_8A6C_FFC417DA752D) -->
+	<if cond="1 == 0" >
+		<goto next="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_END" />
+	</if>
+	<assign name="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_cnt" expr="0" cond="1" />
+	<label id="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_START" />
+	<play expr="'m.120'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+	<getdigit name="play" length="1" dtmfmask="1|2|3|4|5|6" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+	<assign name="play_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="play.digits == '1'" >
+			<goto next="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_END" />
+		<elseif cond="play.digits == '2'" />
+			<goto next="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_END" />
+		<elseif cond="play.digits == '3'" />
+			<goto next="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_END" />
+		<elseif cond="play.digits == '4'" />
+			<goto next="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_END" />
+		<elseif cond="play.digits == '5'" />
+			<goto next="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_END" />
+		<elseif cond="play.digits == '6'" />
+			<goto next="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_END" />
+		<else />
+			<if cond="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="play_DtmfValue == _SLEE_FAILED_" />
+		<if cond="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_cnt" expr="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_cnt+1" cond="1" />
+	<if cond="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<else />
+		<if cond="play.digits == '' && session.command.term_digit == ''" >
+			<goto next="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_START" />
+		<else />
+			<goto next="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_START" />
+		</if>
+	</if>
+	<label id="play_D84A6A83_554E_43D3_8A6C_FFC417DA752D_END" />
+	<!-- GetDigit_End(play_D84A6A83_554E_43D3_8A6C_FFC417DA752D) -->
+	<!-- select : play.digits -->
+	<if cond = "play.digits == '1'" >
+		<play expr="'m.121'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<menureturn value="4" src="3" srctype="0" />
+	<elseif cond = "play.digits == '2'" />
+		<play expr="'m.122'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<play expr="'00000000000000'" cleardigit="0" type="File" country="410" wait="0" async="0" cond="1" />
+		<play expr="'vp.1221'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<goto next="{2357720C-0273-4D21-B399-A96D5424CFA3}" />
+		<label id="{2357720C-0273-4D21-B399-A96D5424CFA3}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<goto next="{22E3C184-9299-43BC-9C4F-FA0FD1A208D6}" />
+		<label id="{22E3C184-9299-43BC-9C4F-FA0FD1A208D6}" />
+		<disconnect />
+	<elseif cond = "play.digits == '3'" />
+		<play expr="'m.123'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<play expr="'vp.1231'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<play expr="'vp.1232'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<goto next="{0323BA1F-EBAC-41A7-9A1D-362FFC7C8542}" />
+		<label id="{0323BA1F-EBAC-41A7-9A1D-362FFC7C8542}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<goto next="{22E3C184-9299-43BC-9C4F-FA0FD1A208D6}" />
+	<elseif cond = "play.digits == '4'" />
+		<play expr="'m.124'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start(cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC) -->
+		<if cond="1 == 0" >
+			<goto next="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_END" />
+		</if>
+		<assign name="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_cnt" expr="0" cond="1" />
+		<label id="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_START" />
+		<play expr="'m.1240'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="cleardigit" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="cleardigit_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="cleardigit.digits == '1'" >
+				<goto next="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_END" />
+			<elseif cond="cleardigit.digits == '2'" />
+				<goto next="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_END" />
+			<else />
+				<if cond="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="cleardigit_DtmfValue == _SLEE_FAILED_" />
+			<if cond="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_cnt" expr="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_cnt+1" cond="1" />
+		<if cond="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="cleardigit.digits == '' && session.command.term_digit == ''" >
+				<goto next="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_START" />
+			<else />
+				<goto next="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_START" />
+			</if>
+		</if>
+		<label id="cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC_END" />
+		<!-- GetDigit_End(cleardigit_A4D894AB_48C9_47AD_ACCC_28325D50F9AC) -->
+		<!-- cleardigit.digits == 1 -->
+		<if cond="cleardigit.digits == 1" >
+			<play expr="'m.1241'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+			<play expr="'vp.1241'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+			<play expr="'vp.1242'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+			<goto next="{0323BA1F-EBAC-41A7-9A1D-362FFC7C8542}" />
+		<else /><!-- cleardigit.digits == 1 -->
+			<play expr="'m.1242'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+			<play expr="'vp.1241'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+			<play expr="'vp.1242'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+			<goto next="{0323BA1F-EBAC-41A7-9A1D-362FFC7C8542}" />
+		</if><!-- cleardigit.digits == 1 -->
+	<elseif cond = "play.digits == '5'" />
+		<play expr="'m.125'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<play expr="'vp.1251'" cleardigit="1" type="MentID" country="410" wait="1" async="1" cond="1" />
+		<sleep time="5" type="0" cond="" />
+		<play expr="'vp.1252'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "play.digits == '6'" />
+		<abort lineno="session.call.channel" checkresult="0" checkvideo="1" cond="1" />
+		<sleep time="100" type="1" cond="1" />
+		<playvideo videomenu="0" imagetype="0" language="0" srepeat="0" serviceid="10" fileid="20" txtovlcount="1" dtmfecho0="0" ovltype0="0" linefeed0="1" align0="0" texttype0="0" tfontsize0="10" tfont0="GULIM.TTC" tfontstyle0="2" fcolor0="0 0 0" bcolor0="0 0 0" tposleft0="100" tpostop0="100" tposright0="800" tposbottom0="800" scrollmode0="0" scrollcnt0="255" scrolltime0="100" tdata0="'abcd'" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : play.digits -->
+</scenariodef>

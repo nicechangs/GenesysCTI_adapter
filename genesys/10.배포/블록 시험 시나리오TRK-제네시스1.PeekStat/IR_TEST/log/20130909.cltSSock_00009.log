@@ -1,0 +1,10 @@
+22:01:34 [000001040] |CREATE|SUCC|
+22:01:34 [000001040] |BIND  |SUCC| nPort=20002 |
+22:01:37 [000001040] |RECEIV|SUCC|00077||0007700000280000000070001000001cmd=debug.READY id=280 result=_SLEE_SUCCESS_|
+22:01:37 [000001040] |SENDTO|SUCC| Remote IP=127.0.0.1, Remote Port=20001 ||0008707010001010100010000000001cmd = debug.READY id = 07010001 result = _SCE_SUCCESS_|
+22:01:39 [000001040] |SENDTO|SUCC| Remote IP=127.0.0.1, Remote Port=20001 ||0020807010001010100010000000001cmd = debug.START id = 07010001 channel = 0 result = 0 lr = 98 service = 98 docfile = 'IR_TEST_ALL.SXML' docpath = '' mentpath = 'bridgetec\ment' commonment = 'bridgetec\ment'|
+22:01:39 [000001040] |RECEIV|SUCC|00089||0008900000280000000070002000001cmd=debug.START result=_SLEE_SUCCESS_  channel=0 id=280 |
+22:01:40 [000001040] |SENDTO|SUCC| Remote IP=127.0.0.1, Remote Port=20001 ||0016607010001010100010000000001cmd = debug.cmd.WAITINBOUND id = 07010001 channel = 0 result = 0 item = <waitinbound ani="" dnis="" userdata="" trunkuserdata="" />|
+22:03:37 [000001040] |SENDTO|SUCC| Remote IP=127.0.0.1, Remote Port=20001 ||0008507010001010100010000000001cmd = debug.END id = 07010001 channel = 0 result = 0|
+22:03:37 [000001040] |RECEIV|FAIL|-0001|
+22:03:37 [000001040] |CLOSE |SUCC|

@@ -1,0 +1,77 @@
+<scenariodef id="RECORD.MSF" iparam="" ioparam="" >
+	<play expr="'m.17'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (record) -->
+	<if cond="1 == 0" >
+		<goto next="record_END" />
+	</if>
+	<assign name="record_cnt" expr="0" cond="1" />
+	<label id="record_START" />
+	<play expr="'m.170'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="record" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="record_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="record.digits == '1'" >
+			<goto next="record_END" />
+		<elseif cond="record.digits == '2'" />
+			<goto next="record_END" />
+		<elseif cond="record.digits == '3'" />
+			<goto next="record_END" />
+		<elseif cond="record.digits == '4'" />
+			<goto next="record_END" />
+		<else />
+			<if cond="record_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="record_DtmfValue == _SLEE_FAILED_" />
+		<if cond="record_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="record_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="record_cnt" expr="record_cnt+1" cond="1" />
+	<if cond="record_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="record.digits == '' && session.command.term_digit == ''" >
+			<goto next="record_START" />
+		<else />
+			<goto next="record_START" />
+		</if>
+	</if>
+	<label id="record_END" />
+	<!-- GetDigit_End (record) -->
+	<!-- select : record.digits -->
+	<if cond = "record.digits == '1'" >
+		<play expr="'m.171'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1711'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<record file="'record1.g711a64'" path="" beep="1" maxsilence="5" maxtime="120" termination="'*'" cond="" />
+		<goto next="{38008F85-86A3-4783-B2D9-FE2ECD88299C}" />
+		<label id="{38008F85-86A3-4783-B2D9-FE2ECD88299C}" />
+		<play expr="'vp.1712'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "record.digits == '2'" />
+		<play expr="'m.172'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1721'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<record file="'record2.g711a64'" path="" beep="0" maxsilence="5" maxtime=" 10" termination="'*'" cond="" />
+		<goto next="{38008F85-86A3-4783-B2D9-FE2ECD88299C}" />
+	<elseif cond = "record.digits == '3'" />
+		<play expr="'m.173'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1731'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<record file="'record3.g711a64'" path="" beep="1" maxsilence="5" maxtime="120" termination="'*#'" cond="" />
+		<play expr="'record3.g711a64'" cleardigit="1" type="File" wait="0" async="0" cond="1" />
+		<goto next="{38008F85-86A3-4783-B2D9-FE2ECD88299C}" />
+	<elseif cond = "record.digits == '4'" />
+		<play expr="'m.174'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1741'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<record file="'record4.g711a64'" path="" beep="1" maxsilence="1" maxtime="120" termination="'*#'" cond="" />
+		<goto next="{38008F85-86A3-4783-B2D9-FE2ECD88299C}" />
+	<else />
+	</if>	
+	<!-- select : record.digits -->
+</scenariodef>

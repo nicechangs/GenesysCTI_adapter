@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/lib/l64
+END
+libiBcl.a
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/lib/l64/libiBcl.a
+END
+libiSqlLib.a
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/lib/l64/libiSqlLib.a
+END
+libiCore.a
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/lib/l64/libiCore.a
+END
+libxbus.a
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/lib/l64/libxbus.a
+END
+libiJson.a
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/lib/l64/libiJson.a
+END

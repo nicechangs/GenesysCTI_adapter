@@ -1,0 +1,49 @@
+<scenariodef id="TRANSFER.MSF" iparam="" ioparam="" >
+	<play expr="'m.21'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<goto next="{7CE5F32E-F780-4B13-AFF3-D60F054380E8}" />
+	<label id="{7CE5F32E-F780-4B13-AFF3-D60F054380E8}" />
+	<!-- GetDigit_Start (transfer) -->
+	<if cond="1 == 0" >
+		<goto next="transfer_END" />
+	</if>
+	<assign name="transfer_cnt" expr="0" cond="1" />
+	<label id="transfer_START" />
+	<play expr="vp.211" cleardigit="1" type="MentID" wait="0" cond="1" />
+	<getdigit name="transfer" length="1" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="transfer_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<goto next="transfer_END" />
+	<elseif cond="transfer_DtmfValue == _SLEE_FAILED_" />
+		<if cond="transfer_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="transfer_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="transfer_cnt" expr="transfer_cnt+1" cond="1" />
+	<if cond="transfer_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="transfer.digits == '' && session.command.term_digit == ''" >
+			<goto next="transfer_START" />
+		<else />
+			<goto next="transfer_START" />
+		</if>
+	</if>
+	<label id="transfer_END" />
+	<!-- GetDigit_End (transfer) -->
+	<!-- len(transfer.digists) >= 4  -->
+	<if cond="len(transfer.digists) >= 4 " >
+		<transfer name="transfer" to="transfer.digits" timeout="20" />
+		<play expr="'vp.212'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<sleep sec="1" cond="" />
+		<disconnect />
+	<else /><!-- len(transfer.digists) >= 4  -->
+		<play expr="'errinput'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{7CE5F32E-F780-4B13-AFF3-D60F054380E8}" />
+	</if><!-- len(transfer.digists) >= 4  -->
+</scenariodef>

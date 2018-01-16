@@ -1,0 +1,64 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(18339) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+12:54:01.854357[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+12:54:01.854393[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+12:54:01.854408[44m|INF|[0m[PROCESS]
+12:54:01.854421[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+12:54:01.854450[44m|INF|[0mPROCESS_ID           : 1001
+12:54:01.854469[44m|INF|[0m
+
+12:54:01.854480[44m|INF|[0m[SYSTEM]
+12:54:01.854492[44m|INF|[0mSYSTEM_TYPE          : TE
+12:54:01.854504[44m|INF|[0mSYSTEM_ID            : 1000001
+12:54:01.854516[44m|INF|[0m
+
+12:54:01.854527[44m|INF|[0m[CBA_INFO]
+12:54:01.854539[44m|INF|[0mCB_LISTEN_IP         : 
+12:54:01.854551[44m|INF|[0mCB_LISTEN_PORT       : 10002
+12:54:01.854563[44m|INF|[0mLOG_LEVEL            : 3
+12:54:01.854575[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+12:54:01.854609[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+12:54:01.854624[44m|INF|[0mLOG_LINK_PATH        : ../log/
+12:54:01.854636[44m|INF|[0m
+
+12:54:01.854647[44m|INF|[0m[IVR_DRIVER]
+12:54:01.854659[44m|INF|[0mREMOTE_IP            : 127.0.0.1
+12:54:01.854671[44m|INF|[0mREMOTE_PORT          : 2020
+12:54:01.854683[44m|INF|[0mSVC_DRIVER_NAME      : IVR1
+12:54:01.854709[44m|INF|[0mSVC_APP_NAME         : IVR1
+12:54:01.854726[44m|INF|[0mTE_SYSTEM_ID         : 1
+12:54:01.854739[44m|INF|[0mSTART_CHANNEL        : 0
+12:54:01.854751[44m|INF|[0mSTART_PORT           : 1
+12:54:01.854763[44m|INF|[0mDNIS_COUNT           : 6
+12:54:01.854775[44m|INF|[0mLOG_LEVEL            : 3
+12:54:01.854787[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+12:54:01.854799[44m|INF|[0mLOG_LINK_PATH        : ../log/
+12:54:01.854811[44m|INF|[0m
+
+12:54:01.854822[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+12:54:01.855084[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:00010000, Port:1, TESystemID:1, ChannelNo:0
+12:54:01.855100[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+12:54:01.855119[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:00010001, Port:2, TESystemID:1, ChannelNo:1
+12:54:01.855172[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:00010002, Port:3, TESystemID:1, ChannelNo:2
+12:54:01.855195[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:00010003, Port:4, TESystemID:1, ChannelNo:3
+12:54:01.855249[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:00010004, Port:5, TESystemID:1, ChannelNo:4
+12:54:01.855294[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:00010005, Port:6, TESystemID:1, ChannelNo:5
+12:54:01.856455[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 ilInitiate success !!
+12:54:01.887107[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251254010008561001, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+12:54:01.902200[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginResp|DriverName:IVR1, Command:LoginResp, CallId:IVR1_11251254010008561001, IServerVersion:8.5, Result:Success, ConfigOptions:, Status:OK
+12:54:02.855371[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:127.0.0.1, port:38896 
+12:54:02.855445[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION7, ip:127.0.0.1, port:38896
+12:54:02.856913[32m|LV3|[0mCB_SESSION7|RECEIVE|000154|0015400010312003120010000000071                                         GENESYS         10000               xcbRegister                                 
+12:54:02.859665[33m|LV2|[0mCB_SESSION7|SEND   |000154|0015400312001000103120000000071                                         GENESYS         10001               xcbRegister                                 
+12:54:02.859698[44m|INF|[0mCB_SESSION7|HandleRegister success.
+12:54:16.163043[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      718H
+12:54:16.163121[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      718H
+12:54:26.164208[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      719H
+12:54:26.164296[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      719H
+12:54:36.165376[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      720H
+12:54:36.165476[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      720H
+12:54:46.166627[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      721H
+12:54:46.166728[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      721H

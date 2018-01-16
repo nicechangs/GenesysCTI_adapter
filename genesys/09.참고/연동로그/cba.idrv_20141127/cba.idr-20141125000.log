@@ -1,0 +1,25 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.idr pid(07504) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+10:31:15.986273[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+10:31:15.986287[44m|INF|[0mIVRDriver Initialize success.
+10:31:15.986293[44m|INF|[0mOwnerName     : CBA.ISVR
+10:31:15.986297[44m|INF|[0mOwnerId       : 1001
+10:31:15.986302[44m|INF|[0mSvcAppName    : IVR5
+10:31:15.986307[44m|INF|[0mSvcDriverName : IVR1
+10:31:15.986311[44m|INF|[0mRemoteIp      : 127.0.0.1
+10:31:15.986316[44m|INF|[0mRemotePort    : 2020
+10:31:15.986321[44m|INF|[0mLogPath       : ../log/cba.idrv/
+10:31:15.986325[44m|INF|[0mLogLinkPath   : ../log/
+10:31:15.986330[44m|INF|[0mLogLevel      : 3
+10:31:15.986335[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+10:31:15.986339[44m|INF|[0m
+
+10:31:15.986519[41m|ERR|[0mConnection failure. remote_ip:127.0.0.1, remote_port:2020
+10:31:18.986697[41m|ERR|[0mConnection failure. remote_ip:127.0.0.1, remote_port:2020
+10:31:21.986919[41m|ERR|[0mConnection failure. remote_ip:127.0.0.1, remote_port:2020
+10:31:24.987133[41m|ERR|[0mConnection failure. remote_ip:127.0.0.1, remote_port:2020
+10:31:27.987383[41m|ERR|[0mConnection failure. remote_ip:127.0.0.1, remote_port:2020
+10:31:30.987648[41m|ERR|[0mConnection failure. remote_ip:127.0.0.1, remote_port:2020

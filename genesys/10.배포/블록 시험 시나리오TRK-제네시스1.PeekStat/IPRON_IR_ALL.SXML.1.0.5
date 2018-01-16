@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<!DOCTYPE sxml SYSTEM "scxml.dtd">
+<sxml version="1.1" name="IR_블록시험시나리오" ip="100.100.105.41" date="20090815163817" studioversion="3.0.5.9" description="IR v3 블록시험 시나리오" >
+
+
+<scenarioblock>
+
+
+<scenariodef id="main" iparam="" ioparam="" >
+	<waitinbound ani="" dnis="" userdata="" />
+	<assign name="InMsgA" expr="session.media.id" cond="1" />
+	<assign name="InMsgB" expr="session.media.callid" cond="1" />
+	<assign name="InMsgC" expr="session.media.media" cond="1" />
+	<assign name="InMsgD" expr="session.media.audioip" cond="1" />
+	<assign name="InMsgE" expr="session.media.audiocodec" cond="1" />
+	<goto next="{BFF282D8-1BCF-4F18-B92E-07E6C087A4E4}" />
+	<label id="{BFF282D8-1BCF-4F18-B92E-07E6C087A4E4}" />
+	<menu name="ir_test" rid="0" cond="1" />
+</scenariodef>
+
+
+<scenariodef id="end" iparam="" ioparam="" >
+</scenariodef>
+
+
+
+</sxml>

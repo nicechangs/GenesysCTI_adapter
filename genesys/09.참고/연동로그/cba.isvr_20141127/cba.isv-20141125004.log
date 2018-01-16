@@ -1,0 +1,431 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(11844) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+11:11:43.679856[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+11:11:43.679893[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+11:11:43.679911[44m|INF|[0m[PROCESS]
+11:11:43.679925[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+11:11:43.679937[44m|INF|[0mPROCESS_ID           : 1001
+11:11:43.679948[44m|INF|[0m
+
+11:11:43.679959[44m|INF|[0m[SYSTEM]
+11:11:43.679981[44m|INF|[0mSYSTEM_TYPE          : TE
+11:11:43.679992[44m|INF|[0mSYSTEM_ID            : 1000001
+11:11:43.679998[44m|INF|[0m
+
+11:11:43.680002[44m|INF|[0m[CBA_INFO]
+11:11:43.680007[44m|INF|[0mCB_LISTEN_IP         : 
+11:11:43.680012[44m|INF|[0mCB_LISTEN_PORT       : 10002
+11:11:43.680020[44m|INF|[0mLOG_LEVEL            : 3
+11:11:43.680024[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+11:11:43.680029[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+11:11:43.680033[44m|INF|[0mLOG_LINK_PATH        : ../log/
+11:11:43.680038[44m|INF|[0m
+
+11:11:43.680042[44m|INF|[0m[IVR_DRIVER]
+11:11:43.680046[44m|INF|[0mREMOTE_IP            : 10.1.13.6
+11:11:43.680050[44m|INF|[0mREMOTE_PORT          : 2020
+11:11:43.680055[44m|INF|[0mSVC_DRIVER_NAME      : IVR1
+11:11:43.680059[44m|INF|[0mSVC_APP_NAME         : IVR1
+11:11:43.680063[44m|INF|[0mTE_SYSTEM_ID         : 1
+11:11:43.680068[44m|INF|[0mSTART_CHANNEL        : 0
+11:11:43.680072[44m|INF|[0mSTART_PORT           : 1
+11:11:43.680077[44m|INF|[0mDNIS_COUNT           : 6
+11:11:43.680081[44m|INF|[0mLOG_LEVEL            : 3
+11:11:43.680085[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+11:11:43.680090[44m|INF|[0mLOG_LINK_PATH        : ../log/
+11:11:43.680094[44m|INF|[0m
+
+11:11:43.680098[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+11:11:43.680256[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:00010000, Port:1, TESystemID:1, ChannelNo:0
+11:11:43.680267[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+11:11:43.680273[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:00010001, Port:2, TESystemID:1, ChannelNo:1
+11:11:43.680305[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:00010002, Port:3, TESystemID:1, ChannelNo:2
+11:11:43.680315[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:00010003, Port:4, TESystemID:1, ChannelNo:3
+11:11:43.680328[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:00010004, Port:5, TESystemID:1, ChannelNo:4
+11:11:43.680349[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:00010005, Port:6, TESystemID:1, ChannelNo:5
+11:11:43.680827[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 ilInitiate success !!
+11:11:43.682332[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111430006821001, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:43.685388[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111430006851002, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:43.690086[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111430006891003, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:43.711305[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111430007111004, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:43.713223[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111430007131005, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:43.714972[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111430007141006, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:43.717976[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111430007171007, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.010188[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440000091008, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.680471[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:127.0.0.1, port:60720 
+11:11:44.680526[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION7, ip:127.0.0.1, port:60720
+11:11:44.682157[32m|LV3|[0mCB_SESSION7|RECEIVE|000154|0015400010312003120010000000071                                         GENESYS         10000               xcbRegister                                 
+11:11:44.682566[33m|LV2|[0mCB_SESSION7|SEND   |000154|0015400312001000103120000000071                                         GENESYS         10001               xcbRegister                                 
+11:11:44.682599[44m|INF|[0mCB_SESSION7|HandleRegister success.
+11:11:44.719901[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.6, RemotePort:2020
+11:11:44.720691[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007201009, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.722503[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007221010, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.734216[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007331011, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.736106[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007351012, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.738653[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007381013, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.740523[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007401014, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.742758[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007421015, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.744675[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007441016, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.746627[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007461017, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.748601[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007481018, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.750518[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007501019, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.752483[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007521020, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:44.754311[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111440007541021, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.184197[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450001831022, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.186182[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450001851023, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.188033[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450001871024, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.189925[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450001891025, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.191760[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450001911026, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.193611[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450001931027, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.195456[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450001951028, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.197393[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450001971029, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.199251[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450001991030, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.201159[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450002001031, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.203001[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450002021032, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.204803[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450002041033, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.652591[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006521034, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.654369[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006541035, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.656143[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006551036, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.657952[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006571037, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.659705[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006591038, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.661491[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006611039, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.663242[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006631040, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.665121[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006641041, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.666887[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006661042, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.668691[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006681043, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.670521[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006701044, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:45.672256[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111450006721045, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.094143[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460000931046, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.095997[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460000951047, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.097807[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460000971048, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.099625[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460000991049, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.101391[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460001011050, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.103210[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460001021051, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.104914[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460001041052, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.106632[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460001061053, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.108424[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460001081054, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.110386[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460001101055, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.112196[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460001111056, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.113953[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460001131057, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.115711[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460001151058, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.544441[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005441059, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.546241[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005461060, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.548079[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005471061, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.549815[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005491062, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.551489[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005511063, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.553299[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005531064, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.555214[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005541065, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.556973[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005561066, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.558791[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005581067, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.560557[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005601068, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.562260[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005621069, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.564016[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460005631070, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.987362[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460009871071, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.989113[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460009881072, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.990915[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460009901073, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.992710[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460009921074, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.994505[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460009941075, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.996220[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460009961076, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.998039[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460009971077, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:46.999846[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111460009991078, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.001672[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470000011079, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.003430[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470000031080, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.005218[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470000051081, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.007068[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470000061082, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.447382[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004471083, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.449340[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004481084, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.451141[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004501085, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.452900[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004521086, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.454629[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004541087, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.456345[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004561088, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.484481[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004841089, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.486865[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004861090, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.488804[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004881091, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.490946[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004901092, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.492852[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004921093, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.494903[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004941094, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.496962[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470004961095, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.989202[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.6, RemotePort:2020
+11:11:47.989918[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470009891096, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.991827[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470009911097, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.993556[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470009931098, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.995362[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470009951099, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.997044[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470009961100, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:47.998910[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111470009981101, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.000654[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480000001102, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.002489[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480000021103, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.004219[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480000041104, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.006092[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480000051105, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.007948[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480000071106, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.009804[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480000091107, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.466248[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480004651108, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.504148[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480005031109, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.515084[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480005141110, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.546823[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480005461111, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.555391[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480005551112, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:48.589506[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111480005891113, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:49.386515[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111490003861114, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:49.393692[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111490003931115, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:49.833292[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111490008321116, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:49.927137[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111490009261117, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:49.945803[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111490009451118, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.009692[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500000091119, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.012403[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500000121120, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.052760[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500000521121, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.054927[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500000541122, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.057604[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500000571123, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.059854[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500000591124, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.062299[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500000621125, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.750611[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007501126, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.752359[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007521127, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.754060[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007531128, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.755794[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007551129, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.757380[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007571130, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.759097[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007581131, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.760978[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007601132, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.764655[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007641133, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.766425[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007661134, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.769994[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007691135, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.772632[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007721136, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.774572[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007741137, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:50.777508[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111500007771138, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.181928[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.6, RemotePort:2020
+11:11:51.182283[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001811139, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.184043[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001831140, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.185872[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001851141, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.187651[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001871142, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.189573[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001891143, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.191227[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001911144, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.192868[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001921145, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.194506[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001941146, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.196172[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001961147, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.197752[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001971148, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.199442[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510001991149, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.201015[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510002001150, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.581450[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005811151, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.583231[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005821152, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.585070[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005841153, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.586846[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005861154, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.588646[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005881155, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.590492[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005901156, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.592248[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005921157, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.594047[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005931158, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.595802[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005951159, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.597649[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005971160, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.599514[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510005991161, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:51.601704[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111510006011162, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.035861[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000351163, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.038074[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000371164, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.039835[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000391165, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.041612[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000411166, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.043503[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000431167, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.045249[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000451168, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.047023[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000461169, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.048903[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000481170, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.050656[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000501171, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.052337[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000521172, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.054133[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000531173, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.055954[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000551174, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.057692[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520000571175, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.502668[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005021176, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.504463[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005041177, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.506405[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005061178, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.508145[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005071179, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.509946[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005091180, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.511651[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005111181, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.513427[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005131182, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.515252[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005141183, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.516984[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005161184, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.518752[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005181185, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.520519[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005201186, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.522359[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520005221187, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.959377[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009591188, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.961138[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009601189, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.962905[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009621190, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.964596[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009641191, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.966344[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009661192, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.968099[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009671193, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.969736[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009691194, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.971453[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009711195, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.973105[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009721196, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.974840[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009741197, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.976582[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009761198, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:52.978346[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111520009781199, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.382088[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003811200, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.383886[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003831201, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.385702[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003851202, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.387563[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003871203, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.389371[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003891204, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.391123[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003901205, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.392903[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003921206, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.394666[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003941207, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.396459[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003961208, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.398216[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003971209, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.400025[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530003991210, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.401872[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530004011211, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.403764[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530004031212, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.833159[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008321213, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.834979[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008341214, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.836801[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008361215, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.838564[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008381216, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.840431[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008401217, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.842179[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008411218, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.843937[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008431219, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.845726[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008451220, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.847442[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008471221, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.849212[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008491222, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.850923[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008501223, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:53.852670[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111530008521224, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.274895[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.6, RemotePort:2020
+11:11:54.275715[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002751225, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.277502[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002771226, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.279319[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002791227, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.281114[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002801228, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.282889[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002821229, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.284717[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002841230, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.286534[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002861231, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.288294[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002881232, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.290081[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002891233, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.291907[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002911234, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.293695[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002931235, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.295511[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540002951236, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.700327[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540006991237, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.702159[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007011238, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.703921[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007031239, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.705662[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007051240, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.707715[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007071241, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.709473[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007091242, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.711267[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007111243, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.713081[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007121244, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.714893[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007141245, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.716673[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007161246, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.718461[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007181247, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.720262[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007201248, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:54.722174[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111540007211249, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.047963[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000471250, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.049740[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000491251, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.051579[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000511252, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.053368[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000531253, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.055167[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000541254, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.057099[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000561255, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.058880[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000581256, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.060809[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000601257, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.062584[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000621258, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.064418[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000641259, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.066357[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000661260, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.068269[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550000681261, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.254907[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      136H
+11:11:55.254984[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      136H
+11:11:55.500827[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005001262, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.502630[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005021263, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.504338[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005041264, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.506091[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005051265, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.507811[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005071266, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.509753[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005091267, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.511491[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005111268, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.513251[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005131269, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.515034[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005141270, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.516868[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005161271, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.518557[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005181272, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.520354[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550005201273, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.990747[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550009901274, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.992782[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550009921275, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:55.994997[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111550009941276, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.072029[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560000711277, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.086024[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560000851278, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.087936[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560000871279, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.090001[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560000891280, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.091818[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560000911281, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.093615[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560000931282, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.128992[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560001281283, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.131465[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560001311284, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.133415[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560001331285, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.135520[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560001351286, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.571563[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005711287, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.573269[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005731288, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.575105[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005741289, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.576908[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005761290, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.578707[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005781291, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.580404[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005801292, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.589846[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005891293, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.591779[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005911294, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.593572[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005931295, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.595308[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005951296, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.597047[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005961297, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:56.598873[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111560005981298, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.440497[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.6, RemotePort:2020
+11:11:57.441294[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004401299, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.443142[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004421300, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.444832[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004441301, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.446560[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004461302, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.448412[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004481303, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.450182[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004491304, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.451962[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004511305, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.453781[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004531306, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.455595[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004551307, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.457377[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004571308, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.459290[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004591309, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.461143[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004601310, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.463019[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570004621311, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.843823[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008431312, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.845456[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008451313, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.847215[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008461314, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.849105[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008481315, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.850918[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008501316, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.853388[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008531317, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.855245[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008541318, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.857425[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008571319, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.859228[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008581320, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.861113[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008601321, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.862946[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008621322, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:57.864975[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111570008641323, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.166280[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001661324, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.168030[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001671325, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.169843[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001691326, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.171633[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001711327, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.173343[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001731328, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.175153[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001741329, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.177005[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001761330, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.178892[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001781331, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.180689[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001801332, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.182437[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001821333, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.184278[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001841334, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.186082[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580001851335, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.608012[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006071336, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.609830[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006091337, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.611547[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006111338, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.613308[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006131339, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.615093[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006141340, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.616815[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006161341, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.618648[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006181342, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.620406[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006201343, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.622212[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006211344, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.623965[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006231345, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.625683[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006251346, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.627402[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006271347, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:58.629102[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111580006281348, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.001177[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590000001349, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.003293[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590000031350, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.005118[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590000041351, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.006889[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590000061352, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.008646[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590000081353, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.010684[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590000101354, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.766111[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590007651355, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.810067[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008091356, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.812029[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008111357, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.814106[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008131358, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.816177[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008151359, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.818064[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008171360, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.820188[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008191361, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.821971[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008211362, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.824043[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008231363, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.826210[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008251364, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.828445[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008281365, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.830805[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008301366, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:11:59.832812[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251111590008321367, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:12:00.441675[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.6, RemotePort:2020
+11:12:00.480260[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251112000004791368, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+11:12:00.486206[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:IVR1_11251112000004851369, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set

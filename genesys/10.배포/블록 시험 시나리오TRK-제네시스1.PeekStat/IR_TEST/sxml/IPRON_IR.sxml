@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<!DOCTYPE sxml SYSTEM "scxml.dtd">
+<sxml version="1.1" name="IPRON_IR" ip="100.100.105.41" studioversion="4.3.5.0" description="IR v3 블록시험 시나리오" date="20150204114438" scenarioversion="1.0.0" build="633">
+#include "Global.sxml"
+
+
+<scenarioblock>
+
+#include "Main.sxml"
+#include "End.sxml"
+#include "AsrTest.mxml"
+#include "Exception.sxml"
+#include "MenuScenarioFile1.mxml"
+#include "MenuScenarioFile2.mxml"
+#include "ScenarioFile1.sxml"
+#include "ScenarioFile2.sxml"
+#include "abort.mxml"
+#include "cti.mxml"
+#include "digit.mxml"
+#include "disconnect.mxml"
+#include "disswitch.mxml"
+#include "getchannel.mxml"
+#include "packet.mxml"
+#include "play.mxml"
+#include "pushtone.mxml"
+#include "record.mxml"
+#include "scenario_func.mxml"
+#include "scenario_func_dymenu.mxml"
+#include "svc_cfgchg.mxml"
+#include "svcchg.mxml"
+#include "switch.mxml"
+#include "transfer.mxml"
+#include "tts.mxml"
+#include "userfunction.mxml"
+
+</scenarioblock>
+</sxml>

@@ -1,0 +1,4 @@
+<scenariodef id="MenuScenarioFile1.msfx" iparam="" ioparam="" >
+	<menuopt dtmfmask="#/1,*/0" choicement="'m.0'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" timeout="" retrycount="3" dtmflength="1" intertimeout="'5'" timeoutment="" inputerrment="" retryerrment="" cleardigit="0" cleardigiterrment="1" cond="1" />
+	<assign name="session.menu.speakerid" expr="0" cond="1" />
+</scenariodef>

@@ -1,0 +1,20 @@
+<scenariodef id="getchannel.msfx" iparam="" ioparam="" >
+	<play expr="'m.11'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<play expr="'vp.111'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+	<getchannel name="getchannel" range="2014009434" Media="1" userdata="''" agtflag="1" />
+	<!-- session.command.reason == '_TE_INVALID_OUT_LI_' -->
+	<if cond="session.command.reason == '_TE_INVALID_OUT_LI_'" >
+		<play expr="'disconnect'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<else /><!-- session.command.reason == '_TE_INVALID_OUT_LI_' -->
+		<play expr="'vp.112'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<play expr="getchannel.otherchannel" cleardigit="0" type="Number" country="410" wait="0" async="0" cond="1" />
+		<play expr="'vp.113'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<waitevent eventid="1000" data="a" timeout="-1" bgm="" bgmtype="mentid" />
+		<setevent to="getchannel.otherchannel" eventid="2000" data="session.sys.physicalline" />
+		<waitevent eventid="3000" data="bbb" timeout="-1" bgm="" bgmtype="mentid" />
+		<switch to="getchannel.otherchannel" mode="2" />
+		<goto next="{E9AB0247-7246-478B-8816-61A47259A6F7}" />
+		<label id="{E9AB0247-7246-478B-8816-61A47259A6F7}" />
+		<waitevent eventid="4000" data="bbb" timeout="-1" bgm="" bgmtype="mentid" />
+	</if><!-- session.command.reason == '_TE_INVALID_OUT_LI_' -->
+</scenariodef>

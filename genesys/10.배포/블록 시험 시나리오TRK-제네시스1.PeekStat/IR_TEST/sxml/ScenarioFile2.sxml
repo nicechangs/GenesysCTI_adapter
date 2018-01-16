@@ -1,0 +1,7 @@
+<scenariodef id="ScenarioFile2.ssfx" iparam="q,w,e,r" ioparam="" >
+	<assign name="subcalltest" expr="'1234'" cond="1" />
+	<assign name="q1" expr="q" cond="1" />
+	<assign name="w1" expr="w" cond="1" />
+	<assign name="e1" expr="e" cond="1" />
+	<assign name="r1" expr="r" cond="1" />
+</scenariodef>

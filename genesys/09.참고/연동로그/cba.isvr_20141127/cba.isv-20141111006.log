@@ -1,0 +1,201 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(06583) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+18:01:30.777298[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+18:01:30.777321[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+18:01:30.777334[44m|INF|[0m[PROCESS]
+18:01:30.777346[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+18:01:30.777359[44m|INF|[0mPROCESS_ID           : 1001
+18:01:30.777370[44m|INF|[0m
+
+18:01:30.777381[44m|INF|[0m[SYSTEM]
+18:01:30.777394[44m|INF|[0mSYSTEM_TYPE          : TE
+18:01:30.777405[44m|INF|[0mSYSTEM_ID            : 1000001
+18:01:30.777419[44m|INF|[0m
+
+18:01:30.777430[44m|INF|[0m[CBA_INFO]
+18:01:30.777442[44m|INF|[0mCB_LISTEN_IP         : 
+18:01:30.777454[44m|INF|[0mCB_LISTEN_PORT       : 10002
+18:01:30.777466[44m|INF|[0mLOG_LEVEL            : 3
+18:01:30.777477[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+18:01:30.777489[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+18:01:30.777508[44m|INF|[0mLOG_LINK_PATH        : ../log/
+18:01:30.777529[44m|INF|[0m
+
+18:01:30.777550[44m|INF|[0m[IVR_DRIVER]
+18:01:30.777571[44m|INF|[0mREMOTE_IP            : 127.0.0.1
+18:01:30.777584[44m|INF|[0mREMOTE_PORT          : 35001
+18:01:30.777596[44m|INF|[0mSVC_DRIVER_NAME      : IVR1
+18:01:30.777610[44m|INF|[0mSVC_APP_NAME         : IVR5
+18:01:30.777630[44m|INF|[0mTE_SYSTEM_ID         : 6006
+18:01:30.777651[44m|INF|[0mSTART_CHANNEL        : 0
+18:01:30.777669[44m|INF|[0mSTART_PORT           : 1000
+18:01:30.777681[44m|INF|[0mDNIS_COUNT           : 120
+18:01:30.777693[44m|INF|[0mLOG_LEVEL            : 3
+18:01:30.777705[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+18:01:30.777717[44m|INF|[0mLOG_LINK_PATH        : ../log/
+18:01:30.777728[44m|INF|[0m
+
+18:01:30.777739[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+18:01:30.778005[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+18:01:30.778006[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:60060000, Port:1000, TESystemID:6006, ChannelNo:0
+18:01:30.778101[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:60060001, Port:1001, TESystemID:6006, ChannelNo:1
+18:01:30.778123[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:60060002, Port:1002, TESystemID:6006, ChannelNo:2
+18:01:30.778141[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:60060003, Port:1003, TESystemID:6006, ChannelNo:3
+18:01:30.778158[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:60060004, Port:1004, TESystemID:6006, ChannelNo:4
+18:01:30.778176[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:60060005, Port:1005, TESystemID:6006, ChannelNo:5
+18:01:30.778193[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:7, PortKey:60060006, Port:1006, TESystemID:6006, ChannelNo:6
+18:01:30.778211[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:8, PortKey:60060007, Port:1007, TESystemID:6006, ChannelNo:7
+18:01:30.778229[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:9, PortKey:60060008, Port:1008, TESystemID:6006, ChannelNo:8
+18:01:30.778246[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:10, PortKey:60060009, Port:1009, TESystemID:6006, ChannelNo:9
+18:01:30.778265[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:11, PortKey:60060010, Port:1010, TESystemID:6006, ChannelNo:10
+18:01:30.778310[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:12, PortKey:60060011, Port:1011, TESystemID:6006, ChannelNo:11
+18:01:30.778331[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:13, PortKey:60060012, Port:1012, TESystemID:6006, ChannelNo:12
+18:01:30.778349[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:14, PortKey:60060013, Port:1013, TESystemID:6006, ChannelNo:13
+18:01:30.778367[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:15, PortKey:60060014, Port:1014, TESystemID:6006, ChannelNo:14
+18:01:30.778385[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:16, PortKey:60060015, Port:1015, TESystemID:6006, ChannelNo:15
+18:01:30.778413[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:17, PortKey:60060016, Port:1016, TESystemID:6006, ChannelNo:16
+18:01:30.778434[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:18, PortKey:60060017, Port:1017, TESystemID:6006, ChannelNo:17
+18:01:30.778451[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:19, PortKey:60060018, Port:1018, TESystemID:6006, ChannelNo:18
+18:01:30.778469[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:20, PortKey:60060019, Port:1019, TESystemID:6006, ChannelNo:19
+18:01:30.778486[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:21, PortKey:60060020, Port:1020, TESystemID:6006, ChannelNo:20
+18:01:30.778504[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:22, PortKey:60060021, Port:1021, TESystemID:6006, ChannelNo:21
+18:01:30.778522[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:23, PortKey:60060022, Port:1022, TESystemID:6006, ChannelNo:22
+18:01:30.778546[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:24, PortKey:60060023, Port:1023, TESystemID:6006, ChannelNo:23
+18:01:30.778579[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:25, PortKey:60060024, Port:1024, TESystemID:6006, ChannelNo:24
+18:01:30.778601[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:26, PortKey:60060025, Port:1025, TESystemID:6006, ChannelNo:25
+18:01:30.778619[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:27, PortKey:60060026, Port:1026, TESystemID:6006, ChannelNo:26
+18:01:30.778637[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:28, PortKey:60060027, Port:1027, TESystemID:6006, ChannelNo:27
+18:01:30.778655[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:29, PortKey:60060028, Port:1028, TESystemID:6006, ChannelNo:28
+18:01:30.778673[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:30, PortKey:60060029, Port:1029, TESystemID:6006, ChannelNo:29
+18:01:30.778703[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:31, PortKey:60060030, Port:1030, TESystemID:6006, ChannelNo:30
+18:01:30.778734[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:32, PortKey:60060031, Port:1031, TESystemID:6006, ChannelNo:31
+18:01:30.778754[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:33, PortKey:60060032, Port:1032, TESystemID:6006, ChannelNo:32
+18:01:30.778772[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:34, PortKey:60060033, Port:1033, TESystemID:6006, ChannelNo:33
+18:01:30.778800[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:35, PortKey:60060034, Port:1034, TESystemID:6006, ChannelNo:34
+18:01:30.778819[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:36, PortKey:60060035, Port:1035, TESystemID:6006, ChannelNo:35
+18:01:30.778837[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:37, PortKey:60060036, Port:1036, TESystemID:6006, ChannelNo:36
+18:01:30.778855[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:38, PortKey:60060037, Port:1037, TESystemID:6006, ChannelNo:37
+18:01:30.778873[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:39, PortKey:60060038, Port:1038, TESystemID:6006, ChannelNo:38
+18:01:30.778891[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:40, PortKey:60060039, Port:1039, TESystemID:6006, ChannelNo:39
+18:01:30.778919[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:41, PortKey:60060040, Port:1040, TESystemID:6006, ChannelNo:40
+18:01:30.778947[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:42, PortKey:60060041, Port:1041, TESystemID:6006, ChannelNo:41
+18:01:30.778976[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:43, PortKey:60060042, Port:1042, TESystemID:6006, ChannelNo:42
+18:01:30.779002[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:44, PortKey:60060043, Port:1043, TESystemID:6006, ChannelNo:43
+18:01:30.779051[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:45, PortKey:60060044, Port:1044, TESystemID:6006, ChannelNo:44
+18:01:30.779081[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:46, PortKey:60060045, Port:1045, TESystemID:6006, ChannelNo:45
+18:01:30.779111[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:47, PortKey:60060046, Port:1046, TESystemID:6006, ChannelNo:46
+18:01:30.779141[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:48, PortKey:60060047, Port:1047, TESystemID:6006, ChannelNo:47
+18:01:30.779172[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:49, PortKey:60060048, Port:1048, TESystemID:6006, ChannelNo:48
+18:01:30.779202[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:50, PortKey:60060049, Port:1049, TESystemID:6006, ChannelNo:49
+18:01:30.779221[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:51, PortKey:60060050, Port:1050, TESystemID:6006, ChannelNo:50
+18:01:30.779239[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:52, PortKey:60060051, Port:1051, TESystemID:6006, ChannelNo:51
+18:01:30.779257[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:53, PortKey:60060052, Port:1052, TESystemID:6006, ChannelNo:52
+18:01:30.779276[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:54, PortKey:60060053, Port:1053, TESystemID:6006, ChannelNo:53
+18:01:30.779294[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:55, PortKey:60060054, Port:1054, TESystemID:6006, ChannelNo:54
+18:01:30.779336[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:56, PortKey:60060055, Port:1055, TESystemID:6006, ChannelNo:55
+18:01:30.779360[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:57, PortKey:60060056, Port:1056, TESystemID:6006, ChannelNo:56
+18:01:30.779388[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:58, PortKey:60060057, Port:1057, TESystemID:6006, ChannelNo:57
+18:01:30.779414[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:59, PortKey:60060058, Port:1058, TESystemID:6006, ChannelNo:58
+18:01:30.779442[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:60, PortKey:60060059, Port:1059, TESystemID:6006, ChannelNo:59
+18:01:30.779471[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:61, PortKey:60060060, Port:1060, TESystemID:6006, ChannelNo:60
+18:01:30.779499[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:62, PortKey:60060061, Port:1061, TESystemID:6006, ChannelNo:61
+18:01:30.779529[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:63, PortKey:60060062, Port:1062, TESystemID:6006, ChannelNo:62
+18:01:30.779559[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:64, PortKey:60060063, Port:1063, TESystemID:6006, ChannelNo:63
+18:01:30.779585[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:65, PortKey:60060064, Port:1064, TESystemID:6006, ChannelNo:64
+18:01:30.779613[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:66, PortKey:60060065, Port:1065, TESystemID:6006, ChannelNo:65
+18:01:30.779632[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:67, PortKey:60060066, Port:1066, TESystemID:6006, ChannelNo:66
+18:01:30.779650[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:68, PortKey:60060067, Port:1067, TESystemID:6006, ChannelNo:67
+18:01:30.779669[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:69, PortKey:60060068, Port:1068, TESystemID:6006, ChannelNo:68
+18:01:30.779687[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:70, PortKey:60060069, Port:1069, TESystemID:6006, ChannelNo:69
+18:01:30.779706[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:71, PortKey:60060070, Port:1070, TESystemID:6006, ChannelNo:70
+18:01:30.779724[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:72, PortKey:60060071, Port:1071, TESystemID:6006, ChannelNo:71
+18:01:30.779742[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:73, PortKey:60060072, Port:1072, TESystemID:6006, ChannelNo:72
+18:01:30.779774[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:74, PortKey:60060073, Port:1073, TESystemID:6006, ChannelNo:73
+18:01:30.779855[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:75, PortKey:60060074, Port:1074, TESystemID:6006, ChannelNo:74
+18:01:30.779875[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:76, PortKey:60060075, Port:1075, TESystemID:6006, ChannelNo:75
+18:01:30.779894[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:77, PortKey:60060076, Port:1076, TESystemID:6006, ChannelNo:76
+18:01:30.779912[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:78, PortKey:60060077, Port:1077, TESystemID:6006, ChannelNo:77
+18:01:30.779931[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:79, PortKey:60060078, Port:1078, TESystemID:6006, ChannelNo:78
+18:01:30.779949[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:80, PortKey:60060079, Port:1079, TESystemID:6006, ChannelNo:79
+18:01:30.779967[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:81, PortKey:60060080, Port:1080, TESystemID:6006, ChannelNo:80
+18:01:30.779995[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:82, PortKey:60060081, Port:1081, TESystemID:6006, ChannelNo:81
+18:01:30.780014[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:83, PortKey:60060082, Port:1082, TESystemID:6006, ChannelNo:82
+18:01:30.780032[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:84, PortKey:60060083, Port:1083, TESystemID:6006, ChannelNo:83
+18:01:30.780051[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:85, PortKey:60060084, Port:1084, TESystemID:6006, ChannelNo:84
+18:01:30.780069[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:86, PortKey:60060085, Port:1085, TESystemID:6006, ChannelNo:85
+18:01:30.780087[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:87, PortKey:60060086, Port:1086, TESystemID:6006, ChannelNo:86
+18:01:30.780105[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:88, PortKey:60060087, Port:1087, TESystemID:6006, ChannelNo:87
+18:01:30.780124[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:89, PortKey:60060088, Port:1088, TESystemID:6006, ChannelNo:88
+18:01:30.780142[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:90, PortKey:60060089, Port:1089, TESystemID:6006, ChannelNo:89
+18:01:30.780161[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:91, PortKey:60060090, Port:1090, TESystemID:6006, ChannelNo:90
+18:01:30.780180[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:92, PortKey:60060091, Port:1091, TESystemID:6006, ChannelNo:91
+18:01:30.780199[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:93, PortKey:60060092, Port:1092, TESystemID:6006, ChannelNo:92
+18:01:30.780217[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:94, PortKey:60060093, Port:1093, TESystemID:6006, ChannelNo:93
+18:01:30.780235[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:95, PortKey:60060094, Port:1094, TESystemID:6006, ChannelNo:94
+18:01:30.780254[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:96, PortKey:60060095, Port:1095, TESystemID:6006, ChannelNo:95
+18:01:30.780272[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:97, PortKey:60060096, Port:1096, TESystemID:6006, ChannelNo:96
+18:01:30.780290[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:98, PortKey:60060097, Port:1097, TESystemID:6006, ChannelNo:97
+18:01:30.780337[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:99, PortKey:60060098, Port:1098, TESystemID:6006, ChannelNo:98
+18:01:30.780360[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:100, PortKey:60060099, Port:1099, TESystemID:6006, ChannelNo:99
+18:01:30.780379[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:101, PortKey:60060100, Port:1100, TESystemID:6006, ChannelNo:100
+18:01:30.780408[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:102, PortKey:60060101, Port:1101, TESystemID:6006, ChannelNo:101
+18:01:30.780428[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:103, PortKey:60060102, Port:1102, TESystemID:6006, ChannelNo:102
+18:01:30.780447[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:104, PortKey:60060103, Port:1103, TESystemID:6006, ChannelNo:103
+18:01:30.780473[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:105, PortKey:60060104, Port:1104, TESystemID:6006, ChannelNo:104
+18:01:30.780493[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:106, PortKey:60060105, Port:1105, TESystemID:6006, ChannelNo:105
+18:01:30.780512[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:107, PortKey:60060106, Port:1106, TESystemID:6006, ChannelNo:106
+18:01:30.780535[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:108, PortKey:60060107, Port:1107, TESystemID:6006, ChannelNo:107
+18:01:30.780554[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:109, PortKey:60060108, Port:1108, TESystemID:6006, ChannelNo:108
+18:01:30.780584[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:110, PortKey:60060109, Port:1109, TESystemID:6006, ChannelNo:109
+18:01:30.780621[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:111, PortKey:60060110, Port:1110, TESystemID:6006, ChannelNo:110
+18:01:30.780644[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:112, PortKey:60060111, Port:1111, TESystemID:6006, ChannelNo:111
+18:01:30.780663[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:113, PortKey:60060112, Port:1112, TESystemID:6006, ChannelNo:112
+18:01:30.780696[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:114, PortKey:60060113, Port:1113, TESystemID:6006, ChannelNo:113
+18:01:30.780733[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:115, PortKey:60060114, Port:1114, TESystemID:6006, ChannelNo:114
+18:01:30.780803[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:116, PortKey:60060115, Port:1115, TESystemID:6006, ChannelNo:115
+18:01:30.780839[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:117, PortKey:60060116, Port:1116, TESystemID:6006, ChannelNo:116
+18:01:30.780873[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:118, PortKey:60060117, Port:1117, TESystemID:6006, ChannelNo:117
+18:01:30.780901[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:119, PortKey:60060118, Port:1118, TESystemID:6006, ChannelNo:118
+18:01:30.780932[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:120, PortKey:60060119, Port:1119, TESystemID:6006, ChannelNo:119
+18:01:30.781495[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 ilInitiate success !!
+18:01:30.782537[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:100000001, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+18:01:30.783772[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginResp|DriverName:IVR1, Command:LoginResp, CallId:100000001, IServerVersion:8.5, Result:Success, ConfigOptions:, Status:OK
+18:01:31.778240[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:100.100.105.105, port:37005 
+18:01:31.778284[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION7, ip:100.100.105.105, port:37005
+18:01:31.779561[33m|LV2|[0mCB_SESSION7|RECEIVE|000154|0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+18:01:31.779670[33m|LV2|[0mCB_SESSION7|SEND   |000154|0015400312001000103120000000071                                         GENE            10001               xcbRegister                                 
+18:01:31.779701[44m|INF|[0mCB_SESSION7|HandleRegister success.
+18:01:46.953035[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       47H
+18:01:46.953131[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       47H
+18:01:47.118112[41m|WRN|[0mCB_SESSION7|Not defined packet command. command:, packet:00239000103120031200100040000116DE898F7-C6F7-43E0-8FA9-05AB337396C40000
+18:01:51.133192[41m|WRN|[0mCB_SESSION7|Not defined packet command. command:, packet:00170000103120031200100050000116DE898F7-C6F7-43E0-8FA9-05AB337396C40000
+18:01:56.954337[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       48H
+18:01:56.954449[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       48H
+18:01:59.654633[41m|WRN|[0mCB_SESSION7|Not defined packet command. command:, packet:00244000103120031200100060000116DE898F7-C6F7-43E0-8FA9-05AB337396C40000
+18:02:06.955495[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       49H
+18:02:06.955596[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       49H
+18:02:16.956746[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       50H
+18:02:16.956840[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       50H
+18:02:26.958235[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       51H
+18:02:26.958329[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       51H
+18:02:36.959036[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       52H
+18:02:36.959139[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       52H
+18:02:46.960220[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       53H
+18:02:46.960321[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       53H
+18:02:56.961474[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       54H
+18:02:56.961574[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       54H
+18:03:06.962635[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       55H
+18:03:06.962763[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       55H
+18:03:16.963649[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       56H
+18:03:16.963744[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       56H
+18:03:26.964831[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       57H
+18:03:26.964926[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       57H
+18:03:36.966421[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       58H
+18:03:36.966548[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       58H
+18:03:46.967356[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       59H
+18:03:46.967456[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       59H
+18:03:56.968605[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001       60H
+18:03:56.968676[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330031200100010312       60H

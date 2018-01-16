@@ -1,0 +1,35 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.idr pid(20684) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:15:22.782054[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+16:15:22.782070[44m|INF|[0mIVRDriver Initialize success.
+16:15:22.782082[44m|INF|[0mOwnerName     : CBA.ISVR
+16:15:22.782094[44m|INF|[0mOwnerId       : 1001
+16:15:22.782105[44m|INF|[0mSvcAppName    : IAdapter1
+16:15:22.782117[44m|INF|[0mSvcDriverName : IAdapter1
+16:15:22.782129[44m|INF|[0mRemoteIp      : 10.1.13.100
+16:15:22.782141[44m|INF|[0mRemotePort    : 3021
+16:15:22.782152[44m|INF|[0mLogPath       : ../log/cba.idrv/
+16:15:22.782164[44m|INF|[0mLogLinkPath   : ../log/
+16:15:22.782175[44m|INF|[0mLogLevel      : 3
+16:15:22.782187[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+16:15:22.782208[44m|INF|[0m
+
+16:15:22.783444[44m|INF|[0mConnection success. remote_ip:10.1.13.100, remote_port:3021
+16:15:22.784102[44m|INF|[0mReqId:IAdapter1_11271615220007830002|Command:LoginReq|Version:4.0|ClientName:IAdapter1|ReportStatus:true|ServerMonitor:clear
+16:15:22.784182[33m|LV2|[0mReqId:IAdapter1_11271615220007830002|Command:LoginReq|XmlData:(251)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271615220007830002</CallId><LoginReq Version="4.0" ClientName="IAdapter1" ReportStatus="true" ServerMonitor="clear"></LoginReq></GctiMsg>
+
+16:15:22.784238[33m|LV2|[0mSEND   |10.1.13.100:3021|000257|
+16:15:25.058045[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000411|
+16:15:25.058132[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000411, ntohs_len:000226, nPartialPacketLen000230, nDataOffset:000000
+16:15:25.058156[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000224|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271615220007830002</CallId><LoginResp IServerVer='IVR Server:8.1.001.01' Result='Success' Status='OK'/></GctiMsg>
+16:15:25.058473[44m|INF|[0mReqId:IAdapter1_11271615220007830002|Command:LoginResp|IServerVersion:|Result:Success|ConfigOptions:|Status:OK
+16:15:25.058503[33m|LV2|[0mReqId:IAdapter1_11271615220007830002|Command:LoginResp|XmlData:(224)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271615220007830002</CallId><LoginResp IServerVer='IVR Server:8.1.001.01' Result='Success' Status='OK'/></GctiMsg>
+16:15:25.058551[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000411, ntohs_len:000177, nPartialPacketLen000181, nDataOffset:000230
+16:15:25.058576[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000175|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271615220007830002</CallId><FlowControl Status='Off'/></GctiMsg>
+16:15:25.058740[44m|INF|[0mReqId:IAdapter1_11271615220007830002|Command:FlowControl|Status:Off
+16:15:25.058767[33m|LV2|[0mReqId:IAdapter1_11271615220007830002|Command:FlowControl|XmlData:(175)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271615220007830002</CallId><FlowControl Status='Off'/></GctiMsg>

@@ -1,0 +1,55 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(19098) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:07:41.196476[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+16:07:41.196503[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+16:07:41.196519[44m|INF|[0m[PROCESS]
+16:07:41.196533[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+16:07:41.196542[44m|INF|[0mPROCESS_ID           : 1001
+16:07:41.196549[44m|INF|[0m
+
+16:07:41.196556[44m|INF|[0m[SYSTEM]
+16:07:41.196564[44m|INF|[0mSYSTEM_TYPE          : TE
+16:07:41.196572[44m|INF|[0mSYSTEM_ID            : 1000001
+16:07:41.196580[44m|INF|[0m
+
+16:07:41.196587[44m|INF|[0m[CBA_INFO]
+16:07:41.196595[44m|INF|[0mCB_LISTEN_IP         : 
+16:07:41.196603[44m|INF|[0mCB_LISTEN_PORT       : 10002
+16:07:41.196611[44m|INF|[0mLOG_LEVEL            : 3
+16:07:41.196619[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+16:07:41.196627[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+16:07:41.196635[44m|INF|[0mLOG_LINK_PATH        : ../log/
+16:07:41.196642[44m|INF|[0m
+
+16:07:41.196650[44m|INF|[0m[IVR_DRIVER]
+16:07:41.196657[44m|INF|[0mREMOTE_IP            : 10.1.23.3
+16:07:41.196665[44m|INF|[0mREMOTE_PORT          : 2020
+16:07:41.196678[44m|INF|[0mSVC_DRIVER_NAME      : IVR1
+16:07:41.196691[44m|INF|[0mSVC_APP_NAME         : IVR5
+16:07:41.196705[44m|INF|[0mTE_SYSTEM_ID         : 1
+16:07:41.196719[44m|INF|[0mSTART_CHANNEL        : 0
+16:07:41.196732[44m|INF|[0mSTART_PORT           : 1
+16:07:41.196740[44m|INF|[0mDNIS_COUNT           : 6
+16:07:41.196754[44m|INF|[0mLOG_LEVEL            : 3
+16:07:41.196763[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+16:07:41.196772[44m|INF|[0mLOG_LINK_PATH        : ../log/
+16:07:41.196787[44m|INF|[0m
+
+16:07:41.196799[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+16:07:41.197133[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:00010000, Port:1, TESystemID:1, ChannelNo:0
+16:07:41.197148[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+16:07:41.197158[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:00010001, Port:2, TESystemID:1, ChannelNo:1
+16:07:41.197198[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:00010002, Port:3, TESystemID:1, ChannelNo:2
+16:07:41.197212[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:00010003, Port:4, TESystemID:1, ChannelNo:3
+16:07:41.197244[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:00010004, Port:5, TESystemID:1, ChannelNo:4
+16:07:41.197260[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:00010005, Port:6, TESystemID:1, ChannelNo:5
+16:07:41.201306[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 ilInitiate success !!
+16:07:42.197399[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:127.0.0.1, port:48085 
+16:07:42.197437[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION7, ip:127.0.0.1, port:48085
+16:07:42.198671[33m|LV2|[0mCB_SESSION7|RECEIVE|000154|0015400010312003120010000000071                                         GENESYS         10000               xcbRegister                                 
+16:07:42.198746[33m|LV2|[0mCB_SESSION7|SEND   |000154|0015400312001000103120000000071                                         GENESYS         10001               xcbRegister                                 
+16:07:42.198765[44m|INF|[0mCB_SESSION7|HandleRegister success.
+16:07:42.202626[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.23.3, RemotePort:2020

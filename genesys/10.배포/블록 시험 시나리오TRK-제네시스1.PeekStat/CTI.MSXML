@@ -1,0 +1,419 @@
+<scenariodef id="CTI.MSF" iparam="" ioparam="" >
+	<play expr="'m.33'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (citDigits) -->
+	<if cond="1 == 0" >
+		<goto next="citDigits_END" />
+	</if>
+	<assign name="citDigits_cnt" expr="0" cond="1" />
+	<label id="citDigits_START" />
+	<play expr="'m.330'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="citDigits" length="1" dtmfmask="1|2|3|4|5|6|7|8" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" dtmfvideo="0" />
+	<assign name="citDigits_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="citDigits.digits == '1'" >
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '2'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '3'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '4'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '5'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '6'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '7'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '8'" />
+			<goto next="citDigits_END" />
+		<else />
+			<if cond="citDigits_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="citDigits_DtmfValue == _SLEE_FAILED_" />
+		<if cond="citDigits_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="citDigits_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="citDigits_cnt" expr="citDigits_cnt+1" cond="1" />
+	<if cond="citDigits_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="citDigits.digits == '' && session.command.term_digit == ''" >
+			<goto next="citDigits_START" />
+		<else />
+			<goto next="citDigits_START" />
+		</if>
+	</if>
+	<label id="citDigits_END" />
+	<!-- GetDigit_End (citDigits) -->
+	<!-- select : citDigits.digits -->
+	<if cond = "citDigits.digits == '1'" >
+		<play expr="'m.331'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<cticall name="icCallInfo" service="'IPRON_IC'" command="icCallInfo" timeout="3" icnt="2" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" ocnt="3" oparam0="ani" oparam1="dnis" oparam2="attach" cond="1" />
+		<goto next="{913EAB43-1D42-41DF-B9F8-37588410B3E6}" />
+		<label id="{913EAB43-1D42-41DF-B9F8-37588410B3E6}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "citDigits.digits == '2'" />
+		<play expr="'m.332'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID1) -->
+		<if cond="1 == 0" >
+			<goto next="queueID1_END" />
+		</if>
+		<assign name="queueID1_cnt" expr="0" cond="1" />
+		<label id="queueID1_START" />
+		<play expr="'m.3320'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID1" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" dtmfvideo="0" />
+		<assign name="queueID1_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID1_END" />
+		<elseif cond="queueID1_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID1_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="queueID1_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID1_cnt" expr="queueID1_cnt+1" cond="1" />
+		<if cond="queueID1_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID1.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID1_START" />
+			<else />
+				<goto next="queueID1_START" />
+			</if>
+		</if>
+		<label id="queueID1_END" />
+		<!-- GetDigit_End (queueID1) -->
+		<cticall name="ctiCall1" service="'IPRON_IC'" command="icDeflectTR" timeout="5" icnt="4" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="queueID1.digits" iparam3="UEI1" ivalue3="'MEMBER:true|JOINDATE:20090521|NIC:IPRON'" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{913EAB43-1D42-41DF-B9F8-37588410B3E6}" />
+	<elseif cond = "citDigits.digits == '3'" />
+		<play expr="'m.333'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID2) -->
+		<if cond="1 == 0" >
+			<goto next="queueID2_END" />
+		</if>
+		<assign name="queueID2_cnt" expr="0" cond="1" />
+		<label id="queueID2_START" />
+		<play expr="'m.3320'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID2" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" dtmfvideo="0" />
+		<assign name="queueID2_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID2_END" />
+		<elseif cond="queueID2_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID2_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="queueID2_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID2_cnt" expr="queueID2_cnt+1" cond="1" />
+		<if cond="queueID2_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID2.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID2_START" />
+			<else />
+				<goto next="queueID2_START" />
+			</if>
+		</if>
+		<label id="queueID2_END" />
+		<!-- GetDigit_End (queueID2) -->
+		<!-- GetDigit_Start (agentSkill) -->
+		<if cond="1 == 0" >
+			<goto next="agentSkill_END" />
+		</if>
+		<assign name="agentSkill_cnt" expr="0" cond="1" />
+		<label id="agentSkill_START" />
+		<play expr="'m.3330'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="agentSkill" length="2" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" dtmfvideo="0" />
+		<assign name="agentSkill_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="agentSkill_END" />
+		<elseif cond="agentSkill_DtmfValue == _SLEE_FAILED_" />
+			<if cond="agentSkill_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="agentSkill_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="agentSkill_END" />
+			<else />
+				<if cond="agentSkill_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="agentSkill_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="agentSkill_cnt" expr="agentSkill_cnt+1" cond="1" />
+		<if cond="agentSkill_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="agentSkill.digits == '' && session.command.term_digit == ''" >
+				<goto next="agentSkill_START" />
+			<else />
+				<goto next="agentSkill_START" />
+			</if>
+		</if>
+		<label id="agentSkill_END" />
+		<!-- GetDigit_End (agentSkill) -->
+		<cticall name="ctiCall2" service="'IPRON_IC'" command="icDeflectQTR" timeout="5" icnt="7" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="$queueID2.digits" iparam3="skill_level" ivalue3="agentSkill.digits" iparam4="priority" ivalue4="2" iparam5="relation_agent_dn" ivalue5="''" iparam6="UEI2" ivalue6="'MEMBER:true|JOINDATE:20090521|NIC:IPRON'" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{913EAB43-1D42-41DF-B9F8-37588410B3E6}" />
+	<elseif cond = "citDigits.digits == '4'" />
+		<play expr="'m.334'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID7) -->
+		<if cond="1 == 0" >
+			<goto next="queueID7_END" />
+		</if>
+		<assign name="queueID7_cnt" expr="0" cond="1" />
+		<label id="queueID7_START" />
+		<play expr="'m.3320'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID7" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" dtmfvideo="0" />
+		<assign name="queueID7_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID7_END" />
+		<elseif cond="queueID7_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID7_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="queueID7_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID7_cnt" expr="queueID7_cnt+1" cond="1" />
+		<if cond="queueID7_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID7.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID7_START" />
+			<else />
+				<goto next="queueID7_START" />
+			</if>
+		</if>
+		<label id="queueID7_END" />
+		<!-- GetDigit_End (queueID7) -->
+		<!-- GetDigit_Start (queueID3) -->
+		<if cond="1 == 0" >
+			<goto next="queueID3_END" />
+		</if>
+		<assign name="queueID3_cnt" expr="0" cond="1" />
+		<label id="queueID3_START" />
+		<play expr="'m.3340'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID3" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" dtmfvideo="0" />
+		<assign name="queueID3_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID3_END" />
+		<elseif cond="queueID3_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID3_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID3_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID3_END" />
+			<else />
+				<if cond="queueID3_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID3_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID3_cnt" expr="queueID3_cnt+1" cond="1" />
+		<if cond="queueID3_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID3.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID3_START" />
+			<else />
+				<goto next="queueID3_START" />
+			</if>
+		</if>
+		<label id="queueID3_END" />
+		<!-- GetDigit_End (queueID3) -->
+		<cticall name="ctiCall3" service="'IPRON_IC'" command="icSingleQTR" timeout="5" icnt="7" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="queueID7.digits" iparam3="skill_level" ivalue3="''" iparam4="priority" ivalue4="''" iparam5="relation_agent_dn" ivalue5="$queueID3.digits" iparam6="UEI3" ivalue6="'ir ' & session.call.trunkid & '*' & session.call.physicalline" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{913EAB43-1D42-41DF-B9F8-37588410B3E6}" />
+	<elseif cond = "citDigits.digits == '5'" />
+		<play expr="'m.335'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<cticall name="ctiCall1" service="'IPRON_IC'" command="icUpdateUEI" timeout="5" icnt="3" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="UEI4" ivalue2="'ir ' & session.call.trunkid & '*' & session.call.physicalline & '##'" ocnt="1" oparam0="ctiResult" cond="1" />
+		<cticall name="ctiCall1" service="'IPRON_IC'" command="icSingleTR" timeout="5" icnt="3" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="5001" ocnt="1" oparam0="ctiResult" cond="1" />
+	<elseif cond = "citDigits.digits == '6'" />
+		<play expr="'m.336'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID4) -->
+		<if cond="1 == 0" >
+			<goto next="queueID4_END" />
+		</if>
+		<assign name="queueID4_cnt" expr="0" cond="1" />
+		<label id="queueID4_START" />
+		<play expr="'m.3360'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID4" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" dtmfvideo="0" />
+		<assign name="queueID4_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID4_END" />
+		<elseif cond="queueID4_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID4_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID4_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID4_END" />
+			<else />
+				<if cond="queueID4_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID4_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID4_cnt" expr="queueID4_cnt+1" cond="1" />
+		<if cond="queueID4_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID4.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID4_START" />
+			<else />
+				<goto next="queueID4_START" />
+			</if>
+		</if>
+		<label id="queueID4_END" />
+		<!-- GetDigit_End (queueID4) -->
+		<cticall name="ctiCall5" service="'IPRON_IC'" command="icSendUEvt" timeout="5" icnt="4" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="$queueID4.digits" iparam3="UEI4" ivalue3="'ir ' & session.call.trunkid & '*' & session.call.physicalline & 'MSG'" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{913EAB43-1D42-41DF-B9F8-37588410B3E6}" />
+	<elseif cond = "citDigits.digits == '7'" />
+		<play expr="'m.337'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID5) -->
+		<if cond="1 == 0" >
+			<goto next="queueID5_END" />
+		</if>
+		<assign name="queueID5_cnt" expr="0" cond="1" />
+		<label id="queueID5_START" />
+		<play expr="'m.3370'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID5" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" dtmfvideo="0" />
+		<assign name="queueID5_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID5_END" />
+		<elseif cond="queueID5_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID5_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID5_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID5_END" />
+			<else />
+				<if cond="queueID5_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID5_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID5_cnt" expr="queueID5_cnt+1" cond="1" />
+		<if cond="queueID5_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID5.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID5_START" />
+			<else />
+				<goto next="queueID5_START" />
+			</if>
+		</if>
+		<label id="queueID5_END" />
+		<!-- GetDigit_End (queueID5) -->
+		<cticall name="icAgentState1" service="'IPRON_IC'" command="icAgentState" timeout="3" icnt="5" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="$queueID5.digits" iparam3="agent_id" ivalue3="''" iparam4="tenant_name" ivalue4="'Bridgetec'" ocnt="3" oparam0="result" oparam1="reason" oparam2="state" cond="1" />
+		<cticall name="icAgentState2" service="'IPRON_IC'" command="icAgentState" timeout="3" icnt="5" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="''" iparam3="agent_id" ivalue3="'AG2LOGIN'" iparam4="tenant_name" ivalue4="'Bridgetec'" ocnt="3" oparam0="result" oparam1="reason" oparam2="state" cond="1" />
+		<goto next="{913EAB43-1D42-41DF-B9F8-37588410B3E6}" />
+	<elseif cond = "citDigits.digits == '8'" />
+		<play expr="'m.338'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID6) -->
+		<if cond="1 == 0" >
+			<goto next="queueID6_END" />
+		</if>
+		<assign name="queueID6_cnt" expr="0" cond="1" />
+		<label id="queueID6_START" />
+		<play expr="'m.3380'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID6" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" dtmfvideo="0" />
+		<assign name="queueID6_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID6_END" />
+		<elseif cond="queueID6_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID6_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID6_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID6_END" />
+			<else />
+				<if cond="queueID6_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID6_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID6_cnt" expr="queueID6_cnt+1" cond="1" />
+		<if cond="queueID6_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID6.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID6_START" />
+			<else />
+				<goto next="queueID6_START" />
+			</if>
+		</if>
+		<label id="queueID6_END" />
+		<!-- GetDigit_End (queueID6) -->
+		<cticall name="icQueueState" service="'IPRON_IC'" command="icQueueState" timeout="3" icnt="4" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="tenant_name" ivalue2="'Bridgetec'" iparam3="queue_dn" ivalue3="$queueID6.digits" ocnt="7" oparam0="result" oparam1="reason" oparam2="wait_count" oparam3="all_agent_count" oparam4="ready_agent_count" oparam5="wait_time" oparam6="max_wait_time" cond="1" />
+		<goto next="{913EAB43-1D42-41DF-B9F8-37588410B3E6}" />
+	<else />
+	</if>	
+	<!-- select : citDigits.digits -->
+</scenariodef>

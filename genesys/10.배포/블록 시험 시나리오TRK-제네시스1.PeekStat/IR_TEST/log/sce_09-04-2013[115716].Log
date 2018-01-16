@@ -1,0 +1,1180 @@
+[./LOG] 11:57:16,184553426 |INF| <<<<<<<<<< Starting ForCus Studio 4.3.0.1 >>>>>>>>>>
+[./LOG] 11:57:16,184553426 |INF| CForcusStudioApp::InitInstance() - AfxSocketInit()
+[./LOG] 11:57:16,184553426 |INF| CForcusStudioApp::InitInstance() - AfxOleInit()
+[./LOG] 11:57:16,184553426 |INF| CForcusStudioApp::InitInstance() - SetRegistryKey "Bridgetec\Forcus\Studio 4.0"
+[./LOG] 11:57:16,184553441 |INF| CForcusStudioApp::InitInstance() - Set Window Look and Feel Style : DotNetStyle
+[./LOG] 11:57:16,184553457 |INF| CMainFrame::OnCreate - SECWorkbook
+[./LOG] 11:57:16,184553457 |INF| CMainFrame::CreateClient
+[./LOG] 11:57:16,184553472 |INF| CMainFrame::OnCreate - m_wndStatusBar.Create
+[./LOG] 11:57:16,184553488 |INF| CMainFrame::OnCreate - pToolBarMgr = m_pControlBarManager
+[./LOG] 11:57:16,184553488 |INF| CMainFrame::OnCreate - pToolBarMgr->LoadToolBarResource
+[./LOG] 11:57:16,184553488 |INF| CMainFrame::OnCreate - pToolBarMgr->AddBitmapResource
+[./LOG] 11:57:16,184553519 |INF| CMainFrame::OnCreate - m_wndToolBar.CreateEx
+[./LOG] 11:57:16,184553519 |INF| CMainFrame::OnCreate - m_wndZoomBar.CreateEx
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - m_wndAlignBar.CreateEx
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - m_wndNudgeBar.CreateEx
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - m_wndLayoutBar.CreateEx
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - m_wndCanvasBar.CreateEx
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - m_wndViewBar.CreateEx
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - m_wndSearchBar.CreateEx
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - m_wndSearchBar.CreateEx
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - m_wndBuildBar.CreateEx
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - m_wndDebugBar.CreateEx
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - Set Toolbar Style and Caption
+[./LOG] 11:57:16,184553535 |INF| CMainFrame::OnCreate - Set Toolbar Position
+[./LOG] 11:57:16,184553582 |INF| CMainFrame::OnCreate - Create Workspace Widnow
+[./LOG] 11:57:16,184553582 |INF| CWorkspaceWnd::OnCreate
+[./LOG] 11:57:16,184553582 |INF| InitImageLists
+[./LOG] 11:57:16,184553582 |INF| m_childWnd.Create
+[./LOG] 11:57:16,184553582 |INF| m_childWnd.Create
+[./LOG] 11:57:16,184553597 |INF| m_tabProjectPane.SetImageList
+[./LOG] 11:57:16,184553597 |INF| m_tabProjectPane.EnableHeaderCtrl
+[./LOG] 11:57:16,184553597 |INF| m_tabFilePane.Create
+[./LOG] 11:57:16,184553597 |INF| m_tabFilePane.SetImageList
+[./LOG] 11:57:16,184553597 |INF| m_tabFilePane.EnableHeaderCtrl
+[./LOG] 11:57:16,184553597 |INF| m_tabFilePane.Create
+[./LOG] 11:57:16,184553613 |INF| m_tabMenuPane.SetImageList
+[./LOG] 11:57:16,184553613 |INF| m_tabMenuPane.EnableHeaderCtrl
+[./LOG] 11:57:16,184553613 |INF| OUTLOOK_PANE_BK_COLOR
+[./LOG] 11:57:16,184553613 |INF| m_childWnd.AddTab
+[./LOG] 11:57:16,184553613 |INF| m_childWnd.ActivateTab
+[./LOG] 11:57:17,184553660 |INF| m_tabFilePane.EnableRedrawAfterInsert
+[./LOG] 11:57:17,184553675 |INF| CGlobalWnd::OnCreate
+[./LOG] 11:57:17,184553816 |INF| COutputWnd::OnCreate
+[./LOG] 11:57:17,184554112 |INF| CDlgDockItemBar::InitUserItemMenu
+[./LOG] 11:57:17,184554112 |INF| CDlgDockItemBar::LoadAndAppendUserItemMenu
+[./LOG] 11:57:17,184554112 |INF| CDlgDockItemBar::CreateAndGetUserItemDirectory
+[./LOG] 11:57:44,184581272 |INF| CForcusStudioApp::OnFileOpenProject
+[./LOG] 11:58:08,184604875 |INF| CForcusStudioApp::OpenProject ProjectName[E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\IR_TEST.ssp]
+[./LOG] 11:58:08,184604875 |INF| CForcusStudioApp::ClearMapOpenFileList
+[./LOG] 11:58:08,184604875 |INF| CProjectFileDoc::ReadProjectFile
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario File Count[22]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[End.ssf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[Exception.ssf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[Global.ssf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[Main.ssf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[abort.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[cti.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[digit.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[disconnect.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[disswitch.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[getchannel.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[packet.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[play.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[pushtone.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[record.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[scenario_func.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[scenario_func_dymenu.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[svc_cfgchg.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[svcchg.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[switch.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[transfer.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[tts.msf]
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::CheckDuplicateScenario Add[userfunction.msf]
+[./LOG] 11:58:16,184613423 |INF| CForcusStudioApp::ConversionProject
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::ConversionProjectFileInfo()
+[./LOG] 11:58:16,184613423 |INF| CProjectFileDoc::ConversionProjectFileInfo  Call Rename Project File
+[./LOG] 11:58:16,184613423 |INF| pData->Key(End.ssf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(Exception.ssf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(Global.ssf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(Main.ssf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(abort.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(cti.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(digit.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(disconnect.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(disswitch.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(getchannel.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(packet.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(play.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(pushtone.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(record.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(scenario_func.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(scenario_func_dymenu.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(svc_cfgchg.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(svcchg.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(switch.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(transfer.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(tts.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613423 |INF| pData->Key(userfunction.msf), pData->Value(D:\Projects\IPRON-IR\v3.0\블록 시험 시나리오\IR_TEST\)
+
+[./LOG] 11:58:16,184613470 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(End.ssf) -> New(End.ssfx)
+[./LOG] 11:58:16,184613470 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(Exception.ssf) -> New(Exception.ssfx)
+[./LOG] 11:58:16,184613470 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(Global.ssf) -> New(Global.ssfx)
+[./LOG] 11:58:16,184613470 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(Main.ssf) -> New(Main.ssfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(abort.msf) -> New(abort.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(cti.msf) -> New(cti.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(digit.msf) -> New(digit.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(disconnect.msf) -> New(disconnect.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(disswitch.msf) -> New(disswitch.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(getchannel.msf) -> New(getchannel.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(packet.msf) -> New(packet.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(play.msf) -> New(play.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(pushtone.msf) -> New(pushtone.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(record.msf) -> New(record.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(scenario_func.msf) -> New(scenario_func.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(scenario_func_dymenu.msf) -> New(scenario_func_dymenu.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(svc_cfgchg.msf) -> New(svc_cfgchg.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(svcchg.msf) -> New(svcchg.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(switch.msf) -> New(switch.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(transfer.msf) -> New(transfer.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(tts.msf) -> New(tts.msfx)
+[./LOG] 11:58:16,184613486 |INF| CProjectFileDoc::ConversionProjectFileInfo  Path(E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\), Old(userfunction.msf) -> New(userfunction.msfx)
+[./LOG] 11:58:16,184613579 |INF| CMainFrame::OnMenuFileRemove  Call OnFileSaveProject()
+[./LOG] 11:58:16,184613579 |INF| CForcusStudioApp::OnFileSaveProject
+[./LOG] 11:58:16,184613579 |INF| CProjectFileDoc::WriteProjectFile
+[./LOG] 11:58:16,184613579 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 11:58:16,184613579 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 11:58:16,184613579 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 11:58:16,184613595 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:16,184613595 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\GLOBAL.ssfx]
+[./LOG] 11:58:16,184613595 |INF| DeleteContents  File[GLOBAL.ssfx] OldFile[]
+[./LOG] 11:58:16,184613611 |INF| CForcusStudioDoc::OnFileSave
+[./LOG] 11:58:16,184613611 |INF| CForcusStudioDoc::OnSaveDocument E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\GLOBAL.ssfx
+[./LOG] 11:58:17,184613673 |INF| CMySECTreeCtrl::ArrangeItem  Start Sort Time
+[./LOG] 11:58:17,184613673 |INF| CMySECTreeCtrl::ArrangeItem  End Sort Time  Elapsed Time [0/ms|0/s], Total Elapsed Time [0/ms|0/s]
+[./LOG] 11:58:17,184613938 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 11:58:17,184613938 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 11:58:17,184614016 |INF| CMySECTreeCtrl::ArrangeItem  Start Sort Time
+[./LOG] 11:58:17,184614047 |INF| CMySECTreeCtrl::ArrangeItem  End Sort Time  Elapsed Time [31/ms|0/s], Total Elapsed Time [31/ms|0/s]
+[./LOG] 11:58:17,184614047 |INF| CMySECTreeCtrl::ArrangeItem  Start Sort Time
+[./LOG] 11:58:17,184614219 |INF| CMySECTreeCtrl::ArrangeItem  End Sort Time  Elapsed Time [172/ms|0/s], Total Elapsed Time [172/ms|0/s]
+[./LOG] 11:58:17,184614219 |INF| CMySECTreeCtrl::ArrangeItem  Start Sort Time
+[./LOG] 11:58:17,184614297 |INF| CMySECTreeCtrl::ArrangeItem  End Sort Time  Elapsed Time [78/ms|0/s], Total Elapsed Time [78/ms|0/s]
+[./LOG] 11:58:17,184614297 |INF| CForcusStudioApp::OpenProject Create Item Information Database Proc
+[./LOG] 11:58:17,184614297 |INF| CDBProc::OpenDatabase Item Information Data SQLite Version: 3.6.19
+[./LOG] 11:58:17,184614297 |INF| CDBProc::OpenDatabase DB Name: E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\IR_TEST.iidx
+[./LOG] 11:58:17,184614297 |INF| CDBProc::CreateTable execDML("CREATE TABLE SRItem(guid char(42), file varchar(256), name varchar(30), type varchar(20), ftype varchar(10), field varchar(40), data varchar(2048));")
+[./LOG] 11:58:20,184617402 |INF| CForcusStudioApp::MakeItemInformationData
+[./LOG] 11:58:20,184617402 |INF| CDlg_Bookmark::ReadBookmarkFile
+[./LOG] 11:58:20,184617402 |INF| ThreadMain_MakeIID Beginning
+[./LOG] 11:58:20,184617402 |INF| ThreadMain_MakeIID Core=[4], FileCount=[22], CoreThread=[10]
+[./LOG] 11:58:20,184617402 |INF| File not found - E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\IR_TEST.bmfx
+[./LOG] 11:58:20,184617402 |INF| CDlg_Breakpoint::ReadBreakpointFile
+[./LOG] 11:58:20,184617417 |INF| File not found - E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\IR_TEST.bpfx
+[./LOG] 11:58:20,184617417 |INF| ThreadAutoSave Beginning
+[./LOG] 11:58:20,184617480 |INF| CForcusStudioApp::CreateProgressDlg
+[./LOG] 11:58:20,184617480 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID APP()->m_saThreadFiles = new CStringArray[10]
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["End.ssfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["Exception.ssfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["Global.ssfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["Main.ssfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["abort.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["cti.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["digit.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["disconnect.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["disswitch.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["getchannel.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["packet.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["play.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["pushtone.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["record.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["scenario_func.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["scenario_func_dymenu.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["svc_cfgchg.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["svcchg.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["switch.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["transfer.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["tts.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID  Distribute  Path["E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\"], File["userfunction.msfx"] 
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID APP()->m_hThread = new HANDLE[10]
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID APP()->m_dwThreadID = new DWORD[10]
+[./LOG] 11:58:20,184617558 |INF| ThreadMain_MakeIID APP()->m_nWorkCount = new int[10]
+[./LOG] 11:58:20,184617573 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:20,184617573 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:20,184617589 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:20,184617589 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:20,184617604 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:20,184617604 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:20,184617620 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:21,184617620 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:21,184617636 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:21,184617636 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:21,184617636 |INF| CDBProc::BeginTransaction Search & Replace
+[./LOG] 11:58:21,184617636 |INF| CDBProc::StartQueryThread
+[./LOG] 11:58:21,184617636 |INF| CDBProc::CreateDBDataStruct QueryType[0] Append Only
+[./LOG] 11:58:21,184617776 |INF| ThreadQueryProc Beginning
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID Beginning... ThreadID[0], FileCount[2]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID ThreadID[0], Count[0/2], FileName[End.ssfx]
+[./LOG] 11:58:21,184617776 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\End.ssfx]
+[./LOG] 11:58:21,184617776 |INF| DeleteContents  File[End.ssfx] OldFile[]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID Beginning... ThreadID[1], FileCount[2]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID Beginning... ThreadID[3], FileCount[2]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID ThreadID[1], Count[0/2], FileName[Global.ssfx]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID ThreadID[3], Count[0/2], FileName[digit.msfx]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID Beginning... ThreadID[5], FileCount[2]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID ThreadID[5], Count[0/2], FileName[packet.msfx]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID Beginning... ThreadID[6], FileCount[2]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID ThreadID[6], Count[0/2], FileName[pushtone.msfx]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID Beginning... ThreadID[7], FileCount[2]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID ThreadID[7], Count[0/2], FileName[scenario_func.msfx]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID Beginning... ThreadID[8], FileCount[2]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID ThreadID[8], Count[0/2], FileName[svc_cfgchg.msfx]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID Beginning... ThreadID[2], FileCount[2]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID ThreadID[2], Count[0/2], FileName[abort.msfx]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID Beginning... ThreadID[4], FileCount[2]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID ThreadID[4], Count[0/2], FileName[disswitch.msfx]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID Beginning... ThreadID[9], FileCount[4]
+[./LOG] 11:58:21,184617776 |INF| ThreadSub_MakeIID ThreadID[9], Count[0/4], FileName[switch.msfx]
+[./LOG] 11:58:21,184617776 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\Global.ssfx]
+[./LOG] 11:58:21,184617776 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [End.ssfx]
+[./LOG] 11:58:21,184617776 |INF| DeleteContents  File[Global.ssfx] OldFile[]
+[./LOG] 11:58:21,184617792 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [Global.ssfx]
+[./LOG] 11:58:21,184617792 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\digit.msfx]
+[./LOG] 11:58:21,184617792 |INF| DeleteContents  File[digit.msfx] OldFile[]
+[./LOG] 11:58:21,184617792 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [End.ssfx] Count[2/2]
+[./LOG] 11:58:21,184617792 |INF| ThreadSub_MakeIID ThreadID[0], Count[0/2], FileName[Exception.ssfx]
+[./LOG] 11:58:21,184617870 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\packet.msfx]
+[./LOG] 11:58:21,184617870 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [digit.msfx]
+[./LOG] 11:58:21,184617870 |INF| DeleteContents  File[packet.msfx] OldFile[]
+[./LOG] 11:58:21,184617901 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [packet.msfx]
+[./LOG] 11:58:21,184617901 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\pushtone.msfx]
+[./LOG] 11:58:21,184617901 |INF| DeleteContents  File[pushtone.msfx] OldFile[]
+[./LOG] 11:58:21,184617901 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\scenario_func.msfx]
+[./LOG] 11:58:21,184617901 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [pushtone.msfx]
+[./LOG] 11:58:21,184617901 |INF| DeleteContents  File[scenario_func.msfx] OldFile[]
+[./LOG] 11:58:21,184617932 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [scenario_func.msfx]
+[./LOG] 11:58:21,184617932 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\svc_cfgchg.msfx]
+[./LOG] 11:58:21,184617932 |INF| DeleteContents  File[svc_cfgchg.msfx] OldFile[]
+[./LOG] 11:58:21,184617932 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [svc_cfgchg.msfx]
+[./LOG] 11:58:21,184617932 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\abort.msfx]
+[./LOG] 11:58:21,184617932 |INF| DeleteContents  File[abort.msfx] OldFile[]
+[./LOG] 11:58:21,184617963 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [abort.msfx]
+[./LOG] 11:58:21,184617963 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\disswitch.msfx]
+[./LOG] 11:58:21,184617963 |INF| DeleteContents  File[disswitch.msfx] OldFile[]
+[./LOG] 11:58:21,184617963 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [pushtone.msfx] Count[12/12]
+[./LOG] 11:58:21,184617979 |INF| ThreadSub_MakeIID ThreadID[6], Count[1/2], FileName[record.msfx]
+[./LOG] 11:58:21,184617979 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\switch.msfx]
+[./LOG] 11:58:21,184617979 |INF| DeleteContents  File[switch.msfx] OldFile[]
+[./LOG] 11:58:21,184617979 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [disswitch.msfx]
+[./LOG] 11:58:21,184617994 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\Exception.ssfx]
+[./LOG] 11:58:21,184617994 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [switch.msfx]
+[./LOG] 11:58:21,184618041 |INF| DeleteContents  File[Exception.ssfx] OldFile[End.ssfx]
+[./LOG] 11:58:21,184618041 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [Exception.ssfx]
+[./LOG] 11:58:21,184618041 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\record.msfx]
+[./LOG] 11:58:21,184618041 |INF| DeleteContents  File[record.msfx] OldFile[pushtone.msfx]
+[./LOG] 11:58:21,184618057 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [Exception.ssfx] Count[2/2]
+[./LOG] 11:58:21,184618057 |INF| ThreadSub_MakeIID Ending...  ThreadID[0]
+[./LOG] 11:58:21,184618057 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [svc_cfgchg.msfx] Count[16/16]
+[./LOG] 11:58:21,184618072 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [record.msfx]
+[./LOG] 11:58:21,184618072 |INF| ThreadSub_MakeIID ThreadID[8], Count[1/2], FileName[svcchg.msfx]
+[./LOG] 11:58:21,184618072 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\svcchg.msfx]
+[./LOG] 11:58:21,184618072 |INF| DeleteContents  File[svcchg.msfx] OldFile[svc_cfgchg.msfx]
+[./LOG] 11:58:21,184618072 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [svcchg.msfx]
+[./LOG] 11:58:21,184618135 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [svcchg.msfx] Count[11/11]
+[./LOG] 11:58:21,184618135 |INF| ThreadSub_MakeIID Ending...  ThreadID[8]
+[./LOG] 11:58:21,184618213 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [disswitch.msfx] Count[47/47]
+[./LOG] 11:58:21,184618213 |INF| ThreadSub_MakeIID ThreadID[4], Count[1/2], FileName[getchannel.msfx]
+[./LOG] 11:58:21,184618213 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\getchannel.msfx]
+[./LOG] 11:58:21,184618228 |INF| DeleteContents  File[getchannel.msfx] OldFile[disswitch.msfx]
+[./LOG] 11:58:21,184618244 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [getchannel.msfx]
+[./LOG] 11:58:21,184618275 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [switch.msfx] Count[41/41]
+[./LOG] 11:58:21,184618275 |INF| ThreadSub_MakeIID ThreadID[9], Count[1/4], FileName[transfer.msfx]
+[./LOG] 11:58:21,184618275 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\transfer.msfx]
+[./LOG] 11:58:21,184618275 |INF| DeleteContents  File[transfer.msfx] OldFile[switch.msfx]
+[./LOG] 11:58:21,184618291 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [transfer.msfx]
+[./LOG] 11:58:21,184618353 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [scenario_func.msfx] Count[67/67]
+[./LOG] 11:58:21,184618353 |INF| ThreadSub_MakeIID ThreadID[7], Count[1/2], FileName[scenario_func_dymenu.msfx]
+[./LOG] 11:58:21,184618353 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\scenario_func_dymenu.msfx]
+[./LOG] 11:58:21,184618353 |INF| DeleteContents  File[scenario_func_dymenu.msfx] OldFile[scenario_func.msfx]
+[./LOG] 11:58:21,184618369 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [scenario_func_dymenu.msfx]
+[./LOG] 11:58:21,184618369 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [abort.msfx] Count[70/70]
+[./LOG] 11:58:21,184618369 |INF| ThreadSub_MakeIID ThreadID[2], Count[1/2], FileName[cti.msfx]
+[./LOG] 11:58:21,184618369 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\cti.msfx]
+[./LOG] 11:58:21,184618369 |INF| DeleteContents  File[cti.msfx] OldFile[abort.msfx]
+[./LOG] 11:58:21,184618416 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [getchannel.msfx] Count[34/34]
+[./LOG] 11:58:21,184618431 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [transfer.msfx] Count[29/29]
+[./LOG] 11:58:21,184618431 |INF| ThreadSub_MakeIID ThreadID[9], Count[2/4], FileName[tts.msfx]
+[./LOG] 11:58:21,184618431 |INF| CForcusStudioDoc::OnFileSave
+[./LOG] 11:58:21,184618431 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [cti.msfx]
+[./LOG] 11:58:21,184618431 |INF| CForcusStudioDoc::OnSaveDocument E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\getchannel.msfx
+[./LOG] 11:58:21,184618431 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [record.msfx] Count[63/63]
+[./LOG] 11:58:21,184618431 |INF| ThreadSub_MakeIID Ending...  ThreadID[6]
+[./LOG] 11:58:21,184618431 |INF| ThreadSub_MakeIID Ending...  ThreadID[4]
+[./LOG] 11:58:21,184618431 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\tts.msfx]
+[./LOG] 11:58:21,184618431 |INF| DeleteContents  File[tts.msfx] OldFile[transfer.msfx]
+[./LOG] 11:58:21,184618447 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [scenario_func_dymenu.msfx] Count[10/10]
+[./LOG] 11:58:21,184618447 |INF| ThreadSub_MakeIID Ending...  ThreadID[7]
+[./LOG] 11:58:21,184618509 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [tts.msfx]
+[./LOG] 11:58:21,184618525 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [packet.msfx] Count[59/59]
+[./LOG] 11:58:21,184618525 |INF| ThreadSub_MakeIID ThreadID[5], Count[0/2], FileName[play.msfx]
+[./LOG] 11:58:21,184618525 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\play.msfx]
+[./LOG] 11:58:21,184618540 |INF| DeleteContents  File[play.msfx] OldFile[packet.msfx]
+[./LOG] 11:58:21,184618587 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [play.msfx]
+[./LOG] 11:58:21,184618618 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [digit.msfx] Count[123/123]
+[./LOG] 11:58:21,184618618 |INF| ThreadSub_MakeIID ThreadID[3], Count[0/2], FileName[disconnect.msfx]
+[./LOG] 11:58:21,184618618 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\disconnect.msfx]
+[./LOG] 11:58:21,184618618 |INF| DeleteContents  File[disconnect.msfx] OldFile[digit.msfx]
+[./LOG] 11:58:22,184618650 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [disconnect.msfx]
+[./LOG] 11:58:22,184618728 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [disconnect.msfx] Count[14/14]
+[./LOG] 11:58:22,184618728 |INF| ThreadSub_MakeIID Ending...  ThreadID[3]
+[./LOG] 11:58:22,184619367 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [play.msfx] Count[135/135]
+[./LOG] 11:58:22,184619367 |INF| ThreadSub_MakeIID Ending...  ThreadID[5]
+[./LOG] 11:58:23,184619804 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [Global.ssfx] Count[15/15]
+[./LOG] 11:58:23,184619804 |INF| CForcusStudioDoc::OnFileSave
+[./LOG] 11:58:23,184619804 |INF| CForcusStudioDoc::OnSaveDocument E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\Global.ssfx
+[./LOG] 11:58:23,184620007 |INF| CMySECTreeCtrl::ArrangeItem  Start Sort Time
+[./LOG] 11:58:23,184620022 |INF| CMySECTreeCtrl::ArrangeItem  End Sort Time  Elapsed Time [15/ms|0/s], Total Elapsed Time [15/ms|0/s]
+[./LOG] 11:58:23,184620022 |INF| ThreadSub_MakeIID ThreadID[1], Count[0/2], FileName[Main.ssfx]
+[./LOG] 11:58:23,184620022 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\Main.ssfx]
+[./LOG] 11:58:23,184620022 |INF| DeleteContents  File[Main.ssfx] OldFile[Global.ssfx]
+[./LOG] 11:58:23,184620038 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [cti.msfx] Count[125/125]
+[./LOG] 11:58:23,184620038 |INF| ThreadSub_MakeIID Ending...  ThreadID[2]
+[./LOG] 11:58:23,184620069 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [Main.ssfx]
+[./LOG] 11:58:23,184620147 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [tts.msfx] Count[206/206]
+[./LOG] 11:58:23,184620147 |INF| ThreadSub_MakeIID ThreadID[9], Count[3/4], FileName[userfunction.msfx]
+[./LOG] 11:58:23,184620147 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\userfunction.msfx]
+[./LOG] 11:58:23,184620147 |INF| DeleteContents  File[userfunction.msfx] OldFile[tts.msfx]
+[./LOG] 11:58:23,184620178 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [userfunction.msfx]
+[./LOG] 11:58:24,184620787 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [userfunction.msfx] Count[88/88]
+[./LOG] 11:58:24,184620787 |INF| ThreadSub_MakeIID Ending...  ThreadID[9]
+[./LOG] 11:58:24,184621114 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [Main.ssfx] Count[111/111]
+[./LOG] 11:58:24,184621114 |INF| ThreadSub_MakeIID Ending...  ThreadID[1]
+[./LOG] 11:58:25,184621957 |INF| CDBProc::CommitTransaction Search & Replace
+[./LOG] 11:58:25,184621957 |INF| CDBProc::DeleteDBDataStruct QueryType[0] Append Only
+[./LOG] 11:58:25,184622004 |INF| ThreadMain_MakeIID Wait Thread Roop... Terminated All ThreadSub_MakeIID
+[./LOG] 11:58:25,184622004 |INF| ThreadQueryProc Ending Count[4754]
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID Terminated Threads
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [1228]
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [1216]
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [1224]
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [1564]
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [1720]
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [1676]
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [1628]
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [1540]
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [1620]
+[./LOG] 11:58:25,184622082 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [1696]
+[./LOG] 11:58:25,184622097 |INF| ThreadMain_MakeIID MACRO_HIDE_PROGRESS
+[./LOG] 11:58:25,184622097 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Load!
+
+[./LOG] 11:58:25,184622113 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 11:58:25,184622191 |INF| CForcusStudioApp::OnFileSaveProject
+[./LOG] 11:58:25,184622191 |INF| CProjectFileDoc::WriteProjectFile
+[./LOG] 11:58:25,184622191 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 11:58:25,184622191 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 11:58:25,184622191 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 11:58:25,184622191 |INF| CForcusStudioApp::WorkAfterConversion  ConversionProject OK!
+[./LOG] 11:58:25,184622191 |INF| CForcusStudioApp::WorkAfterConversion  PostMessage MSG_AUTO_COMPLETE_UPDATE_ALL
+[./LOG] 11:58:25,184622191 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:25,184622284 |INF| CForcusStudioView::OnCreate
+[./LOG] 11:58:25,184622284 |INF| CForcusStudioView::OnCreate  CForcusStudioDoc* pDoc = GetDocument()
+[./LOG] 11:58:25,184622284 |INF| CForcusStudioView::OnCreate  CForcusStudioModel* pModel = pDoc->GetModel()
+[./LOG] 11:58:25,184622284 |INF| CForcusStudioView::OnCreate  GetViewport()->Create(this, NULL)
+[./LOG] 11:58:25,184622284 |INF| CForcusStudioViewport::OnCreate()
+[./LOG] 11:58:25,184622284 |INF| CForcusStudioView::OnCreate  GetViewport()->SetModel(pModel)
+[./LOG] 11:58:25,184622316 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\Main.ssfx]
+[./LOG] 11:58:25,184622316 |INF| DeleteContents  File[Main.ssfx] OldFile[]
+[./LOG] 11:58:25,184622409 |INF| CForcusStudioView::OnInitialUpdate
+[./LOG] 11:58:25,184622409 |INF| CForcusStudioViewport::OnInitialUpdate
+[./LOG] 11:58:25,184622550 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 11:58:25,184622550 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Main.ssfx]
+[./LOG] 11:58:25,184622550 |INF| CForcusStudioApp::FindOpenFileList  FileName[MAIN.SSFX]
+[./LOG] 11:58:25,184622550 |INF| CForcusStudioApp::AddOpenFileList  FileName[MAIN.SSFX]
+[./LOG] 11:58:26,184623049 |INF| CForcusStudioApp::MakeAutoCompleteData
+[./LOG] 11:58:26,184623049 |INF| ThreadMain_MakeACData Beginning
+[./LOG] 11:58:26,184623049 |INF| ThreadMain_MakeIID Ending
+[./LOG] 11:58:26,184623049 |INF| CForcusStudioApp::CreateProgressDlg
+[./LOG] 11:58:26,184623049 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 11:58:26,184623142 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:26,184623142 |INF| CForcusStudioDoc::SetACData_Item  Begin
+[./LOG] 11:58:26,184623142 |INF| CDBProc::StartQueryThread
+[./LOG] 11:58:26,184623142 |INF| CDBProc::CreateDBDataStruct QueryType[4] Select, Update, Delete
+[./LOG] 11:58:26,184623158 |INF| ThreadQueryProc Beginning
+[./LOG] 11:58:26,184623158 |INF| CForcusStudioDoc::GetACData_InnerFunction  Auto Complete Data Inner Function
+[./LOG] 11:58:26,184623158 |INF| CForcusStudioDoc::GetACData_SystemConstant  Auto Complete Data System Constant
+[./LOG] 11:58:26,184623158 |INF| CForcusStudioDoc::GetACData_SystemConstantEx  Auto Complete Data System Constant Extend
+[./LOG] 11:58:26,184623158 |INF| CForcusStudioDoc::GetACData_SystemVariable  Auto Complete Data System Variable
+[./LOG] 11:58:27,184624141 |INF| CDBProc::DeleteDBDataStruct QueryType[17] Select, Update, Delete
+[./LOG] 11:58:27,184624156 |INF| ThreadQueryProc Ending
+[./LOG] 11:58:27,184624156 |INF| CForcusStudioDoc::SetACData_Item  End  Elapsed Time [1014/ms|1/s], Total Elapsed Time [1014/ms|1/s]
+[./LOG] 11:58:27,184624156 |INF| CForcusStudioApp::WorkAfterAutoComplete
+[./LOG] 11:58:27,184624156 |INF| ThreadMain_MakeACData Ending
+[./LOG] 11:58:27,184624203 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 11:58:32,184628743 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 11:58:32,184628743 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 11:58:32,184628743 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 11:58:32,184628743 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[MenuCall], Name[MenuCall1]
+
+[./LOG] 11:58:32,184629117 |INF| CItem_MenuCall_Statement1_Dlg::OnInitDialog
+[./LOG] 11:58:32,184629554 |INF| CItem_MenuCall_Statement1_Dlg::OnInitDialog
+[./LOG] 11:58:34,184631426 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:34,184631442 |INF| CForcusStudioView::OnCreate
+[./LOG] 11:58:34,184631442 |INF| CForcusStudioView::OnCreate  CForcusStudioDoc* pDoc = GetDocument()
+[./LOG] 11:58:34,184631442 |INF| CForcusStudioView::OnCreate  CForcusStudioModel* pModel = pDoc->GetModel()
+[./LOG] 11:58:34,184631442 |INF| CForcusStudioView::OnCreate  GetViewport()->Create(this, NULL)
+[./LOG] 11:58:34,184631442 |INF| CForcusStudioViewport::OnCreate()
+[./LOG] 11:58:34,184631442 |INF| CForcusStudioView::OnCreate  GetViewport()->SetModel(pModel)
+[./LOG] 11:58:34,184631473 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\Global.ssfx]
+[./LOG] 11:58:34,184631473 |INF| DeleteContents  File[Global.ssfx] OldFile[]
+[./LOG] 11:58:34,184631520 |INF| CForcusStudioView::OnInitialUpdate
+[./LOG] 11:58:34,184631520 |INF| CForcusStudioViewport::OnInitialUpdate
+[./LOG] 11:58:35,184631707 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Global.ssfx]
+[./LOG] 11:58:35,184631816 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 11:58:35,184631816 |INF| CForcusStudioApp::FindOpenFileList  FileName[GLOBAL.SSFX]
+[./LOG] 11:58:35,184631816 |INF| CForcusStudioApp::AddOpenFileList  FileName[GLOBAL.SSFX]
+[./LOG] 11:58:35,184631941 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 11:58:35,184631941 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 11:58:35,184631941 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[DefineMenu], Name[DefineMenu1]
+
+[./LOG] 11:58:35,184631956 |INF| CItem_DefineMenu_Dlg::OnInitDialog
+[./LOG] 11:58:35,184632034 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 11:58:40,184637510 |INF| CItem_DefineMenu_Dlg::OnInitDialog
+[./LOG] 11:58:40,184637510 |INF| CItem_DefineMenu_Dlg::OnInitDialog  Tab Window OK
+[./LOG] 11:58:40,184637510 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 11:58:54,184650895 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 11:58:54,184650911 |INF| CForcusStudioView::OnCreate
+[./LOG] 11:58:54,184650926 |INF| CForcusStudioView::OnCreate  CForcusStudioDoc* pDoc = GetDocument()
+[./LOG] 11:58:54,184650926 |INF| CForcusStudioView::OnCreate  CForcusStudioModel* pModel = pDoc->GetModel()
+[./LOG] 11:58:54,184650926 |INF| CForcusStudioView::OnCreate  GetViewport()->Create(this, NULL)
+[./LOG] 11:58:54,184650926 |INF| CForcusStudioViewport::OnCreate()
+[./LOG] 11:58:54,184650926 |INF| CForcusStudioView::OnCreate  GetViewport()->SetModel(pModel)
+[./LOG] 11:58:54,184650957 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\scenario_func_dymenu.msfx]
+[./LOG] 11:58:54,184650957 |INF| DeleteContents  File[scenario_func_dymenu.msfx] OldFile[]
+[./LOG] 11:58:54,184651020 |INF| CForcusStudioView::OnInitialUpdate
+[./LOG] 11:58:54,184651020 |INF| CForcusStudioViewport::OnInitialUpdate
+[./LOG] 11:58:54,184651191 |INF| CForcusStudioApp::ItemMenuValidation Document Name [scenario_func_dymenu.msfx]
+[./LOG] 11:58:54,184651301 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 11:58:54,184651301 |INF| CForcusStudioApp::FindOpenFileList  FileName[SCENARIO_FUNC_DYMENU.MSFX]
+[./LOG] 11:58:54,184651301 |INF| CForcusStudioApp::AddOpenFileList  FileName[SCENARIO_FUNC_DYMENU.MSFX]
+[./LOG] 11:59:08,184665294 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 11:59:08,184665294 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 11:59:08,184665294 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 11:59:08,184665294 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Play], Name[Play1]
+
+[./LOG] 11:59:08,184665512 |INF| CItem_Play_Statement1_Dlg::OnInitDialog
+[./LOG] 11:59:17,184673811 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 11:59:21,184677665 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 11:59:22,184678897 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 11:59:26,184682719 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 11:59:38,184695152 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Main.ssfx]
+[./LOG] 11:59:38,184695184 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 11:59:38,184695184 |INF| CForcusStudioApp::FindOpenFileList  FileName[MAIN.SSFX]
+[./LOG] 13:22:40,189677512 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:22:40,189677512 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:22:40,189677512 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:22:40,189677512 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[MenuCall], Name[MenuCall1]
+
+[./LOG] 13:22:41,189677887 |INF| CItem_MenuCall_Statement1_Dlg::OnInitDialog
+[./LOG] 13:22:41,189678292 |INF| CItem_MenuCall_Statement1_Dlg::OnInitDialog
+[./LOG] 13:22:46,189682972 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Global.ssfx]
+[./LOG] 13:22:46,189683035 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 13:22:46,189683035 |INF| CForcusStudioApp::FindOpenFileList  FileName[GLOBAL.SSFX]
+[./LOG] 13:22:46,189683050 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:22:46,189683050 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:22:46,189683050 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[DefineMenu], Name[DefineMenu1]
+
+[./LOG] 13:22:46,189683128 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 13:22:51,189688432 |INF| CItem_DefineMenu_Dlg::OnInitDialog
+[./LOG] 13:22:51,189688432 |INF| CItem_DefineMenu_Dlg::OnInitDialog  Tab Window OK
+[./LOG] 13:22:51,189688432 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 13:22:58,189695031 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:23:14,189711333 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:25:22,189839332 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 13:25:22,189839348 |INF| CForcusStudioView::OnCreate
+[./LOG] 13:25:22,189839348 |INF| CForcusStudioView::OnCreate  CForcusStudioDoc* pDoc = GetDocument()
+[./LOG] 13:25:22,189839348 |INF| CForcusStudioView::OnCreate  CForcusStudioModel* pModel = pDoc->GetModel()
+[./LOG] 13:25:22,189839348 |INF| CForcusStudioView::OnCreate  GetViewport()->Create(this, NULL)
+[./LOG] 13:25:22,189839348 |INF| CForcusStudioViewport::OnCreate()
+[./LOG] 13:25:22,189839348 |INF| CForcusStudioView::OnCreate  GetViewport()->SetModel(pModel)
+[./LOG] 13:25:22,189839363 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\svc_cfgchg.msfx]
+[./LOG] 13:25:22,189839363 |INF| DeleteContents  File[svc_cfgchg.msfx] OldFile[]
+[./LOG] 13:25:22,189839426 |INF| CForcusStudioView::OnInitialUpdate
+[./LOG] 13:25:22,189839426 |INF| CForcusStudioViewport::OnInitialUpdate
+[./LOG] 13:25:22,189839613 |INF| CForcusStudioApp::ItemMenuValidation Document Name [svc_cfgchg.msfx]
+[./LOG] 13:25:23,189839738 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 13:25:23,189839738 |INF| CForcusStudioApp::FindOpenFileList  FileName[SVC_CFGCHG.MSFX]
+[./LOG] 13:25:23,189839738 |INF| CForcusStudioApp::AddOpenFileList  FileName[SVC_CFGCHG.MSFX]
+[./LOG] 13:26:00,189876694 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 13:26:00,189876694 |INF| CForcusStudioApp::FindOpenFileList  FileName[SCENARIO_FUNC_DYMENU.MSFX]
+[./LOG] 13:26:06,189883418 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:26:06,189883418 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:26:06,189883418 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:26:06,189883418 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Play], Name[Play1]
+
+[./LOG] 13:26:07,189883652 |INF| CItem_Play_Statement1_Dlg::OnInitDialog
+[./LOG] 13:26:12,189889518 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:26:16,189893324 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:26:33,189909876 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:26:34,189911093 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:27:03,189939812 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:27:03,189939812 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:27:03,189939812 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:27:03,189939812 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Start], Name[Start1]
+
+[./LOG] 13:27:03,189940062 |INF| CItem_Start_Statement1_Dlg::OnInitDialog
+[./LOG] 13:27:34,189971574 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Main.ssfx]
+[./LOG] 13:27:34,189971605 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 13:27:34,189971605 |INF| CForcusStudioApp::FindOpenFileList  FileName[MAIN.SSFX]
+[./LOG] 13:28:14,190011339 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:28:14,190011339 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:28:14,190011339 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:28:14,190011339 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[MakeCall], Name[MakeCall1]
+
+[./LOG] 13:28:14,190011510 |INF| CItem_MakeCall_Statement1_Dlg::OnInitDialog
+[./LOG] 13:28:14,190011604 |INF| CItem_MakeCall_Statement1_Dlg::OnInitDialog
+[./LOG] 13:29:03,190060198 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 13:29:03,190060214 |INF| CForcusStudioView::OnCreate
+[./LOG] 13:29:03,190060214 |INF| CForcusStudioView::OnCreate  CForcusStudioDoc* pDoc = GetDocument()
+[./LOG] 13:29:03,190060214 |INF| CForcusStudioView::OnCreate  CForcusStudioModel* pModel = pDoc->GetModel()
+[./LOG] 13:29:03,190060214 |INF| CForcusStudioView::OnCreate  GetViewport()->Create(this, NULL)
+[./LOG] 13:29:03,190060214 |INF| CForcusStudioViewport::OnCreate()
+[./LOG] 13:29:03,190060214 |INF| CForcusStudioView::OnCreate  GetViewport()->SetModel(pModel)
+[./LOG] 13:29:03,190060261 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\scenario_func.msfx]
+[./LOG] 13:29:03,190060261 |INF| DeleteContents  File[scenario_func.msfx] OldFile[]
+[./LOG] 13:29:03,190060339 |INF| CForcusStudioView::OnInitialUpdate
+[./LOG] 13:29:03,190060339 |INF| CForcusStudioViewport::OnInitialUpdate
+[./LOG] 13:29:03,190060542 |INF| CForcusStudioApp::ItemMenuValidation Document Name [scenario_func.msfx]
+[./LOG] 13:29:04,190060635 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 13:29:04,190060635 |INF| CForcusStudioApp::FindOpenFileList  FileName[SCENARIO_FUNC.MSFX]
+[./LOG] 13:29:04,190060635 |INF| CForcusStudioApp::AddOpenFileList  FileName[SCENARIO_FUNC.MSFX]
+[./LOG] 13:29:13,190069855 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:29:13,190069855 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:29:13,190069855 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:29:13,190069855 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Play], Name[Play1]
+
+[./LOG] 13:29:13,190070073 |INF| CItem_Play_Statement1_Dlg::OnInitDialog
+[./LOG] 13:29:29,190086251 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:29:32,190089059 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:29:39,190096297 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:29:39,190096297 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:29:39,190096297 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:29:39,190096297 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[GetDigit], Name[GetDigit3]
+
+[./LOG] 13:29:40,190096640 |INF| CItem_GetDigit_Statement1_Dlg::OnInitDialog
+[./LOG] 13:29:40,190097467 |INF| CTag_GetDigit_Dlg::OnInitDialog
+[./LOG] 13:29:51,190108200 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:30:03,190120618 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:30:31,190147777 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 13:30:31,190147777 |INF| CForcusStudioApp::FindOpenFileList  FileName[SCENARIO_FUNC_DYMENU.MSFX]
+[./LOG] 13:30:42,190159150 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Main.ssfx]
+[./LOG] 13:30:45,190162332 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:30:45,190162332 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:30:45,190162332 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:30:45,190162332 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[MenuCall], Name[MenuCall1]
+
+[./LOG] 13:30:46,190162722 |INF| CItem_MenuCall_Statement1_Dlg::OnInitDialog
+[./LOG] 13:30:46,190163143 |INF| CItem_MenuCall_Statement1_Dlg::OnInitDialog
+[./LOG] 13:30:50,190166809 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Global.ssfx]
+[./LOG] 13:30:50,190166887 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 13:30:50,190166887 |INF| CForcusStudioApp::FindOpenFileList  FileName[GLOBAL.SSFX]
+[./LOG] 13:30:50,190166887 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:30:50,190166887 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:30:50,190166887 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[DefineMenu], Name[DefineMenu1]
+
+[./LOG] 13:30:50,190166965 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 13:30:55,190172519 |INF| CItem_DefineMenu_Dlg::OnInitDialog
+[./LOG] 13:30:55,190172519 |INF| CItem_DefineMenu_Dlg::OnInitDialog  Tab Window OK
+[./LOG] 13:30:55,190172519 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 13:31:58,190234639 |INF| CForcusStudioApp::ItemMenuValidation Document Name [scenario_func.msfx]
+[./LOG] 13:31:58,190234717 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 13:31:58,190234717 |INF| CForcusStudioApp::FindOpenFileList  FileName[SCENARIO_FUNC.MSFX]
+[./LOG] 13:32:38,190274825 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Global.ssfx]
+[./LOG] 13:32:42,190278693 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Main.ssfx]
+[./LOG] 13:32:43,190280051 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Global.ssfx]
+[./LOG] 13:32:45,190281689 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:32:45,190281689 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:32:45,190281689 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:32:45,190281689 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[DefineMenu], Name[DefineMenu1]
+
+[./LOG] 13:32:45,190281767 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 13:32:50,190287024 |INF| CItem_DefineMenu_Dlg::OnInitDialog
+[./LOG] 13:32:50,190287024 |INF| CItem_DefineMenu_Dlg::OnInitDialog  Tab Window OK
+[./LOG] 13:32:50,190287024 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 13:33:15,190311937 |INF| CForcusStudioApp::ItemMenuValidation Document Name [scenario_func.msfx]
+[./LOG] 13:33:15,190312015 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 13:33:15,190312015 |INF| CForcusStudioApp::FindOpenFileList  FileName[SCENARIO_FUNC.MSFX]
+[./LOG] 13:33:55,190351951 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:33:55,190351951 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:33:55,190351951 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:33:55,190351951 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Play], Name[Play5]
+
+[./LOG] 13:33:55,190352201 |INF| CItem_Play_Statement1_Dlg::OnInitDialog
+[./LOG] 13:34:04,190361249 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:34:07,190364556 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:34:09,190366319 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:34:10,190367427 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:34:17,190374010 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:34:17,190374010 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:34:17,190374010 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:34:17,190374010 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[GetDigit], Name[GetDigit3]
+
+[./LOG] 13:34:17,190374353 |INF| CItem_GetDigit_Statement1_Dlg::OnInitDialog
+[./LOG] 13:34:18,190375227 |INF| CTag_GetDigit_Dlg::OnInitDialog
+[./LOG] 13:34:23,190379813 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:34:35,190392169 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:34:49,190406396 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:34:49,190406396 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:34:49,190406396 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:34:49,190406396 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Play], Name[Play5]
+
+[./LOG] 13:34:49,190406614 |INF| CItem_Play_Statement1_Dlg::OnInitDialog
+[./LOG] 13:34:53,190410389 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:34:57,190413697 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:35:01,190418002 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:35:01,190418002 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:35:01,190418002 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:35:01,190418002 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[GetDigit], Name[GetDigit1]
+
+[./LOG] 13:35:01,190418361 |INF| CItem_GetDigit_Statement1_Dlg::OnInitDialog
+[./LOG] 13:35:02,190419219 |INF| CTag_GetDigit_Dlg::OnInitDialog
+[./LOG] 13:35:07,190423806 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:35:16,190433212 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:35:23,190439718 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 13:35:32,190449156 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 13:35:45,190462509 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:35:45,190462509 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:35:45,190462509 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:35:45,190462509 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[If], Name[If1]
+
+[./LOG] 13:35:46,190462743 |INF| CItem_If_Statement1_Dlg::OnInitDialog
+[./LOG] 13:35:46,190462790 |INF| CItem_If_Statement1_Dlg::OnInitDialog
+[./LOG] 13:36:40,190517562 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:36:40,190517562 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:36:40,190517562 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:36:40,190517562 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[GetDigit], Name[GetDigit3]
+
+[./LOG] 13:36:41,190517890 |INF| CItem_GetDigit_Statement1_Dlg::OnInitDialog
+[./LOG] 13:36:42,190518763 |INF| CTag_GetDigit_Dlg::OnInitDialog
+[./LOG] 13:42:50,190886707 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Global.ssfx]
+[./LOG] 13:42:52,190888798 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:42:52,190888798 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:42:52,190888798 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:42:52,190888798 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[DefineMenu], Name[DefineMenu1]
+
+[./LOG] 13:42:52,190888891 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 13:42:57,190894227 |INF| CItem_DefineMenu_Dlg::OnInitDialog
+[./LOG] 13:42:57,190894227 |INF| CItem_DefineMenu_Dlg::OnInitDialog  Tab Window OK
+[./LOG] 13:42:57,190894227 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 13:47:07,191144421 |INF| CForcusStudioApp::OnFileNew
+[./LOG] 13:47:22,191159381 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 13:47:22,191159397 |INF| CForcusStudioView::OnCreate
+[./LOG] 13:47:22,191159397 |INF| CForcusStudioView::OnCreate  CForcusStudioDoc* pDoc = GetDocument()
+[./LOG] 13:47:22,191159397 |INF| CForcusStudioView::OnCreate  CForcusStudioModel* pModel = pDoc->GetModel()
+[./LOG] 13:47:22,191159397 |INF| CForcusStudioView::OnCreate  GetViewport()->Create(this, NULL)
+[./LOG] 13:47:22,191159397 |INF| CForcusStudioViewport::OnCreate()
+[./LOG] 13:47:22,191159397 |INF| CForcusStudioView::OnCreate  GetViewport()->SetModel(pModel)
+[./LOG] 13:47:22,191159444 |INF| CForcusStudioDoc::OnNewDocument
+[./LOG] 13:47:22,191159444 |INF| DeleteContents  File[] OldFile[]
+[./LOG] 13:47:22,191159475 |INF| CForcusStudioView::OnInitialUpdate
+[./LOG] 13:47:22,191159475 |INF| CForcusStudioViewport::OnInitialUpdate
+[./LOG] 13:47:23,191159834 |INF| CForcusStudioApp::OnFileNew - MACRO_GET_DOCNAME("")
+[./LOG] 13:47:23,191159834 |INF| CForcusStudioDoc::OnFileSave
+[./LOG] 13:47:38,191175184 |INF| CForcusStudioDoc::OnSaveDocument E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\AsrTest.msfx
+[./LOG] 13:47:38,191175200 |INF| CForcusStudioDoc::Serialize SetSaveList [asrtest.msfx]
+[./LOG] 13:47:38,191175200 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 13:47:38,191175231 |INF| CForcusStudioApp::OnFileSaveProject
+[./LOG] 13:47:38,191175231 |INF| CProjectFileDoc::WriteProjectFile
+[./LOG] 13:47:38,191175231 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 13:47:38,191175231 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 13:47:38,191175231 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 13:47:38,191175231 |INF| CForcusStudioApp::MakeItemInformationData
+[./LOG] 13:47:38,191175231 |INF| CForcusStudioApp::RemoveSaveItemType
+[./LOG] 13:47:38,191175231 |INF| CForcusStudioApp::ClearRemoveItemType
+[./LOG] 13:47:38,191175231 |INF| ThreadSub_MakeIIDItem  Compare OpenSaveFileList Count[1/1], FileName[asrtest.msfx]
+[./LOG] 13:47:38,191175231 |INF| CForcusStudioApp::CompareOpen_SaveFileList  FileName[ASRTEST.MSFX]
+[./LOG] 13:47:38,191175231 |INF| CForcusStudioApp::AddOpenFileList  FileName[ASRTEST.MSFX]
+[./LOG] 13:47:38,191175231 |INF| CForcusStudioApp::AddSaveItemType ItemType[Start], FileName[ASRTEST.MSFX]
+[./LOG] 13:47:38,191175231 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Begin
+[./LOG] 13:47:38,191175231 |INF| CDBProc::BeginTransaction Search & Replace
+[./LOG] 13:47:38,191175231 |INF| CDBProc::StartQueryThread
+[./LOG] 13:47:38,191175231 |INF| CDBProc::CreateDBDataStruct QueryType[3] Select, Update, Delete
+[./LOG] 13:47:38,191175247 |INF| ThreadQueryProc Beginning
+[./LOG] 13:47:38,191175247 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[1/1][Start1]
+[./LOG] 13:47:38,191175278 |INF| CForcusStudioApp::AddRemoveItemType ItemType[Start], FileName[ASRTEST.MSFX]
+[./LOG] 13:47:38,191175278 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList End
+[./LOG] 13:47:38,191175278 |INF| CDBProc::DeleteDBDataStruct QueryType[3] Select, Update, Delete
+[./LOG] 13:47:38,191175294 |INF| ThreadQueryProc Ending
+[./LOG] 13:47:38,191175294 |INF| CDBProc::CommitTransaction Search & Replace
+[./LOG] 13:47:38,191175294 |INF| ThreadMain_MakeIIDBySaveAndLoad Beginning
+[./LOG] 13:47:38,191175294 |INF| ThreadMain_MakeIIDBySaveAndLoad Core=[4], FileCount=[1], CoreThread=[1]
+[./LOG] 13:47:38,191175294 |INF| CForcusStudioView::AddFileToProject
+[./LOG] 13:47:38,191175294 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 13:47:38,191175294 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\AsrTest.msfx]
+[./LOG] 13:47:38,191175294 |INF| DeleteContents  File[AsrTest.msfx] OldFile[]
+[./LOG] 13:47:38,191175309 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 13:47:38,191175309 |INF| CForcusStudioDoc::OnOpenDocument [E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\AsrTest.msfx]
+[./LOG] 13:47:38,191175309 |INF| DeleteContents  File[AsrTest.msfx] OldFile[]
+[./LOG] 13:47:38,191175309 |INF| CForcusStudioApp::OnFileSaveProject
+[./LOG] 13:47:38,191175309 |INF| CProjectFileDoc::WriteProjectFile
+[./LOG] 13:47:38,191175309 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 13:47:38,191175325 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 13:47:38,191175325 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 13:47:38,191175325 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 13:47:38,191175325 |INF| CForcusStudioApp::ItemMenuValidation Document Name [AsrTest.msfx]
+[./LOG] 13:47:38,191175325 |INF| CForcusStudioApp::FindOpenFileList  FileName[ASRTEST.MSFX]
+[./LOG] 13:47:38,191175325 |INF| CForcusStudioApp::CreateProgressDlg
+[./LOG] 13:47:38,191175325 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 13:47:38,191175418 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_saThreadFiles = new CStringArray[1]
+[./LOG] 13:47:38,191175418 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_hThread = new HANDLE[1]
+[./LOG] 13:47:38,191175418 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_dwThreadID = new DWORD[1]
+[./LOG] 13:47:38,191175418 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_nWorkCount = new int[1]
+[./LOG] 13:47:38,191175434 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 13:47:38,191175434 |INF| CDBProc::BeginTransaction Search & Replace
+[./LOG] 13:47:38,191175434 |INF| CDBProc::StartQueryThread
+[./LOG] 13:47:38,191175434 |INF| CDBProc::CreateDBDataStruct QueryType[0] Append Only
+[./LOG] 13:47:38,191175450 |INF| ThreadQueryProc Beginning
+[./LOG] 13:47:38,191175450 |INF| ThreadSub_MakeIIDItem Beginning... ThreadID[0], FileCount[1]
+[./LOG] 13:47:38,191175450 |INF| CForcusStudioDoc::GetItemDataFromDocEx Begining [AsrTest.msfx]
+[./LOG] 13:47:38,191175450 |INF| CForcusStudioApp::FindItemOpenFileList  FileName[ASRTEST.MSFX], ItemName[Start]
+[./LOG] 13:47:38,191175450 |INF| CForcusStudioDoc::GetItemDataFromDocEx  TID[0]  File[AsrTest.msfx] Guid[{8ECECB7D-7E4F-4042-BD26-DADADCC904F0}], Type[Start] Name[Start1]
+[./LOG] 13:47:38,191175465 |INF| CForcusStudioDoc::GetItemDataFromDocEx Ending [AsrTest.msfx] Count[1/1]
+[./LOG] 13:47:38,191175465 |INF| ThreadSub_MakeIIDItem Ending...  ThreadID[0]
+[./LOG] 13:47:39,191176308 |INF| CDBProc::CommitTransaction Search & Replace
+[./LOG] 13:47:39,191176308 |INF| CDBProc::DeleteDBDataStruct QueryType[0] Append Only
+[./LOG] 13:47:39,191176323 |INF| ThreadMain_MakeIIDBySaveAndLoad Wait Thread Roop... Terminated All ThreadSub_MakeIIDItem
+[./LOG] 13:47:39,191176323 |INF| ThreadMain_MakeIIDBySaveAndLoad Terminated Threads
+[./LOG] 13:47:39,191176323 |INF| ThreadMain_MakeIIDBySaveAndLoad CloseHandle and Init Variable [1716]
+[./LOG] 13:47:39,191176323 |INF| ThreadMain_MakeIIDBySaveAndLoad MACRO_HIDE_PROGRESS
+[./LOG] 13:47:39,191176323 |INF| ThreadQueryProc Ending Count[6]
+[./LOG] 13:47:39,191176370 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 13:47:39,191176370 |INF| CForcusStudioApp::WorkAfterSaveAndLoadModifiedFile  Save Update OK!
+[./LOG] 13:47:39,191176370 |INF| CForcusStudioApp::WorkAfterSaveAndLoadModifiedFile  PostMessage TYPE_AC_UPDATE_AFTER_SAVE
+[./LOG] 13:47:39,191176370 |INF| CForcusStudioApp::MakeAutoCompleteData
+[./LOG] 13:47:39,191176370 |INF| ThreadMain_MakeACData Beginning
+[./LOG] 13:47:39,191176386 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 13:47:39,191176386 |INF| CForcusStudioDoc::SetACData_Item  Begin
+[./LOG] 13:47:39,191176386 |INF| CDBProc::StartQueryThread
+[./LOG] 13:47:39,191176386 |INF| CDBProc::CreateDBDataStruct QueryType[4] Select, Update, Delete
+[./LOG] 13:47:39,191176386 |INF| ThreadQueryProc Beginning
+[./LOG] 13:47:39,191176401 |INF| CForcusStudioApp::FindSaveItemType ItemType[Start]
+[./LOG] 13:47:39,191176417 |INF| CDBProc::DeleteDBDataStruct QueryType[19] Select, Update, Delete
+[./LOG] 13:47:39,191176417 |INF| ThreadQueryProc Ending
+[./LOG] 13:47:39,191176417 |INF| CForcusStudioDoc::SetACData_Item  End  Elapsed Time [31/ms|0/s], Total Elapsed Time [31/ms|0/s]
+[./LOG] 13:47:39,191176417 |INF| CForcusStudioApp::WorkAfterAutoComplete
+[./LOG] 13:47:39,191176417 |INF| ThreadMain_MakeACData Ending
+[./LOG] 13:47:40,191176869 |INF| ThreadMain_MakeIIDBySaveAndLoad Ending
+[./LOG] 13:51:13,191389826 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[GLOBAL.SSFX], Guild[{B23DE9F8-1E2D-43D1-A2AA-7A0528C2EDFC}], ItemName[DefineMenu1], ItemType[DefineMenu]
+[./LOG] 13:52:02,191439325 |INF| CForcusStudioController::OnEditCopy
+[./LOG] 13:52:04,191441150 |INF| CForcusStudioController::OnEditPaste
+[./LOG] 13:52:04,191441182 |INF| CForcusStudioController::OnSelectionDo - RESTORE
+[./LOG] 13:52:04,191441182 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{1F14D2FA-3F45-41D4-B626-14ACA5E0812B}], ItemName[Play2], ItemType[Play]
+[./LOG] 13:52:11,191448358 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:52:11,191448358 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:52:11,191448358 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:52:11,191448358 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Play], Name[Play2]
+
+[./LOG] 13:52:11,191448592 |INF| CItem_Play_Statement1_Dlg::OnInitDialog
+[./LOG] 13:52:38,191475283 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{1F14D2FA-3F45-41D4-B626-14ACA5E0812B}], ItemName[Play2], ItemType[Play]
+[./LOG] 13:53:00,191497545 |INF| CForcusStudioController::OnEditCopy
+[./LOG] 13:53:03,191499776 |INF| CForcusStudioController::OnEditPaste
+[./LOG] 13:53:03,191499854 |INF| CForcusStudioController::OnSelectionDo - RESTORE
+[./LOG] 13:53:03,191499854 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{B1F4A84A-0FC1-4B5A-B174-3508DDB2D9F8}], ItemName[GetDigit1], ItemType[GetDigit]
+[./LOG] 13:53:03,191499854 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{1B9D3B4E-9C88-45DB-A2F5-21DDD0084FF4}], ItemName[Select1], ItemType[Select]
+[./LOG] 13:53:52,191549540 |INF| CForcusStudioController::OnOdLinkSymbols
+[./LOG] 13:53:57,191554329 |INF| CForcusStudioController::OnOdLinkSymbols
+[./LOG] 13:54:12,191569477 |INF| CForcusStudioController::OnOdLinkSymbols
+[./LOG] 13:54:23,191580615 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:54:24,191581005 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:54:34,191591270 |INF| CForcusStudioController::OnSelectionDo - RESTORE
+[./LOG] 13:54:34,191591270 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{8ECECB7D-7E4F-4042-BD26-DADADCC904F0}], ItemName[Start1], ItemType[Start]
+[./LOG] 13:54:44,191600739 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:54:44,191600739 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:54:44,191600739 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:54:44,191600739 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[GetDigit], Name[GetDigit1]
+
+[./LOG] 13:54:44,191601067 |INF| CItem_GetDigit_Statement1_Dlg::OnInitDialog
+[./LOG] 13:54:45,191601878 |INF| CTag_GetDigit_Dlg::OnInitDialog
+[./LOG] 13:56:38,191715385 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{B1F4A84A-0FC1-4B5A-B174-3508DDB2D9F8}], ItemName[GetDigit1], ItemType[GetDigit]
+[./LOG] 13:56:46,191723387 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:56:46,191723387 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:56:46,191723387 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:56:46,191723387 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Select], Name[Select2]
+
+[./LOG] 13:56:47,191723668 |INF| CTag_Select_Dlg::OnInitDialog
+[./LOG] 13:57:37,191773791 |INF| CForcusStudioController::OnEditCopy
+[./LOG] 13:57:42,191778846 |INF| CForcusStudioController::OnEditCopy
+[./LOG] 13:57:43,191780406 |INF| CForcusStudioController::OnEditPaste
+[./LOG] 13:57:43,191780437 |INF| CForcusStudioController::OnSelectionDo - RESTORE
+[./LOG] 13:57:43,191780437 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{B99B66D9-6C16-4549-AA09-271BD3147A50}], ItemName[Play1], ItemType[Play]
+[./LOG] 13:57:48,191785554 |INF| CForcusStudioController::OnOdLinkSymbols
+[./LOG] 13:57:53,191790015 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:58:17,191814118 |INF| CForcusStudioController::OnOdLinkSymbols
+[./LOG] 13:58:24,191821621 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:58:24,191821621 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:58:24,191821621 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:58:24,191821621 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Select], Name[Select1]
+
+[./LOG] 13:58:25,191821886 |INF| CTag_Select_Dlg::OnInitDialog
+[./LOG] 13:58:37,191833711 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:58:37,191833711 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:58:37,191833711 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:58:37,191833711 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[GetDigit], Name[GetDigit1]
+
+[./LOG] 13:58:37,191834055 |INF| CItem_GetDigit_Statement1_Dlg::OnInitDialog
+[./LOG] 13:58:38,191834866 |INF| CTag_GetDigit_Dlg::OnInitDialog
+[./LOG] 13:58:44,191841511 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 13:58:44,191841511 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 13:58:44,191841511 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 13:58:44,191841511 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Select], Name[Select1]
+
+[./LOG] 13:58:45,191841777 |INF| CTag_Select_Dlg::OnInitDialog
+[./LOG] 13:58:52,191848921 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{1B9D3B4E-9C88-45DB-A2F5-21DDD0084FF4}], ItemName[Select1], ItemType[Select]
+[./LOG] 13:58:59,191855879 |INF| CForcusStudioController::OnEditCopy
+[./LOG] 13:59:00,191857252 |INF| CForcusStudioController::OnEditPaste
+[./LOG] 13:59:00,191857299 |INF| CForcusStudioController::OnSelectionDo - RESTORE
+[./LOG] 13:59:00,191857299 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{BBB4F017-EC22-440B-B10C-9AA4339E746E}], ItemName[Play3], ItemType[Play]
+[./LOG] 13:59:06,191863601 |INF| CForcusStudioController::OnEditClear... Delete Key Pressed!
+
+[./LOG] 13:59:06,191863617 |INF| CForcusStudioController::OnSelectionDo - REMOVE
+[./LOG] 13:59:09,191866050 |INF| CForcusStudioController::OnEditCopy
+[./LOG] 13:59:13,191869841 |INF| CForcusStudioController::OnEditPaste
+[./LOG] 13:59:13,191869888 |INF| CForcusStudioController::OnSelectionDo - RESTORE
+[./LOG] 13:59:13,191869888 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{5ADB6F01-0429-4EA2-84AE-A7BC5291652B}], ItemName[Play3], ItemType[Play]
+[./LOG] 13:59:26,191883444 |INF| CForcusStudioController::OnOdLinkSymbols
+[./LOG] 13:59:35,191892040 |INF| CForcusStudioController::OnOdLinkSymbols
+[./LOG] 13:59:55,191911727 |INF| CForcusStudioController::OnSelectionDo - RESTORE
+[./LOG] 13:59:55,191911727 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{5ADB6F01-0429-4EA2-84AE-A7BC5291652B}], ItemName[Play3], ItemType[Play]
+[./LOG] 14:00:56,191973551 |INF| CMainFrame::OnSymbolBar RequestVR
+[./LOG] 14:00:59,191975922 |INF| CForcusStudioController::OnSelectionDo - RESTORE
+[./LOG] 14:00:59,191975922 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{18FEADFB-D6C5-4451-908F-EACA6CDC46ED}], ItemName[RequestVR1], ItemType[RequestVR]
+[./LOG] 14:06:11,192287768 |INF| CForcusStudioDoc::OnSaveDocument E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\Main.ssfx
+[./LOG] 14:06:11,192287830 |INF| CForcusStudioDoc::Serialize SetSaveList [main.ssfx]
+[./LOG] 14:06:11,192287846 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 14:06:11,192287971 |INF| CForcusStudioDoc::OnSaveDocument E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\Global.ssfx
+[./LOG] 14:06:11,192288080 |INF| CMySECTreeCtrl::ArrangeItem  Start Sort Time
+[./LOG] 14:06:11,192288080 |INF| CMySECTreeCtrl::ArrangeItem  End Sort Time  Elapsed Time [0/ms|0/s], Total Elapsed Time [0/ms|0/s]
+[./LOG] 14:06:11,192288111 |INF| CForcusStudioDoc::Serialize SetSaveList [global.ssfx]
+[./LOG] 14:06:11,192288111 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 14:06:11,192288142 |INF| CForcusStudioDoc::OnSaveDocument E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\scenario_func_dymenu.msfx
+[./LOG] 14:06:11,192288158 |INF| CForcusStudioDoc::Serialize SetSaveList [scenario_func_dymenu.msfx]
+[./LOG] 14:06:11,192288158 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 14:06:11,192288205 |INF| CForcusStudioDoc::OnSaveDocument E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\AsrTest.msfx
+[./LOG] 14:06:11,192288220 |INF| CForcusStudioDoc::Serialize SetSaveList [asrtest.msfx]
+[./LOG] 14:06:11,192288220 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 14:06:11,192288251 |INF| CForcusStudioApp::OnFileSaveProject
+[./LOG] 14:06:11,192288251 |INF| CProjectFileDoc::WriteProjectFile
+[./LOG] 14:06:11,192288251 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 14:06:11,192288251 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 14:06:11,192288267 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::MakeItemInformationData
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::RemoveSaveItemType
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::ClearRemoveItemType
+[./LOG] 14:06:11,192288267 |INF| ThreadSub_MakeIIDItem  Compare OpenSaveFileList Count[1/4], FileName[main.ssfx]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::CompareOpen_SaveFileList  FileName[MAIN.SSFX]
+[./LOG] 14:06:11,192288267 |INF| ThreadSub_MakeIIDItem  Compare OpenSaveFileList Count[2/4], FileName[global.ssfx]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::CompareOpen_SaveFileList  FileName[GLOBAL.SSFX]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::AddSaveItemType ItemType[DefineMenu], FileName[GLOBAL.SSFX]
+[./LOG] 14:06:11,192288267 |INF| ThreadSub_MakeIIDItem  Compare OpenSaveFileList Count[3/4], FileName[scenario_func_dymenu.msfx]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::CompareOpen_SaveFileList  FileName[SCENARIO_FUNC_DYMENU.MSFX]
+[./LOG] 14:06:11,192288267 |INF| ThreadSub_MakeIIDItem  Compare OpenSaveFileList Count[4/4], FileName[asrtest.msfx]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::CompareOpen_SaveFileList  FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::AddSaveItemType ItemType[Start], FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::AddSaveItemType ItemType[Play], FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::AddSaveItemType ItemType[GetDigit], FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::AddSaveItemType ItemType[Select], FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::AddSaveItemType ItemType[RequestVR], FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288267 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Begin
+[./LOG] 14:06:11,192288267 |INF| CDBProc::BeginTransaction Search & Replace
+[./LOG] 14:06:11,192288267 |INF| CDBProc::StartQueryThread
+[./LOG] 14:06:11,192288267 |INF| CDBProc::CreateDBDataStruct QueryType[3] Select, Update, Delete
+[./LOG] 14:06:11,192288267 |INF| ThreadQueryProc Beginning
+[./LOG] 14:06:11,192288283 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[1/8][RequestVR1]
+[./LOG] 14:06:11,192288298 |INF| CForcusStudioApp::AddRemoveItemType ItemType[RequestVR], FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288298 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[2/8][Select1]
+[./LOG] 14:06:11,192288314 |INF| CForcusStudioApp::AddRemoveItemType ItemType[Select], FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288314 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[3/8][Play2]
+[./LOG] 14:06:11,192288345 |INF| CForcusStudioApp::AddRemoveItemType ItemType[Play], FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288345 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[4/8][Play3]
+[./LOG] 14:06:11,192288345 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[5/8][Start1]
+[./LOG] 14:06:11,192288376 |INF| CForcusStudioApp::AddRemoveItemType ItemType[Start], FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288376 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[6/8][GetDigit1]
+[./LOG] 14:06:11,192288376 |INF| CForcusStudioApp::AddRemoveItemType ItemType[GetDigit], FileName[ASRTEST.MSFX]
+[./LOG] 14:06:11,192288376 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[7/8][Play1]
+[./LOG] 14:06:11,192288392 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[8/8][Play3]
+[./LOG] 14:06:11,192288407 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[2/6][GLOBAL.SSFX],  Item[1/7][DefineMenu1]
+[./LOG] 14:06:11,192288454 |INF| CForcusStudioApp::AddRemoveItemType ItemType[DefineMenu], FileName[GLOBAL.SSFX]
+[./LOG] 14:06:11,192288454 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList End
+[./LOG] 14:06:11,192288454 |INF| CDBProc::DeleteDBDataStruct QueryType[3] Select, Update, Delete
+[./LOG] 14:06:11,192288454 |INF| ThreadQueryProc Ending
+[./LOG] 14:06:12,192289499 |INF| CDBProc::CommitTransaction Search & Replace
+[./LOG] 14:06:12,192289499 |INF| ThreadMain_MakeIIDBySaveAndLoad Beginning
+[./LOG] 14:06:12,192289499 |INF| ThreadMain_MakeIIDBySaveAndLoad Core=[4], FileCount=[4], CoreThread=[1]
+[./LOG] 14:06:12,192289499 |INF| CForcusStudioApp::CreateProgressDlg
+[./LOG] 14:06:12,192289499 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 14:06:13,192289640 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_saThreadFiles = new CStringArray[1]
+[./LOG] 14:06:13,192289640 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_hThread = new HANDLE[1]
+[./LOG] 14:06:13,192289640 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_dwThreadID = new DWORD[1]
+[./LOG] 14:06:13,192289640 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_nWorkCount = new int[1]
+[./LOG] 14:06:13,192289640 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 14:06:13,192289640 |INF| CDBProc::BeginTransaction Search & Replace
+[./LOG] 14:06:13,192289640 |INF| CDBProc::StartQueryThread
+[./LOG] 14:06:13,192289640 |INF| CDBProc::CreateDBDataStruct QueryType[0] Append Only
+[./LOG] 14:06:13,192289655 |INF| ThreadQueryProc Beginning
+[./LOG] 14:06:13,192289671 |INF| ThreadSub_MakeIIDItem Beginning... ThreadID[0], FileCount[4]
+[./LOG] 14:06:13,192289671 |INF| CForcusStudioDoc::GetItemDataFromDocEx Begining [Main.ssfx]
+[./LOG] 14:06:13,192289671 |INF| CForcusStudioDoc::GetItemDataFromDocEx Ending [Main.ssfx] Count[109/109]
+[./LOG] 14:06:13,192289671 |INF| CForcusStudioDoc::GetItemDataFromDocEx Begining [Global.ssfx]
+[./LOG] 14:06:13,192289671 |INF| CForcusStudioApp::FindItemOpenFileList  FileName[GLOBAL.SSFX], ItemName[DefineMenu]
+[./LOG] 14:06:13,192289671 |INF| CForcusStudioDoc::GetItemDataFromDocEx  TID[0]  File[Global.ssfx] Guid[{B23DE9F8-1E2D-43D1-A2AA-7A0528C2EDFC}], Type[DefineMenu] Name[DefineMenu1]
+[./LOG] 14:06:13,192289687 |INF| CForcusStudioDoc::GetItemDataFromDocEx Ending [Global.ssfx] Count[15/15]
+[./LOG] 14:06:13,192289687 |INF| CForcusStudioDoc::GetItemDataFromDocEx Begining [scenario_func_dymenu.msfx]
+[./LOG] 14:06:13,192289687 |INF| CForcusStudioDoc::GetItemDataFromDocEx Ending [scenario_func_dymenu.msfx] Count[9/9]
+[./LOG] 14:06:13,192289687 |INF| CForcusStudioDoc::GetItemDataFromDocEx Begining [AsrTest.msfx]
+[./LOG] 14:06:13,192289687 |INF| CForcusStudioApp::FindItemOpenFileList  FileName[ASRTEST.MSFX], ItemName[Start]
+[./LOG] 14:06:13,192289687 |INF| CForcusStudioDoc::GetItemDataFromDocEx  TID[0]  File[AsrTest.msfx] Guid[{8ECECB7D-7E4F-4042-BD26-DADADCC904F0}], Type[Start] Name[Start1]
+[./LOG] 14:06:13,192289702 |INF| CForcusStudioApp::FindItemOpenFileList  FileName[ASRTEST.MSFX], ItemName[Play]
+[./LOG] 14:06:13,192289718 |INF| CForcusStudioDoc::GetItemDataFromDocEx  TID[0]  File[AsrTest.msfx] Guid[{1F14D2FA-3F45-41D4-B626-14ACA5E0812B}], Type[Play] Name[Play2]
+[./LOG] 14:06:13,192289733 |INF| CForcusStudioApp::FindItemOpenFileList  FileName[ASRTEST.MSFX], ItemName[GetDigit]
+[./LOG] 14:06:13,192289733 |INF| CForcusStudioDoc::GetItemDataFromDocEx  TID[0]  File[AsrTest.msfx] Guid[{B1F4A84A-0FC1-4B5A-B174-3508DDB2D9F8}], Type[GetDigit] Name[GetDigit1]
+[./LOG] 14:06:13,192289749 |INF| CForcusStudioApp::FindItemOpenFileList  FileName[ASRTEST.MSFX], ItemName[Select]
+[./LOG] 14:06:13,192289749 |INF| CForcusStudioDoc::GetItemDataFromDocEx  TID[0]  File[AsrTest.msfx] Guid[{1B9D3B4E-9C88-45DB-A2F5-21DDD0084FF4}], Type[Select] Name[Select1]
+[./LOG] 14:06:13,192289780 |INF| CForcusStudioApp::FindItemOpenFileList  FileName[ASRTEST.MSFX], ItemName[Play]
+[./LOG] 14:06:13,192289780 |INF| CForcusStudioDoc::GetItemDataFromDocEx  TID[0]  File[AsrTest.msfx] Guid[{B99B66D9-6C16-4549-AA09-271BD3147A50}], Type[Play] Name[Play1]
+[./LOG] 14:06:13,192289796 |INF| CForcusStudioApp::FindItemOpenFileList  FileName[ASRTEST.MSFX], ItemName[Play]
+[./LOG] 14:06:13,192289796 |INF| CForcusStudioDoc::GetItemDataFromDocEx  TID[0]  File[AsrTest.msfx] Guid[{5ADB6F01-0429-4EA2-84AE-A7BC5291652B}], Type[Play] Name[Play3]
+[./LOG] 14:06:13,192289811 |INF| CForcusStudioApp::FindItemOpenFileList  FileName[ASRTEST.MSFX], ItemName[RequestVR]
+[./LOG] 14:06:13,192289811 |INF| CForcusStudioDoc::GetItemDataFromDocEx  TID[0]  File[AsrTest.msfx] Guid[{18FEADFB-D6C5-4451-908F-EACA6CDC46ED}], Type[RequestVR] Name[RequestVR1]
+[./LOG] 14:06:13,192289827 |INF| CForcusStudioDoc::GetItemDataFromDocEx Ending [AsrTest.msfx] Count[19/19]
+[./LOG] 14:06:13,192289827 |INF| ThreadSub_MakeIIDItem Ending...  ThreadID[0]
+[./LOG] 14:06:14,192291247 |INF| CDBProc::CommitTransaction Search & Replace
+[./LOG] 14:06:14,192291247 |INF| CDBProc::DeleteDBDataStruct QueryType[0] Append Only
+[./LOG] 14:06:14,192291262 |INF| ThreadMain_MakeIIDBySaveAndLoad Wait Thread Roop... Terminated All ThreadSub_MakeIIDItem
+[./LOG] 14:06:14,192291262 |INF| ThreadQueryProc Ending Count[820]
+[./LOG] 14:06:14,192291262 |INF| ThreadMain_MakeIIDBySaveAndLoad Terminated Threads
+[./LOG] 14:06:14,192291262 |INF| ThreadMain_MakeIIDBySaveAndLoad CloseHandle and Init Variable [3736]
+[./LOG] 14:06:14,192291262 |INF| ThreadMain_MakeIIDBySaveAndLoad MACRO_HIDE_PROGRESS
+[./LOG] 14:06:14,192291293 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 14:06:14,192291293 |INF| CForcusStudioApp::WorkAfterSaveAndLoadModifiedFile  Save Update OK!
+[./LOG] 14:06:14,192291293 |INF| CForcusStudioApp::WorkAfterSaveAndLoadModifiedFile  PostMessage TYPE_AC_UPDATE_AFTER_SAVE
+[./LOG] 14:06:14,192291309 |INF| CForcusStudioApp::MakeAutoCompleteData
+[./LOG] 14:06:14,192291309 |INF| ThreadMain_MakeACData Beginning
+[./LOG] 14:06:14,192291325 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 14:06:14,192291325 |INF| CForcusStudioDoc::SetACData_Item  Begin
+[./LOG] 14:06:14,192291325 |INF| CDBProc::StartQueryThread
+[./LOG] 14:06:14,192291325 |INF| CDBProc::CreateDBDataStruct QueryType[4] Select, Update, Delete
+[./LOG] 14:06:14,192291340 |INF| ThreadQueryProc Beginning
+[./LOG] 14:06:14,192291340 |INF| CForcusStudioApp::FindSaveItemType ItemType[DefineMenu]
+[./LOG] 14:06:14,192291371 |INF| CForcusStudioApp::FindSaveItemType ItemType[GetDigit]
+[./LOG] 14:06:14,192291371 |INF| CForcusStudioApp::FindSaveItemType ItemType[Start]
+[./LOG] 14:06:14,192291387 |INF| CDBProc::DeleteDBDataStruct QueryType[19] Select, Update, Delete
+[./LOG] 14:06:14,192291403 |INF| ThreadQueryProc Ending
+[./LOG] 14:06:14,192291403 |INF| CForcusStudioDoc::SetACData_Item  End  Elapsed Time [78/ms|0/s], Total Elapsed Time [78/ms|0/s]
+[./LOG] 14:06:14,192291403 |INF| CForcusStudioApp::WorkAfterAutoComplete
+[./LOG] 14:06:14,192291403 |INF| ThreadMain_MakeACData Ending
+[./LOG] 14:06:15,192291793 |INF| ThreadMain_MakeIIDBySaveAndLoad Ending
+[./LOG] 14:12:09,192646461 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 14:12:09,192646461 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 14:12:09,192646461 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 14:12:09,192646461 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[RequestVR], Name[RequestVR1]
+
+[./LOG] 14:12:10,192646633 |INF| CItem_RequestVR_Statement1_Dlg::OnInitDialog
+[./LOG] 14:12:10,192646851 |INF| CItem_RequestVR_Statement2_Dlg::OnInitDialog
+[./LOG] 14:12:10,192647303 |INF| CItem_RequestVR_Statement2_Dlg::OnInitDialog
+[./LOG] 14:14:29,192785941 |INF| CForcusStudioController::OnEditClear... Delete Key Pressed!
+
+[./LOG] 14:14:29,192785941 |INF| CForcusStudioController::DeleteComponentLinkValueByDeleteLink
+[./LOG] 14:14:29,192785957 |INF| CForcusStudioController::OnSelectionDo - REMOVE
+[./LOG] 14:14:29,192785957 |INF| CForcusStudioController::DeleteComponentLinkValueByDeleteLink
+[./LOG] 14:14:35,192791729 |INF| CForcusStudioController::OnOdLinkSymbols
+[./LOG] 14:15:08,192825176 |INF| CForcusStudioController::OnOdLinkSymbols
+[./LOG] 14:15:13,192829965 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 14:15:13,192829965 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 14:15:13,192829965 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 14:15:13,192829965 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[RequestVR], Name[RequestVR1]
+
+[./LOG] 14:15:13,192830121 |INF| CItem_RequestVR_Statement1_Dlg::OnInitDialog
+[./LOG] 14:15:13,192830339 |INF| CItem_RequestVR_Statement2_Dlg::OnInitDialog
+[./LOG] 14:15:14,192830761 |INF| CItem_RequestVR_Statement2_Dlg::OnInitDialog
+[./LOG] 14:15:41,192858279 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{18FEADFB-D6C5-4451-908F-EACA6CDC46ED}], ItemName[RequestVR1], ItemType[RequestVR]
+[./LOG] 14:15:56,192873146 |INF| CForcusStudioDoc::OnSaveDocument E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\AsrTest.msfx
+[./LOG] 14:15:56,192873193 |INF| CForcusStudioDoc::Serialize SetSaveList [asrtest.msfx]
+[./LOG] 14:15:56,192873193 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 14:15:56,192873240 |INF| CForcusStudioApp::OnFileSaveProject
+[./LOG] 14:15:56,192873240 |INF| CProjectFileDoc::WriteProjectFile
+[./LOG] 14:15:56,192873240 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 14:15:56,192873240 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 14:15:56,192873240 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 14:15:56,192873240 |INF| CForcusStudioApp::MakeItemInformationData
+[./LOG] 14:15:56,192873240 |INF| CForcusStudioApp::RemoveSaveItemType
+[./LOG] 14:15:56,192873240 |INF| CForcusStudioApp::ClearRemoveItemType
+[./LOG] 14:15:56,192873240 |INF| ThreadSub_MakeIIDItem  Compare OpenSaveFileList Count[1/1], FileName[asrtest.msfx]
+[./LOG] 14:15:56,192873240 |INF| CForcusStudioApp::CompareOpen_SaveFileList  FileName[ASRTEST.MSFX]
+[./LOG] 14:15:56,192873240 |INF| CForcusStudioApp::AddSaveItemType ItemType[RequestVR], FileName[ASRTEST.MSFX]
+[./LOG] 14:15:56,192873240 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Begin
+[./LOG] 14:15:56,192873240 |INF| CDBProc::BeginTransaction Search & Replace
+[./LOG] 14:15:56,192873240 |INF| CDBProc::StartQueryThread
+[./LOG] 14:15:56,192873240 |INF| CDBProc::CreateDBDataStruct QueryType[3] Select, Update, Delete
+[./LOG] 14:15:56,192873255 |INF| ThreadQueryProc Beginning
+[./LOG] 14:15:56,192873255 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[1/7][RequestVR1]
+[./LOG] 14:15:56,192873286 |INF| CForcusStudioApp::AddRemoveItemType ItemType[RequestVR], FileName[ASRTEST.MSFX]
+[./LOG] 14:15:56,192873286 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList Delete IID Database File[1/6][ASRTEST.MSFX],  Item[2/7][Play1]
+[./LOG] 14:15:56,192873302 |INF| CForcusStudioApp::AddRemoveItemType ItemType[Play], FileName[ASRTEST.MSFX]
+[./LOG] 14:15:56,192873302 |INF| CForcusStudioApp::DeleteDatabaseItemByOpenList End
+[./LOG] 14:15:56,192873318 |INF| CDBProc::DeleteDBDataStruct QueryType[3] Select, Update, Delete
+[./LOG] 14:15:56,192873318 |INF| ThreadQueryProc Ending
+[./LOG] 14:15:57,192874129 |INF| CDBProc::CommitTransaction Search & Replace
+[./LOG] 14:15:57,192874129 |INF| ThreadMain_MakeIIDBySaveAndLoad Beginning
+[./LOG] 14:15:57,192874129 |INF| ThreadMain_MakeIIDBySaveAndLoad Core=[4], FileCount=[1], CoreThread=[1]
+[./LOG] 14:15:57,192874129 |INF| CForcusStudioApp::CreateProgressDlg
+[./LOG] 14:15:57,192874129 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 14:15:57,192874285 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_saThreadFiles = new CStringArray[1]
+[./LOG] 14:15:57,192874285 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_hThread = new HANDLE[1]
+[./LOG] 14:15:57,192874285 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_dwThreadID = new DWORD[1]
+[./LOG] 14:15:57,192874285 |INF| ThreadMain_MakeIIDBySaveAndLoad APP()->m_nWorkCount = new int[1]
+[./LOG] 14:15:57,192874285 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 14:15:57,192874285 |INF| CDBProc::BeginTransaction Search & Replace
+[./LOG] 14:15:57,192874285 |INF| CDBProc::StartQueryThread
+[./LOG] 14:15:57,192874285 |INF| CDBProc::CreateDBDataStruct QueryType[0] Append Only
+[./LOG] 14:15:57,192874300 |INF| ThreadQueryProc Beginning
+[./LOG] 14:15:57,192874300 |INF| ThreadSub_MakeIIDItem Beginning... ThreadID[0], FileCount[1]
+[./LOG] 14:15:57,192874300 |INF| CForcusStudioDoc::GetItemDataFromDocEx Begining [AsrTest.msfx]
+[./LOG] 14:15:57,192874363 |INF| CForcusStudioApp::FindItemOpenFileList  FileName[ASRTEST.MSFX], ItemName[RequestVR]
+[./LOG] 14:15:57,192874363 |INF| CForcusStudioDoc::GetItemDataFromDocEx  TID[0]  File[AsrTest.msfx] Guid[{18FEADFB-D6C5-4451-908F-EACA6CDC46ED}], Type[RequestVR] Name[RequestVR1]
+[./LOG] 14:15:57,192874378 |INF| CForcusStudioDoc::GetItemDataFromDocEx Ending [AsrTest.msfx] Count[17/17]
+[./LOG] 14:15:57,192874378 |INF| ThreadSub_MakeIIDItem Ending...  ThreadID[0]
+[./LOG] 14:15:58,192875002 |INF| CDBProc::CommitTransaction Search & Replace
+[./LOG] 14:15:58,192875002 |INF| CDBProc::DeleteDBDataStruct QueryType[0] Append Only
+[./LOG] 14:15:58,192875002 |INF| ThreadQueryProc Ending Count[4]
+[./LOG] 14:15:58,192875002 |INF| ThreadMain_MakeIIDBySaveAndLoad Wait Thread Roop... Terminated All ThreadSub_MakeIIDItem
+[./LOG] 14:15:58,192875002 |INF| ThreadMain_MakeIIDBySaveAndLoad Terminated Threads
+[./LOG] 14:15:58,192875002 |INF| ThreadMain_MakeIIDBySaveAndLoad CloseHandle and Init Variable [3908]
+[./LOG] 14:15:58,192875002 |INF| ThreadMain_MakeIIDBySaveAndLoad MACRO_HIDE_PROGRESS
+[./LOG] 14:15:58,192875018 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 14:15:58,192875018 |INF| CForcusStudioApp::WorkAfterSaveAndLoadModifiedFile  Save Update OK!
+[./LOG] 14:15:58,192875018 |INF| CForcusStudioApp::WorkAfterSaveAndLoadModifiedFile  PostMessage TYPE_AC_UPDATE_AFTER_SAVE
+[./LOG] 14:15:58,192875018 |INF| CForcusStudioApp::MakeAutoCompleteData
+[./LOG] 14:15:58,192875018 |INF| ThreadMain_MakeACData Beginning
+[./LOG] 14:15:58,192875034 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 14:15:58,192875034 |INF| CForcusStudioDoc::SetACData_Item  Begin
+[./LOG] 14:15:58,192875034 |INF| CDBProc::StartQueryThread
+[./LOG] 14:15:58,192875034 |INF| CDBProc::CreateDBDataStruct QueryType[4] Select, Update, Delete
+[./LOG] 14:15:58,192875034 |INF| ThreadQueryProc Beginning
+[./LOG] 14:15:58,192875065 |INF| CDBProc::DeleteDBDataStruct QueryType[4] Select, Update, Delete
+[./LOG] 14:15:58,192875065 |INF| ThreadQueryProc Ending
+[./LOG] 14:15:58,192875065 |INF| CForcusStudioDoc::SetACData_Item  End  Elapsed Time [31/ms|0/s], Total Elapsed Time [31/ms|0/s]
+[./LOG] 14:15:58,192875065 |INF| CForcusStudioApp::WorkAfterAutoComplete
+[./LOG] 14:15:58,192875065 |INF| ThreadMain_MakeACData Ending
+[./LOG] 14:15:58,192875517 |INF| ThreadMain_MakeIIDBySaveAndLoad Ending
+[./LOG] 14:16:03,192880228 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Global.ssfx]
+[./LOG] 14:16:06,192883208 |INF| CForcusStudioApp::ItemMenuValidation Document Name [svc_cfgchg.msfx]
+[./LOG] 14:16:11,192887810 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Global.ssfx]
+[./LOG] 14:16:33,192909681 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 14:16:33,192909681 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 14:16:33,192909681 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 14:16:33,192909681 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[DefineMenu], Name[DefineMenu1]
+
+[./LOG] 14:16:33,192909775 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 14:16:38,192915609 |INF| CItem_DefineMenu_Dlg::OnInitDialog
+[./LOG] 14:16:38,192915609 |INF| CItem_DefineMenu_Dlg::OnInitDialog  Tab Window OK
+[./LOG] 14:16:38,192915609 |INF| CItem_DefineMenu_Statement1_Dlg::OnInitDialog
+[./LOG] 14:16:58,192934969 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 14:17:14,192951287 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 14:18:37,193033921 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 14:18:53,193050223 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 14:19:10,193066993 |INF| CForcusStudioApp::ItemMenuValidation Document Name [scenario_func.msfx]
+[./LOG] 14:19:10,193067086 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 14:19:10,193067086 |INF| CForcusStudioApp::FindOpenFileList  FileName[SCENARIO_FUNC.MSFX]
+[./LOG] 14:20:06,193123559 |INF| CForcusStudioController::OnSelectionDo - RESTORE
+[./LOG] 14:20:06,193123559 |INF| CForcusStudioApp::UpdateOpenFileList  FileName[ASRTEST.MSFX], Guild[{18FEADFB-D6C5-4451-908F-EACA6CDC46ED}], ItemName[RequestVR1], ItemType[RequestVR]
+[./LOG] 14:21:15,193192340 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 14:21:15,193192340 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 14:21:15,193192340 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 14:21:15,193192340 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Play], Name[Play1]
+
+[./LOG] 14:21:15,193192589 |INF| CItem_Play_Statement1_Dlg::OnInitDialog
+[./LOG] 14:21:21,193198502 |INF| ThreadPlayMentFile Beginning!
+[./LOG] 14:21:24,193201216 |INF| ThreadPlayMentFile Terminate!
+[./LOG] 14:21:52,193229593 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 14:21:52,193229593 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 14:21:52,193229593 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 14:21:52,193229593 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Play], Name[Play3]
+
+[./LOG] 14:21:53,193229858 |INF| CItem_Play_Statement1_Dlg::OnInitDialog
+[./LOG] 14:23:08,193304629 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 14:23:08,193304629 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 14:23:08,193304629 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 14:23:08,193304629 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[GetDigit], Name[GetDigit1]
+
+[./LOG] 14:23:08,193304988 |INF| CItem_GetDigit_Statement1_Dlg::OnInitDialog
+[./LOG] 14:23:09,193305893 |INF| CTag_GetDigit_Dlg::OnInitDialog
+[./LOG] 14:23:37,193334160 |INF| CMainFrame::OnClose
+[./LOG] 14:23:37,193334160 |INF| ThreadAutoSave Terminate
+[./LOG] 14:23:42,193338684 |INF| CForcusStudioDoc::OnSaveDocument E:\DEV\프로젝트\XGen\4.3관련\시험자료\블록 시험 시나리오\IR_TEST\AsrTest.msfx
+[./LOG] 14:23:42,193338700 |INF| CForcusStudioDoc::Serialize SetSaveList [asrtest.msfx]
+[./LOG] 14:23:42,193338700 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 14:23:42,193339386 |INF| CForcusStudioApp::RemoveOpenFileList  FileName[SCENARIO_FUNC_DYMENU.MSFX]
+[./LOG] 14:23:42,193339402 |INF| DeleteContents  File[scenario_func_dymenu.msfx] OldFile[]
+[./LOG] 14:23:42,193339402 |INF| CForcusStudioApp::RemoveOpenFileList  FileName[SVC_CFGCHG.MSFX]
+[./LOG] 14:23:42,193339402 |INF| DeleteContents  File[svc_cfgchg.msfx] OldFile[]
+[./LOG] 14:23:42,193339402 |INF| CForcusStudioApp::RemoveOpenFileList  FileName[SCENARIO_FUNC.MSFX]
+[./LOG] 14:23:42,193339589 |INF| DeleteContents  File[scenario_func.msfx] OldFile[]
+[./LOG] 14:23:42,193339620 |INF| CForcusStudioApp::RemoveOpenFileList  FileName[ASRTEST.MSFX]
+[./LOG] 14:23:43,193339729 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Global.ssfx]
+[./LOG] 14:23:43,193339761 |INF| DeleteContents  File[] OldFile[]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[   16] Item[Label               ] CID[ 321336120] GUID[{208D24F5-DEF8-475B-83A2-BD46CD62C7FC}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[   15] Item[Link                ] CID[ 333742625] GUID[{5109FFF2-E81E-4533-8E21-F39656BA8956}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[   14] Item[RequestVR1          ] CID[ 251613670] GUID[{18FEADFB-D6C5-4451-908F-EACA6CDC46ED}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[   13] Item[Label               ] CID[ 397942881] GUID[{A8001551-FB95-4598-B083-67CFD220FC63}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[   12] Item[Link                ] CID[ 267947595] GUID[{65865B8C-474C-45F8-94D8-227B1F12C437}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[   11] Item[Label               ] CID[ 104295450] GUID[{FD8092E7-217D-43EF-9880-D28B36349FF4}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[   10] Item[Play3               ] CID[ 725038236] GUID[{5ADB6F01-0429-4EA2-84AE-A7BC5291652B}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[    9] Item[Link                ] CID[  27392448] GUID[{1DB1335D-CAAD-44B4-882B-52AB336DF1D5}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[    8] Item[Link                ] CID[ 359411092] GUID[{987EBF99-AFEC-4939-B0FF-D39964B3C228}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[    7] Item[Link1               ] CID[ 383889240] GUID[{C8102E58-DE9B-408B-A025-801616C1C893}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[    6] Item[Label               ] CID[ 638785606] GUID[{EF135848-C25C-4B53-8AF1-2E16CA25940A}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[    5] Item[Select1             ] CID[ 648835000] GUID[{1B9D3B4E-9C88-45DB-A2F5-21DDD0084FF4}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[    4] Item[Label               ] CID[  14084874] GUID[{A12D0C69-55B2-439A-9614-8CE11EEF0D87}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[    3] Item[GetDigit1           ] CID[ 714060000] GUID[{B1F4A84A-0FC1-4B5A-B174-3508DDB2D9F8}]
+[./LOG] 14:23:43,193339761 |INF| ERROR -> CForcusStudioModel::RemoveChild  Not FindMapChildItems..  Document[] Index[    0] Item[Start1              ] CID[ 854352096] GUID[{8ECECB7D-7E4F-4042-BD26-DADADCC904F0}]
+[./LOG] 14:23:43,193339776 |INF| CForcusStudioApp::RemoveOpenFileList  FileName[MAIN.SSFX]
+[./LOG] 14:23:43,193339776 |INF| DeleteContents  File[Main.ssfx] OldFile[]
+[./LOG] 14:23:43,193339792 |INF| CForcusStudioApp::RemoveOpenFileList  FileName[GLOBAL.SSFX]
+[./LOG] 14:23:43,193339823 |INF| DeleteContents  File[Global.ssfx] OldFile[]
+[./LOG] 14:23:43,193339854 |INF| CMainFrame::OnDestroy Entry
+[./LOG] 14:23:43,193339854 |INF| CForcusStudioApp::OnFileCloseProject
+[./LOG] 14:23:43,193339854 |INF| CProjectFileDoc::CloseProject
+[./LOG] 14:23:43,193339995 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 14:23:43,193339995 |INF| CDBProc::CloseDatabase Search & Replace
+[./LOG] 14:23:43,193339995 |INF| CMainFrame::OnDestroy - APP()->CloseAllDocuments(TRUE)
+[./LOG] 14:23:43,193340010 |INF| CMainFrame::OnDestroy Exit
+[./LOG] 14:23:43,193340010 |INF| <<<<<<<<<< Ending ForCus Studio 4.3.0.1 >>>>>>>>>>

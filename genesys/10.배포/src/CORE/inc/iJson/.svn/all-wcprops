@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iJson
+END
+hashtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iJson/hashtable.h
+END
+jansson.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iJson/jansson.h
+END
+lookup3.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iJson/lookup3.h
+END
+utf.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iJson/utf.h
+END
+jansson_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iJson/jansson_config.h
+END
+iJson.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iJson/iJson.h
+END
+strbuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iJson/strbuffer.h
+END
+jansson_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iJson/jansson_private.h
+END

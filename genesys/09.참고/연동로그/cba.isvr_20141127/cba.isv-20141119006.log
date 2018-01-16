@@ -1,0 +1,610 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(25576) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+14:22:16.328823[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+14:22:16.328859[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+14:22:16.328876[44m|INF|[0m[PROCESS]
+14:22:16.328889[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+14:22:16.328901[44m|INF|[0mPROCESS_ID           : 1001
+14:22:16.328912[44m|INF|[0m
+
+14:22:16.328922[44m|INF|[0m[SYSTEM]
+14:22:16.328934[44m|INF|[0mSYSTEM_TYPE          : TE
+14:22:16.328946[44m|INF|[0mSYSTEM_ID            : 1000001
+14:22:16.328957[44m|INF|[0m
+
+14:22:16.328968[44m|INF|[0m[CBA_INFO]
+14:22:16.328979[44m|INF|[0mCB_LISTEN_IP         : 
+14:22:16.328991[44m|INF|[0mCB_LISTEN_PORT       : 10002
+14:22:16.329003[44m|INF|[0mLOG_LEVEL            : 3
+14:22:16.329014[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+14:22:16.329026[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+14:22:16.329038[44m|INF|[0mLOG_LINK_PATH        : ../log/
+14:22:16.329049[44m|INF|[0m
+
+14:22:16.329059[44m|INF|[0m[IVR_DRIVER]
+14:22:16.329072[44m|INF|[0mREMOTE_IP            : 127.0.0.1
+14:22:16.329084[44m|INF|[0mREMOTE_PORT          : 35001
+14:22:16.329095[44m|INF|[0mSVC_DRIVER_NAME      : IVR1
+14:22:16.329107[44m|INF|[0mSVC_APP_NAME         : IVR5
+14:22:16.329118[44m|INF|[0mTE_SYSTEM_ID         : 1
+14:22:16.329130[44m|INF|[0mSTART_CHANNEL        : 0
+14:22:16.329141[44m|INF|[0mSTART_PORT           : 1000
+14:22:16.329153[44m|INF|[0mDNIS_COUNT           : 120
+14:22:16.329165[44m|INF|[0mLOG_LEVEL            : 3
+14:22:16.329176[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+14:22:16.329188[44m|INF|[0mLOG_LINK_PATH        : ../log/
+14:22:16.329198[44m|INF|[0m
+
+14:22:16.329209[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+14:22:16.329423[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+14:22:16.329428[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:00010000, Port:1000, TESystemID:1, ChannelNo:0
+14:22:16.329495[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:00010001, Port:1001, TESystemID:1, ChannelNo:1
+14:22:16.329510[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:00010002, Port:1002, TESystemID:1, ChannelNo:2
+14:22:16.329523[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:00010003, Port:1003, TESystemID:1, ChannelNo:3
+14:22:16.329536[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:00010004, Port:1004, TESystemID:1, ChannelNo:4
+14:22:16.329549[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:00010005, Port:1005, TESystemID:1, ChannelNo:5
+14:22:16.329604[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:7, PortKey:00010006, Port:1006, TESystemID:1, ChannelNo:6
+14:22:16.329623[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:8, PortKey:00010007, Port:1007, TESystemID:1, ChannelNo:7
+14:22:16.329641[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:9, PortKey:00010008, Port:1008, TESystemID:1, ChannelNo:8
+14:22:16.329710[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:10, PortKey:00010009, Port:1009, TESystemID:1, ChannelNo:9
+14:22:16.329733[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:11, PortKey:00010010, Port:1010, TESystemID:1, ChannelNo:10
+14:22:16.329751[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:12, PortKey:00010011, Port:1011, TESystemID:1, ChannelNo:11
+14:22:16.329768[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:13, PortKey:00010012, Port:1012, TESystemID:1, ChannelNo:12
+14:22:16.329785[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:14, PortKey:00010013, Port:1013, TESystemID:1, ChannelNo:13
+14:22:16.329802[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:15, PortKey:00010014, Port:1014, TESystemID:1, ChannelNo:14
+14:22:16.329819[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:16, PortKey:00010015, Port:1015, TESystemID:1, ChannelNo:15
+14:22:16.329837[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:17, PortKey:00010016, Port:1016, TESystemID:1, ChannelNo:16
+14:22:16.329864[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:18, PortKey:00010017, Port:1017, TESystemID:1, ChannelNo:17
+14:22:16.329882[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:19, PortKey:00010018, Port:1018, TESystemID:1, ChannelNo:18
+14:22:16.329899[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:20, PortKey:00010019, Port:1019, TESystemID:1, ChannelNo:19
+14:22:16.329916[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:21, PortKey:00010020, Port:1020, TESystemID:1, ChannelNo:20
+14:22:16.329934[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:22, PortKey:00010021, Port:1021, TESystemID:1, ChannelNo:21
+14:22:16.329951[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:23, PortKey:00010022, Port:1022, TESystemID:1, ChannelNo:22
+14:22:16.329968[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:24, PortKey:00010023, Port:1023, TESystemID:1, ChannelNo:23
+14:22:16.329985[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:25, PortKey:00010024, Port:1024, TESystemID:1, ChannelNo:24
+14:22:16.330013[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:26, PortKey:00010025, Port:1025, TESystemID:1, ChannelNo:25
+14:22:16.330041[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:27, PortKey:00010026, Port:1026, TESystemID:1, ChannelNo:26
+14:22:16.330059[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:28, PortKey:00010027, Port:1027, TESystemID:1, ChannelNo:27
+14:22:16.330077[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:29, PortKey:00010028, Port:1028, TESystemID:1, ChannelNo:28
+14:22:16.330094[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:30, PortKey:00010029, Port:1029, TESystemID:1, ChannelNo:29
+14:22:16.330112[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:31, PortKey:00010030, Port:1030, TESystemID:1, ChannelNo:30
+14:22:16.330129[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:32, PortKey:00010031, Port:1031, TESystemID:1, ChannelNo:31
+14:22:16.330147[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:33, PortKey:00010032, Port:1032, TESystemID:1, ChannelNo:32
+14:22:16.330164[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:34, PortKey:00010033, Port:1033, TESystemID:1, ChannelNo:33
+14:22:16.330182[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:35, PortKey:00010034, Port:1034, TESystemID:1, ChannelNo:34
+14:22:16.330215[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:36, PortKey:00010035, Port:1035, TESystemID:1, ChannelNo:35
+14:22:16.330240[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:37, PortKey:00010036, Port:1036, TESystemID:1, ChannelNo:36
+14:22:16.330258[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:38, PortKey:00010037, Port:1037, TESystemID:1, ChannelNo:37
+14:22:16.330275[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:39, PortKey:00010038, Port:1038, TESystemID:1, ChannelNo:38
+14:22:16.330293[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:40, PortKey:00010039, Port:1039, TESystemID:1, ChannelNo:39
+14:22:16.330310[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:41, PortKey:00010040, Port:1040, TESystemID:1, ChannelNo:40
+14:22:16.330328[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:42, PortKey:00010041, Port:1041, TESystemID:1, ChannelNo:41
+14:22:16.330346[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:43, PortKey:00010042, Port:1042, TESystemID:1, ChannelNo:42
+14:22:16.330363[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:44, PortKey:00010043, Port:1043, TESystemID:1, ChannelNo:43
+14:22:16.330381[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:45, PortKey:00010044, Port:1044, TESystemID:1, ChannelNo:44
+14:22:16.330398[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:46, PortKey:00010045, Port:1045, TESystemID:1, ChannelNo:45
+14:22:16.330416[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:47, PortKey:00010046, Port:1046, TESystemID:1, ChannelNo:46
+14:22:16.330435[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:48, PortKey:00010047, Port:1047, TESystemID:1, ChannelNo:47
+14:22:16.330457[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:49, PortKey:00010048, Port:1048, TESystemID:1, ChannelNo:48
+14:22:16.330476[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:50, PortKey:00010049, Port:1049, TESystemID:1, ChannelNo:49
+14:22:16.330502[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:51, PortKey:00010050, Port:1050, TESystemID:1, ChannelNo:50
+14:22:16.330523[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:52, PortKey:00010051, Port:1051, TESystemID:1, ChannelNo:51
+14:22:16.330536[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:53, PortKey:00010052, Port:1052, TESystemID:1, ChannelNo:52
+14:22:16.330549[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:54, PortKey:00010053, Port:1053, TESystemID:1, ChannelNo:53
+14:22:16.330562[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:55, PortKey:00010054, Port:1054, TESystemID:1, ChannelNo:54
+14:22:16.330617[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:56, PortKey:00010055, Port:1055, TESystemID:1, ChannelNo:55
+14:22:16.330646[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:57, PortKey:00010056, Port:1056, TESystemID:1, ChannelNo:56
+14:22:16.330676[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:58, PortKey:00010057, Port:1057, TESystemID:1, ChannelNo:57
+14:22:16.330694[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:59, PortKey:00010058, Port:1058, TESystemID:1, ChannelNo:58
+14:22:16.330712[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:60, PortKey:00010059, Port:1059, TESystemID:1, ChannelNo:59
+14:22:16.330734[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:61, PortKey:00010060, Port:1060, TESystemID:1, ChannelNo:60
+14:22:16.330762[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:62, PortKey:00010061, Port:1061, TESystemID:1, ChannelNo:61
+14:22:16.330781[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:63, PortKey:00010062, Port:1062, TESystemID:1, ChannelNo:62
+14:22:16.330799[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:64, PortKey:00010063, Port:1063, TESystemID:1, ChannelNo:63
+14:22:16.330817[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:65, PortKey:00010064, Port:1064, TESystemID:1, ChannelNo:64
+14:22:16.330835[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:66, PortKey:00010065, Port:1065, TESystemID:1, ChannelNo:65
+14:22:16.330853[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:67, PortKey:00010066, Port:1066, TESystemID:1, ChannelNo:66
+14:22:16.330871[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:68, PortKey:00010067, Port:1067, TESystemID:1, ChannelNo:67
+14:22:16.330889[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:69, PortKey:00010068, Port:1068, TESystemID:1, ChannelNo:68
+14:22:16.330906[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:70, PortKey:00010069, Port:1069, TESystemID:1, ChannelNo:69
+14:22:16.330924[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:71, PortKey:00010070, Port:1070, TESystemID:1, ChannelNo:70
+14:22:16.330942[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:72, PortKey:00010071, Port:1071, TESystemID:1, ChannelNo:71
+14:22:16.330960[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:73, PortKey:00010072, Port:1072, TESystemID:1, ChannelNo:72
+14:22:16.330978[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:74, PortKey:00010073, Port:1073, TESystemID:1, ChannelNo:73
+14:22:16.331005[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:75, PortKey:00010074, Port:1074, TESystemID:1, ChannelNo:74
+14:22:16.331034[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:76, PortKey:00010075, Port:1075, TESystemID:1, ChannelNo:75
+14:22:16.331052[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:77, PortKey:00010076, Port:1076, TESystemID:1, ChannelNo:76
+14:22:16.331071[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:78, PortKey:00010077, Port:1077, TESystemID:1, ChannelNo:77
+14:22:16.331089[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:79, PortKey:00010078, Port:1078, TESystemID:1, ChannelNo:78
+14:22:16.331106[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:80, PortKey:00010079, Port:1079, TESystemID:1, ChannelNo:79
+14:22:16.331124[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:81, PortKey:00010080, Port:1080, TESystemID:1, ChannelNo:80
+14:22:16.331142[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:82, PortKey:00010081, Port:1081, TESystemID:1, ChannelNo:81
+14:22:16.331160[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:83, PortKey:00010082, Port:1082, TESystemID:1, ChannelNo:82
+14:22:16.331186[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:84, PortKey:00010083, Port:1083, TESystemID:1, ChannelNo:83
+14:22:16.331204[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:85, PortKey:00010084, Port:1084, TESystemID:1, ChannelNo:84
+14:22:16.331222[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:86, PortKey:00010085, Port:1085, TESystemID:1, ChannelNo:85
+14:22:16.331240[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:87, PortKey:00010086, Port:1086, TESystemID:1, ChannelNo:86
+14:22:16.331258[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:88, PortKey:00010087, Port:1087, TESystemID:1, ChannelNo:87
+14:22:16.331275[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:89, PortKey:00010088, Port:1088, TESystemID:1, ChannelNo:88
+14:22:16.331293[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:90, PortKey:00010089, Port:1089, TESystemID:1, ChannelNo:89
+14:22:16.331311[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:91, PortKey:00010090, Port:1090, TESystemID:1, ChannelNo:90
+14:22:16.331328[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:92, PortKey:00010091, Port:1091, TESystemID:1, ChannelNo:91
+14:22:16.331346[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:93, PortKey:00010092, Port:1092, TESystemID:1, ChannelNo:92
+14:22:16.331364[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:94, PortKey:00010093, Port:1093, TESystemID:1, ChannelNo:93
+14:22:16.331381[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:95, PortKey:00010094, Port:1094, TESystemID:1, ChannelNo:94
+14:22:16.331399[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:96, PortKey:00010095, Port:1095, TESystemID:1, ChannelNo:95
+14:22:16.331417[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:97, PortKey:00010096, Port:1096, TESystemID:1, ChannelNo:96
+14:22:16.331445[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:98, PortKey:00010097, Port:1097, TESystemID:1, ChannelNo:97
+14:22:16.331464[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:99, PortKey:00010098, Port:1098, TESystemID:1, ChannelNo:98
+14:22:16.331482[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:100, PortKey:00010099, Port:1099, TESystemID:1, ChannelNo:99
+14:22:16.331508[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:101, PortKey:00010100, Port:1100, TESystemID:1, ChannelNo:100
+14:22:16.331527[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:102, PortKey:00010101, Port:1101, TESystemID:1, ChannelNo:101
+14:22:16.331546[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:103, PortKey:00010102, Port:1102, TESystemID:1, ChannelNo:102
+14:22:16.331565[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:104, PortKey:00010103, Port:1103, TESystemID:1, ChannelNo:103
+14:22:16.331586[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:105, PortKey:00010104, Port:1104, TESystemID:1, ChannelNo:104
+14:22:16.331638[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:106, PortKey:00010105, Port:1105, TESystemID:1, ChannelNo:105
+14:22:16.331671[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:107, PortKey:00010106, Port:1106, TESystemID:1, ChannelNo:106
+14:22:16.331693[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:108, PortKey:00010107, Port:1107, TESystemID:1, ChannelNo:107
+14:22:16.331713[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:109, PortKey:00010108, Port:1108, TESystemID:1, ChannelNo:108
+14:22:16.331732[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:110, PortKey:00010109, Port:1109, TESystemID:1, ChannelNo:109
+14:22:16.331753[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:111, PortKey:00010110, Port:1110, TESystemID:1, ChannelNo:110
+14:22:16.331772[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:112, PortKey:00010111, Port:1111, TESystemID:1, ChannelNo:111
+14:22:16.331790[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:113, PortKey:00010112, Port:1112, TESystemID:1, ChannelNo:112
+14:22:16.331825[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:114, PortKey:00010113, Port:1113, TESystemID:1, ChannelNo:113
+14:22:16.331847[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:115, PortKey:00010114, Port:1114, TESystemID:1, ChannelNo:114
+14:22:16.331865[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:116, PortKey:00010115, Port:1115, TESystemID:1, ChannelNo:115
+14:22:16.331894[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:117, PortKey:00010116, Port:1116, TESystemID:1, ChannelNo:116
+14:22:16.331914[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:118, PortKey:00010117, Port:1117, TESystemID:1, ChannelNo:117
+14:22:16.331931[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:119, PortKey:00010118, Port:1118, TESystemID:1, ChannelNo:118
+14:22:16.331949[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:120, PortKey:00010119, Port:1119, TESystemID:1, ChannelNo:119
+14:22:16.332349[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 ilInitiate success !!
+14:22:16.333123[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:100000001, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+14:22:16.334395[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginResp|DriverName:IVR1, Command:LoginResp, CallId:100000001, IServerVersion:8.5, Result:Success, ConfigOptions:, Status:OK
+14:22:17.329678[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:100.100.105.105, port:44104 
+14:22:17.329721[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION7, ip:100.100.105.105, port:44104
+14:22:17.331033[33m|LV2|[0mCB_SESSION7|RECEIVE|000154|0015400010312003120010000000071                                         GENESYS         10000               xcbRegister                                 
+14:22:17.331132[33m|LV2|[0mCB_SESSION7|SEND   |000154|0015400312001000103120000000071                                         GENESYS         10001               xcbRegister                                 
+14:22:17.331162[44m|INF|[0mCB_SESSION7|HandleRegister success.
+14:22:28.272220[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      133H
+14:22:28.272295[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      133H
+14:22:28.838639[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000247|00247000103120031200100050000113EA31351-E938-4DE2-97BA-79EAEED071320000
+14:22:28.838727[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:22:28.839672[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:22:28.839905[44m|INF|[0mIVR_DRIVER|HandleRequest_icNewCall|Requester:CB_SESSION7, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, TENo:1, ChanNo:0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:
+14:22:28.839940[44m|INF|[0mIVR_DRIVER|AddCtiReqInfo|CTI Request map item count:1
+14:22:28.840266[44m|INF|[0mIVR_DRIVER|CALLBACK_NewCall|DriverName:IVR1, Command:NewCall, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, CalledNum(PortNum):1000, CallControlMode:Network, Version:4.0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>3EA31351-E938-4DE2-97BA-79EAEED071320000</CallId><NewCall CallControlMode="Network" Version="4.0"><CalledNum>1000</CalledNum><DNIS>*6500</DNIS><ANI>4022</ANI></NewCall></GctiMsg>
+
+14:22:28.840663[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, Event:Ringing, CallStatus:10004, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>3EA31351-E938-4DE2-97BA-79EAEED071320000</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+14:22:28.840824[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000202|00203003120010001031200050000113EA31351-E938-4DE2-97BA-79EAEED071320000
+14:22:28.941100[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, Event:Established, CallStatus:10008, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>3EA31351-E938-4DE2-97BA-79EAEED071320000</CallId><CallStatus Event="Established"/></GctiMsg>
+
+14:22:35.871546[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000198|00198000103120031200100060000113EA31351-E938-4DE2-97BA-79EAEED071320000
+14:22:35.871645[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:22:35.872055[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:22:35.872184[44m|INF|[0mIVR_DRIVER|HandleRequest_icCallInfo|Requester:CB_SESSION7, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, TENo:1, ChanNo:0
+14:22:35.872511[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoReq|DriverName:IVR1, Command:CallInfoReq, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, Xml:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>3EA31351-E938-4DE2-97BA-79EAEED071320000</CallId><CallInfoReq></CallInfoReq></GctiMsg>
+
+14:22:35.873649[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoResp|DriverName:IVR1, Command:CallInfoResp, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, ANI:1111111111, DNIS:2222222222, CalledNum:3333333333, ConnId:4444444444, FirstHomeLocation:5555555555, LastEvent:6666666666, OtherDN:7777777777, OtherQueue:8888888888, OtherTrunk:9999999999, PortDN:aaaaaaaaaa, PortQueue:bbbbbbbbbb, PortTrunk:cccccccccc, ThirdPartyDN:dddddddddd, TSCallId:eeeeeeeeee, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>3EA31351-E938-4DE2-97BA-79EAEED071320000</CallId><CallInfoResp ANI="1111111111" DNIS="2222222222" CalledNum="3333333333" ConnId="4444444444" FirstHomeLocation="5555555555" LastEvent="6666666666" OtherDN="7777777777" OtherQueue="8888888888" OtherTrunk="9999999999" PortDN="aaaaaaaaaa" PortQueue="bbbbbbbbbb" PortTrunk="cccccccccc" ThirdPartyDN="dddddddddd" TSCallId="eeeeeeeeee"/></GctiMsg>
+
+14:22:35.874276[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000502|00503003120010001031200060000113EA31351-E938-4DE2-97BA-79EAEED071320000
+14:22:42.932374[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000210|00210000103120031200100070000113EA31351-E938-4DE2-97BA-79EAEED071320000
+14:22:42.932489[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:22:42.933290[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:22:42.933410[44m|INF|[0mIVR_DRIVER|HandleRequest_icGetUData|Requester:CB_SESSION7, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, TENo:1, ChanNo:0, Keys:UEI
+14:22:42.933860[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataGet|DriverName:IVR1, Command:UDataGet, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>3EA31351-E938-4DE2-97BA-79EAEED071320000</CallId><UDataGet Keys="UEI"><RequestId>100000002</RequestId></UDataGet></GctiMsg>
+
+14:22:42.934664[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataResp|DriverName:IVR1, Command:UDataResp, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, Result:Success, UDataEx:|eee=555|fff=6666|ggg=77777|hhh=88888888|, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>3EA31351-E938-4DE2-97BA-79EAEED071320000</CallId><UDataResp><RequestId>UEI</RequestId><Result>Success</Result><UDataEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></UDataEx></UDataResp></GctiMsg>
+
+14:22:42.935652[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000257|00258003120010001031200070000113EA31351-E938-4DE2-97BA-79EAEED071320000
+14:22:58.275360[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      134H
+14:22:58.275441[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      134H
+14:23:08.276499[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      135H
+14:23:08.276599[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      135H
+14:23:18.277649[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      136H
+14:23:18.277731[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      136H
+14:23:28.278953[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      137H
+14:23:28.279037[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      137H
+14:23:29.775095[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000218|00218000103120031200100080000113EA31351-E938-4DE2-97BA-79EAEED071320000
+14:23:29.775133[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:23:29.777233[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:23:29.777366[44m|INF|[0mIVR_DRIVER|HandleRequest_icDeflectTR|Requester:CB_SESSION7, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, TENo:1, ChanNo:0, DestDN:, szUDataEx:, szExtnsEx:
+14:23:29.777675[44m|INF|[0mIVR_DRIVER|CALLBACK_OneStepXfer|DriverName:IVR1, Command:OneStepXfer, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, DestDN:, UDataEx:, ExtnsEx:, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>3EA31351-E938-4DE2-97BA-79EAEED071320000</CallId><OneStepXfer DestDN=""/></GctiMsg>
+
+14:23:29.777982[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:3EA31351-E938-4DE2-97BA-79EAEED071320000, Event:XferComplete, CallStatus:10012, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>3EA31351-E938-4DE2-97BA-79EAEED071320000</CallId><CallStatus Event="XferComplete"/></GctiMsg>
+
+14:23:29.778441[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000204|00205003120010001031200080000113EA31351-E938-4DE2-97BA-79EAEED071320000
+14:23:48.281019[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      138H
+14:23:48.281107[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      138H
+14:23:58.282187[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      139H
+14:23:58.282270[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      139H
+14:24:08.283290[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      140H
+14:24:08.283374[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      140H
+14:24:18.284472[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      141H
+14:24:18.284592[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      141H
+14:24:28.285745[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      142H
+14:24:28.285829[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      142H
+14:24:38.286930[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      143H
+14:24:38.287026[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      143H
+14:24:48.288027[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      144H
+14:24:48.288125[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      144H
+14:24:58.289048[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      145H
+14:24:58.289149[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      145H
+14:25:02.904014[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION8, ip:100.100.105.41, port:52914 
+14:25:02.904092[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:2, name:CB_SESSION8, ip:100.100.105.41, port:52914
+14:25:04.796514[44m|INF|[0mCB_SESSION8|CB >>> CBA|100.100.105.41:52914|000314|00314000202800000001000030000011254BA80-53AB-4214-91AD-32EE609062BA0000 ICM             12000         2    0icNewCall       102910440002280000300000   2sRequest=icNewCall sTENo=1 sChanNo=0 sDNIS=4200 sANI=234 sUDataEx=aaa=111|bbb=222|ccc=333|ddd=444 sExtnsEx=eee=555|fff=6666|ggg=77777|hhh=88888888
+14:25:04.796646[44m|INF|[0mCB_SESSION8|HandleReqData|Request data queue push success.
+14:25:04.797282[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:25:04.797413[44m|INF|[0mIVR_DRIVER|HandleRequest_icNewCall|Requester:CB_SESSION8, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, TENo:1, ChanNo:0, DNIS:4200, ANI:234, UDataEx:aaa=111|bbb=222|ccc=333|ddd=444, ExtnsEx:eee=555|fff=6666|ggg=77777|hhh=88888888
+14:25:04.797467[44m|INF|[0mIVR_DRIVER|AddCtiReqInfo|CTI Request map item count:2
+14:25:04.797924[44m|INF|[0mIVR_DRIVER|CALLBACK_NewCall|DriverName:IVR1, Command:NewCall, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, CalledNum(PortNum):1000, CallControlMode:Network, Version:4.0, DNIS:4200, ANI:234, UDataEx:aaa=111|bbb=222|ccc=333|ddd=444, ExtnsEx:eee=555|fff=6666|ggg=77777|hhh=88888888, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><NewCall CallControlMode="Network" Version="4.0"><CalledNum>1000</CalledNum><DNIS>4200</DNIS><ANI>234</ANI><UDataEx><Node Name="aaa" Type="Str" Val="111"/><Node Name="bbb" Type="Str" Val="222"/><Node Name="ccc" Type="Str" Val="333"/><Node Name="ddd" Type="Str" Val="444"/></UDataEx><ExtnsEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></ExtnsEx></NewCall></GctiMsg>
+
+14:25:04.798587[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, Event:Ringing, CallStatus:10004, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+14:25:04.798876[44m|INF|[0mCB_SESSION8|CB <<< CBA|100.100.105.41:52914|000202|00203000000100002028000030000011254BA80-53AB-4214-91AD-32EE609062BA0000 ICM             12001         2    0icNewCall       102910440002280000300000   2sRequest=icNewCall sResult=1 sDesc=Success 
+14:25:04.898928[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, Event:Established, CallStatus:10008, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><CallStatus Event="Established"/></GctiMsg>
+
+14:25:08.290282[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      146H
+14:25:08.290366[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      146H
+14:25:14.434453[44m|INF|[0mCB_SESSION8|CB >>> CBA|100.100.105.41:52914|000308|00308000202800000001000030000011254BA80-53AB-4214-91AD-32EE609062BA0000 ICM             12000         2    0icDeflectTR     102910440002280000300000   2sRequest=icDeflectTR sTENo=1 sChanNo=0 sDestDN=8500 sUDataEx=aaa=111|bbb=222|ccc=333|ddd=444 sExtnsEx=eee=555|fff=6666|ggg=77777|hhh=88888888 
+14:25:14.434563[44m|INF|[0mCB_SESSION8|HandleReqData|Request data queue push success.
+14:25:14.435430[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:25:14.435585[44m|INF|[0mIVR_DRIVER|HandleRequest_icDeflectTR|Requester:CB_SESSION8, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, TENo:1, ChanNo:0, DestDN:8500, szUDataEx:aaa=111|bbb=222|ccc=333|ddd=444, szExtnsEx:eee=555|fff=6666|ggg=77777|hhh=88888888
+14:25:14.436068[44m|INF|[0mIVR_DRIVER|CALLBACK_OneStepXfer|DriverName:IVR1, Command:OneStepXfer, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, DestDN:8500, UDataEx:aaa=111|bbb=222|ccc=333|ddd=444, ExtnsEx:eee=555|fff=6666|ggg=77777|hhh=88888888, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><OneStepXfer DestDN="8500"><UDataEx><Node Name="aaa" Type="Str" Val="111"/><Node Name="bbb" Type="Str" Val="222"/><Node Name="ccc" Type="Str" Val="333"/><Node Name="ddd" Type="Str" Val="444"/></UDataEx><ExtnsEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></ExtnsEx></OneStepXfer></GctiMsg>
+
+14:25:14.436703[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, Event:XferComplete, CallStatus:10012, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><CallStatus Event="XferComplete"/></GctiMsg>
+
+14:25:14.436907[44m|INF|[0mCB_SESSION8|CB <<< CBA|100.100.105.41:52914|000204|00205000000100002028000030000011254BA80-53AB-4214-91AD-32EE609062BA0000 ICM             12001         2    0icDeflectTR     102910440002280000300000   2sRequest=icDeflectTR sResult=1 sDesc=Success 
+14:25:18.291389[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      147H
+14:25:18.291482[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      147H
+14:25:25.369333[44m|INF|[0mCB_SESSION8|CB >>> CBA|100.100.105.41:52914|000336|00336000202800000001000030000011254BA80-53AB-4214-91AD-32EE609062BA0000 ICM             12000         2    0icRouteReq      102910440002280000300000   2sRequest=icRouteReq sTENo=1 sChanNo=0 sRouteDN=4200 sCED=Customer Entered Data sUDataEx=aaa=111|bbb=222|ccc=333|ddd=444 sExtnsEx=eee=555|fff=6666|ggg=77777|hhh=88888888
+14:25:25.369417[44m|INF|[0mCB_SESSION8|HandleReqData|Request data queue push success.
+14:25:25.370398[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:25:25.370713[44m|INF|[0mIVR_DRIVER|HandleRequest_icRouteRequest|Requester:CB_SESSION8, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, te:1, CHAN:0, RouteDN:4200, CED:Customer Entered Data, UDataEx:aaa=111|bbb=222|ccc=333|ddd=444, ExtnsEx:eee=555|fff=6666|ggg=77777|hhh=88888888
+14:25:25.371157[44m|INF|[0mIVR_DRIVER|CALLBACK_RouteRequest|DriverName:IVR1, Command:RouteRequest, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, RouteDN:4200, CED:Customer Entered Data, UDataEx:aaa=111|bbb=222|ccc=333|ddd=444, ExtnsEx:eee=555|fff=6666|ggg=77777|hhh=88888888, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx><Node Name="aaa" Type="Str" Val="111"/><Node Name="bbb" Type="Str" Val="222"/><Node Name="ccc" Type="Str" Val="333"/><Node Name="ddd" Type="Str" Val="444"/></UDataEx><ExtnsEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></ExtnsEx></RouteRequest></GctiMsg>
+
+14:25:25.372086[44m|INF|[0mIVR_DRIVER|CALLBACK_RouteResponse|DriverName:IVR1, Command:RouteResponse, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, RouteType:Normal, Dest:5550700, ExtnsEx:|eee=555|fff=6666|ggg=77777|hhh=88888888|, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest><ExtnsEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></ExtnsEx></RouteResponse></GctiMsg>
+
+14:25:25.372699[44m|INF|[0mCB_SESSION8|CB <<< CBA|100.100.105.41:52914|000292|00293000000100002028000030000011254BA80-53AB-4214-91AD-32EE609062BA0000 ICM             12001         2    0icRouteReq      102910440002280000300000   2sRequest=icRouteReq sResult=1 sDesc=Success sRouteType=Normal sDest=5550700 sExtnsEx=|eee=555|fff=6666|ggg=77777|hhh=88888888| 
+14:25:27.659173[44m|INF|[0mCB_SESSION8|CB >>> CBA|100.100.105.41:52914|000254|00254000202800000001000030000011254BA80-53AB-4214-91AD-32EE609062BA0000 ICM             12000         2    0icSendUData     102910440002280000300000   2sRequest=icSendUData sTENo=1 sChanNo=0 sKeys=UEI sUDataEx=aaa=111|bbb=222|ccc=333|ddd=444 
+14:25:27.659253[44m|INF|[0mCB_SESSION8|HandleReqData|Request data queue push success.
+14:25:27.659460[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:25:27.659591[44m|INF|[0mIVR_DRIVER|HandleRequest_icSendUData|Requester:CB_SESSION8, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, TENo:1, ChanNo:0, Keys:UEI, UDataEx:aaa=111|bbb=222|ccc=333|ddd=444
+14:25:27.659991[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataSet|DriverName:IVR1, Command:UDataSet, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, UDataEx:aaa=111|bbb=222|ccc=333|ddd=444, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><UDataSet Action="Add" Keys="UEI"><RequestId>100000003</RequestId><UDataEx><Node Name="aaa" Type="Str" Val="111"/><Node Name="bbb" Type="Str" Val="222"/><Node Name="ccc" Type="Str" Val="333"/><Node Name="ddd" Type="Str" Val="444"/></UDataEx></UDataSet></GctiMsg>
+
+14:25:27.660838[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataResp|DriverName:IVR1, Command:UDataResp, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, Result:Success, UDataEx:|eee=555|fff=6666|ggg=77777|hhh=88888888|, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><UDataResp><RequestId>UEI</RequestId><Result>Success</Result><UDataEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></UDataEx></UDataResp></GctiMsg>
+
+14:25:27.661695[44m|INF|[0mCB_SESSION8|CB <<< CBA|100.100.105.41:52914|000257|00258000000100002028000030000011254BA80-53AB-4214-91AD-32EE609062BA0000 ICM             12001         2    0icSendUData     102910440002280000300000   2sRequest=icSendUData sResult=1 sDesc=Success sUDataEx=|eee=555|fff=6666|ggg=77777|hhh=88888888| 
+14:25:28.292726[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      148H
+14:25:28.292817[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      148H
+14:25:30.018544[44m|INF|[0mCB_SESSION8|CB >>> CBA|100.100.105.41:52914|000210|00210000202800000001000030000011254BA80-53AB-4214-91AD-32EE609062BA0000 ICM             12000         2    0icGetUData      102910440002280000300000   2sRequest=icGetUData sTENo=1 sChanNo=0 sKeys=UEI 
+14:25:30.018620[44m|INF|[0mCB_SESSION8|HandleReqData|Request data queue push success.
+14:25:30.018814[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:25:30.018929[44m|INF|[0mIVR_DRIVER|HandleRequest_icGetUData|Requester:CB_SESSION8, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, TENo:1, ChanNo:0, Keys:UEI
+14:25:30.019309[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataGet|DriverName:IVR1, Command:UDataGet, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><UDataGet Keys="UEI"><RequestId>100000004</RequestId></UDataGet></GctiMsg>
+
+14:25:30.020126[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataResp|DriverName:IVR1, Command:UDataResp, CallId:1254BA80-53AB-4214-91AD-32EE609062BA0000, Result:Success, UDataEx:|eee=555|fff=6666|ggg=77777|hhh=88888888|, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><UDataResp><RequestId>UEI</RequestId><Result>Success</Result><UDataEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></UDataEx></UDataResp></GctiMsg>
+
+14:25:30.020589[44m|INF|[0mCB_SESSION8|CB <<< CBA|100.100.105.41:52914|000257|00258000000100002028000030000011254BA80-53AB-4214-91AD-32EE609062BA0000 ICM             12001         2    0icGetUData      102910440002280000300000   2sRequest=icSendUData sResult=1 sDesc=Success sUDataEx=|eee=555|fff=6666|ggg=77777|hhh=88888888| 
+14:25:38.294007[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      149H
+14:25:38.294111[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      149H
+14:25:48.295257[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      150H
+14:25:48.295355[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      150H
+14:25:57.948958[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000247|0024700010312003120010009000021D0EDB1FA-E6BA-418A-A998-2F8D587037890000
+14:25:57.949036[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:25:57.949456[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:25:57.949595[44m|INF|[0mIVR_DRIVER|HandleRequest_icNewCall|Requester:CB_SESSION7, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, TENo:1, ChanNo:0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:
+14:25:57.949791[44m|INF|[0mIVR_DRIVER|AddCtiReqInfo|CTI Request map item count:3
+14:25:57.950126[44m|INF|[0mIVR_DRIVER|CALLBACK_NewCall|DriverName:IVR1, Command:NewCall, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, CalledNum(PortNum):1000, CallControlMode:Network, Version:4.0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D0EDB1FA-E6BA-418A-A998-2F8D587037890000</CallId><NewCall CallControlMode="Network" Version="4.0"><CalledNum>1000</CalledNum><DNIS>*6500</DNIS><ANI>4022</ANI></NewCall></GctiMsg>
+
+14:25:57.950722[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, Event:Ringing, CallStatus:10004, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D0EDB1FA-E6BA-418A-A998-2F8D587037890000</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+14:25:57.951329[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000202|0020300312001000103120009000021D0EDB1FA-E6BA-418A-A998-2F8D587037890000
+14:25:58.051068[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, Event:Established, CallStatus:10008, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D0EDB1FA-E6BA-418A-A998-2F8D587037890000</CallId><CallStatus Event="Established"/></GctiMsg>
+
+14:26:05.005095[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000198|0019800010312003120010010000021D0EDB1FA-E6BA-418A-A998-2F8D587037890000
+14:26:05.005165[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:26:05.005494[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:26:05.005608[44m|INF|[0mIVR_DRIVER|HandleRequest_icCallInfo|Requester:CB_SESSION7, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, TENo:1, ChanNo:0
+14:26:05.005951[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoReq|DriverName:IVR1, Command:CallInfoReq, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, Xml:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D0EDB1FA-E6BA-418A-A998-2F8D587037890000</CallId><CallInfoReq></CallInfoReq></GctiMsg>
+
+14:26:05.007075[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoResp|DriverName:IVR1, Command:CallInfoResp, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, ANI:1111111111, DNIS:2222222222, CalledNum:3333333333, ConnId:4444444444, FirstHomeLocation:5555555555, LastEvent:6666666666, OtherDN:7777777777, OtherQueue:8888888888, OtherTrunk:9999999999, PortDN:aaaaaaaaaa, PortQueue:bbbbbbbbbb, PortTrunk:cccccccccc, ThirdPartyDN:dddddddddd, TSCallId:eeeeeeeeee, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D0EDB1FA-E6BA-418A-A998-2F8D587037890000</CallId><CallInfoResp ANI="1111111111" DNIS="2222222222" CalledNum="3333333333" ConnId="4444444444" FirstHomeLocation="5555555555" LastEvent="6666666666" OtherDN="7777777777" OtherQueue="8888888888" OtherTrunk="9999999999" PortDN="aaaaaaaaaa" PortQueue="bbbbbbbbbb" PortTrunk="cccccccccc" ThirdPartyDN="dddddddddd" TSCallId="eeeeeeeeee"/></GctiMsg>
+
+14:26:05.007524[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000502|0050300312001000103120010000021D0EDB1FA-E6BA-418A-A998-2F8D587037890000
+14:26:12.066254[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000210|0021000010312003120010011000021D0EDB1FA-E6BA-418A-A998-2F8D587037890000
+14:26:12.066320[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:26:12.066565[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:26:12.066671[44m|INF|[0mIVR_DRIVER|HandleRequest_icGetUData|Requester:CB_SESSION7, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, TENo:1, ChanNo:0, Keys:UEI
+14:26:12.066983[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataGet|DriverName:IVR1, Command:UDataGet, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D0EDB1FA-E6BA-418A-A998-2F8D587037890000</CallId><UDataGet Keys="UEI"><RequestId>100000005</RequestId></UDataGet></GctiMsg>
+
+14:26:12.067707[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataResp|DriverName:IVR1, Command:UDataResp, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, Result:Success, UDataEx:|eee=555|fff=6666|ggg=77777|hhh=88888888|, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D0EDB1FA-E6BA-418A-A998-2F8D587037890000</CallId><UDataResp><RequestId>UEI</RequestId><Result>Success</Result><UDataEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></UDataEx></UDataResp></GctiMsg>
+
+14:26:12.068755[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000257|0025800312001000103120011000021D0EDB1FA-E6BA-418A-A998-2F8D587037890000
+14:26:28.299362[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      151H
+14:26:28.299458[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      151H
+14:26:31.675263[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000218|0021800010312003120010012000021D0EDB1FA-E6BA-418A-A998-2F8D587037890000
+14:26:31.675303[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:26:31.676315[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:26:31.676443[44m|INF|[0mIVR_DRIVER|HandleRequest_icDeflectTR|Requester:CB_SESSION7, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, TENo:1, ChanNo:0, DestDN:, szUDataEx:, szExtnsEx:
+14:26:31.676808[44m|INF|[0mIVR_DRIVER|CALLBACK_OneStepXfer|DriverName:IVR1, Command:OneStepXfer, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, DestDN:, UDataEx:, ExtnsEx:, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D0EDB1FA-E6BA-418A-A998-2F8D587037890000</CallId><OneStepXfer DestDN=""/></GctiMsg>
+
+14:26:31.678151[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:D0EDB1FA-E6BA-418A-A998-2F8D587037890000, Event:XferComplete, CallStatus:10012, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D0EDB1FA-E6BA-418A-A998-2F8D587037890000</CallId><CallStatus Event="XferComplete"/></GctiMsg>
+
+14:26:31.679081[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000204|0020500312001000103120012000021D0EDB1FA-E6BA-418A-A998-2F8D587037890000
+14:26:48.301548[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      152H
+14:26:48.301652[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      152H
+14:26:53.780485[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000247|0024700010312003120010013000031D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000
+14:26:53.780575[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:26:53.780945[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:26:53.781070[44m|INF|[0mIVR_DRIVER|HandleRequest_icNewCall|Requester:CB_SESSION7, CallId:D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000, TENo:1, ChanNo:0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:
+14:26:53.781133[44m|INF|[0mIVR_DRIVER|AddCtiReqInfo|CTI Request map item count:4
+14:26:53.781478[44m|INF|[0mIVR_DRIVER|CALLBACK_NewCall|DriverName:IVR1, Command:NewCall, CallId:D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000, CalledNum(PortNum):1000, CallControlMode:Network, Version:4.0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000</CallId><NewCall CallControlMode="Network" Version="4.0"><CalledNum>1000</CalledNum><DNIS>*6500</DNIS><ANI>4022</ANI></NewCall></GctiMsg>
+
+14:26:53.782144[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000, Event:Ringing, CallStatus:10004, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+14:26:53.782193[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000202|0020300312001000103120013000031D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000
+14:26:53.882490[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000, Event:Established, CallStatus:10008, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000</CallId><CallStatus Event="Established"/></GctiMsg>
+
+14:27:00.796878[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000198|0019800010312003120010014000031D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000
+14:27:00.796948[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:27:00.797640[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:27:00.797737[44m|INF|[0mIVR_DRIVER|HandleRequest_icCallInfo|Requester:CB_SESSION7, CallId:D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000, TENo:1, ChanNo:0
+14:27:00.798134[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoReq|DriverName:IVR1, Command:CallInfoReq, CallId:D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000, Xml:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000</CallId><CallInfoReq></CallInfoReq></GctiMsg>
+
+14:27:00.799192[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoResp|DriverName:IVR1, Command:CallInfoResp, CallId:D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000, ANI:1111111111, DNIS:2222222222, CalledNum:3333333333, ConnId:4444444444, FirstHomeLocation:5555555555, LastEvent:6666666666, OtherDN:7777777777, OtherQueue:8888888888, OtherTrunk:9999999999, PortDN:aaaaaaaaaa, PortQueue:bbbbbbbbbb, PortTrunk:cccccccccc, ThirdPartyDN:dddddddddd, TSCallId:eeeeeeeeee, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000</CallId><CallInfoResp ANI="1111111111" DNIS="2222222222" CalledNum="3333333333" ConnId="4444444444" FirstHomeLocation="5555555555" LastEvent="6666666666" OtherDN="7777777777" OtherQueue="8888888888" OtherTrunk="9999999999" PortDN="aaaaaaaaaa" PortQueue="bbbbbbbbbb" PortTrunk="cccccccccc" ThirdPartyDN="dddddddddd" TSCallId="eeeeeeeeee"/></GctiMsg>
+
+14:27:00.800177[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000502|0050300312001000103120014000031D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000
+14:27:07.858406[44m|INF|[0mCB_SESSION7|CB >>> CBA|100.100.105.105:44104|000210|0021000010312003120010015000031D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000
+14:27:07.858472[44m|INF|[0mCB_SESSION7|HandleReqData|Request data queue push success.
+14:27:07.858796[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:27:07.858900[44m|INF|[0mIVR_DRIVER|HandleRequest_icGetUData|Requester:CB_SESSION7, CallId:D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000, TENo:1, ChanNo:0, Keys:UEI
+14:27:07.859200[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataGet|DriverName:IVR1, Command:UDataGet, CallId:D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000</CallId><UDataGet Keys="UEI"><RequestId>100000006</RequestId></UDataGet></GctiMsg>
+
+14:27:07.859993[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataResp|DriverName:IVR1, Command:UDataResp, CallId:D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000, Result:Success, UDataEx:|eee=555|fff=6666|ggg=77777|hhh=88888888|, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000</CallId><UDataResp><RequestId>UEI</RequestId><Result>Success</Result><UDataEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></UDataEx></UDataResp></GctiMsg>
+
+14:27:07.860167[44m|INF|[0mCB_SESSION7|CB <<< CBA|100.100.105.105:44104|000257|0025800312001000103120015000031D3EF57E1-8F33-48CB-A0B1-BFBA1178D1F10000
+14:27:18.304669[32m|LV3|[0mCB_SESSION7|RECEIVE|000033|000330001031200312001      153H
+14:27:18.304758[32m|LV3|[0mCB_SESSION7|SEND   |000033|000330001031200312001      153H
+14:27:28.314491[41m|ERR|[0mCB_SESSION7|iSocket Recv error !!
+14:27:28.314635[41m|ERR|[0mCB_SESSION7|TcpSession loop exited !!
+14:27:29.515628[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION9, ip:100.100.105.105, port:44266 
+14:27:29.515684[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:3, name:CB_SESSION9, ip:100.100.105.105, port:44266
+14:27:29.566212[33m|LV2|[0mCB_SESSION9|RECEIVE|000154|0015400010312003120010000000071                                         GENESYS         10000               xcbRegister                                 
+14:27:29.566299[33m|LV2|[0mCB_SESSION9|SEND   |000154|0015400312001000103120000000071                                         GENESYS         10001               xcbRegister                                 
+14:27:29.566332[44m|INF|[0mCB_SESSION9|HandleRegister success.
+14:27:31.335008[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION7
+14:27:48.308069[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      154H
+14:27:48.308166[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      154H
+14:27:58.309249[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      155H
+14:27:58.309349[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      155H
+14:28:08.310284[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      156H
+14:28:08.310386[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      156H
+14:28:10.945122[44m|INF|[0mCB_SESSION9|CB >>> CBA|100.100.105.105:44266|000247|002470001031200312001000100000147915407-FBAC-44BD-8EB2-EA185EC8838F0000 GENESYS         12000         1    0icNewCall       111914280001280000100000   5sRequest=icNewCall sTENo=1 sChanNo=0 sDNIS=*6500 sANI=4022 sUDataEx= sExtnsEx= 
+14:28:10.945285[44m|INF|[0mCB_SESSION9|HandleReqData|Request data queue push success.
+14:28:10.946237[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:28:10.946399[44m|INF|[0mIVR_DRIVER|HandleRequest_icNewCall|Requester:CB_SESSION9, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, TENo:1, ChanNo:0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:
+14:28:10.946482[44m|INF|[0mIVR_DRIVER|AddCtiReqInfo|CTI Request map item count:5
+14:28:10.946821[44m|INF|[0mIVR_DRIVER|CALLBACK_NewCall|DriverName:IVR1, Command:NewCall, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, CalledNum(PortNum):1000, CallControlMode:Network, Version:4.0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>47915407-FBAC-44BD-8EB2-EA185EC8838F0000</CallId><NewCall CallControlMode="Network" Version="4.0"><CalledNum>1000</CalledNum><DNIS>*6500</DNIS><ANI>4022</ANI></NewCall></GctiMsg>
+
+14:28:10.947009[44m|INF|[0mCB_SESSION9|CB <<< CBA|100.100.105.105:44266|000202|002030031200100010312000100000147915407-FBAC-44BD-8EB2-EA185EC8838F0000 GENESYS         12001         1    0icNewCall       111914280001280000100000   5sRequest=icNewCall sResult=1 sDesc=Success 
+14:28:10.947369[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, Event:Ringing, CallStatus:10004, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>47915407-FBAC-44BD-8EB2-EA185EC8838F0000</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+14:28:11.047806[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, Event:Established, CallStatus:10008, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>47915407-FBAC-44BD-8EB2-EA185EC8838F0000</CallId><CallStatus Event="Established"/></GctiMsg>
+
+14:28:17.987703[44m|INF|[0mCB_SESSION9|CB >>> CBA|100.100.105.105:44266|000198|001980001031200312001000200000147915407-FBAC-44BD-8EB2-EA185EC8838F0000 GENESYS         12000         1    0icCallInfo      111914280001280000200000   5sRequest=icCallInfo sTENo=1 sChanNo=0 
+14:28:17.987781[44m|INF|[0mCB_SESSION9|HandleReqData|Request data queue push success.
+14:28:17.987845[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:28:17.987981[44m|INF|[0mIVR_DRIVER|HandleRequest_icCallInfo|Requester:CB_SESSION9, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, TENo:1, ChanNo:0
+14:28:17.988318[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoReq|DriverName:IVR1, Command:CallInfoReq, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, Xml:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>47915407-FBAC-44BD-8EB2-EA185EC8838F0000</CallId><CallInfoReq></CallInfoReq></GctiMsg>
+
+14:28:17.989409[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoResp|DriverName:IVR1, Command:CallInfoResp, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, ANI:1111111111, DNIS:2222222222, CalledNum:3333333333, ConnId:4444444444, FirstHomeLocation:5555555555, LastEvent:6666666666, OtherDN:7777777777, OtherQueue:8888888888, OtherTrunk:9999999999, PortDN:aaaaaaaaaa, PortQueue:bbbbbbbbbb, PortTrunk:cccccccccc, ThirdPartyDN:dddddddddd, TSCallId:eeeeeeeeee, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>47915407-FBAC-44BD-8EB2-EA185EC8838F0000</CallId><CallInfoResp ANI="1111111111" DNIS="2222222222" CalledNum="3333333333" ConnId="4444444444" FirstHomeLocation="5555555555" LastEvent="6666666666" OtherDN="7777777777" OtherQueue="8888888888" OtherTrunk="9999999999" PortDN="aaaaaaaaaa" PortQueue="bbbbbbbbbb" PortTrunk="cccccccccc" ThirdPartyDN="dddddddddd" TSCallId="eeeeeeeeee"/></GctiMsg>
+
+14:28:17.990329[44m|INF|[0mCB_SESSION9|CB <<< CBA|100.100.105.105:44266|000502|005030031200100010312000200000147915407-FBAC-44BD-8EB2-EA185EC8838F0000 GENESYS         12001         1    0icCallInfo      111914280001280000200000   5sRequest=icCallInfo sResult=1 ANI=1111111111 DNIS=2222222222 CalledNum=3333333333 ConnId=4444444444 FirstHomeLocation=5555555555 LastEvent=6666666666 OtherDN=7777777777 OtherQueue=8888888888 OtherTrunk=9999999999 PortDN=aaaaaaaaaa PortQueue=bbbbbbbbbb PortTrunk=cccccccccc ThirdPartyDN=dddddddddd TSCallId=eeeeeeeeee 
+14:28:25.049489[44m|INF|[0mCB_SESSION9|CB >>> CBA|100.100.105.105:44266|000210|002100001031200312001000300000147915407-FBAC-44BD-8EB2-EA185EC8838F0000 GENESYS         12000         1    0icGetUData      111914280001280000300000   5sRequest=icGetUData sTENo=1 sChanNo=0 sKeys=UEI 
+14:28:25.049571[44m|INF|[0mCB_SESSION9|HandleReqData|Request data queue push success.
+14:28:25.050449[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:28:25.050564[44m|INF|[0mIVR_DRIVER|HandleRequest_icGetUData|Requester:CB_SESSION9, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, TENo:1, ChanNo:0, Keys:UEI
+14:28:25.050871[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataGet|DriverName:IVR1, Command:UDataGet, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>47915407-FBAC-44BD-8EB2-EA185EC8838F0000</CallId><UDataGet Keys="UEI"><RequestId>100000007</RequestId></UDataGet></GctiMsg>
+
+14:28:25.051630[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataResp|DriverName:IVR1, Command:UDataResp, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, Result:Success, UDataEx:|eee=555|fff=6666|ggg=77777|hhh=88888888|, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>47915407-FBAC-44BD-8EB2-EA185EC8838F0000</CallId><UDataResp><RequestId>UEI</RequestId><Result>Success</Result><UDataEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></UDataEx></UDataResp></GctiMsg>
+
+14:28:25.052652[44m|INF|[0mCB_SESSION9|CB <<< CBA|100.100.105.105:44266|000257|002580031200100010312000300000147915407-FBAC-44BD-8EB2-EA185EC8838F0000 GENESYS         12001         1    0icGetUData      111914280001280000300000   5sRequest=icSendUData sResult=1 sDesc=Success sUDataEx=|eee=555|fff=6666|ggg=77777|hhh=88888888| 
+14:28:38.313394[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      157H
+14:28:38.313479[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      157H
+14:28:48.314660[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      158H
+14:28:48.314755[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      158H
+14:28:58.316008[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      159H
+14:28:58.316104[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      159H
+14:29:08.317171[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      160H
+14:29:08.317251[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      160H
+14:29:12.895685[44m|INF|[0mCB_SESSION9|CB >>> CBA|100.100.105.105:44266|000218|002180001031200312001000400000147915407-FBAC-44BD-8EB2-EA185EC8838F0000 GENESYS         12000         1    0icClearCall     111914290001280000400000   5sRequest=icDeflectTR sTENo=1 sChanNo=0 sEndCause=Normal 
+14:29:12.895760[44m|INF|[0mCB_SESSION9|HandleReqData|Request data queue push success.
+14:29:12.896171[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:29:12.896270[44m|INF|[0mIVR_DRIVER|HandleRequest_icDeflectTR|Requester:CB_SESSION9, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, TENo:1, ChanNo:0, DestDN:, szUDataEx:, szExtnsEx:
+14:29:12.896589[44m|INF|[0mIVR_DRIVER|CALLBACK_OneStepXfer|DriverName:IVR1, Command:OneStepXfer, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, DestDN:, UDataEx:, ExtnsEx:, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>47915407-FBAC-44BD-8EB2-EA185EC8838F0000</CallId><OneStepXfer DestDN=""/></GctiMsg>
+
+14:29:12.897216[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:47915407-FBAC-44BD-8EB2-EA185EC8838F0000, Event:XferComplete, CallStatus:10012, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>47915407-FBAC-44BD-8EB2-EA185EC8838F0000</CallId><CallStatus Event="XferComplete"/></GctiMsg>
+
+14:29:12.898292[44m|INF|[0mCB_SESSION9|CB <<< CBA|100.100.105.105:44266|000204|002050031200100010312000400000147915407-FBAC-44BD-8EB2-EA185EC8838F0000 GENESYS         12001         1    0icClearCall     111914290001280000400000   5sRequest=icDeflectTR sResult=1 sDesc=Success 
+14:29:28.319196[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      161H
+14:29:28.319277[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      161H
+14:29:38.320358[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      162H
+14:29:38.320455[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      162H
+14:29:48.321614[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      163H
+14:29:48.321703[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      163H
+14:29:58.322871[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      164H
+14:29:58.322959[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      164H
+14:30:08.324141[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      165H
+14:30:08.324222[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      165H
+14:30:18.325361[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      166H
+14:30:18.325466[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      166H
+14:30:28.326455[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      167H
+14:30:28.326518[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      167H
+14:30:28.957932[44m|INF|[0mCB_SESSION9|CB >>> CBA|100.100.105.105:44266|000247|0024700010312003120010005000011F14682C6-1C7B-4018-913E-2288F62D16DB0000 GENESYS         12000         1    0icNewCall       111914300001280000500001   5sRequest=icNewCall sTENo=1 sChanNo=0 sDNIS=*6500 sANI=4022 sUDataEx= sExtnsEx= 
+14:30:28.957985[44m|INF|[0mCB_SESSION9|HandleReqData|Request data queue push success.
+14:30:28.958784[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:30:28.958879[44m|INF|[0mIVR_DRIVER|HandleRequest_icNewCall|Requester:CB_SESSION9, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, TENo:1, ChanNo:0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:
+14:30:28.958926[44m|INF|[0mIVR_DRIVER|AddCtiReqInfo|CTI Request map item count:6
+14:30:28.959173[44m|INF|[0mIVR_DRIVER|CALLBACK_NewCall|DriverName:IVR1, Command:NewCall, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, CalledNum(PortNum):1000, CallControlMode:Network, Version:4.0, DNIS:*6500, ANI:4022, UDataEx:, ExtnsEx:, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>F14682C6-1C7B-4018-913E-2288F62D16DB0000</CallId><NewCall CallControlMode="Network" Version="4.0"><CalledNum>1000</CalledNum><DNIS>*6500</DNIS><ANI>4022</ANI></NewCall></GctiMsg>
+
+14:30:28.959415[44m|INF|[0mCB_SESSION9|CB <<< CBA|100.100.105.105:44266|000202|0020300312001000103120005000011F14682C6-1C7B-4018-913E-2288F62D16DB0000 GENESYS         12001         1    0icNewCall       111914300001280000500001   5sRequest=icNewCall sResult=1 sDesc=Success 
+14:30:28.959496[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, Event:Ringing, CallStatus:10004, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>F14682C6-1C7B-4018-913E-2288F62D16DB0000</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+14:30:29.060041[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, Event:Established, CallStatus:10008, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>F14682C6-1C7B-4018-913E-2288F62D16DB0000</CallId><CallStatus Event="Established"/></GctiMsg>
+
+14:30:35.972826[44m|INF|[0mCB_SESSION9|CB >>> CBA|100.100.105.105:44266|000198|0019800010312003120010006000011F14682C6-1C7B-4018-913E-2288F62D16DB0000 GENESYS         12000         1    0icCallInfo      111914300001280000600001   5sRequest=icCallInfo sTENo=1 sChanNo=0 
+14:30:35.972898[44m|INF|[0mCB_SESSION9|HandleReqData|Request data queue push success.
+14:30:35.973026[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:30:35.973120[44m|INF|[0mIVR_DRIVER|HandleRequest_icCallInfo|Requester:CB_SESSION9, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, TENo:1, ChanNo:0
+14:30:35.973422[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoReq|DriverName:IVR1, Command:CallInfoReq, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, Xml:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>F14682C6-1C7B-4018-913E-2288F62D16DB0000</CallId><CallInfoReq></CallInfoReq></GctiMsg>
+
+14:30:35.974500[44m|INF|[0mIVR_DRIVER|CALLBACK_CallInfoResp|DriverName:IVR1, Command:CallInfoResp, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, ANI:1111111111, DNIS:2222222222, CalledNum:3333333333, ConnId:4444444444, FirstHomeLocation:5555555555, LastEvent:6666666666, OtherDN:7777777777, OtherQueue:8888888888, OtherTrunk:9999999999, PortDN:aaaaaaaaaa, PortQueue:bbbbbbbbbb, PortTrunk:cccccccccc, ThirdPartyDN:dddddddddd, TSCallId:eeeeeeeeee, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>F14682C6-1C7B-4018-913E-2288F62D16DB0000</CallId><CallInfoResp ANI="1111111111" DNIS="2222222222" CalledNum="3333333333" ConnId="4444444444" FirstHomeLocation="5555555555" LastEvent="6666666666" OtherDN="7777777777" OtherQueue="8888888888" OtherTrunk="9999999999" PortDN="aaaaaaaaaa" PortQueue="bbbbbbbbbb" PortTrunk="cccccccccc" ThirdPartyDN="dddddddddd" TSCallId="eeeeeeeeee"/></GctiMsg>
+
+14:30:35.975021[44m|INF|[0mCB_SESSION9|CB <<< CBA|100.100.105.105:44266|000502|0050300312001000103120006000011F14682C6-1C7B-4018-913E-2288F62D16DB0000 GENESYS         12001         1    0icCallInfo      111914300001280000600001   5sRequest=icCallInfo sResult=1 ANI=1111111111 DNIS=2222222222 CalledNum=3333333333 ConnId=4444444444 FirstHomeLocation=5555555555 LastEvent=6666666666 OtherDN=7777777777 OtherQueue=8888888888 OtherTrunk=9999999999 PortDN=aaaaaaaaaa PortQueue=bbbbbbbbbb PortTrunk=cccccccccc ThirdPartyDN=dddddddddd TSCallId=eeeeeeeeee 
+14:30:43.034349[44m|INF|[0mCB_SESSION9|CB >>> CBA|100.100.105.105:44266|000210|0021000010312003120010007000011F14682C6-1C7B-4018-913E-2288F62D16DB0000 GENESYS         12000         1    0icGetUData      111914300001280000700001   5sRequest=icGetUData sTENo=1 sChanNo=0 sKeys=UEI 
+14:30:43.034434[44m|INF|[0mCB_SESSION9|HandleReqData|Request data queue push success.
+14:30:43.035396[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:30:43.035536[44m|INF|[0mIVR_DRIVER|HandleRequest_icGetUData|Requester:CB_SESSION9, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, TENo:1, ChanNo:0, Keys:UEI
+14:30:43.035834[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataGet|DriverName:IVR1, Command:UDataGet, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>F14682C6-1C7B-4018-913E-2288F62D16DB0000</CallId><UDataGet Keys="UEI"><RequestId>100000008</RequestId></UDataGet></GctiMsg>
+
+14:30:43.036615[44m|INF|[0mIVR_DRIVER|CALLBACK_UDataResp|DriverName:IVR1, Command:UDataResp, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, Result:Success, UDataEx:|eee=555|fff=6666|ggg=77777|hhh=88888888|, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>F14682C6-1C7B-4018-913E-2288F62D16DB0000</CallId><UDataResp><RequestId>UEI</RequestId><Result>Success</Result><UDataEx><Node Name="eee" Type="Str" Val="555"/><Node Name="fff" Type="Str" Val="6666"/><Node Name="ggg" Type="Str" Val="77777"/><Node Name="hhh" Type="Str" Val="88888888"/></UDataEx></UDataResp></GctiMsg>
+
+14:30:43.037072[44m|INF|[0mCB_SESSION9|CB <<< CBA|100.100.105.105:44266|000257|0025800312001000103120007000011F14682C6-1C7B-4018-913E-2288F62D16DB0000 GENESYS         12001         1    0icGetUData      111914300001280000700001   5sRequest=icSendUData sResult=1 sDesc=Success sUDataEx=|eee=555|fff=6666|ggg=77777|hhh=88888888| 
+14:30:58.329482[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      168H
+14:30:58.329586[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      168H
+14:31:08.330653[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      169H
+14:31:08.330754[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      169H
+14:31:18.332016[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      170H
+14:31:18.332115[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      170H
+14:31:28.333350[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      171H
+14:31:28.333469[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      171H
+14:31:29.874421[44m|INF|[0mCB_SESSION9|CB >>> CBA|100.100.105.105:44266|000218|0021800010312003120010008000011F14682C6-1C7B-4018-913E-2288F62D16DB0000 GENESYS         12000         1    0icClearCall     111914310001280000800001   5sRequest=icDeflectTR sTENo=1 sChanNo=0 sEndCause=Normal 
+14:31:29.874470[44m|INF|[0mCB_SESSION9|HandleReqData|Request data queue push success.
+14:31:29.874514[44m|INF|[0mIVR_DRIVER|Request data pop success.
+14:31:29.874594[44m|INF|[0mIVR_DRIVER|HandleRequest_icDeflectTR|Requester:CB_SESSION9, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, TENo:1, ChanNo:0, DestDN:, szUDataEx:, szExtnsEx:
+14:31:29.874851[44m|INF|[0mIVR_DRIVER|CALLBACK_OneStepXfer|DriverName:IVR1, Command:OneStepXfer, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, DestDN:, UDataEx:, ExtnsEx:, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>F14682C6-1C7B-4018-913E-2288F62D16DB0000</CallId><OneStepXfer DestDN=""/></GctiMsg>
+
+14:31:29.875108[44m|INF|[0mIVR_DRIVER|CALLBACK_CallStatus|DriverName:IVR1, Command:CallStatus, CallId:F14682C6-1C7B-4018-913E-2288F62D16DB0000, Event:XferComplete, CallStatus:10012, XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>F14682C6-1C7B-4018-913E-2288F62D16DB0000</CallId><CallStatus Event="XferComplete"/></GctiMsg>
+
+14:31:29.875745[44m|INF|[0mCB_SESSION9|CB <<< CBA|100.100.105.105:44266|000204|0020500312001000103120008000011F14682C6-1C7B-4018-913E-2288F62D16DB0000 GENESYS         12001         1    0icClearCall     111914310001280000800001   5sRequest=icDeflectTR sResult=1 sDesc=Success 
+14:31:48.335443[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      172H
+14:31:48.335542[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      172H
+14:31:58.336627[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      173H
+14:31:58.336740[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      173H
+14:32:08.337978[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      174H
+14:32:08.338086[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      174H
+14:32:18.339184[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      175H
+14:32:18.339282[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      175H
+14:32:28.340366[32m|LV3|[0mCB_SESSION9|RECEIVE|000033|000330001031200312001      176H
+14:32:28.340464[32m|LV3|[0mCB_SESSION9|SEND   |000033|000330001031200312001      176H

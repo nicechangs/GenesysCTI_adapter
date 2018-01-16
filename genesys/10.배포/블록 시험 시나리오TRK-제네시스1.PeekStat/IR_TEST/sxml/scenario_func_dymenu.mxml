@@ -1,0 +1,7 @@
+<scenariodef id="scenario_func_dymenu.msfx" iparam="" ioparam="" >
+	<play expr="'vp.3641'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<play expr="session.menu.jumpdtmf" cleardigit="1" type="Digit" country="410" wait="1" async="0" cond="1" />
+	<play expr="'vp.3642'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<play expr="'disconnect'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<disconnect />
+</scenariodef>

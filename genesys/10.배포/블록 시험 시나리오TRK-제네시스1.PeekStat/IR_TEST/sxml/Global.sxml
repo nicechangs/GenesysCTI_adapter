@@ -1,0 +1,1300 @@
+<defineblock>
+	<var name="a[15]" expr="'111'" />
+	<var name="g_icMCSReRoute" expr="" />
+	<var name="g_icMCSReRoute.result" expr="''" />
+	<var name="g_ctiCall2" expr="" />
+	<var name="g_ctiCall2.result" expr="''" />
+	<var name="icEventReport" expr="''" />
+	<var name="testdid" expr="''" />
+	<var name="icScriptResult.SeqNo" expr="''" />
+	<var name="icNewCall.InvokeID" expr="''" />
+	<var name="icNewCall.SeqNo" expr="''" />
+	<var name="getchannel.otherchannel" expr="''" />
+	<var name="x_cfg_time_term[1..5]" expr="''" />
+	<var name="p_statcd[1..3]" expr="'0'" />
+	<var name="bbb[1]" expr="'234'" />
+</defineblock>
+<mentblock>
+	<mentdef id="vp.111" src="vp.111" desc="outbound 채널 할당을 요청합니다. " />
+	<mentdef id="vp.112" src="vp.112" desc="슬리 채널 " />
+	<mentdef id="vp.113" src="vp.113" desc="번이 할당되었습니다. " />
+	<mentdef id="vp.1211" src="vp.1211" desc="멀티 멘트중에 첫번째 멘트입니다. " />
+	<mentdef id="vp.1212" src="vp.1212" desc="멀티 멘트중에 두번째 멘트입니다. " />
+	<mentdef id="vp.1221" src="vp.1221" desc="존재하지 않은 멘트에 대한 시험이 종료되었습니다. " />
+	<mentdef id="vp.1231" src="vp.1231" desc="ignore-dtmf 시험을 위한 첫 번째 멘트이며, ignore-dtmf 가 설정되어져 있습니다. 사용자 dtmf에 종료되지 않습니다. " />
+	<mentdef id="vp.1232" src="vp.1232" desc="ignore-dtmf 시험을 위한 두 번째 멘트이며, ignore-dtmf가 설정되어있지 않습니다. 사용자 dtmf에 종료됩니다. " />
+	<mentdef id="vp.1241" src="vp.1241" desc="clear-digit 시험을 위한 첫 번째 멘트이며, 사용자 입력 digit에 의해 종료되는 멘트입니다. " />
+	<mentdef id="vp.1242" src="vp.1242" desc="clear-digit 시험을 위한 두 번째 멘트이며, clear-digit 설정에 따라 안내 될수도 , 안 될수도 있습니다. " />
+	<mentdef id="vp.1251" src="vp.1251" desc="async play를 위한 멘트이며, 안내를 요청하고 바로 다른 작업을 수행합니다. " />
+	<mentdef id="vp.1252" src="vp.1252" desc="async play 후, sleep 아이콘에 의해 중지되었던 시나리오를 재 시작합니다. " />
+	<mentdef id="vp.1311" src="vp.1311" desc="digit-multi-file 첫번째 입니다. " />
+	<mentdef id="vp.1312" src="vp.1312" desc="digit-multi-file 두번째 입니다. " />
+	<mentdef id="vp.1313" src="vp.1313" desc="digit-multi-file 세번째 입니다. " />
+	<mentdef id="vp.1321" src="vp.1321" desc="ignore-dtmf 시험을 위한 첫 번째 멘트이며, ignore-dtmf 가 설정되어져 있습니다. 사용자 dtmf에 종료되지 않습니 " />
+	<mentdef id="vp.1322" src="vp.1322" desc="ignore-dtmf 시험을 위한 두 번째 멘트이며, ignore-dtmf가 설정되어있지 않습니다. 사용자 dtmf에 종료됩니다. " />
+	<mentdef id="vp.1331" src="vp.1331" desc="clear-digit 시험을 위한 첫 번째 멘트이며, 사용자 입력 digit에 의해 종료되는 멘트입니다. " />
+	<mentdef id="vp.1332" src="vp.1332" desc="clear-digit 시험을 위한 두 번째 멘트이며, clear-digit 설정에 따라 안내 될수도 , 안 될수도 있습니다. " />
+	<mentdef id="vp.1341" src="vp.1341" desc="digit 입력의 timeout 멘트 입니다. 입력하지 않고 대기합니다. " />
+	<mentdef id="vp.1342" src="vp.1342" desc="digit 입력 timeout 시험을 종료합니다. " />
+	<mentdef id="vp.1351" src="vp.1351" desc="digit 입력의 inter-timeout 멘트 입니다. Digit 하나만 입력하고 대기합니다. " />
+	<mentdef id="vp.144a" src="vp.144a" desc="tts number 시험을 시작합니다. " />
+	<mentdef id="vp.144b" src="vp.144b" desc="tts phone 시험을 시작합니다. " />
+	<mentdef id="vp.144c" src="vp.144c" desc="tts date 시험을 시작합니다. " />
+	<mentdef id="vp.144d" src="vp.144d" desc="tts time 시험을 시작합니다. " />
+	<mentdef id="vp.144e" src="vp.144e" desc="tts date-time 시험을 시작합니다. " />
+	<mentdef id="vp.144f" src="vp.144f" desc="tts digit 시험을 시작합니다. " />
+	<mentdef id="vp.144g" src="vp.144g" desc="tts money 시험을 시작합니다. " />
+	<mentdef id="vp.144h" src="vp.144h" desc="tts count 시험을 시작합니다. " />
+	<mentdef id="vp.144i" src="vp.144i" desc="tts ordinal 시험을 시작합니다. " />
+	<mentdef id="vp.144j" src="vp.144j" desc="tts day-of-week 시험을 시작합니다. " />
+	<mentdef id="vp.144k" src="vp.144k" desc="tts phone-eng 시험을 시작합니다. " />
+	<mentdef id="vp.144l" src="vp.144l" desc="tts digit-eng 시험을 시작합니다. " />
+	<mentdef id="vp.15" src="vp.15" desc="disconnect 시험을 위한 멘트입니다. " />
+	<mentdef id="vp.16" src="vp.16" desc="abort 시험을 위한 멘트입니다. 멘트 안내시에 abort가 진행됩니다. *3 " />
+	<mentdef id="vp.1621" src="vp.1621" desc="채널 " />
+	<mentdef id="vp.1622" src="vp.1622" desc="번에 대해서 abort를 시도합니다. " />
+	<mentdef id="vp.163" src="vp.163" desc="abort에 대한 시험을 종료합니다. " />
+	<mentdef id="vp.1711" src="vp.1711" desc="beep 음과 동시에 녹음 시작되며, 녹음 중간에 5초 이상의 묵음이 필요합니다. " />
+	<mentdef id="vp.1712" src="vp.1712" desc="record 시험을 종료합니다. " />
+	<mentdef id="vp.1721" src="vp.1721" desc="beep 음 없이 녹음시작되며, 녹음 시간이 10초이므로, 10초간 녹음 지속이 필요합니다. " />
+	<mentdef id="vp.1731" src="vp.1731" desc="beep 음 없이 녹음 시작되며, 녹음 도중에 '#'을 누르면 녹음이 종료됩니다. " />
+	<mentdef id="vp.1732" src="vp.1732" desc="녹음된 내용입니다. " />
+	<mentdef id="vp.1811" src="vp.1811" desc="switch 대기 채널을 위한 멘트입니다. " />
+	<mentdef id="vp.1821" src="vp.1821" desc="채널 " />
+	<mentdef id="vp.1822" src="vp.1822" desc="번에 대해서 switch를 시도합니다. " />
+	<mentdef id="vp.211" src="vp.211" desc="transfer 할 전화번호를 입력하세요 " />
+	<mentdef id="vp.212" src="vp.212" desc="transfer가 완료되었습니다. " />
+	<mentdef id="m.0" src="m.0" desc="cti, packet, user 기능 시험은 3번, transfer, push-tone 시험은 2번, 그 외 시험은 1번을 눌러주십시오. " />
+	<mentdef id="m.1" src="m.1" desc="getchannel 시험은 1번, play 시험은 2번, digit 시험은 3번, tts 시험은 4번, disconnect 시험은 5번, abort 시험은 6번, record 시험은 7번, switch 시험은 8번, disswitch 시험은 9번을 눌러주십시오. " />
+	<mentdef id="m.11" src="m.11" desc="getchannel 시험을 시작합니다. " />
+	<mentdef id="m.12" src="m.12" desc="play 시험을 시작합니다. " />
+	<mentdef id="m.120" src="m.120" desc="멀티 멘트 파일 시험은 1번, 없는 파일 안내 2번, ignore-dtmt 시험은 3번, clear-digit 시험은 4번, async 시험은 5번을 눌러주십시오. " />
+	<mentdef id="m.121" src="m.121" desc="멀티 멘트 파일 시험을 시작합니다. " />
+	<mentdef id="m.122" src="m.122" desc="존재하지 않은 파일에 대한 안내 시험을 시작합니다. " />
+	<mentdef id="m.123" src="m.123" desc="play-ignore-dtmf 에 대한 시험을 시작합니다. " />
+	<mentdef id="m.124" src="m.124" desc="play-clear-digit에 대한 시험을 시작합니다. " />
+	<mentdef id="m.1240" src="m.1240" desc="play-clear-digit 비 설정 시험은 1번, clear-digit 설정 시험은 2번을 눌러주십시오. " />
+	<mentdef id="m.1241" src="m.1241" desc="play-clear-digit 비 설정 시험을 시작합니다. " />
+	<mentdef id="m.1242" src="m.1242" desc="play-clear-digit 설정 시험을 시작합니다. " />
+	<mentdef id="m.125" src="m.125" desc="async play에 대한 시험을 시작합니다. " />
+	<mentdef id="m.13" src="m.13" desc="digit 시험을 시작합니다. " />
+	<mentdef id="m.130" src="m.130" desc="digit 확인 시험 0, 멀티 멘트 파일 시험은 1번, ignore-dtmf 시험은 2번, clear-digit 시험은 3번, timeout 시험은 4번, inter-timeout 시험은 5번, dtmf-mask 시험은 6번을 눌러주십시오. " />
+	<mentdef id="m.131" src="m.131" desc="digit-멀티 멘트 파일 시험을 시작합니다. " />
+	<mentdef id="m.132" src="m.132" desc="digit-ignore-dtmf 에 대한 시험을 시작합니다. " />
+	<mentdef id="m.133" src="m.133" desc="digit-clear-digit 에 대한 시험을 시작합니다. " />
+	<mentdef id="m.1330" src="m.1330" desc="digit-clear-digit 비 설정 시험은 1번, clear-digit 설정 시험은 2번을 눌러주십시오. " />
+	<mentdef id="m.1331" src="m.1331" desc="digit-clear-digit 비 설정 시험을 시작합니다. " />
+	<mentdef id="m.1332" src="m.1332" desc="digit-clear-digit 설정 시험을 시작합니다. " />
+	<mentdef id="m.134" src="m.134" desc="digit-timeout에 대한 시험을 시작합니다 " />
+	<mentdef id="m.135" src="m.135" desc="digit-inter-timeout에 대한 시험을 시작합니다. " />
+	<mentdef id="m.136" src="m.136" desc="digit-dtmf-mask에 대한 시험을 시작합니다. " />
+	<mentdef id="m.14" src="m.14" desc="tts 시험을 시작합니다. " />
+	<mentdef id="m.140" src="m.140" desc="tts-stream 시험은 1번, tts-file 시험은 2번, tts-ksc5601 시험은 3번, 숫자 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.1410" src="m.1410" desc="tts-cleardigit 비 설정 시험은 1번, clear-digit 설정 시험은 2번을 눌러주십시오. " />
+	<mentdef id="m.1411" src="m.1411" desc="tts-cleardigit 비 설정 시험을 시작합니다. " />
+	<mentdef id="m.1421" src="m.1421" desc="tts-cleardigit 설정 시험을 시작합니다 " />
+	<mentdef id="m.15" src="m.15" desc="disconnect 시험을 시작합니다. " />
+	<mentdef id="m.16" src="m.16" desc="abort에 대한 시험을 시작합니다. " />
+	<mentdef id="m.160" src="m.160" desc="동일 채널에 대한 abort 시험은 1번, 타 채널에 대한 abort 시험을 위한 play 대기 2번,  타 채널에 대한 abort 시험은 3번, 요청이 없는 상태에서의 abort 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.161" src="m.161" desc="동일 채널에 대한 abort 시험을 시작합니다. " />
+	<mentdef id="m.162" src="m.162" desc="서로 다른 채널에 대한 abort 시험을 위한 대기 메뉴 입니다. " />
+	<mentdef id="m.163" src="m.163" desc="서로 다른 채널에 대한 abort 시험을 시작합니다. " />
+	<mentdef id="m.1630" src="m.1630" desc="abort 할 대상 채널번호와 #을 눌러주십시오. " />
+	<mentdef id="m.164" src="m.164" desc="요청이 없는 채널에 대한 abort 시험을 시작합니다. " />
+	<mentdef id="m.17" src="m.17" desc="record에 대한 시험을 시작합니다. " />
+	<mentdef id="m.170" src="m.170" desc="max-slience 시험은 1번, max-time 시험은 2번, terminiation tone 시험은 3번, no voice time 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.171" src="m.171" desc="record-max-silence 시험을 시작합니다. " />
+	<mentdef id="m.172" src="m.172" desc="record - max-time 시험을 시작합니다. " />
+	<mentdef id="m.173" src="m.173" desc="record-termination tone 시험을 시작합니다. " />
+	<mentdef id="m.18" src="m.18" desc="switch에 대한 시험을 시작합니다. " />
+	<mentdef id="m.180" src="m.180" desc="switch를 위한 대기는 1번, switch에 대한 시험은 2번을 눌러주십시오. " />
+	<mentdef id="m.181" src="m.181" desc="switch 를 위한 대기 상태에 진입합니다. " />
+	<mentdef id="m.182" src="m.182" desc="switch 를 시작합니다. " />
+	<mentdef id="m.1820" src="m.1820" desc="switch 할 대상 채널번호와 #을 눌러주십시오. " />
+	<mentdef id="m.19" src="m.19" desc="dis-switch에 대한 시험을 시작합니다. " />
+	<mentdef id="m.21" src="m.21" desc="transfer 시험을 시작합니다. " />
+	<mentdef id="disconnect" src="disconnect" desc="호를 종료합니다. " />
+	<mentdef id="errtime" src="errtime" desc="입력 시간으로 초과하였습니다. " />
+	<mentdef id="errinput" src="errinput" desc="입력이 잘못 되었습니다. " />
+	<mentdef id="errretry" src="errretry" desc="반복 회수 동안 잘못 입력하셨습니다. " />
+	<mentdef id="vp.221" src="vp.221" desc="전송할 dtmf와 #를 눌러주십시오. " />
+	<mentdef id="vp.341" src="vp.341" desc="전환할 서비스 아이디와 #를 눌러주십시오. " />
+	<mentdef id="m.1412" src="m.1412" desc="tts-cleardigit 설정 시험을 시작합니다 " />
+	<mentdef id="m.142" src="m.142" desc="tts-file cleardigit 시험을 시작합니다. " />
+	<mentdef id="m.143" src="m.143" desc="tts-ksc-5601 clear-digit 시험을 시작합니다. " />
+	<mentdef id="m.144" src="m.144" desc="tts digit 안내 시험을 시작합니다. " />
+	<mentdef id="m.174" src="m.174" desc="record - no voice 시험을 시작합니다. " />
+	<mentdef id="m.2" src="m.2" desc="transfer는 1번, Push-tone 시험은 2번을 눌러주십시오. " />
+	<mentdef id="m.21" src="m.21" desc="transfer 시험을 시작합니다. " />
+	<mentdef id="m.22" src="m.22" desc="Push-tone 시험을 시작합니다. " />
+	<mentdef id="m.3" src="m.3" desc="사용자 기능 시험은 1번, 패킷 처리 시험은 2번, cti 시험은 3번, 서비스 전환 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.31" src="m.31" desc="사용자 기능 시험을 시작합니다. " />
+	<mentdef id="m.310" src="m.310" desc="사용자 로그 시험은 1번, SLEE 환결 설정 기능은 2번, User-Library 기능은 3번을 눌러주십시오. " />
+	<mentdef id="m.311" src="m.311" desc="사용자 로그 시험을 시작합니다. " />
+	<mentdef id="m.312" src="m.312" desc="SLEE 환경 설정 기능 시험을 시작합니다. " />
+	<mentdef id="m.313" src="m.313" desc="User-Library 기능 시험을 시작합니다. " />
+	<mentdef id="m.32" src="m.32" desc="패킷 기능 시험을 시작합니다. " />
+	<mentdef id="m.320" src="m.320" desc="정상 패킷 송/수신 시험은 1번, 패킷 Destionation 에러 시험은 2번, 패킷 ID 에러 시험은 3번, 패킷 타임아웃 시험은 4번, 패킷 BGM 시험은 5번을 눌러주십시오. " />
+	<mentdef id="m.321" src="m.321" desc="패킷 송/수신 시험을 시작합니다. " />
+	<mentdef id="m.322" src="m.322" desc="패킷 Destination error 시험을 시작합니다. " />
+	<mentdef id="m.323" src="m.323" desc="패킷 ID 에러 시험을 시작합니다. " />
+	<mentdef id="m.324" src="m.324" desc="패킷 Timeout 시험을 시작합니다. " />
+	<mentdef id="m.325" src="m.325" desc="패킷 BGM 시험을 시작합니다. " />
+	<mentdef id="m.33" src="m.33" desc="CTI 기능 시험을 시작합니다. " />
+	<mentdef id="m.330" src="m.330" desc="CTI 기초 정보 조회는 1번, 상담원 연결은 2번, UEI 변경 시험은 3번, CTI 서비스 오류 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.331" src="m.331" desc="CTI 기초 정보 조회 시험을 시작합니다. " />
+	<mentdef id="m.332" src="m.332" desc="CTI 상담원 연결 시험을 시작합니다. " />
+	<mentdef id="m.333" src="m.333" desc="스킬베이스 상담원 연결 시험을 시작합니다. " />
+	<mentdef id="m.334" src="m.334" desc="전담 상담원 연결 시험을 시작합니다. " />
+	<mentdef id="m.34" src="m.34" desc="서비스 전환 시험을 시작합니다. " />
+	<mentdef id="vp.114" src="vp.114" desc="Outbound 채널 할당이 실패했습니다. " />
+	<mentdef id="m.36" src="m.36" desc="시나리오 기능 시험을 시작합니다. " />
+	<mentdef id="m.360" src="m.360" desc="시나리오 무한루프 기능 시험은 1번, 연산 오류 시험은 2번, 서비스 이용시간 제한 시험은 3번, 동적 메뉴 구성 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.3610" src="m.3610" desc="무한루프 감지 기능 시험을 시작합니다. 일정 시간 후에 호가 자동 종료됩니다. 알람 메시지를 확인하세요. " />
+	<mentdef id="m.3620" src="m.3620" desc="연산 오류 시험을 시작합니다. 호가 바로 종료됩니다. 알람 메시지를 확인하세요. " />
+	<mentdef id="m.3630" src="m.3630" desc="서비스 이용시간 제한 기능 시험을 시작합니다. 일정 시간 후에 호가 자동 종료됩니다. 알람 메시지를 확인하세요. " />
+	<mentdef id="m.36301" src="m.36301" desc="서비스 이용시간을 유지합니다. 일정 시간 후에 호가 종료됩니다. 호가 종료되면, 알람 메시지를 확인하세요. " />
+	<mentdef id="m.3640" src="m.3640" desc="동적 메뉴 구성 기능 시험을 시작합니다. " />
+	<mentdef id="m.36401" src="m.36401" desc="시험을 위해 최초 진입이면, 우물정자를 눌러 상위로 가고, 시험 과정이면 별표를 눌러 상위로 가세요. 안내되는 멘트 청취후 호를 종료합니다. " />
+	<mentdef id="m.36402" src="m.36402" desc="동적 메뉴 시험에서 우물정자를 눌러서 상위 메뉴로 올라온 경우입니다. 호를 종료하시고, 다시 동적 메뉴 시험 코너에서 별표를 누른 후 안내되는 멘트가 틀림을 확인하세요. " />
+	<mentdef id="m.36403" src="m.36403" desc="동적 메뉴 시험에서 별표를 눌러서 상위 메뉴로 올라온 경우입니다. 우물정자 입력시와 멘트가 틀림을 확인하세요. " />
+	<mentdef id="m.210" src="m.210" desc="tranfer 할 DN을 4자리로 입력해 주십시오. " />
+	<mentdef id="m.338" src="m.338" desc="상담 큐 상태 조회 시험을 시작합니다. " />
+	<mentdef id="vp.114" src="vp.114" desc="Outbound 채널 할당이 실패했습니다. " />
+	<mentdef id="vp.1741" src="vp.1741" desc="beep 음과 동시에 녹음 시작되며, 처음부터 10초 이상의 묵음이 필요합니다. " />
+	<mentdef id="m.3320" src="m.3320" desc="호 전환 할 대상번호를 입력하세요. " />
+	<mentdef id="m.3330" src="m.3330" desc="스킬과 우물정자를 입력해 주십시오. " />
+	<mentdef id="m.3340" src="m.3340" desc="전담 상담원 내선 번호와 우물정자를 입력해 주십시오. " />
+	<mentdef id="m.335" src="m.335" desc="UEI 변경 시험을 시작합니다. " />
+	<mentdef id="m.336" src="m.336" desc="사용자 메시지 전달 시험을 시작합니다. " />
+	<mentdef id="m.3360" src="m.3360" desc="메시지 전달 상담원 내선번호와 우물정자를 눌러주십시오. " />
+	<mentdef id="m.337" src="m.337" desc="상담원 상태 조회 시험을 시작합니다. " />
+	<mentdef id="m.3370" src="m.3370" desc="상태를 조회할 상담원 내선번호를 입력해 주십시오. " />
+	<mentdef id="m.338" src="m.338" desc="상담 큐 상태 조회 시험을 시작합니다. " />
+	<mentdef id="m.3380" src="m.3380" desc="상태를 조회할 상담큐 번호를 입력해 주십시오. " />
+	<mentdef id="m.35" src="m.35" desc="서비스 환경 정보 조회 시험을 시작합니다. " />
+	<mentdef id="vp.3641" src="vp.3641" desc="동적 메뉴를 위해 입력한 DTMF는 " />
+	<mentdef id="vp.3642" src="vp.3642" desc="입니다 " />
+	<mentdef id="m.130_1" src="m.130_1" desc="입력 확인을 위한 digit 5자리를 눌러주십시오. " />
+	<mentdef id="m.130_2" src="m.130_2" desc="입력 확인을 위한 digit 5자리를 눌러주십시오. " />
+	<mentdef id="m.130_3" src="m.130_3" desc="입력하신 digit는 " />
+	<mentdef id="m.130_4" src="m.130_4" desc="입니다. " />
+</mentblock>
+<importblock>
+	<Importdef id="GetRandom" src="libEtc_Func.so" desc="GetRandom" />
+	<Importdef id="READ_CFG_STRING" src="libbs_1.0.0.4.so" desc="1" />
+</importblock>
+<logblock>
+	<logdef id="USER_LOG_10MIN" path="/bridgetec/ipronv32/ir/log/irslee/slee/userlog_10min/" ext="ulog_10min" timestamp="1" period="0" />
+	<logdef id="USER_LOG_DAY" path="/bridgetec/ipronv32/ir/log/irslee/slee/userlog_day/" ext="ulog_day" timestamp="1" period="4" />
+	<logdef id="USER_LOG_30MIN" path="/bridgetec/ipronv32/ir/log/irslee/slee/userlog_30min/" ext="ulog_30min" timestamp="0" period="1" />
+	<logdef id="USER_LOG_1HOUR" path="/bridgetec/ipronv32/ir/log/irslee/slee/userlog_1hour/" ext="ulog_1hour" timestamp="0" period="2" />
+	<logdef id="USER_LOG_2HOUR" path="/bridgetec/ipronv32/ir/log/irslee/slee/userlog_2hour/" ext="ulog_2hour" timestamp="0" period="3" />
+</logblock>
+<packetblock>
+	<packetdef id="PKT_COMM_HDR" name="패킷공통1" >
+		<sendpart>
+			<item name="trunk" length="12" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- trunk-id -->
+ 			<item name="channel" length="4" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="2" />			<!-- channel-id -->
+ 		</sendpart>
+		<receivepart>
+			<item name="trunk" length="2" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- trunk-id -->
+ 			<item name="channel" length="2" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="2" />			<!-- channel-id -->
+ 		</receivepart>
+	</packetdef>
+	<packetdef id="PKT_TEST_SEND" name="패킷테스트2" >
+		<sendpart>
+			<item name="Type" length="2" fill=" " align="right" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- Type -->
+ 			<item name="ANI" length="20" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="2" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="3" />			<!-- DNIS -->
+ 		</sendpart>
+	</packetdef>
+	<packetdef id="PKT_TEST_SEND3" name="패킷테스트3" >
+		<sendpart>
+			<item name="Type" length="2" fill=" " align="right" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- Type -->
+ 			<item name="ANI" length="20" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="2" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="3" />			<!-- DNIS -->
+ 		</sendpart>
+	</packetdef>
+	<packetdef id="PKT_TEST" name="패킷테스트1" >
+		<commonpart type="PKT_COMM_HDR" />
+		<sendpart>
+			<item name="ANI" length="20" fill=" " align="left" default="" encrypt="" pattern="" trim="1" seq="1" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill=" " align="left" default="" encrypt="" pattern="" trim="2" seq="2" />			<!-- DNIS -->
+ 			<item name="Type" length="2" fill=" " align="right" default="" encrypt="" pattern="" trim="3" seq="3" />			<!-- Type -->
+ 		</sendpart>
+		<receivepart>
+			<repeat name="InfoConnected" repeatcount="2" >
+				<item name="repDate" length="1" fill="" align="right" default="" encrypt="" pattern="" trim="3" seq="1" />				<!-- connected-date -->
+ 				<item name="repTime" length="16" fill="0" align="right" default="" encrypt="" pattern="" trim="2" seq="2" />				<!-- connected-Time -->
+ 			</repeat>
+			<item name="Type" length="4" fill="0" align="right" default="" encrypt="" pattern="" trim="2" seq="1" />			<!-- Type -->
+ 			<item name="repCount" length="1" fill="0" align="left" default="" encrypt="" pattern="" trim="3" seq="2" />			<!-- repeat-count -->
+ 			<itemrepeat name="InfoConnected" countitem="repCount" seq="3" />			<!--  -->
+ 			<item name="ANI" length="20" fill="0" align="left" default="" encrypt="" pattern="" trim="3" seq="4" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill="0" align="left" default="" encrypt="" pattern="" trim="3" seq="5" />			<!-- DNIS -->
+ 		</receivepart>
+	</packetdef>
+	<packetdef id="PKT_TEST_SIZE" name="" >
+		<commonpart type="PKT_COMM_HDR" />
+		<sendpart>
+			<repeat name="SNDRep" repeatcount="1" >
+				<item name="repTest" length="5" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="1" />				<!-- SendRepTest -->
+ 			</repeat>
+			<item name="Type" length="1" fill=" " align="right" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- Type -->
+ 			<item name="ANI" length="20" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="2" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="3" />			<!-- DNIS -->
+ 			<item name="SendRepeat" length="2" fill="0" align="right" default="3" encrypt="" pattern="" trim="0" seq="4" />			<!-- SendRepeat -->
+ 			<itemrepeat name="SNDRep" countitem="SendRepeat" seq="5" />			<!--  -->
+ 		</sendpart>
+		<receivepart>
+			<repeat name="InfoConnected" repeatcount="2" >
+				<item name="repDate" length="8" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="1" />				<!-- connected-date -->
+ 				<item name="repTime" length="6" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="2" />				<!-- connected-Time -->
+ 			</repeat>
+			<item name="Type" length="1" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- Type -->
+ 			<item name="ANI" length="20" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="2" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="3" />			<!-- DNIS -->
+ 			<item name="repCount" length="2" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="4" />			<!-- repeat-count -->
+ 			<itemrepeat name="InfoConnected" countitem="repCount" seq="5" />			<!--  -->
+ 		</receivepart>
+	</packetdef>
+	<packetdef id="PKT_TEST_TB" name="" >
+		<commonpart type="PKT_COMM_HDR" />
+		<sendpart>
+			<item name="Type" length="2" fill=" " align="right" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- Type -->
+ 			<item name="ANI" length="4" fill="0" align="right" default="8570" encrypt="" pattern="" trim="0" seq="2" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="3" />			<!-- DNIS -->
+ 		</sendpart>
+		<receivepart>
+			<repeat name="InfoConnected" repeatcount="2" >
+				<item name="repDate" length="8" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="1" />				<!-- connected-date -->
+ 				<item name="repTime" length="6" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="2" />				<!-- connected-Time -->
+ 			</repeat>
+			<item name="Type" length="1" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- Type -->
+ 			<item name="ANI" length="20" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="2" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="3" />			<!-- DNIS -->
+ 			<item name="repCount" length="2" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="4" />			<!-- repeat-count -->
+ 			<itemrepeat name="InfoConnected" countitem="repCount" seq="5" />			<!--  -->
+ 		</receivepart>
+	</packetdef>
+	<packetdef id="PKT_TEST_TB_org" name="" >
+		<commonpart type="PKT_COMM_HDR" />
+		<sendpart>
+			<item name="Type" length="11" fill=" " align="right" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- Type -->
+ 			<item name="ANI" length="4" fill="0" align="right" default="8570" encrypt="" pattern="" trim="0" seq="2" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="3" />			<!-- DNIS -->
+ 		</sendpart>
+		<receivepart>
+			<repeat name="InfoConnected" repeatcount="2" >
+				<item name="repDate" length="8" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="1" />				<!-- connected-date -->
+ 				<item name="repTime" length="6" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="2" />				<!-- connected-Time -->
+ 			</repeat>
+			<item name="Type" length="1" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- Type -->
+ 			<item name="ANI" length="20" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="2" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="3" />			<!-- DNIS -->
+ 			<item name="repCount" length="2" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="4" />			<!-- repeat-count -->
+ 			<itemrepeat name="InfoConnected" countitem="repCount" seq="5" />			<!--  -->
+ 		</receivepart>
+	</packetdef>
+	<packetdef id="PKT_TEST_2" name="패킷테스트2" >
+		<commonpart type="PKT_COMM_HDR" />
+		<sendpart>
+			<repeat name="sendRR" repeatcount="1" >
+				<item name="sendREP" length="1000" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="1" />				<!--  -->
+ 			</repeat>
+			<item name="Type" length="2" fill=" " align="right" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- Type -->
+ 			<item name="ANI" length="20" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="2" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill=" " align="left" default="" encrypt="" pattern="" trim="0" seq="3" />			<!-- DNIS -->
+ 			<item name="repCount" length="2" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="4" />			<!-- repeat-count -->
+ 			<itemrepeat name="sendRR" countitem="Type" seq="5" />			<!--  -->
+ 		</sendpart>
+		<receivepart>
+			<repeat name="InfoConnected" repeatcount="2" >
+				<item name="repDate" length="8" fill="" align="right" default="" encrypt="" pattern="" trim="0" seq="1" />				<!-- connected-date -->
+ 				<item name="repTime" length="6" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="2" />				<!-- connected-Time -->
+ 			</repeat>
+			<item name="Type" length="1" fill="0" align="right" default="" encrypt="" pattern="" trim="0" seq="1" />			<!-- Type -->
+ 			<item name="ANI" length="20" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="2" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="3" />			<!-- DNIS -->
+ 			<item name="repCount" length="2" fill="0" align="left" default="" encrypt="" pattern="" trim="0" seq="4" />			<!-- repeat-count -->
+ 			<itemrepeat name="InfoConnected" countitem="repCount" seq="5" />			<!--  -->
+ 		</receivepart>
+	</packetdef>
+</packetblock>
+<menublock>
+	<!-- MenuDef_Start (main) -->
+	<menudef id="0" name="main" svcid="0" seqid="1" parentid="" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="1/1,2/2,3/3,4/4" choicement="'m.0'" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<videoopt imagetype="0" language="0" srepeat="0" serviceid="111" fileid="222222" txtovlcount="0" />
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<!-- MenuDef_GetDigit_Start -->
+		<assign name="_forcus_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+		<label id="_forcus_studio_make_session_menu_key_START" />
+		<abort lineno="session.call.channel" checkresult="0" checkvideo="1" cond="1" />
+		<playvideo videomenu="1" />
+		<if cond="session.menu.menttype == 'MentID'" >
+			<play expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="mentid" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+		<else />
+			<if cond="session.menu.menttype == 'TTS-Stream' || session.menu.menttype == 'TTS-File'" >
+				<playtts expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="file" speakerid="session.menu.speakerid" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+			<else />
+				<playtts expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="ks5601" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+			</if>
+		</if>
+		<getdigit name="_forcus_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="0" />
+		<assign name="_forcus_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<assign name="_forcus_studio_make_session_menu_key_playindex" expr="session.menu.playindex" cond="1" />
+			<play expr="session.menu.timeoutment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+			<!-- Retry DTMF Set -->
+			<if cond="_forcus_studio_make_session_menu_key.digits == session.menu.retrydtmf" >
+				<assign name="_forcus_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+				<goto next="_forcus_studio_make_session_menu_key_START" />
+			<elseif cond="_forcus_studio_make_session_menu_key.digits == session.menu.upkey" />
+				<jump src="0" />
+			<elseif cond="_forcus_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<!-- Jump Digit -->
+				<jump dtmf="_forcus_studio_make_session_menu_key.digits" />
+				<if cond="_forcus_studio_make_session_menu_key_cnt <= session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_forcus_studio_make_session_menu_key_cnt <= session.menu.retrycount - 1" >
+				<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_forcus_studio_make_session_menu_key_cnt" expr="_forcus_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_forcus_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_forcus_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_forcus_studio_make_session_menu_key_END" />
+		<!-- MenuDef_GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (main) -->
+	<!-- MenuDef_Start (te_test1) -->
+	<menudef id="1" name="te_test1" svcid="1" seqid="2" parentid="0" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="1/11,2/12,3/13,4/14,5/15,6/16,7/17,8/18,9/19" choicement="'m.1'" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<!-- MenuDef_GetDigit_Start -->
+		<assign name="_forcus_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+		<label id="_forcus_studio_make_session_menu_key_START" />
+		<if cond="session.menu.menttype == 'MentID'" >
+			<play expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="mentid" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+		<else />
+			<if cond="session.menu.menttype == 'TTS-Stream' || session.menu.menttype == 'TTS-File'" >
+				<playtts expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="file" speakerid="session.menu.speakerid" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+			<else />
+				<playtts expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="ks5601" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+			</if>
+		</if>
+		<getdigit name="_forcus_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="0" />
+		<assign name="_forcus_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<assign name="_forcus_studio_make_session_menu_key_playindex" expr="session.menu.playindex" cond="1" />
+			<play expr="session.menu.timeoutment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+			<!-- Retry DTMF Set -->
+			<if cond="_forcus_studio_make_session_menu_key.digits == session.menu.retrydtmf" >
+				<assign name="_forcus_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+				<goto next="_forcus_studio_make_session_menu_key_START" />
+			<elseif cond="_forcus_studio_make_session_menu_key.digits == session.menu.upkey" />
+				<jump src="0" />
+			<elseif cond="_forcus_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<!-- Jump Digit -->
+				<jump dtmf="_forcus_studio_make_session_menu_key.digits" />
+				<if cond="_forcus_studio_make_session_menu_key_cnt <= session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_forcus_studio_make_session_menu_key_cnt <= session.menu.retrycount - 1" >
+				<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_forcus_studio_make_session_menu_key_cnt" expr="_forcus_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_forcus_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_forcus_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_forcus_studio_make_session_menu_key_END" />
+		<!-- MenuDef_GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (te_test1) -->
+	<!-- MenuDef_Start (getchannel) -->
+	<menudef id="11" name="getchannel" svcid="11" seqid="3" parentid="1" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_11_subcall" src="getchannel.msfx" iparam="" ioparam="" />
+		<if cond="menu_11_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_11_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (getchannel) -->
+	<!-- MenuDef_Start (play) -->
+	<menudef id="12" name="play" svcid="12" seqid="4" parentid="1" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_12_subcall" src="play.msfx" iparam="" ioparam="" />
+		<if cond="menu_12_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_12_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (play) -->
+	<!-- MenuDef_Start (digit) -->
+	<menudef id="13" name="digit" svcid="13" seqid="5" parentid="1" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_13_subcall" src="digit.msfx" iparam="" ioparam="" />
+		<if cond="menu_13_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_13_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (digit) -->
+	<!-- MenuDef_Start (tts) -->
+	<menudef id="14" name="tts" svcid="14" seqid="6" parentid="1" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_14_subcall" src="tts.msfx" iparam="" ioparam="" />
+		<if cond="menu_14_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_14_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (tts) -->
+	<!-- MenuDef_Start (disconnect) -->
+	<menudef id="15" name="disconnect" svcid="15" seqid="7" parentid="1" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_15_subcall" src="disconnect.msfx" iparam="" ioparam="" />
+		<if cond="menu_15_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_15_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (disconnect) -->
+	<!-- MenuDef_Start (abort) -->
+	<menudef id="16" name="abort" svcid="16" seqid="8" parentid="1" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_16_subcall" src="abort.msfx" iparam="" ioparam="" />
+		<if cond="menu_16_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_16_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (abort) -->
+	<!-- MenuDef_Start (record) -->
+	<menudef id="17" name="record" svcid="17" seqid="9" parentid="1" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_17_subcall" src="record.msfx" iparam="" ioparam="" />
+		<if cond="menu_17_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_17_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (record) -->
+	<!-- MenuDef_Start (switch) -->
+	<menudef id="18" name="switch" svcid="18" seqid="10" parentid="1" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_18_subcall" src="switch.msfx" iparam="" ioparam="" />
+		<if cond="menu_18_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_18_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (switch) -->
+	<!-- MenuDef_Start (disswitch) -->
+	<menudef id="19" name="disswitch" svcid="19" seqid="11" parentid="1" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_19_subcall" src="disswitch.msfx" iparam="" ioparam="" />
+		<if cond="menu_19_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_19_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (disswitch) -->
+	<!-- MenuDef_Start (te_test2) -->
+	<menudef id="2" name="te_test2" svcid="2" seqid="12" parentid="0" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="1/21,2/22" choicement="'m.2'" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<!-- MenuDef_GetDigit_Start -->
+		<assign name="_forcus_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+		<label id="_forcus_studio_make_session_menu_key_START" />
+		<if cond="session.menu.menttype == 'MentID'" >
+			<play expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="mentid" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+		<else />
+			<if cond="session.menu.menttype == 'TTS-Stream' || session.menu.menttype == 'TTS-File'" >
+				<playtts expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="file" speakerid="session.menu.speakerid" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+			<else />
+				<playtts expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="ks5601" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+			</if>
+		</if>
+		<getdigit name="_forcus_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="0" />
+		<assign name="_forcus_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<assign name="_forcus_studio_make_session_menu_key_playindex" expr="session.menu.playindex" cond="1" />
+			<play expr="session.menu.timeoutment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+			<!-- Retry DTMF Set -->
+			<if cond="_forcus_studio_make_session_menu_key.digits == session.menu.retrydtmf" >
+				<assign name="_forcus_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+				<goto next="_forcus_studio_make_session_menu_key_START" />
+			<elseif cond="_forcus_studio_make_session_menu_key.digits == session.menu.upkey" />
+				<jump src="0" />
+			<elseif cond="_forcus_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<!-- Jump Digit -->
+				<jump dtmf="_forcus_studio_make_session_menu_key.digits" />
+				<if cond="_forcus_studio_make_session_menu_key_cnt <= session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_forcus_studio_make_session_menu_key_cnt <= session.menu.retrycount - 1" >
+				<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_forcus_studio_make_session_menu_key_cnt" expr="_forcus_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_forcus_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_forcus_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_forcus_studio_make_session_menu_key_END" />
+		<!-- MenuDef_GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (te_test2) -->
+	<!-- MenuDef_Start (transfer) -->
+	<menudef id="21" name="transfer" svcid="21" seqid="13" parentid="2" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="2" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_21_subcall" src="transfer.msfx" iparam="" ioparam="" />
+		<if cond="menu_21_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_21_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (transfer) -->
+	<!-- MenuDef_Start (pushtone) -->
+	<menudef id="22" name="pushtone" svcid="22" seqid="14" parentid="2" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="2" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_22_subcall" src="pushtone.msfx" iparam="" ioparam="" />
+		<if cond="menu_22_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_22_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (pushtone) -->
+	<!-- MenuDef_Start (slee_test1) -->
+	<menudef id="3" name="slee_test1" svcid="3" seqid="15" parentid="0" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="1/31,2/32,3/33,4/34,5/35,6/36" choicement="'m.3'" timeoutment="'errtime'" inputerrment="'errinput'" retryerrment="'errretry'" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<!-- MenuDef_GetDigit_Start -->
+		<assign name="_forcus_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+		<label id="_forcus_studio_make_session_menu_key_START" />
+		<if cond="session.menu.menttype == 'MentID'" >
+			<play expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="mentid" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+		<else />
+			<if cond="session.menu.menttype == 'TTS-Stream' || session.menu.menttype == 'TTS-File'" >
+				<playtts expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="file" speakerid="session.menu.speakerid" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+			<else />
+				<playtts expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="ks5601" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+			</if>
+		</if>
+		<getdigit name="_forcus_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="0" />
+		<assign name="_forcus_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<assign name="_forcus_studio_make_session_menu_key_playindex" expr="session.menu.playindex" cond="1" />
+			<play expr="session.menu.timeoutment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+			<!-- Retry DTMF Set -->
+			<if cond="_forcus_studio_make_session_menu_key.digits == session.menu.retrydtmf" >
+				<assign name="_forcus_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+				<goto next="_forcus_studio_make_session_menu_key_START" />
+			<elseif cond="_forcus_studio_make_session_menu_key.digits == session.menu.upkey" />
+				<jump src="0" />
+			<elseif cond="_forcus_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<!-- Jump Digit -->
+				<jump dtmf="_forcus_studio_make_session_menu_key.digits" />
+				<if cond="_forcus_studio_make_session_menu_key_cnt <= session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_forcus_studio_make_session_menu_key_cnt <= session.menu.retrycount - 1" >
+				<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_forcus_studio_make_session_menu_key_cnt" expr="_forcus_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_forcus_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_forcus_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_forcus_studio_make_session_menu_key_END" />
+		<!-- MenuDef_GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (slee_test1) -->
+	<!-- MenuDef_Start (userfunction) -->
+	<menudef id="31" name="userfunction" svcid="31" seqid="16" parentid="3" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_31_subcall" src="userfunction.msfx" iparam="" ioparam="" />
+		<if cond="menu_31_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_31_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (userfunction) -->
+	<!-- MenuDef_Start (packet) -->
+	<menudef id="32" name="packet" svcid="32" seqid="17" parentid="3" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_32_subcall" src="packet.msfx" iparam="" ioparam="" />
+		<if cond="menu_32_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_32_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (packet) -->
+	<!-- MenuDef_Start (cti) -->
+	<menudef id="33" name="cti" svcid="33" seqid="18" parentid="3" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_33_subcall" src="cti.msfx" iparam="" ioparam="" />
+		<if cond="menu_33_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_33_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (cti) -->
+	<!-- MenuDef_Start (svc_change) -->
+	<menudef id="34" name="svc_change" svcid="34" seqid="19" parentid="3" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_34_subcall" src="svcchg.msfx" iparam="" ioparam="" />
+		<if cond="menu_34_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_34_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (svc_change) -->
+	<!-- MenuDef_Start (svc_cfg_change) -->
+	<menudef id="35" name="svc_cfg_change" svcid="35" seqid="20" parentid="3" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_35_subcall" src="svc_cfgchg.msfx" iparam="" ioparam="" />
+		<if cond="menu_35_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_35_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (svc_cfg_change) -->
+	<!-- MenuDef_Start (svc_test) -->
+	<menudef id="36" name="svc_test" svcid="36" seqid="21" parentid="3" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="/361" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_36_subcall" src="scenario_func.msfx" iparam="" ioparam="" />
+		<if cond="menu_36_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_36_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<!-- MenuDef_GetDigit_Start -->
+		<assign name="_forcus_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+		<label id="_forcus_studio_make_session_menu_key_START" />
+		<if cond="session.menu.menttype == 'MentID'" >
+			<play expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="mentid" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+		<else />
+			<if cond="session.menu.menttype == 'TTS-Stream' || session.menu.menttype == 'TTS-File'" >
+				<playtts expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="file" speakerid="session.menu.speakerid" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+			<else />
+				<playtts expr="session.menu.choicement" cleardigit="session.menu.cleardigit" type="ks5601" wait="0" cond="1" index="_forcus_studio_make_session_menu_key_playindex" />
+			</if>
+		</if>
+		<getdigit name="_forcus_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="0" />
+		<assign name="_forcus_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<assign name="_forcus_studio_make_session_menu_key_playindex" expr="session.menu.playindex" cond="1" />
+			<play expr="session.menu.timeoutment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+			<!-- Retry DTMF Set -->
+			<if cond="_forcus_studio_make_session_menu_key.digits == session.menu.retrydtmf" >
+				<assign name="_forcus_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+				<goto next="_forcus_studio_make_session_menu_key_START" />
+			<elseif cond="_forcus_studio_make_session_menu_key.digits == session.menu.upkey" />
+				<jump src="3" />
+			<elseif cond="_forcus_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<!-- Jump Digit -->
+				<jump dtmf="_forcus_studio_make_session_menu_key.digits" />
+				<if cond="_forcus_studio_make_session_menu_key_cnt <= session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_forcus_studio_make_session_menu_key_cnt <= session.menu.retrycount - 1" >
+				<assign name="_forcus_studio_make_session_menu_key_playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_forcus_studio_make_session_menu_key_cnt" expr="_forcus_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_forcus_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="session.menu.cleardigit_errment" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_forcus_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_forcus_studio_make_session_menu_key_END" />
+		<!-- MenuDef_GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (svc_test) -->
+	<!-- MenuDef_Start (svc_test_dymenu) -->
+	<menudef id="361" name="svc_test_dymenu" svcid="361" seqid="22" parentid="36" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="36" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_361_subcall" src="scenario_func_dymenu.msfx" iparam="" ioparam="" />
+		<if cond="menu_361_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_361_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (svc_test_dymenu) -->
+	<!-- MenuDef_Start (vrtest) -->
+	<menudef id="4" name="vrtest" svcid="0" seqid="23" parentid="0" custmenu="0" menufilter="0000000000" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="1" cleardigit="0" cleardigiterrment="1" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<assign name="_forcus_studio_menublock_ment1" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment2" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_ment3" expr="''" cond="1" />
+		<assign name="_forcus_studio_menublock_menucall" expr="''" cond="1" />
+		<if cond="GetBlock(session.menu.id, _forcus_studio_menublock_ment1, _forcus_studio_menublock_ment2, _forcus_studio_menublock_ment3, _forcus_studio_menublock_menucall) == 'T'" >
+			<play expr="_forcus_studio_menublock_ment1" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0" />
+			<playtts expr="'부터'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment2" cleardigit="1" type="DateTime" country="410" wait="0" cond="len(_forcus_studio_menublock_ment2) > 0" />
+			<playtts expr="'까지'" cleardigit="0" type="ks5601" country="410" wait="0" cond="len(_forcus_studio_menublock_ment1) > 0 && len(_forcus_studio_menublock_ment2) > 0" />
+			<play expr="_forcus_studio_menublock_ment3" cleardigit="1" type="File" country="410" wait="0" cond="len(_forcus_studio_menublock_ment3) > 0" />
+			<if cond="len(_forcus_studio_menublock_menucall) > 0" >
+				<menu name="GBName" rid="_forcus_studio_menublock_menucall" ridtype="1" cond="1" />
+			</if>
+		</if>
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<assign name="session.menu.retrydtmf" expr="" cond="1" />
+		<assign name="session.menu.menttype" expr="'MentID'" cond="1" />
+		<assign name="session.menu.speakerid" expr="0" cond="1" />
+		<assign name="session.menu.cleardigit_errment" expr="1" cond="1" />
+		<subcall name="menu_4_subcall" src="AsrTest.msfx" iparam="" ioparam="" />
+		<if cond="menu_4_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_4_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (vrtest) -->
+</menublock>
+<vrblock>
+	<maskdef id="VRT_001" >
+		<maskitem mask="테스트일" value="1" />
+		<maskitem mask="테스트이" value="2" />
+		<maskitem mask="슬리테스트" value="3" />
+		<maskitem mask="음성인식테스트" value="4" />
+	</maskdef>
+</vrblock>
+<cdrblock>
+	<cdrdef spname="TEST_SP1" param="test_cdr" />
+	<cdrdef spname="TEST_SP2" param="test_cdr2" />
+</cdrblock>
+<trackingblock>
+	<trackdef id="trk_01" type="6" name="trtacking1" />
+	<trackdef id="trk_02" type="1" name="trtacking2" />
+	<trackdef id="trk_03" type="2" name="trtacking3" />
+	<trackdef id="trk_04" type="3" name="trtacking4" />
+	<trackdef id="trk_05" type="4" name="trtacking5" />
+	<trackdef id="trk_06" type="5" name="trtacking6" />
+</trackingblock>
+<serviceblock>
+	<servicedef code="svc_01" name="이체" />
+</serviceblock>
+<menustatblock>
+	<menustatcategory id="cate_1" name="category1" >
+		<menustatdef name="cate_0001" seq="1" />
+		<menustatdef name="cate_0002" seq="2" />
+		<menustatdef name="cate_0003" seq="3" />
+		<menustatdef name="cate_0004" seq="4" />
+		<menustatdef name="cate_0005" seq="5" />
+	</menustatcategory>
+</menustatblock>

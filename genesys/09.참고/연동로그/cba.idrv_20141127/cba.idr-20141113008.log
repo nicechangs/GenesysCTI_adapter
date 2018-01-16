@@ -1,0 +1,335 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.idr pid(05466) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+15:09:29.054844[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+15:09:29.054861[44m|INF|[0mIVRDriver Initialize success.
+15:09:29.054873[44m|INF|[0mOwnerName     : CBA.ISVR
+15:09:29.054885[44m|INF|[0mOwnerId       : 1001
+15:09:29.054897[44m|INF|[0mSvcAppName    : IVR5
+15:09:29.054908[44m|INF|[0mSvcDriverName : IVR1
+15:09:29.054920[44m|INF|[0mRemoteIp      : 127.0.0.1
+15:09:29.054931[44m|INF|[0mRemotePort    : 35001
+15:09:29.054943[44m|INF|[0mLogPath       : ../log/cba.idrv/
+15:09:29.054954[44m|INF|[0mLogLinkPath   : ../log/
+15:09:29.054966[44m|INF|[0mLogLevel      : 3
+15:09:29.054978[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+15:09:29.054989[44m|INF|[0m
+
+15:09:29.055263[44m|INF|[0mConnection success. remote_ip:127.0.0.1, remote_port:35001
+15:09:29.055821[44m|INF|[0mReqId:100000001|Command:LoginReq|Version:4.0|ClientName:IVR1|ReportStatus:true|ServerMonitor:set
+15:09:29.055869[33m|LV2|[0mReqId:100000001|Command:LoginReq|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginReq Version="4.0" ClientName="IVR1" ReportStatus="true" ServerMonitor="set"/></GctiMsg>
+
+15:09:29.055927[34m|LV1|[0mSEND   |127.0.0.1:35001|208|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginReq Version="4.0" ClientName="IVR1" ReportStatus="true" ServerMonitor="set"/></GctiMsg>
+
+15:09:29.056932[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginResp IServerVersion="8.5" Result="Success" ConfigOptions="" Status="OK"/></GctiMsg>
+
+15:09:29.057197[44m|INF|[0mReqId:100000001|Command:LoginResp|IServerVersion:8.5|Result:Success|ConfigOptions:|Status:OK
+15:09:29.057223[33m|LV2|[0mReqId:100000001|Command:LoginResp|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginResp IServerVersion="8.5" Result="Success" ConfigOptions="" Status="OK"/></GctiMsg>
+
+15:09:47.239349[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:NewCall|CalledNum:1000|CallControlMode:Network|Version:3.0|ANIRestriction:CLIP|DNIS:4200|ANI:234|UDataEx:UserExtensionInfo-icNewCall|ExtnsEx:
+15:09:47.239384[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:NewCall|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><NewCall CallControlMode="Network" Version="3.0"><CalledNum>1000</CalledNum><DNIS>4200</DNIS><ANI>234</ANI><UDataEx>UserExtensionInfo-icNewCall</UDataEx></NewCall></GctiMsg>
+
+15:09:47.239459[34m|LV1|[0mSEND   |127.0.0.1:35001|319|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><NewCall CallControlMode="Network" Version="3.0"><CalledNum>1000</CalledNum><DNIS>4200</DNIS><ANI>234</ANI><UDataEx>UserExtensionInfo-icNewCall</UDataEx></NewCall></GctiMsg>
+
+15:09:47.239840[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+15:09:47.240011[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:CallStatus|CallStatus:Ringing
+15:09:47.240038[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:CallStatus|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+15:09:47.340217[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><CallStatus Event="Established"/></GctiMsg>
+
+15:09:47.340483[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:CallStatus|CallStatus:Established
+15:09:47.340513[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:CallStatus|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><CallStatus Event="Established"/></GctiMsg>
+
+15:09:48.247471[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:OneStepXfer|szDestDN:8500|szUDataEx:UserExtensionInfo - icDeflectTR|szExtnsEx:
+15:09:48.247504[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:OneStepXfer|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><OneStepXfer DestDN="8500"><UDataEx>UserExtensionInfo - icDeflectTR</UDataEx></OneStepXfer></GctiMsg>
+
+15:09:48.247573[34m|LV1|[0mSEND   |127.0.0.1:35001|247|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><OneStepXfer DestDN="8500"><UDataEx>UserExtensionInfo - icDeflectTR</UDataEx></OneStepXfer></GctiMsg>
+
+15:09:48.247949[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><CallStatus Event="XferComplete"/></GctiMsg>
+
+15:09:48.248117[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:CallStatus|CallStatus:XferComplete
+15:09:48.248144[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:CallStatus|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><CallStatus Event="XferComplete"/></GctiMsg>
+
+15:09:49.742742[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:09:49.742773[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:49.742821[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:49.743176[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:49.743385[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:09:49.743423[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:52.111286[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:09:52.111338[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:52.111443[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:52.111871[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:52.112089[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:09:52.112122[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:52.902535[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:09:52.902571[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:52.902624[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:52.902997[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:52.903191[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:09:52.903221[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:53.662409[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:09:53.662442[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:53.662882[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:53.662932[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:53.663107[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:09:53.663149[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:54.318263[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:09:54.318296[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:54.318350[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:54.318674[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:54.318951[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:09:54.318991[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:54.990664[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:09:54.990694[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:54.990743[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:54.991120[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:54.991310[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:09:54.991337[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:56.166499[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:09:56.166529[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:56.166597[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:56.166961[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:56.167170[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:09:56.167205[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:57.302380[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:09:57.302423[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:57.302488[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:57.302928[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:57.303164[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:09:57.303200[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:58.142665[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:09:58.142696[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:58.142749[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:58.143113[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:58.143332[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:09:58.143359[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:59.405545[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:09:59.405579[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:59.405641[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:09:59.406005[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:09:59.406203[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:09:59.406231[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:10:00.222088[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:10:00.222120[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:10:00.222168[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:10:00.222535[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:10:00.222752[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:10:00.222782[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:10:01.046206[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:10:01.046239[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:10:01.046304[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:10:01.046742[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:10:01.046972[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:10:01.047018[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:10:01.782272[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:10:01.782305[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:10:01.782354[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:10:01.782776[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:10:01.783009[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:10:01.783037[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:10:02.685492[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|RouteDN:4200|CED:Customer Entered Data|UDataEx:UserExtensionInfo - icRouteReq
+15:10:02.685530[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteRequest|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:10:02.685588[34m|LV1|[0mSEND   |127.0.0.1:35001|281|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteRequest RouteDN="4200"><CED>Customer Entered Data</CED><UDataEx>UserExtensionInfo - icRouteReq</UDataEx></RouteRequest></GctiMsg>
+
+15:10:02.686014[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+
+15:10:02.686221[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|RouteType:Normal|Dest:5550700
+15:10:02.686248[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000|Command:RouteResponse|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId><RouteResponse RouteType="Normal"><Dest>5550700</Dest></RouteResponse></GctiMsg>
+

@@ -1,0 +1,2905 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<!DOCTYPE sxml SYSTEM "scxml.dtd">
+<sxml version="1.1" name="IR_블록시험시나리오" ip="100.100.105.41" date="20090815163817" studioversion="3.0.5.9" description="IR v3 블록시험 시나리오" >
+
+<mentblock>
+	<mentdef id="vp.111" src="vp.111" desc="outbound 채널 할당을 요청합니다. " />
+	<mentdef id="vp.112" src="vp.112" desc="슬리 채널 " />
+	<mentdef id="vp.113" src="vp.113" desc="번이 할당되었습니다.  " />
+	<mentdef id="vp.1211" src="vp.1211" desc="멀티 멘트중에 첫번째 멘트입니다. " />
+	<mentdef id="vp.1212" src="vp.1212" desc="멀티 멘트중에 두번째 멘트입니다. " />
+	<mentdef id="vp.1221" src="vp.1221" desc="존재하지 않은 멘트에 대한 시험이 종료되었습니다. " />
+	<mentdef id="vp.1231" src="vp.1231" desc="ignore-dtmf 시험을 위한 첫 번째 멘트이며, ignore-dtmf 가 설정되어져 있습니다. 사용자 dtmf에 종료되지 않습니다. " />
+	<mentdef id="vp.1232" src="vp.1232" desc="ignore-dtmf 시험을 위한 두 번째 멘트이며, ignore-dtmf가 설정되어있지 않습니다. 사용자 dtmf에 종료됩니다. " />
+	<mentdef id="vp.1241" src="vp.1241" desc="clear-digit 시험을 위한 첫 번째 멘트이며, 사용자 입력 digit에 의해 종료되는 멘트입니다. " />
+	<mentdef id="vp.1242" src="vp.1242" desc="clear-digit 시험을 위한 두 번째 멘트이며, clear-digit 설정에 따라 안내 될수도 , 안 될수도 있습니다. " />
+	<mentdef id="vp.1251" src="vp.1251" desc="async play를 위한 멘트이며, 안내를 요청하고 바로 다른 작업을 수행합니다. " />
+	<mentdef id="vp.1252" src="vp.1252" desc="async play 후, sleep 아이콘에 의해 중지되었던 시나리오를 재 시작합니다. " />
+	<mentdef id="vp.1311" src="vp.1311" desc="digit-multi-file 첫번째 입니다. " />
+	<mentdef id="vp.1312" src="vp.1312" desc="digit-multi-file 두번째 입니다. " />
+	<mentdef id="vp.1313" src="vp.1313" desc="digit-multi-file 세번째 입니다. " />
+	<mentdef id="vp.1321" src="vp.1321" desc="ignore-dtmf 시험을 위한 첫 번째 멘트이며, ignore-dtmf 가 설정되어져 있습니다. 사용자 dtmf에 종료되지 않습니 " />
+	<mentdef id="vp.1322" src="vp.1322" desc="ignore-dtmf 시험을 위한 두 번째 멘트이며, ignore-dtmf가 설정되어있지 않습니다. 사용자 dtmf에 종료됩니다. " />
+	<mentdef id="vp.1331" src="vp.1331" desc="clear-digit 시험을 위한 첫 번째 멘트이며, 사용자 입력 digit에 의해 종료되는 멘트입니다. " />
+	<mentdef id="vp.1332" src="vp.1332" desc="clear-digit 시험을 위한 두 번째 멘트이며, clear-digit 설정에 따라 안내 될수도 , 안 될수도 있습니다. " />
+	<mentdef id="vp.1341" src="vp.1341" desc="digit 입력의 timeout 멘트 입니다. 입력하지 않고 대기합니다.  " />
+	<mentdef id="vp.1342" src="vp.1342" desc="digit 입력 timeout 시험을 종료합니다. " />
+	<mentdef id="vp.1351" src="vp.1351" desc="digit 입력의 inter-timeout 멘트 입니다. Digit 하나만 입력하고 대기합니다.  " />
+	<mentdef id="vp.144a" src="vp.144a" desc="tts number 시험을 시작합니다. " />
+	<mentdef id="vp.144b" src="vp.144b" desc="tts phone 시험을 시작합니다. " />
+	<mentdef id="vp.144c" src="vp.144c" desc="tts date 시험을 시작합니다. " />
+	<mentdef id="vp.144d" src="vp.144d" desc="tts time 시험을 시작합니다. " />
+	<mentdef id="vp.144e" src="vp.144e" desc="tts date-time 시험을 시작합니다. " />
+	<mentdef id="vp.144f" src="vp.144f" desc="tts digit 시험을 시작합니다. " />
+	<mentdef id="vp.144g" src="vp.144g" desc="tts money 시험을 시작합니다. " />
+	<mentdef id="vp.144h" src="vp.144h" desc="tts count 시험을 시작합니다. " />
+	<mentdef id="vp.144i" src="vp.144i" desc="tts ordinal 시험을 시작합니다. " />
+	<mentdef id="vp.144j" src="vp.144j" desc="tts day-of-week 시험을 시작합니다. " />
+	<mentdef id="vp.144k" src="vp.144k" desc="tts phone-eng 시험을 시작합니다. " />
+	<mentdef id="vp.144l" src="vp.144l" desc="tts digit-eng 시험을 시작합니다. " />
+	<mentdef id="vp.15" src="vp.15" desc="disconnect 시험을 위한 멘트입니다. " />
+	<mentdef id="vp.16" src="vp.16" desc="abort 시험을 위한 멘트입니다. 멘트 안내시에 abort가 진행됩니다. *3 " />
+	<mentdef id="vp.1621" src="vp.1621" desc="채널 " />
+	<mentdef id="vp.1622" src="vp.1622" desc="번에 대해서 abort를 시도합니다. " />
+	<mentdef id="vp.163" src="vp.163" desc="abort에 대한 시험을 종료합니다. " />
+	<mentdef id="vp.1711" src="vp.1711" desc="beep 음과 동시에 녹음 시작되며, 녹음 중간에 5초 이상의 묵음이 필요합니다. " />
+	<mentdef id="vp.1712" src="vp.1712" desc="record 시험을 종료합니다. " />
+	<mentdef id="vp.1721" src="vp.1721" desc="beep 음 없이 녹음시작되며, 녹음 시간이 10초이므로, 10초간 녹음 지속이 필요합니다.  " />
+	<mentdef id="vp.1731" src="vp.1731" desc="beep 음 없이 녹음 시작되며, 녹음 도중에 '#'을 누르면 녹음이 종료됩니다. " />
+	<mentdef id="vp.1732" src="vp.1732" desc="녹음된 내용입니다. " />
+	<mentdef id="vp.1811" src="vp.1811" desc="switch 대기 채널을 위한 멘트입니다. " />
+	<mentdef id="vp.1821" src="vp.1821" desc="채널 " />
+	<mentdef id="vp.1822" src="vp.1822" desc="번에 대해서 switch를 시도합니다. " />
+	<mentdef id="vp.211" src="vp.211" desc="transfer 할 전화번호를 입력하세요 " />
+	<mentdef id="vp.212" src="vp.212" desc="transfer가 완료되었습니다. " />
+	<mentdef id="m.0" src="m.0" desc="cti, packet, user 기능 시험은 3번, transfer, push-tone 시험은 2번, 그 외 시험은 1번을 눌러주십시오. " />
+	<mentdef id="m.1" src="m.1" desc="getchannel 시험은 1번, play 시험은 2번, digit 시험은 3번, tts 시험은 4번, disconnect 시험은 5번, abort 시험은 6번, record 시험은 7번, switch 시험은 8번, disswitch 시험은 9번을 눌러주십시오. " />
+	<mentdef id="m.11" src="m.11" desc="getchannel 시험을 시작합니다. " />
+	<mentdef id="m.12" src="m.12" desc="play 시험을 시작합니다. " />
+	<mentdef id="m.120" src="m.120" desc="멀티 멘트 파일 시험은 1번, 없는 파일 안내 2번, ignore-dtmt 시험은 3번, clear-digit 시험은 4번, async 시험은 5번을 눌러주십시오. " />
+	<mentdef id="m.121" src="m.121" desc="멀티 멘트 파일 시험을 시작합니다. " />
+	<mentdef id="m.122" src="m.122" desc="존재하지 않은 파일에 대한 안내 시험을 시작합니다. " />
+	<mentdef id="m.123" src="m.123" desc="play-ignore-dtmf 에 대한 시험을 시작합니다. " />
+	<mentdef id="m.124" src="m.124" desc="play-clear-digit에 대한 시험을 시작합니다. " />
+	<mentdef id="m.1240" src="m.1240" desc="play-clear-digit 비 설정 시험은 1번, clear-digit 설정 시험은 2번을 눌러주십시오. " />
+	<mentdef id="m.1241" src="m.1241" desc="play-clear-digit 비 설정 시험을 시작합니다. " />
+	<mentdef id="m.1242" src="m.1242" desc="play-clear-digit 설정 시험을 시작합니다. " />
+	<mentdef id="m.125" src="m.125" desc="async play에 대한 시험을 시작합니다. " />
+	<mentdef id="m.13" src="m.13" desc="digit 시험을 시작합니다. " />
+	<mentdef id="m.130" src="m.130" desc="digit 확인 시험 0, 멀티 멘트 파일 시험은 1번, ignore-dtmf 시험은 2번, clear-digit 시험은 3번, timeout 시험은 4번, inter-timeout 시험은 5번, dtmf-mask 시험은 6번을 눌러주십시오. " />
+	<mentdef id="m.131" src="m.131" desc="digit-멀티 멘트 파일 시험을 시작합니다.  " />
+	<mentdef id="m.132" src="m.132" desc="digit-ignore-dtmf 에 대한 시험을 시작합니다. " />
+	<mentdef id="m.133" src="m.133" desc="digit-clear-digit 에 대한 시험을 시작합니다. " />
+	<mentdef id="m.1330" src="m.1330" desc="digit-clear-digit 비 설정 시험은 1번, clear-digit 설정 시험은 2번을 눌러주십시오. " />
+	<mentdef id="m.1331" src="m.1331" desc="digit-clear-digit 비 설정 시험을 시작합니다. " />
+	<mentdef id="m.1332" src="m.1332" desc="digit-clear-digit 설정 시험을 시작합니다. " />
+	<mentdef id="m.134" src="m.134" desc="digit-timeout에 대한 시험을 시작합니다  " />
+	<mentdef id="m.135" src="m.135" desc="digit-inter-timeout에 대한 시험을 시작합니다.  " />
+	<mentdef id="m.136" src="m.136" desc="digit-dtmf-mask에 대한 시험을 시작합니다. " />
+	<mentdef id="m.14" src="m.14" desc="tts 시험을 시작합니다.  " />
+	<mentdef id="m.140" src="m.140" desc="tts-stream 시험은 1번, tts-file 시험은 2번, tts-ksc5601 시험은 3번, 숫자 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.1410" src="m.1410" desc="tts-cleardigit 비 설정 시험은 1번, clear-digit 설정 시험은 2번을 눌러주십시오. " />
+	<mentdef id="m.1411" src="m.1411" desc="tts-cleardigit 비 설정 시험을 시작합니다.  " />
+	<mentdef id="m.1421" src="m.1421" desc="tts-cleardigit 설정 시험을 시작합니다 " />
+	<mentdef id="m.15" src="m.15" desc="disconnect 시험을 시작합니다. " />
+	<mentdef id="m.16" src="m.16" desc="abort에 대한 시험을 시작합니다.  " />
+	<mentdef id="m.160" src="m.160" desc="동일 채널에 대한 abort 시험은 1번, 타 채널에 대한 abort 시험을 위한 play 대기 2번,  타 채널에 대한 abort 시험은 3번, 요청이 없는 상태에서의 abort 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.161" src="m.161" desc="동일 채널에 대한 abort 시험을 시작합니다.  " />
+	<mentdef id="m.162" src="m.162" desc="서로 다른 채널에 대한 abort 시험을 위한 대기 메뉴 입니다. " />
+	<mentdef id="m.163" src="m.163" desc="서로 다른 채널에 대한 abort 시험을 시작합니다. " />
+	<mentdef id="m.1630" src="m.1630" desc="abort 할 대상 채널번호와 #을 눌러주십시오. " />
+	<mentdef id="m.164" src="m.164" desc="요청이 없는 채널에 대한 abort 시험을 시작합니다. " />
+	<mentdef id="m.17" src="m.17" desc="record에 대한 시험을 시작합니다. " />
+	<mentdef id="m.170" src="m.170" desc="max-slience 시험은 1번, max-time 시험은 2번, terminiation tone 시험은 3번, no voice time 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.171" src="m.171" desc="record-max-silence 시험을 시작합니다.  " />
+	<mentdef id="m.172" src="m.172" desc="record - max-time 시험을 시작합니다. " />
+	<mentdef id="m.173" src="m.173" desc="record-termination tone 시험을 시작합니다. " />
+	<mentdef id="m.18" src="m.18" desc="switch에 대한 시험을 시작합니다. " />
+	<mentdef id="m.180" src="m.180" desc="switch를 위한 대기는 1번, switch에 대한 시험은 2번을 눌러주십시오. " />
+	<mentdef id="m.181" src="m.181" desc="switch 를 위한 대기 상태에 진입합니다. " />
+	<mentdef id="m.182" src="m.182" desc="switch 를 시작합니다. " />
+	<mentdef id="m.1820" src="m.1820" desc="switch 할 대상 채널번호와 #을 눌러주십시오. " />
+	<mentdef id="m.19" src="m.19" desc="dis-switch에 대한 시험을 시작합니다. " />
+	<mentdef id="m.21" src="m.21" desc="transfer 시험을 시작합니다. " />
+	<mentdef id="disconnect" src="disconnect" desc="호를 종료합니다. " />
+	<mentdef id="errtime" src="errtime" desc="입력 시간으로 초과하였습니다. " />
+	<mentdef id="errinput" src="errinput" desc="입력이 잘못 되었습니다. " />
+	<mentdef id="errretry" src="errretry" desc="반복 회수 동안 잘못 입력하셨습니다.  " />
+	<mentdef id="vp.221" src="vp.221" desc="전송할 dtmf와 #를 눌러주십시오. " />
+	<mentdef id="vp.341" src="vp.341" desc="전환할 서비스 아이디와 #를 눌러주십시오. " />
+	<mentdef id="m.1412" src="m.1412" desc="tts-cleardigit 설정 시험을 시작합니다 " />
+	<mentdef id="m.142" src="m.142" desc="tts-file cleardigit 시험을 시작합니다. " />
+	<mentdef id="m.143" src="m.143" desc="tts-ksc-5601 clear-digit 시험을 시작합니다. " />
+	<mentdef id="m.144" src="m.144" desc="tts digit 안내 시험을 시작합니다. " />
+	<mentdef id="m.174" src="m.174" desc="record - no voice 시험을 시작합니다. " />
+	<mentdef id="m.2" src="m.2" desc="transfer는 1번, Push-tone 시험은 2번을 눌러주십시오. " />
+	<mentdef id="m.21" src="m.21" desc="transfer 시험을 시작합니다. " />
+	<mentdef id="m.22" src="m.22" desc="Push-tone 시험을 시작합니다. " />
+	<mentdef id="m.3" src="m.3" desc="사용자 기능 시험은 1번, 패킷 처리 시험은 2번, cti 시험은 3번, 서비스 전환 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.31" src="m.31" desc="사용자 기능 시험을 시작합니다. " />
+	<mentdef id="m.310" src="m.310" desc="사용자 로그 시험은 1번, SLEE 환결 설정 기능은 2번, User-Library 기능은 3번을 눌러주십시오. " />
+	<mentdef id="m.311" src="m.311" desc="사용자 로그 시험을 시작합니다. " />
+	<mentdef id="m.312" src="m.312" desc="SLEE 환경 설정 기능 시험을 시작합니다.  " />
+	<mentdef id="m.313" src="m.313" desc="User-Library 기능 시험을 시작합니다. " />
+	<mentdef id="m.32" src="m.32" desc="패킷 기능 시험을 시작합니다. " />
+	<mentdef id="m.320" src="m.320" desc="정상 패킷 송/수신 시험은 1번, 패킷 Destionation 에러 시험은 2번, 패킷 ID 에러 시험은 3번, 패킷 타임아웃 시험은 4번, 패킷 BGM 시험은 5번을 눌러주십시오. " />
+	<mentdef id="m.321" src="m.321" desc="패킷 송/수신 시험을 시작합니다. " />
+	<mentdef id="m.322" src="m.322" desc="패킷 Destination error 시험을 시작합니다. " />
+	<mentdef id="m.323" src="m.323" desc="패킷 ID 에러 시험을 시작합니다. " />
+	<mentdef id="m.324" src="m.324" desc="패킷 Timeout 시험을 시작합니다. " />
+	<mentdef id="m.325" src="m.325" desc="패킷 BGM 시험을 시작합니다. " />
+	<mentdef id="m.33" src="m.33" desc="CTI 기능 시험을 시작합니다. " />
+	<mentdef id="m.330" src="m.330" desc="CTI 기초 정보 조회는 1번, 상담원 연결은 2번, UEI 변경 시험은 3번, CTI 서비스 오류 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.331" src="m.331" desc="CTI 기초 정보 조회 시험을 시작합니다. " />
+	<mentdef id="m.332" src="m.332" desc="CTI 상담원 연결 시험을 시작합니다. " />
+	<mentdef id="m.333" src="m.333" desc="스킬베이스 상담원 연결 시험을 시작합니다. " />
+	<mentdef id="m.334" src="m.334" desc="전담 상담원 연결 시험을 시작합니다. " />
+	<mentdef id="m.34" src="m.34" desc="서비스 전환 시험을 시작합니다. " />
+	<mentdef id="vp.114" src="vp.114" desc="Outbound 채널 할당이 실패했습니다. " />
+	<mentdef id="m.36" src="m.36" desc="시나리오 기능 시험을 시작합니다. " />
+	<mentdef id="m.360" src="m.360" desc="시나리오 무한루프 기능 시험은 1번, 연산 오류 시험은 2번, 서비스 이용시간 제한 시험은 3번, 동적 메뉴 구성 시험은 4번을 눌러주십시오. " />
+	<mentdef id="m.3610" src="m.3610" desc="무한루프 감지 기능 시험을 시작합니다. 일정 시간 후에 호가 자동 종료됩니다. 알람 메시지를 확인하세요. " />
+	<mentdef id="m.3620" src="m.3620" desc="연산 오류 시험을 시작합니다. 호가 바로 종료됩니다. 알람 메시지를 확인하세요. " />
+	<mentdef id="m.3630" src="m.3630" desc="서비스 이용시간 제한 기능 시험을 시작합니다. 일정 시간 후에 호가 자동 종료됩니다. 알람 메시지를 확인하세요. " />
+	<mentdef id="m.36301" src="m.36301" desc="서비스 이용시간을 유지합니다. 일정 시간 후에 호가 종료됩니다. 호가 종료되면, 알람 메시지를 확인하세요. " />
+	<mentdef id="m.3640" src="m.3640" desc="동적 메뉴 구성 기능 시험을 시작합니다. " />
+	<mentdef id="m.36401" src="m.36401" desc="시험을 위해 최초 진입이면, 우물정자를 눌러 상위로 가고, 시험 과정이면 별표를 눌러 상위로 가세요. 안내되는 멘트 청취후 호를 종료합니다. " />
+	<mentdef id="m.36402" src="m.36402" desc="동적 메뉴 시험에서 우물정자를 눌러서 상위 메뉴로 올라온 경우입니다. 호를 종료하시고, 다시 동적 메뉴 시험 코너에서 별표를 누른 후 안내되는 멘트가 틀림을 확인하세요. " />
+	<mentdef id="m.36403" src="m.36403" desc="동적 메뉴 시험에서 별표를 눌러서 상위 메뉴로 올라온 경우입니다. 우물정자 입력시와 멘트가 틀림을 확인하세요. " />
+	<mentdef id="m.210" src="m.210" desc="tranfer 할 DN을 4자리로 입력해 주십시오. " />
+	<mentdef id="m.338" src="m.338" desc="상담 큐 상태 조회 시험을 시작합니다. " />
+	<mentdef id="vp.114" src="vp.114" desc="Outbound 채널 할당이 실패했습니다. " />
+	<mentdef id="vp.1741" src="vp.1741" desc="beep 음과 동시에 녹음 시작되며, 처음부터 10초 이상의 묵음이 필요합니다. " />
+	<mentdef id="m.3320" src="m.3320" desc="호 전환 할 대상번호를 입력하세요. " />
+	<mentdef id="m.3330" src="m.3330" desc="스킬과 우물정자를 입력해 주십시오. " />
+	<mentdef id="m.3340" src="m.3340" desc="전담 상담원 내선 번호와 우물정자를 입력해 주십시오. " />
+	<mentdef id="m.335" src="m.335" desc="UEI 변경 시험을 시작합니다. " />
+	<mentdef id="m.336" src="m.336" desc="사용자 메시지 전달 시험을 시작합니다. " />
+	<mentdef id="m.3360" src="m.3360" desc="메시지 전달 상담원 내선번호와 우물정자를 눌러주십시오. " />
+	<mentdef id="m.337" src="m.337" desc="상담원 상태 조회 시험을 시작합니다. " />
+	<mentdef id="m.3370" src="m.3370" desc="상태를 조회할 상담원 내선번호를 입력해 주십시오. " />
+	<mentdef id="m.338" src="m.338" desc="상담 큐 상태 조회 시험을 시작합니다. " />
+	<mentdef id="m.3380" src="m.3380" desc="상태를 조회할 상담큐 번호를 입력해 주십시오. " />
+	<mentdef id="m.35" src="m.35" desc="서비스 환경 정보 조회 시험을 시작합니다. " />
+	<mentdef id="vp.3641" src="vp.3641" desc="동적 메뉴를 위해 입력한 DTMF는  " />
+	<mentdef id="vp.3642" src="vp.3642" desc="입니다 " />
+	<mentdef id="m.130_1" src="m.130_1" desc="입력 확인을 위한 digit 5자리를 눌러주십시오. " />
+	<mentdef id="m.130_2" src="m.130_2" desc="입력 확인을 위한 digit 5자리를 눌러주십시오. " />
+	<mentdef id="m.130_3" src="m.130_3" desc="입력하신 digit는 " />
+	<mentdef id="m.130_4" src="m.130_4" desc="입니다. " />
+</mentblock>
+<importblock>
+	<Importdef id="GetRandom" src="libEtc_Func.so" desc="GetRandom" />
+</importblock>
+<logblock>
+	<logdef id="USER_LOG_10MIN" path="/home2/ipronv3/log/ir/irslee/userLog/userlog_10min/" ext="ulog_10min" timestamp="1" period="0" />
+	<logdef id="USER_LOG_DAY" path="/home2/ipronv3/log/ir/irslee/userLog/userlog_day/" ext="ulog_day" timestamp="1" period="4" />
+	<logdef id="USER_LOG_30MIN" path="/home2/ipronv3/log/ir/irslee/userLog/userlog_30min/" ext="ulog_30min" timestamp="0" period="1" />
+	<logdef id="USER_LOG_1HOUR" path="/home2/ipronv3/log/ir/irslee/userLog/userlog_1hour/" ext="ulog_1hour" timestamp="0" period="2" />
+	<logdef id="USER_LOG_2HOUR" path="/home2/ipronv3/log/ir/irslee/userLog/userlog_2hour/" ext="ulog_2hour" timestamp="0" period="3" />
+</logblock>
+<packetblock>
+	<packetdef id="PKT_COMM_HDR" >
+		<sendpart>
+			<item name="trunk" length="5" fill=" " align="left" default="" />			<!-- trunk-id -->
+ 			<item name="channel" length="5" fill=" " align="left" default="" />			<!-- channel-id -->
+ 		</sendpart>
+		<receivepart>
+			<item name="trunk" length="5" fill="0" align="left" default="" />			<!-- trunk-id -->
+ 			<item name="channel" length="5" fill="0" align="left" default="" />			<!-- channel-id -->
+ 		</receivepart>
+	</packetdef>
+	<packetdef id="PKT_TEST" >
+		<commonpart type="PKT_COMM_HDR" />
+		<sendpart>
+			<item name="Type" length="1" fill=" " align="right" default="" />			<!-- Type -->
+ 			<item name="ANI" length="20" fill=" " align="left" default="" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill=" " align="left" default="" />			<!-- DNIS -->
+ 		</sendpart>
+		<receivepart>
+			<repeat name="InfoConnected" repeatcount="2" >
+				<item name="repDate" length="8" fill="0" align="right" default="" />				<!-- connected-date -->
+ 				<item name="repTime" length="6" fill="0" align="right" default="" />				<!-- connected-Time -->
+ 			</repeat>
+			<item name="Type" length="1" fill="0" align="right" default="" />			<!-- Type -->
+ 			<item name="ANI" length="20" fill="0" align="left" default="" />			<!-- ANI -->
+ 			<item name="DNIS" length="5" fill="0" align="left" default="" />			<!-- DNIS -->
+ 			<item name="repCount" length="2" fill="0" align="right" default="" />			<!-- repeat-count -->
+ 			<itemrepeat name="InfoConnected" countitem="repCount" />			<!--  -->
+ 		</receivepart>
+	</packetdef>
+</packetblock>
+<menublock>
+	<!-- MenuDef_Start (main) -->
+	<menudef id="0" name="main" >
+		<menuopt dtmfmask="1/1,2/2,3/3" choicement="'m.0'" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<!-- MenuDef GetDigit_Start -->
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<label id="_xgen_studio_make_session_menu_key_START" />
+		<play expr="session.menu.choicement" cleardigit="0" type="mentid" wait="0" cond="1" index="session.menu.playindex" />
+		<getdigit name="_xgen_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="session.menu.cleardigit" />
+		<assign name="_xgen_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="session.menu.playindex" expr="1" cond="1" />
+			<if cond="_xgen_studio_make_session_menu_key.digits == session.menu.upkey" >
+				<jump src="0" />
+			<elseif cond="_xgen_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<jump dtmf="_xgen_studio_make_session_menu_key.digits" />
+				<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+				<assign name="session.menu.playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="_xgen_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_xgen_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_xgen_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_xgen_studio_make_session_menu_key_END" />
+		<!-- MenuDef GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (te_test1) -->
+	<menudef id="1" name="te_test1" >
+		<menuopt dtmfmask="1/11,2/12,3/13,4/14,5/15,6/16,7/17,8/18,9/19" choicement="'m.1'" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<!-- MenuDef GetDigit_Start -->
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<label id="_xgen_studio_make_session_menu_key_START" />
+		<play expr="session.menu.choicement" cleardigit="0" type="mentid" wait="0" cond="1" index="session.menu.playindex" />
+		<getdigit name="_xgen_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="session.menu.cleardigit" />
+		<assign name="_xgen_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="session.menu.playindex" expr="1" cond="1" />
+			<if cond="_xgen_studio_make_session_menu_key.digits == session.menu.upkey" >
+				<jump src="0" />
+			<elseif cond="_xgen_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<jump dtmf="_xgen_studio_make_session_menu_key.digits" />
+				<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+				<assign name="session.menu.playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="_xgen_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_xgen_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_xgen_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_xgen_studio_make_session_menu_key_END" />
+		<!-- MenuDef GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (getchannel) -->
+	<menudef id="11" name="getchannel" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_11_subcall" src="getchannel.msf" iparam="" ioparam="" />
+		<if cond="menu_11_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_11_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (play) -->
+	<menudef id="12" name="play" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_12_subcall" src="play.msf" iparam="" ioparam="" />
+		<if cond="menu_12_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_12_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (digit) -->
+	<menudef id="13" name="digit" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_13_subcall" src="digit.msf" iparam="" ioparam="" />
+		<if cond="menu_13_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_13_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (tts) -->
+	<menudef id="14" name="tts" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_14_subcall" src="tts.msf" iparam="" ioparam="" />
+		<if cond="menu_14_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_14_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (disconnect) -->
+	<menudef id="15" name="disconnect" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_15_subcall" src="disconnect.msf" iparam="" ioparam="" />
+		<if cond="menu_15_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_15_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (abort) -->
+	<menudef id="16" name="abort" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_16_subcall" src="abort.msf" iparam="" ioparam="" />
+		<if cond="menu_16_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_16_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (record) -->
+	<menudef id="17" name="record" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_17_subcall" src="record.msf" iparam="" ioparam="" />
+		<if cond="menu_17_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_17_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (switch) -->
+	<menudef id="18" name="switch" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_18_subcall" src="switch.msf" iparam="" ioparam="" />
+		<if cond="menu_18_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_18_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (disswitch) -->
+	<menudef id="19" name="disswitch" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_19_subcall" src="disswitch.msf" iparam="" ioparam="" />
+		<if cond="menu_19_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_19_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (te_test2) -->
+	<menudef id="2" name="te_test2" >
+		<menuopt dtmfmask="1/21,2/22" choicement="'m.2'" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<!-- MenuDef GetDigit_Start -->
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<label id="_xgen_studio_make_session_menu_key_START" />
+		<play expr="session.menu.choicement" cleardigit="0" type="mentid" wait="0" cond="1" index="session.menu.playindex" />
+		<getdigit name="_xgen_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="session.menu.cleardigit" />
+		<assign name="_xgen_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="session.menu.playindex" expr="1" cond="1" />
+			<if cond="_xgen_studio_make_session_menu_key.digits == session.menu.upkey" >
+				<jump src="0" />
+			<elseif cond="_xgen_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<jump dtmf="_xgen_studio_make_session_menu_key.digits" />
+				<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+				<assign name="session.menu.playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="_xgen_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_xgen_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_xgen_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_xgen_studio_make_session_menu_key_END" />
+		<!-- MenuDef GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (transfer) -->
+	<menudef id="21" name="transfer" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="2" />
+		<subcall name="menu_21_subcall" src="transfer.msf" iparam="" ioparam="" />
+		<if cond="menu_21_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_21_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (pushtone) -->
+	<menudef id="22" name="pushtone" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="2" />
+		<subcall name="menu_22_subcall" src="pushtone.msf" iparam="" ioparam="" />
+		<if cond="menu_22_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_22_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (slee_test1) -->
+	<menudef id="3" name="slee_test1" >
+		<menuopt dtmfmask="1/31,2/32,3/33,4/34,5/35,6/36" choicement="'m.3'" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<!-- MenuDef GetDigit_Start -->
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<label id="_xgen_studio_make_session_menu_key_START" />
+		<play expr="session.menu.choicement" cleardigit="0" type="mentid" wait="0" cond="1" index="session.menu.playindex" />
+		<getdigit name="_xgen_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="session.menu.cleardigit" />
+		<assign name="_xgen_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="session.menu.playindex" expr="1" cond="1" />
+			<if cond="_xgen_studio_make_session_menu_key.digits == session.menu.upkey" >
+				<jump src="0" />
+			<elseif cond="_xgen_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<jump dtmf="_xgen_studio_make_session_menu_key.digits" />
+				<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+				<assign name="session.menu.playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="_xgen_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_xgen_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_xgen_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_xgen_studio_make_session_menu_key_END" />
+		<!-- MenuDef GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (userfunction) -->
+	<menudef id="31" name="userfunction" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<subcall name="menu_31_subcall" src="userfunction.msf" iparam="" ioparam="" />
+		<if cond="menu_31_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_31_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (packet) -->
+	<menudef id="32" name="packet" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<subcall name="menu_32_subcall" src="packet.msf" iparam="" ioparam="" />
+		<if cond="menu_32_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_32_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (cti) -->
+	<menudef id="33" name="cti" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<subcall name="menu_33_subcall" src="cti.msf" iparam="" ioparam="" />
+		<if cond="menu_33_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_33_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (svc_change) -->
+	<menudef id="34" name="svc_change" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<subcall name="menu_34_subcall" src="svcchg.msf" iparam="" ioparam="" />
+		<if cond="menu_34_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_34_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (svc_cfg_change) -->
+	<menudef id="35" name="svc_cfg_change" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<subcall name="menu_35_subcall" src="svc_cfgchg.msf" iparam="" ioparam="" />
+		<if cond="menu_35_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_35_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (svc_test) -->
+	<menudef id="36" name="svc_test" >
+		<menuopt dtmfmask="/361" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="3" />
+		<subcall name="menu_36_subcall" src="scenario_func.msf" iparam="" ioparam="" />
+		<if cond="menu_36_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_36_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<!-- MenuDef GetDigit_Start -->
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<label id="_xgen_studio_make_session_menu_key_START" />
+		<play expr="session.menu.choicement" cleardigit="0" type="mentid" wait="0" cond="1" index="session.menu.playindex" />
+		<getdigit name="_xgen_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="session.menu.cleardigit" />
+		<assign name="_xgen_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="session.menu.playindex" expr="1" cond="1" />
+			<if cond="_xgen_studio_make_session_menu_key.digits == session.menu.upkey" >
+				<jump src="3" />
+			<elseif cond="_xgen_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<jump dtmf="_xgen_studio_make_session_menu_key.digits" />
+				<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+				<assign name="session.menu.playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="_xgen_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_xgen_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_xgen_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_xgen_studio_make_session_menu_key_END" />
+		<!-- MenuDef GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (svc_test_dymenu) -->
+	<menudef id="361" name="svc_test_dymenu" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="36" />
+		<subcall name="menu_361_subcall" src="scenario_func_dymenu.msf" iparam="" ioparam="" />
+		<if cond="menu_361_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_361_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (svc_test_dymenu) -->
+</menublock>
+
+
+
+<scenarioblock>
+
+
+<scenariodef id="main" iparam="" ioparam="" >
+	<waitinbound ani="" dnis="" userdata="" />
+	<assign name="InMsgA" expr="session.media.id" cond="1" />
+	<assign name="InMsgB" expr="session.media.callid" cond="1" />
+	<assign name="InMsgC" expr="session.media.media" cond="1" />
+	<assign name="InMsgD" expr="session.media.audioip" cond="1" />
+	<assign name="InMsgE" expr="session.media.audiocodec" cond="1" />
+	<goto next="{BFF282D8-1BCF-4F18-B92E-07E6C087A4E4}" />
+	<label id="{BFF282D8-1BCF-4F18-B92E-07E6C087A4E4}" />
+	<menu name="ir_test" rid="0" cond="1" />
+</scenariodef>
+
+
+<scenariodef id="end" iparam="" ioparam="" >
+</scenariodef>
+
+
+<scenariodef id="ABORT.MSF" iparam="" ioparam="" >
+	<play expr="'m.16'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (abort) -->
+	<if cond="1 == 0" >
+		<goto next="abort_END" />
+	</if>
+	<assign name="abort_cnt" expr="0" cond="1" />
+	<label id="abort_START" />
+	<play expr="'m.160'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="abort" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="abort_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="abort.digits == '1'" >
+			<goto next="abort_END" />
+		<elseif cond="abort.digits == '2'" />
+			<goto next="abort_END" />
+		<elseif cond="abort.digits == '3'" />
+			<goto next="abort_END" />
+		<elseif cond="abort.digits == '4'" />
+			<goto next="abort_END" />
+		<else />
+			<if cond="abort_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="abort_DtmfValue == _SLEE_FAILED_" />
+		<if cond="abort_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="abort_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="abort_cnt" expr="abort_cnt+1" cond="1" />
+	<if cond="abort_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="abort.digits == '' && session.command.term_digit == ''" >
+			<goto next="abort_START" />
+		<else />
+			<goto next="abort_START" />
+		</if>
+	</if>
+	<label id="abort_END" />
+	<!-- GetDigit_End (abort) -->
+	<!-- select : abort.digits -->
+	<if cond = "abort.digits == '1'" >
+		<play expr="'m.161'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.16'" cleardigit="1" type="MentID" wait="1" async="1" cond="1" />
+		<sleep sec="4" cond="" />
+		<abort lineno="-1" Media="1" checkresult="1" />
+		<goto next="{5A948747-3B7D-4053-B9AA-E960922E5168}" />
+		<label id="{5A948747-3B7D-4053-B9AA-E960922E5168}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "abort.digits == '2'" />
+		<play expr="'m.162'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.16'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{5A948747-3B7D-4053-B9AA-E960922E5168}" />
+	<elseif cond = "abort.digits == '3'" />
+		<play expr="'m.163'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (abortchan) -->
+		<if cond="1 == 0" >
+			<goto next="abortchan_END" />
+		</if>
+		<assign name="abortchan_cnt" expr="0" cond="1" />
+		<label id="abortchan_START" />
+		<play expr="'m.1630'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="abortchan" length="5" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+		<assign name="abortchan_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="abortchan_END" />
+		<elseif cond="abortchan_DtmfValue == _SLEE_FAILED_" />
+			<if cond="abortchan_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="abortchan_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="abortchan_END" />
+			<else />
+				<if cond="abortchan_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="abortchan_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="abortchan_cnt" expr="abortchan_cnt+1" cond="1" />
+		<if cond="abortchan_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="abortchan.digits == '' && session.command.term_digit == ''" >
+				<goto next="abortchan_START" />
+			<else />
+				<goto next="abortchan_START" />
+			</if>
+		</if>
+		<label id="abortchan_END" />
+		<!-- GetDigit_End (abortchan) -->
+		<play expr="'vp.1621'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="abortchan.digits" cleardigit="1" type="Number" wait="1" async="0" cond="1" />
+		<play expr="'vp.1622'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<abort lineno="abortchan.digits" Media="1" checkresult="1" />
+		<goto next="{5A948747-3B7D-4053-B9AA-E960922E5168}" />
+	<elseif cond = "abort.digits == '4'" />
+		<play expr="'m.164'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<abort lineno="-1" Media="1" checkresult="1" />
+		<play expr="'vp.163'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{5A948747-3B7D-4053-B9AA-E960922E5168}" />
+	<else />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	</if>	
+	<!-- select : abort.digits -->
+</scenariodef>
+
+
+<scenariodef id="CTI.MSF" iparam="" ioparam="" >
+	<play expr="'m.33'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (citDigits) -->
+	<if cond="1 == 0" >
+		<goto next="citDigits_END" />
+	</if>
+	<assign name="citDigits_cnt" expr="0" cond="1" />
+	<label id="citDigits_START" />
+	<play expr="'m.330'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="citDigits" length="1" dtmfmask="1|2|3|4|5|6|7|8" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="citDigits_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="citDigits.digits == '1'" >
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '2'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '3'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '4'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '5'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '6'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '7'" />
+			<goto next="citDigits_END" />
+		<elseif cond="citDigits.digits == '8'" />
+			<goto next="citDigits_END" />
+		<else />
+			<if cond="citDigits_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="citDigits_DtmfValue == _SLEE_FAILED_" />
+		<if cond="citDigits_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="citDigits_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="citDigits_cnt" expr="citDigits_cnt+1" cond="1" />
+	<if cond="citDigits_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="citDigits.digits == '' && session.command.term_digit == ''" >
+			<goto next="citDigits_START" />
+		<else />
+			<goto next="citDigits_START" />
+		</if>
+	</if>
+	<label id="citDigits_END" />
+	<!-- GetDigit_End (citDigits) -->
+	<!-- select : citDigits.digits -->
+	<if cond = "citDigits.digits == '1'" >
+		<play expr="'m.331'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<cticall name="icCallInfo" service="'IPRON_IC'" command="icCallInfo" timeout="3" icnt="2" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" ocnt="3" oparam0="ani" oparam1="dnis" oparam2="attach" cond="1" />
+		<goto next="{4F40AB4C-F815-4D34-B48A-6063ED10CD90}" />
+		<label id="{4F40AB4C-F815-4D34-B48A-6063ED10CD90}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "citDigits.digits == '2'" />
+		<play expr="'m.332'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID1) -->
+		<if cond="1 == 0" >
+			<goto next="queueID1_END" />
+		</if>
+		<assign name="queueID1_cnt" expr="0" cond="1" />
+		<label id="queueID1_START" />
+		<play expr="'m.3320'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID1" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="queueID1_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID1_END" />
+		<elseif cond="queueID1_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID1_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="queueID1_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID1_cnt" expr="queueID1_cnt+1" cond="1" />
+		<if cond="queueID1_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID1.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID1_START" />
+			<else />
+				<goto next="queueID1_START" />
+			</if>
+		</if>
+		<label id="queueID1_END" />
+		<!-- GetDigit_End (queueID1) -->
+		<cticall name="ctiCall1" service="'IPRON_IC'" command="icSingleTR" timeout="5" icnt="4" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="queueID1.digits" iparam3="UEI1" ivalue3="'ir ' & session.call.trunkid & '*' & session.call.physicalline" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{4F40AB4C-F815-4D34-B48A-6063ED10CD90}" />
+	<elseif cond = "citDigits.digits == '3'" />
+		<play expr="'m.333'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID2) -->
+		<if cond="1 == 0" >
+			<goto next="queueID2_END" />
+		</if>
+		<assign name="queueID2_cnt" expr="0" cond="1" />
+		<label id="queueID2_START" />
+		<play expr="'m.3320'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID2" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="queueID2_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID2_END" />
+		<elseif cond="queueID2_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID2_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="queueID2_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID2_cnt" expr="queueID2_cnt+1" cond="1" />
+		<if cond="queueID2_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID2.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID2_START" />
+			<else />
+				<goto next="queueID2_START" />
+			</if>
+		</if>
+		<label id="queueID2_END" />
+		<!-- GetDigit_End (queueID2) -->
+		<!-- GetDigit_Start (agentSkill) -->
+		<if cond="1 == 0" >
+			<goto next="agentSkill_END" />
+		</if>
+		<assign name="agentSkill_cnt" expr="0" cond="1" />
+		<label id="agentSkill_START" />
+		<play expr="'m.3330'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="agentSkill" length="2" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+		<assign name="agentSkill_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="agentSkill_END" />
+		<elseif cond="agentSkill_DtmfValue == _SLEE_FAILED_" />
+			<if cond="agentSkill_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="agentSkill_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="agentSkill_END" />
+			<else />
+				<if cond="agentSkill_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="agentSkill_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="agentSkill_cnt" expr="agentSkill_cnt+1" cond="1" />
+		<if cond="agentSkill_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="agentSkill.digits == '' && session.command.term_digit == ''" >
+				<goto next="agentSkill_START" />
+			<else />
+				<goto next="agentSkill_START" />
+			</if>
+		</if>
+		<label id="agentSkill_END" />
+		<!-- GetDigit_End (agentSkill) -->
+		<cticall name="ctiCall2" service="'IPRON_IC'" command="icSingleQTR" timeout="5" icnt="6" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="$queueID2.digits" iparam3="skill_level" ivalue3="agentSkill.digits" iparam4="priority" ivalue4="2" iparam5="UEI2" ivalue5="'ir ' & session.call.trunkid & '*' & session.call.physicalline" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{4F40AB4C-F815-4D34-B48A-6063ED10CD90}" />
+	<elseif cond = "citDigits.digits == '4'" />
+		<play expr="'m.334'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID7) -->
+		<if cond="1 == 0" >
+			<goto next="queueID7_END" />
+		</if>
+		<assign name="queueID7_cnt" expr="0" cond="1" />
+		<label id="queueID7_START" />
+		<play expr="'m.3320'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID7" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="queueID7_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID7_END" />
+		<elseif cond="queueID7_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID7_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="queueID7_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID7_cnt" expr="queueID7_cnt+1" cond="1" />
+		<if cond="queueID7_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID7.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID7_START" />
+			<else />
+				<goto next="queueID7_START" />
+			</if>
+		</if>
+		<label id="queueID7_END" />
+		<!-- GetDigit_End (queueID7) -->
+		<!-- GetDigit_Start (queueID3) -->
+		<if cond="1 == 0" >
+			<goto next="queueID3_END" />
+		</if>
+		<assign name="queueID3_cnt" expr="0" cond="1" />
+		<label id="queueID3_START" />
+		<play expr="'m.3340'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID3" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+		<assign name="queueID3_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID3_END" />
+		<elseif cond="queueID3_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID3_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID3_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID3_END" />
+			<else />
+				<if cond="queueID3_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID3_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID3_cnt" expr="queueID3_cnt+1" cond="1" />
+		<if cond="queueID3_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID3.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID3_START" />
+			<else />
+				<goto next="queueID3_START" />
+			</if>
+		</if>
+		<label id="queueID3_END" />
+		<!-- GetDigit_End (queueID3) -->
+		<cticall name="ctiCall3" service="'IPRON_IC'" command="icSingleQTR" timeout="5" icnt="7" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="queueID7.digits" iparam3="skill_level" ivalue3="''" iparam4="priority" ivalue4="''" iparam5="relation_agent_dn" ivalue5="$queueID3.digits" iparam6="UEI3" ivalue6="'ir ' & session.call.trunkid & '*' & session.call.physicalline" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{4F40AB4C-F815-4D34-B48A-6063ED10CD90}" />
+	<elseif cond = "citDigits.digits == '5'" />
+		<play expr="'m.335'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<cticall name="ctiCall1" service="'IPRON_IC'" command="icUpdateUEI" timeout="5" icnt="3" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="UEI4" ivalue2="'ir ' & session.call.trunkid & '*' & session.call.physicalline & '##'" ocnt="1" oparam0="ctiResult" cond="1" />
+		<cticall name="ctiCall1" service="'IPRON_IC'" command="icSingleTR" timeout="5" icnt="3" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="5010" ocnt="1" oparam0="ctiResult" cond="1" />
+	<elseif cond = "citDigits.digits == '6'" />
+		<play expr="'m.336'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID4) -->
+		<if cond="1 == 0" >
+			<goto next="queueID4_END" />
+		</if>
+		<assign name="queueID4_cnt" expr="0" cond="1" />
+		<label id="queueID4_START" />
+		<play expr="'m.3360'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID4" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+		<assign name="queueID4_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID4_END" />
+		<elseif cond="queueID4_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID4_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID4_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID4_END" />
+			<else />
+				<if cond="queueID4_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID4_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID4_cnt" expr="queueID4_cnt+1" cond="1" />
+		<if cond="queueID4_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID4.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID4_START" />
+			<else />
+				<goto next="queueID4_START" />
+			</if>
+		</if>
+		<label id="queueID4_END" />
+		<!-- GetDigit_End (queueID4) -->
+		<cticall name="ctiCall5" service="'IPRON_IC'" command="icSendUEvt" timeout="5" icnt="4" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="$queueID4.digits" iparam3="UEI4" ivalue3="'ir ' & session.call.trunkid & '*' & session.call.physicalline & 'MSG'" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{4F40AB4C-F815-4D34-B48A-6063ED10CD90}" />
+	<elseif cond = "citDigits.digits == '7'" />
+		<play expr="'m.337'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID5) -->
+		<if cond="1 == 0" >
+			<goto next="queueID5_END" />
+		</if>
+		<assign name="queueID5_cnt" expr="0" cond="1" />
+		<label id="queueID5_START" />
+		<play expr="'m.3370'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID5" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+		<assign name="queueID5_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID5_END" />
+		<elseif cond="queueID5_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID5_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID5_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID5_END" />
+			<else />
+				<if cond="queueID5_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID5_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID5_cnt" expr="queueID5_cnt+1" cond="1" />
+		<if cond="queueID5_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID5.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID5_START" />
+			<else />
+				<goto next="queueID5_START" />
+			</if>
+		</if>
+		<label id="queueID5_END" />
+		<!-- GetDigit_End (queueID5) -->
+		<cticall name="icAgentState1" service="'IPRON_IC'" command="icAgentState" timeout="3" icnt="5" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="$queueID5.digits" iparam3="agent_id" ivalue3="''" iparam4="tenant_name" ivalue4="'Bridgetec'" ocnt="3" oparam0="result" oparam1="reason" oparam2="state" cond="1" />
+		<cticall name="icAgentState2" service="'IPRON_IC'" command="icAgentState" timeout="3" icnt="5" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="''" iparam3="agent_id" ivalue3="'AG2LOGIN'" iparam4="tenant_name" ivalue4="'Bridgetec'" ocnt="3" oparam0="result" oparam1="reason" oparam2="state" cond="1" />
+		<goto next="{4F40AB4C-F815-4D34-B48A-6063ED10CD90}" />
+	<elseif cond = "citDigits.digits == '8'" />
+		<play expr="'m.338'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (queueID6) -->
+		<if cond="1 == 0" >
+			<goto next="queueID6_END" />
+		</if>
+		<assign name="queueID6_cnt" expr="0" cond="1" />
+		<label id="queueID6_START" />
+		<play expr="'m.3380'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="queueID6" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+		<assign name="queueID6_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID6_END" />
+		<elseif cond="queueID6_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID6_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID6_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID6_END" />
+			<else />
+				<if cond="queueID6_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID6_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID6_cnt" expr="queueID6_cnt+1" cond="1" />
+		<if cond="queueID6_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="queueID6.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID6_START" />
+			<else />
+				<goto next="queueID6_START" />
+			</if>
+		</if>
+		<label id="queueID6_END" />
+		<!-- GetDigit_End (queueID6) -->
+		<cticall name="icQueueState" service="'IPRON_IC'" command="icQueueState" timeout="3" icnt="4" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="tenant_name" ivalue2="'Bridgetec'" iparam3="queue_dn" ivalue3="$queueID6.digits" ocnt="7" oparam0="result" oparam1="reason" oparam2="wait_count" oparam3="all_agent_count" oparam4="ready_agent_count" oparam5="wait_time" oparam6="max_wait_time" cond="1" />
+		<goto next="{4F40AB4C-F815-4D34-B48A-6063ED10CD90}" />
+	<else />
+	</if>	
+	<!-- select : citDigits.digits -->
+</scenariodef>
+
+
+<scenariodef id="DIGIT.MSF" iparam="" ioparam="" >
+	<play expr="'m.13'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (digit) -->
+	<if cond="1 == 0" >
+		<goto next="digit_END" />
+	</if>
+	<assign name="digit_cnt" expr="0" cond="1" />
+	<label id="digit_START" />
+	<play expr="'m.130'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="digit" length="1" dtmfmask="0|1|2|3|4|5|6" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="digit_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="digit.digits == '0'" >
+			<goto next="digit_END" />
+		<elseif cond="digit.digits == '1'" />
+			<goto next="digit_END" />
+		<elseif cond="digit.digits == '2'" />
+			<goto next="digit_END" />
+		<elseif cond="digit.digits == '3'" />
+			<goto next="digit_END" />
+		<elseif cond="digit.digits == '4'" />
+			<goto next="digit_END" />
+		<elseif cond="digit.digits == '5'" />
+			<goto next="digit_END" />
+		<elseif cond="digit.digits == '6'" />
+			<goto next="digit_END" />
+		<else />
+			<if cond="digit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="digit_DtmfValue == _SLEE_FAILED_" />
+		<if cond="digit_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="digit_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="digit_cnt" expr="digit_cnt+1" cond="1" />
+	<if cond="digit_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="digit.digits == '' && session.command.term_digit == ''" >
+			<goto next="digit_START" />
+		<else />
+			<goto next="digit_START" />
+		</if>
+	</if>
+	<label id="digit_END" />
+	<!-- GetDigit_End (digit) -->
+	<!-- select : digit.digits -->
+	<if cond = "digit.digits == '0'" >
+		<play expr="'m.130_1'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (digitTest111) -->
+		<if cond="1 == 0" >
+			<goto next="digitTest111_END" />
+		</if>
+		<assign name="digitTest111_cnt" expr="0" cond="1" />
+		<label id="digitTest111_START" />
+		<play expr="'m.130_2'" cleardigit="0" type="" wait="0" cond="1" />
+		<getdigit name="digitTest111" length="5" dtmfmask="" timeout="10" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="digitTest111_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="digitTest111_END" />
+		<elseif cond="digitTest111_DtmfValue == _SLEE_FAILED_" />
+		<else />
+		</if>
+		<assign name="digitTest111_cnt" expr="digitTest111_cnt+1" cond="1" />
+		<if cond="digitTest111_cnt >= 3" >
+		<else />
+			<if cond="digitTest111.digits == '' && session.command.term_digit == ''" >
+				<goto next="digitTest111_START" />
+			<else />
+				<goto next="digitTest111_START" />
+			</if>
+		</if>
+		<label id="digitTest111_END" />
+		<!-- GetDigit_End (digitTest111) -->
+		<play expr="'m.130_3'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="digitTest111.digits" cleardigit="0" type="Digit" wait="0" async="0" cond="1" />
+		<play expr="'m.130_4'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "digit.digits == '1'" />
+		<play expr="'m.131'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (digit_test11) -->
+		<if cond="1 == 0" >
+			<goto next="digit_test11_END" />
+		</if>
+		<assign name="digit_test11_cnt" expr="0" cond="1" />
+		<label id="digit_test11_START" />
+		<play expr="'vp.1311', 'vp.1312','vp.1313'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="digit_test11" length="1" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="digit_test11_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="digit_test11_END" />
+		<elseif cond="digit_test11_DtmfValue == _SLEE_FAILED_" />
+			<if cond="digit_test11_cnt < 1 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="digit_test11_cnt < 1 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="digit_test11_cnt" expr="digit_test11_cnt+1" cond="1" />
+		<if cond="digit_test11_cnt >= 1" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="digit_test11.digits == '' && session.command.term_digit == ''" >
+				<goto next="digit_test11_START" />
+			<else />
+				<goto next="digit_test11_START" />
+			</if>
+		</if>
+		<label id="digit_test11_END" />
+		<!-- GetDigit_End (digit_test11) -->
+		<!-- GetDigit_Start (digit_test12) -->
+		<if cond="1 == 0" >
+			<goto next="digit_test12_END" />
+		</if>
+		<assign name="digit_test12_cnt" expr="0" cond="1" />
+		<label id="digit_test12_START" />
+		<play expr="'vp.1311', 'vp.1312', 'vp.1313'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="digit_test12" length="1" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="digit_test12_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="digit_test12_END" />
+		<elseif cond="digit_test12_DtmfValue == _SLEE_FAILED_" />
+			<if cond="digit_test12_cnt < 1 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="digit_test12_cnt < 1 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="digit_test12_cnt" expr="digit_test12_cnt+1" cond="1" />
+		<if cond="digit_test12_cnt >= 1" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="digit_test12.digits == '' && session.command.term_digit == ''" >
+				<goto next="_XGEN_SEQ_NUMBER_PLAY_START_digit_test12_2" />
+			<else />
+				<goto next="digit_test12_START" />
+			</if>
+		</if>
+		<label id="digit_test12_END" />
+		<!-- GetDigit_End (digit_test12) -->
+		<goto next="{F05B04C9-0DD3-4D8D-BB93-F39F38A02698}" />
+		<label id="{F05B04C9-0DD3-4D8D-BB93-F39F38A02698}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "digit.digits == '2'" />
+		<play expr="'m.132'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (digit_test21) -->
+		<if cond="1 == 0" >
+			<goto next="digit_test21_END" />
+		</if>
+		<assign name="digit_test21_cnt" expr="0" cond="1" />
+		<label id="digit_test21_START" />
+		<play expr="'vp.1321'" cleardigit="1" type="" wait="1" cond="1" />
+		<getdigit name="digit_test21" length="1" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="digit_test21_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="digit_test21_END" />
+		<elseif cond="digit_test21_DtmfValue == _SLEE_FAILED_" />
+			<if cond="digit_test21_cnt < 1 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="digit_test21_cnt < 1 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="digit_test21_cnt" expr="digit_test21_cnt+1" cond="1" />
+		<if cond="digit_test21_cnt >= 1" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="digit_test21.digits == '' && session.command.term_digit == ''" >
+				<goto next="digit_test21_START" />
+			<else />
+				<goto next="digit_test21_START" />
+			</if>
+		</if>
+		<label id="digit_test21_END" />
+		<!-- GetDigit_End (digit_test21) -->
+		<!-- GetDigit_Start (digit_test22) -->
+		<if cond="1 == 0" >
+			<goto next="digit_test22_END" />
+		</if>
+		<assign name="digit_test22_cnt" expr="0" cond="1" />
+		<label id="digit_test22_START" />
+		<play expr="'vp.1322'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="digit_test22" length="1" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="digit_test22_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="digit_test22_END" />
+		<elseif cond="digit_test22_DtmfValue == _SLEE_FAILED_" />
+			<if cond="digit_test22_cnt < 1 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="digit_test22_cnt < 1 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="digit_test22_cnt" expr="digit_test22_cnt+1" cond="1" />
+		<if cond="digit_test22_cnt >= 1" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="digit_test22.digits == '' && session.command.term_digit == ''" >
+				<goto next="digit_test22_START" />
+			<else />
+				<goto next="digit_test22_START" />
+			</if>
+		</if>
+		<label id="digit_test22_END" />
+		<!-- GetDigit_End (digit_test22) -->
+		<goto next="{F05B04C9-0DD3-4D8D-BB93-F39F38A02698}" />
+	<elseif cond = "digit.digits == '3'" />
+		<play expr="'m.133'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (cleardigit) -->
+		<if cond="1 == 0" >
+			<goto next="cleardigit_END" />
+		</if>
+		<assign name="cleardigit_cnt" expr="0" cond="1" />
+		<label id="cleardigit_START" />
+		<play expr="'m.1330'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="cleardigit" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="cleardigit_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="cleardigit.digits == '1'" >
+				<goto next="cleardigit_END" />
+			<elseif cond="cleardigit.digits == '2'" />
+				<goto next="cleardigit_END" />
+			<else />
+				<if cond="cleardigit_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="cleardigit_DtmfValue == _SLEE_FAILED_" />
+			<if cond="cleardigit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="cleardigit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="cleardigit_cnt" expr="cleardigit_cnt+1" cond="1" />
+		<if cond="cleardigit_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="cleardigit.digits == '' && session.command.term_digit == ''" >
+				<goto next="cleardigit_START" />
+			<else />
+				<goto next="cleardigit_START" />
+			</if>
+		</if>
+		<label id="cleardigit_END" />
+		<!-- GetDigit_End (cleardigit) -->
+		<!-- cleardigit.digits == 1 -->
+		<if cond="cleardigit.digits == 1" >
+			<play expr="'m.1331'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+			<!-- GetDigit_Start (digit_test31) -->
+			<if cond="1 == 0" >
+				<goto next="digit_test31_END" />
+			</if>
+			<assign name="digit_test31_cnt" expr="0" cond="1" />
+			<label id="digit_test31_START" />
+			<play expr="'vp.1331'" cleardigit="1" type="" wait="0" cond="1" />
+			<label id="_XGEN_SEQ_NUMBER_PLAY_START_digit_test31_2" />
+			<play expr="'vp.1332'" cleardigit="0" type="" wait="0" cond="1" />
+			<getdigit name="digit_test31" length="1" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+			<assign name="digit_test31_DtmfValue" expr="session.command.result" cond="1" />
+			<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+				<goto next="digit_test31_END" />
+			<elseif cond="digit_test31_DtmfValue == _SLEE_FAILED_" />
+			<else />
+			</if>
+			<assign name="digit_test31_cnt" expr="digit_test31_cnt+1" cond="1" />
+			<if cond="digit_test31_cnt >= 1" >
+			<else />
+				<if cond="digit_test31.digits == '' && session.command.term_digit == ''" >
+					<goto next="digit_test31_START" />
+				<else />
+					<goto next="digit_test31_START" />
+				</if>
+			</if>
+			<label id="digit_test31_END" />
+			<!-- GetDigit_End (digit_test31) -->
+			<goto next="{4AF5F621-6DEB-4452-8234-DA5781A6B029}" />
+			<label id="{4AF5F621-6DEB-4452-8234-DA5781A6B029}" />
+			<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+			<disconnect />
+		<else /><!-- cleardigit.digits == 1 -->
+			<play expr="'m.1332'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+			<!-- GetDigit_Start (digit_test32) -->
+			<if cond="1 == 0" >
+				<goto next="digit_test32_END" />
+			</if>
+			<assign name="digit_test32_cnt" expr="0" cond="1" />
+			<label id="digit_test32_START" />
+			<play expr="'vp.1331'" cleardigit="1" type="" wait="0" cond="1" />
+			<label id="_XGEN_SEQ_NUMBER_PLAY_START_digit_test32_2" />
+			<play expr="'vp.1332'" cleardigit="1" type="" wait="0" cond="1" />
+			<getdigit name="digit_test32" length="1" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+			<assign name="digit_test32_DtmfValue" expr="session.command.result" cond="1" />
+			<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+				<goto next="digit_test32_END" />
+			<elseif cond="digit_test32_DtmfValue == _SLEE_FAILED_" />
+			<else />
+			</if>
+			<assign name="digit_test32_cnt" expr="digit_test32_cnt+1" cond="1" />
+			<if cond="digit_test32_cnt >= 1" >
+			<else />
+				<if cond="digit_test32.digits == '' && session.command.term_digit == ''" >
+					<goto next="digit_test32_START" />
+				<else />
+					<goto next="digit_test32_START" />
+				</if>
+			</if>
+			<label id="digit_test32_END" />
+			<!-- GetDigit_End (digit_test32) -->
+			<goto next="{4AF5F621-6DEB-4452-8234-DA5781A6B029}" />
+		</if><!-- cleardigit.digits == 1 -->
+	<elseif cond = "digit.digits == '4'" />
+		<play expr="'m.134'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (timeout) -->
+		<if cond="1 == 0" >
+			<goto next="timeout_END" />
+		</if>
+		<assign name="timeout_cnt" expr="0" cond="1" />
+		<label id="timeout_START" />
+		<play expr="'vp.1341'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="timeout" length="1" dtmfmask="" timeout="10" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="timeout_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="timeout_END" />
+		<elseif cond="timeout_DtmfValue == _SLEE_FAILED_" />
+			<if cond="timeout_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="timeout_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="timeout_cnt" expr="timeout_cnt+1" cond="1" />
+		<if cond="timeout_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="timeout.digits == '' && session.command.term_digit == ''" >
+				<goto next="timeout_START" />
+			<else />
+				<goto next="timeout_START" />
+			</if>
+		</if>
+		<label id="timeout_END" />
+		<!-- GetDigit_End (timeout) -->
+		<play expr="'vp.1342'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{F1509C28-BD8E-4888-BC31-0F287DA6193F}" />
+		<label id="{F1509C28-BD8E-4888-BC31-0F287DA6193F}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "digit.digits == '5'" />
+		<play expr="'m.135'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (intertimeout) -->
+		<if cond="1 == 0" >
+			<goto next="intertimeout_END" />
+		</if>
+		<assign name="intertimeout_cnt" expr="0" cond="1" />
+		<label id="intertimeout_START" />
+		<play expr="'vp.1351'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="intertimeout" length="2" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="intertimeout_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="intertimeout_END" />
+		<elseif cond="intertimeout_DtmfValue == _SLEE_FAILED_" />
+		<else />
+		</if>
+		<assign name="intertimeout_cnt" expr="intertimeout_cnt+1" cond="1" />
+		<if cond="intertimeout_cnt >= 1" >
+		<else />
+			<if cond="intertimeout.digits == '' && session.command.term_digit == ''" >
+				<goto next="intertimeout_START" />
+			<else />
+				<goto next="intertimeout_START" />
+			</if>
+		</if>
+		<label id="intertimeout_END" />
+		<!-- GetDigit_End (intertimeout) -->
+		<play expr="'vp.1342'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{F1509C28-BD8E-4888-BC31-0F287DA6193F}" />
+	<elseif cond = "digit.digits == '6'" />
+		<play expr="'m.136'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{F0C43803-4052-4B86-8559-CA2C63E7ADE6}" />
+		<label id="{F0C43803-4052-4B86-8559-CA2C63E7ADE6}" />
+		<!-- GetDigit_Start (dtmfmask) -->
+		<if cond="1 == 0" >
+			<goto next="dtmfmask_END" />
+		</if>
+		<assign name="dtmfmask_cnt" expr="0" cond="1" />
+		<label id="dtmfmask_START" />
+		<play expr="'vp.1351'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="dtmfmask" length="1" dtmfmask="1|2|9|0" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="dtmfmask_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="dtmfmask.digits == '1'" >
+				<goto next="dtmfmask_END" />
+			<elseif cond="dtmfmask.digits == '2'" />
+				<goto next="dtmfmask_END" />
+			<elseif cond="dtmfmask.digits == '9'" />
+				<goto next="dtmfmask_END" />
+			<elseif cond="dtmfmask.digits == '0'" />
+				<goto next="dtmfmask_END" />
+			<else />
+				<if cond="dtmfmask_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="dtmfmask_DtmfValue == _SLEE_FAILED_" />
+			<if cond="dtmfmask_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="dtmfmask_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="dtmfmask_cnt" expr="dtmfmask_cnt+1" cond="1" />
+		<if cond="dtmfmask_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="dtmfmask.digits == '' && session.command.term_digit == ''" >
+				<goto next="dtmfmask_START" />
+			<else />
+				<goto next="dtmfmask_START" />
+			</if>
+		</if>
+		<label id="dtmfmask_END" />
+		<!-- GetDigit_End (dtmfmask) -->
+		<assign name="qq" expr="1" cond="1" />
+		<goto next="{F0C43803-4052-4B86-8559-CA2C63E7ADE6}" />
+	<else />
+	</if>	
+	<!-- select : digit.digits -->
+</scenariodef>
+
+
+<scenariodef id="DISCONNECT.MSF" iparam="" ioparam="" >
+	<play expr="'m.15'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<play expr="'vp.15'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<disconnect />
+</scenariodef>
+
+
+<scenariodef id="DISSWITCH.MSF" iparam="" ioparam="" >
+	<play expr="'m.19'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (disswitch) -->
+	<if cond="1 == 0" >
+		<goto next="disswitch_END" />
+	</if>
+	<assign name="disswitch_cnt" expr="0" cond="1" />
+	<label id="disswitch_START" />
+	<play expr="'m.180'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="disswitch" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="disswitch_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="disswitch.digits == '1'" >
+			<goto next="disswitch_END" />
+		<elseif cond="disswitch.digits == '2'" />
+			<goto next="disswitch_END" />
+		<else />
+			<if cond="disswitch_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="disswitch_DtmfValue == _SLEE_FAILED_" />
+		<if cond="disswitch_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="disswitch_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="disswitch_cnt" expr="disswitch_cnt+1" cond="1" />
+	<if cond="disswitch_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="disswitch.digits == '' && session.command.term_digit == ''" >
+			<goto next="disswitch_START" />
+		<else />
+			<goto next="disswitch_START" />
+		</if>
+	</if>
+	<label id="disswitch_END" />
+	<!-- GetDigit_End (disswitch) -->
+	<!-- select : disswitch.digits -->
+	<if cond = "disswitch.digits == '1'" >
+		<play expr="'m.181'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{4A030D16-109D-4088-8A33-BB88894E30DE}" />
+		<label id="{4A030D16-109D-4088-8A33-BB88894E30DE}" />
+		<play expr="'vp.1811'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<assign name="a" expr="1" cond="1" />
+		<goto next="{4A030D16-109D-4088-8A33-BB88894E30DE}" />
+	<elseif cond = "disswitch.digits == '2'" />
+		<play expr="'m.182'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (switch) -->
+		<if cond="1 == 0" >
+			<goto next="switch_END" />
+		</if>
+		<assign name="switch_cnt" expr="0" cond="1" />
+		<label id="switch_START" />
+		<play expr="'m.1820'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="switch" length="5" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+		<assign name="switch_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="switch_END" />
+		<elseif cond="switch_DtmfValue == _SLEE_FAILED_" />
+			<if cond="switch_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="switch_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="switch_END" />
+			<else />
+				<if cond="switch_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="switch_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="switch_cnt" expr="switch_cnt+1" cond="1" />
+		<if cond="switch_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="switch.digits == '' && session.command.term_digit == ''" >
+				<goto next="switch_START" />
+			<else />
+				<goto next="switch_START" />
+			</if>
+		</if>
+		<label id="switch_END" />
+		<!-- GetDigit_End (switch) -->
+		<switch to="switch.digits" mode="2" />
+		<sleep sec="20" cond="" />
+		<disswitch />
+		<sleep sec="5" cond="" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : disswitch.digits -->
+</scenariodef>
+
+
+<scenariodef id="exception" iparam="" ioparam="" >
+</scenariodef>
+
+
+<scenariodef id="GETCHANNEL.MSF" iparam="" ioparam="" >
+	<play expr="'m.11'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<play expr="'vp.111'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+	<getchannel name="getchannel" range="2" userdata="''" />
+	<!-- session.command.reason == '_TE_INVALID_OUT_LI_' -->
+	<if cond="session.command.reason == '_TE_INVALID_OUT_LI_'" >
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<else /><!-- session.command.reason == '_TE_INVALID_OUT_LI_' -->
+		<play expr="'vp.112'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<play expr="getchannel.otherchannel" cleardigit="0" type="Number" wait="0" async="0" cond="1" />
+		<play expr="'vp.113'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+	</if><!-- session.command.reason == '_TE_INVALID_OUT_LI_' -->
+</scenariodef>
+
+
+<scenariodef id="PACKET.MSF" iparam="" ioparam="" >
+	<play expr="'m.32'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (packetDigits) -->
+	<if cond="1 == 0" >
+		<goto next="packetDigits_END" />
+	</if>
+	<assign name="packetDigits_cnt" expr="0" cond="1" />
+	<label id="packetDigits_START" />
+	<play expr="'m.320'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="packetDigits" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="packetDigits_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="packetDigits.digits == '1'" >
+			<goto next="packetDigits_END" />
+		<elseif cond="packetDigits.digits == '2'" />
+			<goto next="packetDigits_END" />
+		<elseif cond="packetDigits.digits == '3'" />
+			<goto next="packetDigits_END" />
+		<elseif cond="packetDigits.digits == '4'" />
+			<goto next="packetDigits_END" />
+		<else />
+			<if cond="packetDigits_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="packetDigits_DtmfValue == _SLEE_FAILED_" />
+		<if cond="packetDigits_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="packetDigits_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="packetDigits_cnt" expr="packetDigits_cnt+1" cond="1" />
+	<if cond="packetDigits_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="packetDigits.digits == '' && session.command.term_digit == ''" >
+			<goto next="packetDigits_START" />
+		<else />
+			<goto next="packetDigits_START" />
+		</if>
+	</if>
+	<label id="packetDigits_END" />
+	<!-- GetDigit_End (packetDigits) -->
+	<!-- select : packetDigits.digits -->
+	<if cond = "packetDigits.digits == '1'" >
+		<play expr="'m.321'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<packet name="pktTest" command="PKT_TEST" timeout="5" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.TO.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.TO.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.TO.Type" expr="'A'" cond="1" />
+			<assign name="pktTest.TO.ANI" expr="session.call.ANI" cond="1" />
+			<assign name="pktTest.TO.DNIS" expr="session.call.DNIS" cond="1" />
+			<result/>
+		</packet>
+		<goto next="{77C00F65-A37A-4357-BDE5-E5B5B3FDA300}" />
+		<label id="{77C00F65-A37A-4357-BDE5-E5B5B3FDA300}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "packetDigits.digits == '2'" />
+		<play expr="'m.322'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<packet name="pktTest" command="PKT_TEST" timeout="20" destination="2" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.TO.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.TO.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.TO.Type" expr="'B'" cond="1" />
+			<assign name="pktTest.TO.ANI" expr="session.call.ANI" cond="1" />
+			<assign name="pktTest.TO.DNIS" expr="session.call.DNIS" cond="1" />
+			<result/>
+		</packet>
+		<goto next="{77C00F65-A37A-4357-BDE5-E5B5B3FDA300}" />
+	<elseif cond = "packetDigits.digits == '3'" />
+		<play expr="'m.323'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<packet name="pktTest" command="PKT_TEST_2" timeout="5" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.TO.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.TO.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.TO.Type" expr="'C'" cond="1" />
+			<assign name="pktTest.TO.ANI" expr="session.call.ANI" cond="1" />
+			<assign name="pktTest.TO.DNIS" expr="session.call.DNIS" cond="1" />
+			<result/>
+		</packet>
+		<goto next="{77C00F65-A37A-4357-BDE5-E5B5B3FDA300}" />
+	<elseif cond = "packetDigits.digits == '4'" />
+		<play expr="'m.324'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<packet name="pktTest" command="PKT_TEST" timeout="2" destination="3" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.TO.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.TO.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.TO.Type" expr="'D'" cond="1" />
+			<assign name="pktTest.TO.ANI" expr="session.call.ANI" cond="1" />
+			<assign name="pktTest.TO.DNIS" expr="session.call.DNIS" cond="1" />
+			<result/>
+		</packet>
+		<goto next="{77C00F65-A37A-4357-BDE5-E5B5B3FDA300}" />
+	<elseif cond = "packetDigits.digits == '5'" />
+		<play expr="'m.325'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'packetBGM'" cleardigit="1" type="mentid" async="1" wait="1" cond="1" />
+		<packet name="pktTest" command="PKT_TEST" timeout="5" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="'packetBGM'" >
+			<assign name="pktTest.TO.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.TO.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.TO.Type" expr="'E'" cond="1" />
+			<assign name="pktTest.TO.ANI" expr="session.call.ANI" cond="1" />
+			<assign name="pktTest.TO.DNIS" expr="session.call.DNIS" cond="1" />
+			<result/>
+		</packet>
+		<abort lineno="session.sys.channel" checkresult="0" />
+		<goto next="{77C00F65-A37A-4357-BDE5-E5B5B3FDA300}" />
+	<else />
+	</if>	
+	<!-- select : packetDigits.digits -->
+</scenariodef>
+
+
+<scenariodef id="PLAY.MSF" iparam="" ioparam="" >
+	<play expr="'m.12'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (play) -->
+	<if cond="1 == 0" >
+		<goto next="play_END" />
+	</if>
+	<assign name="play_cnt" expr="0" cond="1" />
+	<label id="play_START" />
+	<play expr="'m.120'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="play" length="1" dtmfmask="1|2|3|4|5" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="play_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="play.digits == '1'" >
+			<goto next="play_END" />
+		<elseif cond="play.digits == '2'" />
+			<goto next="play_END" />
+		<elseif cond="play.digits == '3'" />
+			<goto next="play_END" />
+		<elseif cond="play.digits == '4'" />
+			<goto next="play_END" />
+		<elseif cond="play.digits == '5'" />
+			<goto next="play_END" />
+		<else />
+			<if cond="play_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="play_DtmfValue == _SLEE_FAILED_" />
+		<if cond="play_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="play_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="play_cnt" expr="play_cnt+1" cond="1" />
+	<if cond="play_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="play.digits == '' && session.command.term_digit == ''" >
+			<goto next="play_START" />
+		<else />
+			<goto next="play_START" />
+		</if>
+	</if>
+	<label id="play_END" />
+	<!-- GetDigit_End (play) -->
+	<!-- select : play.digits -->
+	<if cond = "play.digits == '1'" >
+		<play expr="'m.121'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1211',  'vp.1212','vp.1211'" cleardigit="0" type="MentID" wait="0" async="0" cond="1" />
+		<sleep sec="2" cond="" />
+		<assign name="m1" expr="'\'vp.1211\',  \'vp.1212\''" cond="1" />
+		<play expr="m1" cleardigit="0" type="MentID" wait="0" async="0" cond="1" />
+		<sleep sec="2" cond="" />
+		<play expr="m1,'vp.1212','vp.1211'" cleardigit="0" type="MentID" wait="0" async="0" cond="1" />
+		<sleep sec="2" cond="" />
+		<assign name="m2" expr="m1 & ',\'vp.1211\''" cond="1" />
+		<play expr="m2" cleardigit="0" type="MentID" wait="0" async="0" cond="1" />
+		<goto next="{94C47750-F837-48A8-8813-5E1F9EF309AA}" />
+		<label id="{94C47750-F837-48A8-8813-5E1F9EF309AA}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{9EA94DED-8B5E-40B4-8A79-6F55689D962C}" />
+		<label id="{9EA94DED-8B5E-40B4-8A79-6F55689D962C}" />
+		<disconnect />
+	<elseif cond = "play.digits == '2'" />
+		<play expr="'m.122'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'00000000000000'" cleardigit="0" type="File" wait="0" async="0" cond="1" />
+		<play expr="'vp.1221'" cleardigit="0" type="MentID" wait="0" async="0" cond="1" />
+		<goto next="{94C47750-F837-48A8-8813-5E1F9EF309AA}" />
+	<elseif cond = "play.digits == '3'" />
+		<play expr="'m.123'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1231'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1232'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<goto next="{487266F6-32B3-4D67-A43C-03C4CDC760D9}" />
+		<label id="{487266F6-32B3-4D67-A43C-03C4CDC760D9}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{9EA94DED-8B5E-40B4-8A79-6F55689D962C}" />
+	<elseif cond = "play.digits == '4'" />
+		<play expr="'m.124'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (cleardigit) -->
+		<if cond="1 == 0" >
+			<goto next="cleardigit_END" />
+		</if>
+		<assign name="cleardigit_cnt" expr="0" cond="1" />
+		<label id="cleardigit_START" />
+		<play expr="'m.1240'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="cleardigit" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="cleardigit_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="cleardigit.digits == '1'" >
+				<goto next="cleardigit_END" />
+			<elseif cond="cleardigit.digits == '2'" />
+				<goto next="cleardigit_END" />
+			<else />
+				<if cond="cleardigit_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="cleardigit_DtmfValue == _SLEE_FAILED_" />
+			<if cond="cleardigit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="cleardigit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="cleardigit_cnt" expr="cleardigit_cnt+1" cond="1" />
+		<if cond="cleardigit_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="cleardigit.digits == '' && session.command.term_digit == ''" >
+				<goto next="cleardigit_START" />
+			<else />
+				<goto next="cleardigit_START" />
+			</if>
+		</if>
+		<label id="cleardigit_END" />
+		<!-- GetDigit_End (cleardigit) -->
+		<!-- cleardigit.digits == 1 -->
+		<if cond="cleardigit.digits == 1" >
+			<play expr="'m.1241'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+			<play expr="'vp.1241'" cleardigit="0" type="MentID" wait="0" async="0" cond="1" />
+			<play expr="'vp.1242'" cleardigit="0" type="MentID" wait="0" async="0" cond="1" />
+			<goto next="{487266F6-32B3-4D67-A43C-03C4CDC760D9}" />
+		<else /><!-- cleardigit.digits == 1 -->
+			<play expr="'m.1242'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+			<play expr="'vp.1241'" cleardigit="0" type="MentID" wait="0" async="0" cond="1" />
+			<play expr="'vp.1242'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+			<goto next="{487266F6-32B3-4D67-A43C-03C4CDC760D9}" />
+		</if><!-- cleardigit.digits == 1 -->
+	<elseif cond = "play.digits == '5'" />
+		<play expr="'m.125'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1251'" cleardigit="1" type="MentID" wait="1" async="1" cond="1" />
+		<sleep sec="5" cond="" />
+		<play expr="'vp.1252'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : play.digits -->
+</scenariodef>
+
+
+<scenariodef id="PUSHTONE.MSF" iparam="" ioparam="" >
+	<play expr="'m.22'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<goto next="{2E55C66B-D4C5-4E45-B3AF-67FAF7241A42}" />
+	<label id="{2E55C66B-D4C5-4E45-B3AF-67FAF7241A42}" />
+	<!-- GetDigit_Start (pushtone) -->
+	<if cond="1 == 0" >
+		<goto next="pushtone_END" />
+	</if>
+	<assign name="pushtone_cnt" expr="0" cond="1" />
+	<label id="pushtone_START" />
+	<play expr="'vp.221'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="pushtone" length="20" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+	<assign name="pushtone_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<goto next="pushtone_END" />
+	<elseif cond="pushtone_DtmfValue == _SLEE_FAILED_" />
+		<if cond="pushtone_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+		<if cond="session.command.term_digit == '*'" >
+			<goto next="pushtone_END" />
+		<elseif cond="session.command.term_digit == '#'" />
+			<goto next="pushtone_END" />
+		<else />
+			<if cond="pushtone_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<else />
+		<if cond="pushtone_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="pushtone_cnt" expr="pushtone_cnt+1" cond="1" />
+	<if cond="pushtone_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="pushtone.digits == '' && session.command.term_digit == ''" >
+			<goto next="pushtone_START" />
+		<else />
+			<goto next="pushtone_START" />
+		</if>
+	</if>
+	<label id="pushtone_END" />
+	<!-- GetDigit_End (pushtone) -->
+	<pushtone tone="pushtone.digits" interdelay="20" cond="1" />
+	<goto next="{2E55C66B-D4C5-4E45-B3AF-67FAF7241A42}" />
+</scenariodef>
+
+
+<scenariodef id="RECORD.MSF" iparam="" ioparam="" >
+	<play expr="'m.17'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (record) -->
+	<if cond="1 == 0" >
+		<goto next="record_END" />
+	</if>
+	<assign name="record_cnt" expr="0" cond="1" />
+	<label id="record_START" />
+	<play expr="'m.170'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="record" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="record_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="record.digits == '1'" >
+			<goto next="record_END" />
+		<elseif cond="record.digits == '2'" />
+			<goto next="record_END" />
+		<elseif cond="record.digits == '3'" />
+			<goto next="record_END" />
+		<elseif cond="record.digits == '4'" />
+			<goto next="record_END" />
+		<else />
+			<if cond="record_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="record_DtmfValue == _SLEE_FAILED_" />
+		<if cond="record_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="record_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="record_cnt" expr="record_cnt+1" cond="1" />
+	<if cond="record_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="record.digits == '' && session.command.term_digit == ''" >
+			<goto next="record_START" />
+		<else />
+			<goto next="record_START" />
+		</if>
+	</if>
+	<label id="record_END" />
+	<!-- GetDigit_End (record) -->
+	<!-- select : record.digits -->
+	<if cond = "record.digits == '1'" >
+		<play expr="'m.171'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1711'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<record file="'record1.wav'" path="" beep="1" maxsilence="5" maxtime="120" termination="'*'" cond="" />
+		<goto next="{745D2663-4E06-47AB-9CD0-3C4984598705}" />
+		<label id="{745D2663-4E06-47AB-9CD0-3C4984598705}" />
+		<play expr="'vp.1712'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "record.digits == '2'" />
+		<play expr="'m.172'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1721'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<record file="'record2.wav'" path="" beep="0" maxsilence="5" maxtime=" 10" termination="'*'" cond="" />
+		<goto next="{745D2663-4E06-47AB-9CD0-3C4984598705}" />
+	<elseif cond = "record.digits == '3'" />
+		<play expr="'m.173'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1731'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<record file="'record3.wav'" path="" beep="1" maxsilence="5" maxtime="120" termination="'*#'" cond="" />
+		<play expr="'record3.wav'" cleardigit="1" type="File" wait="0" async="0" cond="1" />
+		<goto next="{745D2663-4E06-47AB-9CD0-3C4984598705}" />
+	<elseif cond = "record.digits == '4'" />
+		<play expr="'m.174'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'vp.1741'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<record file="'record4.wav'" path="" beep="1" maxsilence="1" maxtime="120" termination="'*#'" cond="" />
+		<goto next="{745D2663-4E06-47AB-9CD0-3C4984598705}" />
+	<else />
+	</if>	
+	<!-- select : record.digits -->
+</scenariodef>
+
+
+<scenariodef id="SCENARIO_FUNC.MSF" iparam="" ioparam="" >
+	<play expr="'m.36'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+	<!-- GetDigit_Start (sfuncDigit) -->
+	<if cond="1 == 0" >
+		<goto next="sfuncDigit_END" />
+	</if>
+	<assign name="sfuncDigit_cnt" expr="0" cond="1" />
+	<label id="sfuncDigit_START" />
+	<play expr="'m.360'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="sfuncDigit" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="sfuncDigit_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="sfuncDigit.digits == '1'" >
+			<goto next="sfuncDigit_END" />
+		<elseif cond="sfuncDigit.digits == '2'" />
+			<goto next="sfuncDigit_END" />
+		<elseif cond="sfuncDigit.digits == '3'" />
+			<goto next="sfuncDigit_END" />
+		<elseif cond="sfuncDigit.digits == '4'" />
+			<goto next="sfuncDigit_END" />
+		<else />
+			<if cond="sfuncDigit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="sfuncDigit_DtmfValue == _SLEE_FAILED_" />
+		<if cond="sfuncDigit_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="sfuncDigit_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="sfuncDigit_cnt" expr="sfuncDigit_cnt+1" cond="1" />
+	<if cond="sfuncDigit_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="sfuncDigit.digits == '' && session.command.term_digit == ''" >
+			<goto next="sfuncDigit_START" />
+		<else />
+			<goto next="sfuncDigit_START" />
+		</if>
+	</if>
+	<label id="sfuncDigit_END" />
+	<!-- GetDigit_End (sfuncDigit) -->
+	<!-- select : sfuncDigit.digits -->
+	<if cond = "sfuncDigit.digits == '1'" >
+		<play expr="'m.3610'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<assign name="svc_test_loopcount" expr="0" cond="1" />
+		<goto next="{249FA10D-712A-4566-8068-9218BF3A8CCC}" />
+		<label id="{249FA10D-712A-4566-8068-9218BF3A8CCC}" />
+		<assign name="svc_test_loopcount" expr="svc_test_loopcount+1" cond="1" />
+		<assign name="svc_test_loopcount" expr="svc_test_loopcount+1" cond="1" />
+		<goto next="{249FA10D-712A-4566-8068-9218BF3A8CCC}" />
+	<elseif cond = "sfuncDigit.digits == '2'" />
+		<play expr="'m.3620'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<assign name="valueA" expr="1000" cond="1" />
+		<assign name="valueB" expr="0" cond="1" />
+	<elseif cond = "sfuncDigit.digits == '3'" />
+		<play expr="'m.3630'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{D9F5A982-C5AF-43AB-ADD4-93025FC7CEBE}" />
+		<label id="{D9F5A982-C5AF-43AB-ADD4-93025FC7CEBE}" />
+		<assign name="svc_test_loopcount" expr="0" cond="1" />
+		<play expr="'m.36301'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{D9F5A982-C5AF-43AB-ADD4-93025FC7CEBE}" />
+	<elseif cond = "sfuncDigit.digits == '4'" />
+		<play expr="'m.3640'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (dymenuDigit) -->
+		<if cond="1 == 0" >
+			<goto next="dymenuDigit_END" />
+		</if>
+		<assign name="dymenuDigit_cnt" expr="0" cond="1" />
+		<label id="dymenuDigit_START" />
+		<play expr="'m.36401'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="dymenuDigit" length="1" dtmfmask="#|*" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="dymenuDigit_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="dymenuDigit.digits == '#'" >
+				<goto next="dymenuDigit_END" />
+			<elseif cond="dymenuDigit.digits == '*'" />
+				<goto next="dymenuDigit_END" />
+			<else />
+				<if cond="dymenuDigit_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="dymenuDigit_DtmfValue == _SLEE_FAILED_" />
+			<if cond="dymenuDigit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="dymenuDigit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="dymenuDigit_cnt" expr="dymenuDigit_cnt+1" cond="1" />
+		<if cond="dymenuDigit_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="dymenuDigit.digits == '' && session.command.term_digit == ''" >
+				<goto next="dymenuDigit_START" />
+			<else />
+				<goto next="dymenuDigit_START" />
+			</if>
+		</if>
+		<label id="dymenuDigit_END" />
+		<!-- GetDigit_End (dymenuDigit) -->
+		<!-- dymenuDigit.digits == '#' -->
+		<if cond="dymenuDigit.digits == '#'" >
+			<menuopt dtmfmask="1/11,2/12,3/13,4/14,5/15,6/16,7/17,8/18,9/19,*/361,#/361" choicement="'m.36402'" topkey="''" upkey="''" topmenu="" upmenu="" timeout="''" intertimeout="'5'" retrycount="''" timeoutment="" inputerrment="" retryerrment="" cleardigit="'1'" dtmflength="'1'" cond="1" />
+			<goto next="{599540FD-FE53-47CD-91FB-6B60331CEF1A}" />
+			<label id="{599540FD-FE53-47CD-91FB-6B60331CEF1A}" />
+			<menureturn value="1" />
+		<else /><!-- dymenuDigit.digits == '#' -->
+			<menuopt dtmfmask="1/2,2/21,3/3,4/31,5/32,6/33,7/34,8/35,9/36,*/361,#/361" choicement="'m.36403'" topkey="''" upkey="''" topmenu="" upmenu="" timeout="''" intertimeout="'5'" retrycount="''" timeoutment="" inputerrment="" retryerrment="" cleardigit="'1'" dtmflength="'1'" cond="1" />
+			<goto next="{599540FD-FE53-47CD-91FB-6B60331CEF1A}" />
+		</if><!-- dymenuDigit.digits == '#' -->
+	<else />
+	</if>	
+	<!-- select : sfuncDigit.digits -->
+</scenariodef>
+
+
+<scenariodef id="SCENARIO_FUNC_DYMENU.MSF" iparam="" ioparam="" >
+	<play expr="'vp.3641'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<play expr="session.menu.jumpdtmf" cleardigit="1" type="Digit" wait="1" async="0" cond="1" />
+	<play expr="'vp.3642'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<disconnect />
+</scenariodef>
+
+
+<scenariodef id="SVCCHG.MSF" iparam="" ioparam="" >
+	<play expr="'m.34'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<goto next="{D2834795-8419-41F1-AA6A-A89F5D5339F4}" />
+	<label id="{D2834795-8419-41F1-AA6A-A89F5D5339F4}" />
+	<changeservice service="4" ani="session.call.ani" dnis="session.call.dnis" userdata="session.call.sessiondata" cond="1" />
+</scenariodef>
+
+
+<scenariodef id="SVC_CFGCHG.MSF" iparam="" ioparam="" >
+	<play expr="'m.35'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<userenv name="uEnvTest" userconfig="'UEnvTest.cfg'" service="'TEST'" env="'VALUE'" cond="1" />
+	<playtts expr="uEnvTest" cleardigit="1" type="ks5601" wait="0" async="0" cond="1" />
+	<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<disconnect />
+</scenariodef>
+
+
+<scenariodef id="SWITCH.MSF" iparam="" ioparam="" >
+	<play expr="'m.18'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (switch) -->
+	<if cond="1 == 0" >
+		<goto next="switch_END" />
+	</if>
+	<assign name="switch_cnt" expr="0" cond="1" />
+	<label id="switch_START" />
+	<play expr="'m.180'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="switch" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="switch_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="switch.digits == '1'" >
+			<goto next="switch_END" />
+		<elseif cond="switch.digits == '2'" />
+			<goto next="switch_END" />
+		<else />
+			<if cond="switch_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="switch_DtmfValue == _SLEE_FAILED_" />
+		<if cond="switch_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="switch_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="switch_cnt" expr="switch_cnt+1" cond="1" />
+	<if cond="switch_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="switch.digits == '' && session.command.term_digit == ''" >
+			<goto next="switch_START" />
+		<else />
+			<goto next="switch_START" />
+		</if>
+	</if>
+	<label id="switch_END" />
+	<!-- GetDigit_End (switch) -->
+	<!-- select : switch.digits -->
+	<if cond = "switch.digits == '1'" >
+		<play expr="'m.181'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{FF6B5505-043F-4C5A-8578-8AAF0233288D}" />
+		<label id="{FF6B5505-043F-4C5A-8578-8AAF0233288D}" />
+		<play expr="'vp.1811'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<assign name="a" expr="1" cond="1" />
+		<goto next="{FF6B5505-043F-4C5A-8578-8AAF0233288D}" />
+	<elseif cond = "switch.digits == '2'" />
+		<play expr="'m.182'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (switchchann) -->
+		<if cond="1 == 0" >
+			<goto next="switchchann_END" />
+		</if>
+		<assign name="switchchann_cnt" expr="0" cond="1" />
+		<label id="switchchann_START" />
+		<play expr="'m.1820'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="switchchann" length="5" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+		<assign name="switchchann_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="switchchann_END" />
+		<elseif cond="switchchann_DtmfValue == _SLEE_FAILED_" />
+			<if cond="switchchann_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="switchchann_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="switchchann_END" />
+			<else />
+				<if cond="switchchann_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="switchchann_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="switchchann_cnt" expr="switchchann_cnt+1" cond="1" />
+		<if cond="switchchann_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="switchchann.digits == '' && session.command.term_digit == ''" >
+				<goto next="switchchann_START" />
+			<else />
+				<goto next="switchchann_START" />
+			</if>
+		</if>
+		<label id="switchchann_END" />
+		<!-- GetDigit_End (switchchann) -->
+		<switch to="switchchann.digits" mode="2" />
+		<sleep sec="60" cond="" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : switch.digits -->
+</scenariodef>
+
+
+<scenariodef id="TRANSFER.MSF" iparam="" ioparam="" >
+	<play expr="'m.21'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<goto next="{FCFBD7E6-250E-476C-BF5C-6A041E1AFD28}" />
+	<label id="{FCFBD7E6-250E-476C-BF5C-6A041E1AFD28}" />
+	<!-- GetDigit_Start (transfer) -->
+	<if cond="1 == 0" >
+		<goto next="transfer_END" />
+	</if>
+	<assign name="transfer_cnt" expr="0" cond="1" />
+	<label id="transfer_START" />
+	<play expr="'vp.211'" cleardigit="1" type="MentID" wait="0" cond="1" />
+	<getdigit name="transfer" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="transfer_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<goto next="transfer_END" />
+	<elseif cond="transfer_DtmfValue == _SLEE_FAILED_" />
+		<if cond="transfer_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="transfer_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="transfer_cnt" expr="transfer_cnt+1" cond="1" />
+	<if cond="transfer_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="transfer.digits == '' && session.command.term_digit == ''" >
+			<goto next="transfer_START" />
+		<else />
+			<goto next="transfer_START" />
+		</if>
+	</if>
+	<label id="transfer_END" />
+	<!-- GetDigit_End (transfer) -->
+	<!-- len(transfer.digits) >= 4  -->
+	<if cond="len(transfer.digits) >= 4 " >
+		<transfer name="transfer" to="transfer.digits" timeout="20" />
+		<play expr="'vp.212'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<sleep sec="1" cond="" />
+		<disconnect />
+	<else /><!-- len(transfer.digits) >= 4  -->
+		<play expr="'errinput'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{FCFBD7E6-250E-476C-BF5C-6A041E1AFD28}" />
+	</if><!-- len(transfer.digits) >= 4  -->
+</scenariodef>
+
+
+<scenariodef id="TTS.MSF" iparam="" ioparam="" >
+	<play expr="'m.14'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (tts) -->
+	<if cond="1 == 0" >
+		<goto next="tts_END" />
+	</if>
+	<assign name="tts_cnt" expr="0" cond="1" />
+	<label id="tts_START" />
+	<play expr="'m.140'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="tts" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="tts_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="tts.digits == '1'" >
+			<goto next="tts_END" />
+		<elseif cond="tts.digits == '2'" />
+			<goto next="tts_END" />
+		<elseif cond="tts.digits == '3'" />
+			<goto next="tts_END" />
+		<elseif cond="tts.digits == '4'" />
+			<goto next="tts_END" />
+		<else />
+			<if cond="tts_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="tts_DtmfValue == _SLEE_FAILED_" />
+		<if cond="tts_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="tts_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="tts_cnt" expr="tts_cnt+1" cond="1" />
+	<if cond="tts_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="tts.digits == '' && session.command.term_digit == ''" >
+			<goto next="tts_START" />
+		<else />
+			<goto next="tts_START" />
+		</if>
+	</if>
+	<label id="tts_END" />
+	<!-- GetDigit_End (tts) -->
+	<!-- select : tts.digits -->
+	<if cond = "tts.digits == '1'" >
+		<play expr="'m.141'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (cleardigit1) -->
+		<if cond="1 == 0" >
+			<goto next="cleardigit1_END" />
+		</if>
+		<assign name="cleardigit1_cnt" expr="0" cond="1" />
+		<label id="cleardigit1_START" />
+		<play expr="'m.1410'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="cleardigit1" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="cleardigit1_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="cleardigit1.digits == '1'" >
+				<goto next="cleardigit1_END" />
+			<elseif cond="cleardigit1.digits == '2'" />
+				<goto next="cleardigit1_END" />
+			<else />
+				<if cond="cleardigit1_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="cleardigit1_DtmfValue == _SLEE_FAILED_" />
+			<if cond="cleardigit1_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="cleardigit1_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="cleardigit1_cnt" expr="cleardigit1_cnt+1" cond="1" />
+		<if cond="cleardigit1_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="cleardigit1.digits == '' && session.command.term_digit == ''" >
+				<goto next="cleardigit1_START" />
+			<else />
+				<goto next="cleardigit1_START" />
+			</if>
+		</if>
+		<label id="cleardigit1_END" />
+		<!-- GetDigit_End (cleardigit1) -->
+		<!-- cleardigit1.digits == 1 -->
+		<if cond="cleardigit1.digits == 1" >
+			<play expr="'m.1411'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-stream-clear-digit 미 설정 첫번째 멘트입니다.'" cleardigit="1" type="stream" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-stream-clear-digit 미 설정 두번째 멘트입니다.'" cleardigit="0" type="stream" wait="0" async="0" cond="1" />
+			<goto next="{A93A993C-2806-4826-9813-9550A036C9E2}" />
+			<label id="{A93A993C-2806-4826-9813-9550A036C9E2}" />
+			<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+			<disconnect />
+		<else /><!-- cleardigit1.digits == 1 -->
+			<play expr="'m.1412'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-stream-clear-digit 설정 첫번째 멘트입니다.'" cleardigit="1" type="stream" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-stream-clear-digit 설정 두번째 멘트입니다.'" cleardigit="1" type="stream" wait="0" async="0" cond="1" />
+			<goto next="{A93A993C-2806-4826-9813-9550A036C9E2}" />
+		</if><!-- cleardigit1.digits == 1 -->
+	<elseif cond = "tts.digits == '2'" />
+		<play expr="'m.142'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (cleardigit2) -->
+		<if cond="1 == 0" >
+			<goto next="cleardigit2_END" />
+		</if>
+		<assign name="cleardigit2_cnt" expr="0" cond="1" />
+		<label id="cleardigit2_START" />
+		<play expr="'m.1410'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="cleardigit2" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="cleardigit2_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="cleardigit2.digits == '1'" >
+				<goto next="cleardigit2_END" />
+			<elseif cond="cleardigit2.digits == '2'" />
+				<goto next="cleardigit2_END" />
+			<else />
+				<if cond="cleardigit2_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="cleardigit2_DtmfValue == _SLEE_FAILED_" />
+			<if cond="cleardigit2_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="cleardigit2_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="cleardigit2_cnt" expr="cleardigit2_cnt+1" cond="1" />
+		<if cond="cleardigit2_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="cleardigit2.digits == '' && session.command.term_digit == ''" >
+				<goto next="cleardigit2_START" />
+			<else />
+				<goto next="cleardigit2_START" />
+			</if>
+		</if>
+		<label id="cleardigit2_END" />
+		<!-- GetDigit_End (cleardigit2) -->
+		<!-- cleardigit2.digits == 1 -->
+		<if cond="cleardigit2.digits == 1" >
+			<play expr="'m.1411'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-file-clear-digit 미 설정 첫번째 멘트입니다.'" cleardigit="1" type="file" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-file-clear-digit 미 설정 두번째 멘트입니다.'" cleardigit="0" type="file" wait="0" async="0" cond="1" />
+			<goto next="{A93A993C-2806-4826-9813-9550A036C9E2}" />
+		<else /><!-- cleardigit2.digits == 1 -->
+			<play expr="'m.1412'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-file-clear-digit 설정 첫번째 멘트입니다.'" cleardigit="1" type="file" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-file-clear-digit 설정 두번째 멘트입니다.'" cleardigit="1" type="file" wait="0" async="0" cond="1" />
+			<goto next="{A93A993C-2806-4826-9813-9550A036C9E2}" />
+		</if><!-- cleardigit2.digits == 1 -->
+	<elseif cond = "tts.digits == '3'" />
+		<play expr="'m.143'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (cleardigit3) -->
+		<if cond="1 == 0" >
+			<goto next="cleardigit3_END" />
+		</if>
+		<assign name="cleardigit3_cnt" expr="0" cond="1" />
+		<label id="cleardigit3_START" />
+		<play expr="'m.1410'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="cleardigit3" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="cleardigit3_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="cleardigit3.digits == '1'" >
+				<goto next="cleardigit3_END" />
+			<elseif cond="cleardigit3.digits == '2'" />
+				<goto next="cleardigit3_END" />
+			<else />
+				<if cond="cleardigit3_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="cleardigit3_DtmfValue == _SLEE_FAILED_" />
+			<if cond="cleardigit3_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="cleardigit3_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="cleardigit3_cnt" expr="cleardigit3_cnt+1" cond="1" />
+		<if cond="cleardigit3_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="cleardigit3.digits == '' && session.command.term_digit == ''" >
+				<goto next="cleardigit3_START" />
+			<else />
+				<goto next="cleardigit3_START" />
+			</if>
+		</if>
+		<label id="cleardigit3_END" />
+		<!-- GetDigit_End (cleardigit3) -->
+		<!-- cleardigit3.digits == 1 -->
+		<if cond="cleardigit3.digits == 1" >
+			<play expr="'m.1411'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-ksc5601-clear-digit 미 설정 첫번째 멘트입니다.'" cleardigit="1" type="ks5601" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-5601-clear-digit 미 설정 두번째 멘트입니다.'" cleardigit="0" type="ks5601" wait="0" async="0" cond="1" />
+			<goto next="{A93A993C-2806-4826-9813-9550A036C9E2}" />
+		<else /><!-- cleardigit3.digits == 1 -->
+			<play expr="'m.1412'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-ksc5601-clear-digit 설정 첫번째 멘트입니다.'" cleardigit="1" type="ks5601" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-ksc5601-clear-digit 설정 두번째 멘트입니다.'" cleardigit="1" type="ks5601" wait="0" async="0" cond="1" />
+			<goto next="{A93A993C-2806-4826-9813-9550A036C9E2}" />
+		</if><!-- cleardigit3.digits == 1 -->
+	<elseif cond = "tts.digits == '4'" />
+		<play expr="'m.144'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144a'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<play expr="$0050005" cleardigit="1" type="Number" wait="0" async="0" cond="1" />
+		<play expr="20002" cleardigit="1" type="Number" wait="0" async="0" cond="1" />
+		<play expr="1234567890123" cleardigit="1" type="Number" wait="0" async="0" cond="1" />
+		<play expr="0" cleardigit="1" type="Number" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144b'" cleardigit="0" type="MentID" wait="0" async="0" cond="1" />
+		<play expr="$'0101234567'" cleardigit="1" type="Digit" wait="0" async="0" cond="1" />
+		<play expr="'1234567'" cleardigit="1" type="Digit" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144c'" cleardigit="0" type="" wait="0" async="0" cond="1" />
+		<play expr="'20090525'" cleardigit="1" type="Date" wait="0" async="0" cond="1" />
+		<play expr="'200905'" cleardigit="1" type="Date" wait="0" async="0" cond="1" />
+		<play expr="'2009'" cleardigit="1" type="Date" wait="0" async="0" cond="1" />
+		<play expr="$'0420'" cleardigit="1" type="Date" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144d'" cleardigit="0" type="" wait="0" async="0" cond="1" />
+		<play expr="100000" cleardigit="1" type="Time" wait="0" async="0" cond="1" />
+		<play expr="134010" cleardigit="1" type="Time" wait="0" async="0" cond="1" />
+		<play expr="$'0911'" cleardigit="1" type="Time" wait="0" async="0" cond="1" />
+		<play expr="2359" cleardigit="1" type="Time" wait="0" async="0" cond="1" />
+		<play expr="2400" cleardigit="1" type="Time" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144e'" cleardigit="0" type="" wait="0" async="0" cond="1" />
+		<play expr="20090525010101" cleardigit="0" type="Date" wait="0" async="0" cond="1" />
+		<play expr="200904250900" cleardigit="0" type="Date" wait="0" async="0" cond="1" />
+		<play expr="20090520" cleardigit="0" type="Date" wait="0" async="0" cond="1" />
+		<play expr="0525 " cleardigit="0" type="Date" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144f'" cleardigit="0" type="" wait="0" async="0" cond="1" />
+		<play expr="$'0101234567'" cleardigit="1" type="Digit" wait="0" async="0" cond="1" />
+		<play expr="0" cleardigit="1" type="Digit" wait="0" async="0" cond="1" />
+		<play expr="1" cleardigit="1" type="Digit" wait="0" async="0" cond="1" />
+		<play expr="10" cleardigit="1" type="Digit" wait="0" async="0" cond="1" />
+		<play expr="11" cleardigit="1" type="Digit" wait="0" async="0" cond="1" />
+		<play expr="20" cleardigit="1" type="Digit" wait="0" async="0" cond="1" />
+		<play expr="30" cleardigit="1" type="Digit" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144g'" cleardigit="0" type="" wait="0" async="0" cond="1" />
+		<play expr="$'0040050005'" cleardigit="1" type="Money" wait="0" async="0" cond="1" />
+		<play expr="20002" cleardigit="1" type="Money" wait="0" async="0" cond="1" />
+		<play expr="1234567890123" cleardigit="1" type="Money" wait="0" async="0" cond="1" />
+		<play expr="0" cleardigit="1" type="Money" wait="0" async="0" cond="1" />
+		<play expr="505005" cleardigit="1" type="Money" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144h'" cleardigit="0" type="" wait="0" async="0" cond="1" />
+		<play expr="1" cleardigit="1" type="Count" wait="0" async="0" cond="1" />
+		<play expr="10" cleardigit="1" type="Count" wait="0" async="0" cond="1" />
+		<play expr="11" cleardigit="1" type="Count" wait="0" async="0" cond="1" />
+		<play expr="$'01'" cleardigit="1" type="Count" wait="0" async="0" cond="1" />
+		<play expr="$'010'" cleardigit="1" type="Count" wait="0" async="0" cond="1" />
+		<play expr="$'011'" cleardigit="1" type="Count" wait="0" async="0" cond="1" />
+		<play expr="20" cleardigit="1" type="Count" wait="0" async="0" cond="1" />
+		<play expr="30" cleardigit="1" type="Count" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144i'" cleardigit="0" type="" wait="0" async="0" cond="1" />
+		<play expr="1" cleardigit="1" type="Ordinal" wait="0" async="0" cond="1" />
+		<play expr="2" cleardigit="1" type="Ordinal" wait="0" async="0" cond="1" />
+		<play expr="4" cleardigit="1" type="Ordinal" wait="0" async="0" cond="1" />
+		<play expr="10" cleardigit="1" type="Ordinal" wait="0" async="0" cond="1" />
+		<play expr="11" cleardigit="1" type="Ordinal" wait="0" async="0" cond="1" />
+		<play expr="13" cleardigit="1" type="Ordinal" wait="0" async="0" cond="1" />
+		<play expr="$'01'" cleardigit="1" type="Ordinal" wait="0" async="0" cond="1" />
+		<play expr="$'09'" cleardigit="1" type="Ordinal" wait="0" async="0" cond="1" />
+		<play expr="0" cleardigit="1" type="Ordinal" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144j'" cleardigit="0" type="" wait="0" async="0" cond="1" />
+		<play expr="1" cleardigit="1" type="DayOfWeek" wait="0" async="0" cond="1" />
+		<play expr="4" cleardigit="1" type="DayOfWeek" wait="0" async="0" cond="1" />
+		<play expr="6" cleardigit="1" type="DayOfWeek" wait="0" async="0" cond="1" />
+		<play expr="7" cleardigit="1" type="DayOfWeek" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144k'" cleardigit="0" type="" wait="0" async="0" cond="1" />
+		<play expr="$'0101234567'" cleardigit="1" type="Digit_eng" wait="0" async="0" cond="1" />
+		<play expr="0" cleardigit="1" type="Digit_eng" wait="0" async="0" cond="1" />
+		<play expr="10" cleardigit="1" type="Digit_eng" wait="0" async="0" cond="1" />
+		<play expr="11" cleardigit="1" type="Digit_eng" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'vp.144l'" cleardigit="0" type="" wait="0" async="0" cond="1" />
+		<play expr="$'0101234567'" cleardigit="1" type="Digit_eng" wait="0" async="0" cond="1" />
+		<play expr="1234567" cleardigit="1" type="Digit_eng" wait="0" async="0" cond="1" />
+		<sleep sec="3" cond="" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : tts.digits -->
+</scenariodef>
+
+
+<scenariodef id="USERFUNCTION.MSF" iparam="" ioparam="" >
+	<play expr="'m.31'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (userfunc1) -->
+	<if cond="1 == 0" >
+		<goto next="userfunc1_END" />
+	</if>
+	<assign name="userfunc1_cnt" expr="0" cond="1" />
+	<label id="userfunc1_START" />
+	<play expr="'m.310'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="userfunc1" length="1" dtmfmask="1|2|3" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="userfunc1_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="userfunc1.digits == '1'" >
+			<goto next="userfunc1_END" />
+		<elseif cond="userfunc1.digits == '2'" />
+			<goto next="userfunc1_END" />
+		<elseif cond="userfunc1.digits == '3'" />
+			<goto next="userfunc1_END" />
+		<else />
+			<if cond="userfunc1_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="userfunc1_DtmfValue == _SLEE_FAILED_" />
+		<if cond="userfunc1_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="userfunc1_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="userfunc1_cnt" expr="userfunc1_cnt+1" cond="1" />
+	<if cond="userfunc1_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="userfunc1.digits == '' && session.command.term_digit == ''" >
+			<goto next="userfunc1_START" />
+		<else />
+			<goto next="userfunc1_START" />
+		</if>
+	</if>
+	<label id="userfunc1_END" />
+	<!-- GetDigit_End (userfunc1) -->
+	<!-- select : userfunc1.digits -->
+	<if cond = "userfunc1.digits == '1'" >
+		<play expr="'m.311'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<usercdr name="_CDR_SKEY_" type="u" value="session.call.ani & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_MENULIST_" type="a" value="'add_user_menu'  & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_CALLREF_" type="u" value="session.call.callid & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_RP_" type="u" value="'1234' & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_TRANSFERDN_" type="u" value="'6789' & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_ANI_" type="u" value="session.call.ani & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_DNIS_" type="u" value="session.call.dnis & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="cdr_a" type="a" value="'cdr_a append'" cond="1" />
+		<usercdr name="cdr_a" type="u" value="'cdr_a updated'" cond="1" />
+		<usercdr name="cdr_b" type="a" value="'cdr_b append'" cond="1" />
+		<usercdr name="cdr_b" type="u" value="'cdr_b updated'" cond="1" />
+		<usercdr name="cdr_b" type="d" value="'cdr_b deleted'" cond="1" />
+		<sleep sec="2" cond="" />
+		<log rid="USER_LOG_10MIN" expr="'[USER_LOG] callid - ' & session.call.callid & ' channel - ' & session.call.channel & ' trunkid - ' & session.call.trunkid & ' realline - ' & session.call.physicalline" cond="1" />
+		<log rid="USER_LOG_DAY" expr="'[USER_LOG] callid - ' & session.call.callid & ' channel - ' & session.call.channel & ' trunkid - ' & session.call.trunkid & ' realline - ' & session.call.physicalline" cond="1" />
+		<log rid="USER_LOG_30MIN" expr="'[USER_LOG] callid - ' & session.call.callid & ' channel - ' & session.call.channel & ' trunkid - ' & session.call.trunkid & ' realline - ' & session.call.physicalline" cond="1" />
+		<log rid="USER_LOG_1HOUR" expr="'[USER_LOG] callid - ' & session.call.callid & ' channel - ' & session.call.channel & ' trunkid - ' & session.call.trunkid & ' realline - ' & session.call.physicalline" cond="1" />
+		<log rid="USER_LOG_2HOUR" expr="'[USER_LOG] callid - ' & session.call.callid & ' channel - ' & session.call.channel & ' trunkid - ' & session.call.trunkid & ' realline - ' & session.call.physicalline" cond="1" />
+		<goto next="{D5D80577-9F12-440C-AC4F-7CC0BF8C4C43}" />
+		<label id="{D5D80577-9F12-440C-AC4F-7CC0BF8C4C43}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "userfunc1.digits == '2'" />
+		<play expr="'m.312'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<userenv name="userConfig_OnCheck" userconfig="'Holiday.cfg'" service="'2009'" env="'0301'" cond="1" />
+		<userenv name="userConfig_CTIStatus" userconfig="'userConfig.cfg'" service="'CTI'" env="'Status'" cond="1" />
+		<userenv name="userEnv_SLEE_IP" userconfig="" service="'SLEE'" env="'IP'" cond="1" />
+		<userenv name="userEnv_SERVICE_DefaultDNIS" userconfig="" service="" env="'DEF_DNIS'" cond="1" />
+		<goto next="{D5D80577-9F12-440C-AC4F-7CC0BF8C4C43}" />
+	<elseif cond = "userfunc1.digits == '3'" />
+		<play expr="'m.313'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<assign name="l_physicalline" expr="session.sys.physicalline" cond="1" />
+		<assign name="l_trunkid" expr="session.sys.trunkid" cond="1" />
+		<userfunc expr="GetRandom(l_physicalline, l_trunkid , l_ret )" cond="1" />
+		<log rid="USER_LOG_DAY" expr="'[USER_LOG] userLib Test - l_ret : ' & l_ret" cond="1" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : userfunc1.digits -->
+</scenariodef>
+
+
+</scenarioblock>
+</sxml>

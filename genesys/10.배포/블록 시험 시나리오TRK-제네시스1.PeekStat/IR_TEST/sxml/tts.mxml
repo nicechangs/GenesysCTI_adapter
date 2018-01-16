@@ -1,0 +1,310 @@
+<scenariodef id="tts.msfx" iparam="" ioparam="" >
+	<play expr="'m.14'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start(tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990) -->
+	<if cond="1 == 0" >
+		<goto next="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_END" />
+	</if>
+	<assign name="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_cnt" expr="0" cond="1" />
+	<label id="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_START" />
+	<play expr="'m.140'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+	<getdigit name="tts" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+	<assign name="tts_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="tts.digits == '1'" >
+			<goto next="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_END" />
+		<elseif cond="tts.digits == '2'" />
+			<goto next="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_END" />
+		<elseif cond="tts.digits == '3'" />
+			<goto next="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_END" />
+		<elseif cond="tts.digits == '4'" />
+			<goto next="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_END" />
+		<else />
+			<if cond="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="tts_DtmfValue == _SLEE_FAILED_" />
+		<if cond="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_cnt" expr="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_cnt+1" cond="1" />
+	<if cond="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<else />
+		<if cond="tts.digits == '' && session.command.term_digit == ''" >
+			<goto next="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_START" />
+		<else />
+			<goto next="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_START" />
+		</if>
+	</if>
+	<label id="tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990_END" />
+	<!-- GetDigit_End(tts_3B1C42F2_FC5E_4C8B_A05D_2B5C2B044990) -->
+	<!-- select : tts.digits -->
+	<if cond = "tts.digits == '1'" >
+		<play expr="'m.141'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start(cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372) -->
+		<if cond="1 == 0" >
+			<goto next="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_END" />
+		</if>
+		<assign name="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_cnt" expr="0" cond="1" />
+		<label id="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_START" />
+		<play expr="'m.1410'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="cleardigit1" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="cleardigit1_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="cleardigit1.digits == '1'" >
+				<goto next="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_END" />
+			<elseif cond="cleardigit1.digits == '2'" />
+				<goto next="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_END" />
+			<else />
+				<if cond="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="cleardigit1_DtmfValue == _SLEE_FAILED_" />
+			<if cond="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_cnt" expr="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_cnt+1" cond="1" />
+		<if cond="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="cleardigit1.digits == '' && session.command.term_digit == ''" >
+				<goto next="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_START" />
+			<else />
+				<goto next="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_START" />
+			</if>
+		</if>
+		<label id="cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372_END" />
+		<!-- GetDigit_End(cleardigit1_E519CBB6_4EB4_406F_ADF3_55D7DDC1A372) -->
+		<!-- cleardigit1.digits == 1 -->
+		<if cond="cleardigit1.digits == 1" >
+			<play expr="'m.1411'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+			<playtts expr="'인천 부평구 삼산2동 453 다시 2삼산타운7단지706 다시 1806 (h.p 010 다시 7757 다시 7319)'" cleardigit="1" type="ks5601" country="410" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-stream-clear-digit 미 설정 두번째 멘트입니다.'" cleardigit="0" type="stream" country="410" speakerid="0" wait="0" async="0" cond="1" />
+			<goto next="{1CB66A60-837D-40D6-81F1-BF02A6E7E620}" />
+			<label id="{1CB66A60-837D-40D6-81F1-BF02A6E7E620}" />
+			<play expr="'disconnect'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+			<disconnect />
+		<else /><!-- cleardigit1.digits == 1 -->
+			<play expr="'m.1412'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-stream-clear-digit 설정 첫번째 멘트입니다.'" cleardigit="1" type="stream" country="410" speakerid="0" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-stream-clear-digit 설정 두번째 멘트입니다.'" cleardigit="1" type="stream" country="410" speakerid="0" wait="0" async="0" cond="1" />
+			<goto next="{1CB66A60-837D-40D6-81F1-BF02A6E7E620}" />
+		</if><!-- cleardigit1.digits == 1 -->
+	<elseif cond = "tts.digits == '2'" />
+		<play expr="'m.142'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start(cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F) -->
+		<if cond="1 == 0" >
+			<goto next="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_END" />
+		</if>
+		<assign name="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_cnt" expr="0" cond="1" />
+		<label id="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_START" />
+		<play expr="'m.1410'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="cleardigit2" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="cleardigit2_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="cleardigit2.digits == '1'" >
+				<goto next="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_END" />
+			<elseif cond="cleardigit2.digits == '2'" />
+				<goto next="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_END" />
+			<else />
+				<if cond="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="cleardigit2_DtmfValue == _SLEE_FAILED_" />
+			<if cond="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_cnt" expr="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_cnt+1" cond="1" />
+		<if cond="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="cleardigit2.digits == '' && session.command.term_digit == ''" >
+				<goto next="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_START" />
+			<else />
+				<goto next="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_START" />
+			</if>
+		</if>
+		<label id="cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F_END" />
+		<!-- GetDigit_End(cleardigit2_D809CD4F_574F_43B5_9418_ED99D97C750F) -->
+		<!-- cleardigit2.digits == 1 -->
+		<if cond="cleardigit2.digits == 1" >
+			<play expr="'m.1411'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-file-clear-digit 미 설정 첫번째 멘트입니다.'" cleardigit="1" type="file" country="410" speakerid="0" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-file-clear-digit 미 설정 두번째 멘트입니다.'" cleardigit="0" type="file" country="410" speakerid="0" wait="0" async="0" cond="1" />
+			<goto next="{1CB66A60-837D-40D6-81F1-BF02A6E7E620}" />
+		<else /><!-- cleardigit2.digits == 1 -->
+			<play expr="'m.1412'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-file-clear-digit 설정 첫번째 멘트입니다.'" cleardigit="1" type="file" country="410" speakerid="0" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-file-clear-digit 설정 두번째 멘트입니다.'" cleardigit="1" type="file" country="410" speakerid="0" wait="0" async="0" cond="1" />
+			<goto next="{1CB66A60-837D-40D6-81F1-BF02A6E7E620}" />
+		</if><!-- cleardigit2.digits == 1 -->
+	<elseif cond = "tts.digits == '3'" />
+		<play expr="'m.143'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start(cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB) -->
+		<if cond="1 == 0" >
+			<goto next="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_END" />
+		</if>
+		<assign name="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_cnt" expr="0" cond="1" />
+		<label id="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_START" />
+		<play expr="'m.1410'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="cleardigit3" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="cleardigit3_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="cleardigit3.digits == '1'" >
+				<goto next="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_END" />
+			<elseif cond="cleardigit3.digits == '2'" />
+				<goto next="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_END" />
+			<else />
+				<if cond="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="cleardigit3_DtmfValue == _SLEE_FAILED_" />
+			<if cond="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_cnt" expr="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_cnt+1" cond="1" />
+		<if cond="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="cleardigit3.digits == '' && session.command.term_digit == ''" >
+				<goto next="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_START" />
+			<else />
+				<goto next="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_START" />
+			</if>
+		</if>
+		<label id="cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB_END" />
+		<!-- GetDigit_End(cleardigit3_58A3AD15_A924_40F7_BA07_204C833386EB) -->
+		<!-- cleardigit3.digits == 1 -->
+		<if cond="cleardigit3.digits == 1" >
+			<play expr="'m.1411'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-ksc5601-clear-digit 미 설정 첫번째 멘트입니다.'" cleardigit="1" type="ks5601" country="410" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-5601-clear-digit 미 설정 두번째 멘트입니다.'" cleardigit="0" type="ks5601" country="410" wait="0" async="0" cond="1" />
+			<goto next="{1CB66A60-837D-40D6-81F1-BF02A6E7E620}" />
+		<else /><!-- cleardigit3.digits == 1 -->
+			<play expr="'m.1412'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-ksc5601-clear-digit 설정 첫번째 멘트입니다.'" cleardigit="1" type="ks5601" country="410" wait="0" async="0" cond="1" />
+			<playtts expr="'tts-ksc5601-clear-digit 설정 두번째 멘트입니다.'" cleardigit="1" type="ks5601" country="410" wait="0" async="0" cond="1" />
+			<goto next="{1CB66A60-837D-40D6-81F1-BF02A6E7E620}" />
+		</if><!-- cleardigit3.digits == 1 -->
+	<elseif cond = "tts.digits == '4'" />
+		<play expr="'m.144'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144a'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<play expr="$0050005" cleardigit="1" type="Number" country="410" wait="0" async="0" cond="1" />
+		<play expr="20002" cleardigit="1" type="Number" country="410" wait="0" async="0" cond="1" />
+		<play expr="1234567890123" cleardigit="1" type="Number" country="410" wait="0" async="0" cond="1" />
+		<play expr="0" cleardigit="1" type="Number" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144b'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'0101234567'" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<play expr="'1234567'" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144c'" cleardigit="0" type="" country="410" wait="0" async="0" cond="1" />
+		<play expr="'20090525'" cleardigit="1" type="Date" country="410" wait="0" async="0" cond="1" />
+		<play expr="'200905'" cleardigit="1" type="Date" country="410" wait="0" async="0" cond="1" />
+		<play expr="'2009'" cleardigit="1" type="Date" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'0420'" cleardigit="1" type="Date" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144d'" cleardigit="0" type="" country="410" wait="0" async="0" cond="1" />
+		<play expr="100000" cleardigit="1" type="Time" country="410" wait="0" async="0" cond="1" />
+		<play expr="134010" cleardigit="1" type="Time" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'0911'" cleardigit="1" type="Time" country="410" wait="0" async="0" cond="1" />
+		<play expr="2359" cleardigit="1" type="Time" country="410" wait="0" async="0" cond="1" />
+		<play expr="2400" cleardigit="1" type="Time" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144e'" cleardigit="0" type="" country="410" wait="0" async="0" cond="1" />
+		<play expr="20090525010101" cleardigit="0" type="Date" country="410" wait="0" async="0" cond="1" />
+		<play expr="200904250900" cleardigit="0" type="Date" country="410" wait="0" async="0" cond="1" />
+		<play expr="20090520" cleardigit="0" type="Date" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144f'" cleardigit="0" type="" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'0101234567'" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<play expr="0" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<play expr="1" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<play expr="10" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<play expr="11" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<play expr="20" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<play expr="30" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144g'" cleardigit="0" type="" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'0040050005'" cleardigit="1" type="Money" country="410" wait="0" async="0" cond="1" />
+		<play expr="20002" cleardigit="1" type="Money" country="410" wait="0" async="0" cond="1" />
+		<play expr="1234567890123" cleardigit="1" type="Money" country="410" wait="0" async="0" cond="1" />
+		<play expr="0" cleardigit="1" type="Money" country="410" wait="0" async="0" cond="1" />
+		<play expr="505005" cleardigit="1" type="Money" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144h'" cleardigit="0" type="" country="410" wait="0" async="0" cond="1" />
+		<play expr="1" cleardigit="1" type="Count" country="410" wait="0" async="0" cond="1" />
+		<play expr="10" cleardigit="1" type="Count" country="410" wait="0" async="0" cond="1" />
+		<play expr="11" cleardigit="1" type="Count" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'01'" cleardigit="1" type="Count" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'010'" cleardigit="1" type="Count" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'011'" cleardigit="1" type="Count" country="410" wait="0" async="0" cond="1" />
+		<play expr="20" cleardigit="1" type="Count" country="410" wait="0" async="0" cond="1" />
+		<play expr="30" cleardigit="1" type="Count" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144i'" cleardigit="0" type="" country="410" wait="0" async="0" cond="1" />
+		<play expr="1" cleardigit="1" type="Ordinal" country="410" wait="0" async="0" cond="1" />
+		<play expr="2" cleardigit="1" type="Ordinal" country="410" wait="0" async="0" cond="1" />
+		<play expr="4" cleardigit="1" type="Ordinal" country="410" wait="0" async="0" cond="1" />
+		<play expr="10" cleardigit="1" type="Ordinal" country="410" wait="0" async="0" cond="1" />
+		<play expr="11" cleardigit="1" type="Ordinal" country="410" wait="0" async="0" cond="1" />
+		<play expr="13" cleardigit="1" type="Ordinal" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'01'" cleardigit="1" type="Ordinal" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'09'" cleardigit="1" type="Ordinal" country="410" wait="0" async="0" cond="1" />
+		<play expr="0" cleardigit="1" type="Ordinal" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144j'" cleardigit="0" type="" country="410" wait="0" async="0" cond="1" />
+		<play expr="1" cleardigit="1" type="DayOfWeek" country="410" wait="0" async="0" cond="1" />
+		<play expr="4" cleardigit="1" type="DayOfWeek" country="410" wait="0" async="0" cond="1" />
+		<play expr="6" cleardigit="1" type="DayOfWeek" country="410" wait="0" async="0" cond="1" />
+		<play expr="7" cleardigit="1" type="DayOfWeek" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144k'" cleardigit="0" type="" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'0101234567'" cleardigit="1" type="Digit" country="840" wait="0" async="0" cond="1" />
+		<play expr="0" cleardigit="1" type="Digit" country="840" wait="0" async="0" cond="1" />
+		<play expr="10" cleardigit="1" type="Digit" country="840" wait="0" async="0" cond="1" />
+		<play expr="11" cleardigit="1" type="Digit" country="840" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'vp.144l'" cleardigit="0" type="" country="410" wait="0" async="0" cond="1" />
+		<play expr="$'0101234567'" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<play expr="1234567" cleardigit="1" type="Digit" country="410" wait="0" async="0" cond="1" />
+		<sleep time="3" type="0" cond="" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : tts.digits -->
+</scenariodef>

@@ -1,0 +1,200 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.idr pid(27396) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+18:02:43.985990[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+18:02:43.986009[44m|INF|[0mIVRDriver Initialize success.
+18:02:43.986025[44m|INF|[0mOwnerName     : CBA.ISVR
+18:02:43.986045[44m|INF|[0mOwnerId       : 1001
+18:02:43.986057[44m|INF|[0mSvcAppName    : IAdapter1
+18:02:43.986069[44m|INF|[0mSvcDriverName : IAdapter1
+18:02:43.986081[44m|INF|[0mRemoteIp      : 10.1.13.100
+18:02:43.986093[44m|INF|[0mRemotePort    : 3021
+18:02:43.986104[44m|INF|[0mLogPath       : ../log/cba.idrv/
+18:02:43.986116[44m|INF|[0mLogLinkPath   : ../log/
+18:02:43.986129[44m|INF|[0mLogLevel      : 3
+18:02:43.986143[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+18:02:43.986163[44m|INF|[0m
+
+18:02:44.498624[44m|INF|[0mConnection success. remote_ip:10.1.13.100, remote_port:3021
+18:02:44.499322[44m|INF|[0mReqId:IAdapter1_11271802440004980002|Command:LoginReq|Version:4.0|ClientName:IAdapter1|ReportStatus:true|ServerMonitor:clear
+18:02:44.499356[33m|LV2|[0mReqId:IAdapter1_11271802440004980002|Command:LoginReq|XmlData:(251)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271802440004980002</CallId><LoginReq Version="4.0" ClientName="IAdapter1" ReportStatus="true" ServerMonitor="clear"></LoginReq></GctiMsg>
+
+18:02:44.499404[33m|LV2|[0mSEND   |10.1.13.100:3021|000257|
+18:02:45.004431[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000411|
+18:02:45.004473[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000411, ntohs_len:000226, nPartialPacketLen000230, nDataOffset:000000
+18:02:45.004489[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000224|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271802440004980002</CallId><LoginResp IServerVer='IVR Server:8.1.001.01' Result='Success' Status='OK'/></GctiMsg>
+18:02:45.004795[44m|INF|[0mReqId:IAdapter1_11271802440004980002|Command:LoginResp|IServerVersion:|Result:Success|ConfigOptions:|Status:OK
+18:02:45.004855[33m|LV2|[0mReqId:IAdapter1_11271802440004980002|Command:LoginResp|XmlData:(224)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271802440004980002</CallId><LoginResp IServerVer='IVR Server:8.1.001.01' Result='Success' Status='OK'/></GctiMsg>
+18:02:45.004915[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000411, ntohs_len:000177, nPartialPacketLen000181, nDataOffset:000230
+18:02:45.004930[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000175|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271802440004980002</CallId><FlowControl Status='Off'/></GctiMsg>
+18:02:45.005067[44m|INF|[0mReqId:IAdapter1_11271802440004980002|Command:FlowControl|Status:Off
+18:02:45.005091[33m|LV2|[0mReqId:IAdapter1_11271802440004980002|Command:FlowControl|XmlData:(175)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271802440004980002</CallId><FlowControl Status='Off'/></GctiMsg>
+18:03:27.713772[44m|INF|[0mReqId:IAdapter1_11271803270007130003|Command:NewCall|CalledNum:3|CallControlMode:Network|Version:4.0|DNIS:*3003|ANI:2225|UDataEx:|ExtnsEx:
+18:03:27.713801[33m|LV2|[0mReqId:IAdapter1_11271803270007130003|Command:NewCall|XmlData:(267)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><NewCall CallControlMode="Network" Version="4.0"><CalledNum>3</CalledNum><DNIS>*3003</DNIS><ANI>2225</ANI></NewCall></GctiMsg>
+
+18:03:27.713835[33m|LV2|[0mSEND   |10.1.13.100:3021|000273|
+18:03:27.938144[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000183|
+18:03:27.938199[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000183, ntohs_len:000179, nPartialPacketLen000183, nDataOffset:000000
+18:03:27.938248[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000177|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><CallStatus Event='Ringing'/></GctiMsg>
+18:03:27.938488[44m|INF|[0mReqId:IAdapter1_11271803270007130003|Command:CallStatus|CallStatus:Ringing
+18:03:27.938521[33m|LV2|[0mReqId:IAdapter1_11271803270007130003|Command:CallStatus|XmlData:(177)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><CallStatus Event='Ringing'/></GctiMsg>
+18:03:27.966546[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000187|
+18:03:27.966606[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000187, ntohs_len:000183, nPartialPacketLen000187, nDataOffset:000000
+18:03:27.966643[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000181|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><CallStatus Event='Established'/></GctiMsg>
+18:03:27.966825[44m|INF|[0mReqId:IAdapter1_11271803270007130003|Command:CallStatus|CallStatus:Established
+18:03:27.966857[33m|LV2|[0mReqId:IAdapter1_11271803270007130003|Command:CallStatus|XmlData:(181)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><CallStatus Event='Established'/></GctiMsg>
+18:03:29.979382[44m|INF|[0mReqId:IAdapter1_11271803270007130003|Command:CallInfoReq
+18:03:29.979438[33m|LV2|[0mReqId:IAdapter1_11271803270007130003|Command:CallInfoReq|XmlData:(178)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><CallInfoReq></CallInfoReq></GctiMsg>
+
+18:03:29.979477[33m|LV2|[0mSEND   |10.1.13.100:3021|000184|
+18:03:30.035294[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000320|
+18:03:30.035358[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000320, ntohs_len:000316, nPartialPacketLen000320, nDataOffset:000000
+18:03:30.035388[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000314|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><CallInfoResp ANI='2225' DNIS='3003' CalledNum='3' ConnId='0079020eaf04c033' TSCallId='2103' PortDN='3003' PortTrunk='0' OtherDN='3081' LastEvent='EventEstablished'/></GctiMsg>
+18:03:30.036125[44m|INF|[0mReqId:IAdapter1_11271803270007130003|Command:CallInfoResp|ANI:2225|DNIS:3003|CalledNum:3|ConnId:0079020eaf04c033|FirstHomeLocation:|LastEvent:EventEstablished|OtherDN:3081|OtherQueue:|OtherTrunk:|PortDN:3003|PortQueue:|PortTrunk:0|ThirdPartyDN:|TSCallId:2103
+18:03:30.036167[33m|LV2|[0mReqId:IAdapter1_11271803270007130003|Command:CallInfoResp|XmlData:(314)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><CallInfoResp ANI='2225' DNIS='3003' CalledNum='3' ConnId='0079020eaf04c033' TSCallId='2103' PortDN='3003' PortTrunk='0' OtherDN='3081' LastEvent='EventEstablished'/></GctiMsg>
+18:03:32.283408[44m|INF|[0mReqId:IAdapter1_11271803270007130003|Command:UDataGet|Keys:UEI
+18:03:32.283450[33m|LV2|[0mReqId:IAdapter1_11271803270007130003|Command:UDataGet|XmlData:(215)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><UDataGet Keys="UEI"><RequestId>100000001</RequestId></UDataGet></GctiMsg>
+
+18:03:32.283486[33m|LV2|[0mSEND   |10.1.13.100:3021|000221|
+18:03:32.358484[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000226|
+18:03:32.358542[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000226, ntohs_len:000222, nPartialPacketLen000226, nDataOffset:000000
+18:03:32.358563[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000220|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><UDataResp Result='NoMatch'><RequestId>100000001</RequestId></UDataResp></GctiMsg>
+18:03:32.358893[44m|INF|[0mReqId:IAdapter1_11271803270007130003|Command:UDataResp|RequestId:100000001|Result:|UDataEx:
+18:03:32.358929[33m|LV2|[0mReqId:IAdapter1_11271803270007130003|Command:UDataResp|XmlData:(220)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><UDataResp Result='NoMatch'><RequestId>100000001</RequestId></UDataResp></GctiMsg>
+18:03:34.587762[44m|INF|[0mReqId:IAdapter1_11271803270007130003|Command:OneStepXfer|szDestDN:3006|szUDataEx:aaa=111|bbb=222|ccc=333|ddd=444|szExtnsEx:fff=555|gg=666|hhhhh=777|kkkkk=asdf
+18:03:34.587803[33m|LV2|[0mReqId:IAdapter1_11271803270007130003|Command:OneStepXfer|XmlData:(546)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><OneStepXfer DestDN="3006"><UDataEx><Node Name="aaa" Type="Str" Val="111"/><Node Name="bbb" Type="Str" Val="222"/><Node Name="ccc" Type="Str" Val="333"/><Node Name="ddd" Type="Str" Val="444"/></UDataEx><ExtnsEx><Node Name="fff" Type="Str" Val="555"/><Node Name="gg" Type="Str" Val="666"/><Node Name="hhhhh" Type="Str" Val="777"/><Node Name="kkkkk" Type="Str" Val="asdf"/></ExtnsEx></OneStepXfer></GctiMsg>
+
+18:03:34.587845[33m|LV2|[0mSEND   |10.1.13.100:3021|000552|
+18:03:38.909535[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000209|
+18:03:38.909609[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000209, ntohs_len:000205, nPartialPacketLen000209, nDataOffset:000000
+18:03:38.909645[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000203|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><CallError FailedReq='OneStepXfer' TlibErrCode='1183'/></GctiMsg>
+18:03:38.909904[44m|INF|[0mReqId:IAdapter1_11271803270007130003|Command:CallError|FailedReq:1183, TlibErrCode:
+18:03:38.909938[33m|LV2|[0mReqId:IAdapter1_11271803270007130003|Command:CallError|XmlData:(203)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><CallError FailedReq='OneStepXfer' TlibErrCode='1183'/></GctiMsg>
+18:03:49.769632[44m|INF|[0mReqId:IAdapter1_11271803270007130003|Command:EndCall, EndCause:Normal
+18:03:49.769675[33m|LV2|[0mReqId:IAdapter1_11271803270007130003|Command:EndCall|XmlData:(262)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271803270007130003</CallId><EndCall EndCause="Normal"><ExtnsEx><Node Name="GCTIActiveRelease" Type="Str" Val="false"/></ExtnsEx></EndCall></GctiMsg>
+
+18:03:49.769727[33m|LV2|[0mSEND   |10.1.13.100:3021|000268|
+18:05:13.705576[44m|INF|[0mReqId:IAdapter1_11271805130007050004|Command:NewCall|CalledNum:3|CallControlMode:Network|Version:4.0|DNIS:*3003|ANI:2225|UDataEx:|ExtnsEx:
+18:05:13.705626[33m|LV2|[0mReqId:IAdapter1_11271805130007050004|Command:NewCall|XmlData:(267)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><NewCall CallControlMode="Network" Version="4.0"><CalledNum>3</CalledNum><DNIS>*3003</DNIS><ANI>2225</ANI></NewCall></GctiMsg>
+
+18:05:13.705678[33m|LV2|[0mSEND   |10.1.13.100:3021|000273|
+18:05:13.733684[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000183|
+18:05:13.733737[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000183, ntohs_len:000179, nPartialPacketLen000183, nDataOffset:000000
+18:05:13.733771[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000177|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><CallStatus Event='Ringing'/></GctiMsg>
+18:05:13.733961[44m|INF|[0mReqId:IAdapter1_11271805130007050004|Command:CallStatus|CallStatus:Ringing
+18:05:13.734008[33m|LV2|[0mReqId:IAdapter1_11271805130007050004|Command:CallStatus|XmlData:(177)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><CallStatus Event='Ringing'/></GctiMsg>
+18:05:13.858806[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000187|
+18:05:13.858889[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000187, ntohs_len:000183, nPartialPacketLen000187, nDataOffset:000000
+18:05:13.858920[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000181|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><CallStatus Event='Established'/></GctiMsg>
+18:05:13.859110[44m|INF|[0mReqId:IAdapter1_11271805130007050004|Command:CallStatus|CallStatus:Established
+18:05:13.859144[33m|LV2|[0mReqId:IAdapter1_11271805130007050004|Command:CallStatus|XmlData:(181)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><CallStatus Event='Established'/></GctiMsg>
+18:05:16.005409[44m|INF|[0mReqId:IAdapter1_11271805130007050004|Command:CallInfoReq
+18:05:16.005451[33m|LV2|[0mReqId:IAdapter1_11271805130007050004|Command:CallInfoReq|XmlData:(178)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><CallInfoReq></CallInfoReq></GctiMsg>
+
+18:05:16.005498[33m|LV2|[0mSEND   |10.1.13.100:3021|000184|
+18:05:16.018340[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000320|
+18:05:16.018382[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000320, ntohs_len:000316, nPartialPacketLen000320, nDataOffset:000000
+18:05:16.018418[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000314|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><CallInfoResp ANI='2225' DNIS='3003' CalledNum='3' ConnId='0079020eaf04c034' TSCallId='2106' PortDN='3003' PortTrunk='0' OtherDN='3081' LastEvent='EventEstablished'/></GctiMsg>
+18:05:16.019088[44m|INF|[0mReqId:IAdapter1_11271805130007050004|Command:CallInfoResp|ANI:2225|DNIS:3003|CalledNum:3|ConnId:0079020eaf04c034|FirstHomeLocation:|LastEvent:EventEstablished|OtherDN:3081|OtherQueue:|OtherTrunk:|PortDN:3003|PortQueue:|PortTrunk:0|ThirdPartyDN:|TSCallId:2106
+18:05:16.019127[33m|LV2|[0mReqId:IAdapter1_11271805130007050004|Command:CallInfoResp|XmlData:(314)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><CallInfoResp ANI='2225' DNIS='3003' CalledNum='3' ConnId='0079020eaf04c034' TSCallId='2106' PortDN='3003' PortTrunk='0' OtherDN='3081' LastEvent='EventEstablished'/></GctiMsg>
+18:05:18.308757[44m|INF|[0mReqId:IAdapter1_11271805130007050004|Command:UDataGet|Keys:UEI
+18:05:18.308796[33m|LV2|[0mReqId:IAdapter1_11271805130007050004|Command:UDataGet|XmlData:(215)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><UDataGet Keys="UEI"><RequestId>100000002</RequestId></UDataGet></GctiMsg>
+
+18:05:18.308842[33m|LV2|[0mSEND   |10.1.13.100:3021|000221|
+18:05:18.344404[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000290|
+18:05:18.344467[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000290, ntohs_len:000286, nPartialPacketLen000290, nDataOffset:000000
+18:05:18.344500[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000284|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><UDataResp Result='Success'><RequestId>100000002</RequestId><UDataEx><Node Name='UEI' Type='Str' Val='bridgetec'/></UDataEx></UDataResp></GctiMsg>
+18:05:18.344770[44m|INF|[0mReqId:IAdapter1_11271805130007050004|Command:UDataResp|RequestId:100000002|Result:|UDataEx:|UEI=bridgetec|
+18:05:18.344811[33m|LV2|[0mReqId:IAdapter1_11271805130007050004|Command:UDataResp|XmlData:(284)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><UDataResp Result='Success'><RequestId>100000002</RequestId><UDataEx><Node Name='UEI' Type='Str' Val='bridgetec'/></UDataEx></UDataResp></GctiMsg>
+18:05:20.612432[44m|INF|[0mReqId:IAdapter1_11271805130007050004|Command:OneStepXfer|szDestDN:3006|szUDataEx:aaa=111|bbb=222|ccc=333|ddd=444|szExtnsEx:fff=555|gg=666|hhhhh=777|kkkkk=asdf
+18:05:20.612477[33m|LV2|[0mReqId:IAdapter1_11271805130007050004|Command:OneStepXfer|XmlData:(546)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><OneStepXfer DestDN="3006"><UDataEx><Node Name="aaa" Type="Str" Val="111"/><Node Name="bbb" Type="Str" Val="222"/><Node Name="ccc" Type="Str" Val="333"/><Node Name="ddd" Type="Str" Val="444"/></UDataEx><ExtnsEx><Node Name="fff" Type="Str" Val="555"/><Node Name="gg" Type="Str" Val="666"/><Node Name="hhhhh" Type="Str" Val="777"/><Node Name="kkkkk" Type="Str" Val="asdf"/></ExtnsEx></OneStepXfer></GctiMsg>
+
+18:05:20.612530[33m|LV2|[0mSEND   |10.1.13.100:3021|000552|
+18:05:24.801706[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000209|
+18:05:24.801766[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000209, ntohs_len:000205, nPartialPacketLen000209, nDataOffset:000000
+18:05:24.801796[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000203|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><CallError FailedReq='OneStepXfer' TlibErrCode='1183'/></GctiMsg>
+18:05:24.802037[44m|INF|[0mReqId:IAdapter1_11271805130007050004|Command:CallError|FailedReq:1183, TlibErrCode:
+18:05:24.802072[33m|LV2|[0mReqId:IAdapter1_11271805130007050004|Command:CallError|XmlData:(203)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><CallError FailedReq='OneStepXfer' TlibErrCode='1183'/></GctiMsg>
+18:05:38.374857[44m|INF|[0mReqId:IAdapter1_11271805130007050004|Command:EndCall, EndCause:Normal
+18:05:38.374874[33m|LV2|[0mReqId:IAdapter1_11271805130007050004|Command:EndCall|XmlData:(262)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271805130007050004</CallId><EndCall EndCause="Normal"><ExtnsEx><Node Name="GCTIActiveRelease" Type="Str" Val="false"/></ExtnsEx></EndCall></GctiMsg>
+
+18:05:38.374893[33m|LV2|[0mSEND   |10.1.13.100:3021|000268|
+18:16:23.716483[44m|INF|[0mReqId:IAdapter1_11271816230007160005|Command:NewCall|CalledNum:3|CallControlMode:Network|Version:4.0|DNIS:*3003|ANI:2226|UDataEx:|ExtnsEx:
+18:16:23.716530[33m|LV2|[0mReqId:IAdapter1_11271816230007160005|Command:NewCall|XmlData:(267)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><NewCall CallControlMode="Network" Version="4.0"><CalledNum>3</CalledNum><DNIS>*3003</DNIS><ANI>2226</ANI></NewCall></GctiMsg>
+
+18:16:23.716586[33m|LV2|[0mSEND   |10.1.13.100:3021|000273|
+18:16:23.729928[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000183|
+18:16:23.729988[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000183, ntohs_len:000179, nPartialPacketLen000183, nDataOffset:000000
+18:16:23.730000[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000177|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><CallStatus Event='Ringing'/></GctiMsg>
+18:16:23.730136[44m|INF|[0mReqId:IAdapter1_11271816230007160005|Command:CallStatus|CallStatus:Ringing
+18:16:23.730152[33m|LV2|[0mReqId:IAdapter1_11271816230007160005|Command:CallStatus|XmlData:(177)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><CallStatus Event='Ringing'/></GctiMsg>
+18:16:23.855711[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000187|
+18:16:23.855771[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000187, ntohs_len:000183, nPartialPacketLen000187, nDataOffset:000000
+18:16:23.855803[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000181|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><CallStatus Event='Established'/></GctiMsg>
+18:16:23.856055[44m|INF|[0mReqId:IAdapter1_11271816230007160005|Command:CallStatus|CallStatus:Established
+18:16:23.856121[33m|LV2|[0mReqId:IAdapter1_11271816230007160005|Command:CallStatus|XmlData:(181)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><CallStatus Event='Established'/></GctiMsg>
+18:16:26.018613[44m|INF|[0mReqId:IAdapter1_11271816230007160005|Command:CallInfoReq
+18:16:26.018668[33m|LV2|[0mReqId:IAdapter1_11271816230007160005|Command:CallInfoReq|XmlData:(178)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><CallInfoReq></CallInfoReq></GctiMsg>
+
+18:16:26.018716[33m|LV2|[0mSEND   |10.1.13.100:3021|000184|
+18:16:26.167759[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000337|
+18:16:26.167821[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000337, ntohs_len:000333, nPartialPacketLen000337, nDataOffset:000000
+18:16:26.167845[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000331|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><CallInfoResp ANI='2226' DNIS='3085' CalledNum='3' ConnId='0079020eaf04c037' TSCallId='2110' PortDN='3003' PortTrunk='0' PortQueue='3085' OtherDN='3082' LastEvent='EventEstablished'/></GctiMsg>
+18:16:26.168487[44m|INF|[0mReqId:IAdapter1_11271816230007160005|Command:CallInfoResp|ANI:2226|DNIS:3085|CalledNum:3|ConnId:0079020eaf04c037|FirstHomeLocation:|LastEvent:EventEstablished|OtherDN:3082|OtherQueue:|OtherTrunk:|PortDN:3003|PortQueue:3085|PortTrunk:0|ThirdPartyDN:|TSCallId:2110
+18:16:26.168543[33m|LV2|[0mReqId:IAdapter1_11271816230007160005|Command:CallInfoResp|XmlData:(331)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><CallInfoResp ANI='2226' DNIS='3085' CalledNum='3' ConnId='0079020eaf04c037' TSCallId='2110' PortDN='3003' PortTrunk='0' PortQueue='3085' OtherDN='3082' LastEvent='EventEstablished'/></GctiMsg>
+18:16:28.322422[44m|INF|[0mReqId:IAdapter1_11271816230007160005|Command:UDataGet|Keys:UEI
+18:16:28.322464[33m|LV2|[0mReqId:IAdapter1_11271816230007160005|Command:UDataGet|XmlData:(215)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><UDataGet Keys="UEI"><RequestId>100000003</RequestId></UDataGet></GctiMsg>
+
+18:16:28.322510[33m|LV2|[0mSEND   |10.1.13.100:3021|000221|
+18:16:28.329589[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000290|
+18:16:28.329638[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000290, ntohs_len:000286, nPartialPacketLen000290, nDataOffset:000000
+18:16:28.329657[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000284|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><UDataResp Result='Success'><RequestId>100000003</RequestId><UDataEx><Node Name='UEI' Type='Str' Val='bridgetec'/></UDataEx></UDataResp></GctiMsg>
+18:16:28.330026[44m|INF|[0mReqId:IAdapter1_11271816230007160005|Command:UDataResp|RequestId:100000003|Result:|UDataEx:|UEI=bridgetec|
+18:16:28.330061[33m|LV2|[0mReqId:IAdapter1_11271816230007160005|Command:UDataResp|XmlData:(284)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><UDataResp Result='Success'><RequestId>100000003</RequestId><UDataEx><Node Name='UEI' Type='Str' Val='bridgetec'/></UDataEx></UDataResp></GctiMsg>
+18:16:30.626679[44m|INF|[0mReqId:IAdapter1_11271816230007160005|Command:OneStepXfer|szDestDN:3006|szUDataEx:aaa=111|bbb=222|ccc=333|ddd=444|szExtnsEx:fff=555|gg=666|hhhhh=777|kkkkk=asdf
+18:16:30.626740[33m|LV2|[0mReqId:IAdapter1_11271816230007160005|Command:OneStepXfer|XmlData:(546)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><OneStepXfer DestDN="3006"><UDataEx><Node Name="aaa" Type="Str" Val="111"/><Node Name="bbb" Type="Str" Val="222"/><Node Name="ccc" Type="Str" Val="333"/><Node Name="ddd" Type="Str" Val="444"/></UDataEx><ExtnsEx><Node Name="fff" Type="Str" Val="555"/><Node Name="gg" Type="Str" Val="666"/><Node Name="hhhhh" Type="Str" Val="777"/><Node Name="kkkkk" Type="Str" Val="asdf"/></ExtnsEx></OneStepXfer></GctiMsg>
+
+18:16:30.626806[33m|LV2|[0mSEND   |10.1.13.100:3021|000552|
+18:16:34.801398[33m|LV2|[0mRECEIVE|10.1.13.100:3021|000209|
+18:16:34.801467[32m|LV3|[0mRECEIVE-LEN|10.1.13.100:3021|nLen:000209, ntohs_len:000205, nPartialPacketLen000209, nDataOffset:000000
+18:16:34.801490[33m|LV2|[0mRECEIVE-XML|10.1.13.100:3021|000203|<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><CallError FailedReq='OneStepXfer' TlibErrCode='1183'/></GctiMsg>
+18:16:34.801720[44m|INF|[0mReqId:IAdapter1_11271816230007160005|Command:CallError|FailedReq:1183, TlibErrCode:
+18:16:34.801752[33m|LV2|[0mReqId:IAdapter1_11271816230007160005|Command:CallError|XmlData:(203)<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><CallError FailedReq='OneStepXfer' TlibErrCode='1183'/></GctiMsg>
+18:16:44.778823[44m|INF|[0mReqId:IAdapter1_11271816230007160005|Command:EndCall, EndCause:Normal
+18:16:44.778877[33m|LV2|[0mReqId:IAdapter1_11271816230007160005|Command:EndCall|XmlData:(262)<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271816230007160005</CallId><EndCall EndCause="Normal"><ExtnsEx><Node Name="GCTIActiveRelease" Type="Str" Val="false"/></ExtnsEx></EndCall></GctiMsg>
+
+18:16:44.778925[33m|LV2|[0mSEND   |10.1.13.100:3021|000268|

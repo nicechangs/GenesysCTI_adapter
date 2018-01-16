@@ -1,0 +1,7 @@
+<scenariodef id="SVC_CFGCHG.MSF" iparam="" ioparam="" >
+	<play expr="'m.35'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<userenv name="uEnvTest" userconfig="'UEnvTest.cfg'" service="'TEST'" env="'VALUE'" cond="1" />
+	<playtts expr="uEnvTest" cleardigit="1" type="ks5601" wait="0" async="0" cond="1" />
+	<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<disconnect />
+</scenariodef>

@@ -1,0 +1,6 @@
+<scenariodef id="SVCCHG.MSF" iparam="" ioparam="" >
+	<play expr="'m.34'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<goto next="{DA8ACCF6-79B3-446F-8A3A-5994B4BBD250}" />
+	<label id="{DA8ACCF6-79B3-446F-8A3A-5994B4BBD250}" />
+	<changeservice service="4" ani="session.call.ani" dnis="session.call.dnis" userdata="session.call.sessiondata" cond="1" />
+</scenariodef>

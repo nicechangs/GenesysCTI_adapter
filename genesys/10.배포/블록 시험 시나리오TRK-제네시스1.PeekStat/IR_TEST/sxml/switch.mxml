@@ -1,0 +1,106 @@
+<scenariodef id="switch.msfx" iparam="" ioparam="" >
+	<play expr="'m.18'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start(switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD) -->
+	<if cond="1 == 0" >
+		<goto next="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_END" />
+	</if>
+	<assign name="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_cnt" expr="0" cond="1" />
+	<label id="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_START" />
+	<play expr="'m.180'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+	<getdigit name="switch" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+	<assign name="switch_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="switch.digits == '1'" >
+			<goto next="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_END" />
+		<elseif cond="switch.digits == '2'" />
+			<goto next="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_END" />
+		<else />
+			<if cond="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="switch_DtmfValue == _SLEE_FAILED_" />
+		<if cond="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_cnt" expr="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_cnt+1" cond="1" />
+	<if cond="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<else />
+		<if cond="switch.digits == '' && session.command.term_digit == ''" >
+			<goto next="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_START" />
+		<else />
+			<goto next="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_START" />
+		</if>
+	</if>
+	<label id="switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD_END" />
+	<!-- GetDigit_End(switch_7F1AD05E_7A1E_445D_AD6D_C1B2B98966BD) -->
+	<!-- select : switch.digits -->
+	<if cond = "switch.digits == '1'" >
+		<play expr="'m.181'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<goto next="{36663FE7-D78A-471C-BE2B-2E66C3CE9F5E}" />
+		<label id="{36663FE7-D78A-471C-BE2B-2E66C3CE9F5E}" />
+		<play expr="'vp.1811'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<assign name="a" expr="1" cond="1" />
+		<goto next="{36663FE7-D78A-471C-BE2B-2E66C3CE9F5E}" />
+	<elseif cond = "switch.digits == '2'" />
+		<play expr="'m.182'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start(switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B) -->
+		<if cond="1 == 0" >
+			<goto next="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_END" />
+		</if>
+		<assign name="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_cnt" expr="0" cond="1" />
+		<label id="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_START" />
+		<play expr="'m.1820'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="switchchann" length="5" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="switchchann_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_END" />
+		<elseif cond="switchchann_DtmfValue == _SLEE_FAILED_" />
+			<if cond="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_END" />
+			<else />
+				<if cond="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_cnt" expr="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_cnt+1" cond="1" />
+		<if cond="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="switchchann.digits == '' && session.command.term_digit == ''" >
+				<goto next="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_START" />
+			<else />
+				<goto next="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_START" />
+			</if>
+		</if>
+		<label id="switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B_END" />
+		<!-- GetDigit_End(switchchann_F1AD4361_0A95_4169_BB16_688D7EB74A1B) -->
+		<switch to="switchchann.digits" mode="2" />
+		<sleep time="60" type="0" cond="" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : switch.digits -->
+</scenariodef>

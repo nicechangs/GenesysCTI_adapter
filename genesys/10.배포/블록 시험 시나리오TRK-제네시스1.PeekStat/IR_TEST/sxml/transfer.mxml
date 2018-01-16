@@ -1,0 +1,58 @@
+<scenariodef id="transfer.msfx" iparam="" ioparam="" >
+	<play expr="'m.21'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<goto next="{87E4FB1A-A30F-4D32-8FE3-2519823C2985}" />
+	<label id="{87E4FB1A-A30F-4D32-8FE3-2519823C2985}" />
+	<!-- GetDigit_Start(transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE) -->
+	<if cond="1 == 0" >
+		<goto next="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_END" />
+	</if>
+	<assign name="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_cnt" expr="0" cond="1" />
+	<label id="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_START" />
+	<play expr="'vp.211'" cleardigit="1" type="MentID" country="410" abandon="0" wait="0" cond="1" />
+	<getdigit name="transfer" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+	<assign name="transfer_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<goto next="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_END" />
+	<elseif cond="transfer_DtmfValue == _SLEE_FAILED_" />
+		<if cond="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_cnt" expr="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_cnt+1" cond="1" />
+	<if cond="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<else />
+		<if cond="transfer.digits == '' && session.command.term_digit == ''" >
+			<goto next="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_START" />
+		<else />
+			<goto next="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_START" />
+		</if>
+	</if>
+	<label id="transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE_END" />
+	<!-- GetDigit_End(transfer_CBF7CEA9_F55C_4443_9C47_DCA86FC38EBE) -->
+	<!-- len(transfer.digits) >= 4  -->
+	<if cond="len(transfer.digits) >= 4 " >
+		<usercdr name="_CDR_STATUS_" type="u" value="'31'" cond="1" />
+		<usercdr name="_CDR_PBXCALLID_" type="u" value="'2013000001'" cond="1" />
+		<usercdr name="_CDR_CALLREF_" type="u" value="'callref'" cond="1" />
+		<usercdr name="_CDR_RP_" type="u" value="'7000'" cond="1" />
+		<hold />
+		<transfer name="transfer" to="transfer.digits" timeout="20" agtflag="1" agttype="1" switchcenter="0" />
+		<usercdr name="_CDR_STATUS_" type="u" value="'31'" cond="1" />
+		<usercdr name="_CDR_PBXCALLID_" type="u" value="'2013000001'" cond="1" />
+		<usercdr name="_CDR_CALLREF_" type="u" value="'callref'" cond="1" />
+		<usercdr name="_CDR_RP_" type="u" value="'7000'" cond="1" />
+		<play expr="'vp.212'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<sleep time="1" type="0" cond="" />
+		<disconnect />
+	<else /><!-- len(transfer.digits) >= 4  -->
+		<play expr="'errinput'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<goto next="{87E4FB1A-A30F-4D32-8FE3-2519823C2985}" />
+	</if><!-- len(transfer.digits) >= 4  -->
+</scenariodef>

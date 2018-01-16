@@ -1,0 +1,242 @@
+<html>
+<head>
+<title>IVR SDK</title>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<style>
+<!--
+
+.Body {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: normal}
+.Body12 {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold}
+.Head1 {  font-family: Arial, Helvetica, sans-serif; font-size: 18pt; font-weight: bold}
+.Head2 {  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; font-weight: bold}
+code { font-family: monospace; font-size: 10pt; letter-spacing: -1px; }
+
+-->
+</style>
+</head>
+
+<body bgcolor="#ffffff">
+<p class="Head2"></p>
+<p><a name="top"></a></p>
+<table width="628" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="279" height="279" class="Head1"><IMG height=280 src="graphics/genesyscd.gif" width=280></td>
+    <td height="279" align="left" valign="bottom" class="Head1"><font color="#000000" size="4" face="Arial, Helvetica, sans-serif">
+      <IMG height=279 src="graphics/menu.gif" width=288 useMap=#Map2 border=0></font></td>
+  </tr>
+</table>
+
+<map name="Map2">
+  <area shape="rect" coords="34,53,269,84" href="#aboutthisrelease">
+  <area shape="rect" coords="31,84,300,113" href="#directories">
+  <area shape="rect" coords="35,114,211,146" href="#documentation">
+  <area shape="rect" coords="30,148,244,179" href="#technical_support">
+  <area shape="rect" coords="32,182,203,209" href="#legal_notices">
+  <area shape="rect" coords="1,249,121,263" href="http://www.genesyslab.com">
+</map>
+<br>
+<table width="628" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td colspan="2" class="Head1"> <a name="aboutthisrelease"></a>About This Software</font></td>
+  </tr>
+  <tr>
+    <td width="109">&nbsp;</td>
+    <td width="519" class="Body"> <p class="Body">The IVR SDK
+        provides an application programming interface (API) that enables communication
+        between vendor-specific IVR hardware and software and the Genesys IVR
+        Server. The SDK enables you to develop an IVR Driver client application
+        to complete the Genesys IVR solution.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The IVR Server offers two interfaces
+        for communication with an IVR Driver:</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The <strong>Genesys
+        IVR SDK for Extensible Markup Language (XML)</strong> should be used for
+        the development of all XML-based driver applications. The IVR Server uses
+        a customized Document Type Declaration (DTD), which defines the Genesys-specific
+        XML elements and attributes necessary to create your IVR driver application.
+        The IVR SDK 8.1 XML Developer's Guide provided on the product CD explains
+        the procedures for developing your own IVR driver application using XML.
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The <strong>Genesys
+        IVR SDK for C</strong> is offered to ensure compatibility for existing
+        applications that were written using an earlier version of the Genesys
+        IVR SDK interface for C and for new C-based driver applications.</font><br>
+      </p></td>
+  </tr>
+  <tr valign="center">
+    <td colspan="2" class="Head2"><font face="Arial, Helvetica, sans-serif" class="Head2">New
+      Features in 8.1.x</font></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+
+       <td class="Body">
+       <p><font size="2" face="Arial, Helvetica, sans-serif"> Release 8.1.0 of the Genesys IVR SDK for Extensible Markup Language (XML)
+        includes the following features:</font></p>
+      <ul>
+       <li><font size="2" face="Arial, Helvetica, sans-serif">The ability to retrieve call information of type <code>UUID</code>.
+
+	           </font></li>
+	           <li><font size="2" face="Arial, Helvetica, sans-serif">The ability to retrieve call information of type <code>ThirdPartyDN</code>.
+
+	           </font></li>
+	           <li><font size="2" face="Arial, Helvetica, sans-serif">Optionally, call information of type <code>All</code> may now
+	   be configured on IVR Server to return either <code>UUID</code> or <code>ThirdPartyDN</code> (or
+both). By default, neither will be returned for an <code>All</code> request.
+
+      </ul>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Release
+        8.1.0 of the Genesys IVR SDK for C includes the following features:</font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">The ability to retrieve call information of type <code>UUID</code>.
+
+        </font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">The ability to retrieve call information of type <code>ThirdPartyDN</code>.
+
+        </font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">Optionally, call information of type <code>All</code> may now
+be configured on IVR Server to return either <code>UUID</code> or <code>ThirdPartyDN</code> (or
+both). By default, neither will be returned for an <code>All</code> request.
+
+          </font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">Support for IPv6.
+
+            </ul>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> <strong>Note:</strong>
+        IVR Driver applications developed with the 8.1 Genesys IVR SDK for C must be used only with the 8.1 version of IVR Server for the ability to retrieve the call information type of <code>ThirdPartyDN</code> and optionally control <code>All</code> as above. They may be used with prior versions of IVR Server, but with correspondingly reduced features available.</p>
+
+      </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="Head1"><a name="directories"></a>Directories on This CD</font></td>
+  </tr>
+  <tr>
+    <td width="89">&nbsp;</td>
+    <td width="521" class="Body">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b>documentation
+        </b><br>
+        Contains the ReadMe file, the graphics for the ReadMe,
+        and the versions.html file. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><strong>IVR_SDK </strong><br>
+        Contains the specific SDK components that are being installed. Each SDK
+        is in a separate subfolder, under which are the operating systems that
+        support the SDK.</font></p>
+      </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="Head1"> <a name="documentation"></a><font face="Arial, Helvetica, sans-serif">Documentation</font></td>
+  </tr>
+  <tr>
+    <td valign="bottom"> <p class="Body"><span class="Body"><A href="#top">Return
+        to Top</A></span></p></td>
+    <td class="Body" valign="top"> <p class="Body"><span class="Body"><font size="2" face="Arial, Helvetica, sans-serif">Product documentation, including documentation specifically for developers, is provided on the <a href="http://genesyslab.com/support">Technical Support website</a>, the
+<a href="http://docs.genesyslab.com">Genesys Documentation wiki</a>, and the Documentation Library DVD or the Developer Documentation CD that is
+shipped on request with your software.</font></p></span></font></p>
+      <p class="Body"><font size="2" face="Arial, Helvetica, sans-serif">Any information
+        regarding this release that was discovered too late to be included in
+        the documentation is available in the <a href="http://genesyslab.com/support/dl/retrieve/default.asp?item=B7C732AA32AA32AA32AA3244B4CD3445&amp;view=item">Release
+        Advisory</a>. </font></p>
+      <p class="Body"><font size="2" face="Arial, Helvetica, sans-serif">In addition
+        to an updated library of product documentation, the Genesys Technical
+        Support website also contains product advisories that describe recently
+        discovered issues related to Genesys products.</font></p></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="Head1"><a name="technical_support"></a><font face="Arial, Helvetica, sans-serif">Technical
+      Support</font></td>
+  </tr>
+  <tr>
+    <td width="109" valign="bottom"><span class="Body"><a href="#top">Return to
+      Top</a></span></td>
+    <td width="519"> <h3><span class="Body12"><font face="Arial, Helvetica, sans-serif">Contacting</font></span></h3>
+      <p class="Body"><span class="Body"><font size="2" face="Arial, Helvetica, sans-serif">Genesys
+        provides technical support to customers worldwide with
+        support centers in eastern Canada, the United Kingdom,
+        Australia, India, and Japan. You can contact Genesys Technical
+        Support by telephone, e-mail, or on the World Wide Web.</font></span></p>
+      <p class="Body"><font size="2" face="Arial, Helvetica, sans-serif"><span class="Body">For
+        complete information on how and when to contact Technical Support, read
+        the <a href="http://genesyslab.com/support/kb/browse/Default.asp?item=8BCF0D6945317D39754186C5094C92B9&amp;view=item"
+     ><em>Genesys Technical Support Guide</em></a>. Please tell the Technical
+        Support representative that you are a IVR SDK 8.1 customer. For a list
+        of the software versions that are on this CD, click <a href="versions.html">here</a>.
+        </span></font></p>
+      <h3><span class="Body12"><font face="Arial, Helvetica, sans-serif">Licensing</font></span></h3>
+      <p class="Body"><font size="2" face="Arial, Helvetica, sans-serif">Along with its software, Genesys supplies its customers with
+        software licenses. Licenses manifest the customers’ legal
+        rights to use the features that Genesys software provides.
+        To obtain the necessary product licenses, you will need
+        to complete an order form, which has detailed information
+        to assist you in placing an order. For complete information
+        on obtaining licenses, refer to the
+	<a href="http://genesyslab.com/support/dl/retrieve/default.asp?item=B6C52FB62DB42BB229B02755A1D12650&amp;view=item">
+	<em>Genesys Licensing Guide</em></a> on the Technical Support
+        website and the licensing section of the
+	<em><a href="http://genesyslab.com/support/dl/retrieve/default.asp?item=AFD71A7A5A3A9AFADABA1A638CF1F803&amp;view=item">
+	Genesys Migration Guide</a></em>.</font></p>
+      <h3><span class="Body12"><font face="Arial, Helvetica, sans-serif">Supported Operating Environment Information</font></span></h3>
+      <p class="Body"><font size="2" face="Arial, Helvetica, sans-serif">Information
+        on supported hardware and third-party software is available on the Genesys
+        Technical Support website in the following documents: </font>
+      <ul>
+        <li class="Body"><font size="2" face="Arial, Helvetica, sans-serif"><span class="Body"><em><a href="http://genesyslab.com/support/dl/retrieve/default.asp?item=B6C52FB62DB42BB229B02755A3D92054&view=item">Genesys
+          Supported Operating Environment Reference Manual</a></em></span></font></li>
+        <li class="Body"><font size="2" face="Arial, Helvetica, sans-serif"><span class="Body"><em><a href="http://genesyslab.com/support/dl/retrieve/default.asp?item=A9CB309AF4DEB8127C5640A3C32445A7&view=item">Genesys
+          Supported Media Interfaces Reference Manual</a></em></span></font></li>
+      </ul>
+      </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="Head1"><a name="legal_notices"></a><font face="Arial, Helvetica, sans-serif">Legal
+      Notices</font></td>
+  </tr>
+  <tr>
+    <td width="109" valign="bottom">
+      <p><span class="Body"><A href="#top">Return
+        to Top</A></span></p></td>
+    <td width="519">
+<h3 class="Body12"><span class="Body12"><font face="Arial, Helvetica, sans-serif">Copyright</font></span></h3>
+      <p><span class="Body"><font size="2" face="Arial, Helvetica, sans-serif">This
+        CD and all its contents © Copyright 2012 Genesys Telecommunications
+        Laboratories, Inc. All rights reserved.</font></span></p>
+
+
+      <p><span class="Body12"><font face="Arial, Helvetica, sans-serif">Trademarks</font></span></p>
+      <p><span class="Body"><font size="2" face="Arial, Helvetica, sans-serif">Genesys and the Genesys logo are registered trademarks of Genesys
+        Telecommunications Laboratories, Inc. All other company names and logos may be trademarks or registered
+        trademarks of their respective holders.</font></span></p>
+
+      <p><span class="Body12"><font face="Arial, Helvetica, sans-serif">Third-Party
+        Software</font></span></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Genesys follows applicable third-party redistribution policies to the
+	extent that Genesys solutions utilize third-party functionality. Please contact your technical support representative
+	if you have any questions.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">NOTICE OF
+        RESTRICTED RIGHTS FOR ORACLE PRODUCTS LICENSED
+        TO THE US GOVERNMENT Oracle Programs delivered to the United States
+        government subject to the DOD FAR Supplement are 'commercial
+        computer software' and use, duplication, and disclosure of the
+        programs, including documentation, shall be subject to the
+        licensing restrictions set forth in the applicable license
+        agreement therefor. Otherwise, Oracle programs delivered subject
+        to the Federal Acquisition Regulations are 'restricted computer
+        software' and use, duplication, and disclosure of the programs,
+        including documentation, shall be subject to the restrictions
+        in FAR 52.227-19, Commercial Computer Software-Restricted Rights
+        (June 1987). Oracle USA, Inc., 500 Oracle Parkway, Redwood City,
+        CA 94065.</font></p>
+      <p><span class="Body12"><font face="Arial, Helvetica, sans-serif">Your
+        Responsibility for Your System</font></span></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">You are responsible for product administration and system security.
+	Please prevent unauthorized access. Your system administrator should read all
+	documents provided with  this product to fully understand the features available that
+	can reduce the risk of system damage. System damage or loss caused by unauthorized
+        access is not covered by maintenance and support or a Genesys warranty.
+        In addition, Genesys software is proprietary. Unauthorized access may
+        lead to violations of your confidentiality obligations under your contract
+        with Genesys.</font></p></td>
+  </tr>
+</table>
+<p align="left"><font face="Arial, Helvetica, sans-serif" size="1">81ivr-sdk_08-2012_v8.1.001.00</font></p>
+
+</body>
+</html>

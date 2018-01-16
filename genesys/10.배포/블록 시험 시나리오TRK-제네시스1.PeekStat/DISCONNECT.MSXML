@@ -1,0 +1,6 @@
+<scenariodef id="DISCONNECT.MSF" iparam="" ioparam="" >
+	<play expr="'m.15'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<play expr="'vp.15'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<disconnect />
+</scenariodef>

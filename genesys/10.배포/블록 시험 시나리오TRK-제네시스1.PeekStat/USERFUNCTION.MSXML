@@ -1,0 +1,90 @@
+<scenariodef id="USERFUNCTION.MSF" iparam="" ioparam="" >
+	<play expr="'m.31'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (userfunc1) -->
+	<if cond="1 == 0" >
+		<goto next="userfunc1_END" />
+	</if>
+	<assign name="userfunc1_cnt" expr="0" cond="1" />
+	<label id="userfunc1_START" />
+	<play expr="'m.310'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="userfunc1" length="1" dtmfmask="1|2|3" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" dtmfvideo="0" />
+	<assign name="userfunc1_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="userfunc1.digits == '1'" >
+			<goto next="userfunc1_END" />
+		<elseif cond="userfunc1.digits == '2'" />
+			<goto next="userfunc1_END" />
+		<elseif cond="userfunc1.digits == '3'" />
+			<goto next="userfunc1_END" />
+		<else />
+			<if cond="userfunc1_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="userfunc1_DtmfValue == _SLEE_FAILED_" />
+		<if cond="userfunc1_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="userfunc1_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="userfunc1_cnt" expr="userfunc1_cnt+1" cond="1" />
+	<if cond="userfunc1_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="userfunc1.digits == '' && session.command.term_digit == ''" >
+			<goto next="userfunc1_START" />
+		<else />
+			<goto next="userfunc1_START" />
+		</if>
+	</if>
+	<label id="userfunc1_END" />
+	<!-- GetDigit_End (userfunc1) -->
+	<!-- select : userfunc1.digits -->
+	<if cond = "userfunc1.digits == '1'" >
+		<play expr="'m.311'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<usercdr name="_CDR_SKEY_" type="u" value="session.call.ani & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_MENULIST_" type="a" value="'add_user_menu'  & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_CALLREF_" type="u" value="session.call.callid & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_RP_" type="u" value="'1234' & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_TRANSFERDN_" type="u" value="'6789' & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_ANI_" type="u" value="session.call.ani & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="_CDR_DNIS_" type="u" value="session.call.dnis & ' ' & 'cdr_test'" cond="1" />
+		<usercdr name="cdr_a" type="a" value="'cdr_a append'" cond="1" />
+		<usercdr name="cdr_a" type="u" value="'cdr_a updated'" cond="1" />
+		<usercdr name="cdr_b" type="a" value="'cdr_b append'" cond="1" />
+		<usercdr name="cdr_b" type="u" value="'cdr_b updated'" cond="1" />
+		<usercdr name="cdr_b" type="d" value="'cdr_b deleted'" cond="1" />
+		<sleep sec="2" cond="" />
+		<log rid="USER_LOG_10MIN" expr="'[USER_LOG] callid - ' & session.call.callid & ' channel - ' & session.call.channel & ' trunkid - ' & session.call.trunkid & ' realline - ' & session.call.physicalline" cond="1" />
+		<log rid="USER_LOG_DAY" expr="'[USER_LOG] callid - ' & session.call.callid & ' channel - ' & session.call.channel & ' trunkid - ' & session.call.trunkid & ' realline - ' & session.call.physicalline" cond="1" />
+		<log rid="USER_LOG_30MIN" expr="'[USER_LOG] callid - ' & session.call.callid & ' channel - ' & session.call.channel & ' trunkid - ' & session.call.trunkid & ' realline - ' & session.call.physicalline" cond="1" />
+		<log rid="USER_LOG_1HOUR" expr="'[USER_LOG] callid - ' & session.call.callid & ' channel - ' & session.call.channel & ' trunkid - ' & session.call.trunkid & ' realline - ' & session.call.physicalline" cond="1" />
+		<log rid="USER_LOG_2HOUR" expr="'[USER_LOG] callid - ' & session.call.callid & ' channel - ' & session.call.channel & ' trunkid - ' & session.call.trunkid & ' realline - ' & session.call.physicalline" cond="1" />
+		<goto next="{89CD0BAC-1326-437C-A6B5-CAB2DEAF220B}" />
+		<label id="{89CD0BAC-1326-437C-A6B5-CAB2DEAF220B}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "userfunc1.digits == '2'" />
+		<play expr="'m.312'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<userenv name="userConfig_OnCheck" userconfig="'Holiday.cfg'" service="'2009'" env="'0301'" cond="1" />
+		<userenv name="userConfig_CTIStatus" userconfig="'userConfig.cfg'" service="'CTI'" env="'Status'" cond="1" />
+		<userenv name="userEnv_SLEE_IP" userconfig="" service="'SLEE'" env="'IP'" cond="1" />
+		<userenv name="userEnv_SERVICE_DefaultDNIS" userconfig="" service="" env="'DEF_DNIS'" cond="1" />
+		<goto next="{89CD0BAC-1326-437C-A6B5-CAB2DEAF220B}" />
+	<elseif cond = "userfunc1.digits == '3'" />
+		<play expr="'m.313'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<assign name="l_physicalline" expr="session.sys.physicalline" cond="1" />
+		<assign name="l_trunkid" expr="session.sys.trunkid" cond="1" />
+		<userfunc expr="GetRandom(l_physicalline, l_trunkid , l_ret )" cond="1" />
+		<log rid="USER_LOG_DAY" expr="'[USER_LOG] userLib Test - l_ret : ' & l_ret" cond="1" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : userfunc1.digits -->
+</scenariodef>

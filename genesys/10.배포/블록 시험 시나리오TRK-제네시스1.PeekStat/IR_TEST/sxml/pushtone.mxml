@@ -1,0 +1,51 @@
+<scenariodef id="pushtone.msfx" iparam="" ioparam="" >
+	<play expr="'m.22'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<goto next="{AFD4EC18-609D-49D3-8207-128A3C023534}" />
+	<label id="{AFD4EC18-609D-49D3-8207-128A3C023534}" />
+	<!-- GetDigit_Start(pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF) -->
+	<if cond="1 == 0" >
+		<goto next="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_END" />
+	</if>
+	<assign name="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_cnt" expr="0" cond="1" />
+	<label id="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_START" />
+	<play expr="'vp.221'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+	<getdigit name="pushtone" length="20" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+	<assign name="pushtone_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<goto next="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_END" />
+	<elseif cond="pushtone_DtmfValue == _SLEE_FAILED_" />
+		<if cond="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+		<if cond="session.command.term_digit == '*'" >
+			<goto next="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_END" />
+		<elseif cond="session.command.term_digit == '#'" />
+			<goto next="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_END" />
+		<else />
+			<if cond="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+	<else />
+		<if cond="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_cnt" expr="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_cnt+1" cond="1" />
+	<if cond="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<else />
+		<if cond="pushtone.digits == '' && session.command.term_digit == ''" >
+			<goto next="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_START" />
+		<else />
+			<goto next="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_START" />
+		</if>
+	</if>
+	<label id="pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF_END" />
+	<!-- GetDigit_End(pushtone_5CACDBDF_4814_4118_8CC3_F9F49AC35EFF) -->
+	<pushtone tone="pushtone.digits" interdelay="20" cond="1" />
+	<goto next="{AFD4EC18-609D-49D3-8207-128A3C023534}" />
+</scenariodef>

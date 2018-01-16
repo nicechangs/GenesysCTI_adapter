@@ -1,0 +1,111 @@
+<scenariodef id="record.msfx" iparam="" ioparam="" >
+	<play expr="'m.17'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start(record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB) -->
+	<if cond="1 == 0" >
+		<goto next="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_END" />
+	</if>
+	<assign name="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_cnt" expr="0" cond="1" />
+	<label id="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_START" />
+	<play expr="'m.170'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+	<getdigit name="record" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+	<assign name="record_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="record.digits == '1'" >
+			<goto next="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_END" />
+		<elseif cond="record.digits == '2'" />
+			<goto next="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_END" />
+		<elseif cond="record.digits == '3'" />
+			<goto next="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_END" />
+		<elseif cond="record.digits == '4'" />
+			<goto next="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_END" />
+		<else />
+			<if cond="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="record_DtmfValue == _SLEE_FAILED_" />
+		<if cond="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_cnt" expr="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_cnt+1" cond="1" />
+	<if cond="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<else />
+		<if cond="record.digits == '' && session.command.term_digit == ''" >
+			<goto next="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_START" />
+		<else />
+			<goto next="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_START" />
+		</if>
+	</if>
+	<label id="record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB_END" />
+	<!-- GetDigit_End(record_86353F4D_751E_4C8F_8D0F_16BAC8B796EB) -->
+	<!-- select : record.digits -->
+	<if cond = "record.digits == '1'" >
+		<play expr="'m.171'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<play expr="'vp.1711'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<record file="'record1.g711a64'" path="" background="0" beep="1" asrrec="0" novoice="5" maxtime="120" maxsilence="5" termination="'*'" ment="" cond="" />
+		<goto next="{1A8B619B-549A-48F0-9F9C-34537F22A507}" />
+		<label id="{1A8B619B-549A-48F0-9F9C-34537F22A507}" />
+		<play expr="'vp.1712'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<goto next="{15CB77B4-CE1F-4757-9E2D-9CEA1E3F80F1}" />
+		<label id="{15CB77B4-CE1F-4757-9E2D-9CEA1E3F80F1}" />
+		<disconnect />
+	<elseif cond = "record.digits == '2'" />
+		<play expr="'m.172'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<play expr="'vp.1721'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<record file="'record2.g711a64'" path="" background="0" beep="0" asrrec="0" novoice="5" maxtime=" 10" maxsilence="5" termination="'*'" ment="" cond="" />
+		<goto next="{1A8B619B-549A-48F0-9F9C-34537F22A507}" />
+	<elseif cond = "record.digits == '3'" />
+		<play expr="'m.173'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<play expr="'vp.1731'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<record file="'record3.g711a64'" path="" background="0" beep="1" asrrec="0" novoice="5" maxtime="120" maxsilence="5" termination="'*#'" ment="" cond="" />
+		<play expr="'record3.g711a64'" cleardigit="1" type="File" country="410" wait="0" async="0" cond="1" />
+		<goto next="{1A8B619B-549A-48F0-9F9C-34537F22A507}" />
+	<elseif cond = "record.digits == '4'" />
+		<play expr="'m.174'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<play expr="'vp.1741'" cleardigit="1" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<record file="'record4.g711a64'" path="" background="0" beep="0" asrrec="1" novoice="5" maxtime="120" maxsilence="1" termination="'*#'" ment="'m.0'" cond="1" />
+		<!-- session.command.reason == '_TE_TERM_DIGIT_' -->
+		<if cond="session.command.reason == '_TE_TERM_DIGIT_'" >
+			<!-- GetDigit_Start(bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C) -->
+			<if cond="1 == 0" >
+				<goto next="bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C_END" />
+			</if>
+			<assign name="bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C_cnt" expr="0" cond="1" />
+			<label id="bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C_START" />
+			<getdigit name="bab" length="1" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="1" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+			<assign name="bab_DtmfValue" expr="session.command.result" cond="1" />
+			<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+				<goto next="bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C_END" />
+			<elseif cond="bab_DtmfValue == _SLEE_FAILED_" />
+			<else />
+			</if>
+			<assign name="bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C_cnt" expr="bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C_cnt+1" cond="1" />
+			<if cond="bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C_cnt >= 3" >
+				<disconnect />
+			<else />
+				<if cond="bab.digits == '' && session.command.term_digit == ''" >
+					<goto next="bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C_START" />
+				<else />
+					<goto next="bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C_START" />
+				</if>
+			</if>
+			<label id="bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C_END" />
+			<!-- GetDigit_End(bab_8783FC8F_00B3_4A36_9B4B_731AE8AEC81C) -->
+			<assign name="aaaaaa" expr="bab.digits" cond="1" />
+			<goto next="{15CB77B4-CE1F-4757-9E2D-9CEA1E3F80F1}" />
+		<else /><!-- session.command.reason == '_TE_TERM_DIGIT_' -->
+			<goto next="{15CB77B4-CE1F-4757-9E2D-9CEA1E3F80F1}" />
+		</if><!-- session.command.reason == '_TE_TERM_DIGIT_' -->
+	<else />
+	</if>	
+	<!-- select : record.digits -->
+</scenariodef>

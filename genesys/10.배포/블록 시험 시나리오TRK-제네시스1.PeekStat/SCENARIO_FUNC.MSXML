@@ -1,0 +1,126 @@
+<scenariodef id="SCENARIO_FUNC.MSF" iparam="" ioparam="" >
+	<play expr="'m.36'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+	<!-- GetDigit_Start (sfuncDigit) -->
+	<if cond="1 == 0" >
+		<goto next="sfuncDigit_END" />
+	</if>
+	<assign name="sfuncDigit_cnt" expr="0" cond="1" />
+	<label id="sfuncDigit_START" />
+	<play expr="'m.360'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="sfuncDigit" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="sfuncDigit_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="sfuncDigit.digits == '1'" >
+			<goto next="sfuncDigit_END" />
+		<elseif cond="sfuncDigit.digits == '2'" />
+			<goto next="sfuncDigit_END" />
+		<elseif cond="sfuncDigit.digits == '3'" />
+			<goto next="sfuncDigit_END" />
+		<elseif cond="sfuncDigit.digits == '4'" />
+			<goto next="sfuncDigit_END" />
+		<else />
+			<if cond="sfuncDigit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="sfuncDigit_DtmfValue == _SLEE_FAILED_" />
+		<if cond="sfuncDigit_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="sfuncDigit_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="sfuncDigit_cnt" expr="sfuncDigit_cnt+1" cond="1" />
+	<if cond="sfuncDigit_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="sfuncDigit.digits == '' && session.command.term_digit == ''" >
+			<goto next="sfuncDigit_START" />
+		<else />
+			<goto next="sfuncDigit_START" />
+		</if>
+	</if>
+	<label id="sfuncDigit_END" />
+	<!-- GetDigit_End (sfuncDigit) -->
+	<!-- select : sfuncDigit.digits -->
+	<if cond = "sfuncDigit.digits == '1'" >
+		<play expr="'m.3610'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<assign name="svc_test_loopcount" expr="0" cond="1" />
+		<goto next="{9C754643-8AD1-4934-BC3D-9F7141944F66}" />
+		<label id="{9C754643-8AD1-4934-BC3D-9F7141944F66}" />
+		<assign name="svc_test_loopcount" expr="svc_test_loopcount+1" cond="1" />
+		<assign name="svc_test_loopcount" expr="svc_test_loopcount+1" cond="1" />
+		<goto next="{9C754643-8AD1-4934-BC3D-9F7141944F66}" />
+	<elseif cond = "sfuncDigit.digits == '2'" />
+		<play expr="'m.3620'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<assign name="valueA" expr="1000" cond="1" />
+		<assign name="valueB" expr="0" cond="1" />
+	<elseif cond = "sfuncDigit.digits == '3'" />
+		<play expr="'m.3630'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{2C3A5CA7-2345-4ACD-8697-528A872DC501}" />
+		<label id="{2C3A5CA7-2345-4ACD-8697-528A872DC501}" />
+		<assign name="svc_test_loopcount" expr="0" cond="1" />
+		<play expr="'m.36301'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{2C3A5CA7-2345-4ACD-8697-528A872DC501}" />
+	<elseif cond = "sfuncDigit.digits == '4'" />
+		<play expr="'m.3640'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (dymenuDigit) -->
+		<if cond="1 == 0" >
+			<goto next="dymenuDigit_END" />
+		</if>
+		<assign name="dymenuDigit_cnt" expr="0" cond="1" />
+		<label id="dymenuDigit_START" />
+		<play expr="'m.36401'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="dymenuDigit" length="1" dtmfmask="#|*" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+		<assign name="dymenuDigit_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<if cond="dymenuDigit.digits == '#'" >
+				<goto next="dymenuDigit_END" />
+			<elseif cond="dymenuDigit.digits == '*'" />
+				<goto next="dymenuDigit_END" />
+			<else />
+				<if cond="dymenuDigit_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<elseif cond="dymenuDigit_DtmfValue == _SLEE_FAILED_" />
+			<if cond="dymenuDigit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="dymenuDigit_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="dymenuDigit_cnt" expr="dymenuDigit_cnt+1" cond="1" />
+		<if cond="dymenuDigit_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="dymenuDigit.digits == '' && session.command.term_digit == ''" >
+				<goto next="dymenuDigit_START" />
+			<else />
+				<goto next="dymenuDigit_START" />
+			</if>
+		</if>
+		<label id="dymenuDigit_END" />
+		<!-- GetDigit_End (dymenuDigit) -->
+		<!-- dymenuDigit.digits == '#' -->
+		<if cond="dymenuDigit.digits == '#'" >
+			<menuopt dtmfmask="1/11,2/12,3/13,4/14,5/15,6/16,7/17,8/18,9/19,*/361,#/361" choicement="'m.36402'" topkey="''" upkey="''" topmenu="" upmenu="" timeout="''" intertimeout="'5'" retrycount="''" timeoutment="" inputerrment="" retryerrment="" cleardigit="'1'" dtmflength="'1'" cond="1" />
+			<goto next="{29A12504-D483-4196-A3DC-7B85C0F49847}" />
+			<label id="{29A12504-D483-4196-A3DC-7B85C0F49847}" />
+			<menureturn value="1" />
+		<else /><!-- dymenuDigit.digits == '#' -->
+			<menuopt dtmfmask="1/2,2/21,3/3,4/31,5/32,6/33,7/34,8/35,9/36,*/361,#/361" choicement="'m.36403'" topkey="''" upkey="''" topmenu="" upmenu="" timeout="''" intertimeout="'5'" retrycount="''" timeoutment="" inputerrment="" retryerrment="" cleardigit="'1'" dtmflength="'1'" cond="1" />
+			<goto next="{29A12504-D483-4196-A3DC-7B85C0F49847}" />
+		</if><!-- dymenuDigit.digits == '#' -->
+	<else />
+	</if>	
+	<!-- select : sfuncDigit.digits -->
+</scenariodef>

@@ -1,0 +1,51 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.idr pid(19137) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:08:32.770210[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+16:08:32.770238[44m|INF|[0mIVRDriver Initialize success.
+16:08:32.770251[44m|INF|[0mOwnerName     : CBA.ISVR
+16:08:32.770264[44m|INF|[0mOwnerId       : 1001
+16:08:32.770276[44m|INF|[0mSvcAppName    : IVR5
+16:08:32.770290[44m|INF|[0mSvcDriverName : IVR1
+16:08:32.770311[44m|INF|[0mRemoteIp      : 10.1.23.3
+16:08:32.770332[44m|INF|[0mRemotePort    : 2020
+16:08:32.770345[44m|INF|[0mLogPath       : ../log/cba.idrv/
+16:08:32.770361[44m|INF|[0mLogLinkPath   : ../log/
+16:08:32.770373[44m|INF|[0mLogLevel      : 3
+16:08:32.770383[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+16:08:32.770394[44m|INF|[0m
+
+16:08:37.775544[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:08:45.780138[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:08:53.783867[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:09:01.788796[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:09:09.793323[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:09:17.797733[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:09:25.802531[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:09:33.807654[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:09:41.812558[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:09:49.817647[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:09:57.822436[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:10:05.827324[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:10:13.832368[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:10:21.837081[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:10:29.842007[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:10:37.846638[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:10:45.851689[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:10:53.856761[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:11:01.861871[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:11:09.862910[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:11:17.868100[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:11:25.873287[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:11:33.873947[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:11:41.878103[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:11:49.883108[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:11:57.888249[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:12:05.893328[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:12:13.898387[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:12:21.903618[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:12:29.908276[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:12:37.910671[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020
+16:12:45.915626[41m|ERR|[0mConnection failure. remote_ip:10.1.23.3, remote_port:2020

@@ -1,0 +1,8 @@
+<scenariodef id="GETCHANNEL.MSF" iparam="" ioparam="" >
+	<play expr="'m.11'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<play expr="'vp.111'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+	<getchannel name="getchannel" range="2" userdata="''" />
+	<play expr="'vp.111'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+	<play expr="getchannel.otherchannel" cleardigit="0" type="MentID" wait="0" async="0" cond="1" />
+	<play expr="'vp.111'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+</scenariodef>

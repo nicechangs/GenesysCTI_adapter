@@ -1,0 +1,113 @@
+<scenariodef id="PACKET.MSF" iparam="" ioparam="" >
+	<play expr="'m.32'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (packetDigits) -->
+	<if cond="1 == 0" >
+		<goto next="packetDigits_END" />
+	</if>
+	<assign name="packetDigits_cnt" expr="0" cond="1" />
+	<label id="packetDigits_START" />
+	<play expr="'m.320'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="packetDigits" length="1" dtmfmask="1|2|3|4" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="packetDigits_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="packetDigits.digits == '1'" >
+			<goto next="packetDigits_END" />
+		<elseif cond="packetDigits.digits == '2'" />
+			<goto next="packetDigits_END" />
+		<elseif cond="packetDigits.digits == '3'" />
+			<goto next="packetDigits_END" />
+		<elseif cond="packetDigits.digits == '4'" />
+			<goto next="packetDigits_END" />
+		<else />
+			<if cond="packetDigits_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="packetDigits_DtmfValue == _SLEE_FAILED_" />
+		<if cond="packetDigits_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="packetDigits_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="packetDigits_cnt" expr="packetDigits_cnt+1" cond="1" />
+	<if cond="packetDigits_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="packetDigits.digits == '' && session.command.term_digit == ''" >
+			<goto next="packetDigits_START" />
+		<else />
+			<goto next="packetDigits_START" />
+		</if>
+	</if>
+	<label id="packetDigits_END" />
+	<!-- GetDigit_End (packetDigits) -->
+	<!-- select : packetDigits.digits -->
+	<if cond = "packetDigits.digits == '1'" >
+		<play expr="'m.321'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<packet name="pktTest" command="PKT_TEST" timeout="5" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.TO.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.TO.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.TO.Type" expr="'A'" cond="1" />
+			<assign name="pktTest.TO.ANI" expr="session.call.ANI" cond="1" />
+			<assign name="pktTest.TO.DNIS" expr="session.call.DNIS" cond="1" />
+			<result/>
+		</packet>
+		<goto next="{EDCF5D01-8F43-4A23-A666-291A79D79765}" />
+		<label id="{EDCF5D01-8F43-4A23-A666-291A79D79765}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "packetDigits.digits == '2'" />
+		<play expr="'m.322'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<packet name="pktTest" command="PKT_TEST" timeout="20" destination="2" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.TO.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.TO.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.TO.Type" expr="'B'" cond="1" />
+			<assign name="pktTest.TO.ANI" expr="session.call.ANI" cond="1" />
+			<assign name="pktTest.TO.DNIS" expr="session.call.DNIS" cond="1" />
+			<result/>
+		</packet>
+		<goto next="{EDCF5D01-8F43-4A23-A666-291A79D79765}" />
+	<elseif cond = "packetDigits.digits == '3'" />
+		<play expr="'m.323'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<packet name="pktTest" command="PKT_TEST_2" timeout="5" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.TO.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.TO.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.TO.Type" expr="'C'" cond="1" />
+			<assign name="pktTest.TO.ANI" expr="session.call.ANI" cond="1" />
+			<assign name="pktTest.TO.DNIS" expr="session.call.DNIS" cond="1" />
+			<result/>
+		</packet>
+		<goto next="{EDCF5D01-8F43-4A23-A666-291A79D79765}" />
+	<elseif cond = "packetDigits.digits == '4'" />
+		<play expr="'m.324'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<packet name="pktTest" command="PKT_TEST" timeout="2" destination="3" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.TO.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.TO.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.TO.Type" expr="'D'" cond="1" />
+			<assign name="pktTest.TO.ANI" expr="session.call.ANI" cond="1" />
+			<assign name="pktTest.TO.DNIS" expr="session.call.DNIS" cond="1" />
+			<result/>
+		</packet>
+		<goto next="{EDCF5D01-8F43-4A23-A666-291A79D79765}" />
+	<elseif cond = "packetDigits.digits == '5'" />
+		<play expr="'m.325'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<play expr="'packetBGM'" cleardigit="1" type="mentid" async="1" wait="1" cond="1" />
+		<packet name="pktTest" command="PKT_TEST" timeout="5" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="'packetBGM'" >
+			<assign name="pktTest.TO.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.TO.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.TO.Type" expr="'E'" cond="1" />
+			<assign name="pktTest.TO.ANI" expr="session.call.ANI" cond="1" />
+			<assign name="pktTest.TO.DNIS" expr="session.call.DNIS" cond="1" />
+			<result/>
+		</packet>
+		<abort lineno="session.sys.channel" checkresult="0" />
+		<goto next="{EDCF5D01-8F43-4A23-A666-291A79D79765}" />
+	<else />
+	</if>	
+	<!-- select : packetDigits.digits -->
+</scenariodef>

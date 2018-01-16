@@ -1,0 +1,399 @@
+<scenariodef id="cti.msfx" iparam="" ioparam="" >
+	<play expr="'m.33'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+	<!-- GetDigit_Start(citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5) -->
+	<if cond="1 == 0" >
+		<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+	</if>
+	<assign name="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_cnt" expr="0" cond="1" />
+	<label id="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_START" />
+	<play expr="'m.330'" cleardigit="0" type="MentID" country="410" abandon="0" wait="0" cond="1" />
+	<getdigit name="citDigits" length="1" dtmfmask="1|2|3|4|5|6|7|8|9" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+	<assign name="citDigits_DtmfValue" expr="session.command.result" cond="1" />
+	<tracking ttype="0" itype="1" id="'trk_02'" value1="'33Tracking'" value2="" flag="0" encrypt="0" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="citDigits.digits == '1'" >
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+		<elseif cond="citDigits.digits == '2'" />
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+		<elseif cond="citDigits.digits == '3'" />
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+		<elseif cond="citDigits.digits == '4'" />
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+		<elseif cond="citDigits.digits == '5'" />
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+		<elseif cond="citDigits.digits == '6'" />
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+		<elseif cond="citDigits.digits == '7'" />
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+		<elseif cond="citDigits.digits == '8'" />
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+		<elseif cond="citDigits.digits == '9'" />
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+		<else />
+			<if cond="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="citDigits_DtmfValue == _SLEE_FAILED_" />
+		<if cond="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_cnt" expr="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_cnt+1" cond="1" />
+	<if cond="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<else />
+		<if cond="citDigits.digits == '' && session.command.term_digit == ''" >
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_START" />
+		<else />
+			<goto next="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_START" />
+		</if>
+	</if>
+	<label id="citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5_END" />
+	<!-- GetDigit_End(citDigits_8FD2805B_DA4C_44BB_A246_284A496E2BB5) -->
+	<!-- select : citDigits.digits -->
+	<if cond = "citDigits.digits == '1'" >
+		<play expr="'m.331'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<cticall name="icCallInfo" service="'IPRON_IC'" command="icCallInfo" timeout="3" agtflag="1" agttype="2" switchcenter="0" icnt="2" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" ocnt="3" oparam0="ani" oparam1="dnis" oparam2="attach" cond="1" />
+		<goto next="{BD58EB00-DC1E-4768-8DFD-3D31499269A8}" />
+		<label id="{BD58EB00-DC1E-4768-8DFD-3D31499269A8}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<goto next="{64685957-B0C2-4C99-ABE1-9AE74100B57C}" />
+		<label id="{64685957-B0C2-4C99-ABE1-9AE74100B57C}" />
+		<disconnect />
+	<elseif cond = "citDigits.digits == '2'" />
+		<play expr="'m.332'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<!-- GetDigit_Start(queueID1_22208BB3_364E_474D_A89A_D48287ACB59E) -->
+		<if cond="1 == 0" >
+			<goto next="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_END" />
+		</if>
+		<assign name="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_cnt" expr="0" cond="1" />
+		<label id="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_START" />
+		<play expr="'m.3320'" cleardigit="0" type="MentID" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="queueID1" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="queueID1_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_END" />
+		<elseif cond="queueID1_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_END" />
+			<else />
+				<if cond="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_cnt" expr="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_cnt+1" cond="1" />
+		<if cond="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="queueID1.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_START" />
+			<else />
+				<goto next="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_START" />
+			</if>
+		</if>
+		<label id="queueID1_22208BB3_364E_474D_A89A_D48287ACB59E_END" />
+		<!-- GetDigit_End(queueID1_22208BB3_364E_474D_A89A_D48287ACB59E) -->
+		<goto next="{64685957-B0C2-4C99-ABE1-9AE74100B57C}" />
+	<elseif cond = "citDigits.digits == '3'" />
+		<play expr="'m.333'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<goto next="{FB6D177F-3F1A-4F91-973E-1EC5CFD68719}" />
+		<label id="{FB6D177F-3F1A-4F91-973E-1EC5CFD68719}" />
+		<cticall name="ctiCall2" service="'IPRON_IC'" command="icNotifyStatus" timeout="20" agtflag="1" agttype="1" switchcenter="0" icnt="3" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="event" ivalue2="'userevent'" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{BD58EB00-DC1E-4768-8DFD-3D31499269A8}" />
+	<elseif cond = "citDigits.digits == '4'" />
+		<play expr="'m.334'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<!-- GetDigit_Start(queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E) -->
+		<if cond="1 == 0" >
+			<goto next="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_END" />
+		</if>
+		<assign name="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_cnt" expr="0" cond="1" />
+		<label id="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_START" />
+		<play expr="'m.3320'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="queueID7" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="queueID7_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_END" />
+		<elseif cond="queueID7_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<else />
+			<if cond="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_cnt" expr="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_cnt+1" cond="1" />
+		<if cond="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="queueID7.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_START" />
+			<else />
+				<goto next="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_START" />
+			</if>
+		</if>
+		<label id="queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E_END" />
+		<!-- GetDigit_End(queueID7_6DEE44C4_5394_4EEB_9B31_1948D4B8F96E) -->
+		<!-- GetDigit_Start(queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03) -->
+		<if cond="1 == 0" >
+			<goto next="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_END" />
+		</if>
+		<assign name="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_cnt" expr="0" cond="1" />
+		<label id="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_START" />
+		<play expr="'m.3340'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="queueID3" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="queueID3_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_END" />
+		<elseif cond="queueID3_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_END" />
+			<else />
+				<if cond="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_cnt" expr="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_cnt+1" cond="1" />
+		<if cond="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="queueID3.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_START" />
+			<else />
+				<goto next="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_START" />
+			</if>
+		</if>
+		<label id="queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03_END" />
+		<!-- GetDigit_End(queueID3_49042009_6E48_4D2C_AAE1_AE193E1BEC03) -->
+		<cticall name="ctiCall3" service="'IPRON_IC'" command="icSingleTR" timeout="5" agtflag="1" agttype="1" switchcenter="0" icnt="12" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="queueID7.digits" iparam3="skill_level" ivalue3="''" iparam4="priority" ivalue4="''" iparam5="relation_agent_dn" ivalue5="$queueID3.digits" iparam6="relation_agent_id" ivalue6="''" iparam7="relation_method" ivalue7="''" iparam8="route_method" ivalue8="''" iparam9="route_skill_id" ivalue9="''" iparam10="route_group_id" ivalue10="''" iparam11="UEI3" ivalue11="'ir ' & session.call.trunkid & '*' & session.call.physicalline" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{BD58EB00-DC1E-4768-8DFD-3D31499269A8}" />
+	<elseif cond = "citDigits.digits == '5'" />
+		<play expr="'m.335'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<play expr="1" cleardigit="0" type="Number" country="704" wait="0" async="0" cond="1" />
+		<goto next="{8271357F-573D-4FB2-BE40-9A1387A87307}" />
+		<label id="{8271357F-573D-4FB2-BE40-9A1387A87307}" />
+		<cticall name="icScriptResult" service="'ICM'" command="icScriptResult" timeout="300" agtflag="0" agttype="" switchcenter="0" icnt="7" iparam0="sRequest" ivalue0="'icScriptResult'" iparam1="te" ivalue1="session.call.trunkid" iparam2="chan" ivalue2="session.call.physicalline" iparam3="InvokeID" ivalue3="icNewCall.InvokeID" iparam4="DID" ivalue4="testdid" iparam5="SeqNo" ivalue5="icNewCall.SeqNo" iparam6="FLAG" ivalue6="'0'" ocnt="4" oparam0="Label" oparam1="SeqNo" oparam2="sResult" oparam3="retcode" cond="1" />
+		<goto next="{4F6E53E7-82F1-4637-BAFB-A5A067B66BDE}" />
+		<!-- icScriptResult.retcode == '1' -->
+		<label id="{4F6E53E7-82F1-4637-BAFB-A5A067B66BDE}" />
+		<if cond="icScriptResult.retcode == '1'" >
+			<play expr="'m.36'" cleardigit="0" type="MentID" country="410" wait="0" async="1" cond="1" />
+			<cticall name="icScriptResult" service="'ICM'" command="icScriptResult" timeout="300" agtflag="0" agttype="" switchcenter="0" icnt="7" iparam0="sRequest" ivalue0="'icScriptResult'" iparam1="te" ivalue1="session.call.trunkid" iparam2="chan" ivalue2="session.call.physicalline" iparam3="InvokeID" ivalue3="icNewDialogue.InvokeID" iparam4="DID" ivalue4="testdid" iparam5="SeqNo" ivalue5="icNewDialogue.SeqNo" iparam6="FLAG" ivalue6="'1'" ocnt="4" oparam0="Label" oparam1="SeqNo" oparam2="sResult" oparam3="retcode" cond="1" />
+			<!-- icScriptResult.sResult == '1' -->
+			<if cond="icScriptResult.sResult == '1'" >
+				<abort lineno="session.call.channel" Media="1" checkresult="1" />
+				<transfer name="icTransfer2" to="icScriptResult.Label" timeout="5" agtflag="0" agttype="" switchcenter="0" />
+				<cticall name="icEventReport" service="'ICM'" command="icEventReport" timeout="1" agtflag="0" agttype="" switchcenter="0" icnt="6" iparam0="sRequest" ivalue0="'icEventReport'" iparam1="te" ivalue1="session.call.trunkid" iparam2="chan" ivalue2="session.call.physicalline" iparam3="EventID" ivalue3="'4'" iparam4="DID" ivalue4="testdid" iparam5="SeqNo" ivalue5="icScriptResult.SeqNo" ocnt="2" oparam0="Label" oparam1="SeqNo" cond="1" />
+				<cticall name="icEventReport" service="'ICM'" command="icEventReport" timeout="1" agtflag="0" agttype="" switchcenter="0" icnt="6" iparam0="sRequest" ivalue0="'icEventReport'" iparam1="te" ivalue1="session.call.trunkid" iparam2="chan" ivalue2="session.call.physicalline" iparam3="EventID" ivalue3="'6'" iparam4="DID" ivalue4="testdid" iparam5="SeqNo" ivalue5="icScriptResult.SeqNo +1" ocnt="2" oparam0="Label" oparam1="SeqNo" cond="1" />
+			<else /><!-- icScriptResult.sResult == '1' -->
+				<abort lineno="session.call.channel" Media="1" checkresult="1" />
+				<play expr="'disconnect'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+				<goto next="{64685957-B0C2-4C99-ABE1-9AE74100B57C}" />
+			</if><!-- icScriptResult.sResult == '1' -->
+		<else /><!-- icScriptResult.retcode == '1' -->
+			<!-- icScriptResult.retcode == '2' -->
+			<if cond="icScriptResult.retcode == '2'" >
+				<transfer name="icTransfer2" to="icScriptResult.Label" timeout="5" agtflag="0" agttype="" switchcenter="0" />
+			<else /><!-- icScriptResult.retcode == '2' -->
+				<play expr="'m.36'" cleardigit="0" type="MentID" country="410" wait="0" async="1" cond="1" />
+			</if><!-- icScriptResult.retcode == '2' -->
+		</if><!-- icScriptResult.retcode == '1' -->
+	<elseif cond = "citDigits.digits == '6'" />
+		<play expr="'m.336'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<!-- GetDigit_Start(queueID4_631A1412_C854_4B95_B616_D90019297EBA) -->
+		<if cond="1 == 0" >
+			<goto next="queueID4_631A1412_C854_4B95_B616_D90019297EBA_END" />
+		</if>
+		<assign name="queueID4_631A1412_C854_4B95_B616_D90019297EBA_cnt" expr="0" cond="1" />
+		<label id="queueID4_631A1412_C854_4B95_B616_D90019297EBA_START" />
+		<play expr="'m.3360'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="queueID4" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="queueID4_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID4_631A1412_C854_4B95_B616_D90019297EBA_END" />
+		<elseif cond="queueID4_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID4_631A1412_C854_4B95_B616_D90019297EBA_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID4_631A1412_C854_4B95_B616_D90019297EBA_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID4_631A1412_C854_4B95_B616_D90019297EBA_END" />
+			<else />
+				<if cond="queueID4_631A1412_C854_4B95_B616_D90019297EBA_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID4_631A1412_C854_4B95_B616_D90019297EBA_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID4_631A1412_C854_4B95_B616_D90019297EBA_cnt" expr="queueID4_631A1412_C854_4B95_B616_D90019297EBA_cnt+1" cond="1" />
+		<if cond="queueID4_631A1412_C854_4B95_B616_D90019297EBA_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="queueID4.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID4_631A1412_C854_4B95_B616_D90019297EBA_START" />
+			<else />
+				<goto next="queueID4_631A1412_C854_4B95_B616_D90019297EBA_START" />
+			</if>
+		</if>
+		<label id="queueID4_631A1412_C854_4B95_B616_D90019297EBA_END" />
+		<!-- GetDigit_End(queueID4_631A1412_C854_4B95_B616_D90019297EBA) -->
+		<cticall name="ctiCall5" service="'IPRON_IC'" command="icSendUEvt" timeout="5" agtflag="1" agttype="1" switchcenter="0" icnt="6" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="agent_id" ivalue2="''" iparam3="tenant_name" ivalue3="''" iparam4="dest_agent_id" ivalue4="''" iparam5="UEI4" ivalue5="'ir ' & session.call.trunkid & '*' & session.call.physicalline & 'MSG'" ocnt="1" oparam0="ctiResult" cond="1" />
+		<goto next="{BD58EB00-DC1E-4768-8DFD-3D31499269A8}" />
+	<elseif cond = "citDigits.digits == '7'" />
+		<play expr="'m.337'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<cticall name="icRouteRequest" service="'ICM'" command="icRouteRequest" timeout="3" agtflag="0" agttype="" switchcenter="0" icnt="6" iparam0="sRequest" ivalue0="'icRouteRequest'" iparam1="te" ivalue1="session.call.trunkid" iparam2="chan" ivalue2="session.call.physicalline" iparam3="CrossRefID" ivalue3="session.sys.trunkid & session.sys.channel" iparam4="CallID" ivalue4="session.sys.trunkid & session.sys.channel & session.sys.physicalline " iparam5="ANI" ivalue5="session.call.ani" ocnt="2" oparam0="Label" oparam1="sResult" cond="1" />
+		<!-- icRouteRequest.sResult == '' -->
+		<if cond="icRouteRequest.sResult == ''" >
+			<cticall name="icRouteEndEvent" service="'ICM'" command="icRouteEndEvent" timeout="3" agtflag="0" agttype="" switchcenter="0" icnt="4" iparam0="sRequest" ivalue0="'icRouteEndEvent'" iparam1="te" ivalue1="session.call.trunkid" iparam2="chan" ivalue2="session.call.physicalline" iparam3="CrossRefID" ivalue3="session.sys.trunkid & session.sys.channel" ocnt="1" oparam0="Label" cond="1" />
+			<goto next="{BD58EB00-DC1E-4768-8DFD-3D31499269A8}" />
+		<else /><!-- icRouteRequest.sResult == '' -->
+			<!-- icRouteRequest.sResult == '1' -->
+			<if cond="icRouteRequest.sResult == '1'" >
+				<transfer name="tTransfer" to="icRouteRequest.Label" timeout="10" agtflag="0" agttype="" switchcenter="0" />
+				<goto next="{BD58EB00-DC1E-4768-8DFD-3D31499269A8}" />
+			<else /><!-- icRouteRequest.sResult == '1' -->
+				<goto next="{BD58EB00-DC1E-4768-8DFD-3D31499269A8}" />
+			</if><!-- icRouteRequest.sResult == '1' -->
+		</if><!-- icRouteRequest.sResult == '' -->
+	<elseif cond = "citDigits.digits == '8'" />
+		<play expr="'m.338'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<!-- GetDigit_Start(queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8) -->
+		<if cond="1 == 0" >
+			<goto next="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_END" />
+		</if>
+		<assign name="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_cnt" expr="0" cond="1" />
+		<label id="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_START" />
+		<play expr="'m.3380'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="queueID6" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="queueID6_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_END" />
+		<elseif cond="queueID6_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_END" />
+			<else />
+				<if cond="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_cnt" expr="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_cnt+1" cond="1" />
+		<if cond="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="queueID6.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_START" />
+			<else />
+				<goto next="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_START" />
+			</if>
+		</if>
+		<label id="queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8_END" />
+		<!-- GetDigit_End(queueID6_F9F66E1A_06AE_4041_BB50_5632B0D98BE8) -->
+		<cticall name="icQueueState" service="'IPRON_IC'" command="icQueueState" timeout="3" agtflag="1" agttype="1" switchcenter="0" icnt="4" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="tenant_name" ivalue2="'Å×³ÍÆ®(±âº»)'" iparam3="queue_dn" ivalue3="$queueID6.digits" ocnt="7" oparam0="result" oparam1="reason" oparam2="wait_count" oparam3="all_agent_count" oparam4="ready_agent_count" oparam5="wait_time" oparam6="max_wait_time" cond="1" />
+		<goto next="{BD58EB00-DC1E-4768-8DFD-3D31499269A8}" />
+	<elseif cond = "citDigits.digits == '9'" />
+		<play expr="'m.338'" cleardigit="0" type="MentID" country="410" wait="0" async="0" cond="1" />
+		<!-- GetDigit_Start(queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03) -->
+		<if cond="1 == 0" >
+			<goto next="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_END" />
+		</if>
+		<assign name="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_cnt" expr="0" cond="1" />
+		<label id="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_START" />
+		<play expr="'m.3320'" cleardigit="0" type="MentID" country="410" abandon="0" wait="0" cond="1" />
+		<getdigit name="queueID1" length="4" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+		<assign name="queueID1_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_END" />
+		<elseif cond="queueID1_DtmfValue == _SLEE_FAILED_" />
+			<if cond="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_END" />
+			<else />
+				<if cond="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_cnt <= 3 - 1" >
+					<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_cnt" expr="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_cnt+1" cond="1" />
+		<if cond="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		<else />
+			<if cond="queueID1.digits == '' && session.command.term_digit == ''" >
+				<goto next="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_START" />
+			<else />
+				<goto next="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_START" />
+			</if>
+		</if>
+		<label id="queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03_END" />
+		<!-- GetDigit_End(queueID1_BEDEFDA3_5F9F_4F69_96F6_4625D7F60A03) -->
+		<cticall name="g_icMCSReRoute" service="'IPRON_IC'" command="icMCSReRoute" timeout="3" agtflag="1" agttype="2" switchcenter="0" icnt="5" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="dest_dn" ivalue2="queueID1.digits" iparam3="calling_dn" ivalue3="queueID1.digits" iparam4="fail_route_dn" ivalue4="'15882000'" ocnt="3" oparam0="ani" oparam1="dnis" oparam2="attach" cond="1" />
+		<goto next="{BD58EB00-DC1E-4768-8DFD-3D31499269A8}" />
+	<else />
+	</if>	
+	<!-- select : citDigits.digits -->
+</scenariodef>

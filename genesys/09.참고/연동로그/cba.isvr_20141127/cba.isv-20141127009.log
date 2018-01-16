@@ -1,0 +1,54 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(10800) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+13:28:31.048382[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+13:28:31.048401[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+13:28:31.048413[44m|INF|[0m[PROCESS]
+13:28:31.048425[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+13:28:31.048437[44m|INF|[0mPROCESS_ID           : 1001
+13:28:31.048449[44m|INF|[0m
+
+13:28:31.048459[44m|INF|[0m[SYSTEM]
+13:28:31.048471[44m|INF|[0mSYSTEM_TYPE          : TE
+13:28:31.048483[44m|INF|[0mSYSTEM_ID            : 1000001
+13:28:31.048494[44m|INF|[0m
+
+13:28:31.048504[44m|INF|[0m[CBA_INFO]
+13:28:31.048519[44m|INF|[0mCB_LISTEN_IP         : 
+13:28:31.048540[44m|INF|[0mCB_LISTEN_PORT       : 10002
+13:28:31.048561[44m|INF|[0mLOG_LEVEL            : 3
+13:28:31.048574[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+13:28:31.048593[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+13:28:31.048611[44m|INF|[0mLOG_LINK_PATH        : ../log/
+13:28:31.048622[44m|INF|[0m
+
+13:28:31.048633[44m|INF|[0m[IVR_DRIVER]
+13:28:31.048653[44m|INF|[0mREMOTE_IP            : 10.1.13.100
+13:28:31.048673[44m|INF|[0mREMOTE_PORT          : 3021
+13:28:31.048687[44m|INF|[0mSVC_DRIVER_NAME      : IAdapter1
+13:28:31.048698[44m|INF|[0mSVC_APP_NAME         : IAdapter1
+13:28:31.048710[44m|INF|[0mTE_SYSTEM_ID         : 1
+13:28:31.048722[44m|INF|[0mSTART_CHANNEL        : 0
+13:28:31.048734[44m|INF|[0mSTART_PORT           : 1
+13:28:31.048746[44m|INF|[0mDNIS_COUNT           : 6
+13:28:31.048758[44m|INF|[0mLOG_LEVEL            : 3
+13:28:31.048769[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+13:28:31.048782[44m|INF|[0mLOG_LINK_PATH        : ../log/
+13:28:31.048793[44m|INF|[0m
+
+13:28:31.048804[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+13:28:31.049068[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:00010000, Port:1, TESystemID:1, ChannelNo:0
+13:28:31.049078[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+13:28:31.049154[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:00010001, Port:2, TESystemID:1, ChannelNo:1
+13:28:31.049206[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:00010002, Port:3, TESystemID:1, ChannelNo:2
+13:28:31.049237[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:00010003, Port:4, TESystemID:1, ChannelNo:3
+13:28:31.049264[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:00010004, Port:5, TESystemID:1, ChannelNo:4
+13:28:31.049308[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:00010005, Port:6, TESystemID:1, ChannelNo:5
+13:28:31.049743[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 Initiate success !!
+13:28:31.051677[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11271328310000510002, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:clear, XmlData:<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>IAdapter1_11271328310000510002</CallId><LoginReq Version="4.0" ClientName="IAdapter1" ReportStatus="true" ServerMonitor="clear"></LoginReq></GctiMsg>
+
+13:28:31.090934[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginResp|DriverName:IAdapter1, Command:LoginResp, CallId:IAdapter1_11271328310000510002, IServerVersion:, Result:Success, ConfigOptions:, Status:OK, XmlData:<?xml version='1.0' encoding='ISO-8859-1'?><!DOCTYPE GctiMsg SYSTEM 'IServer.dtd'><GctiMsg><CallId>IAdapter1_11271328310000510002</CallId><LoginResp IServerVer='IVR Server:8.1.001.01' Result='Success' Status='OK'/></GctiMsg>

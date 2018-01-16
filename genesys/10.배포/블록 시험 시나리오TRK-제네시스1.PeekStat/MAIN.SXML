@@ -1,0 +1,8 @@
+<scenariodef id="main" iparam="" ioparam="" >
+	<waitinbound ani="" dnis="" userdata="" />
+	<cticall name="icCallInfo" service="'IPRON_IC'" command="icCallInfo" timeout="2" icnt="2" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" ocnt="3" oparam0="ani" oparam1="dnis" oparam2="attach" cond="1" />
+	<cticall name="icGetEventInfos" service="'IPRON_IC'" command="icGetEventInfos" timeout="3" icnt="3" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" iparam2="fields" ivalue2="'call_id, call_state, media_type, call_char, conn_id'" ocnt="5" oparam0="call_id" oparam1="call_state" oparam2="media_type" oparam3="call_char" oparam4="conn_id" cond="1" />
+	<goto next="{2DBDEB1F-5A92-4AD0-A9BC-CC122376B5DE}" />
+	<label id="{2DBDEB1F-5A92-4AD0-A9BC-CC122376B5DE}" />
+	<menu name="ir_test" rid="0" cond="1" />
+</scenariodef>

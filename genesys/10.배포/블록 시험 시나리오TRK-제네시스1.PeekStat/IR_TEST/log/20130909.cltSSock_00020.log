@@ -1,0 +1,12 @@
+22:39:49 [000001444] |CREATE|SUCC|
+22:39:49 [000001444] |BIND  |SUCC| nPort=20002 |
+22:39:52 [000001444] |RECEIV|SUCC|00077||0007700000280000000070001000001cmd=debug.READY id=280 result=_SLEE_SUCCESS_|
+22:39:52 [000001444] |SENDTO|SUCC| Remote IP=127.0.0.1, Remote Port=20001 ||0008707010001010100010000000001cmd = debug.READY id = 07010001 result = _SCE_SUCCESS_|
+22:39:54 [000001444] |SENDTO|SUCC| Remote IP=127.0.0.1, Remote Port=20001 ||0020807010001010100010000000001cmd = debug.START id = 07010001 channel = 0 result = 0 lr = 98 service = 98 docfile = 'IR_TEST_ALL.SXML' docpath = '' mentpath = 'bridgetec\ment' commonment = 'bridgetec\ment'|
+22:39:54 [000001444] |RECEIV|SUCC|00089||0008900000280000000070002000001cmd=debug.START result=_SLEE_SUCCESS_  channel=0 id=280 |
+22:39:55 [000001444] |SENDTO|SUCC| Remote IP=127.0.0.1, Remote Port=20001 ||0016607010001010100010000000001cmd = debug.cmd.WAITINBOUND id = 07010001 channel = 0 result = 0 item = <waitinbound ani="" dnis="" userdata="" trunkuserdata="" />|
+22:44:55 [000001444] |RECEIV|SUCC|00099||0009900000280000000070003000001cmd=debug.evt.WAITINBOUND channel=0 id=280  result=_SLEE_SUCCESS_ |
+22:44:55 [000001444] |SENDTO|SUCC| Remote IP=127.0.0.1, Remote Port=20001 ||0036607010001010100010000000001cmd = debug.cmd.CTICALL id = 07010001 channel = 0 result = 0 item = <cticall name="icCallInfo" service="'IPRON_IC'" command="icCallInfo" timeout="2" agtflag="0" icnt="2" iparam0="te" ivalue0="session.call.trunkid" iparam1="chan" ivalue1="session.call.physicalline" ocnt="3" oparam0="ani" oparam1="dnis" oparam2="attach" cond="1" />|
+22:44:55 [000001444] |RECEIV|SUCC|00094||0009400000280000000070004000001cmd=debug.evt.CTICALL channel=0 id=280  result=_SLEE_FAILED_ |
+22:44:55 [000001444] |SENDTO|SUCC| Remote IP=127.0.0.1, Remote Port=20001 ||0008507010001010100010000000001cmd = debug.END id = 07010001 channel = 0 result = 0|
+22:44:56 [000001444] |CLOSE |SUCC|

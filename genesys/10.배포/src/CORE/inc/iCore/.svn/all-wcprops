@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore
+END
+NsMapInt.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/NsMapInt.h
+END
+iBase64.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iBase64.h
+END
+iRecSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iRecSet.h
+END
+iMd5.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iMd5.h
+END
+iGrid.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iGrid.h
+END
+NsMapDN.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/NsMapDN.h
+END
+iSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iSocket.h
+END
+iSha1.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iSha1.h
+END
+NsMapStr.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/NsMapStr.h
+END
+iSqlite.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iSqlite.h
+END
+NsObj.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/NsObj.h
+END
+iSha512.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iSha512.h
+END
+NsMapMem.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/NsMapMem.h
+END
+iPoll.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iPoll.h
+END
+iLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iLib.h
+END
+NsArray.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/NsArray.h
+END
+iString.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iString.h
+END
+iAes.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iAes.h
+END
+iSha256.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iSha256.h
+END
+iShMem.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iShMem.h
+END
+iDblQue.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iDblQue.h
+END
+iMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iMap.h
+END
+iBlowFish.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iBlowFish.h
+END
+iTimer.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iTimer.h
+END
+iLog.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iLog.h
+END
+iEvent.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iEvent.h
+END
+iSem.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iSem.h
+END
+iFileLock.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iFileLock.h
+END
+NsDigit.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/NsDigit.h
+END
+iQue.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iQue.h
+END
+iTPool.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iTPool.h
+END
+NsLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/NsLib.h
+END
+iMsgQue.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iMsgQue.h
+END
+iMutex.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iMutex.h
+END
+NsCode.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/NsCode.h
+END
+iThread.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iThread.h
+END
+iObj.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iObj.h
+END
+iAria.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iAria.h
+END
+iIniFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iIniFile.h
+END
+iFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/IPRON/IPRONv32/!svn/ver/2306/trunk/CORE/inc/iCore/iFile.h
+END

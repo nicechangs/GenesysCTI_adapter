@@ -1,0 +1,51 @@
+<scenariodef id="PUSHTONE.MSF" iparam="" ioparam="" >
+	<play expr="'m.22'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<goto next="{5E85F5EF-5C21-44C2-AE75-FFD8E88AD093}" />
+	<label id="{5E85F5EF-5C21-44C2-AE75-FFD8E88AD093}" />
+	<!-- GetDigit_Start (pushtone) -->
+	<if cond="1 == 0" >
+		<goto next="pushtone_END" />
+	</if>
+	<assign name="pushtone_cnt" expr="0" cond="1" />
+	<label id="pushtone_START" />
+	<play expr="'vp.221'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="pushtone" length="20" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+	<assign name="pushtone_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<goto next="pushtone_END" />
+	<elseif cond="pushtone_DtmfValue == _SLEE_FAILED_" />
+		<if cond="pushtone_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+		<if cond="session.command.term_digit == '*'" >
+			<goto next="pushtone_END" />
+		<elseif cond="session.command.term_digit == '#'" />
+			<goto next="pushtone_END" />
+		<else />
+			<if cond="pushtone_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<else />
+		<if cond="pushtone_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="pushtone_cnt" expr="pushtone_cnt+1" cond="1" />
+	<if cond="pushtone_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="pushtone.digits == '' && session.command.term_digit == ''" >
+			<goto next="pushtone_START" />
+		<else />
+			<goto next="pushtone_START" />
+		</if>
+	</if>
+	<label id="pushtone_END" />
+	<!-- GetDigit_End (pushtone) -->
+	<pushtone tone="pushtone.digits" interdelay="20" cond="1" />
+	<goto next="{5E85F5EF-5C21-44C2-AE75-FFD8E88AD093}" />
+</scenariodef>

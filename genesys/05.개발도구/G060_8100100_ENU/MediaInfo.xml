@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE DataCart [
+  <!ELEMENT DataCart  (summary,table*)>
+  <!ELEMENT summary   ( codepage?,title?,subject?,author?,keywords?,comments?,
+                        template,lastauthor?,revnumber,lastprinted?,
+                        createdtm?,lastsavedtm?,pagecount,wordcount,
+                        charcount?,appname?,security?)>
+  <!ELEMENT codepage    (#PCDATA)>
+  <!ELEMENT title       (#PCDATA)>
+  <!ELEMENT subject     (#PCDATA)>
+  <!ELEMENT author      (#PCDATA)>
+  <!ELEMENT keywords    (#PCDATA)>
+  <!ELEMENT comments    (#PCDATA)>
+  <!ELEMENT template    (#PCDATA)>
+  <!ELEMENT lastauthor  (#PCDATA)>
+  <!ELEMENT revnumber   (#PCDATA)>
+  <!ELEMENT lastprinted (#PCDATA)>
+  <!ELEMENT createdtm   (#PCDATA)>
+  <!ELEMENT lastsavedtm (#PCDATA)>
+  <!ELEMENT pagecount   (#PCDATA)>
+  <!ELEMENT wordcount   (#PCDATA)>
+  <!ELEMENT charcount   (#PCDATA)>
+  <!ELEMENT appname     (#PCDATA)>
+  <!ELEMENT security    (#PCDATA)>
+  <!ELEMENT table       (col+,row*)>
+  <!ATTLIST table
+            name        CDATA #REQUIRED>
+  <!ELEMENT col         (#PCDATA)>
+  <!ATTLIST col
+            key         (yes|no) #IMPLIED
+            def         CDATA #IMPLIED>
+  <!ELEMENT row         (td+)>
+  <!ELEMENT td          (#PCDATA)>
+]>
+
+<?xml-stylesheet type="text/xsl" href="MediaInfo.xsl"?>
+
+<DataCart>
+  <summary>
+    <codepage>1252</codepage>
+    <title>Genesys CD Information</title>
+    <subject>Genesys IVR SDK, ENU Release</subject>
+    <author>prodalu</author>
+    <keywords/>
+    <comments/>
+    <template/>
+    <lastauthor>prodalu</lastauthor>
+    <revnumber/>
+    <lastprinted/>
+    <createdtm>01/06/2014 14:18</createdtm>
+    <lastsavedtm>01/06/2014 14:18</lastsavedtm>
+    <pagecount/>
+    <wordcount/>
+    <charcount/>
+    <appname>Production Media Builder 8.1.002.00</appname>
+    <security>4</security>
+  </summary>
+
+  <table name="MediaProperties">
+    <col def="s32" key="yes">Property</col>
+    <col def="s128">Value</col>
+    <row><td>BuildDate</td><td>2014-01-06</td></row>
+    <row><td>Label</td><td>G060_8100100_ENU</td></row>
+    <row><td>LocaleId</td><td>ENU</td></row>
+    <row><td>MediaType</td><td>CD</td></row>
+    <row><td>Name</td><td>Genesys IVR SDK</td></row>
+    <row><td>Nickname</td><td>G060</td></row>
+    <row><td>Version</td><td>8.1.001.00</td></row>
+  </table>
+
+  <table name="InstallationPackage">
+    <col def="i4" key="yes">ID</col>
+    <col def="s16" key="yes">IPNickname</col>
+    <col def="s16" key="yes">Version</col>
+    <col def="s3" key="yes">LocaleId</col>
+    <col def="s32" key="yes">Platform</col>
+    <col def="s256">Name</col>
+    <col def="S10">BuildDate</col>
+    <col def="I4">BuildNumber</col>
+    <col def="S64">ReleaseType</col>
+    <col def="s256">Location</col>
+    <row><td>1</td><td>IVRAPI</td><td>8.1.000.11</td><td>ENU</td><td>aix</td><td>IVR SDK</td><td>2013-12-09</td><td>1</td><td>General</td><td>/IVR_SDK/aix/</td></row>
+    <row><td>2</td><td>IVRAPI</td><td>8.1.000.11</td><td>ENU</td><td>solaris</td><td>IVR SDK</td><td>2013-12-09</td><td>1</td><td>General</td><td>/IVR_SDK/solaris/</td></row>
+    <row><td>3</td><td>IVRAPI</td><td>8.1.000.11</td><td>ENU</td><td>linux</td><td>IVR SDK</td><td>2013-12-09</td><td>1</td><td>General</td><td>/IVR_SDK/linux/</td></row>
+    <row><td>4</td><td>IVRAPI</td><td>8.1.000.11</td><td>ENU</td><td>windows</td><td>IVR SDK</td><td>2013-12-09</td><td>1</td><td>General</td><td>/IVR_SDK/windows/</td></row>
+  </table>
+
+  <table name="AppTemplate">
+    <col def="s16" key="yes">IPNickname</col>
+    <col def="s64" key="yes">File</col>
+    <col def="s256">Location</col>
+    <col def="i4">AppType</col>
+    <col def="S256">Name</col>
+  </table>
+
+  <table name="AppMetadata">
+    <col def="s16" key="yes">IPNickname</col>
+    <col def="s64" key="yes">File</col>
+    <col def="s256">Location</col>
+    <col def="S256">Name</col>
+  </table>
+
+  <table name="Language">
+    <col def="s3" key="yes">LocaleId</col>
+    <col def="s64">Name</col>
+    <row><td>ENU</td><td>English (United States)</td></row>
+  </table>
+
+  <table name="_COLUMNS_INFO">
+    <col def="s32" key="yes">Table</col>
+    <col def="s32" key="yes">Column</col>
+    <col def="I4">MinValue</col>
+    <col def="I4">MaxValue</col>
+    <col def="S32">Category</col>
+    <col def="S0">Set</col>
+    <col def="I4">SortKey</col>
+    <col def="S16">SortOrder</col>
+    <col def="S255">Remarks</col>
+    <row><td>AppMetadata</td><td>File</td><td/><td/><td>FileName</td><td/><td/><td/><td>File name of application metadata template</td></row>
+    <row><td>AppMetadata</td><td>IPNickname</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Nickname of target Installation Package</td></row>
+    <row><td>AppMetadata</td><td>Location</td><td/><td/><td>Text</td><td/><td/><td/><td>Location of the template on CD/DVD</td></row>
+    <row><td>AppMetadata</td><td>Name</td><td/><td/><td>Text</td><td/><td/><td/><td>Short description (display name) of the template</td></row>
+    <row><td>AppTemplate</td><td>AppType</td><td>0</td><td>2147483647</td><td/><td/><td/><td/><td>Configuration Server Application Type</td></row>
+    <row><td>AppTemplate</td><td>File</td><td/><td/><td>FileName</td><td/><td/><td/><td>File name of application template</td></row>
+    <row><td>AppTemplate</td><td>IPNickname</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Nickname of target Installation Package</td></row>
+    <row><td>AppTemplate</td><td>Location</td><td/><td/><td>Text</td><td/><td/><td/><td>Location of the template on CD/DVD</td></row>
+    <row><td>AppTemplate</td><td>Name</td><td/><td/><td>Text</td><td/><td/><td/><td>Short description (display name) of the template</td></row>
+    <row><td>InstallationPackage</td><td>BuildDate</td><td/><td/><td>ISODate</td><td/><td/><td/><td>Build date of Installation Package</td></row>
+    <row><td>InstallationPackage</td><td>BuildNumber</td><td>1</td><td>2147483647</td><td/><td/><td/><td/><td>Build number of Installation Package</td></row>
+    <row><td>InstallationPackage</td><td>ID</td><td>1</td><td>2147483647</td><td/><td/><td>1</td><td>Ascending</td><td>ID of Installation Package in this table</td></row>
+    <row><td>InstallationPackage</td><td>IPNickname</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Nickname of Installation Package</td></row>
+    <row><td>InstallationPackage</td><td>LocaleId</td><td/><td/><td>Text</td><td/><td/><td/><td>LocaleId of Installation Package</td></row>
+    <row><td>InstallationPackage</td><td>Location</td><td/><td/><td>Text</td><td/><td/><td/><td>Location of Installation Package on CD/DVD</td></row>
+    <row><td>InstallationPackage</td><td>Name</td><td/><td/><td>Text</td><td/><td/><td/><td>Display name of Installation Package</td></row>
+    <row><td>InstallationPackage</td><td>Platform</td><td/><td/><td>Text</td><td>unixware;unix;hpux;hpipf;aix;solaris;solarisIntel;tru64UNIX;os2;sco;windows;OS400;OS390;multi;linux;mobile;mac;apple</td><td/><td/><td>Platform supported by Installation Package</td></row>
+    <row><td>InstallationPackage</td><td>ReleaseType</td><td/><td/><td>Text</td><td>General;Restricted;Internal;Hot Fix;Pre-release</td><td/><td/><td>Release type of Installation Package</td></row>
+    <row><td>InstallationPackage</td><td>Version</td><td/><td/><td>Text</td><td/><td/><td/><td>Version of Installation Package</td></row>
+    <row><td>Language</td><td>LocaleId</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Locale Id of the Language</td></row>
+    <row><td>Language</td><td>Name</td><td/><td/><td>Text</td><td/><td/><td/><td>Display name of the Language</td></row>
+    <row><td>MediaProperties</td><td>Property</td><td/><td/><td>Identifier</td><td>Label;Version;Name;Nickname;LocaleId;MediaType;BuildDate</td><td/><td/><td>CD/DVD property name</td></row>
+    <row><td>MediaProperties</td><td>Value</td><td/><td/><td>Text</td><td/><td/><td/><td>CD/DVD property value</td></row>
+    <row><td>_COLUMNS_INFO</td><td>Category</td><td/><td/><td/><td>Text;Identifier;CDATA;ISODateTime;ISODate;ISOTime;GUID;FileName</td><td/><td/><td>Category of string/integer column value</td></row>
+    <row><td>_COLUMNS_INFO</td><td>Column</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Name of target table column</td></row>
+    <row><td>_COLUMNS_INFO</td><td>MaxValue</td><td>-2147483647</td><td>2147483647</td><td/><td/><td/><td/><td>Maximum column value allowed</td></row>
+    <row><td>_COLUMNS_INFO</td><td>MinValue</td><td>-2147483647</td><td>2147483647</td><td/><td/><td/><td/><td>Minimum column value allowed</td></row>
+    <row><td>_COLUMNS_INFO</td><td>Remarks</td><td/><td/><td>Text</td><td/><td/><td/><td>Short description of column</td></row>
+    <row><td>_COLUMNS_INFO</td><td>Set</td><td/><td/><td>Text</td><td/><td/><td/><td>Set of column values that are permitted</td></row>
+    <row><td>_COLUMNS_INFO</td><td>SortKey</td><td>1</td><td/><td/><td/><td/><td/><td>Position of column in sorting of table during DataCart saving. 1 - column is primary sort key, etc.</td></row>
+    <row><td>_COLUMNS_INFO</td><td>SortOrder</td><td/><td/><td/><td>Ascending;Descending</td><td/><td/><td>Order of column values sorting during DataCart saving</td></row>
+    <row><td>_COLUMNS_INFO</td><td>Table</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Name of target table</td></row>
+    <row><td>_FOREIGN_KEYS</td><td>Column</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Name of table column with foreign keys</td></row>
+    <row><td>_FOREIGN_KEYS</td><td>KeyColumn</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Column name to which foreign key connects</td></row>
+    <row><td>_FOREIGN_KEYS</td><td>KeyTable</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Name of table to which foreign key connects</td></row>
+    <row><td>_FOREIGN_KEYS</td><td>Table</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Name of table with foreign keys</td></row>
+    <row><td>_SEQUENCE_GENERATORS</td><td>Name</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Name of sequence generator</td></row>
+    <row><td>_SEQUENCE_GENERATORS</td><td>Value</td><td>0</td><td>2147483647</td><td/><td/><td/><td/><td>Current value of sequence generator</td></row>
+    <row><td>_STORED_PROCEDURES</td><td>Code</td><td/><td/><td>CDATA</td><td/><td/><td/><td>Code (text) of the procedure</td></row>
+    <row><td>_STORED_PROCEDURES</td><td>Language</td><td/><td/><td>Identifier</td><td>perl</td><td/><td/><td>Procedure programing language</td></row>
+    <row><td>_STORED_PROCEDURES</td><td>Name</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Name of stored procedure</td></row>
+    <row><td>_TABLES_INFO</td><td>DisplayName</td><td/><td/><td>Text</td><td/><td/><td/><td>Display name of target table</td></row>
+    <row><td>_TABLES_INFO</td><td>Remarks</td><td/><td/><td>Text</td><td/><td/><td/><td>Short description of target table</td></row>
+    <row><td>_TABLES_INFO</td><td>Table</td><td/><td/><td>Identifier</td><td/><td/><td/><td>Name of target table</td></row>
+    <row><td>_TABLES_INFO</td><td>TableOrder</td><td>1</td><td/><td/><td/><td/><td/><td>Order of table for table sorting during saving DataCart to file</td></row>
+  </table>
+
+  <table name="_FOREIGN_KEYS">
+    <col def="s32" key="yes">Table</col>
+    <col def="s32" key="yes">Column</col>
+    <col def="s32">KeyTable</col>
+    <col def="s32">KeyColumn</col>
+    <row><td>AppMetadata</td><td>IPNickname</td><td>InstallationPackage</td><td>IPNickname</td></row>
+    <row><td>AppTemplate</td><td>IPNickname</td><td>InstallationPackage</td><td>IPNickname</td></row>
+    <row><td>InstallationPackage</td><td>LocaleId</td><td>Language</td><td>LocaleId</td></row>
+  </table>
+
+  <table name="_SEQUENCE_GENERATORS">
+    <col def="s32" key="yes">Name</col>
+    <col def="i4">Value</col>
+    <row><td>InstPackID</td><td>4</td></row>
+  </table>
+
+  <table name="_STORED_PROCEDURES">
+    <col def="s32" key="yes">Name</col>
+    <col def="s32">Language</col>
+    <col def="S0">Code</col>
+  </table>
+
+  <table name="_TABLES_INFO">
+    <col def="s32" key="yes">Table</col>
+    <col def="S80">DisplayName</col>
+    <col def="I4">TableOrder</col>
+    <col def="S512">Remarks</col>
+    <row><td>AppMetadata</td><td>Application Metadata Templates</td><td>4</td><td>Table holds application metadata templates of components on CD/DVD.</td></row>
+    <row><td>AppTemplate</td><td>Application Templates</td><td>3</td><td>Table holds Configuration Server application templates of components on CD/DVD.</td></row>
+    <row><td>InstallationPackage</td><td>Installation Package Properties</td><td>2</td><td>Table holds Common properties of Installation Packages on CD/DVD.</td></row>
+    <row><td>Language</td><td>Language Names</td><td>5</td><td>Table specifies display name of languages by LocaleId.</td></row>
+    <row><td>MediaProperties</td><td>CD/DVD Properties</td><td>1</td><td>Table holds media properties - CD/DVD Name, Version, Language, Build Date, etc.</td></row>
+    <row><td>_COLUMNS_INFO</td><td>Specifications of tables columns</td><td>5</td><td>This is system table of the DataCart database. The table holds specifications of database tables and table columns.</td></row>
+    <row><td>_FOREIGN_KEYS</td><td>Links to foreign keys</td><td/><td>This is system table of the DataCart database. The table holds specifications of foreign keys. Table and Column keys of the table specify tables and table columns with foreign keys. KeyTable and KeyColumn are table and column to which foreign key connects.</td></row>
+    <row><td>_SEQUENCE_GENERATORS</td><td>Sequence generators</td><td>1</td><td>This is system table of the DataCart database. The table holds database sequence generators - generator names and current values.</td></row>
+    <row><td>_STORED_PROCEDURES</td><td>Procedures stored in database</td><td>3</td><td>This is system table of the DataCart database. The table holds procedures stored in the database. Name key of the table specifies procedure name. Language identifies script language of the procedure; and Code is text of the procedure.</td></row>
+    <row><td>_TABLES_INFO</td><td>Table display information</td><td>4</td><td>This is system table of the DataCart database. The table holds display information about DataCart table - table title (Display Name) and table short description (Remarks).</td></row>
+  </table>
+</DataCart>

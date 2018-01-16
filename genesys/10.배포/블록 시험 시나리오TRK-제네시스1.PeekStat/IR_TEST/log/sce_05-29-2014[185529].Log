@@ -1,0 +1,1302 @@
+[./LOG] 18:55:29,35727473 |INF| <<<<<<<<<< Starting ForCus Studio 4.3.3.3 >>>>>>>>>>
+[./LOG] 18:55:29,35727473 |INF| CForcusStudioApp::InitInstance() - AfxSocketInit()
+[./LOG] 18:55:29,35727473 |INF| CForcusStudioApp::InitInstance() - AfxOleInit()
+[./LOG] 18:55:29,35727473 |INF| CForcusStudioApp::InitInstance() - SetRegistryKey "Bridgetec\Forcus\Studio 4.0"
+[./LOG] 18:55:33,35731264 |INF| CForcusStudioApp::InitInstance() - Set Window Look and Feel Style : DotNetStyle
+[./LOG] 18:55:33,35731280 |INF| CMainFrame::OnCreate - SECWorkbook
+[./LOG] 18:55:33,35731280 |INF| CMainFrame::CreateClient
+[./LOG] 18:55:33,35731280 |INF| CMainFrame::OnCreate - m_wndStatusBar.Create
+[./LOG] 18:55:33,35731280 |INF| CMainFrame::OnCreate - pToolBarMgr = m_pControlBarManager
+[./LOG] 18:55:33,35731280 |INF| CMainFrame::OnCreate - pToolBarMgr->LoadToolBarResource
+[./LOG] 18:55:33,35731280 |INF| CMainFrame::OnCreate - pToolBarMgr->AddBitmapResource
+[./LOG] 18:55:33,35731280 |INF| CMainFrame::OnCreate - m_wndToolBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - m_wndZoomBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - m_wndAlignBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - m_wndNudgeBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - m_wndLayoutBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - m_wndCanvasBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - m_wndViewBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - m_wndSearchBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - m_wndSearchBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - m_wndBuildBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - m_wndDebugBar.CreateEx
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - Set Toolbar Style and Caption
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - Set Toolbar Position
+[./LOG] 18:55:33,35731295 |INF| CMainFrame::OnCreate - Create Workspace Widnow
+[./LOG] 18:55:33,35731295 |INF| CWorkspaceWnd::OnCreate
+[./LOG] 18:55:33,35731295 |INF| InitImageLists
+[./LOG] 18:55:33,35731295 |INF| m_childWnd.Create
+[./LOG] 18:55:33,35731295 |INF| m_childWnd.Create
+[./LOG] 18:55:33,35731311 |INF| m_tabProjectPane.SetImageList
+[./LOG] 18:55:33,35731311 |INF| m_tabProjectPane.EnableHeaderCtrl
+[./LOG] 18:55:33,35731311 |INF| m_tabFilePane.Create
+[./LOG] 18:55:33,35731311 |INF| m_tabFilePane.SetImageList
+[./LOG] 18:55:33,35731311 |INF| m_tabFilePane.EnableHeaderCtrl
+[./LOG] 18:55:33,35731311 |INF| m_tabFilePane.Create
+[./LOG] 18:55:33,35731311 |INF| m_tabMenuPane.SetImageList
+[./LOG] 18:55:33,35731311 |INF| m_tabMenuPane.EnableHeaderCtrl
+[./LOG] 18:55:33,35731311 |INF| OUTLOOK_PANE_BK_COLOR
+[./LOG] 18:55:33,35731311 |INF| m_childWnd.AddTab
+[./LOG] 18:55:33,35731311 |INF| m_childWnd.ActivateTab
+[./LOG] 18:55:33,35731327 |INF| m_tabFilePane.EnableRedrawAfterInsert
+[./LOG] 18:55:33,35731327 |INF| CGlobalWnd::OnCreate
+[./LOG] 18:55:33,35731373 |INF| COutputWnd::OnCreate
+[./LOG] 18:55:33,35731654 |INF| CDlgDockItemBar::InitUserItemMenu
+[./LOG] 18:55:33,35731654 |INF| CDlgDockItemBar::LoadAndAppendUserItemMenu
+[./LOG] 18:55:33,35731654 |INF| CDlgDockItemBar::CreateAndGetUserItemDirectory
+[./LOG] 18:55:33,35731873 |INF| CForcusStudioApp::OpenProject ProjectName[D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\IPRON_IR.sspx]
+[./LOG] 18:55:33,35731873 |INF| CForcusStudioApp::ClearMapOpenFileList
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::ReadProjectFile
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario File Count[26]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[AsrTest.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[End.ssfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[Exception.ssfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[Global.ssfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[Main.ssfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[MenuScenarioFile1.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[MenuScenarioFile2.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[ScenarioFile1.ssfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[abort.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[cti.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[digit.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[disconnect.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[disswitch.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[getchannel.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[packet.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[play.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[pushtone.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[record.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[scenario_func.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[scenario_func_dymenu.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[svc_cfgchg.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[svcchg.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[switch.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[transfer.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[tts.msfx]
+[./LOG] 18:55:33,35731873 |INF| CProjectFileDoc::CheckDuplicateScenario Add[userfunction.msfx]
+[./LOG] 18:55:33,35731888 |INF| CProjectFileDoc::GetProjectFileInfo()
+[./LOG] 18:55:33,35731888 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Load!
+
+[./LOG] 18:55:33,35731904 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Load!
+
+[./LOG] 18:55:34,35731935 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:55:34,35731935 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\GLOBAL.ssfx]
+[./LOG] 18:55:34,35732060 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 18:55:34,35732060 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 18:55:34,35732122 |INF| CMySECTreeCtrl::ArrangeItem  Start Sort Time
+[./LOG] 18:55:34,35732216 |INF| CMySECTreeCtrl::ArrangeItem  End Sort Time  Elapsed Time [94/ms|0/s], Total Elapsed Time [94/ms|0/s]
+[./LOG] 18:55:34,35732216 |INF| CMySECTreeCtrl::ArrangeItem  Start Sort Time
+[./LOG] 18:55:34,35732231 |INF| CMySECTreeCtrl::ArrangeItem  End Sort Time  Elapsed Time [15/ms|0/s], Total Elapsed Time [15/ms|0/s]
+[./LOG] 18:55:34,35732231 |INF| CForcusStudioApp::OpenProject Create Item Information Database Proc
+[./LOG] 18:55:34,35732231 |INF| CDBProc::OpenDatabase Item Information Data SQLite Version: 3.6.19
+[./LOG] 18:55:34,35732231 |INF| CDBProc::OpenDatabase DB Name: D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\IPRON_IR.iidx
+[./LOG] 18:55:34,35732294 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Load!
+
+[./LOG] 18:55:34,35732294 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Load!
+
+[./LOG] 18:55:34,35732325 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 18:55:34,35732325 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 18:55:34,35732325 |INF| CForcusStudioApp::MakeItemInformationData
+[./LOG] 18:55:34,35732325 |INF| CForcusStudioApp::MakeItemInformationData Is Not Modified List! Type[TYPE_IID_UPDATE_LOAD_MODIFIED]
+[./LOG] 18:55:34,35732325 |INF| CForcusStudioApp::MakeAutoCompleteData
+[./LOG] 18:55:34,35732325 |INF| CForcusStudioApp::MakeItemInformationData Auto Complete Loading Start! Type[TYPE_AC_UPDATE_ALL]
+[./LOG] 18:55:34,35732325 |INF| CDlg_Bookmark::ReadBookmarkFile
+[./LOG] 18:55:34,35732325 |INF| File not found - D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\IPRON_IR.bmfx
+[./LOG] 18:55:34,35732325 |INF| CDlg_Breakpoint::ReadBreakpointFile
+[./LOG] 18:55:34,35732341 |INF| ThreadMain_MakeACData Beginning
+[./LOG] 18:55:34,35732341 |INF| File not found - D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\IPRON_IR.bpfx
+[./LOG] 18:55:34,35732341 |INF| ThreadAutoSave Beginning
+[./LOG] 18:55:34,35732341 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:55:34,35732434 |INF| CForcusStudioView::OnCreate
+[./LOG] 18:55:34,35732434 |INF| CForcusStudioView::OnCreate  CForcusStudioDoc* pDoc = GetDocument()
+[./LOG] 18:55:34,35732434 |INF| CForcusStudioView::OnCreate  CForcusStudioModel* pModel = pDoc->GetModel()
+[./LOG] 18:55:34,35732434 |INF| CForcusStudioView::OnCreate  GetViewport()->Create(this, NULL)
+[./LOG] 18:55:34,35732434 |INF| CForcusStudioViewport::OnCreate()
+[./LOG] 18:55:34,35732434 |INF| CForcusStudioView::OnCreate  GetViewport()->SetModel(pModel)
+[./LOG] 18:55:34,35732450 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Main.ssfx]
+[./LOG] 18:55:34,35732543 |INF| CForcusStudioView::OnInitialUpdate
+[./LOG] 18:55:34,35732543 |INF| CForcusStudioViewport::OnInitialUpdate
+[./LOG] 18:55:34,35732621 |INF| CForcusStudioApp::DocumentAndModelPropertiesAndFunctionInit
+[./LOG] 18:55:34,35732621 |INF| CForcusStudioApp::ItemMenuValidation Document Name [Main.ssfx]
+[./LOG] 18:55:34,35732621 |INF| CForcusStudioApp::FindOpenFileList  FileName[main.ssfx]
+[./LOG] 18:55:34,35732621 |INF| CForcusStudioApp::AddOpenFileList  FileName[main.ssfx]
+[./LOG] 18:55:37,35735164 |INF| CForcusStudioApp::CreateProgressDlg
+[./LOG] 18:55:37,35735164 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 18:55:37,35735211 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:55:37,35735211 |INF| CForcusStudioDoc::SetACData_Item  Begin
+[./LOG] 18:55:37,35735211 |INF| CDBProc::StartQueryThread
+[./LOG] 18:55:37,35735211 |INF| CDBProc::CreateDBDataStruct QueryType[4] Select, Update, Delete
+[./LOG] 18:55:37,35735211 |INF| ThreadQueryProc Beginning
+[./LOG] 18:55:37,35735211 |INF| CForcusStudioDoc::GetACData_InnerFunction  Auto Complete Data Inner Function
+[./LOG] 18:55:37,35735227 |INF| CForcusStudioDoc::GetACData_SystemConstant  Auto Complete Data System Constant
+[./LOG] 18:55:37,35735227 |INF| CForcusStudioDoc::GetACData_SystemConstantEx  Auto Complete Data System Constant Extend
+[./LOG] 18:55:37,35735227 |INF| CForcusStudioDoc::GetACData_SystemVariable  Auto Complete Data System Variable
+[./LOG] 18:55:38,35735929 |INF| CDBProc::DeleteDBDataStruct QueryType[17] Select, Update, Delete
+[./LOG] 18:55:38,35735929 |INF| ThreadQueryProc Ending
+[./LOG] 18:55:38,35735929 |INF| CForcusStudioDoc::SetACData_Item  End  Elapsed Time [718/ms|0/s], Total Elapsed Time [718/ms|0/s]
+[./LOG] 18:55:38,35735929 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 18:55:38,35735944 |INF| CForcusStudioApp::WorkAfterAutoComplete
+[./LOG] 18:55:38,35735944 |INF| ThreadMain_MakeACData Ending
+[./LOG] 18:55:44,35742543 |INF| CForcusStudioApp::OnProjectSettingEnvironment
+[./LOG] 18:55:44,35742559 |INF| CDlg_Project_Environment::OnInitDialog
+[./LOG] 18:56:11,35769609 |INF| CForcusStudioApp::OnBuildProject
+[./LOG] 18:56:11,35769609 |INF| CForcusStudioApp::OnBuildClean
+[./LOG] 18:56:11,35769656 |INF| Deleting output files for project 'IPRON_IR'
+[./LOG] 18:56:11,35769656 |INF| CForcusStudioDoc::BuildFileAfterSave
+[./LOG] 18:56:11,35769672 |INF| CForcusStudioApp::OnFileSaveProject
+[./LOG] 18:56:11,35769672 |INF| CProjectFileDoc::WriteProjectFile
+[./LOG] 18:56:11,35769672 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 18:56:11,35769672 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 18:56:11,35769672 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 18:56:11,35769672 |INF| CForcusStudioApp::MakeItemInformationData
+[./LOG] 18:56:11,35769672 |INF| CForcusStudioApp::MakeItemInformationData Is Not Save List! Type[TYPE_IID_UPDATE_WITH_BUILD_REBUILD_AFTER_SAVE]
+[./LOG] 18:56:11,35769672 |INF| CForcusStudioApp::BuildAllXML
+[./LOG] 18:56:11,35769718 |INF| --------------------Project: IPRON_IR--------------------
+[./LOG] 18:56:11,35769765 |INF| Compiling...
+[./LOG] 18:56:11,35769781 |INF| CForcusStudioApp::LoadUserScenarioList
+[./LOG] 18:56:11,35769781 |INF| CDlgDockItemBar::CreateAndGetUserItemDirectory
+[./LOG] 18:56:11,35769781 |INF| CForcusStudioApp::Build_SXML Beginning
+[./LOG] 18:56:11,35769781 |INF| CDBProc::StartQueryThread
+[./LOG] 18:56:11,35769781 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:56:11,35769781 |INF| ThreadQueryProc Beginning
+[./LOG] 18:56:11,35769781 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:56:11,35769812 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [31/ms|0/s], Total Elapsed Time [31/ms|0/s]
+[./LOG] 18:56:11,35769812 |INF| CDBProc::DeleteDBDataStruct QueryType[35] Select, Update, Delete
+[./LOG] 18:56:11,35769812 |INF| ThreadQueryProc Ending
+[./LOG] 18:56:11,35769812 |INF| CDBProc::StartQueryThread
+[./LOG] 18:56:11,35769812 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:56:11,35769812 |INF| ThreadQueryProc Beginning
+[./LOG] 18:56:11,35769828 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:56:11,35769828 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [0/ms|0/s], Total Elapsed Time [0/ms|0/s]
+[./LOG] 18:56:11,35769843 |INF| CDBProc::DeleteDBDataStruct QueryType[36] Select, Update, Delete
+[./LOG] 18:56:11,35769843 |INF| ThreadQueryProc Ending
+[./LOG] 18:56:11,35769843 |INF| CDBProc::StartQueryThread
+[./LOG] 18:56:11,35769843 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:56:11,35769843 |INF| ThreadQueryProc Beginning
+[./LOG] 18:56:11,35769843 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:56:11,35769859 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [16/ms|0/s], Total Elapsed Time [16/ms|0/s]
+[./LOG] 18:56:11,35769859 |INF| CDBProc::DeleteDBDataStruct QueryType[36] Select, Update, Delete
+[./LOG] 18:56:11,35769859 |INF| ThreadQueryProc Ending
+[./LOG] 18:56:11,35769859 |INF| CDBProc::StartQueryThread
+[./LOG] 18:56:11,35769859 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:56:11,35769859 |INF| ThreadQueryProc Beginning
+[./LOG] 18:56:11,35769874 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:56:11,35769874 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [0/ms|0/s], Total Elapsed Time [0/ms|0/s]
+[./LOG] 18:56:11,35769874 |INF| CDBProc::DeleteDBDataStruct QueryType[36] Select, Update, Delete
+[./LOG] 18:56:11,35769874 |INF| ThreadQueryProc Ending
+[./LOG] 18:56:11,35769874 |INF| CForcusStudioApp::Build_SXML FileCount[26]
+[./LOG] 18:56:11,35769890 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:11,35769890 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\AsrTest.msfx]
+[./LOG] 18:56:11,35769906 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [AsrTest.msfx]
+[./LOG] 18:56:12,35769952 |INF| AsrTest.msfx
+[./LOG] 18:56:12,35769984 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:12,35770030 |WNG| VarifyProperties : FileName(AsrTest.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:12,35770093 |INFWNG| FileName(AsrTest.msfx) : SymbolName(Play3) : Message(No output link)
+[./LOG] 18:56:12,35770093 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [AsrTest.msfx]
+[./LOG] 18:56:12,35770093 |INF| CForcusStudioApp::Build_SXML  Count[1/26], FileName[AsrTest.msfx]
+[./LOG] 18:56:12,35770108 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:12,35770108 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\End.ssfx]
+[./LOG] 18:56:12,35770108 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [End.ssfx]
+[./LOG] 18:56:12,35770155 |INF| End.ssfx
+[./LOG] 18:56:12,35770171 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:12,35770218 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [End.ssfx]
+[./LOG] 18:56:12,35770218 |INF| CForcusStudioApp::Build_SXML  Count[2/26], FileName[End.ssfx]
+[./LOG] 18:56:12,35770233 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:12,35770233 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Exception.ssfx]
+[./LOG] 18:56:12,35770233 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [Exception.ssfx]
+[./LOG] 18:56:12,35770280 |INF| Exception.ssfx
+[./LOG] 18:56:12,35770280 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [Exception.ssfx]
+[./LOG] 18:56:12,35770280 |INF| CForcusStudioApp::Build_SXML  Count[3/26], FileName[Exception.ssfx]
+[./LOG] 18:56:12,35770280 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:12,35770280 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Global.ssfx]
+[./LOG] 18:56:12,35770296 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [Global.ssfx]
+[./LOG] 18:56:12,35770342 |INF| Global.ssfx
+[./LOG] 18:56:12,35770405 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [Global.ssfx]
+[./LOG] 18:56:12,35770405 |INF| CForcusStudioApp::Build_SXML  Count[4/26], FileName[Global.ssfx]
+[./LOG] 18:56:12,35770405 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:12,35770405 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Main.ssfx]
+[./LOG] 18:56:12,35770420 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [Main.ssfx]
+[./LOG] 18:56:12,35770467 |INF| Main.ssfx
+[./LOG] 18:56:12,35770608 |INFWNG| FileName(Main.ssfx) : SymbolName(MenuCall1) : Message(No output link)
+[./LOG] 18:56:12,35770623 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [Main.ssfx]
+[./LOG] 18:56:12,35770623 |INF| CForcusStudioApp::Build_SXML  Count[5/26], FileName[Main.ssfx]
+[./LOG] 18:56:12,35770623 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:12,35770623 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\MenuScenarioFile1.msfx]
+[./LOG] 18:56:12,35770623 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [MenuScenarioFile1.msfx]
+[./LOG] 18:56:12,35770670 |INF| MenuScenarioFile1.msfx
+[./LOG] 18:56:12,35770748 |INFWNG| FileName(MenuScenarioFile1.msfx) : SymbolName(MenuChange2) : Message(No output link)
+[./LOG] 18:56:12,35770748 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [MenuScenarioFile1.msfx]
+[./LOG] 18:56:12,35770748 |INF| CForcusStudioApp::Build_SXML  Count[6/26], FileName[MenuScenarioFile1.msfx]
+[./LOG] 18:56:12,35770748 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:12,35770748 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\MenuScenarioFile2.msfx]
+[./LOG] 18:56:12,35770764 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [MenuScenarioFile2.msfx]
+[./LOG] 18:56:12,35770810 |INF| MenuScenarioFile2.msfx
+[./LOG] 18:56:12,35770810 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [MenuScenarioFile2.msfx]
+[./LOG] 18:56:12,35770810 |INF| CForcusStudioApp::Build_SXML  Count[7/26], FileName[MenuScenarioFile2.msfx]
+[./LOG] 18:56:12,35770810 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:12,35770810 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\ScenarioFile1.ssfx]
+[./LOG] 18:56:12,35770810 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [ScenarioFile1.ssfx]
+[./LOG] 18:56:12,35770873 |INF| ScenarioFile1.ssfx
+[./LOG] 18:56:12,35770873 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [ScenarioFile1.ssfx]
+[./LOG] 18:56:12,35770873 |INF| CForcusStudioApp::Build_SXML  Count[8/26], FileName[ScenarioFile1.ssfx]
+[./LOG] 18:56:12,35770873 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:12,35770873 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\abort.msfx]
+[./LOG] 18:56:12,35770888 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [abort.msfx]
+[./LOG] 18:56:13,35770935 |INF| abort.msfx
+[./LOG] 18:56:13,35770966 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:13,35771060 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [abort.msfx]
+[./LOG] 18:56:13,35771060 |INF| CForcusStudioApp::Build_SXML  Count[9/26], FileName[abort.msfx]
+[./LOG] 18:56:13,35771060 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:13,35771060 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\cti.msfx]
+[./LOG] 18:56:13,35771091 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [cti.msfx]
+[./LOG] 18:56:13,35771138 |INF| cti.msfx
+[./LOG] 18:56:13,35771169 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:13,35771232 |WNG| VarifyProperties : FileName(cti.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:13,35771731 |INFWNG| FileName(cti.msfx) : SymbolName(CtiCall11) : Message(No output link)
+[./LOG] 18:56:14,35772074 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [cti.msfx]
+[./LOG] 18:56:14,35772074 |INF| CForcusStudioApp::Build_SXML  Count[10/26], FileName[cti.msfx]
+[./LOG] 18:56:14,35772090 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:14,35772090 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\digit.msfx]
+[./LOG] 18:56:14,35772105 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [digit.msfx]
+[./LOG] 18:56:14,35772152 |INF| digit.msfx
+[./LOG] 18:56:14,35772183 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:14,35772230 |WNG| VarifyProperties : FileName(digit.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:14,35772433 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:14,35772604 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [digit.msfx]
+[./LOG] 18:56:14,35772604 |INF| CForcusStudioApp::Build_SXML  Count[11/26], FileName[digit.msfx]
+[./LOG] 18:56:14,35772604 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:14,35772604 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\disconnect.msfx]
+[./LOG] 18:56:14,35772604 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [disconnect.msfx]
+[./LOG] 18:56:14,35772651 |INF| disconnect.msfx
+[./LOG] 18:56:14,35772682 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [disconnect.msfx]
+[./LOG] 18:56:14,35772682 |INF| CForcusStudioApp::Build_SXML  Count[12/26], FileName[disconnect.msfx]
+[./LOG] 18:56:14,35772682 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:14,35772682 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\disswitch.msfx]
+[./LOG] 18:56:14,35772682 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [disswitch.msfx]
+[./LOG] 18:56:14,35772729 |INF| disswitch.msfx
+[./LOG] 18:56:14,35772776 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:14,35772823 |WNG| VarifyProperties : FileName(disswitch.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:14,35772885 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [disswitch.msfx]
+[./LOG] 18:56:14,35772885 |INF| CForcusStudioApp::Build_SXML  Count[13/26], FileName[disswitch.msfx]
+[./LOG] 18:56:14,35772885 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:14,35772885 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\getchannel.msfx]
+[./LOG] 18:56:14,35772901 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [getchannel.msfx]
+[./LOG] 18:56:15,35772948 |INF| getchannel.msfx
+[./LOG] 18:56:15,35772963 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:15,35773026 |INFWNG| FileName(getchannel.msfx) : SymbolName(Play6) : Message(No output link)
+[./LOG] 18:56:15,35773119 |INFWNG| FileName(getchannel.msfx) : SymbolName(WaitEvent3) : Message(No output link)
+[./LOG] 18:56:15,35773119 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [getchannel.msfx]
+[./LOG] 18:56:15,35773119 |INF| CForcusStudioApp::Build_SXML  Count[14/26], FileName[getchannel.msfx]
+[./LOG] 18:56:15,35773119 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:15,35773119 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\packet.msfx]
+[./LOG] 18:56:15,35773135 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [packet.msfx]
+[./LOG] 18:56:15,35773182 |INF| packet.msfx
+[./LOG] 18:56:15,35773213 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:15,35773260 |WNG| VarifyProperties : FileName(packet.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:15,35773587 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [packet.msfx]
+[./LOG] 18:56:15,35773587 |INF| CForcusStudioApp::Build_SXML  Count[15/26], FileName[packet.msfx]
+[./LOG] 18:56:15,35773587 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:15,35773587 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\play.msfx]
+[./LOG] 18:56:15,35773603 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [play.msfx]
+[./LOG] 18:56:15,35773650 |INF| play.msfx
+[./LOG] 18:56:15,35773681 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:15,35773743 |WNG| VarifyProperties : FileName(play.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:15,35773868 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:15,35773915 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [play.msfx]
+[./LOG] 18:56:15,35773915 |INF| CForcusStudioApp::Build_SXML  Count[16/26], FileName[play.msfx]
+[./LOG] 18:56:15,35773915 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:15,35773915 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\pushtone.msfx]
+[./LOG] 18:56:15,35773930 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [pushtone.msfx]
+[./LOG] 18:56:16,35773977 |INF| pushtone.msfx
+[./LOG] 18:56:16,35774008 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [pushtone.msfx]
+[./LOG] 18:56:16,35774008 |INF| CForcusStudioApp::Build_SXML  Count[17/26], FileName[pushtone.msfx]
+[./LOG] 18:56:16,35774024 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:16,35774024 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\record.msfx]
+[./LOG] 18:56:16,35774024 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [record.msfx]
+[./LOG] 18:56:16,35774086 |INF| record.msfx
+[./LOG] 18:56:16,35774118 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:16,35774180 |WNG| VarifyProperties : FileName(record.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:16,35774227 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [record.msfx]
+[./LOG] 18:56:16,35774227 |INF| CForcusStudioApp::Build_SXML  Count[18/26], FileName[record.msfx]
+[./LOG] 18:56:16,35774242 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:16,35774242 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\scenario_func.msfx]
+[./LOG] 18:56:16,35774258 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [scenario_func.msfx]
+[./LOG] 18:56:16,35774320 |INF| scenario_func.msfx
+[./LOG] 18:56:16,35774367 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:16,35774414 |WNG| VarifyProperties : FileName(scenario_func.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:16,35774726 |INFWNG| FileName(scenario_func.msfx) : SymbolName(Assign5) : Message(No output link)
+[./LOG] 18:56:16,35774804 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:16,35774882 |INFWNG| FileName(scenario_func.msfx) : SymbolName(SpeakerVerify1) : Message(No output link)
+[./LOG] 18:56:16,35774882 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:17,35775007 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:17,35775163 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a1} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775225 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a1} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775272 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a2} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775334 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a3} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775397 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a4} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775459 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a5} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775522 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a7} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775584 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a6} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775631 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775693 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775756 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775818 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775865 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:17,35775927 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35775990 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776052 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776099 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776177 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776239 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776286 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776348 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776411 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776473 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776520 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776582 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776645 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776707 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776770 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776832 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:18,35776879 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:19,35776941 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:19,35777004 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:19,35777050 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:19,35777113 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:19,35777175 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:19,35777238 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:19,35777300 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:19,35777362 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:19,35777394 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [scenario_func.msfx]
+[./LOG] 18:56:19,35777394 |INF| CForcusStudioApp::Build_SXML  Count[19/26], FileName[scenario_func.msfx]
+[./LOG] 18:56:19,35777394 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:19,35777394 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\scenario_func_dymenu.msfx]
+[./LOG] 18:56:19,35777394 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [scenario_func_dymenu.msfx]
+[./LOG] 18:56:19,35777456 |INF| scenario_func_dymenu.msfx
+[./LOG] 18:56:19,35777472 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [scenario_func_dymenu.msfx]
+[./LOG] 18:56:19,35777472 |INF| CForcusStudioApp::Build_SXML  Count[20/26], FileName[scenario_func_dymenu.msfx]
+[./LOG] 18:56:19,35777472 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:19,35777472 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\svc_cfgchg.msfx]
+[./LOG] 18:56:19,35777472 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [svc_cfgchg.msfx]
+[./LOG] 18:56:19,35777534 |INF| svc_cfgchg.msfx
+[./LOG] 18:56:19,35777550 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [svc_cfgchg.msfx]
+[./LOG] 18:56:19,35777550 |INF| CForcusStudioApp::Build_SXML  Count[21/26], FileName[svc_cfgchg.msfx]
+[./LOG] 18:56:19,35777550 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:19,35777550 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\svcchg.msfx]
+[./LOG] 18:56:19,35777565 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [svcchg.msfx]
+[./LOG] 18:56:19,35777612 |INF| svcchg.msfx
+[./LOG] 18:56:19,35777674 |INFWNG| FileName(svcchg.msfx) : SymbolName(ChangeService1) : Message(No output link)
+[./LOG] 18:56:19,35777690 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [svcchg.msfx]
+[./LOG] 18:56:19,35777690 |INF| CForcusStudioApp::Build_SXML  Count[22/26], FileName[svcchg.msfx]
+[./LOG] 18:56:19,35777690 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:19,35777690 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\switch.msfx]
+[./LOG] 18:56:19,35777690 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [switch.msfx]
+[./LOG] 18:56:19,35777752 |INF| switch.msfx
+[./LOG] 18:56:19,35777784 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:19,35777830 |WNG| VarifyProperties : FileName(switch.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:19,35777908 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [switch.msfx]
+[./LOG] 18:56:19,35777908 |INF| CForcusStudioApp::Build_SXML  Count[23/26], FileName[switch.msfx]
+[./LOG] 18:56:19,35777924 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:19,35777924 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\transfer.msfx]
+[./LOG] 18:56:19,35777924 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [transfer.msfx]
+[./LOG] 18:56:20,35777971 |INF| transfer.msfx
+[./LOG] 18:56:20,35778018 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:20,35778096 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [transfer.msfx]
+[./LOG] 18:56:20,35778096 |INF| CForcusStudioApp::Build_SXML  Count[24/26], FileName[transfer.msfx]
+[./LOG] 18:56:20,35778096 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:20,35778096 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\tts.msfx]
+[./LOG] 18:56:20,35778127 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [tts.msfx]
+[./LOG] 18:56:20,35778174 |INF| tts.msfx
+[./LOG] 18:56:20,35778236 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:20,35778283 |WNG| VarifyProperties : FileName(tts.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:20,35778314 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:20,35778392 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:20,35778439 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:20,35778860 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [tts.msfx]
+[./LOG] 18:56:20,35778860 |INF| CForcusStudioApp::Build_SXML  Count[25/26], FileName[tts.msfx]
+[./LOG] 18:56:20,35778860 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:20,35778860 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\userfunction.msfx]
+[./LOG] 18:56:20,35778876 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [userfunction.msfx]
+[./LOG] 18:56:21,35778922 |INF| userfunction.msfx
+[./LOG] 18:56:21,35778985 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:21,35779047 |WNG| VarifyProperties : FileName(userfunction.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:21,35779250 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [userfunction.msfx]
+[./LOG] 18:56:21,35779250 |INF| CForcusStudioApp::Build_SXML  Count[26/26], FileName[userfunction.msfx]
+[./LOG] 18:56:21,35779281 |INF| ProjectFileDoc::MakeProject_All_XML
+[./LOG] 18:56:21,35779281 |INF| CProjectFileDoc::WriteProjectXMLFile
+[./LOG] 18:56:21,35779344 |INF| Joining...
+[./LOG] 18:56:21,35779359 |INF| ProjectFileDoc::MakeProject_All_XML  File copied "C:\Program Files\Bridgetec\ForCus\ForCusStudio\scenario\IPRON_IR_ALL.SXML"
+[./LOG] 18:56:21,35779406 |INF|     File copied "C:\Program Files\Bridgetec\ForCus\ForCusStudio\scenario\IPRON_IR_ALL.SXML"
+[./LOG] 18:56:21,35779453 |INF| 
+IPRON_IR_ALL.SXML - 0 error(s), 49 warning(s)
+[./LOG] 18:56:21,35779453 |INF| CForcusStudioApp::EndWorkAfterBuild  Build OK!
+[./LOG] 18:56:22,35780716 |INF| CForcusStudioApp::Build_SXML  Ending
+[./LOG] 18:56:36,35794070 |INF| CDBProc::CloseDatabase Search & Replace
+[./LOG] 18:56:36,35794117 |INF| CDBProc::DeleteDatabase 
+[./LOG] 18:56:36,35794117 |INF| CDBProc::DeleteDatabase Search & Replace
+[./LOG] 18:56:36,35794164 |INF| CDBProc::OpenDatabase Item Information Data SQLite Version: 3.6.19
+[./LOG] 18:56:36,35794164 |INF| CDBProc::OpenDatabase DB Name: D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\IPRON_IR.iidx
+[./LOG] 18:56:36,35794164 |INF| CDBProc::OpenDatabase Recreate! DB Name: D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\IPRON_IR.iidx
+[./LOG] 18:56:36,35794164 |INF| CDBProc::CreateTable execDML("CREATE TABLE SRItem(guid char(42), file varchar(256), name varchar(30), type varchar(20), ftype varchar(10), field varchar(40), data varchar(2048));")
+[./LOG] 18:56:36,35794195 |INF| CForcusStudioApp::MakeItemInformationData
+[./LOG] 18:56:36,35794195 |INF| ThreadMain_MakeIID Beginning
+[./LOG] 18:56:36,35794195 |INF| ThreadMain_MakeIID Core=[4], FileCount=[26], CoreThread=[10]
+[./LOG] 18:56:36,35794195 |INF| CForcusStudioApp::CreateProgressDlg
+[./LOG] 18:56:36,35794195 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 18:56:36,35794211 |INF| ThreadMain_MakeIID APP()->m_saThreadFiles = new CStringArray[10]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distributed  nTIDX[0], FileCount[1], FileSize[2655315]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distributed  nTIDX[1], FileCount[1], FileSize[68900]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distributed  nTIDX[2], FileCount[1], FileSize[73159]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distributed  nTIDX[3], FileCount[1], FileSize[13109]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distributed  nTIDX[4], FileCount[1], FileSize[376095]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distributed  nTIDX[5], FileCount[3], FileSize[598564]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distributed  nTIDX[6], FileCount[3], FileSize[598070]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distributed  nTIDX[7], FileCount[4], FileSize[499052]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distributed  nTIDX[8], FileCount[5], FileSize[848812]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distributed  nTIDX[9], FileCount[6], FileSize[852444]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID  Distribute result  Total[26], Normal[26], NotExist[0], StatError[0]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID APP()->m_hThread = new HANDLE[10]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID APP()->m_dwThreadID = new DWORD[10]
+[./LOG] 18:56:36,35794226 |INF| ThreadMain_MakeIID APP()->m_nWorkCount = new int[10]
+[./LOG] 18:56:36,35794226 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:36,35794226 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:36,35794242 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:36,35794242 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:36,35794242 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:36,35794242 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:36,35794242 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:36,35794257 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:36,35794257 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:36,35794257 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:36,35794257 |INF| CDBProc::BeginTransaction Search & Replace
+[./LOG] 18:56:36,35794257 |INF| CDBProc::StartQueryThread
+[./LOG] 18:56:36,35794257 |INF| CDBProc::CreateDBDataStruct QueryType[0] Append Only
+[./LOG] 18:56:36,35794273 |INF| ThreadQueryProc Beginning
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID Beginning... ThreadID[0], FileCount[1]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID Beginning... ThreadID[3], FileCount[1]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID Beginning... ThreadID[1], FileCount[1]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID Beginning... ThreadID[5], FileCount[3]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID Beginning... ThreadID[9], FileCount[6]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID Beginning... ThreadID[2], FileCount[1]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID Beginning... ThreadID[6], FileCount[3]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID Beginning... ThreadID[4], FileCount[1]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID Beginning... ThreadID[7], FileCount[4]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID Beginning... ThreadID[8], FileCount[5]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID ThreadID[3], Count[1/1], FileName[Exception.ssfx]
+[./LOG] 18:56:36,35794273 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Exception.ssfx]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID ThreadID[0], Count[1/1], FileName[Global.ssfx]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID ThreadID[1], Count[1/1], FileName[AsrTest.msfx]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID ThreadID[5], Count[1/3], FileName[MenuScenarioFile1.msfx]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID ThreadID[9], Count[1/6], FileName[cti.msfx]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID ThreadID[2], Count[1/1], FileName[End.ssfx]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID ThreadID[6], Count[1/3], FileName[MenuScenarioFile2.msfx]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID ThreadID[4], Count[1/1], FileName[Main.ssfx]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID ThreadID[7], Count[1/4], FileName[ScenarioFile1.ssfx]
+[./LOG] 18:56:36,35794273 |INF| ThreadSub_MakeIID ThreadID[8], Count[1/5], FileName[abort.msfx]
+[./LOG] 18:56:36,35794289 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [Exception.ssfx]
+[./LOG] 18:56:36,35794289 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Global.ssfx]
+[./LOG] 18:56:36,35794289 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [Exception.ssfx] Count[2/2]
+[./LOG] 18:56:36,35794289 |INF| ThreadSub_MakeIID Ending...  ThreadID[3]
+[./LOG] 18:56:36,35794304 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\AsrTest.msfx]
+[./LOG] 18:56:36,35794304 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [Global.ssfx]
+[./LOG] 18:56:36,35794304 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [AsrTest.msfx]
+[./LOG] 18:56:36,35794304 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\MenuScenarioFile1.msfx]
+[./LOG] 18:56:36,35794304 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [MenuScenarioFile1.msfx]
+[./LOG] 18:56:36,35794304 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\cti.msfx]
+[./LOG] 18:56:36,35794335 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [cti.msfx]
+[./LOG] 18:56:36,35794335 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\End.ssfx]
+[./LOG] 18:56:36,35794335 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [End.ssfx]
+[./LOG] 18:56:36,35794335 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\MenuScenarioFile2.msfx]
+[./LOG] 18:56:36,35794335 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [MenuScenarioFile2.msfx]
+[./LOG] 18:56:36,35794367 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Main.ssfx]
+[./LOG] 18:56:36,35794382 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [MenuScenarioFile2.msfx] Count[1/1]
+[./LOG] 18:56:36,35794382 |INF| ThreadSub_MakeIID ThreadID[6], Count[2/3], FileName[play.msfx]
+[./LOG] 18:56:36,35794413 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [MenuScenarioFile1.msfx] Count[4/4]
+[./LOG] 18:56:36,35794413 |INF| ThreadSub_MakeIID ThreadID[5], Count[2/3], FileName[transfer.msfx]
+[./LOG] 18:56:36,35794445 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [Main.ssfx]
+[./LOG] 18:56:36,35794445 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\ScenarioFile1.ssfx]
+[./LOG] 18:56:36,35794445 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [ScenarioFile1.ssfx]
+[./LOG] 18:56:36,35794460 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\abort.msfx]
+[./LOG] 18:56:36,35794460 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [ScenarioFile1.ssfx] Count[1/1]
+[./LOG] 18:56:36,35794460 |INF| ThreadSub_MakeIID ThreadID[7], Count[2/4], FileName[digit.msfx]
+[./LOG] 18:56:36,35794476 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [AsrTest.msfx] Count[15/15]
+[./LOG] 18:56:36,35794476 |INF| ThreadSub_MakeIID Ending...  ThreadID[1]
+[./LOG] 18:56:36,35794476 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\play.msfx]
+[./LOG] 18:56:36,35794476 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [abort.msfx]
+[./LOG] 18:56:36,35794523 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [play.msfx]
+[./LOG] 18:56:36,35794523 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\transfer.msfx]
+[./LOG] 18:56:36,35794523 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [transfer.msfx]
+[./LOG] 18:56:36,35794523 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\digit.msfx]
+[./LOG] 18:56:36,35794554 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [digit.msfx]
+[./LOG] 18:56:36,35794585 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [End.ssfx] Count[18/18]
+[./LOG] 18:56:36,35794585 |INF| ThreadSub_MakeIID Ending...  ThreadID[2]
+[./LOG] 18:56:36,35794850 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [transfer.msfx] Count[39/39]
+[./LOG] 18:56:36,35794850 |INF| ThreadSub_MakeIID ThreadID[5], Count[3/3], FileName[tts.msfx]
+[./LOG] 18:56:36,35794850 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\tts.msfx]
+[./LOG] 18:56:36,35794866 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [tts.msfx]
+[./LOG] 18:56:37,35794991 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [abort.msfx] Count[70/70]
+[./LOG] 18:56:37,35794991 |INF| ThreadSub_MakeIID ThreadID[8], Count[2/5], FileName[disconnect.msfx]
+[./LOG] 18:56:37,35794991 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\disconnect.msfx]
+[./LOG] 18:56:37,35794991 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [disconnect.msfx]
+[./LOG] 18:56:37,35795100 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [disconnect.msfx] Count[14/14]
+[./LOG] 18:56:37,35795100 |INF| ThreadSub_MakeIID ThreadID[8], Count[3/5], FileName[disswitch.msfx]
+[./LOG] 18:56:37,35795100 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\disswitch.msfx]
+[./LOG] 18:56:37,35795115 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [disswitch.msfx]
+[./LOG] 18:56:37,35795209 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [digit.msfx] Count[123/123]
+[./LOG] 18:56:37,35795209 |INF| ThreadSub_MakeIID ThreadID[7], Count[3/4], FileName[pushtone.msfx]
+[./LOG] 18:56:37,35795209 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\pushtone.msfx]
+[./LOG] 18:56:37,35795225 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [pushtone.msfx]
+[./LOG] 18:56:37,35795287 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [pushtone.msfx] Count[12/12]
+[./LOG] 18:56:37,35795287 |INF| ThreadSub_MakeIID ThreadID[7], Count[4/4], FileName[record.msfx]
+[./LOG] 18:56:37,35795287 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\record.msfx]
+[./LOG] 18:56:37,35795287 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [record.msfx]
+[./LOG] 18:56:37,35795334 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [play.msfx] Count[141/141]
+[./LOG] 18:56:37,35795334 |INF| ThreadSub_MakeIID ThreadID[6], Count[3/3], FileName[userfunction.msfx]
+[./LOG] 18:56:37,35795334 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\userfunction.msfx]
+[./LOG] 18:56:37,35795365 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [userfunction.msfx]
+[./LOG] 18:56:37,35795459 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [disswitch.msfx] Count[47/47]
+[./LOG] 18:56:37,35795459 |INF| ThreadSub_MakeIID ThreadID[8], Count[4/5], FileName[getchannel.msfx]
+[./LOG] 18:56:37,35795459 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\getchannel.msfx]
+[./LOG] 18:56:37,35795490 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [getchannel.msfx]
+[./LOG] 18:56:37,35795630 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [record.msfx] Count[63/63]
+[./LOG] 18:56:37,35795630 |INF| ThreadSub_MakeIID Ending...  ThreadID[7]
+[./LOG] 18:56:37,35795755 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [getchannel.msfx] Count[50/50]
+[./LOG] 18:56:37,35795755 |INF| ThreadSub_MakeIID ThreadID[8], Count[5/5], FileName[scenario_func.msfx]
+[./LOG] 18:56:37,35795755 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\scenario_func.msfx]
+[./LOG] 18:56:37,35795817 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [scenario_func.msfx]
+[./LOG] 18:56:38,35796020 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [userfunction.msfx] Count[95/95]
+[./LOG] 18:56:38,35796020 |INF| ThreadSub_MakeIID Ending...  ThreadID[6]
+[./LOG] 18:56:38,35796410 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [Main.ssfx] Count[144/144]
+[./LOG] 18:56:38,35796410 |INF| ThreadSub_MakeIID Ending...  ThreadID[4]
+[./LOG] 18:56:38,35796488 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [tts.msfx] Count[204/204]
+[./LOG] 18:56:38,35796488 |INF| ThreadSub_MakeIID Ending...  ThreadID[5]
+[./LOG] 18:56:39,35797003 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [cti.msfx] Count[160/160]
+[./LOG] 18:56:39,35797003 |INF| ThreadSub_MakeIID ThreadID[9], Count[2/6], FileName[packet.msfx]
+[./LOG] 18:56:39,35797003 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\packet.msfx]
+[./LOG] 18:56:39,35797019 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [packet.msfx]
+[./LOG] 18:56:39,35797565 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [Global.ssfx] Count[36/36]
+[./LOG] 18:56:39,35797565 |INF| ThreadSub_MakeIID Ending...  ThreadID[0]
+[./LOG] 18:56:39,35797705 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [scenario_func.msfx] Count[183/183]
+[./LOG] 18:56:39,35797705 |INF| ThreadSub_MakeIID Ending...  ThreadID[8]
+[./LOG] 18:56:40,35798173 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [packet.msfx] Count[86/86]
+[./LOG] 18:56:40,35798173 |INF| ThreadSub_MakeIID ThreadID[9], Count[3/6], FileName[scenario_func_dymenu.msfx]
+[./LOG] 18:56:40,35798173 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\scenario_func_dymenu.msfx]
+[./LOG] 18:56:40,35798173 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [scenario_func_dymenu.msfx]
+[./LOG] 18:56:40,35798267 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [scenario_func_dymenu.msfx] Count[9/9]
+[./LOG] 18:56:40,35798267 |INF| ThreadSub_MakeIID ThreadID[9], Count[4/6], FileName[svc_cfgchg.msfx]
+[./LOG] 18:56:40,35798267 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\svc_cfgchg.msfx]
+[./LOG] 18:56:40,35798267 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [svc_cfgchg.msfx]
+[./LOG] 18:56:40,35798360 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [svc_cfgchg.msfx] Count[16/16]
+[./LOG] 18:56:40,35798360 |INF| ThreadSub_MakeIID ThreadID[9], Count[5/6], FileName[svcchg.msfx]
+[./LOG] 18:56:40,35798360 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\svcchg.msfx]
+[./LOG] 18:56:40,35798360 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [svcchg.msfx]
+[./LOG] 18:56:40,35798407 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [svcchg.msfx] Count[11/11]
+[./LOG] 18:56:40,35798407 |INF| ThreadSub_MakeIID ThreadID[9], Count[6/6], FileName[switch.msfx]
+[./LOG] 18:56:40,35798407 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\switch.msfx]
+[./LOG] 18:56:40,35798423 |INF| CForcusStudioDoc::GetItemDataFromDoc Begining [switch.msfx]
+[./LOG] 18:56:40,35798641 |INF| CForcusStudioDoc::GetItemDataFromDoc Ending [switch.msfx] Count[41/41]
+[./LOG] 18:56:40,35798641 |INF| ThreadSub_MakeIID Ending...  ThreadID[9]
+[./LOG] 18:56:40,35798688 |INF| CDBProc::CommitTransaction Search & Replace
+[./LOG] 18:56:40,35798688 |INF| CDBProc::DeleteDBDataStruct QueryType[0] Append Only
+[./LOG] 18:56:40,35798703 |INF| ThreadQueryProc Ending Count[9434]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID Wait Thread Roop... Terminated All ThreadSub_MakeIID
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID Terminated Threads
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [928]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [932]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [936]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [940]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [944]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [948]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [952]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [956]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [960]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID CloseHandle and Init Variable [964]
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID MACRO_HIDE_PROGRESS
+[./LOG] 18:56:40,35798703 |INF| CForcusStudioApp::WorkAfterConversion  ConversionProject OK!
+[./LOG] 18:56:40,35798703 |INF| CForcusStudioApp::WorkAfterConversion  PostMessage MSG_AUTO_COMPLETE_UPDATE_ALL
+[./LOG] 18:56:40,35798703 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 18:56:40,35798703 |INF| CForcusStudioApp::MakeAutoCompleteData
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeACData Beginning
+[./LOG] 18:56:40,35798703 |INF| ThreadMain_MakeIID Ending
+[./LOG] 18:56:40,35798719 |INF| CForcusStudioApp::CreateProgressDlg
+[./LOG] 18:56:40,35798719 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 18:56:40,35798735 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:40,35798735 |INF| CForcusStudioDoc::SetACData_Item  Begin
+[./LOG] 18:56:40,35798735 |INF| CDBProc::StartQueryThread
+[./LOG] 18:56:40,35798735 |INF| CDBProc::CreateDBDataStruct QueryType[4] Select, Update, Delete
+[./LOG] 18:56:40,35798735 |INF| ThreadQueryProc Beginning
+[./LOG] 18:56:40,35798750 |INF| CForcusStudioDoc::GetACData_InnerFunction  Auto Complete Data Inner Function
+[./LOG] 18:56:40,35798750 |INF| CForcusStudioDoc::GetACData_SystemConstant  Auto Complete Data System Constant
+[./LOG] 18:56:40,35798750 |INF| CForcusStudioDoc::GetACData_SystemConstantEx  Auto Complete Data System Constant Extend
+[./LOG] 18:56:40,35798750 |INF| CForcusStudioDoc::GetACData_SystemVariable  Auto Complete Data System Variable
+[./LOG] 18:56:41,35799249 |INF| CDBProc::DeleteDBDataStruct QueryType[17] Select, Update, Delete
+[./LOG] 18:56:41,35799249 |INF| ThreadQueryProc Ending
+[./LOG] 18:56:41,35799249 |INF| CForcusStudioDoc::SetACData_Item  End  Elapsed Time [514/ms|0/s], Total Elapsed Time [514/ms|0/s]
+[./LOG] 18:56:41,35799249 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 18:56:41,35799249 |INF| CForcusStudioApp::WorkAfterAutoComplete
+[./LOG] 18:56:41,35799249 |INF| ThreadMain_MakeACData Ending
+[./LOG] 18:56:44,35802323 |INF| CForcusStudioApp::OnBuildProject
+[./LOG] 18:56:44,35802323 |INF| CForcusStudioApp::OnBuildClean
+[./LOG] 18:56:44,35802385 |INF| Deleting output files for project 'IPRON_IR'
+[./LOG] 18:56:44,35802385 |INF| CForcusStudioDoc::BuildFileAfterSave
+[./LOG] 18:56:44,35802385 |INF| CForcusStudioApp::OnFileSaveProject
+[./LOG] 18:56:44,35802385 |INF| CProjectFileDoc::WriteProjectFile
+[./LOG] 18:56:44,35802385 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 18:56:44,35802385 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 18:56:44,35802385 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 18:56:44,35802385 |INF| CForcusStudioApp::MakeItemInformationData
+[./LOG] 18:56:44,35802385 |INF| CForcusStudioApp::MakeItemInformationData Is Not Save List! Type[TYPE_IID_UPDATE_WITH_BUILD_REBUILD_AFTER_SAVE]
+[./LOG] 18:56:44,35802385 |INF| CForcusStudioApp::BuildAllXML
+[./LOG] 18:56:44,35802432 |INF| --------------------Project: IPRON_IR--------------------
+[./LOG] 18:56:44,35802494 |INF| Compiling...
+[./LOG] 18:56:44,35802494 |INF| CForcusStudioApp::LoadUserScenarioList
+[./LOG] 18:56:44,35802494 |INF| CDlgDockItemBar::CreateAndGetUserItemDirectory
+[./LOG] 18:56:44,35802494 |INF| CForcusStudioApp::Build_SXML Beginning
+[./LOG] 18:56:44,35802494 |INF| CDBProc::StartQueryThread
+[./LOG] 18:56:44,35802494 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:56:44,35802494 |INF| ThreadQueryProc Beginning
+[./LOG] 18:56:44,35802494 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:56:44,35802510 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [16/ms|0/s], Total Elapsed Time [16/ms|0/s]
+[./LOG] 18:56:44,35802510 |INF| CDBProc::DeleteDBDataStruct QueryType[35] Select, Update, Delete
+[./LOG] 18:56:44,35802510 |INF| ThreadQueryProc Ending
+[./LOG] 18:56:44,35802510 |INF| CDBProc::StartQueryThread
+[./LOG] 18:56:44,35802510 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:56:44,35802525 |INF| ThreadQueryProc Beginning
+[./LOG] 18:56:44,35802525 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:56:44,35802541 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [16/ms|0/s], Total Elapsed Time [16/ms|0/s]
+[./LOG] 18:56:44,35802541 |INF| CDBProc::DeleteDBDataStruct QueryType[36] Select, Update, Delete
+[./LOG] 18:56:44,35802541 |INF| ThreadQueryProc Ending
+[./LOG] 18:56:44,35802541 |INF| CDBProc::StartQueryThread
+[./LOG] 18:56:44,35802541 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:56:44,35802541 |INF| ThreadQueryProc Beginning
+[./LOG] 18:56:44,35802557 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:56:44,35802572 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [15/ms|0/s], Total Elapsed Time [15/ms|0/s]
+[./LOG] 18:56:44,35802588 |INF| CDBProc::DeleteDBDataStruct QueryType[36] Select, Update, Delete
+[./LOG] 18:56:44,35802588 |INF| ThreadQueryProc Ending
+[./LOG] 18:56:44,35802588 |INF| CDBProc::StartQueryThread
+[./LOG] 18:56:44,35802588 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:56:44,35802588 |INF| ThreadQueryProc Beginning
+[./LOG] 18:56:44,35802603 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:56:44,35802619 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [16/ms|0/s], Total Elapsed Time [16/ms|0/s]
+[./LOG] 18:56:44,35802619 |INF| CDBProc::DeleteDBDataStruct QueryType[36] Select, Update, Delete
+[./LOG] 18:56:44,35802619 |INF| ThreadQueryProc Ending
+[./LOG] 18:56:44,35802619 |INF| CForcusStudioApp::Build_SXML FileCount[26]
+[./LOG] 18:56:44,35802619 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:44,35802619 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\AsrTest.msfx]
+[./LOG] 18:56:44,35802635 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [AsrTest.msfx]
+[./LOG] 18:56:44,35802681 |INF| AsrTest.msfx
+[./LOG] 18:56:44,35802713 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:44,35802759 |WNG| VarifyProperties : FileName(AsrTest.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:44,35802822 |INFWNG| FileName(AsrTest.msfx) : SymbolName(Play3) : Message(No output link)
+[./LOG] 18:56:44,35802822 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [AsrTest.msfx]
+[./LOG] 18:56:44,35802822 |INF| CForcusStudioApp::Build_SXML  Count[1/26], FileName[AsrTest.msfx]
+[./LOG] 18:56:44,35802884 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:44,35802884 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\End.ssfx]
+[./LOG] 18:56:44,35802884 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [End.ssfx]
+[./LOG] 18:56:45,35802931 |INF| End.ssfx
+[./LOG] 18:56:45,35802947 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:45,35803009 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [End.ssfx]
+[./LOG] 18:56:45,35803009 |INF| CForcusStudioApp::Build_SXML  Count[2/26], FileName[End.ssfx]
+[./LOG] 18:56:45,35803025 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:45,35803025 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Exception.ssfx]
+[./LOG] 18:56:45,35803025 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [Exception.ssfx]
+[./LOG] 18:56:45,35803071 |INF| Exception.ssfx
+[./LOG] 18:56:45,35803071 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [Exception.ssfx]
+[./LOG] 18:56:45,35803071 |INF| CForcusStudioApp::Build_SXML  Count[3/26], FileName[Exception.ssfx]
+[./LOG] 18:56:45,35803087 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:45,35803087 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Global.ssfx]
+[./LOG] 18:56:45,35803103 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [Global.ssfx]
+[./LOG] 18:56:45,35803149 |INF| Global.ssfx
+[./LOG] 18:56:45,35803227 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [Global.ssfx]
+[./LOG] 18:56:45,35803227 |INF| CForcusStudioApp::Build_SXML  Count[4/26], FileName[Global.ssfx]
+[./LOG] 18:56:45,35803227 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:45,35803227 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Main.ssfx]
+[./LOG] 18:56:45,35803243 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [Main.ssfx]
+[./LOG] 18:56:45,35803305 |INF| Main.ssfx
+[./LOG] 18:56:45,35803415 |INFWNG| FileName(Main.ssfx) : SymbolName(MenuCall1) : Message(No output link)
+[./LOG] 18:56:45,35803415 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [Main.ssfx]
+[./LOG] 18:56:45,35803415 |INF| CForcusStudioApp::Build_SXML  Count[5/26], FileName[Main.ssfx]
+[./LOG] 18:56:45,35803430 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:45,35803430 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\MenuScenarioFile1.msfx]
+[./LOG] 18:56:45,35803430 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [MenuScenarioFile1.msfx]
+[./LOG] 18:56:45,35803477 |INF| MenuScenarioFile1.msfx
+[./LOG] 18:56:45,35803555 |INFWNG| FileName(MenuScenarioFile1.msfx) : SymbolName(MenuChange2) : Message(No output link)
+[./LOG] 18:56:45,35803555 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [MenuScenarioFile1.msfx]
+[./LOG] 18:56:45,35803555 |INF| CForcusStudioApp::Build_SXML  Count[6/26], FileName[MenuScenarioFile1.msfx]
+[./LOG] 18:56:45,35803571 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:45,35803571 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\MenuScenarioFile2.msfx]
+[./LOG] 18:56:45,35803586 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [MenuScenarioFile2.msfx]
+[./LOG] 18:56:45,35803633 |INF| MenuScenarioFile2.msfx
+[./LOG] 18:56:45,35803633 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [MenuScenarioFile2.msfx]
+[./LOG] 18:56:45,35803633 |INF| CForcusStudioApp::Build_SXML  Count[7/26], FileName[MenuScenarioFile2.msfx]
+[./LOG] 18:56:45,35803633 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:45,35803633 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\ScenarioFile1.ssfx]
+[./LOG] 18:56:45,35803633 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [ScenarioFile1.ssfx]
+[./LOG] 18:56:45,35803695 |INF| ScenarioFile1.ssfx
+[./LOG] 18:56:45,35803695 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [ScenarioFile1.ssfx]
+[./LOG] 18:56:45,35803695 |INF| CForcusStudioApp::Build_SXML  Count[8/26], FileName[ScenarioFile1.ssfx]
+[./LOG] 18:56:45,35803695 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:45,35803695 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\abort.msfx]
+[./LOG] 18:56:45,35803711 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [abort.msfx]
+[./LOG] 18:56:45,35803758 |INF| abort.msfx
+[./LOG] 18:56:45,35803789 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:45,35803898 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [abort.msfx]
+[./LOG] 18:56:45,35803898 |INF| CForcusStudioApp::Build_SXML  Count[9/26], FileName[abort.msfx]
+[./LOG] 18:56:45,35803898 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:45,35803898 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\cti.msfx]
+[./LOG] 18:56:45,35803929 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [cti.msfx]
+[./LOG] 18:56:46,35803976 |INF| cti.msfx
+[./LOG] 18:56:46,35804007 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:46,35804070 |WNG| VarifyProperties : FileName(cti.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:46,35804538 |INFWNG| FileName(cti.msfx) : SymbolName(CtiCall11) : Message(No output link)
+[./LOG] 18:56:46,35804881 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [cti.msfx]
+[./LOG] 18:56:46,35804881 |INF| CForcusStudioApp::Build_SXML  Count[10/26], FileName[cti.msfx]
+[./LOG] 18:56:47,35805193 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:47,35805193 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\digit.msfx]
+[./LOG] 18:56:47,35805209 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [digit.msfx]
+[./LOG] 18:56:47,35805255 |INF| digit.msfx
+[./LOG] 18:56:47,35805318 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:47,35805365 |WNG| VarifyProperties : FileName(digit.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:47,35805567 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:47,35805723 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [digit.msfx]
+[./LOG] 18:56:47,35805723 |INF| CForcusStudioApp::Build_SXML  Count[11/26], FileName[digit.msfx]
+[./LOG] 18:56:47,35805833 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:47,35805833 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\disconnect.msfx]
+[./LOG] 18:56:47,35805833 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [disconnect.msfx]
+[./LOG] 18:56:47,35805879 |INF| disconnect.msfx
+[./LOG] 18:56:47,35805895 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [disconnect.msfx]
+[./LOG] 18:56:47,35805895 |INF| CForcusStudioApp::Build_SXML  Count[12/26], FileName[disconnect.msfx]
+[./LOG] 18:56:47,35805911 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:47,35805911 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\disswitch.msfx]
+[./LOG] 18:56:47,35805911 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [disswitch.msfx]
+[./LOG] 18:56:48,35805957 |INF| disswitch.msfx
+[./LOG] 18:56:48,35805989 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:48,35806051 |WNG| VarifyProperties : FileName(disswitch.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:48,35806113 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [disswitch.msfx]
+[./LOG] 18:56:48,35806113 |INF| CForcusStudioApp::Build_SXML  Count[13/26], FileName[disswitch.msfx]
+[./LOG] 18:56:48,35806113 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:48,35806113 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\getchannel.msfx]
+[./LOG] 18:56:48,35806129 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [getchannel.msfx]
+[./LOG] 18:56:48,35806176 |INF| getchannel.msfx
+[./LOG] 18:56:48,35806191 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:48,35806238 |INFWNG| FileName(getchannel.msfx) : SymbolName(Play6) : Message(No output link)
+[./LOG] 18:56:48,35806363 |INFWNG| FileName(getchannel.msfx) : SymbolName(WaitEvent3) : Message(No output link)
+[./LOG] 18:56:48,35806363 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [getchannel.msfx]
+[./LOG] 18:56:48,35806363 |INF| CForcusStudioApp::Build_SXML  Count[14/26], FileName[getchannel.msfx]
+[./LOG] 18:56:48,35806441 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:48,35806441 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\packet.msfx]
+[./LOG] 18:56:48,35806457 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [packet.msfx]
+[./LOG] 18:56:48,35806503 |INF| packet.msfx
+[./LOG] 18:56:48,35806535 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:48,35806597 |WNG| VarifyProperties : FileName(packet.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:48,35806862 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [packet.msfx]
+[./LOG] 18:56:48,35806862 |INF| CForcusStudioApp::Build_SXML  Count[15/26], FileName[packet.msfx]
+[./LOG] 18:56:49,35806940 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:49,35806940 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\play.msfx]
+[./LOG] 18:56:49,35806971 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [play.msfx]
+[./LOG] 18:56:49,35807018 |INF| play.msfx
+[./LOG] 18:56:49,35807049 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:49,35807112 |WNG| VarifyProperties : FileName(play.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:49,35807221 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:49,35807283 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [play.msfx]
+[./LOG] 18:56:49,35807283 |INF| CForcusStudioApp::Build_SXML  Count[16/26], FileName[play.msfx]
+[./LOG] 18:56:49,35807361 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:49,35807361 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\pushtone.msfx]
+[./LOG] 18:56:49,35807377 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [pushtone.msfx]
+[./LOG] 18:56:49,35807424 |INF| pushtone.msfx
+[./LOG] 18:56:49,35807471 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [pushtone.msfx]
+[./LOG] 18:56:49,35807471 |INF| CForcusStudioApp::Build_SXML  Count[17/26], FileName[pushtone.msfx]
+[./LOG] 18:56:49,35807471 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:49,35807471 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\record.msfx]
+[./LOG] 18:56:49,35807486 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [record.msfx]
+[./LOG] 18:56:49,35807533 |INF| record.msfx
+[./LOG] 18:56:49,35807564 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:49,35807611 |WNG| VarifyProperties : FileName(record.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:49,35807673 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [record.msfx]
+[./LOG] 18:56:49,35807673 |INF| CForcusStudioApp::Build_SXML  Count[18/26], FileName[record.msfx]
+[./LOG] 18:56:49,35807736 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:49,35807736 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\scenario_func.msfx]
+[./LOG] 18:56:49,35807767 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [scenario_func.msfx]
+[./LOG] 18:56:49,35807814 |INF| scenario_func.msfx
+[./LOG] 18:56:49,35807861 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:49,35807907 |WNG| VarifyProperties : FileName(scenario_func.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:50,35808141 |INFWNG| FileName(scenario_func.msfx) : SymbolName(Assign5) : Message(No output link)
+[./LOG] 18:56:50,35808188 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:50,35808266 |INFWNG| FileName(scenario_func.msfx) : SymbolName(SpeakerVerify1) : Message(No output link)
+[./LOG] 18:56:50,35808266 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:50,35808391 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:50,35808531 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a1} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:50,35808594 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a1} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:50,35808641 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a2} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:50,35808703 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a3} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:50,35808765 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a4} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:50,35808828 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a5} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:50,35808875 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a7} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35808937 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a6} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35808999 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809062 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809124 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809171 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809233 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809296 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809343 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809405 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809467 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809530 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809592 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809639 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809701 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809764 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809811 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:51,35809873 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35809935 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35809998 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810060 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810123 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810185 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810232 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810294 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810357 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810419 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810481 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810544 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810591 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810653 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810715 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:56:52,35810731 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [scenario_func.msfx]
+[./LOG] 18:56:52,35810731 |INF| CForcusStudioApp::Build_SXML  Count[19/26], FileName[scenario_func.msfx]
+[./LOG] 18:56:52,35810887 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:52,35810887 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\scenario_func_dymenu.msfx]
+[./LOG] 18:56:52,35810887 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [scenario_func_dymenu.msfx]
+[./LOG] 18:56:53,35810949 |INF| scenario_func_dymenu.msfx
+[./LOG] 18:56:53,35810965 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [scenario_func_dymenu.msfx]
+[./LOG] 18:56:53,35810965 |INF| CForcusStudioApp::Build_SXML  Count[20/26], FileName[scenario_func_dymenu.msfx]
+[./LOG] 18:56:53,35811059 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:53,35811059 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\svc_cfgchg.msfx]
+[./LOG] 18:56:53,35811074 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [svc_cfgchg.msfx]
+[./LOG] 18:56:53,35811121 |INF| svc_cfgchg.msfx
+[./LOG] 18:56:53,35811137 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [svc_cfgchg.msfx]
+[./LOG] 18:56:53,35811137 |INF| CForcusStudioApp::Build_SXML  Count[21/26], FileName[svc_cfgchg.msfx]
+[./LOG] 18:56:53,35811152 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:53,35811152 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\svcchg.msfx]
+[./LOG] 18:56:53,35811152 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [svcchg.msfx]
+[./LOG] 18:56:53,35811199 |INF| svcchg.msfx
+[./LOG] 18:56:53,35811261 |INFWNG| FileName(svcchg.msfx) : SymbolName(ChangeService1) : Message(No output link)
+[./LOG] 18:56:53,35811261 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [svcchg.msfx]
+[./LOG] 18:56:53,35811261 |INF| CForcusStudioApp::Build_SXML  Count[22/26], FileName[svcchg.msfx]
+[./LOG] 18:56:53,35811277 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:53,35811277 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\switch.msfx]
+[./LOG] 18:56:53,35811277 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [switch.msfx]
+[./LOG] 18:56:53,35811324 |INF| switch.msfx
+[./LOG] 18:56:53,35811371 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:53,35811417 |WNG| VarifyProperties : FileName(switch.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:53,35811464 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [switch.msfx]
+[./LOG] 18:56:53,35811464 |INF| CForcusStudioApp::Build_SXML  Count[23/26], FileName[switch.msfx]
+[./LOG] 18:56:53,35811480 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:53,35811480 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\transfer.msfx]
+[./LOG] 18:56:53,35811480 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [transfer.msfx]
+[./LOG] 18:56:53,35811527 |INF| transfer.msfx
+[./LOG] 18:56:53,35811558 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:53,35811636 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [transfer.msfx]
+[./LOG] 18:56:53,35811636 |INF| CForcusStudioApp::Build_SXML  Count[24/26], FileName[transfer.msfx]
+[./LOG] 18:56:53,35811636 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:53,35811636 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\tts.msfx]
+[./LOG] 18:56:53,35811667 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [tts.msfx]
+[./LOG] 18:56:53,35811714 |INF| tts.msfx
+[./LOG] 18:56:53,35811745 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:53,35811807 |WNG| VarifyProperties : FileName(tts.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:53,35811839 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:53,35811917 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:54,35811963 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:56:54,35812338 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [tts.msfx]
+[./LOG] 18:56:54,35812338 |INF| CForcusStudioApp::Build_SXML  Count[25/26], FileName[tts.msfx]
+[./LOG] 18:56:54,35812416 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:56:54,35812416 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\userfunction.msfx]
+[./LOG] 18:56:54,35812431 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [userfunction.msfx]
+[./LOG] 18:56:54,35812494 |INF| userfunction.msfx
+[./LOG] 18:56:54,35812525 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:56:54,35812572 |WNG| VarifyProperties : FileName(userfunction.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:56:54,35812790 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [userfunction.msfx]
+[./LOG] 18:56:54,35812790 |INF| CForcusStudioApp::Build_SXML  Count[26/26], FileName[userfunction.msfx]
+[./LOG] 18:56:54,35812790 |INF| ProjectFileDoc::MakeProject_All_XML
+[./LOG] 18:56:54,35812790 |INF| CProjectFileDoc::WriteProjectXMLFile
+[./LOG] 18:56:54,35812853 |INF| Joining...
+[./LOG] 18:56:54,35812868 |INF| ProjectFileDoc::MakeProject_All_XML  File copied "C:\Program Files\Bridgetec\ForCus\ForCusStudio\scenario\IPRON_IR_ALL.SXML"
+[./LOG] 18:56:54,35812915 |INF|     File copied "C:\Program Files\Bridgetec\ForCus\ForCusStudio\scenario\IPRON_IR_ALL.SXML"
+[./LOG] 18:56:55,35812962 |INF| 
+IPRON_IR_ALL.SXML - 0 error(s), 49 warning(s)
+[./LOG] 18:56:55,35812977 |INF| CForcusStudioApp::EndWorkAfterBuild  Build OK!
+[./LOG] 18:56:57,35815395 |INF| CForcusStudioApp::Build_SXML  Ending
+[./LOG] 18:57:03,35821245 |INF| CForcusStudioApp::OnBuildProject
+[./LOG] 18:57:03,35821245 |INF| CForcusStudioApp::OnBuildClean
+[./LOG] 18:57:03,35821308 |INF| Deleting output files for project 'IPRON_IR'
+[./LOG] 18:57:03,35821308 |INF| CForcusStudioDoc::BuildFileAfterSave
+[./LOG] 18:57:03,35821308 |INF| CForcusStudioApp::OnFileSaveProject
+[./LOG] 18:57:03,35821308 |INF| CProjectFileDoc::WriteProjectFile
+[./LOG] 18:57:03,35821308 |INF| CMySECTreeCtrl::UpdateTreeByMap PROJECT_TAB Save!
+
+[./LOG] 18:57:03,35821308 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 18:57:03,35821323 |INF| CMySECTreeCtrl::UpdateTreeByMap FILE_TAB Save!
+
+[./LOG] 18:57:03,35821323 |INF| CForcusStudioApp::MakeItemInformationData
+[./LOG] 18:57:03,35821323 |INF| CForcusStudioApp::MakeItemInformationData Is Not Save List! Type[TYPE_IID_UPDATE_WITH_BUILD_REBUILD_AFTER_SAVE]
+[./LOG] 18:57:03,35821323 |INF| CForcusStudioApp::BuildAllXML
+[./LOG] 18:57:03,35821370 |INF| --------------------Project: IPRON_IR--------------------
+[./LOG] 18:57:03,35821417 |INF| Compiling...
+[./LOG] 18:57:03,35821417 |INF| CForcusStudioApp::LoadUserScenarioList
+[./LOG] 18:57:03,35821417 |INF| CDlgDockItemBar::CreateAndGetUserItemDirectory
+[./LOG] 18:57:03,35821417 |INF| CForcusStudioApp::Build_SXML Beginning
+[./LOG] 18:57:03,35821417 |INF| CDBProc::StartQueryThread
+[./LOG] 18:57:03,35821417 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:57:03,35821417 |INF| ThreadQueryProc Beginning
+[./LOG] 18:57:03,35821433 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:57:03,35821448 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [15/ms|0/s], Total Elapsed Time [15/ms|0/s]
+[./LOG] 18:57:03,35821464 |INF| CDBProc::DeleteDBDataStruct QueryType[35] Select, Update, Delete
+[./LOG] 18:57:03,35821464 |INF| ThreadQueryProc Ending
+[./LOG] 18:57:03,35821464 |INF| CDBProc::StartQueryThread
+[./LOG] 18:57:03,35821464 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:57:03,35821464 |INF| ThreadQueryProc Beginning
+[./LOG] 18:57:03,35821464 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:57:03,35821495 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [31/ms|0/s], Total Elapsed Time [31/ms|0/s]
+[./LOG] 18:57:03,35821495 |INF| CDBProc::DeleteDBDataStruct QueryType[36] Select, Update, Delete
+[./LOG] 18:57:03,35821495 |INF| ThreadQueryProc Ending
+[./LOG] 18:57:03,35821495 |INF| CDBProc::StartQueryThread
+[./LOG] 18:57:03,35821495 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:57:03,35821495 |INF| ThreadQueryProc Beginning
+[./LOG] 18:57:03,35821511 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:57:03,35821526 |INF| CDBProc::DeleteDBDataStruct QueryType[36] Select, Update, Delete
+[./LOG] 18:57:03,35821526 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [15/ms|0/s], Total Elapsed Time [15/ms|0/s]
+[./LOG] 18:57:03,35821526 |INF| CDBProc::StartQueryThread
+[./LOG] 18:57:03,35821526 |INF| ThreadQueryProc Ending
+[./LOG] 18:57:03,35821526 |INF| CDBProc::CreateDBDataStruct QueryType[1] Select, Update, Delete
+[./LOG] 18:57:03,35821526 |INF| ThreadQueryProc Beginning
+[./LOG] 18:57:03,35821542 |INF| CForcusStudioApp::ExecuteDBQuery  Query Start
+[./LOG] 18:57:03,35821542 |INF| CForcusStudioApp::ExecuteDBQuery  Query End  Elapsed Time [0/ms|0/s], Total Elapsed Time [0/ms|0/s]
+[./LOG] 18:57:03,35821557 |INF| CDBProc::DeleteDBDataStruct QueryType[36] Select, Update, Delete
+[./LOG] 18:57:03,35821557 |INF| ThreadQueryProc Ending
+[./LOG] 18:57:03,35821557 |INF| CForcusStudioApp::Build_SXML FileCount[26]
+[./LOG] 18:57:03,35821573 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:03,35821573 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\AsrTest.msfx]
+[./LOG] 18:57:03,35821573 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [AsrTest.msfx]
+[./LOG] 18:57:03,35821620 |INF| AsrTest.msfx
+[./LOG] 18:57:03,35821651 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:03,35821713 |WNG| VarifyProperties : FileName(AsrTest.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:03,35821760 |INFWNG| FileName(AsrTest.msfx) : SymbolName(Play3) : Message(No output link)
+[./LOG] 18:57:03,35821760 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [AsrTest.msfx]
+[./LOG] 18:57:03,35821760 |INF| CForcusStudioApp::Build_SXML  Count[1/26], FileName[AsrTest.msfx]
+[./LOG] 18:57:03,35821807 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:03,35821807 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\End.ssfx]
+[./LOG] 18:57:03,35821823 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [End.ssfx]
+[./LOG] 18:57:03,35821869 |INF| End.ssfx
+[./LOG] 18:57:03,35821869 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:03,35821916 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [End.ssfx]
+[./LOG] 18:57:03,35821916 |INF| CForcusStudioApp::Build_SXML  Count[2/26], FileName[End.ssfx]
+[./LOG] 18:57:04,35821932 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:04,35821932 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Exception.ssfx]
+[./LOG] 18:57:04,35821932 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [Exception.ssfx]
+[./LOG] 18:57:04,35821979 |INF| Exception.ssfx
+[./LOG] 18:57:04,35821979 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [Exception.ssfx]
+[./LOG] 18:57:04,35821979 |INF| CForcusStudioApp::Build_SXML  Count[3/26], FileName[Exception.ssfx]
+[./LOG] 18:57:04,35821994 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:04,35821994 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Global.ssfx]
+[./LOG] 18:57:04,35821994 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [Global.ssfx]
+[./LOG] 18:57:04,35822041 |INF| Global.ssfx
+[./LOG] 18:57:04,35822103 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [Global.ssfx]
+[./LOG] 18:57:04,35822103 |INF| CForcusStudioApp::Build_SXML  Count[4/26], FileName[Global.ssfx]
+[./LOG] 18:57:04,35822103 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:04,35822103 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\Main.ssfx]
+[./LOG] 18:57:04,35822119 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [Main.ssfx]
+[./LOG] 18:57:04,35822181 |INF| Main.ssfx
+[./LOG] 18:57:04,35822306 |INFWNG| FileName(Main.ssfx) : SymbolName(MenuCall1) : Message(No output link)
+[./LOG] 18:57:04,35822306 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [Main.ssfx]
+[./LOG] 18:57:04,35822306 |INF| CForcusStudioApp::Build_SXML  Count[5/26], FileName[Main.ssfx]
+[./LOG] 18:57:04,35822306 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:04,35822306 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\MenuScenarioFile1.msfx]
+[./LOG] 18:57:04,35822306 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [MenuScenarioFile1.msfx]
+[./LOG] 18:57:04,35822369 |INF| MenuScenarioFile1.msfx
+[./LOG] 18:57:04,35822431 |INFWNG| FileName(MenuScenarioFile1.msfx) : SymbolName(MenuChange2) : Message(No output link)
+[./LOG] 18:57:04,35822431 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [MenuScenarioFile1.msfx]
+[./LOG] 18:57:04,35822431 |INF| CForcusStudioApp::Build_SXML  Count[6/26], FileName[MenuScenarioFile1.msfx]
+[./LOG] 18:57:04,35822447 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:04,35822447 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\MenuScenarioFile2.msfx]
+[./LOG] 18:57:04,35822447 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [MenuScenarioFile2.msfx]
+[./LOG] 18:57:04,35822493 |INF| MenuScenarioFile2.msfx
+[./LOG] 18:57:04,35822509 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [MenuScenarioFile2.msfx]
+[./LOG] 18:57:04,35822509 |INF| CForcusStudioApp::Build_SXML  Count[7/26], FileName[MenuScenarioFile2.msfx]
+[./LOG] 18:57:04,35822509 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:04,35822509 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\ScenarioFile1.ssfx]
+[./LOG] 18:57:04,35822509 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [ScenarioFile1.ssfx]
+[./LOG] 18:57:04,35822571 |INF| ScenarioFile1.ssfx
+[./LOG] 18:57:04,35822571 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [ScenarioFile1.ssfx]
+[./LOG] 18:57:04,35822571 |INF| CForcusStudioApp::Build_SXML  Count[8/26], FileName[ScenarioFile1.ssfx]
+[./LOG] 18:57:04,35822649 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:04,35822649 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\abort.msfx]
+[./LOG] 18:57:04,35822665 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [abort.msfx]
+[./LOG] 18:57:04,35822712 |INF| abort.msfx
+[./LOG] 18:57:04,35822743 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:04,35822837 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [abort.msfx]
+[./LOG] 18:57:04,35822837 |INF| CForcusStudioApp::Build_SXML  Count[9/26], FileName[abort.msfx]
+[./LOG] 18:57:04,35822852 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:04,35822852 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\cti.msfx]
+[./LOG] 18:57:04,35822868 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [cti.msfx]
+[./LOG] 18:57:04,35822930 |INF| cti.msfx
+[./LOG] 18:57:05,35822961 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:05,35823008 |WNG| VarifyProperties : FileName(cti.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:05,35823507 |INFWNG| FileName(cti.msfx) : SymbolName(CtiCall11) : Message(No output link)
+[./LOG] 18:57:05,35823835 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [cti.msfx]
+[./LOG] 18:57:05,35823835 |INF| CForcusStudioApp::Build_SXML  Count[10/26], FileName[cti.msfx]
+[./LOG] 18:57:06,35823929 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:06,35823929 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\digit.msfx]
+[./LOG] 18:57:06,35823960 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [digit.msfx]
+[./LOG] 18:57:06,35824007 |INF| digit.msfx
+[./LOG] 18:57:06,35824038 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:06,35824100 |WNG| VarifyProperties : FileName(digit.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:06,35824303 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:06,35824459 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [digit.msfx]
+[./LOG] 18:57:06,35824459 |INF| CForcusStudioApp::Build_SXML  Count[11/26], FileName[digit.msfx]
+[./LOG] 18:57:06,35824475 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:06,35824475 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\disconnect.msfx]
+[./LOG] 18:57:06,35824475 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [disconnect.msfx]
+[./LOG] 18:57:06,35824521 |INF| disconnect.msfx
+[./LOG] 18:57:06,35824537 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [disconnect.msfx]
+[./LOG] 18:57:06,35824537 |INF| CForcusStudioApp::Build_SXML  Count[12/26], FileName[disconnect.msfx]
+[./LOG] 18:57:06,35824615 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:06,35824615 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\disswitch.msfx]
+[./LOG] 18:57:06,35824631 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [disswitch.msfx]
+[./LOG] 18:57:06,35824677 |INF| disswitch.msfx
+[./LOG] 18:57:06,35824709 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:06,35824756 |WNG| VarifyProperties : FileName(disswitch.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:06,35824818 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [disswitch.msfx]
+[./LOG] 18:57:06,35824818 |INF| CForcusStudioApp::Build_SXML  Count[13/26], FileName[disswitch.msfx]
+[./LOG] 18:57:06,35824834 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 18:57:06,35824834 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:06,35824834 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\getchannel.msfx]
+[./LOG] 18:57:06,35824849 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [getchannel.msfx]
+[./LOG] 18:57:06,35824896 |INF| getchannel.msfx
+[./LOG] 18:57:06,35824912 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:07,35824958 |INFWNG| FileName(getchannel.msfx) : SymbolName(Play6) : Message(No output link)
+[./LOG] 18:57:07,35825052 |INFWNG| FileName(getchannel.msfx) : SymbolName(WaitEvent3) : Message(No output link)
+[./LOG] 18:57:07,35825052 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [getchannel.msfx]
+[./LOG] 18:57:07,35825052 |INF| CForcusStudioApp::Build_SXML  Count[14/26], FileName[getchannel.msfx]
+[./LOG] 18:57:07,35825068 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:07,35825068 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\packet.msfx]
+[./LOG] 18:57:07,35825083 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [packet.msfx]
+[./LOG] 18:57:07,35825130 |INF| packet.msfx
+[./LOG] 18:57:07,35825161 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:07,35825224 |WNG| VarifyProperties : FileName(packet.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:07,35825504 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [packet.msfx]
+[./LOG] 18:57:07,35825504 |INF| CForcusStudioApp::Build_SXML  Count[15/26], FileName[packet.msfx]
+[./LOG] 18:57:07,35825582 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:07,35825582 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\play.msfx]
+[./LOG] 18:57:07,35825614 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [play.msfx]
+[./LOG] 18:57:07,35825660 |INF| play.msfx
+[./LOG] 18:57:07,35825692 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:07,35825738 |WNG| VarifyProperties : FileName(play.msfx) : SymbolName(Select1) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:07,35825848 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:07,35825910 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [play.msfx]
+[./LOG] 18:57:07,35825910 |INF| CForcusStudioApp::Build_SXML  Count[16/26], FileName[play.msfx]
+[./LOG] 18:57:07,35825926 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 18:57:07,35825926 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 18:57:07,35825926 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 18:57:07,35825926 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[CtiCall], Name[CtiCall8]
+
+[./LOG] 18:57:08,35825957 |INF| CItem_CtiCall_Statement1_Dlg::OnInitDialog
+[./LOG] 18:57:08,35826004 |INF| CItem_CtiCall_Statement4_Dlg::OnInitDialog
+[./LOG] 18:57:08,35826035 |INF| CItem_CtiCall_Statement1_Dlg::OnInitDialog
+[./LOG] 18:57:08,35826050 |INF| CItem_CtiCall_Statement4_Dlg::OnInitDialog
+[./LOG] 18:57:08,35826253 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 18:57:08,35826253 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 18:57:08,35826253 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 18:57:08,35826253 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[CtiCall], Name[CtiCall8]
+
+[./LOG] 18:57:08,35826378 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:08,35826378 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\pushtone.msfx]
+[./LOG] 18:57:08,35826378 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [pushtone.msfx]
+[./LOG] 18:57:08,35826440 |INF| pushtone.msfx
+[./LOG] 18:57:08,35826503 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [pushtone.msfx]
+[./LOG] 18:57:08,35826503 |INF| CForcusStudioApp::Build_SXML  Count[17/26], FileName[pushtone.msfx]
+[./LOG] 18:57:08,35826581 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 18:57:08,35826581 |INF| CForcusStudioController::PropertiesShow
+[./LOG] 18:57:08,35826581 |INF| CForcusStudioController::PropertiesShow  AddPropPage Component Properties
+[./LOG] 18:57:08,35826581 |INF| CForcusStudioController::AddPropPage  strTitle[Component Properties], Type[Play], Name[Play1]
+
+[./LOG] 18:57:08,35826628 |INF| CItem_Play_Statement1_Dlg::OnInitDialog
+[./LOG] 18:57:08,35826659 |INF| CItem_Play_Statement2_Dlg::OnInitDialog
+[./LOG] 18:57:08,35826674 |INF| CItem_Play_Statement2_Dlg::OnInitDialog
+[./LOG] 18:57:09,35826971 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:09,35826971 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\record.msfx]
+[./LOG] 18:57:09,35826986 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [record.msfx]
+[./LOG] 18:57:09,35827033 |INF| record.msfx
+[./LOG] 18:57:09,35827080 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:09,35827127 |WNG| VarifyProperties : FileName(record.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:09,35827189 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [record.msfx]
+[./LOG] 18:57:09,35827189 |INF| CForcusStudioApp::Build_SXML  Count[18/26], FileName[record.msfx]
+[./LOG] 18:57:09,35827189 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:09,35827189 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\scenario_func.msfx]
+[./LOG] 18:57:09,35827220 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [scenario_func.msfx]
+[./LOG] 18:57:09,35827267 |INF| scenario_func.msfx
+[./LOG] 18:57:09,35827314 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:09,35827361 |WNG| VarifyProperties : FileName(scenario_func.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:09,35827595 |INFWNG| FileName(scenario_func.msfx) : SymbolName(Assign5) : Message(No output link)
+[./LOG] 18:57:09,35827642 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:09,35827720 |INFWNG| FileName(scenario_func.msfx) : SymbolName(SpeakerVerify1) : Message(No output link)
+[./LOG] 18:57:09,35827720 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:09,35827844 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:10,35827985 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a1} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828032 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a1} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828094 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a2} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828156 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a3} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828219 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a4} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828281 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a5} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828344 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a7} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828406 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a6} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828468 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828515 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828578 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828640 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828687 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828749 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828812 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828874 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:10,35828921 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35828983 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829046 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829092 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829155 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829217 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829264 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829326 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829389 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829451 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829498 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829560 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829607 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829670 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829732 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829779 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829841 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:11,35829904 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:12,35829950 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:12,35830013 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:12,35830075 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:12,35830138 |WNGERR| FileName(scenario_func.msfx) : SymbolName(Cdr1) : Message(Expr{Expression} Var{a8} : Variable is not defined. but defined and initialized as a real-time by SLEE.)
+[./LOG] 18:57:12,35830169 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [scenario_func.msfx]
+[./LOG] 18:57:12,35830169 |INF| CForcusStudioApp::Build_SXML  Count[19/26], FileName[scenario_func.msfx]
+[./LOG] 18:57:12,35830294 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 18:57:12,35830309 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 18:57:12,35830325 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:12,35830325 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\scenario_func_dymenu.msfx]
+[./LOG] 18:57:12,35830325 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [scenario_func_dymenu.msfx]
+[./LOG] 18:57:12,35830372 |INF| scenario_func_dymenu.msfx
+[./LOG] 18:57:12,35830418 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [scenario_func_dymenu.msfx]
+[./LOG] 18:57:12,35830418 |INF| CForcusStudioApp::Build_SXML  Count[20/26], FileName[scenario_func_dymenu.msfx]
+[./LOG] 18:57:12,35830418 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:12,35830418 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\svc_cfgchg.msfx]
+[./LOG] 18:57:12,35830418 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [svc_cfgchg.msfx]
+[./LOG] 18:57:12,35830465 |INF| svc_cfgchg.msfx
+[./LOG] 18:57:12,35830512 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [svc_cfgchg.msfx]
+[./LOG] 18:57:12,35830512 |INF| CForcusStudioApp::Build_SXML  Count[21/26], FileName[svc_cfgchg.msfx]
+[./LOG] 18:57:12,35830512 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 18:57:12,35830528 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:12,35830528 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\svcchg.msfx]
+[./LOG] 18:57:12,35830528 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [svcchg.msfx]
+[./LOG] 18:57:12,35830574 |INF| svcchg.msfx
+[./LOG] 18:57:12,35830652 |INFWNG| FileName(svcchg.msfx) : SymbolName(ChangeService1) : Message(No output link)
+[./LOG] 18:57:12,35830652 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [svcchg.msfx]
+[./LOG] 18:57:12,35830652 |INF| CForcusStudioApp::Build_SXML  Count[22/26], FileName[svcchg.msfx]
+[./LOG] 18:57:12,35830652 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:12,35830652 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\switch.msfx]
+[./LOG] 18:57:12,35830668 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [switch.msfx]
+[./LOG] 18:57:12,35830715 |INF| switch.msfx
+[./LOG] 18:57:12,35830762 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:12,35830808 |WNG| VarifyProperties : FileName(switch.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:12,35830871 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [switch.msfx]
+[./LOG] 18:57:12,35830871 |INF| CForcusStudioApp::Build_SXML  Count[23/26], FileName[switch.msfx]
+[./LOG] 18:57:12,35830871 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:12,35830871 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\transfer.msfx]
+[./LOG] 18:57:12,35830886 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [transfer.msfx]
+[./LOG] 18:57:13,35830933 |INF| transfer.msfx
+[./LOG] 18:57:13,35830964 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:13,35831027 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [transfer.msfx]
+[./LOG] 18:57:13,35831027 |INF| CForcusStudioApp::Build_SXML  Count[24/26], FileName[transfer.msfx]
+[./LOG] 18:57:13,35831042 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:13,35831042 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\tts.msfx]
+[./LOG] 18:57:13,35831074 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [tts.msfx]
+[./LOG] 18:57:13,35831120 |INF| tts.msfx
+[./LOG] 18:57:13,35831152 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:13,35831214 |WNG| VarifyProperties : FileName(tts.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:13,35831245 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:13,35831308 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:13,35831370 |INF| CItem_If_Dlg::Validation
+[./LOG] 18:57:13,35831744 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [tts.msfx]
+[./LOG] 18:57:13,35831744 |INF| CForcusStudioApp::Build_SXML  Count[25/26], FileName[tts.msfx]
+[./LOG] 18:57:13,35831807 |INF| CForcusStudioController::OnLButtonDblClk
+[./LOG] 18:57:13,35831838 |INF| CForcusStudioDoc::CForcusStudioDoc
+[./LOG] 18:57:13,35831838 |INF| CForcusStudioDoc::OnOpenDocument [D:\Break\ForCus4.3\블록 시험 시나리오(9)TRK\IR_TEST\userfunction.msfx]
+[./LOG] 18:57:13,35831854 |INF| CForcusStudioDoc::WriteInfoXMLFileT Begining [userfunction.msfx]
+[./LOG] 18:57:13,35831900 |INF| userfunction.msfx
+[./LOG] 18:57:14,35831932 |INF| CItem_Select_Dlg::Validation
+[./LOG] 18:57:14,35831994 |WNG| VarifyProperties : FileName(userfunction.msfx) : SymbolName(Select2) : Value(Conditions did not use the "Default")
+[./LOG] 18:57:14,35832197 |INF| CForcusStudioDoc::WriteInfoXMLFileT Ending [userfunction.msfx]
+[./LOG] 18:57:14,35832197 |INF| CForcusStudioApp::Build_SXML  Count[26/26], FileName[userfunction.msfx]
+[./LOG] 18:57:14,35832212 |INF| ProjectFileDoc::MakeProject_All_XML
+[./LOG] 18:57:14,35832212 |INF| CProjectFileDoc::WriteProjectXMLFile
+[./LOG] 18:57:14,35832259 |INF| Joining...
+[./LOG] 18:57:14,35832275 |INF| ProjectFileDoc::MakeProject_All_XML  File copied "C:\Program Files\Bridgetec\ForCus\ForCusStudio\scenario\IPRON_IR_ALL.SXML"
+[./LOG] 18:57:14,35832322 |INF|     File copied "C:\Program Files\Bridgetec\ForCus\ForCusStudio\scenario\IPRON_IR_ALL.SXML"
+[./LOG] 18:57:14,35832368 |INF| 
+IPRON_IR_ALL.SXML - 0 error(s), 49 warning(s)
+[./LOG] 18:57:14,35832368 |INF| CForcusStudioApp::EndWorkAfterBuild  Build OK!
+[./LOG] 18:57:15,35833585 |INF| CForcusStudioApp::Build_SXML  Ending
+[./LOG] 18:57:58,35876033 |INF| CMainFrame::OnEditBookmarkToggle
+[./LOG] 18:57:58,35876080 |INF| CDlg_Breakpoint::WriteBreakpointFile
+[./LOG] 18:58:01,35879496 |INF| CMainFrame::OnEditBookmarkToggle
+[./LOG] 18:58:01,35879527 |INF| CDlg_Breakpoint::WriteBreakpointFile
+[./LOG] 18:58:07,35885799 |INF| CMainFrame::OnEditBookmarkToggle
+[./LOG] 18:58:12,35890089 |INF| CDlg_Bookmark::WriteBookmarkFile
+[./LOG] 18:58:15,35893724 |INF| CDlg_Bookmark::OnInitDialog
+[./LOG] 18:58:15,35893724 |INF| CDlg_Bookmark::OnInitDialog
+[./LOG] 18:58:26,35904722 |INF| CMainFrame::OnEditBookmarkToggle
+[./LOG] 18:58:26,35904737 |INF| CDlg_Bookmark::WriteBookmarkFile
+[./LOG] 18:58:27,35905580 |INF| CMainFrame::OnEditBookmarkToggle
+[./LOG] 18:58:30,35908107 |INF| CMainFrame::OnEditBookmarkToggle
+[./LOG] 18:58:34,35911976 |INF| CMainFrame::OnEditBookmarkToggle
+[./LOG] 18:58:38,35916422 |INF| CDlg_Bookmark::WriteBookmarkFile
+[./LOG] 18:58:40,35918200 |INF| CMainFrame::OnEditBookmarkToggle
+[./LOG] 18:58:40,35918216 |INF| CDlg_Bookmark::WriteBookmarkFile
+[./LOG] 18:58:42,35920571 |INF| CDlg_Bookmark::OnInitDialog
+[./LOG] 18:58:44,35922397 |INF| CMainFrame::OnEditBookmarkToggle
+[./LOG] 18:58:47,35925548 |INF| CDlg_Bookmark::WriteBookmarkFile
+[./LOG] 18:58:48,35926437 |INF| CDlg_Bookmark::OnInitDialog
+[./LOG] 18:58:57,35935111 |INF| CMainFrame::OnEditBookmarkToggle
+[./LOG] 18:58:57,35935126 |INF| CDlg_Bookmark::WriteBookmarkFile
+[./LOG] 19:31:19,37877307 |INF| CMainFrame::OnClose
+[./LOG] 19:31:19,37877323 |INF| ThreadAutoSave Terminate
+[./LOG] 19:31:21,37879476 |INF| CForcusStudioApp::RemoveOpenFileList  FileName[main.ssfx]
+[./LOG] 19:31:21,37879491 |INF| CMainFrame::OnDestroy Entry
+[./LOG] 19:31:21,37879491 |INF| CForcusStudioApp::OnFileCloseProject
+[./LOG] 19:31:21,37879491 |INF| CForcusStudioApp::OnWindowCloseAll  m_pdtScenarioFile->CloseAllDocuments
+[./LOG] 19:31:21,37879491 |INF| CForcusStudioApp::OnWindowCloseAll  m_pdtMenuFile->CloseAllDocuments
+[./LOG] 19:31:21,37879491 |INF| CForcusStudioApp::OnWindowCloseAll  m_pdtUserFile->CloseAllDocuments
+[./LOG] 19:31:21,37879491 |INF| CForcusStudioApp::OnWindowCloseAll  m_pdtTextDebuggingFile->CloseAllDocuments
+[./LOG] 19:31:21,37879491 |INF| CForcusStudioApp::OnWindowCloseAll  m_pdtTextDebuggingFileMenu->CloseAllDocuments
+[./LOG] 19:31:21,37879491 |INF| CForcusStudioApp::OnWindowCloseAll  m_pdtTextDebuggingFileUser->CloseAllDocuments
+[./LOG] 19:31:21,37879491 |INF| CForcusStudioApp::OnWindowCloseAll  End
+[./LOG] 19:31:21,37879491 |INF| CProjectFileDoc::CloseProject
+[./LOG] 19:31:21,37879585 |INF| CForcusStudioApp::DeleteProgressDlg
+[./LOG] 19:31:21,37879585 |INF| CDBProc::CloseDatabase Search & Replace
+[./LOG] 19:31:21,37879601 |INF| CMainFrame::OnDestroy - APP()->CloseAllDocuments(TRUE)
+[./LOG] 19:31:21,37879601 |INF| CMainFrame::OnDestroy Exit
+[./LOG] 19:31:21,37879601 |INF| <<<<<<<<<< Ending ForCus Studio 4.3.3.3 >>>>>>>>>>

@@ -1,0 +1,718 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"m_",
+				"m_mLock"
+			],
+			[
+				"mem",
+				"memset"
+			],
+			[
+				"LOG",
+				"LOG_LV3"
+			],
+			[
+				"LO",
+				"LOG_INF"
+			],
+			[
+				"szK",
+				"szPacket"
+			],
+			[
+				"Respo",
+				"ResponseQueue"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"Lo",
+				"LogWrn"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"TBSession",
+				"TBSessionManager"
+			],
+			[
+				"sz",
+				"szResponse"
+			],
+			[
+				"szCm",
+				"szCmdType"
+			],
+			[
+				"Log",
+				"LogInf"
+			],
+			[
+				"e",
+				"erase"
+			],
+			[
+				"ICMSession",
+				"ICMSessionManager"
+			],
+			[
+				"Re",
+				"ReConnect"
+			],
+			[
+				"Ic",
+				"ICMSessionHB"
+			],
+			[
+				"ICM",
+				"ICMSession"
+			],
+			[
+				"ICMS",
+				"ICMSessionHB"
+			],
+			[
+				"TcpS",
+				"TcpSessionBase"
+			],
+			[
+				"Queue",
+				"QueueItem"
+			],
+			[
+				"TBSess",
+				"TBSessionManager"
+			],
+			[
+				"Tb",
+				"TBSessionListener"
+			],
+			[
+				"LogSo",
+				"LogSockS"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"nSi",
+				"nSize"
+			],
+			[
+				"iSo",
+				"iSocket"
+			],
+			[
+				"iSoc",
+				"iSockAddr"
+			],
+			[
+				"iS",
+				"iSocket"
+			],
+			[
+				"strcfgfile",
+				"strCfgFileName"
+			],
+			[
+				"strCfgFi",
+				"strCfgFilePath"
+			],
+			[
+				"LOG_P",
+				"LOG_PREFIX"
+			],
+			[
+				"Tba",
+				"TBAMainThread"
+			],
+			[
+				"GetAdap",
+				"GetAdapterCount"
+			],
+			[
+				"get",
+				"GetCnt"
+			],
+			[
+				"ge",
+				"GetCnt"
+			],
+			[
+				"Get",
+				"GetCnt"
+			],
+			[
+				"m_work",
+				"m_WORKTIME_ID"
+			],
+			[
+				"COL_HO",
+				"COL_HOLI_ID"
+			],
+			[
+				"m_holi",
+				"m_HOLI_ID"
+			],
+			[
+				"IRMen",
+				"IRMenuSvcControl"
+			],
+			[
+				"m_Work",
+				"m_WORK_USER"
+			],
+			[
+				"m_ment",
+				"m_MENTFILE_ID"
+			],
+			[
+				"m_me",
+				"m_MENT_DESC"
+			],
+			[
+				"MENT",
+				"MENTFILE_ID"
+			],
+			[
+				"SYSTEM",
+				"SYSTEM_ID"
+			],
+			[
+				"m_tan",
+				"m_TENANT_ID"
+			],
+			[
+				"m_sce",
+				"m_SCENARIO_NAME"
+			],
+			[
+				"m_Sc",
+				"m_SCENARIO_ID"
+			],
+			[
+				"TRK",
+				"TRK_GRP_ID"
+			],
+			[
+				"EX",
+				"EXTSVR_ID"
+			],
+			[
+				"EXT_",
+				"EXTSVR_ID"
+			],
+			[
+				"Tr",
+				"TRUNK_ID"
+			],
+			[
+				"siz",
+				"sizeof"
+			],
+			[
+				"m_end",
+				"m_ENDPT_ID"
+			],
+			[
+				"Add",
+				"AddKeyInt"
+			],
+			[
+				"m_dnis",
+				"m_DNIS_DESC"
+			],
+			[
+				"m_dni",
+				"m_DNIS_NAME"
+			],
+			[
+				"DNIS",
+				"DNIS_NAME"
+			],
+			[
+				"u",
+				"uint32"
+			],
+			[
+				"IRD",
+				"IRDnisMaster"
+			],
+			[
+				"refre",
+				"RefreshData"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"CLANG",
+				"Package Control: Install Package"
+			],
+			[
+				"SFTP",
+				"Snippet: fprintf …"
+			],
+			[
+				"Pac",
+				"Package Control: Add Channel"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"CLang",
+				"SublimeClang: Clear cache"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 111.0,
+		"history":
+		[
+			"Functions",
+			"Function Name Display",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Sublime Text Build 3059/changelog.txt",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/iweb/TBSession.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/cfg/tba.iweb.cfg",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/MainThread.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/Config.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/Config.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TBADefines.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/QueueBase.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/ICMSession.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/QueueBase.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/ICMSession.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/ICMSessionHB.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/ICMSessionManager.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/ICMSessionManager.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TcpSessionManagerBase.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TcpSessionManagerBase.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TBSession.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TcpSessionBase.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TBSession.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TBSessionManager.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TcpSessionBase.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TBSessionListener.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/sftp-config.json",
+		"/D/01.프로젝트/05. IPRON/v33/sftp-config-alt.json",
+		"/D/01.프로젝트/05. IPRON/v32/ipronv32",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TBSessionListener.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/LineCommand.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iCore/iString.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/COREOld/inc/iCore/iString.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iCore/iLog.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/TBBridge.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TE/MCE/SgwBridge.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/AgtMsgProcessor.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/ResponseQueue.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/ResponseQueue.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TcpSessionCleaner.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/LineCommand.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB - 복사본/TBSession.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/RequestQueue.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB - 복사본/ICMSessionManager.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/CB/CBCommon/AdapterLinker.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB - 복사본/TcpSessionBase.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/Utility.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/ICMSessionHB.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iCoreVer.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB - 복사본/QueueBase.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TBSessionManager.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TB/TBCommon/tb_codedef.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/FCCBridge.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/commonLib/cpp/xg_socket.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/tbif.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TcpSession.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TcpSession.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/RequestQueue.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TBAMain.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TcpSessionCleaner.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/QueuePollingWorker.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/QueuePollingWorker.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/QueuePollingThread.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/QueuePollingThread.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/CB/CBCommon/AdapterExecuter.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TcpSessionController.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TcpSessionController.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/TBManager.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/sockclient.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDCLIB/iSiLib.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/sockclient.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iCore/iSocket.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TE/MCE/sockclient.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TE/MCE/sockclient.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TB/TBCommon/RequestTimeManager.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TE/MCE/timerthread.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/timerthread.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/CB/CBCommon/LogManager.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/CB/CBCommon/RequestTimeManager.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/inc/commonLib/xg_logger.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/FCCGateway.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/MainThread.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TBAMain.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/FCCMsgProcessor.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/BTHA/src/main.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDC/IRIDCMain.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iCore/iIniFile.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/makefile",
+		"/D/01.프로젝트/05. IPRON/v33/src/BTHA/src/Config.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/AppConfig.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/AppConfig.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iCore/iLib.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDCLIB/IsSendId.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDCLIB/IsQueueCall.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDCLIB/iSiLib.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDCLIB/IsIEMonitor.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDCLIB/IsIEMonitor.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDCLIB/iSerialize.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDCLIB/iSerialize.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDCLIB/IsCall.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDCLIB/IsCall.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/CB/CBCommon/SharedMem.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/CB/CBCommon/SharedMem.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/CB/CBCommon/cbDataQueue.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/COREOld/inc/iCore/NsObj.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/COREOld/inc/iCore/iLog.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/COREOld/inc/iCore/iDblQue.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/COREOld/inc/iCore/iBlowFish.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iCore/NsObj.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iCore/iDblQue.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iCore/iBlowFish.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/BTHA/src/ShmData.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/BTHA/src/ShmData.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/BTHA/src/Config.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/AgentBridge.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDC/IRIDC.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDC/IRIDC.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/AppConfig",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/standard.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/stdafx.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB.00/stdafx.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDC/IRIDCMain.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IRCLI/ICli.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iXBus.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/CORE/inc/iCore/iSqlite.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/COREOld/inc/iXBus.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/COREOld/inc/iCore/iSqlite.h",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/IDC/makefile",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/TBAMain..cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/FCCGateway.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/FCCMsgProcessor.cpp",
+		"/D/01.프로젝트/05. IPRON/v33/src/IR/TBA/IWEB/FCCMsgProcessor.h"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\01.프로젝트\\05. IPRON\\01.참고\\02.CBAdaptor",
+			"D:\\01.프로젝트\\05. IPRON\\v33\\src\\IR\\",
+			"D:\\01.프로젝트\\05. IPRON\\v33\\src\\IR\\TBA\\IWEB",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"FindPort",
+			"AddPort",
+			"Process startup. <PrcName",
+			"m_m",
+			"mutex",
+			"m_mLock",
+			"ConvertToXCTP",
+			"Connect",
+			"MapK",
+			"Response queue insert success",
+			"InsertICMMap",
+			"Insert icm item",
+			"NPSTR",
+			"NPCSTR",
+			"RemoveICMItem",
+			"SendToICM",
+			"Queue",
+			"0x01",
+			"0x",
+			"0x01",
+			"0x04",
+			"substr",
+			"RemoveSession",
+			"LOGLEVEL",
+			"SendData",
+			"LineCommand",
+			"nTbFd",
+			"QueueItem",
+			"PKT_REG_IVR_INFO",
+			"WEB_PKT_REQDATA",
+			"iFd",
+			"push_back",
+			"push_bak",
+			"Connect",
+			"NonB",
+			"WEB_PKT_COMMAND",
+			"TcpSessionCleaner",
+			"RemoveSession",
+			"strncpy",
+			"SendData",
+			"StartUp",
+			"ETX",
+			"new ICMSession",
+			"m_mLock",
+			"Connect",
+			"%02d",
+			"SendData",
+			"Is",
+			"static cast",
+			"MakeHeader",
+			"make",
+			"data",
+			"body",
+			"SendData",
+			"SetTbId",
+			");\n",
+			"cleaner",
+			"ReceiveData(char",
+			"GetSocketAddr",
+			"itor",
+			"Buffer",
+			"GetSessionCnt",
+			"Polling",
+			"PollingQueue()",
+			"m_sessionController",
+			"TcpSessionController",
+			"queue",
+			"iThread",
+			"iMutex",
+			"iLock",
+			"lock",
+			";\n",
+			"RSelect",
+			"iSelectRes",
+			"SendData",
+			"TB_INFO",
+			"TB_PKT_REQ_REGISTER",
+			"GetRcvBufPtr",
+			"pktXCTPHeader",
+			"WARN",
+			"WRN",
+			"Parsing",
+			"SOCK_BUFFER_SIZE",
+			"CLIENT_SOCK_DATA",
+			".find",
+			"m_mapTimeout",
+			"m_mapTimer",
+			"FCC_TIMER",
+			"insert",
+			"<map",
+			"insert",
+			"map",
+			"__FUNCTION__",
+			"ILOG_ERR",
+			"theLog.Log",
+			"ILOG_INFO",
+			"Accept",
+			".Accept",
+			"SOCK_STREAM",
+			"AF_INET6",
+			"onAccepted",
+			"accept",
+			"select",
+			"enum",
+			"NP",
+			"NPST",
+			"NPTSTR",
+			"ZeroMemory",
+			"inline",
+			"Wait",
+			"TBAMainThread",
+			"strcpy(",
+			".c_str",
+			"sprintf",
+			"g_AdaptorInfo",
+			"gConfig",
+			"szLogPath",
+			"ILOG_INFO",
+			"atoi",
+			"NConfig",
+			"ThreadRun",
+			"mszProcName",
+			"NPROCNAME",
+			"mszProcName",
+			"GetProcName",
+			"iPrintf",
+			"mca",
+			"reqQue"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"project": "sftp-config.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"irdh",
+				"IR\\IDCLIB\\IRLibDefines.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/D/v3.2/IPRONv32.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

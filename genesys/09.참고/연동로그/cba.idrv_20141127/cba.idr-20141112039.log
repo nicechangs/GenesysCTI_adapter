@@ -1,0 +1,74 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.idr pid(23873) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:16:04.631931[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+16:16:04.631938[44m|INF|[0mIVRDriver Initialize success.
+16:16:04.631943[44m|INF|[0mOwnerName     : CBA.ISVR
+16:16:04.631947[44m|INF|[0mOwnerId       : 1001
+16:16:04.631952[44m|INF|[0mSvcAppName    : IVR5
+16:16:04.631956[44m|INF|[0mSvcDriverName : IVR1
+16:16:04.631960[44m|INF|[0mRemoteIp      : 127.0.0.1
+16:16:04.631965[44m|INF|[0mRemotePort    : 35001
+16:16:04.631969[44m|INF|[0mLogPath       : ../log/cba.idrv/
+16:16:04.631973[44m|INF|[0mLogLinkPath   : ../log/
+16:16:04.631978[44m|INF|[0mLogLevel      : 3
+16:16:04.631982[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+16:16:04.631987[44m|INF|[0m
+
+16:16:04.632177[44m|INF|[0mConnection success. remote_ip:127.0.0.1, remote_port:35001
+16:16:04.632604[44m|INF|[0mReqId:100000001|Command:LoginReq|Version:4.0|ClientName:IVR1|ReportStatus:true|ServerMonitor:set
+16:16:04.632632[33m|LV2|[0mReqId:100000001|Command:LoginReq|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginReq Version="4.0" ClientName="IVR1" ReportStatus="true" ServerMonitor="set"/></GctiMsg>
+
+16:16:04.632694[34m|LV1|[0mSEND   |127.0.0.1:35001|208|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginReq Version="4.0" ClientName="IVR1" ReportStatus="true" ServerMonitor="set"/></GctiMsg>
+
+16:16:04.633868[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginResp IServerVersion="8.5" Result="Success" ConfigOptions="" Status="OK"/></GctiMsg>
+
+16:16:04.634050[44m|INF|[0mReqId:100000001|Command:LoginResp|IServerVersion:8.5|Result:Success|ConfigOptions:|Status:OK
+16:16:04.634061[33m|LV2|[0mReqId:100000001|Command:LoginResp|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>100000001</CallId><LoginResp IServerVersion="8.5" Result="Success" ConfigOptions="" Status="OK"/></GctiMsg>
+
+16:18:06.826694[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000 |Command:NewCall|CalledNum:1000|CallControlMode:Network|Version:3.0|ANIRestriction:CLIP|DNIS:4200|ANI:234|UDataEx:UserExtensionInfo-icNewCall|ExtnsEx:
+16:18:06.826720[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000 |Command:NewCall|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000 &#13;</CallId><NewCall CallControlMode="Network" Version="3.0"><CalledNum>1000</CalledNum><DNIS>4200</DNIS><ANI>234</ANI><UDataEx>UserExtensionInfo-icNewCall</UDataEx></NewCall></GctiMsg>
+
+16:18:06.826749[34m|LV1|[0mSEND   |127.0.0.1:35001|325|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000 &#13;</CallId><NewCall CallControlMode="Network" Version="3.0"><CalledNum>1000</CalledNum><DNIS>4200</DNIS><ANI>234</ANI><UDataEx>UserExtensionInfo-icNewCall</UDataEx></NewCall></GctiMsg>
+
+16:18:06.827084[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000 &#13;</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+16:18:06.827241[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000 |Command:CallStatus|CallStatus:Ringing
+16:18:06.827267[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000 |Command:CallStatus|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000 &#13;</CallId><CallStatus Event="Ringing"/></GctiMsg>
+
+16:18:06.927454[34m|LV1|[0mRECEIVE|127.0.0.1:35001|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000 &#13;</CallId><CallStatus Event="Established"/></GctiMsg>
+
+16:18:06.927706[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000 |Command:CallStatus|CallStatus:Established
+16:18:06.927735[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000 |Command:CallStatus|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000 &#13;</CallId><CallStatus Event="Established"/></GctiMsg>
+
+16:18:56.385801[44m|INF|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000 |Command:|CalledNum:1000|CallControlMode:Network|Version:3.0|ANIRestriction:CLIP|DNIS:4200|ANI:234|UDataEx:UserExtensionInfo-icNewCall|ExtnsEx:
+16:18:56.422461[33m|LV2|[0mReqId:1254BA80-53AB-4214-91AD-32EE609062BA0000 |Command:|XmlData:<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000 </CallId><NewCall CallControlMode="Network" Version="3.0"><CalledNum>1000</CalledNum><DNIS>4200</DNIS><ANI>234</ANI><UDataEx>UserExtensionInfo-icNewCall</UDataEx></NewCall></GctiMsg>
+
+16:18:56.422782[34m|LV1|[0mSEND   |127.0.0.1:35001|321|<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg><CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000 </CallId><NewCall CallControlMode="Network" Version="3.0"><CalledNum>1000</CalledNum><DNIS>4200</DNIS><ANI>234</ANI><UDataEx>UserExtensionInfo-icNewCall</UDataEx></NewCall></GctiMsg>
+

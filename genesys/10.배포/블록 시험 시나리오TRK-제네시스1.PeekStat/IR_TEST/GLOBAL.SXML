@@ -1,0 +1,234 @@
+<packetblock>
+</packetblock>
+<menublock>
+	<!-- MenuDef_Start (main) -->
+	<menudef id="0" name="main" >
+		<menuopt dtmfmask="1/1,2/2" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<!-- MenuDef GetDigit_Start -->
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<label id="_xgen_studio_make_session_menu_key_START" />
+		<play expr="session.menu.choicement" cleardigit="0" type="mentid" wait="0" cond="1" index="session.menu.playindex" />
+		<getdigit name="_xgen_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="session.menu.cleardigit" />
+		<assign name="_xgen_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="session.menu.playindex" expr="1" cond="1" />
+			<if cond="_xgen_studio_make_session_menu_key.digits == session.menu.upkey" >
+				<jump src="0" />
+			<elseif cond="_xgen_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<jump dtmf="_xgen_studio_make_session_menu_key.digits" />
+				<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+				<assign name="session.menu.playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="_xgen_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_xgen_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_xgen_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_xgen_studio_make_session_menu_key_END" />
+		<!-- MenuDef GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (te_test1) -->
+	<menudef id="1" name="te_test1" >
+		<menuopt dtmfmask="1/11,2/12,3/13,4/14,5/15,6/16,7/17,8/18,9/19,0/20" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<!-- MenuDef GetDigit_Start -->
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<label id="_xgen_studio_make_session_menu_key_START" />
+		<play expr="session.menu.choicement" cleardigit="0" type="mentid" wait="0" cond="1" index="session.menu.playindex" />
+		<getdigit name="_xgen_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="session.menu.cleardigit" />
+		<assign name="_xgen_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="session.menu.playindex" expr="1" cond="1" />
+			<if cond="_xgen_studio_make_session_menu_key.digits == session.menu.upkey" >
+				<jump src="0" />
+			<elseif cond="_xgen_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<jump dtmf="_xgen_studio_make_session_menu_key.digits" />
+				<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+				<assign name="session.menu.playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="_xgen_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_xgen_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_xgen_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_xgen_studio_make_session_menu_key_END" />
+		<!-- MenuDef GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (getchannel) -->
+	<menudef id="11" name="getchannel" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_11_subcall" src="getchannel.msf" iparam="" ioparam="" />
+		<if cond="menu_11_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_11_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (play) -->
+	<menudef id="12" name="play" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_12_subcall" src="play.msf" iparam="" ioparam="" />
+		<if cond="menu_12_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_12_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (digit) -->
+	<menudef id="13" name="digit" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (tts) -->
+	<menudef id="14" name="tts" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (disconnect) -->
+	<menudef id="15" name="disconnect" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_15_subcall" src="disconnect.msf" iparam="" ioparam="" />
+		<if cond="menu_15_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_15_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (abort) -->
+	<menudef id="16" name="abort" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_16_subcall" src="abort.msf" iparam="" ioparam="" />
+		<if cond="menu_16_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_16_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (record) -->
+	<menudef id="17" name="record" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_17_subcall" src="record.msf" iparam="" ioparam="" />
+		<if cond="menu_17_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_17_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (switch) -->
+	<menudef id="18" name="switch" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_18_subcall" src="switch.msf" iparam="" ioparam="" />
+		<if cond="menu_18_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_18_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (disswitch) -->
+	<menudef id="19" name="disswitch" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_19_subcall" src="disswitch.msf" iparam="" ioparam="" />
+		<if cond="menu_19_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_19_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (pushtone) -->
+	<menudef id="20" name="pushtone" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="1" />
+		<subcall name="menu_20_subcall" src="pushtone.msf" iparam="" ioparam="" />
+		<if cond="menu_20_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_20_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (te_test2) -->
+	<menudef id="2" name="te_test2" >
+		<menuopt dtmfmask="1/21" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="0" />
+		<!-- MenuDef GetDigit_Start -->
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="0" cond="1" />
+		<assign name="session.menu.playindex" expr="1" cond="1" />
+		<label id="_xgen_studio_make_session_menu_key_START" />
+		<play expr="session.menu.choicement" cleardigit="0" type="mentid" wait="0" cond="1" index="session.menu.playindex" />
+		<getdigit name="_xgen_studio_make_session_menu_key" length="session.menu.dtmf_length" timeout="session.menu.timeout" intertimeout="5" endkey="" cleardigit="session.menu.cleardigit" />
+		<assign name="_xgen_studio_make_session_menu_key_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<assign name="session.menu.playindex" expr="1" cond="1" />
+			<if cond="_xgen_studio_make_session_menu_key.digits == session.menu.upkey" >
+				<jump src="0" />
+			<elseif cond="_xgen_studio_make_session_menu_key.digits == session.menu.topkey" />
+				<jump src="0" />
+			<else />
+				<jump dtmf="_xgen_studio_make_session_menu_key.digits" />
+				<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+					<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="_xgen_studio_make_session_menu_key_cnt < session.menu.retrycount - 1" >
+				<assign name="session.menu.playindex" expr="1" cond="1" />
+				<play expr="session.menu.inputerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="_xgen_studio_make_session_menu_key_cnt" expr="_xgen_studio_make_session_menu_key_cnt+1" cond="1" />
+		<if cond="_xgen_studio_make_session_menu_key_cnt >= session.menu.retrycount" >
+			<play expr="session.menu.retryerrment" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			<disconnect />
+		<else />
+			<goto next="_xgen_studio_make_session_menu_key_START" />
+		</if>
+		<label id="_xgen_studio_make_session_menu_key_END" />
+		<!-- MenuDef GetDigit_End  -->
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_Start (transfer) -->
+	<menudef id="21" name="transfer" >
+		<menuopt dtmfmask="" choicement="" timeoutment="" inputerrment="" retryerrment="" dtmflength="" cleardigit="'0'" timeout="'5'" intertimeout="'5'" retrycount="'3'" topkey="'*'" upkey="'#'" topmenu="0" upmenu="2" />
+		<subcall name="menu_21_subcall" src="transfer.msf" iparam="" ioparam="" />
+		<if cond="menu_21_subcall.ret_value == '1'" >
+			<jump src="session.menu.upmenu" />
+		<elseif cond="menu_21_subcall.ret_value == '2'" />
+			<jump src="session.menu.topmenu" />
+		</if>
+		<jump src="session.menu.upmenu" />
+	</menudef>
+	<!-- MenuDef_End (transfer) -->
+</menublock>

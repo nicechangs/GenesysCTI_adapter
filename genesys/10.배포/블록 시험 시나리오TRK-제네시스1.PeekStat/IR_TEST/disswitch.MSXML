@@ -1,0 +1,107 @@
+<scenariodef id="disswitch.msf" iparam="" ioparam="" >
+	<play expr="'m.19'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start (disswitch) -->
+	<if cond="1 == 0" >
+		<goto next="disswitch_END" />
+	</if>
+	<assign name="disswitch_cnt" expr="0" cond="1" />
+	<label id="disswitch_START" />
+	<play expr="'m180'" cleardigit="1" type="" wait="0" cond="1" />
+	<getdigit name="disswitch" length="1" dtmfmask="1|2" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" />
+	<assign name="disswitch_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="disswitch.digits == '1'" >
+			<goto next="disswitch_END" />
+		<elseif cond="disswitch.digits == '2'" />
+			<goto next="disswitch_END" />
+		<else />
+			<if cond="disswitch_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="disswitch_DtmfValue == _SLEE_FAILED_" />
+		<if cond="disswitch_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="disswitch_cnt < 3 - 1" >
+			<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="disswitch_cnt" expr="disswitch_cnt+1" cond="1" />
+	<if cond="disswitch_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+	<else />
+		<if cond="disswitch.digits == '' && session.command.term_digit == ''" >
+			<goto next="disswitch_START" />
+		<else />
+			<goto next="disswitch_START" />
+		</if>
+	</if>
+	<label id="disswitch_END" />
+	<!-- GetDigit_End (disswitch) -->
+	<!-- select : switch.digits -->
+	<if cond = "switch.digits == '1'" >
+		<play expr="'m.181'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<goto next="{0171B331-061B-44AB-B106-B36AA04570D0}" />
+		<label id="{0171B331-061B-44AB-B106-B36AA04570D0}" />
+		<play expr="'vp.1811'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<assign name="a" expr="1" cond="1" />
+		<goto next="{0171B331-061B-44AB-B106-B36AA04570D0}" />
+	<elseif cond = "switch.digits == '2'" />
+		<play expr="'m.182'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<!-- GetDigit_Start (switch) -->
+		<if cond="1 == 0" >
+			<goto next="switch_END" />
+		</if>
+		<assign name="switch_cnt" expr="0" cond="1" />
+		<label id="switch_START" />
+		<play expr="'m.1820'" cleardigit="1" type="" wait="0" cond="1" />
+		<getdigit name="switch" length="5" dtmfmask="" timeout="5" intertimeout="5" endkey="'*#'" cleardigit="0" cdroption="1" />
+		<assign name="switch_DtmfValue" expr="session.command.result" cond="1" />
+		<if cond="session.command.reason == _TE_TIMEOUT_" >
+			<play expr="'errtime'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+			<goto next="switch_END" />
+		<elseif cond="switch_DtmfValue == _SLEE_FAILED_" />
+			<if cond="switch_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		<elseif cond="session.command.reason == _TE_TERM_DIGIT_" />
+			<if cond="session.command.term_digit == '*'" >
+				<goto next="switch_END" />
+			<elseif cond="session.command.term_digit == '#'" />
+				<goto next="switch_END" />
+			<else />
+				<if cond="switch_cnt < 3 - 1" >
+					<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+				</if>
+			</if>
+		<else />
+			<if cond="switch_cnt < 3 - 1" >
+				<play expr="'errinput'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+			</if>
+		</if>
+		<assign name="switch_cnt" expr="switch_cnt+1" cond="1" />
+		<if cond="switch_cnt >= 3" >
+			<play expr="'errretry'" cleardigit="0" type="mentid" desc="" wait="0" cond="1" />
+		<else />
+			<if cond="switch.digits == '' && session.command.term_digit == ''" >
+				<goto next="switch_START" />
+			<else />
+				<goto next="switch_START" />
+			</if>
+		</if>
+		<label id="switch_END" />
+		<!-- GetDigit_End (switch) -->
+		<switch to="switch.digits" mode="2" />
+		<sleep sec="20" cond="" />
+		<disswitch />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+		<disconnect />
+	<else />
+	</if>	
+	<!-- select : switch.digits -->
+</scenariodef>

@@ -1,0 +1,61 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(09557) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+10:38:15.378077[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+10:38:15.378092[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+10:38:15.378098[44m|INF|[0m[PROCESS]
+10:38:15.378103[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+10:38:15.378108[44m|INF|[0mPROCESS_ID           : 1001
+10:38:15.378112[44m|INF|[0m
+
+10:38:15.378117[44m|INF|[0m[SYSTEM]
+10:38:15.378122[44m|INF|[0mSYSTEM_TYPE          : TE
+10:38:15.378126[44m|INF|[0mSYSTEM_ID            : 1000001
+10:38:15.378131[44m|INF|[0m
+
+10:38:15.378135[44m|INF|[0m[CBA_INFO]
+10:38:15.378140[44m|INF|[0mCB_LISTEN_IP         : 
+10:38:15.378145[44m|INF|[0mCB_LISTEN_PORT       : 10002
+10:38:15.378155[44m|INF|[0mLOG_LEVEL            : 3
+10:38:15.378164[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+10:38:15.378169[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+10:38:15.378175[44m|INF|[0mLOG_LINK_PATH        : ../log/
+10:38:15.378179[44m|INF|[0m
+
+10:38:15.378184[44m|INF|[0m[IVR_DRIVER]
+10:38:15.378189[44m|INF|[0mREMOTE_IP            : 127.0.0.1
+10:38:15.378194[44m|INF|[0mREMOTE_PORT          : 2020
+10:38:15.378198[44m|INF|[0mSVC_DRIVER_NAME      : IVR1
+10:38:15.378203[44m|INF|[0mSVC_APP_NAME         : IVR5
+10:38:15.378208[44m|INF|[0mTE_SYSTEM_ID         : 1
+10:38:15.378213[44m|INF|[0mSTART_CHANNEL        : 0
+10:38:15.378218[44m|INF|[0mSTART_PORT           : 1
+10:38:15.378222[44m|INF|[0mDNIS_COUNT           : 6
+10:38:15.378227[44m|INF|[0mLOG_LEVEL            : 3
+10:38:15.378232[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+10:38:15.378237[44m|INF|[0mLOG_LINK_PATH        : ../log/
+10:38:15.378242[44m|INF|[0m
+
+10:38:15.378247[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+10:38:15.378426[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:00010000, Port:1, TESystemID:1, ChannelNo:0
+10:38:15.378427[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+10:38:15.378456[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:00010001, Port:2, TESystemID:1, ChannelNo:1
+10:38:15.378475[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:00010002, Port:3, TESystemID:1, ChannelNo:2
+10:38:15.378490[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:00010003, Port:4, TESystemID:1, ChannelNo:3
+10:38:15.378503[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:00010004, Port:5, TESystemID:1, ChannelNo:4
+10:38:15.378528[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:00010005, Port:6, TESystemID:1, ChannelNo:5
+10:38:15.382654[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 ilInitiate success !!
+10:38:16.378644[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:127.0.0.1, port:59230 
+10:38:16.378697[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION7, ip:127.0.0.1, port:59230
+10:38:16.379860[32m|LV3|[0mCB_SESSION7|RECEIVE|000154|0015400010312003120010000000071                                         GENESYS         10000               xcbRegister                                 
+10:38:16.379942[33m|LV2|[0mCB_SESSION7|SEND   |000154|0015400312001000103120000000071                                         GENESYS         10001               xcbRegister                                 
+10:38:16.379956[44m|INF|[0mCB_SESSION7|HandleRegister success.
+10:38:16.383889[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:127.0.0.1, RemotePort:2020
+10:38:19.385073[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:127.0.0.1, RemotePort:2020
+10:38:22.386276[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:127.0.0.1, RemotePort:2020
+10:38:25.387476[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:127.0.0.1, RemotePort:2020
+10:38:28.388655[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:127.0.0.1, RemotePort:2020
+10:38:31.389852[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:127.0.0.1, RemotePort:2020
+10:38:34.391043[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:127.0.0.1, RemotePort:2020

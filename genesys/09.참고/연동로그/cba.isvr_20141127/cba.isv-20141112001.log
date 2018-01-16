@@ -1,0 +1,246 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(30126) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+09:41:49.556992[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+09:41:49.557028[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+09:41:49.557050[44m|INF|[0m[PROCESS]
+09:41:49.557067[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+09:41:49.557079[44m|INF|[0mPROCESS_ID           : 1001
+09:41:49.557090[44m|INF|[0m
+
+09:41:49.557101[44m|INF|[0m[SYSTEM]
+09:41:49.557113[44m|INF|[0mSYSTEM_TYPE          : TE
+09:41:49.557125[44m|INF|[0mSYSTEM_ID            : 1000001
+09:41:49.557136[44m|INF|[0m
+
+09:41:49.557147[44m|INF|[0m[CBA_INFO]
+09:41:49.557159[44m|INF|[0mCB_LISTEN_IP         : 
+09:41:49.557171[44m|INF|[0mCB_LISTEN_PORT       : 10002
+09:41:49.557183[44m|INF|[0mLOG_LEVEL            : 3
+09:41:49.557194[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+09:41:49.557206[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+09:41:49.557219[44m|INF|[0mLOG_LINK_PATH        : ../log/
+09:41:49.557230[44m|INF|[0m
+
+09:41:49.557241[44m|INF|[0m[IVR_DRIVER]
+09:41:49.557252[44m|INF|[0mREMOTE_IP            : 127.0.0.1
+09:41:49.557264[44m|INF|[0mREMOTE_PORT          : 35001
+09:41:49.557276[44m|INF|[0mSVC_DRIVER_NAME      : IVR1
+09:41:49.557287[44m|INF|[0mSVC_APP_NAME         : IVR5
+09:41:49.557299[44m|INF|[0mTE_SYSTEM_ID         : 1
+09:41:49.557311[44m|INF|[0mSTART_CHANNEL        : 0
+09:41:49.557322[44m|INF|[0mSTART_PORT           : 1000
+09:41:49.557334[44m|INF|[0mDNIS_COUNT           : 120
+09:41:49.557346[44m|INF|[0mLOG_LEVEL            : 3
+09:41:49.557358[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+09:41:49.557370[44m|INF|[0mLOG_LINK_PATH        : ../log/
+09:41:49.557381[44m|INF|[0m
+
+09:41:49.557392[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+09:41:49.557668[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:00010000, Port:1000, TESystemID:1, ChannelNo:0
+09:41:49.557718[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+09:41:49.557748[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:00010001, Port:1001, TESystemID:1, ChannelNo:1
+09:41:49.557774[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:00010002, Port:1002, TESystemID:1, ChannelNo:2
+09:41:49.557799[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:00010003, Port:1003, TESystemID:1, ChannelNo:3
+09:41:49.557811[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:00010004, Port:1004, TESystemID:1, ChannelNo:4
+09:41:49.557818[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:00010005, Port:1005, TESystemID:1, ChannelNo:5
+09:41:49.557825[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:7, PortKey:00010006, Port:1006, TESystemID:1, ChannelNo:6
+09:41:49.557833[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:8, PortKey:00010007, Port:1007, TESystemID:1, ChannelNo:7
+09:41:49.557840[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:9, PortKey:00010008, Port:1008, TESystemID:1, ChannelNo:8
+09:41:49.557847[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:10, PortKey:00010009, Port:1009, TESystemID:1, ChannelNo:9
+09:41:49.557854[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:11, PortKey:00010010, Port:1010, TESystemID:1, ChannelNo:10
+09:41:49.557861[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:12, PortKey:00010011, Port:1011, TESystemID:1, ChannelNo:11
+09:41:49.557869[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:13, PortKey:00010012, Port:1012, TESystemID:1, ChannelNo:12
+09:41:49.557876[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:14, PortKey:00010013, Port:1013, TESystemID:1, ChannelNo:13
+09:41:49.557883[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:15, PortKey:00010014, Port:1014, TESystemID:1, ChannelNo:14
+09:41:49.557890[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:16, PortKey:00010015, Port:1015, TESystemID:1, ChannelNo:15
+09:41:49.557898[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:17, PortKey:00010016, Port:1016, TESystemID:1, ChannelNo:16
+09:41:49.557914[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:18, PortKey:00010017, Port:1017, TESystemID:1, ChannelNo:17
+09:41:49.557921[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:19, PortKey:00010018, Port:1018, TESystemID:1, ChannelNo:18
+09:41:49.557929[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:20, PortKey:00010019, Port:1019, TESystemID:1, ChannelNo:19
+09:41:49.557936[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:21, PortKey:00010020, Port:1020, TESystemID:1, ChannelNo:20
+09:41:49.557943[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:22, PortKey:00010021, Port:1021, TESystemID:1, ChannelNo:21
+09:41:49.557950[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:23, PortKey:00010022, Port:1022, TESystemID:1, ChannelNo:22
+09:41:49.557958[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:24, PortKey:00010023, Port:1023, TESystemID:1, ChannelNo:23
+09:41:49.557965[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:25, PortKey:00010024, Port:1024, TESystemID:1, ChannelNo:24
+09:41:49.557972[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:26, PortKey:00010025, Port:1025, TESystemID:1, ChannelNo:25
+09:41:49.557980[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:27, PortKey:00010026, Port:1026, TESystemID:1, ChannelNo:26
+09:41:49.557987[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:28, PortKey:00010027, Port:1027, TESystemID:1, ChannelNo:27
+09:41:49.557994[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:29, PortKey:00010028, Port:1028, TESystemID:1, ChannelNo:28
+09:41:49.558002[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:30, PortKey:00010029, Port:1029, TESystemID:1, ChannelNo:29
+09:41:49.558009[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:31, PortKey:00010030, Port:1030, TESystemID:1, ChannelNo:30
+09:41:49.558016[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:32, PortKey:00010031, Port:1031, TESystemID:1, ChannelNo:31
+09:41:49.558024[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:33, PortKey:00010032, Port:1032, TESystemID:1, ChannelNo:32
+09:41:49.558031[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:34, PortKey:00010033, Port:1033, TESystemID:1, ChannelNo:33
+09:41:49.558039[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:35, PortKey:00010034, Port:1034, TESystemID:1, ChannelNo:34
+09:41:49.558056[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:36, PortKey:00010035, Port:1035, TESystemID:1, ChannelNo:35
+09:41:49.558075[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:37, PortKey:00010036, Port:1036, TESystemID:1, ChannelNo:36
+09:41:49.558093[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:38, PortKey:00010037, Port:1037, TESystemID:1, ChannelNo:37
+09:41:49.558111[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:39, PortKey:00010038, Port:1038, TESystemID:1, ChannelNo:38
+09:41:49.558129[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:40, PortKey:00010039, Port:1039, TESystemID:1, ChannelNo:39
+09:41:49.558147[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:41, PortKey:00010040, Port:1040, TESystemID:1, ChannelNo:40
+09:41:49.558165[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:42, PortKey:00010041, Port:1041, TESystemID:1, ChannelNo:41
+09:41:49.558183[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:43, PortKey:00010042, Port:1042, TESystemID:1, ChannelNo:42
+09:41:49.558201[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:44, PortKey:00010043, Port:1043, TESystemID:1, ChannelNo:43
+09:41:49.558219[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:45, PortKey:00010044, Port:1044, TESystemID:1, ChannelNo:44
+09:41:49.558237[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:46, PortKey:00010045, Port:1045, TESystemID:1, ChannelNo:45
+09:41:49.558255[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:47, PortKey:00010046, Port:1046, TESystemID:1, ChannelNo:46
+09:41:49.558273[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:48, PortKey:00010047, Port:1047, TESystemID:1, ChannelNo:47
+09:41:49.558292[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:49, PortKey:00010048, Port:1048, TESystemID:1, ChannelNo:48
+09:41:49.558310[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:50, PortKey:00010049, Port:1049, TESystemID:1, ChannelNo:49
+09:41:49.558335[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:51, PortKey:00010050, Port:1050, TESystemID:1, ChannelNo:50
+09:41:49.558354[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:52, PortKey:00010051, Port:1051, TESystemID:1, ChannelNo:51
+09:41:49.558372[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:53, PortKey:00010052, Port:1052, TESystemID:1, ChannelNo:52
+09:41:49.558390[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:54, PortKey:00010053, Port:1053, TESystemID:1, ChannelNo:53
+09:41:49.558408[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:55, PortKey:00010054, Port:1054, TESystemID:1, ChannelNo:54
+09:41:49.558426[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:56, PortKey:00010055, Port:1055, TESystemID:1, ChannelNo:55
+09:41:49.558444[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:57, PortKey:00010056, Port:1056, TESystemID:1, ChannelNo:56
+09:41:49.558463[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:58, PortKey:00010057, Port:1057, TESystemID:1, ChannelNo:57
+09:41:49.558496[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:59, PortKey:00010058, Port:1058, TESystemID:1, ChannelNo:58
+09:41:49.558519[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:60, PortKey:00010059, Port:1059, TESystemID:1, ChannelNo:59
+09:41:49.558547[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:61, PortKey:00010060, Port:1060, TESystemID:1, ChannelNo:60
+09:41:49.558567[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:62, PortKey:00010061, Port:1061, TESystemID:1, ChannelNo:61
+09:41:49.558585[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:63, PortKey:00010062, Port:1062, TESystemID:1, ChannelNo:62
+09:41:49.558603[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:64, PortKey:00010063, Port:1063, TESystemID:1, ChannelNo:63
+09:41:49.558621[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:65, PortKey:00010064, Port:1064, TESystemID:1, ChannelNo:64
+09:41:49.558639[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:66, PortKey:00010065, Port:1065, TESystemID:1, ChannelNo:65
+09:41:49.558657[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:67, PortKey:00010066, Port:1066, TESystemID:1, ChannelNo:66
+09:41:49.558676[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:68, PortKey:00010067, Port:1067, TESystemID:1, ChannelNo:67
+09:41:49.558699[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:69, PortKey:00010068, Port:1068, TESystemID:1, ChannelNo:68
+09:41:49.558749[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:70, PortKey:00010069, Port:1069, TESystemID:1, ChannelNo:69
+09:41:49.558772[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:71, PortKey:00010070, Port:1070, TESystemID:1, ChannelNo:70
+09:41:49.558791[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:72, PortKey:00010071, Port:1071, TESystemID:1, ChannelNo:71
+09:41:49.558809[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:73, PortKey:00010072, Port:1072, TESystemID:1, ChannelNo:72
+09:41:49.558827[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:74, PortKey:00010073, Port:1073, TESystemID:1, ChannelNo:73
+09:41:49.558846[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:75, PortKey:00010074, Port:1074, TESystemID:1, ChannelNo:74
+09:41:49.558875[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:76, PortKey:00010075, Port:1075, TESystemID:1, ChannelNo:75
+09:41:49.558898[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:77, PortKey:00010076, Port:1076, TESystemID:1, ChannelNo:76
+09:41:49.558917[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:78, PortKey:00010077, Port:1077, TESystemID:1, ChannelNo:77
+09:41:49.558935[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:79, PortKey:00010078, Port:1078, TESystemID:1, ChannelNo:78
+09:41:49.558953[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:80, PortKey:00010079, Port:1079, TESystemID:1, ChannelNo:79
+09:41:49.558972[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:81, PortKey:00010080, Port:1080, TESystemID:1, ChannelNo:80
+09:41:49.558990[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:82, PortKey:00010081, Port:1081, TESystemID:1, ChannelNo:81
+09:41:49.559008[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:83, PortKey:00010082, Port:1082, TESystemID:1, ChannelNo:82
+09:41:49.559035[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:84, PortKey:00010083, Port:1083, TESystemID:1, ChannelNo:83
+09:41:49.559054[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:85, PortKey:00010084, Port:1084, TESystemID:1, ChannelNo:84
+09:41:49.559072[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:86, PortKey:00010085, Port:1085, TESystemID:1, ChannelNo:85
+09:41:49.559090[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:87, PortKey:00010086, Port:1086, TESystemID:1, ChannelNo:86
+09:41:49.559118[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:88, PortKey:00010087, Port:1087, TESystemID:1, ChannelNo:87
+09:41:49.559143[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:89, PortKey:00010088, Port:1088, TESystemID:1, ChannelNo:88
+09:41:49.559162[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:90, PortKey:00010089, Port:1089, TESystemID:1, ChannelNo:89
+09:41:49.559180[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:91, PortKey:00010090, Port:1090, TESystemID:1, ChannelNo:90
+09:41:49.559198[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:92, PortKey:00010091, Port:1091, TESystemID:1, ChannelNo:91
+09:41:49.559217[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:93, PortKey:00010092, Port:1092, TESystemID:1, ChannelNo:92
+09:41:49.559235[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:94, PortKey:00010093, Port:1093, TESystemID:1, ChannelNo:93
+09:41:49.559254[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:95, PortKey:00010094, Port:1094, TESystemID:1, ChannelNo:94
+09:41:49.559272[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:96, PortKey:00010095, Port:1095, TESystemID:1, ChannelNo:95
+09:41:49.559290[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:97, PortKey:00010096, Port:1096, TESystemID:1, ChannelNo:96
+09:41:49.559309[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:98, PortKey:00010097, Port:1097, TESystemID:1, ChannelNo:97
+09:41:49.559333[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:99, PortKey:00010098, Port:1098, TESystemID:1, ChannelNo:98
+09:41:49.559353[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:100, PortKey:00010099, Port:1099, TESystemID:1, ChannelNo:99
+09:41:49.559371[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:101, PortKey:00010100, Port:1100, TESystemID:1, ChannelNo:100
+09:41:49.559398[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:102, PortKey:00010101, Port:1101, TESystemID:1, ChannelNo:101
+09:41:49.559418[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:103, PortKey:00010102, Port:1102, TESystemID:1, ChannelNo:102
+09:41:49.559436[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:104, PortKey:00010103, Port:1103, TESystemID:1, ChannelNo:103
+09:41:49.559458[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:105, PortKey:00010104, Port:1104, TESystemID:1, ChannelNo:104
+09:41:49.559477[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:106, PortKey:00010105, Port:1105, TESystemID:1, ChannelNo:105
+09:41:49.559495[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:107, PortKey:00010106, Port:1106, TESystemID:1, ChannelNo:106
+09:41:49.559517[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:108, PortKey:00010107, Port:1107, TESystemID:1, ChannelNo:107
+09:41:49.559558[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:109, PortKey:00010108, Port:1108, TESystemID:1, ChannelNo:108
+09:41:49.559587[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:110, PortKey:00010109, Port:1109, TESystemID:1, ChannelNo:109
+09:41:49.559615[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:111, PortKey:00010110, Port:1110, TESystemID:1, ChannelNo:110
+09:41:49.559634[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:112, PortKey:00010111, Port:1111, TESystemID:1, ChannelNo:111
+09:41:49.559653[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:113, PortKey:00010112, Port:1112, TESystemID:1, ChannelNo:112
+09:41:49.559671[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:114, PortKey:00010113, Port:1113, TESystemID:1, ChannelNo:113
+09:41:49.559693[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:115, PortKey:00010114, Port:1114, TESystemID:1, ChannelNo:114
+09:41:49.559712[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:116, PortKey:00010115, Port:1115, TESystemID:1, ChannelNo:115
+09:41:49.559768[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:117, PortKey:00010116, Port:1116, TESystemID:1, ChannelNo:116
+09:41:49.559795[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:118, PortKey:00010117, Port:1117, TESystemID:1, ChannelNo:117
+09:41:49.559815[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:119, PortKey:00010118, Port:1118, TESystemID:1, ChannelNo:118
+09:41:49.559833[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:120, PortKey:00010119, Port:1119, TESystemID:1, ChannelNo:119
+09:41:49.560417[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 ilInitiate success !!
+09:41:49.561049[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IVR1, Command:LoginReq, CallId:100000001, Version:4.0, ClientName:IVR1, ReportStatus:true, ServerMonitor:set
+09:41:49.562101[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginResp|DriverName:IVR1, Command:LoginResp, CallId:100000001, IServerVersion:8.5, Result:Success, ConfigOptions:, Status:OK
+09:41:50.557938[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:100.100.105.105, port:57607 
+09:41:50.557978[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION7, ip:100.100.105.105, port:57607
+09:41:50.559289[41m|WRN|[0mCB_SESSION7|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:41:50.559351[41m|WRN|[0mCB_SESSION7|Not defined packet command. command:, packet:
+09:42:35.407575[41m|ERR|[0mCB_SESSION7|iSocket Recv error !!
+09:42:35.407723[41m|ERR|[0mCB_SESSION7|TcpSession loop exited !!
+09:42:36.608718[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION8, ip:100.100.105.105, port:57631 
+09:42:36.608776[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:2, name:CB_SESSION8, ip:100.100.105.105, port:57631
+09:42:36.659309[41m|WRN|[0mCB_SESSION8|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:42:36.659371[41m|WRN|[0mCB_SESSION8|Not defined packet command. command:, packet:
+09:42:39.558741[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION7
+09:43:26.707923[41m|ERR|[0mCB_SESSION8|iSocket Recv error !!
+09:43:26.708043[41m|ERR|[0mCB_SESSION8|TcpSession loop exited !!
+09:43:27.909077[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:100.100.105.105, port:57659 
+09:43:27.909129[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:2, name:CB_SESSION7, ip:100.100.105.105, port:57659
+09:43:27.959610[41m|WRN|[0mCB_SESSION7|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:43:27.959665[41m|WRN|[0mCB_SESSION7|Not defined packet command. command:, packet:
+09:43:29.559764[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION8
+09:44:12.996563[41m|ERR|[0mCB_SESSION7|iSocket Recv error !!
+09:44:12.996693[41m|ERR|[0mCB_SESSION7|TcpSession loop exited !!
+09:44:14.197697[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION8, ip:100.100.105.105, port:57683 
+09:44:14.197749[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:2, name:CB_SESSION8, ip:100.100.105.105, port:57683
+09:44:14.248291[41m|WRN|[0mCB_SESSION8|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:44:14.248347[41m|WRN|[0mCB_SESSION8|Not defined packet command. command:, packet:
+09:44:14.560695[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION7
+09:45:04.294613[41m|ERR|[0mCB_SESSION8|iSocket Recv error !!
+09:45:04.294736[41m|ERR|[0mCB_SESSION8|TcpSession loop exited !!
+09:45:04.561802[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION8
+09:45:05.495826[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:100.100.105.105, port:57710 
+09:45:05.495882[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION7, ip:100.100.105.105, port:57710
+09:45:05.546364[41m|WRN|[0mCB_SESSION7|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:45:05.546445[41m|WRN|[0mCB_SESSION7|Not defined packet command. command:, packet:
+09:45:55.593062[41m|ERR|[0mCB_SESSION7|iSocket Recv error !!
+09:45:55.593176[41m|ERR|[0mCB_SESSION7|TcpSession loop exited !!
+09:45:56.794052[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION8, ip:100.100.105.105, port:57736 
+09:45:56.794107[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:2, name:CB_SESSION8, ip:100.100.105.105, port:57736
+09:45:56.844558[41m|WRN|[0mCB_SESSION8|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:45:56.845830[41m|WRN|[0mCB_SESSION8|Not defined packet command. command:, packet:
+09:45:59.562881[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION7
+09:46:46.888440[41m|ERR|[0mCB_SESSION8|iSocket Recv error !!
+09:46:46.888571[41m|ERR|[0mCB_SESSION8|TcpSession loop exited !!
+09:46:48.089534[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:100.100.105.105, port:57761 
+09:46:48.089590[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:2, name:CB_SESSION7, ip:100.100.105.105, port:57761
+09:46:48.140345[41m|WRN|[0mCB_SESSION7|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:46:48.140391[41m|WRN|[0mCB_SESSION7|Not defined packet command. command:, packet:
+09:46:49.563879[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION8
+09:47:33.176366[41m|ERR|[0mCB_SESSION7|iSocket Recv error !!
+09:47:33.176478[41m|ERR|[0mCB_SESSION7|TcpSession loop exited !!
+09:47:34.377491[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION8, ip:100.100.105.105, port:57785 
+09:47:34.377554[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:2, name:CB_SESSION8, ip:100.100.105.105, port:57785
+09:47:34.428124[41m|WRN|[0mCB_SESSION8|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:47:34.428190[41m|WRN|[0mCB_SESSION8|Not defined packet command. command:, packet:
+09:47:34.564785[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION7
+09:48:24.474528[41m|ERR|[0mCB_SESSION8|iSocket Recv error !!
+09:48:24.474651[41m|ERR|[0mCB_SESSION8|TcpSession loop exited !!
+09:48:24.565765[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION8
+09:48:25.675551[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:100.100.105.105, port:57813 
+09:48:25.675609[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION7, ip:100.100.105.105, port:57813
+09:48:25.726108[41m|WRN|[0mCB_SESSION7|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:48:25.726217[41m|WRN|[0mCB_SESSION7|Not defined packet command. command:, packet:
+09:49:15.769612[41m|ERR|[0mCB_SESSION7|iSocket Recv error !!
+09:49:15.769773[41m|ERR|[0mCB_SESSION7|TcpSession loop exited !!
+09:49:16.970756[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION8, ip:100.100.105.105, port:57839 
+09:49:16.970824[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:2, name:CB_SESSION8, ip:100.100.105.105, port:57839
+09:49:17.021463[41m|WRN|[0mCB_SESSION8|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:49:17.021533[41m|WRN|[0mCB_SESSION8|Not defined packet command. command:, packet:
+09:49:19.566851[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION7
+09:50:07.069363[41m|ERR|[0mCB_SESSION8|iSocket Recv error !!
+09:50:07.069499[41m|ERR|[0mCB_SESSION8|TcpSession loop exited !!
+09:50:08.270421[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION7, ip:100.100.105.105, port:57868 
+09:50:08.270475[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:2, name:CB_SESSION7, ip:100.100.105.105, port:57868
+09:50:08.321241[41m|WRN|[0mCB_SESSION7|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:50:08.321302[41m|WRN|[0mCB_SESSION7|Not defined packet command. command:, packet:
+09:50:09.567858[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION8
+09:50:53.363085[41m|ERR|[0mCB_SESSION7|iSocket Recv error !!
+09:50:53.363198[41m|ERR|[0mCB_SESSION7|TcpSession loop exited !!
+09:50:54.564249[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION8, ip:100.100.105.105, port:57890 
+09:50:54.564303[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:2, name:CB_SESSION8, ip:100.100.105.105, port:57890
+09:50:54.568817[44m|INF|[0mCBSessionManager|Remove CBSession success. name:CB_SESSION7
+09:50:54.614721[41m|WRN|[0mCB_SESSION8|packet=0015400010312003120010000000071                                         GENE            10000               xcbRegister                                 
+09:50:54.614776[41m|WRN|[0mCB_SESSION8|Not defined packet command. command:, packet:

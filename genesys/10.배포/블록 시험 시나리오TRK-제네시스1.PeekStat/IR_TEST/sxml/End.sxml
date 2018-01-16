@@ -1,0 +1,7 @@
+<scenariodef id="end" iparam="" ioparam="" >
+	<log rid="USER_LOG_10MIN" expr="'[' & g_icMCSReRoute.result & ']' & 'session.call.release_src=' & session.call.release_src" cond="1" />
+	<cticall name="icClearCall" service="'GENESYS'" command="icClearCall" timeout="5" agtflag="0" agttype="" switchcenter="0" icnt="4" iparam0="sRequest" ivalue0="'icClearCall'" iparam1="sTENo" ivalue1="session.call.trunkid" iparam2="sChanNo" ivalue2="session.call.physicalline" iparam3="sEndCause" ivalue3="'Normal'" ocnt="3" oparam0="sRequest" oparam1="sResult" oparam2="sDesc" cond="1" />
+	<goto next="{6D7E2C18-E21A-42BE-94B6-085F3ED235BE}" />
+	<label id="{6D7E2C18-E21A-42BE-94B6-085F3ED235BE}" />
+	<!-- End -->
+ </scenariodef>

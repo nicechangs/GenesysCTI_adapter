@@ -1,0 +1,4 @@
+<scenariodef id="svc_cfgchg.msfx" iparam="" ioparam="" >
+	<play expr="'m.35'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<userenv name="uEnvTest" userconfig="'UEnvTest.cfg'" service="'TEST'" env="'VALUE'" default="" write="0" cond="1" />
+</scenariodef>

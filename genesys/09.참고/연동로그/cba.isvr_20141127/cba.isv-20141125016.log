@@ -1,0 +1,60 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> cba.isv pid(22082) Logging Start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+13:43:37.115309[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+13:43:37.115328[44m|INF|[0m>> Process startup. <PrcName=CBA.ISVR, version=v1.0.0.1, args=1001>
+13:43:37.115345[44m|INF|[0m[PROCESS]
+13:43:37.115368[44m|INF|[0mPROCESS_NAME         : CBA.ISVR
+13:43:37.115388[44m|INF|[0mPROCESS_ID           : 1001
+13:43:37.115408[44m|INF|[0m
+
+13:43:37.115420[44m|INF|[0m[SYSTEM]
+13:43:37.115432[44m|INF|[0mSYSTEM_TYPE          : TE
+13:43:37.115444[44m|INF|[0mSYSTEM_ID            : 1000001
+13:43:37.115455[44m|INF|[0m
+
+13:43:37.115466[44m|INF|[0m[CBA_INFO]
+13:43:37.115477[44m|INF|[0mCB_LISTEN_IP         : 
+13:43:37.115489[44m|INF|[0mCB_LISTEN_PORT       : 10002
+13:43:37.115501[44m|INF|[0mLOG_LEVEL            : 3
+13:43:37.115512[44m|INF|[0mLOG_PREFIX           : cba.isvr.1001
+13:43:37.115524[44m|INF|[0mLOG_PATH             : ../log/cba.isvr/
+13:43:37.115535[44m|INF|[0mLOG_LINK_PATH        : ../log/
+13:43:37.115546[44m|INF|[0m
+
+13:43:37.115557[44m|INF|[0m[IVR_DRIVER]
+13:43:37.115568[44m|INF|[0mREMOTE_IP            : 10.1.13.100
+13:43:37.115580[44m|INF|[0mREMOTE_PORT          : 3021
+13:43:37.115592[44m|INF|[0mSVC_DRIVER_NAME      : IAdapter1
+13:43:37.115603[44m|INF|[0mSVC_APP_NAME         : IAdapter1
+13:43:37.115614[44m|INF|[0mTE_SYSTEM_ID         : 1
+13:43:37.115629[44m|INF|[0mSTART_CHANNEL        : 0
+13:43:37.115640[44m|INF|[0mSTART_PORT           : 1
+13:43:37.115652[44m|INF|[0mDNIS_COUNT           : 6
+13:43:37.115663[44m|INF|[0mLOG_LEVEL            : 3
+13:43:37.115674[44m|INF|[0mLOG_PATH             : ../log/cba.idrv/
+13:43:37.115686[44m|INF|[0mLOG_LINK_PATH        : ../log/
+13:43:37.115697[44m|INF|[0m
+
+13:43:37.115707[44m|INF|[0m>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+13:43:37.115989[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:1, PortKey:00010000, Port:1, TESystemID:1, ChannelNo:0
+13:43:37.116012[44m|INF|[0mCBSessionListener|Server socket listen start !!. ip:, port:10002
+13:43:37.116023[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:2, PortKey:00010001, Port:2, TESystemID:1, ChannelNo:1
+13:43:37.116100[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:3, PortKey:00010002, Port:3, TESystemID:1, ChannelNo:2
+13:43:37.116132[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:4, PortKey:00010003, Port:4, TESystemID:1, ChannelNo:3
+13:43:37.116170[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:5, PortKey:00010004, Port:5, TESystemID:1, ChannelNo:4
+13:43:37.116224[44m|INF|[0mIVR_DRIVER|Add port info. TotalCnt:6, PortKey:00010005, Port:6, TESystemID:1, ChannelNo:5
+13:43:37.116727[44m|INF|[0mIVR_DRIVER|cba.idrv.1001 ilInitiate success !!
+13:43:38.116306[44m|INF|[0mCBSessionManager|Add CBSession success. name:CB_SESSION6, ip:127.0.0.1, port:49154 
+13:43:38.116362[44m|INF|[0mCBSessionListener|Server accept socket !!. session_count:1, name:CB_SESSION6, ip:127.0.0.1, port:49154
+13:43:38.117670[32m|LV3|[0mCB_SESSION6|RECEIVE|000154|0015400010312003120010000000071                                         GENESYS         10000               xcbRegister                                 
+13:43:38.117751[33m|LV2|[0mCB_SESSION6|SEND   |000154|0015400312001000103120000000071                                         GENESYS         10001               xcbRegister                                 
+13:43:38.117771[44m|INF|[0mCB_SESSION6|HandleRegister success.
+13:43:38.117948[41m|ERR|[0mIVR_DRIVER|IVRDriver connection fail.!! RemoteIp:10.1.13.100, RemotePort:3021
+13:43:38.118751[44m|INF|[0mIVR_DRIVER|CALLBACK_LoginReq|DriverName:IAdapter1, Command:LoginReq, CallId:IAdapter1_11251343380001181001, Version:4.0, ClientName:IAdapter1, ReportStatus:true, ServerMonitor:set
+13:43:56.492432[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      858H
+13:43:56.492527[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      858H
+13:44:06.493628[32m|LV3|[0mCB_SESSION6|RECEIVE|000033|000330001031200312001      859H
+13:44:06.493723[32m|LV3|[0mCB_SESSION6|SEND   |000033|000330001031200312001      859H

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InstallationPackage FormatVersion="8.0">
+  <Product License="NotRequired" AppClass="SDK">
+    <Release Version="8.1.000.11" BuildDate="2013-12-09" BuildNumber="1" Type="General"/>
+    <Name>
+      <Long>IVR Library</Long>
+      <Nickname>IVRLib</Nickname>
+    </Name>
+    <Language LocaleId="ENU">
+      <Name>English (United States)</Name>
+    </Language>
+    <Description>
+      The IVR Library component is embedded in Genesys IVR
+      Drivers. Typically, it is used to return any IVR Driver
+      error messages. With IVR Interface Option 8, the IVR
+      Library&apos;s communication interface uses the
+      industry-standard XML (eXtensible Markup Language) protocol
+      for the transport layer.
+    </Description>
+    <ReleaseNotes Place="Web" WebDBId="." FileName="release_notes.html"/>
+  </Product>
+  <Platforms OSGroupName="linux">
+    <Computer Type="Intel 32 bit">
+      <OS Name="Red Hat Enterprise Linux AS" Version="4" CfgOSType="16"/>
+      <OS Name="Red Hat Enterprise Linux AS" Version="5" CfgOSType="16"/>
+    </Computer>
+    <Computer Type="Intel EM64T">
+      <OS Name="Red Hat Enterprise Linux AS" Version="5" CfgOSType="16"/>
+    </Computer>
+  </Platforms>
+  <InstallationPgm>
+    <Release Version="0.0.000.00"/>
+    <Language LocaleId="ENU">
+      <Name>English (United States)</Name>
+    </Language>
+  </InstallationPgm>
+</InstallationPackage>

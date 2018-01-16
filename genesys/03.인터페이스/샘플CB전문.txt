@@ -1,0 +1,83 @@
+[LoginReq]
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg>
+	<CallId>100000001</CallId>
+	<LoginReq Version="4.0" ClientName="IVR1" ReportStatus="true" ServerMonitor="set"/>
+</GctiMsg>
+
+[LoginResp]
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg>
+	<CallId>100000001</CallId>
+	<LoginResp IServerVersion="8.5" Result="Success" ConfigOptions="" Status="OK"/>
+</GctiMsg>
+
+[NewCall]
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg>
+	<CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId>
+	<NewCall CallControlMode="Network" Version="4.0">
+		<CalledNum>1000</CalledNum>
+		<DNIS>4200</DNIS>
+		<ANI>234</ANI>
+		<UDataEx>
+			<Node Name="aaa" Type="Str" Val="111"/>
+			<Node Name="bbb" Type="Str" Val="222"/>
+			<Node Name="ccc" Type="Str" Val="333"/>
+			<Node Name="ddd" Type="Str" Val="444"/>
+		</UDataEx>
+		<ExtnsEx>
+			<Node Name="eee" Type="Str" Val="555"/>
+			<Node Name="fff" Type="Str" Val="6666"/>
+			<Node Name="ggg" Type="Str" Val="77777"/>
+			<Node Name="hhh" Type="Str" Val="88888888"/>
+		</ExtnsEx>
+	</NewCall>
+</GctiMsg>
+
+
+
+[CallStatus]
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg>
+	<CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId>
+	<CallStatus Event="Ringing|Established|XferComplete"/>
+</GctiMsg>
+
+[OneStepXfer]
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg>
+	<CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId>
+	<OneStepXfer DestDN="8500">
+		<UDataEx></UDataEx>
+		<ExtnsEx></ExtnsEx>
+	</OneStepXfer>
+</GctiMsg>
+
+[RouteRequest]
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg>
+	<CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId>
+	<RouteRequest RouteDN="4200">
+		<CED>Customer Entered Data</CED>
+		<UDataEx>UserExtensionInfo - icRouteReq</UDataEx>
+	</RouteRequest>
+</GctiMsg>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE GctiMsg SYSTEM "IServer.dtd">
+<GctiMsg>
+	<CallId>1254BA80-53AB-4214-91AD-32EE609062BA0000</CallId>
+	<UDataSet Action="Add">
+		<UDataEx>
+			<Node UEI="this|is|UserExtensionInfo"/>
+		</UDataEx>
+	</UDataSet>
+</GctiMsg>

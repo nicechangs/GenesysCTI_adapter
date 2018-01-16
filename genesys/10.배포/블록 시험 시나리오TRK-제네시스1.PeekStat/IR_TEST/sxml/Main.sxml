@@ -1,0 +1,17 @@
+<scenariodef id="main" iparam="" ioparam="" >
+	<waitinbound ani="" dnis="" userdata="" trunkuserdata="" />
+	<sleep time="2" type="0" cond="1" />
+	<cticall name="icNewCall" service="'GENESYS'" command="icNewCall" timeout="5" agtflag="0" agttype="" switchcenter="0" icnt="7" iparam0="sRequest" ivalue0="'icNewCall'" iparam1="sTENo" ivalue1="session.call.trunkid" iparam2="sChanNo" ivalue2="session.call.physicalline" iparam3="sDNIS" ivalue3="session.call.dnis" iparam4="sANI" ivalue4="session.call.ani" iparam5="sUDataEx" ivalue5="''" iparam6="sExtnsEx" ivalue6="''" ocnt="3" oparam0="sRequest" oparam1="sResult" oparam2="sDesc" cond="1" />
+	<sleep time="2" type="0" cond="1" />
+	<cticall name="icCallInfo" service="'GENESYS'" command="icCallInfo" timeout="5" agtflag="0" agttype="" switchcenter="0" icnt="3" iparam0="sRequest" ivalue0="'icCallInfo'" iparam1="sTENo" ivalue1="session.call.trunkid" iparam2="sChanNo" ivalue2="session.call.physicalline" ocnt="16" oparam0="sRequest" oparam1="sResult" oparam2="sDesc" oparam3="sANI" oparam4="sCalledNum" oparam5="sConnId" oparam6="sDNIS" oparam7="sFirstHomeLocation" oparam8="sLastEvent" oparam9="sOtherDN" oparam10="sOtherQueue" oparam11="sOtherTrunk" oparam12="sPortDN" oparam13="sPortQueue" oparam14="sPortTrunk" oparam15="sTSCallId" cond="1" />
+	<sleep time="2" type="0" cond="1" />
+	<cticall name="icGetUData" service="'GENESYS'" command="icGetUData" timeout="5" agtflag="0" agttype="" switchcenter="0" icnt="5" iparam0="sRequest" ivalue0="'icGetUData'" iparam1="sTENo" ivalue1="session.call.trunkid" iparam2="sChanNo" ivalue2="session.call.physicalline" iparam3="sRequestId" ivalue3="''" iparam4="sKeys" ivalue4="'UEI|UEI_DNIS'" ocnt="4" oparam0="sRequest" oparam1="sResult" oparam2="sDesc" oparam3="sUDataEx" cond="1" />
+	<sleep time="2" type="0" cond="1" />
+	<cticall name="icSendUData" service="'GENESYS'" command="icSendUData" timeout="5" agtflag="0" agttype="" switchcenter="0" icnt="6" iparam0="sRequest" ivalue0="'icSendUData'" iparam1="sTENo" ivalue1="session.call.trunkid" iparam2="sChanNo" ivalue2="session.call.physicalline" iparam3="sRequestId" ivalue3="''" iparam4="sAction" ivalue4="'Replace'" iparam5="sUDataEx" ivalue5="'UEI=this is UEI|UEI_DNIS=this is UEI_DNIS'" ocnt="4" oparam0="sRequest" oparam1="sResult" oparam2="sDesc" oparam3="sUDataEx" cond="1" />
+	<sleep time="2" type="0" cond="1" />
+	<cticall name="icStatReq" service="'GENESYS'" command="icStatReq" timeout="5" agtflag="0" agttype="" switchcenter="0" icnt="4" iparam0="sRequest" ivalue0="'icStatReq'" iparam1="sTENo" ivalue1="session.call.trunkid" iparam2="sChanNo" ivalue2="session.call.physicalline" iparam3="sStatName" ivalue3="'CurrNumberWaitingCalls'" ocnt="4" oparam0="sRequest" oparam1="sResult" oparam2="sDesc" oparam3="sUDataEx" cond="1" />
+	<sleep time="2" type="0" cond="1" />
+	<transfer name="GCTI" to="3084" timeout="5" agtflag="0" agttype="" switchcenter="0" />
+	<sleep time="2" type="0" cond="1" />
+	<menu name="ir_test" rid="0" ridtype="1" cond="1" />
+</scenariodef>

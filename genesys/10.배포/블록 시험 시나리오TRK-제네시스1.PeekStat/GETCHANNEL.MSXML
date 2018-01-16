@@ -1,0 +1,13 @@
+<scenariodef id="GETCHANNEL.MSF" iparam="" ioparam="" >
+	<play expr="'m.11'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<play expr="'vp.111'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+	<getchannel name="getchannel" range="2" userdata="''" />
+	<!-- session.command.reason == '_TE_INVALID_OUT_LI_' -->
+	<if cond="session.command.reason == '_TE_INVALID_OUT_LI_'" >
+		<play expr="'disconnect'" cleardigit="1" type="MentID" wait="1" async="0" cond="1" />
+	<else /><!-- session.command.reason == '_TE_INVALID_OUT_LI_' -->
+		<play expr="'vp.112'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+		<play expr="getchannel.otherchannel" cleardigit="0" type="Number" wait="0" async="0" cond="1" />
+		<play expr="'vp.113'" cleardigit="1" type="MentID" wait="0" async="0" cond="1" />
+	</if><!-- session.command.reason == '_TE_INVALID_OUT_LI_' -->
+</scenariodef>

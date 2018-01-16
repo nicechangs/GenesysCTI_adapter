@@ -1,0 +1,185 @@
+<scenariodef id="packet.msfx" iparam="" ioparam="" >
+	<play expr="'m.32'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+	<!-- GetDigit_Start(packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776) -->
+	<if cond="1 == 0" >
+		<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_END" />
+	</if>
+	<assign name="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_cnt" expr="0" cond="1" />
+	<label id="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_START" />
+	<play expr="'m.320'" cleardigit="1" type="" country="410" abandon="0" wait="0" cond="1" />
+	<getdigit name="packetDigits" length="1" dtmfmask="1|2|3|4|5|6|7|8" timeout="5" intertimeout="5" endkey="" cleardigit="0" cdroption="1" getencrypt="0" dtmfvideo="0" safetone="0" abandon="0" />
+	<assign name="packetDigits_DtmfValue" expr="session.command.result" cond="1" />
+	<if cond="session.command.reason == _TE_TIMEOUT_" >
+		<play expr="'errtime'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<elseif cond="session.command.reason == _TE_MAX_DTMF_" />
+		<if cond="packetDigits.digits == '1'" >
+			<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_END" />
+		<elseif cond="packetDigits.digits == '2'" />
+			<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_END" />
+		<elseif cond="packetDigits.digits == '3'" />
+			<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_END" />
+		<elseif cond="packetDigits.digits == '4'" />
+			<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_END" />
+		<elseif cond="packetDigits.digits == '5'" />
+			<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_END" />
+		<elseif cond="packetDigits.digits == '6'" />
+			<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_END" />
+		<elseif cond="packetDigits.digits == '7'" />
+			<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_END" />
+		<elseif cond="packetDigits.digits == '8'" />
+			<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_END" />
+		<else />
+			<if cond="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_cnt <= 3 - 1" >
+				<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+			</if>
+		</if>
+	<elseif cond="packetDigits_DtmfValue == _SLEE_FAILED_" />
+		<if cond="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	<else />
+		<if cond="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_cnt <= 3 - 1" >
+			<play expr="'errinput'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+		</if>
+	</if>
+	<assign name="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_cnt" expr="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_cnt+1" cond="1" />
+	<if cond="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_cnt >= 3" >
+		<play expr="'errretry'" cleardigit="1" type="mentid" country="410" desc="" abandon="0" wait="0" cond="1" />
+	<else />
+		<if cond="packetDigits.digits == '' && session.command.term_digit == ''" >
+			<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_START" />
+		<else />
+			<goto next="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_START" />
+		</if>
+	</if>
+	<label id="packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776_END" />
+	<!-- GetDigit_End(packetDigits_184023E7_A885_47FE_AB1E_15188C4F9776) -->
+	<!-- select : packetDigits.digits -->
+	<if cond = "packetDigits.digits == '1'" >
+		<play expr="'m.321'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<goto next="{8903413D-1172-424B-B49D-48737054E572}" />
+		<label id="{8903413D-1172-424B-B49D-48737054E572}" />
+		<!-- PacketCall_Start(pktTestSize_55E590D5_AC7E_4747_979B_73999C074B94) -->
+		<tracking ttype="1" itype="3" id="'PKT_TEST'" value1="'321tracking'" value2="session.command.reason" flag="1" encrypt="0" cond="1" />
+		<packet name="pktTestSize" command="PKT_TEST" timeout="5" destination="100" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTestSize.to.trunk" expr="'가나다라'" cond="1" />
+			<assign name="pktTestSize.to.channel" expr="'8570'" cond="1" />
+			<assign name="pktTestSize.to.Type" expr="' 1'" cond="1" />
+			<assign name="pktTestSize.to.ANI" expr="' 2 '" cond="1" />
+			<assign name="pktTestSize.to.DNIS" expr="' 3 '" cond="1" />
+			<packetcdr packetid="PKT_COMM_HDR" comm="1" dir="0" type="0" seq="1" rep="0" name="pktTestSize.to.trunk" countname="" encrypt="" action="0" write="0" cond="1" />
+			<packetcdr packetid="PKT_TEST" comm="0" dir="0" type="0" seq="1" rep="0" name="pktTestSize.to.Type" countname="" encrypt="" action="0" write="0" cond="1" />
+			<packetcdr packetid="PKT_TEST" comm="0" dir="0" type="0" seq="2" rep="0" name="pktTestSize.to.DNIS" countname="" encrypt="" action="1" write="0" cond="1" />
+			<result/>
+			<packetcdr packetid="PKT_COMM_HDR" comm="1" dir="1" type="0" seq="1" rep="0" name="pktTestSize.from.trunk" countname="" encrypt="" action="0" write="0" cond="1" />
+			<packetcdr packetid="PKT_TEST" comm="0" dir="1" type="0" seq="1" rep="0" name="pktTestSize.from.Type" countname="" encrypt="" action="0" write="0" cond="1" />
+			<packetcdr packetid="PKT_TEST" comm="0" dir="1" type="0" seq="2" rep="0" name="pktTestSize.from.DNIS" countname="" encrypt="" action="0" write="0" cond="1" />
+			<packetcdr packetid="PKT_TEST" comm="0" dir="1" type="1" seq="3" rep="1" name="pktTestSize.from.repDate" countname="pktTestSize.from.repCount" encrypt="" action="1" write="1" reason="" reasontxt="" cond="1" />
+		</packet>
+		<tracking ttype="2" itype="3" id="'PKT_TEST'" value1="'321tracking'" value2="session.command.reason" flag="1" encrypt="0" cond="1" />
+		<!-- PacketCall_End(pktTestSize_55E590D5_AC7E_4747_979B_73999C074B94) -->
+		<assign name="a123" expr="pktTestSize.to.Type" cond="1" />
+		<assign name="b123" expr="pktTestSize.to.ANI" cond="1" />
+		<assign name="c123" expr="pktTestSize.to.DNIS" cond="1" />
+		<assign name="d123" expr="pktTestSize.to.trunk" cond="1" />
+		<goto next="{4ABF9DF6-4FE2-463D-B518-AC9103002004}" />
+		<label id="{4ABF9DF6-4FE2-463D-B518-AC9103002004}" />
+		<play expr="'disconnect'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<disconnect />
+	<elseif cond = "packetDigits.digits == '2'" />
+		<play expr="'m.322'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- PacketCall_Start(pktTestSize_F77F30AC_BF65_4217_9C2C_4835B4FBF47C) -->
+		<packet name="pktTestSize" command="PKT_TEST" timeout="5" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTestSize.to.trunk" expr="'12345'" cond="1" />
+			<assign name="pktTestSize.to.channel" expr="'8575'" cond="1" />
+			<assign name="pktTestSize.to.Type" expr="'83'" cond="1" />
+			<assign name="pktTestSize.to.ANI" expr="session.call.ani" cond="1" />
+			<assign name="pktTestSize.to.DNIS" expr="session.call.dnis" cond="1" />
+			<result/>
+		</packet>
+		<!-- PacketCall_End(pktTestSize_F77F30AC_BF65_4217_9C2C_4835B4FBF47C) -->
+		<goto next="{4ABF9DF6-4FE2-463D-B518-AC9103002004}" />
+	<elseif cond = "packetDigits.digits == '3'" />
+		<play expr="'m.323'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- PacketCall_Start(pktTest_2F7FAE12_370D_47C2_943B_174783C09F96) -->
+		<packet name="pktTest" command="PKT_TEST" timeout="5" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.to.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.to.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.to.Type" expr="'C'" cond="1" />
+			<assign name="pktTest.to.ANI" expr="session.call.ani" cond="1" />
+			<assign name="pktTest.to.DNIS" expr="session.call.dnis" cond="1" />
+			<result/>
+		</packet>
+		<!-- PacketCall_End(pktTest_2F7FAE12_370D_47C2_943B_174783C09F96) -->
+		<goto next="{4ABF9DF6-4FE2-463D-B518-AC9103002004}" />
+	<elseif cond = "packetDigits.digits == '4'" />
+		<play expr="'m.324'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- PacketCall_Start(pktTest_EAF9DA47_6A1C_429F_8934_2C5BB857DEB9) -->
+		<packet name="pktTest" command="PKT_TEST" timeout="2" destination="3" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.to.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.to.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.to.Type" expr="'D'" cond="1" />
+			<assign name="pktTest.to.ANI" expr="session.call.ani" cond="1" />
+			<assign name="pktTest.to.DNIS" expr="session.call.dnis" cond="1" />
+			<result/>
+		</packet>
+		<!-- PacketCall_End(pktTest_EAF9DA47_6A1C_429F_8934_2C5BB857DEB9) -->
+		<goto next="{4ABF9DF6-4FE2-463D-B518-AC9103002004}" />
+	<elseif cond = "packetDigits.digits == '5'" />
+		<play expr="'m.325'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- PacketCall_Start(pktTest_832EC3FC_B3DD_4647_9781_B751A4CB44B2) -->
+		<play expr="'packetBGM'" cleardigit="1" type="mentid" async="1" wait="1" cond="1" />
+		<packet name="pktTest" command="PKT_TEST" timeout="5" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="'packetBGM'" >
+			<assign name="pktTest.to.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.to.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.to.Type" expr="'E'" cond="1" />
+			<assign name="pktTest.to.ANI" expr="session.call.ani" cond="1" />
+			<assign name="pktTest.to.DNIS" expr="session.call.dnis" cond="1" />
+			<result/>
+		</packet>
+		<abort lineno="session.sys.channel" checkresult="0" />
+		<!-- PacketCall_End(pktTest_832EC3FC_B3DD_4647_9781_B751A4CB44B2) -->
+		<goto next="{4ABF9DF6-4FE2-463D-B518-AC9103002004}" />
+	<elseif cond = "packetDigits.digits == '6'" />
+		<play expr="'m.325'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- PacketCall_Start(pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03) -->
+		<play expr="'packetBGM'" cleardigit="1" type="mentid" async="1" wait="1" cond="1" />
+		<packet name="pktTest" command="PKT_TEST" timeout="5" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="'packetBGM'" >
+			<assign name="pktTest.to.trunk" expr="session.call.trunkid" cond="1" />
+			<assign name="pktTest.to.channel" expr="session.call.physicalline" cond="1" />
+			<assign name="pktTest.to.Type" expr="'E'" cond="1" />
+			<assign name="pktTest.to.ANI" expr="session.call.ani" cond="1" />
+			<assign name="pktTest.to.DNIS" expr="session.call.dnis" cond="1" />
+			<assign name="pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_cnt" expr="0" cond="1" />
+			<log rid="USER_LOG_10MIN" expr="'|SEND| [trunk]=[' & pktTest.to.trunk & ']' & ' [channel]=[' & pktTest.to.channel & ']' & ' [Type]=[' & pktTest.to.Type & ']' & ' [ANI]=[' & pktTest.to.ANI & ']' & ' [DNIS]=[' & pktTest.to.DNIS & ']'" cond="1" />
+			<result/>
+			<assign name="pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_cnt" expr="0" cond="1" />
+			<log rid="USER_LOG_10MIN" expr="'|RECV| [trunk]=[' & pktTest.from.trunk & ']' & ' [channel]=[' & pktTest.from.channel & ']' & ' [Type]=[' & pktTest.from.Type & ']' & ' [ANI]=[' & pktTest.from.ANI & ']' & ' [DNIS]=[' & pktTest.from.DNIS & ']' & ' [repCount]=[' & pktTest.from.repCount & ']'" cond="1" />
+			<assign name="pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_RCount" expr="pktTest.from.repCount + 0" cond="1" />
+			<label id="pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_REPEAT1" />
+			<assign name="pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_cnt" expr="pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_cnt + 1" cond="1" />
+			<log rid="USER_LOG_10MIN" expr="'[repDate]=[' & pktTest.from.repDate[pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_cnt] & ']' & ' [repTime]=[' & pktTest.from.repTime[pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_cnt] & ']'" cond="1" />
+			<if cond="pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_cnt < pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_RCount" >
+				<goto next="pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03_REPEAT1" />
+			</if>
+		</packet>
+		<abort lineno="session.sys.channel" checkresult="0" />
+		<!-- PacketCall_End(pktTest_77910DEB_BD45_496A_9292_7D2E5BDA8F03) -->
+		<goto next="{4ABF9DF6-4FE2-463D-B518-AC9103002004}" />
+	<elseif cond = "packetDigits.digits == '7'" />
+		<play expr="'m.325'" cleardigit="1" type="MentID" country="410" wait="1" async="0" cond="1" />
+		<!-- PacketCall_Start(pktTest_A2B16D47_2BD7_41D1_8698_C526CAF6C323) -->
+		<packet name="pktTest" command="PKT_TEST_TB" timeout="2" destination="1" type="PKT1" externfunc="" cond="" bgmtype="mentid" bgm="" >
+			<assign name="pktTest.to.Type" expr="'D'" cond="1" />
+			<assign name="pktTest.to.ANI" expr="8570" cond="1" />
+			<assign name="pktTest.to.DNIS" expr="session.call.dnis" cond="1" />
+			<result/>
+		</packet>
+		<!-- PacketCall_End(pktTest_A2B16D47_2BD7_41D1_8698_C526CAF6C323) -->
+		<goto next="{4ABF9DF6-4FE2-463D-B518-AC9103002004}" />
+	<elseif cond = "packetDigits.digits == '8'" />
+		<regsvr destination="" cond="1" />
+	<else />
+	</if>	
+	<!-- select : packetDigits.digits -->
+</scenariodef>
